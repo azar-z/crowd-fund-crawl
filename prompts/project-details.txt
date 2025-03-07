@@ -1,13 +1,16 @@
+context:
 I want to extract these 4 parameters from a webpage:
 company
 project name
 profit
 guarantee
 
+example:
 here is an example of what this page would contain:
 
 -----
 
+expected output:
 In this example these are the values that I expect:
 
 company = -----
@@ -15,9 +18,16 @@ name = -----
 profit = -----
 guarantee = -----
 
+tools:
+- python
+- selenium
+- beautifulsoup
+
+method signature:
 I want a python method with this format:
 def get_project_data(url: str) -> Project
 
+where Project is this class that I already have:
 
 class Project:
     def __init__(self, company, name, profit, guarantee):
@@ -26,9 +36,7 @@ class Project:
         self.profit = profit
         self.guarantee = guarantee
 
-Do not explicitly use the parameter values of the example I gave you.
-Please use selenium for loading the page and beautifulsoup.
-Note that I am using selenium 4.25 so no need to specify driver path.
-Also use options.add_argument("--headless") and wait 10 seconds for the page to fully load.
-
-thank you in advance
+notes:
+- Do not explicitly use the output values of the example I gave you.
+- I am using selenium 4.25 so no need to specify driver path.
+- Use options.add_argument("--headless") and wait 10 seconds for the page to fully load.
