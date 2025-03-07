@@ -1,0 +1,26 @@
+I want to crawl a page with a list of items and find the list of urls to those items.
+
+here are two items in this page:
+
+-----
+
+In this example this is the output I expect:
+
+urls = ["-----", "-----", ...]
+
+
+and you have to click on this html element before crawling:
+
+-----
+
+I want a python method with this format to return the list of urls:
+def get_project_urls()
+
+this page's url is: -----
+
+
+Please use selenium and beautifulsoup.
+Note that I am using selenium 4.25 so no need to specify driver path.
+Also use options.add_argument("--headless") and wait 10 seconds for the page to fully load.
+
+thank you in advance
