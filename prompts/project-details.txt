@@ -5,19 +5,6 @@ project name
 profit
 guarantee
 
-example:
-here is an example of what this page would contain:
-
------
-
-expected output:
-In this example these are the values that I expect:
-
-company = -----
-name = -----
-profit = -----
-guarantee = -----
-
 tools:
 - python
 - selenium
@@ -40,3 +27,19 @@ notes:
 - Do not explicitly use the output values of the example I gave you.
 - I am using selenium 4.25 so no need to specify driver path.
 - Use options.add_argument("--headless") and wait 10 seconds for the page to fully load.
+
+request:
+please give me the python method
+
+example:
+here is an example of what this page would contain:
+
+-----
+
+expected output:
+In this example these are the values that I expect:
+
+company = -----
+name = -----
+profit = -----
+guarantee = -----

@@ -1,16 +1,6 @@
 context:
 I want to crawl a page with a list of items and find the list of urls to those items.
 
-example:
-here are two items in this page:
-
------
-
-expected output:
-In this example this is the output I expect:
-
-urls = ["-----", "-----", ...]
-
 tools:
 - python
 - selenium
@@ -24,3 +14,16 @@ notes:
 - This page's url is: -----
 - I am using selenium 4.25 so no need to specify driver path.
 - Use options.add_argument("--headless") and wait 10 seconds for the page to fully load.
+
+request:
+please give me the python method
+
+example:
+here are two items in this page:
+
+-----
+
+expected output:
+In this example this is the output I expect:
+
+urls = ["-----", "-----", ...]
