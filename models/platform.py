@@ -8,3 +8,4 @@ class Platform(Enum):
     IB_CROWD = 4
     HALAL_FUND = 5
     RAZAVI = 6
+    RYAN = 7
