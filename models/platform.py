@@ -10,3 +10,4 @@ class Platform(Enum):
     RAZAVI = 6
     RYAN = 7
     STAR_TAMIN = 8
+    ZARIN_CROWD = 9

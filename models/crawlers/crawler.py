@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+from typing import List
 
 from models.platform import Platform
 from models.project import Project
@@ -8,15 +9,7 @@ class Crawler(ABC):
     platform: Platform
 
     @abstractmethod
-    def get_project_urls(self):
-        pass
-
-    @abstractmethod
-    def get_project_data(self, url: str) -> Project:
-        pass
-
-    @abstractmethod
-    def find_new_projects(self):
+    def find_new_projects(self) -> List[Project]:
         pass
 
     def save_new_projects(self):
@@ -34,7 +27,7 @@ class TwoStepCrawler(Crawler, ABC):
     def get_project_data(self, url: str) -> Project:
         pass
 
-    def find_new_projects(self):
+    def find_new_projects(self) -> List[Project]:
         new_projects = []
         urls = set(self.get_project_urls())
         for url in urls:

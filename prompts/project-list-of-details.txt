@@ -1,0 +1,60 @@
+context:
+I want to extract a list of projects from a webpage.
+Each project has 4 parameters:
+company
+project name
+profit
+guarantee
+
+tools:
+- python
+- selenium
+- beautifulsoup
+
+method signature:
+I want a python method with this format:
+def find_new_projects(self) -> List[Project]
+
+where Project is this class that I already have:
+
+class Project:
+    def __init__(self, company, name, profit, guarantee, url):
+        self.company = company
+        self.name = name
+        self.profit = profit
+        self.guarantee = guarantee
+        self.url = url
+
+notes:
+- This page's url is: -----
+- Do not explicitly use the output values of the example I give you.
+- I am using selenium 4.25 so no need to specify driver path.
+- Use options.add_argument("--headless") and wait 10 seconds for the page to fully load.
+
+request:
+please give me the python method
+
+example:
+here are two projects in this page:
+
+first project:
+
+-----
+
+second project:
+
+-----
+
+expected output:
+In this example these are the values that I expect:
+the first project:
+company = -----
+name = -----
+profit = -----
+guarantee = -----
+
+the second project:
+company = -----
+name = -----
+profit = -----
+guarantee = -----
