@@ -31,7 +31,8 @@ class ZarinCrowd(Crawler):
                 name=name,
                 profit=profit,
                 guarantee=guarantee,
-                url=project_url
+                url=project_url,
+                platform=self.platform
             )
             projects.append(project)
 

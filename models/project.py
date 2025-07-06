@@ -1,14 +1,22 @@
+from enum import Enum
+
 from .platform import Platform
 
 
+class ProjectStatus(Enum):
+    ACTIVE = 1
+    FINISHED = 2
+
+
 class Project:
-    def __init__(self, company, name, profit, guarantee, url):
-        self.platform = None
+    def __init__(self, company, name, profit, guarantee, url, status=ProjectStatus.ACTIVE, platform=None):
+        self.platform = platform
         self.company = company
         self.name = name
         self.profit = profit
         self.guarantee = guarantee
         self.url = url
+        self.status = status
 
     def set_platform(self, platform: Platform):
         self.platform = platform
