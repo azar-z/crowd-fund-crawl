@@ -2,10 +2,10 @@ from .platform import Platform
 
 
 class Project:
-    def __init__(self, company, title, profit, guarantee, url):
+    def __init__(self, company, name, profit, guarantee, url):
         self.platform = None
         self.company = company
-        self.name = title
+        self.name = name
         self.profit = profit
         self.guarantee = guarantee
         self.url = url

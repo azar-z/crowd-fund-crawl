@@ -9,3 +9,4 @@ class Platform(Enum):
     HALAL_FUND = 5
     RAZAVI = 6
     RYAN = 7
+    STAR_TAMIN = 8
