@@ -11,3 +11,4 @@ class Platform(Enum):
     RYAN = 7
     STAR_TAMIN = 8
     ZARIN_CROWD = 9
+    INVESTORUN = 10
