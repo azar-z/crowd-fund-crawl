@@ -12,3 +12,4 @@ class Platform(Enum):
     STAR_TAMIN = 8
     ZARIN_CROWD = 9
     INVESTORUN = 10
+    HAMASHENA = 11

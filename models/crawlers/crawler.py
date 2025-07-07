@@ -15,6 +15,7 @@ class Crawler(ABC):
     def save_new_projects(self):
         new_projects = self.find_new_projects()
         for project in new_projects:
+            project.set_platform(self.platform)
             project.save()
 
 
