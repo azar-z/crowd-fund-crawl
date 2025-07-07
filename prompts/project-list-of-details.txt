@@ -52,9 +52,11 @@ company = -----
 name = -----
 profit = -----
 guarantee = -----
+url = -----
 
 the second project:
 company = -----
 name = -----
 profit = -----
 guarantee = -----
+url = -----

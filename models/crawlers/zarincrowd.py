@@ -11,7 +11,7 @@ class ZarinCrowd(Crawler):
     platform = Platform.ZARIN_CROWD
 
     def find_new_projects(self) -> List[Project]:
-        url = "https://zarincrowd.com/api/v1/Projects/AllPaginated?internalStatus=1&pageNumber=1&pageSize=12"
+        url = "https://zarincrowd.com/api/v1/Projects/AllPaginated?internalStatus=2&pageNumber=1&pageSize=50"
         response = requests.get(url)
         response.raise_for_status()
 
