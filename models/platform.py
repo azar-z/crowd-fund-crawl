@@ -13,3 +13,4 @@ class Platform(Enum):
     ZARIN_CROWD = 9
     INVESTORUN = 10
     HAMASHENA = 11
+    IFUND = 12
