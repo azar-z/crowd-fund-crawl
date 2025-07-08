@@ -14,3 +14,4 @@ class Platform(Enum):
     INVESTORUN = 10
     HAMASHENA = 11
     IFUND = 12
+    CHARISMA = 13
