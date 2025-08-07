@@ -1,8 +1,8 @@
 from abc import ABC, abstractmethod
 from typing import List
 
-from models.platform import Platform
-from models.project import Project
+from static_crawlers.models.platform import Platform
+from static_crawlers.models.project import Project
 
 
 class Crawler(ABC):

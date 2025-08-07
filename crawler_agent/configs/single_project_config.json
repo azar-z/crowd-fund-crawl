@@ -1,0 +1,44 @@
+{
+  "function_name": "extract_single_project",
+  "function_description": "Extracts a single project from the provided HTML",
+  "object_name": "project",
+  "object_description": "A single project object extracted from HTML",
+  "is_array": false,
+  "fields": {
+    "name": {
+      "type": "string",
+      "description": "The title or name of the project",
+      "required": true
+    },
+    "company": {
+      "type": "string", 
+      "description": "The company associated with the project",
+      "required": true
+    },
+    "profit": {
+      "type": "number",
+      "description": "A number between 0 and 100 representing the profit percentage",
+      "required": true
+    },
+    "guarantee": {
+      "type": "string",
+      "description": "Description of guarantees offered",
+      "required": true
+    },
+    "investment_amount": {
+      "type": "string",
+      "description": "Minimum or total investment amount required",
+      "required": false
+    },
+    "duration": {
+      "type": "string",
+      "description": "Project duration or investment period",
+      "required": false
+    },
+    "status": {
+      "type": "string",
+      "description": "Current status of the project (active, completed, pending, etc.)",
+      "required": false
+    }
+  }
+}

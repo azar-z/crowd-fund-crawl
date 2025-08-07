@@ -6,8 +6,8 @@ from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
 
 from crawler import Crawler
-from models.platform import Platform
-from models.project import Project
+from static_crawlers.models.platform import Platform
+from static_crawlers.models.project import Project
 
 
 class Hamashena(Crawler):

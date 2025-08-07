@@ -1,0 +1,34 @@
+{
+  "function_name": "extract_project_data",
+  "function_description": "Extracts a list of projects from the provided HTML",
+  "object_name": "projects",
+  "object_description": "A list of project objects extracted from HTML",
+  "is_array": true,
+  "fields": {
+    "name": {
+      "type": "string",
+      "description": "The title or name of the project",
+      "required": true
+    },
+    "company": {
+      "type": "string", 
+      "description": "The company associated with the project",
+      "required": true
+    },
+    "profit": {
+      "type": "number",
+      "description": "A number between 0 and 100 representing the profit percentage",
+      "required": true
+    },
+    "guarantee": {
+      "type": "string",
+      "description": "Description of guarantees offered",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "description": "Full link to the project details",
+      "required": true
+    }
+  }
+}

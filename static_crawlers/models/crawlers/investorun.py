@@ -10,8 +10,8 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 
 from crawler import Crawler
-from models.platform import Platform
-from models.project import Project
+from static_crawlers.models.platform import Platform
+from static_crawlers.models.project import Project
 
 
 class Investorun(Crawler):

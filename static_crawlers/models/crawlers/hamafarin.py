@@ -5,8 +5,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 from .crawler import TwoStepCrawler
-from models.platform import Platform
-from models.project import Project
+from static_crawlers.models.platform import Platform
+from static_crawlers.models.project import Project
 
 
 class Hamafarin(TwoStepCrawler):

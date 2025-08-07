@@ -8,8 +8,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
 from .crawler import TwoStepCrawler
-from models.platform import Platform
-from models.project import Project
+from static_crawlers.models.platform import Platform
+from static_crawlers.models.project import Project
 
 
 class KarenCrowd(TwoStepCrawler):

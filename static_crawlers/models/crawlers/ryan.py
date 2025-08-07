@@ -5,8 +5,8 @@ import time
 
 from .crawler import TwoStepCrawler
 from selenium.webdriver.common.by import By
-from models.platform import Platform
-from models.project import Project
+from static_crawlers.models.platform import Platform
+from static_crawlers.models.project import Project
 
 
 class Ryan(TwoStepCrawler):
