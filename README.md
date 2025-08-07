@@ -34,7 +34,7 @@ Create a JSON file that defines the structure of the objects you want to extract
 ### 2. Run the Crawler
 
 ```python
-from crawler_agent.gemini2 import get_structured_json_from_html
+from crawler_agent.agent import get_structured_json_from_html
 
 # Your configuration
 api_key = "your_gemini_api_key"
