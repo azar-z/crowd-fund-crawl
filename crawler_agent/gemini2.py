@@ -1,6 +1,8 @@
 import google.generativeai as genai
 from google.generativeai.types import Tool, FunctionDeclaration
 import json
+import os
+from dotenv import load_dotenv
 
 
 def create_function_declaration_from_config(config):
@@ -109,7 +111,14 @@ def get_structured_json_from_html(api_key, html_file_path, config_file_path):
 
 
 if __name__ == "__main__":
-    my_api_key = "REMOVED"
+    # Load environment variables from .env file if it exists
+    load_dotenv()
+
+    # Get API key from environment variable
+    my_api_key = os.getenv("GEMINI_API_KEY")
+    if not my_api_key:
+        raise ValueError("GEMINI_API_KEY environment variable is not set. Please set it with your API key.")
+
     html_file = "single_samples/dongi.html"
     config_file = "configs/single_project_config.json"  # Configuration file path
 
