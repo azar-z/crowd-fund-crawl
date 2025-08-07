@@ -1,8 +1,8 @@
-import google.generativeai as genai
-from google.generativeai.types import Tool, FunctionDeclaration
-import json
-import os
-from dotenv import load_dotenv
+"""
+Utility functions for the crawler agent.
+"""
+
+from google.generativeai.types import FunctionDeclaration
 
 
 def create_function_declaration_from_config(config):
@@ -73,62 +73,26 @@ def create_function_declaration_from_config(config):
     return function_declaration
 
 
-def get_structured_json_from_html(api_key, html_file_path, config_file_path):
-    genai.configure(
-        api_key=api_key,
-        transport="rest",
-        # client_options=ClientOptions(api_endpoint="https://openrouter.ai/api/v1")
-        # client_options=ClientOptions(api_endpoint="https://api.gapgpt.app/")
-    )
-
-    # Load configuration from JSON file
-    with open(config_file_path, 'r', encoding='utf-8') as f:
-        config = json.load(f)
-
-    with open(html_file_path, 'r', encoding='utf-8') as f:
-        html_content = f.read()
-
-    # Create dynamic function declaration from config
-    function_declaration = create_function_declaration_from_config(config)
+def proto_to_dict(obj):
+    """
+    Convert protobuf objects to regular Python dictionaries recursively.
     
-    tools = [
-        Tool(
-            function_declarations=[function_declaration]
-        )
-    ]
-
-    model = genai.GenerativeModel(
-        model_name='gemini-2.0-flash',
-        tools=tools
-    )
-
-    prompt = f"Use the function `{config['function_name']}` to return the {config['object_description']} from the following HTML. " \
-             f"Only use the function.\n\n\n {html_content}"
-    response = model.generate_content(prompt)
-    print(response)
-    function_call = response.candidates[0].content.parts[0].function_call
-    return function_call.args
-
-
-if __name__ == "__main__":
-    # Load environment variables from .env file if it exists
-    load_dotenv()
-
-    # Get API key from environment variable
-    my_api_key = os.getenv("GEMINI_API_KEY")
-    if not my_api_key:
-        raise ValueError("GEMINI_API_KEY environment variable is not set. Please set it with your API key.")
-
-    html_file = "single_samples/dongi.html"
-    config_file = "configs/single_project_config.json"  # Configuration file path
-
-    structured_data = get_structured_json_from_html(
-        api_key=my_api_key,
-        html_file_path=html_file,
-        config_file_path=config_file
-    )
-
-    if structured_data:
-        print(dict(structured_data))
+    Args:
+        obj: The object to convert (can be protobuf message, dict, list, or primitive)
+        
+    Returns:
+        Converted object as regular Python data structures
+    """
+    if hasattr(obj, 'items'):
+        return {k: proto_to_dict(v) for k, v in obj.items()}
+    elif isinstance(obj, list):
+        return [proto_to_dict(i) for i in obj]
+    elif hasattr(obj, 'DESCRIPTOR'):  # protobuf message
+        result = {}
+        for field in obj.DESCRIPTOR.fields:
+            value = getattr(obj, field.name)
+            if value is not None:
+                result[field.name] = proto_to_dict(value)
+        return result
     else:
-        print("Tool was not used!")
+        return obj
