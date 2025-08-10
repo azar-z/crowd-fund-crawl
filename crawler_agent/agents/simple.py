@@ -15,17 +15,6 @@ class SimpleCrawlerAgent(BaseCrawlerAgent):
     using Google's Generative AI with dynamic function declarations.
     """
     
-    def __init__(self, api_key: str, model_name: str = 'gemini-2.0-flash'):
-        """
-        Initialize the BasicCrawlerAgent.
-        
-        Args:
-            api_key (str): The API key for Google Generative AI
-            model_name (str): The name of the model to use (default: 'gemini-2.0-flash')
-        """
-        super().__init__(api_key)
-        self.model_name = model_name
-    
     def process_html(self, html_file_path: str, config_file_path: str):
         """
         Process HTML content and extract structured data based on configuration.
@@ -62,7 +51,6 @@ class SimpleCrawlerAgent(BaseCrawlerAgent):
                  f"Only use the function.\n\n\n {html_content}"
         
         response = model.generate_content(prompt)
-        print(response)
-        
+
         function_call = response.candidates[0].content.parts[0].function_call
         return function_call.args

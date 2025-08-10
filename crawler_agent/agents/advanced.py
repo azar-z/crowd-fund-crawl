@@ -21,19 +21,18 @@ class AdvancedCrawlerAgent(BaseCrawlerAgent):
     - Confidence scoring and error recovery
     """
     
-    def __init__(self, api_key: str, model_name: str = 'gemini-2.0-flash', 
+    def __init__(self, api_key: str, model_name: str = 'gemini-2.0-flash-lite', 
                  max_retries: int = 3, voting_rounds: int = 3):
         """
         Initialize the AdvancedCrawlerAgent.
         
         Args:
             api_key (str): The API key for Google Generative AI
-            model_name (str): The name of the model to use (default: 'gemini-2.0-flash')
+            model_name (str): The name of the model to use (default: 'gemini-2.0-flash-lite')
             max_retries (int): Maximum number of retry attempts for verification
             voting_rounds (int): Number of extraction rounds for voting
         """
-        super().__init__(api_key)
-        self.model_name = model_name
+        super().__init__(api_key, model_name)
         self.max_retries = max_retries
         self.voting_rounds = voting_rounds
         self.debug_mode = True  # For comparison purposes
@@ -98,7 +97,7 @@ class AdvancedCrawlerAgent(BaseCrawlerAgent):
         Focus on content that likely contains: {', '.join(config["fields"].keys())}
         
         HTML:
-        {html_content[:10000]}  # Limit initial analysis to first 10k chars
+        {html_content}
         """
         
         try:
@@ -219,7 +218,7 @@ class AdvancedCrawlerAgent(BaseCrawlerAgent):
             {json.dumps(data_dict, indent=2, ensure_ascii=False)}
             
             HTML Content:
-            {html_content[:3000]}
+            {html_content}
             
             Check for:
             1. Data accuracy - are the values correct?
@@ -429,7 +428,7 @@ class AdvancedCrawlerAgent(BaseCrawlerAgent):
             html_content = f.read()
         
         # Step 1: Extract relevant HTML sections
-        filtered_html = self._extract_relevant_html_sections(html_content, config)
+        # filtered_html = self._extract_relevant_html_sections(html_content, config)
         
         # Step 2: Multiple extraction rounds with voting
         extractions = []
@@ -442,7 +441,7 @@ class AdvancedCrawlerAgent(BaseCrawlerAgent):
             # Use slightly different approaches for each round
             if round_num == 0:
                 # First round: use filtered HTML
-                extraction, confidence = self._extract_with_retry(filtered_html, config)
+                extraction, confidence = self._extract_with_retry(html_content, config)
             elif round_num == 1:
                 # Second round: use original HTML with focused prompt
                 extraction, confidence = self._extract_with_retry(html_content, config)
@@ -450,7 +449,7 @@ class AdvancedCrawlerAgent(BaseCrawlerAgent):
                 # Third round: use filtered HTML with emphasis on completeness
                 modified_config = config.copy()
                 modified_config["function_description"] += " Pay special attention to extracting ALL required fields completely and accurately."
-                extraction, confidence = self._extract_with_retry(filtered_html, modified_config)
+                extraction, confidence = self._extract_with_retry(html_content, modified_config)
             
             if extraction:
                 extractions.append(extraction)

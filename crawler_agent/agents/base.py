@@ -17,17 +17,19 @@ class BaseCrawlerAgent(ABC):
     using Google's Generative AI.
     """
     
-    def __init__(self, api_key: str):
+    def __init__(self, api_key: str, model_name: str = 'gemini-2.0-flash-lite'):
         """
-        Initialize the CrawlerAgent with API key.
+        Initialize the CrawlerAgent with API key and model name.
         
         Args:
             api_key (str): The API key for Google Generative AI
+            model_name (str): The name of the model to use (default: 'gemini-2.0-flash-lite')
         """
         if not api_key:
             raise ValueError("API key cannot be empty")
         
         self.api_key = api_key
+        self.model_name = model_name
         self._configure_genai()
     
     def _configure_genai(self):
@@ -53,13 +55,13 @@ class BaseCrawlerAgent(ABC):
         """
         pass
 
-    def save_results_to_file(self, structured_data, output_file: str = "output.json"):
+    def save_results_to_file(self, structured_data, output_file: str):
         """
         Save structured data to a JSON file.
 
         Args:
             structured_data: The structured data to save
-            output_file (str): Output file path (default: "output.json")
+            output_file (str): Output file path
         """
         if structured_data:
             with open(output_file, "w", encoding="utf-8") as outfile:
@@ -68,14 +70,14 @@ class BaseCrawlerAgent(ABC):
         else:
             print("No data to save - tool was not used!")
 
-    def process_and_save(self, html_file_path: str, config_file_path: str, output_file: str = "output.json"):
+    def process_and_save(self, html_file_path: str, config_file_path: str, output_file: str):
         """
         Process HTML and save results to file in one operation.
 
         Args:
             html_file_path (str): Path to the HTML file to process
             config_file_path (str): Path to the configuration file
-            output_file (str): Output file path (default: "output.json")
+            output_file (str): Output file path
         """
         structured_data = self.process_html(html_file_path, config_file_path)
         self.save_results_to_file(structured_data, output_file)
