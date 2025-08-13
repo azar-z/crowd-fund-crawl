@@ -1,0 +1,90 @@
+{
+  "simple_agent": {
+    "success": true,
+    "processing_time": 12.53354811668396,
+    "error": null
+  },
+  "advanced_agent": {
+    "success": true,
+    "processing_time": 12.05410647392273,
+    "error": null
+  },
+  "analysis": {
+    "speed": {
+      "simple_faster": false,
+      "time_difference": -0.47944164276123047
+    },
+    "data_comparison": {
+      "simple_fields_count": 7,
+      "advanced_fields_count": 7,
+      "simple_top_level_count": 1,
+      "advanced_top_level_count": 1,
+      "field_comparison": {
+        "project.company": {
+          "simple_value": "نگارین تکمیل یزد",
+          "advanced_value": "نگارین تکمیل یزد",
+          "status": "MATCH",
+          "match": true
+        },
+        "project.duration": {
+          "simple_value": "12 ماهه ",
+          "advanced_value": "12 ماهه ",
+          "status": "MATCH",
+          "match": true
+        },
+        "project.guarantee": {
+          "simple_value": "بدون تضمین سود و با تضمین ( ضمانت نامه تعهد پرداخت ) برای اصل سرمایه",
+          "advanced_value": "بدون تضمین سود و با تضمین ( ضمانت نامه تعهد پرداخت ) برای اصل سرمایه \n\nضمانت نامه این طرح از سوی بانک ملی با شناسه سپام: 0350104681895316 صادر شده که تا تاریخ 22/04/1404 معتبر می‌باشد و با درخواست شرکت سامانه تامین هوشمند نوآفرینان ایرانیان تا زمان مورد درخواست این شرکت قابل تمدید است.",
+          "status": "DIFFERENT",
+          "match": false
+        },
+        "project.investment_amount": {
+          "simple_value": "120,000,000,000 ریال",
+          "advanced_value": "120,000,000,000",
+          "status": "DIFFERENT",
+          "match": false
+        },
+        "project.name": {
+          "simple_value": "تأمین سرمایه در گردش جهت تولید پارچه رومبلی ساده",
+          "advanced_value": "تأمین سرمایه در گردش جهت تولید پارچه رومبلی ساده",
+          "status": "MATCH",
+          "match": true
+        },
+        "project.profit": {
+          "simple_value": 43.0,
+          "advanced_value": 43.0,
+          "status": "MATCH",
+          "match": true
+        },
+        "project.status": {
+          "simple_value": "موفقیت جمع آوری وجوه",
+          "advanced_value": "موفقیت جمع آوری وجوه",
+          "status": "MATCH",
+          "match": true
+        }
+      },
+      "simple_data": {
+        "project": {
+          "duration": "12 ماهه ",
+          "company": "نگارین تکمیل یزد",
+          "investment_amount": "120,000,000,000 ریال",
+          "guarantee": "بدون تضمین سود و با تضمین ( ضمانت نامه تعهد پرداخت ) برای اصل سرمایه",
+          "profit": 43.0,
+          "status": "موفقیت جمع آوری وجوه",
+          "name": "تأمین سرمایه در گردش جهت تولید پارچه رومبلی ساده"
+        }
+      },
+      "advanced_data": {
+        "project": {
+          "duration": "12 ماهه ",
+          "company": "نگارین تکمیل یزد",
+          "investment_amount": "120,000,000,000",
+          "guarantee": "بدون تضمین سود و با تضمین ( ضمانت نامه تعهد پرداخت ) برای اصل سرمایه \n\nضمانت نامه این طرح از سوی بانک ملی با شناسه سپام: 0350104681895316 صادر شده که تا تاریخ 22/04/1404 معتبر می‌باشد و با درخواست شرکت سامانه تامین هوشمند نوآفرینان ایرانیان تا زمان مورد درخواست این شرکت قابل تمدید است.",
+          "profit": 43.0,
+          "status": "موفقیت جمع آوری وجوه",
+          "name": "تأمین سرمایه در گردش جهت تولید پارچه رومبلی ساده"
+        }
+      }
+    }
+  }
+}

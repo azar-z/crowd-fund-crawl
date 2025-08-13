@@ -1,0 +1,90 @@
+{
+  "simple_agent": {
+    "success": true,
+    "processing_time": 6.333541631698608,
+    "error": null
+  },
+  "advanced_agent": {
+    "success": true,
+    "processing_time": 10.116003036499023,
+    "error": null
+  },
+  "analysis": {
+    "speed": {
+      "simple_faster": true,
+      "time_difference": 3.782461404800415
+    },
+    "data_comparison": {
+      "simple_fields_count": 7,
+      "advanced_fields_count": 7,
+      "simple_top_level_count": 1,
+      "advanced_top_level_count": 1,
+      "field_comparison": {
+        "project.company": {
+          "simple_value": "موسسه آموزشی راشد نوین رضوی",
+          "advanced_value": "موسسه آموزشی راشد نوین رضوی",
+          "status": "MATCH",
+          "match": true
+        },
+        "project.duration": {
+          "simple_value": "12 ماه",
+          "advanced_value": "دوازده ماه",
+          "status": "DIFFERENT",
+          "match": false
+        },
+        "project.guarantee": {
+          "simple_value": "None",
+          "advanced_value": "طرح تحت نظارت  کارگزاری بورس و اوراق بهادار رضوی  می باشد.",
+          "status": "DIFFERENT",
+          "match": false
+        },
+        "project.investment_amount": {
+          "simple_value": "117,000,000,000 ریال",
+          "advanced_value": "117,000,000,000",
+          "status": "DIFFERENT",
+          "match": false
+        },
+        "project.name": {
+          "simple_value": "تولید محتوای آموزشی",
+          "advanced_value": "تولید محتوای آموزشی",
+          "status": "MATCH",
+          "match": true
+        },
+        "project.profit": {
+          "simple_value": 45.0,
+          "advanced_value": 45.0,
+          "status": "MATCH",
+          "match": true
+        },
+        "project.status": {
+          "simple_value": "تکمیل‌شده",
+          "advanced_value": "تکمیل‌سرمایه‌شده",
+          "status": "DIFFERENT",
+          "match": false
+        }
+      },
+      "simple_data": {
+        "project": {
+          "company": "موسسه آموزشی راشد نوین رضوی",
+          "duration": "12 ماه",
+          "investment_amount": "117,000,000,000 ریال",
+          "guarantee": "None",
+          "profit": 45.0,
+          "status": "تکمیل‌شده",
+          "name": "تولید محتوای آموزشی"
+        }
+      },
+      "advanced_data": {
+        "project": {
+          "duration": "دوازده ماه",
+          "company": "موسسه آموزشی راشد نوین رضوی",
+          "investment_amount": "117,000,000,000",
+          "guarantee": "طرح تحت نظارت  کارگزاری بورس و اوراق بهادار رضوی  می باشد.",
+          "profit": 45.0,
+          "status": "تکمیل‌سرمایه‌شده",
+          "name": "تولید محتوای آموزشی"
+        }
+      }
+    }
+  }
+}

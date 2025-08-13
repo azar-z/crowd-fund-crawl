@@ -1,0 +1,11 @@
+{
+  "project": {
+    "duration": "Project duration or investment period",
+    "company": "شمیم رایحه یاس نوین",
+    "investment_amount": "33,300,000,000 تا 55,500,000,000",
+    "guarantee": "ضمانت‌نامه تعهد پرداخت صندوق ضمانت سرمایه‌گذاری صنایع کوچک برای اصل سرمایه",
+    "profit": 43.0,
+    "status": "Current status of the project (active, completed, pending, etc.)",
+    "name": "مشارکت در تولید و فروش بادی اسپلش"
+  }
+}
