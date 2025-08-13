@@ -25,14 +25,14 @@ def create_results_directory():
             print(f"Created directory: {directory}")
 
 
-def test_agent(agent, agent_name, html_file, config_file, output_file):
+def test_agent(agent, agent_name, input_file, config_file, output_file):
     """
     Test a single agent and return results with timing.
     
     Args:
         agent: The crawler agent to test
         agent_name (str): Name of the agent for logging
-        html_file (str): Path to HTML file
+        input_file (str): Path to input file (HTML or TXT)
         config_file (str): Path to config file
         output_file (str): Path to output file
         
@@ -53,7 +53,7 @@ def test_agent(agent, agent_name, html_file, config_file, output_file):
 
         if not os.path.exists(output_file):
         # Process and save results
-            agent.process_and_save(html_file, config_file, output_file)
+            agent.process_and_save(input_file, config_file, output_file)
         
         end_time = time.time()
         processing_time = end_time - start_time
@@ -257,7 +257,8 @@ def main(project_name):
     Main function to run the agent comparison.
     
     Args:
-        project_name (str): Name of the project to test (default: "dongi")
+        project_name (str): Name of the project to test. Will look for either 
+                           {project_name}.html or {project_name}.txt in single_samples/
     """
     print(f"🚀 Starting Agent Comparison Test for project: {project_name}")
     
@@ -270,17 +271,33 @@ def main(project_name):
     # Create results directory
     create_results_directory()
     
-    # Define test files based on project name
-    html_file = f"single_samples/{project_name}.html"
+    # Define test files based on project name - support both .html and .txt
+    html_file = None
+    txt_file = None
+    
+    # Check for HTML file first
+    html_candidate = f"single_samples/{project_name}.html"
+    txt_candidate = f"single_samples/{project_name}.txt"
+    
+    if os.path.exists(html_candidate):
+        html_file = html_candidate
+        input_file = html_file
+        file_type = "HTML"
+    elif os.path.exists(txt_candidate):
+        txt_file = txt_candidate
+        input_file = txt_file
+        file_type = "TXT"
+    else:
+        raise FileNotFoundError(f"Neither HTML nor TXT file found for project: {project_name}\n"
+                               f"Checked: {html_candidate}, {txt_candidate}")
+    
     config_file = "configs/single_project_config.json"
     
-    # Validate that required files exist
-    if not os.path.exists(html_file):
-        raise FileNotFoundError(f"HTML file not found: {html_file}")
+    # Validate that config file exists
     if not os.path.exists(config_file):
         raise FileNotFoundError(f"Config file not found: {config_file}")
     
-    print(f"📄 HTML file: {html_file}")
+    print(f"📄 {file_type} file: {input_file}")
     print(f"⚙️ Config file: {config_file}")
     
     # Output files based on project name
@@ -294,8 +311,8 @@ def main(project_name):
     advanced_agent = AdvancedCrawlerAgent(api_key=api_key, max_retries=3, voting_rounds=3)
     
     # Test both agents
-    simple_result = test_agent(simple_agent, "Simple Agent", html_file, config_file, simple_output)
-    advanced_result = test_agent(advanced_agent, "Advanced Agent", html_file, config_file, advanced_output)
+    simple_result = test_agent(simple_agent, "Simple Agent", input_file, config_file, simple_output)
+    advanced_result = test_agent(advanced_agent, "Advanced Agent", input_file, config_file, advanced_output)
     
     # Compare results
     comparison = compare_results(simple_result, advanced_result)
@@ -314,6 +331,6 @@ def main(project_name):
 
 
 if __name__ == "__main__":
-    project_name = "zarincrowd"
+    project_name = "charisma"  # Will look for .html or .txt
     main(project_name)
 
