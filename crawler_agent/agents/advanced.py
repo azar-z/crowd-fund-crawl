@@ -14,11 +14,12 @@ from crawler_agent.utils import create_function_declaration_from_config, proto_t
 
 class AdvancedCrawlerAgent(BaseCrawlerAgent):
     """
-    Advanced implementation of CrawlerAgent with multiple accuracy improvements:
-    - HTML preprocessing to identify relevant sections
-    - Verification step with retry mechanism
-    - Multiple extraction attempts with voting
-    - Confidence scoring and error recovery
+    Advanced implementation of CrawlerAgent with improved accuracy techniques:
+    - Efficient HTML cleaning (removing noise while preserving content)
+    - Enhanced prompts with field-specific guidance for each round
+    - Smart field validation with quality scoring
+    - Intelligent merging of multiple extractions with confidence weighting
+    - Reduced processing time while maintaining high accuracy
     """
     
     def __init__(self, api_key: str, model_name: str = 'gemini-2.0-flash-lite', 
@@ -37,127 +38,48 @@ class AdvancedCrawlerAgent(BaseCrawlerAgent):
         self.voting_rounds = voting_rounds
         self.debug_mode = True  # For comparison purposes
     
-    def _extract_relevant_html_sections(self, html_content: str, config: Dict) -> str:
+    def _clean_html_efficiently(self, html_content: str) -> str:
         """
-        Extract relevant sections of HTML based on project data patterns.
+        Efficiently clean HTML by removing unnecessary elements while preserving content structure.
         
         Args:
             html_content (str): Full HTML content
-            config (Dict): Configuration containing field descriptions
             
         Returns:
-            str: Filtered HTML content with relevant sections
+            str: Cleaned HTML content
         """
         if self.debug_mode:
-            print("🔍 Step 1: Extracting relevant HTML sections...")
+            print("🧹 Cleaning HTML efficiently...")
         
-        # Create a simple model for HTML section identification
-        model = genai.GenerativeModel(model_name=self.model_name)
+        # Remove script and style tags completely
+        html_content = re.sub(r'<script[^>]*>.*?</script>', '', html_content, flags=re.DOTALL | re.IGNORECASE)
+        html_content = re.sub(r'<style[^>]*>.*?</style>', '', html_content, flags=re.DOTALL | re.IGNORECASE)
         
-        # Build detailed field information from config
-        field_details = []
-        for field_name, field_config in config["fields"].items():
-            field_info = f"- {field_name}: {field_config['description']}"
-            if 'type' in field_config:
-                field_info += f" (type: {field_config['type']})"
-            if 'examples' in field_config:
-                field_info += f" (examples: {', '.join(field_config['examples'])})"
-            field_details.append(field_info)
+        # Remove comments
+        html_content = re.sub(r'<!--.*?-->', '', html_content, flags=re.DOTALL)
         
-        fields_description = "\n".join(field_details)
+        # Remove inline styles and unnecessary attributes that add noise
+        html_content = re.sub(r'\s+style="[^"]*"', '', html_content)
+        html_content = re.sub(r'\s+class="[^"]*"', '', html_content)
+        html_content = re.sub(r'\s+id="[^"]*"', '', html_content)
         
-        # Get additional context from config
-        object_description = config.get('object_description', 'target data')
-        function_description = config.get('function_description', 'Extract target information')
+        # Normalize whitespace
+        html_content = re.sub(r'\s+', ' ', html_content)
+        html_content = re.sub(r'>\s+<', '><', html_content)
         
-        prompt = f"""
-        Analyze this HTML and identify the main content section that contains {object_description}.
-        
-        TARGET EXTRACTION: {function_description}
-        
-        SPECIFIC FIELDS TO LOOK FOR:
-        {fields_description}
-        
-        Your task is to identify and return ONLY the HTML section that contains the actual data for these fields.
-        
-        REMOVE these irrelevant sections:
-        - Navigation menus and sidebars
-        - Headers and footers  
-        - Advertisements and promotional content
-        - Scripts, styles, and metadata
-        - Comments and user interactions
-        - Unrelated content not containing the target data
-        
-        KEEP these relevant sections:
-        - Main content area with target details
-        - Data tables or lists with target information
-        - Text blocks containing the specific fields mentioned above
-        - Images or media related to the target
-        
-        Focus on content that likely contains: {', '.join(config["fields"].keys())}
-        
-        HTML:
-        {html_content}
-        """
-        
-        try:
-            response = model.generate_content(prompt)
-            filtered_html = response.text
+        if self.debug_mode:
+            print(f"   ✨ Cleaned HTML efficiently")
             
-            # Fallback: if response is too short, use pattern-based filtering
-            if len(filtered_html) < 200:
-                filtered_html = self._pattern_based_filtering(html_content)
-                
-            if self.debug_mode:
-                print(f"   📝 Reduced HTML from {len(html_content)} to {len(filtered_html)} characters")
-                
-            return filtered_html
-            
-        except Exception as e:
-            if self.debug_mode:
-                print(f"   ⚠️ HTML filtering failed: {e}, using pattern-based fallback")
-            return self._pattern_based_filtering(html_content)
+        return html_content.strip()
     
-    def _pattern_based_filtering(self, html_content: str) -> str:
+    def _extract_data_with_enhanced_prompt(self, html_content: str, config: Dict, round_number: int = 0) -> Any:
         """
-        Fallback pattern-based HTML filtering.
-        
-        Args:
-            html_content (str): Full HTML content
-            
-        Returns:
-            str: Filtered HTML content
-        """
-        # Remove script and style tags
-        html_content = re.sub(r'<script[^>]*>.*?</script>', '', html_content, flags=re.DOTALL)
-        html_content = re.sub(r'<style[^>]*>.*?</style>', '', html_content, flags=re.DOTALL)
-        
-        # Look for main content patterns
-        patterns = [
-            r'<main[^>]*>.*?</main>',
-            r'<article[^>]*>.*?</article>',
-            r'<div[^>]*class[^>]*(?:content|main|project|detail)[^>]*>.*?</div>',
-            r'<section[^>]*>.*?</section>'
-        ]
-        
-        for pattern in patterns:
-            matches = re.findall(pattern, html_content, flags=re.DOTALL | re.IGNORECASE)
-            if matches:
-                return matches[0]
-        
-        # If no patterns match, return middle portion of HTML
-        lines = html_content.split('\n')
-        start = len(lines) // 4
-        end = 3 * len(lines) // 4
-        return '\n'.join(lines[start:end])
-    
-    def _extract_data_with_function(self, html_content: str, config: Dict) -> Any:
-        """
-        Extract data using function calling (similar to simple agent).
+        Extract data using enhanced prompts based on round number.
         
         Args:
             html_content (str): HTML content to process
             config (Dict): Configuration for extraction
+            round_number (int): Current extraction round for different strategies
             
         Returns:
             Extracted data or None if failed
@@ -168,11 +90,73 @@ class AdvancedCrawlerAgent(BaseCrawlerAgent):
             tools = [Tool(function_declarations=[function_declaration])]
             model = genai.GenerativeModel(model_name=self.model_name, tools=tools)
             
-            prompt = f"""Use the function `{config['function_name']}` to return the {config['object_description']} from the following HTML.
-            Only use the function and be very careful to extract accurate data.
+            # Build field-specific guidance
+            field_guidance = []
+            for field_name, field_config in config["fields"].items():
+                guidance = f"- {field_name}: {field_config['description']}"
+                if 'examples' in field_config and field_config['examples']:
+                    guidance += f" (examples: {', '.join(field_config['examples'])})"
+                field_guidance.append(guidance)
+            
+            # Different prompt strategies for each round
+            if round_number == 0:
+                # First round: Standard extraction with field guidance
+                prompt = f"""
+                Extract the {config['object_description']} from the HTML using the `{config['function_name']}` function.
+                
+                FIELD REQUIREMENTS:
+                {chr(10).join(field_guidance)}
+                
+                INSTRUCTIONS:
+                - Extract ALL available information for each field
+                - Use exact text from the HTML when possible
+                - If a field is not found, set it to null
+                - Pay special attention to numerical values (preserve formatting)
+                - Look for complete text in guarantee/description fields
+                
+                HTML:
+                {html_content}
+                """
+
+            elif round_number == 1:
+                # Second round: Focus on completeness and accuracy
+                prompt = f"""
+                Carefully extract the {config['object_description']} using `{config['function_name']}`. Focus on COMPLETENESS and ACCURACY.
+
+                CRITICAL REQUIREMENTS:
+                {chr(10).join(field_guidance)}
+                
+                EXTRACTION STRATEGY:
+                - Scan the ENTIRE HTML content systematically
+                - Look for both visible text and data attributes
+                - For text fields, capture the FULL text, not abbreviated versions
+                - For numerical fields, preserve original formatting and units
+                - Double-check each field before finalizing
+                
+                HTML:
+                {html_content}
+                """
+
+            else:
+                # Third round: Thorough analysis with error prevention
+                prompt = f"""
+                Perform a THOROUGH extraction of {config['object_description']} using `{config['function_name']}`.
+
+                TARGET FIELDS:
+                {chr(10).join(field_guidance)}
+                
+                QUALITY CHECKLIST:
+                ✓ All required fields are extracted
+                ✓ Text fields contain complete, untruncated information
+                ✓ Numbers include proper units and formatting
+                ✓ No placeholder or generic values
+                ✓ Information matches what's actually in the HTML
+                
+                Be extremely careful and methodical. Extract exactly what you see in the HTML.
             
             HTML:
-            {html_content}"""
+                {html_content}
+                """
             
             response = model.generate_content(prompt)
             
@@ -185,116 +169,157 @@ class AdvancedCrawlerAgent(BaseCrawlerAgent):
             
         except Exception as e:
             if self.debug_mode:
-                print(f"   ⚠️ Function extraction failed: {e}")
+                print(f"   ⚠️ Enhanced extraction failed: {e}")
             return None
     
-    def _verify_extraction(self, extracted_data: Any, config: Dict, html_content: str) -> Tuple[bool, float]:
+    def _validate_field_quality(self, extracted_data: Any, config: Dict) -> Tuple[bool, float, List[str]]:
         """
-        Verify the quality of extracted data.
+        Validate extracted data quality using smart field analysis.
         
         Args:
-            extracted_data: The extracted data to verify
-            config (Dict): Configuration for verification
-            html_content (str): Original HTML content
+            extracted_data: The extracted data to validate
+            config (Dict): Configuration for validation
             
         Returns:
-            Tuple[bool, float]: (is_valid, confidence_score)
+            Tuple[bool, float, List[str]]: (is_valid, confidence_score, issues)
         """
         if not extracted_data:
-            return False, 0.0
+            return False, 0.0, ["No data extracted"]
         
         try:
             data_dict = proto_to_dict(extracted_data)
             if self.debug_mode:
-                print(f"   🔍 Verifying extraction: {data_dict}")
+                print(f"   🔍 Validating field quality: {data_dict}")
             
-            # Create verification prompt
-            model = genai.GenerativeModel(model_name=self.model_name)
+            # Extract the actual project data - handle nested structure
+            project_data = data_dict
+            if config["object_name"] in data_dict:
+                project_data = data_dict[config["object_name"]]
+            elif "project" in data_dict:
+                project_data = data_dict["project"]
             
-            prompt = f"""
-            Verify if this extracted data is accurate based on the HTML content.
+            if self.debug_mode:
+                print(f"   🔍 Object name from config: {config['object_name']}")
+                print(f"   🔍 Data dict keys: {list(data_dict.keys())}")
+                print(f"   🔍 Project data: {project_data}")
+                print(f"   🔍 Project data type: {type(project_data)}")
+                if isinstance(project_data, dict):
+                    print(f"   🔍 Project data keys: {list(project_data.keys())}")
             
-            Extracted Data:
-            {json.dumps(data_dict, indent=2, ensure_ascii=False)}
+            issues = []
+            total_fields = len(config["fields"])
+            valid_fields = 0
+            quality_score = 0.0
             
-            HTML Content:
-            {html_content}
+            for field_name, field_config in config["fields"].items():
+                field_value = project_data.get(field_name)
+                field_score = 0.0
+                
+                # Check if required field is present
+                if field_config.get("required", False) and not field_value:
+                    issues.append(f"Required field '{field_name}' is missing")
+                    continue
+                
+                if field_value is not None:
+                    valid_fields += 1
+                    
+                    # Field-specific validation
+                    field_type = field_config.get("type", "string")
+                    
+                    if field_type == "number":
+                        if isinstance(field_value, (int, float)):
+                            field_score = 1.0
+                        else:
+                            issues.append(f"Field '{field_name}' should be a number")
+                            field_score = 0.5
+                    
+                    elif field_type == "string":
+                        if isinstance(field_value, str):
+                            # Check for minimum content quality
+                            if len(field_value.strip()) > 3:
+                                field_score = 1.0
+                            elif len(field_value.strip()) > 0:
+                                field_score = 0.7
+                                issues.append(f"Field '{field_name}' seems too short")
+                            else:
+                                field_score = 0.3
+                                issues.append(f"Field '{field_name}' is empty or whitespace")
+                        else:
+                            issues.append(f"Field '{field_name}' should be a string")
+                            field_score = 0.5
+                    
+                    # Check for common extraction errors
+                    if isinstance(field_value, str):
+                        # Detect placeholder or error text
+                        error_indicators = ['null', 'undefined', 'not found', 'n/a', 'no data', 'error']
+                        if any(indicator in field_value.lower() for indicator in error_indicators):
+                            issues.append(f"Field '{field_name}' contains error text: {field_value}")
+                            field_score *= 0.3
+                
+                quality_score += field_score
             
-            Check for:
-            1. Data accuracy - are the values correct?
-            2. Completeness - are required fields present?
-            3. Consistency - do the values make sense together?
-            
-            Respond with:
-            - "VALID" if the data is accurate and complete
-            - "INVALID" if there are significant errors or missing required data
-            - Include a confidence score from 0.0 to 1.0
-            
-            Format: VALID/INVALID|confidence_score|brief_reason
-            """
-            
-            response = model.generate_content(prompt)
-            response_text = response.text.strip()
-            
-            # Parse response
-            parts = response_text.split('|')
-            if len(parts) >= 2:
-                validity = parts[0].strip().upper() == 'VALID'
-                try:
-                    confidence = float(parts[1].strip())
-                except ValueError:
-                    confidence = 0.5
+            # Calculate overall confidence
+            if total_fields > 0:
+                confidence = quality_score / total_fields
+                is_valid = confidence >= 0.6 and len(issues) <= 2
+            else:
+                confidence = 0.0
+                is_valid = False
                 
                 if self.debug_mode:
-                    reason = parts[2] if len(parts) > 2 else "No reason provided"
-                    print(f"   📋 Verification: {validity}, confidence: {confidence:.2f}, reason: {reason}")
-                
-                return validity, confidence
+                    print(f"   📊 Quality score: {confidence:.2f}, Valid fields: {valid_fields}/{total_fields}")
+                if issues:
+                    print(f"   ⚠️ Issues found: {'; '.join(issues[:3])}")
             
-            return False, 0.0
+            return is_valid, confidence, issues
             
         except Exception as e:
             if self.debug_mode:
-                print(f"   ⚠️ Verification failed: {e}")
-            return False, 0.0
+                print(f"   ⚠️ Validation failed: {e}")
+            return False, 0.0, [f"Validation error: {str(e)}"]
     
-    def _extract_with_retry(self, html_content: str, config: Dict) -> Tuple[Any, float]:
+    def _extract_with_smart_retry(self, html_content: str, config: Dict, round_number: int = 0) -> Tuple[Any, float]:
         """
-        Extract data with verification and retry mechanism.
+        Extract data with smart validation and retry mechanism.
         
         Args:
             html_content (str): HTML content to process
             config (Dict): Configuration for extraction
+            round_number (int): Current round number for different strategies
             
         Returns:
             Tuple[Any, float]: (best_extraction, confidence_score)
         """
         if self.debug_mode:
-            print("🔄 Step 2: Extracting with verification and retry...")
+            print(f"🎯 Smart extraction round {round_number + 1}")
         
         best_extraction = None
         best_confidence = 0.0
         
-        for attempt in range(self.max_retries):
+        for attempt in range(2):  # Reduced from 3 to 2 attempts per round
             if self.debug_mode:
-                print(f"   🎯 Attempt {attempt + 1}/{self.max_retries}")
+                print(f"   🔄 Attempt {attempt + 1}/2")
             
-            # Extract data
-            extracted = self._extract_data_with_function(html_content, config)
+            # Extract data with enhanced prompts
+            extracted = self._extract_data_with_enhanced_prompt(html_content, config, round_number)
             
             if extracted:
-                # Verify extraction
-                is_valid, confidence = self._verify_extraction(extracted, config, html_content)
+                # Validate using smart field analysis
+                is_valid, confidence, issues = self._validate_field_quality(extracted, config)
                 
                 if is_valid and confidence > best_confidence:
                     best_extraction = extracted
                     best_confidence = confidence
                     
-                    # If we have high confidence, break early
-                    if confidence > 0.8:
+                    # If we have very high confidence, break early
+                    if confidence > 0.9:
                         if self.debug_mode:
-                            print(f"   ✅ High confidence achieved: {confidence:.2f}")
+                            print(f"   ✅ Excellent extraction: {confidence:.2f}")
                         break
+                elif confidence > best_confidence:
+                    # Even if not valid, keep if it's better than previous attempts
+                    best_extraction = extracted
+                    best_confidence = confidence
         
         return best_extraction, best_confidence
     
@@ -341,74 +366,94 @@ class AdvancedCrawlerAgent(BaseCrawlerAgent):
             d[parts[-1]] = value
         return result
     
-    def _vote_on_extractions(self, extractions: List[Any]) -> Any:
+    def _intelligent_merge(self, extractions: List[Tuple[Any, float]]) -> Any:
         """
-        Vote on multiple extractions to get the best result.
+        Intelligently merge multiple extractions with confidence weighting.
         
         Args:
-            extractions (List[Any]): List of extracted data
+            extractions (List[Tuple[Any, float]]): List of (extraction, confidence) tuples
             
         Returns:
-            Any: Best extraction based on voting
+            Any: Best merged extraction
         """
         if self.debug_mode:
-            print("🗳️ Step 3: Voting on multiple extractions...")
+            print("🧠 Intelligent merging of extractions...")
         
         if not extractions:
             return None
         
-        # Convert all extractions to dictionaries and flatten them
-        flattened_extractions = []
-        for extraction in extractions:
+        # Sort by confidence (highest first)
+        extractions.sort(key=lambda x: x[1], reverse=True)
+        
+        # Convert all extractions to dictionaries and extract project data
+        processed_project_data = []
+        for extraction, confidence in extractions:
             if extraction:
                 try:
                     data_dict = proto_to_dict(extraction)
-                    flattened = self._flatten_dict(data_dict)
-                    flattened_extractions.append(flattened)
+                    # Extract the project data from nested structure
+                    if isinstance(data_dict, dict):
+                        if "project" in data_dict:
+                            project_data = data_dict["project"]
+                        else:
+                            # Assume the whole dict is the project data
+                            project_data = data_dict
+                        processed_project_data.append((project_data, confidence))
                 except Exception as e:
                     if self.debug_mode:
                         print(f"   ⚠️ Failed to process extraction: {e}")
                     continue
         
-        if not flattened_extractions:
+        if not processed_project_data:
             return None
         
-        # Vote on each field
-        voted_result = {}
-        all_keys = set()
-        for extraction in flattened_extractions:
-            all_keys.update(extraction.keys())
-        
-        for key in all_keys:
-            values = []
-            for extraction in flattened_extractions:
-                if key in extraction and extraction[key] is not None:
-                    values.append(extraction[key])
-            
-            if values:
-                # For strings and numbers, use most common value
-                if all(isinstance(v, (str, int, float)) for v in values):
-                    voted_value = Counter(values).most_common(1)[0][0]
-                else:
-                    # For other types, use first valid value
-                    voted_value = values[0]
-                
-                voted_result[key] = voted_value
-                
-                if self.debug_mode:
-                    print(f"   📊 {key}: {voted_value} (from {len(values)} votes)")
-        
-        # Unflatten the result
-        final_result = self._unflatten_dict(voted_result)
+        # Start with the highest confidence extraction as base
+        base_project_data = processed_project_data[0][0].copy()
+        highest_confidence = processed_project_data[0][1]
         
         if self.debug_mode:
-            print(f"   ✅ Final voted result: {final_result}")
+            print(f"   📊 Base extraction (confidence: {highest_confidence:.2f}): {base_project_data}")
+        
+        # Enhance with better values from other extractions
+        for project_data, confidence in processed_project_data[1:]:
+            for field_name, field_value in project_data.items():
+                current_value = base_project_data.get(field_name)
+                
+                # Replace current value if:
+                # 1. Current field is missing or null
+                # 2. Current field is shorter text and new one is longer
+                # 3. Current field has error indicators
+                should_replace = False
+                
+                if current_value is None and field_value is not None:
+                    should_replace = True
+                    reason = "filling missing field"
+                elif isinstance(current_value, str) and isinstance(field_value, str):
+                    # Check for error indicators in current value
+                    error_indicators = ['null', 'undefined', 'not found', 'n/a', 'no data', 'error']
+                    if any(indicator in current_value.lower() for indicator in error_indicators):
+                        should_replace = True
+                        reason = "replacing error text"
+                    elif len(field_value.strip()) > len(current_value.strip()) * 1.5:
+                        should_replace = True
+                        reason = "using more complete text"
+                
+                if should_replace:
+                    base_project_data[field_name] = field_value
+                    if self.debug_mode:
+                        print(f"   🔄 Updated {field_name}: {reason}")
+        
+        # Return in the expected nested format
+        final_result = {"project": base_project_data}
+        
+        if self.debug_mode:
+            print(f"   ✅ Final merged result: {final_result}")
         
         return final_result
     
     def process_html(self, html_file_path: str, config_file_path: str):
         """
-        Process HTML content with advanced accuracy improvements.
+        Process HTML content with improved advanced techniques.
         
         Args:
             html_file_path (str): Path to the HTML file to process
@@ -418,7 +463,7 @@ class AdvancedCrawlerAgent(BaseCrawlerAgent):
             Structured data extracted from the HTML with high accuracy
         """
         if self.debug_mode:
-            print("🚀 Starting Advanced HTML Processing...")
+            print("🚀 Starting Improved Advanced HTML Processing...")
         
         # Load configuration and HTML
         with open(config_file_path, 'r', encoding='utf-8') as f:
@@ -427,42 +472,42 @@ class AdvancedCrawlerAgent(BaseCrawlerAgent):
         with open(html_file_path, 'r', encoding='utf-8') as f:
             html_content = f.read()
         
-        # Step 1: Extract relevant HTML sections
-        # filtered_html = self._extract_relevant_html_sections(html_content, config)
+        # Step 1: Clean HTML efficiently (remove noise without losing content)
+        cleaned_html = self._clean_html_efficiently(html_content)
         
-        # Step 2: Multiple extraction rounds with voting
-        extractions = []
-        confidences = []
+        # Step 2: Multiple smart extraction rounds
+        extractions_with_confidence = []
         
         for round_num in range(self.voting_rounds):
             if self.debug_mode:
                 print(f"🎲 Extraction round {round_num + 1}/{self.voting_rounds}")
             
-            # Use slightly different approaches for each round
+            # Use the appropriate HTML version for each round
             if round_num == 0:
-                # First round: use filtered HTML
-                extraction, confidence = self._extract_with_retry(html_content, config)
+                # First round: use cleaned HTML with enhanced prompts
+                html_to_use = cleaned_html
             elif round_num == 1:
-                # Second round: use original HTML with focused prompt
-                extraction, confidence = self._extract_with_retry(html_content, config)
+                # Second round: use original HTML for comparison
+                html_to_use = html_content
             else:
-                # Third round: use filtered HTML with emphasis on completeness
-                modified_config = config.copy()
-                modified_config["function_description"] += " Pay special attention to extracting ALL required fields completely and accurately."
-                extraction, confidence = self._extract_with_retry(html_content, modified_config)
+                # Third round: use cleaned HTML with different strategy
+                html_to_use = cleaned_html
             
-            if extraction:
-                extractions.append(extraction)
-                confidences.append(confidence)
+            extraction, confidence = self._extract_with_smart_retry(html_to_use, config, round_num)
+            
+            if extraction and confidence > 0.3:  # Only include reasonable extractions
+                extractions_with_confidence.append((extraction, confidence))
+                if self.debug_mode:
+                    print(f"   ✅ Round {round_num + 1} completed with confidence: {confidence:.2f}")
         
-        # Step 3: Vote on the best result
-        if extractions:
-            final_result = self._vote_on_extractions(extractions)
-            avg_confidence = sum(confidences) / len(confidences) if confidences else 0.0
+        # Step 3: Intelligent merging instead of simple voting
+        if extractions_with_confidence:
+            final_result = self._intelligent_merge(extractions_with_confidence)
+            avg_confidence = sum(conf for _, conf in extractions_with_confidence) / len(extractions_with_confidence)
             
             if self.debug_mode:
                 print(f"🎯 Processing complete! Average confidence: {avg_confidence:.2f}")
-                print(f"📊 Successful extractions: {len(extractions)}/{self.voting_rounds}")
+                print(f"📊 Successful extractions: {len(extractions_with_confidence)}/{self.voting_rounds}")
             
             return final_result
         else:

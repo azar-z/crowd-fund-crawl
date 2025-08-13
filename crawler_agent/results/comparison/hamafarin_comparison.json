@@ -1,0 +1,90 @@
+{
+  "simple_agent": {
+    "success": true,
+    "processing_time": 2.6171460151672363,
+    "error": null
+  },
+  "advanced_agent": {
+    "success": true,
+    "processing_time": 6.400667428970337,
+    "error": null
+  },
+  "analysis": {
+    "speed": {
+      "simple_faster": true,
+      "time_difference": 3.7835214138031006
+    },
+    "data_comparison": {
+      "simple_fields_count": 7,
+      "advanced_fields_count": 7,
+      "simple_top_level_count": 1,
+      "advanced_top_level_count": 1,
+      "field_comparison": {
+        "project.company": {
+          "simple_value": "فرگشت پندار پارسیان",
+          "advanced_value": "فرگشت پندار پارسیان",
+          "status": "MATCH",
+          "match": true
+        },
+        "project.duration": {
+          "simple_value": "دوازده ماهه",
+          "advanced_value": "دوازده ماهه",
+          "status": "MATCH",
+          "match": true
+        },
+        "project.guarantee": {
+          "simple_value": "ضمانت نامه تعهد پرداخت از بانک ملی ایران",
+          "advanced_value": "ضمانت نامه تعهد پرداخت از بانک ملی ایران با کد سپام: 0300104645534516 و شناسه ملی ذینفع: 14007219634\nو چک شرکت",
+          "status": "DIFFERENT",
+          "match": false
+        },
+        "project.investment_amount": {
+          "simple_value": "۱۰٬۰۰۰٬۰۰۰٬۰۰۰",
+          "advanced_value": "۱۰٬۰۰۰٬۰۰۰٬۰۰۰",
+          "status": "MATCH",
+          "match": true
+        },
+        "project.name": {
+          "simple_value": "تولید کرم ضد آفتاب",
+          "advanced_value": "تولید کرم ضد آفتاب",
+          "status": "MATCH",
+          "match": true
+        },
+        "project.profit": {
+          "simple_value": 41.0,
+          "advanced_value": 41.0,
+          "status": "MATCH",
+          "match": true
+        },
+        "project.status": {
+          "simple_value": "با موفقیت تکمیل شد",
+          "advanced_value": "با موفقیت تکمیل شد",
+          "status": "MATCH",
+          "match": true
+        }
+      },
+      "simple_data": {
+        "project": {
+          "duration": "دوازده ماهه",
+          "company": "فرگشت پندار پارسیان",
+          "investment_amount": "۱۰٬۰۰۰٬۰۰۰٬۰۰۰",
+          "guarantee": "ضمانت نامه تعهد پرداخت از بانک ملی ایران",
+          "profit": 41.0,
+          "status": "با موفقیت تکمیل شد",
+          "name": "تولید کرم ضد آفتاب"
+        }
+      },
+      "advanced_data": {
+        "project": {
+          "duration": "دوازده ماهه",
+          "company": "فرگشت پندار پارسیان",
+          "investment_amount": "۱۰٬۰۰۰٬۰۰۰٬۰۰۰",
+          "guarantee": "ضمانت نامه تعهد پرداخت از بانک ملی ایران با کد سپام: 0300104645534516 و شناسه ملی ذینفع: 14007219634\nو چک شرکت",
+          "profit": 41.0,
+          "status": "با موفقیت تکمیل شد",
+          "name": "تولید کرم ضد آفتاب"
+        }
+      }
+    }
+  }
+}

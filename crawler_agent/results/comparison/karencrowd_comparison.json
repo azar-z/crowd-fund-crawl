@@ -1,0 +1,90 @@
+{
+  "simple_agent": {
+    "success": true,
+    "processing_time": 10.106550693511963,
+    "error": null
+  },
+  "advanced_agent": {
+    "success": true,
+    "processing_time": 44.66902565956116,
+    "error": null
+  },
+  "analysis": {
+    "speed": {
+      "simple_faster": true,
+      "time_difference": 34.562474966049194
+    },
+    "data_comparison": {
+      "simple_fields_count": 7,
+      "advanced_fields_count": 7,
+      "simple_top_level_count": 1,
+      "advanced_top_level_count": 1,
+      "field_comparison": {
+        "project.company": {
+          "simple_value": "توسعه تجارت پارس یسنا",
+          "advanced_value": "توسعه تجارت پارس یسنا",
+          "status": "MATCH",
+          "match": true
+        },
+        "project.duration": {
+          "simple_value": "12 ماهه",
+          "advanced_value": "12\n                            ماهه",
+          "status": "DIFFERENT",
+          "match": false
+        },
+        "project.guarantee": {
+          "simple_value": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق دولتی برای اصل سرمایه",
+          "advanced_value": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق دولتی برای اصل سرمایه",
+          "status": "MATCH",
+          "match": true
+        },
+        "project.investment_amount": {
+          "simple_value": null,
+          "advanced_value": "10,000,000,000",
+          "status": "ADVANCED_ONLY",
+          "match": false
+        },
+        "project.name": {
+          "simple_value": "تولید و فروش انواع چسب پهن",
+          "advanced_value": "تولید و فروش انواع چسب پهن",
+          "status": "MATCH",
+          "match": true
+        },
+        "project.profit": {
+          "simple_value": 45.0,
+          "advanced_value": 45.0,
+          "status": "MATCH",
+          "match": true
+        },
+        "project.status": {
+          "simple_value": "در حال اجرا",
+          "advanced_value": "در حال اجرا",
+          "status": "MATCH",
+          "match": true
+        }
+      },
+      "simple_data": {
+        "project": {
+          "duration": "12 ماهه",
+          "company": "توسعه تجارت پارس یسنا",
+          "investment_amount": null,
+          "guarantee": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق دولتی برای اصل سرمایه",
+          "profit": 45.0,
+          "status": "در حال اجرا",
+          "name": "تولید و فروش انواع چسب پهن"
+        }
+      },
+      "advanced_data": {
+        "project": {
+          "duration": "12\n                            ماهه",
+          "company": "توسعه تجارت پارس یسنا",
+          "investment_amount": "10,000,000,000",
+          "guarantee": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق دولتی برای اصل سرمایه",
+          "profit": 45.0,
+          "status": "در حال اجرا",
+          "name": "تولید و فروش انواع چسب پهن"
+        }
+      }
+    }
+  }
+}

@@ -47,12 +47,13 @@ def test_agent(agent, agent_name, html_file, config_file, output_file):
     
     try:
         # Remove existing output file if it exists
-        if os.path.exists(output_file):
-            os.remove(output_file)
-            print(f"   🗑️ Removed existing output file: {output_file}")
-        
+        # if os.path.exists(output_file):
+        #     os.remove(output_file)
+        #     print(f"   🗑️ Removed existing output file: {output_file}")
+
+        if not os.path.exists(output_file):
         # Process and save results
-        agent.process_and_save(html_file, config_file, output_file)
+            agent.process_and_save(html_file, config_file, output_file)
         
         end_time = time.time()
         processing_time = end_time - start_time
@@ -135,7 +136,7 @@ def compare_results(simple_result, advanced_result):
         comparison["analysis"]["speed"] = {
             "simple_faster": time_diff > 0,
             "time_difference": time_diff,
-            "speed_ratio": advanced_result["processing_time"] / simple_result["processing_time"]
+            # "speed_ratio": advanced_result["processing_time"] / simple_result["processing_time"]
         }
         
         print(f"⏱️ Speed Comparison:")
@@ -313,6 +314,6 @@ def main(project_name):
 
 
 if __name__ == "__main__":
-    project_name = "dongi"
+    project_name = "zarincrowd"
     main(project_name)
 

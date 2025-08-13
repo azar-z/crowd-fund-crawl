@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>پلتفرم تامین مالی جمعی - زرین کراد</title>
+
+     <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TKF2GNB');
+    </script>
+
+  <script type="module" crossorigin src="/assets/index-Dqz_TWKW.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-OvmnTYoZ.css">
+</head>
+<body>
+<div id="app">
+         <!--***************************  -->
+     <div  class="app-loader" id="initial-loader">
+        <div class="loading">
+        <img src="/logo.svg" class="logo-img" />
+        <div class="progress-bar-container">
+            <div class="bar"></div>
+        </div>
+        </div>
+
+        <div class="bottom-logo">
+        <img src="/images/ZarinPal-Text-Logo-en.svg" />
+        </div>
+    </div>
+         <!-- *************************** -->
+</div>
+</body>
+<style>
+   .app-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--background-1, #ffffff); /* fallback */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 60;
+}
+
+/* Center Loader */
+.loading {
+  position: absolute;
+  width: 160px;
+  height: 124px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  left: calc(50% - 80px);
+  top: calc(50% - 62px);
+}
+
+.logo-img {
+  width: 80px;
+  height: 80px;
+}
+
+/* Progress Bar */
+.progress-bar-container {
+  width: 160px;
+  height: 4px;
+  background-color: #f8f8f8;
+  border-radius: 2px;
+  flex: none;
+  align-self: stretch;
+  flex-grow: 0;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.bar {
+  position: relative;
+  height: 100%;
+  background-color: var(--primary-default, #00b5ad);
+  border-radius: 2px;
+  animation: bluebar 1.5s infinite ease-in-out alternate;
+}
+
+/* Logo Bottom */
+.bottom-logo {
+  position: absolute;
+  width: 99px;
+  height: 24px;
+  left: calc(50% - 49.5px);
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 4px;
+}
+
+/* Animation Keyframes */
+@keyframes bluebar {
+  0%,
+  10% {
+    width: 15%;
+    left: 0;
+    background-color: var(--primary-tint-2, #b3f0e4);
+  }
+  40%,
+  60% {
+    width: 100%;
+    left: 0;
+    background-color: var(--primary, #01a71d);
+  }
+  90%,
+  100% {
+    left: 85%;
+    width: 15%;
+    background-color: var(--primary-tint-2, #b3f0e4);
+  }
+}
+</style>
+</html>
