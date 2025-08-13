@@ -1,0 +1,70 @@
+{
+  "project_name": "maskanplus",
+  "validation_timestamp": "2025-08-13T18:38:54.894724",
+  "simple_agent": {
+    "available": true,
+    "field_validations": {
+      "company": {
+        "value": "شمیم رایحه یاس نوین",
+        "is_correct": true
+      },
+      "duration": {
+        "value": "12 ماهه",
+        "is_correct": true
+      },
+      "guarantee": {
+        "value": "ضمانت‌نامه تعهد پرداخت صندوق ضمانت سرمایه‌گذاری صنایع کوچک",
+        "is_correct": false
+      },
+      "investment_amount": {
+        "value": "55,500 میلیون ریال",
+        "is_correct": true
+      },
+      "name": {
+        "value": "مشارکت در تولید و فروش بادی اسپلش",
+        "is_correct": true
+      },
+      "profit": {
+        "value": 43.0,
+        "is_correct": true
+      },
+      "status": {
+        "value": "موفق",
+        "is_correct": true
+      }
+    }
+  },
+  "advanced_agent": {
+    "available": true,
+    "field_validations": {
+      "company": {
+        "value": "شمیم رایحه یاس نوین",
+        "is_correct": true
+      },
+      "duration": {
+        "value": "Project duration or investment period",
+        "is_correct": false
+      },
+      "guarantee": {
+        "value": "ضمانت‌نامه تعهد پرداخت صندوق ضمانت سرمایه‌گذاری صنایع کوچک برای اصل سرمایه",
+        "is_correct": true
+      },
+      "investment_amount": {
+        "value": "33,300,000,000 تا 55,500,000,000",
+        "is_correct": true
+      },
+      "name": {
+        "value": "مشارکت در تولید و فروش بادی اسپلش",
+        "is_correct": true
+      },
+      "profit": {
+        "value": 43.0,
+        "is_correct": true
+      },
+      "status": {
+        "value": "Current status of the project (active, completed, pending, etc.)",
+        "is_correct": false
+      }
+    }
+  }
+}

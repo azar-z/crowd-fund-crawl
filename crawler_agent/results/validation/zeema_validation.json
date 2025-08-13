@@ -1,0 +1,70 @@
+{
+  "project_name": "zeema",
+  "validation_timestamp": "2025-08-13T18:34:57.652153",
+  "simple_agent": {
+    "available": true,
+    "field_validations": {
+      "company": {
+        "value": "یزدان مطهر قائم وسطی",
+        "is_correct": true
+      },
+      "duration": {
+        "value": "12 ماه",
+        "is_correct": true
+      },
+      "guarantee": {
+        "value": "ضمانتنامه تعهد پرداخت بانک ملی",
+        "is_correct": false
+      },
+      "investment_amount": {
+        "value": "15 میلیارد",
+        "is_correct": false
+      },
+      "name": {
+        "value": "تأمین سرمایه در گردش خریدوفروش انواع حبوبات",
+        "is_correct": true
+      },
+      "profit": {
+        "value": 43.0,
+        "is_correct": true
+      },
+      "status": {
+        "value": "inProgress",
+        "is_correct": false
+      }
+    }
+  },
+  "advanced_agent": {
+    "available": true,
+    "field_validations": {
+      "company": {
+        "value": "یزدان مطهر قائم وسطی",
+        "is_correct": true
+      },
+      "duration": {
+        "value": "12\nماه",
+        "is_correct": true
+      },
+      "guarantee": {
+        "value": "ضمانتنامه تعهد پرداخت بانک ملی\nتضمین اصل سرمایه",
+        "is_correct": true
+      },
+      "investment_amount": {
+        "value": "15 میلیارد تومان ",
+        "is_correct": true
+      },
+      "name": {
+        "value": "طرح کرادفاندینگ تأمین سرمایه در گردش خریدوفروش انواع حبوبات - زیما",
+        "is_correct": true
+      },
+      "profit": {
+        "value": 43.0,
+        "is_correct": true
+      },
+      "status": {
+        "value": "سرمایه تأمین شده ",
+        "is_correct": true
+      }
+    }
+  }
+}

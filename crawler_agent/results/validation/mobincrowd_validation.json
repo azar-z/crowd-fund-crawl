@@ -1,0 +1,70 @@
+{
+  "project_name": "mobincrowd",
+  "validation_timestamp": "2025-08-13T18:43:53.563389",
+  "simple_agent": {
+    "available": true,
+    "field_validations": {
+      "company": {
+        "value": "شرکت کیمیا جاوید سپاهان",
+        "is_correct": true
+      },
+      "duration": {
+        "value": "6",
+        "is_correct": true
+      },
+      "guarantee": {
+        "value": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق پژوهش و فناوری برای اصل سرمایه",
+        "is_correct": true
+      },
+      "investment_amount": {
+        "value": "250,000,000,000",
+        "is_correct": true
+      },
+      "name": {
+        "value": "تامین سرمایه در گردش به منظور تولید پوشش پلیمری لوله‌های فولادی",
+        "is_correct": true
+      },
+      "profit": {
+        "value": 21.0,
+        "is_correct": true
+      },
+      "status": {
+        "value": "موفق در جذب سرمایه",
+        "is_correct": true
+      }
+    }
+  },
+  "advanced_agent": {
+    "available": true,
+    "field_validations": {
+      "company": {
+        "value": "شرکت کیمیا جاوید سپاهان",
+        "is_correct": true
+      },
+      "duration": {
+        "value": "6",
+        "is_correct": true
+      },
+      "guarantee": {
+        "value": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق پژوهش و فناوری برای اصل سرمایه",
+        "is_correct": true
+      },
+      "investment_amount": {
+        "value": "250,000,000,000",
+        "is_correct": true
+      },
+      "name": {
+        "value": "تامین سرمایه در گردش به منظور تولید پوشش پلیمری لوله‌های فولادی",
+        "is_correct": true
+      },
+      "profit": {
+        "value": 21.0,
+        "is_correct": true
+      },
+      "status": {
+        "value": "موفق در جذب سرمایه",
+        "is_correct": true
+      }
+    }
+  }
+}

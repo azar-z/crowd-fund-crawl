@@ -1,0 +1,70 @@
+{
+  "project_name": "dongi",
+  "validation_timestamp": "2025-08-13T18:44:42.428480",
+  "simple_agent": {
+    "available": true,
+    "field_validations": {
+      "company": {
+        "value": "گروه صنعتی گناباد",
+        "is_correct": true
+      },
+      "duration": {
+        "value": "12 ماه",
+        "is_correct": true
+      },
+      "guarantee": {
+        "value": "بانک کشاورزی",
+        "is_correct": false
+      },
+      "investment_amount": {
+        "value": "125,000",
+        "is_correct": false
+      },
+      "name": {
+        "value": "تامین سرمایه در گردش جهت خرید و فروش بذر ذرت",
+        "is_correct": true
+      },
+      "profit": {
+        "value": 45.0,
+        "is_correct": true
+      },
+      "status": {
+        "value": "موفق شد",
+        "is_correct": true
+      }
+    }
+  },
+  "advanced_agent": {
+    "available": true,
+    "field_validations": {
+      "company": {
+        "value": "گروه صنعتی گناباد",
+        "is_correct": true
+      },
+      "duration": {
+        "value": "12 ماه",
+        "is_correct": true
+      },
+      "guarantee": {
+        "value": "1- ضمانت بازپرداخت اصل سرمایه توسط ضمانت‌نامه تعهد پرداخت بانک کشاورزی به شماره سپام 0110304676665192\n2- کاهش ریسک با بیمه انبارها، بازخرید محصولات فروش نرفته و اولویت پرداخت به سرمایه‌گذاران\n3- پیش بینی پرداخت سود علی‌الحساب 11.25 درصد به صورت هرسه ماه یکبار\n4- سابقه دو تامین مالی موفق و تسویه شده طی یکسال گذشته",
+        "is_correct": true
+      },
+      "investment_amount": {
+        "value": "125,000میلیون ریال",
+        "is_correct": true
+      },
+      "name": {
+        "value": "تامین سرمایه در گردش جهت خرید و فروش بذر ذرت",
+        "is_correct": true
+      },
+      "profit": {
+        "value": 45.0,
+        "is_correct": true
+      },
+      "status": {
+        "value": "موفق شد",
+        "is_correct": true
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "project_name": "pulsar",
+  "validation_timestamp": "2025-08-13T18:41:54.060179",
+  "simple_agent": {
+    "available": true,
+    "field_validations": {
+      "company": {
+        "value": "ویرا دیزل",
+        "is_correct": true
+      },
+      "duration": {
+        "value": "12 ماه",
+        "is_correct": true
+      },
+      "guarantee": {
+        "value": "بدون تضمین سود و با تضمین بانک سامان برای اصل سرمایه",
+        "is_correct": true
+      },
+      "investment_amount": {
+        "value": "250,000,000,000 ریال",
+        "is_correct": true
+      },
+      "name": {
+        "value": "طرح تامین سرمایه در گردش خرید قطعات متصله کابین و ملحقات برای تولید خودروهای سنگین تجاری",
+        "is_correct": true
+      },
+      "profit": {
+        "value": 40.0,
+        "is_correct": true
+      },
+      "status": {
+        "value": "",
+        "is_correct": false
+      }
+    }
+  },
+  "advanced_agent": {
+    "available": true,
+    "field_validations": {
+      "company": {
+        "value": "ویرا دیزل",
+        "is_correct": true
+      },
+      "duration": {
+        "value": "12 ماه",
+        "is_correct": true
+      },
+      "guarantee": {
+        "value": "بدون تضمین سود و با تضمین بانک سامان برای اصل سرمایه",
+        "is_correct": true
+      },
+      "investment_amount": {
+        "value": "250,000,000,000",
+        "is_correct": false
+      },
+      "name": {
+        "value": "طرح تامین سرمایه در گردش خرید قطعات متصله کابین و ملحقات برای تولید خودروهای سنگین تجاری",
+        "is_correct": true
+      },
+      "profit": {
+        "value": 40.0,
+        "is_correct": true
+      },
+      "status": {
+        "value": "active",
+        "is_correct": true
+      }
+    }
+  }
+}

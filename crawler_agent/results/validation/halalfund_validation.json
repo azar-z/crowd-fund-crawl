@@ -1,0 +1,70 @@
+{
+  "project_name": "halalfund",
+  "validation_timestamp": "2025-08-13T18:02:58.464137",
+  "simple_agent": {
+    "available": true,
+    "field_validations": {
+      "company": {
+        "value": "شرکت یزدان مطهر قائم وسطی",
+        "is_correct": true
+      },
+      "duration": {
+        "value": "12 ماه",
+        "is_correct": true
+      },
+      "guarantee": {
+        "value": "اصل سرمایه توسط متقاضی ضمانت شده است.",
+        "is_correct": true
+      },
+      "investment_amount": {
+        "value": "250,000 میلیون ریال",
+        "is_correct": true
+      },
+      "name": {
+        "value": "تامین سرمایه در گردش جهت خرید و فروش مواد غذایی",
+        "is_correct": true
+      },
+      "profit": {
+        "value": 8.5,
+        "is_correct": false
+      },
+      "status": {
+        "value": "تایید شده",
+        "is_correct": false
+      }
+    }
+  },
+  "advanced_agent": {
+    "available": true,
+    "field_validations": {
+      "company": {
+        "value": "شرکت یزدان مطهر قائم وسطی",
+        "is_correct": true
+      },
+      "duration": {
+        "value": "12 ماه",
+        "is_correct": true
+      },
+      "guarantee": {
+        "value": "اصل سرمایه توسط متقاضی ضمانت شده است. شماره سپام ضمانت نامه صادر شده از سوی بانک ملی، 0949604689744623 می باشد و تا تاریخ 1405/05/13 اعتبار داشته و با درخواست شرکت حساب یاری امین ملل قابل تمدید می باشد.",
+        "is_correct": true
+      },
+      "investment_amount": {
+        "value": "۲۵۰٬۰۰۰٬۰۰۰٬۰۰۰ ریال",
+        "is_correct": true
+      },
+      "name": {
+        "value": "تامین سرمایه در گردش جهت خرید و فروش مواد غذایی",
+        "is_correct": true
+      },
+      "profit": {
+        "value": 43.0,
+        "is_correct": true
+      },
+      "status": {
+        "value": "تامین مالی شده",
+        "is_correct": true
+      }
+    }
+  }
+}
