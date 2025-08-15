@@ -2,7 +2,7 @@
   "basic_agent": {
     "agent_name": "Basic Agent",
     "success": true,
-    "processing_time": 2.6600797176361084,
+    "processing_time": 4.933733701705933,
     "data": {
       "project": {
         "name": "تامین سرمایه در گردش جهت خرید و فروش مواد غذایی",
@@ -13,7 +13,8 @@
         "duration": "12",
         "status": "تایید شده"
       }
-    }
+    },
+    "error": null
   },
   "function_agent": {
     "agent_name": "Function Agent",

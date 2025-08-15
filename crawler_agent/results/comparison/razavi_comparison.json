@@ -2,18 +2,19 @@
   "basic_agent": {
     "agent_name": "Basic Agent",
     "success": true,
-    "processing_time": 3.3826892375946045,
+    "processing_time": 3.7044126987457275,
     "data": {
       "project": {
         "name": "تولید محتوای آموزشی",
         "company": "موسسه آموزشی راشد نوین رضوی",
-        "profit": 45,
-        "guarantee": "طرح تحت نظارت کارگزاری بورس و اوراق بهادار رضوی می باشد.",
-        "investment_amount": "117 میلیارد ریال",
-        "duration": "دوازده ماه",
+        "profit": "45",
+        "guarantee": null,
+        "investment_amount": "117,000,000,000",
+        "duration": "12 months",
         "status": "تکمیل‌سرمایه‌شده"
       }
-    }
+    },
+    "error": null
   },
   "function_agent": {
     "agent_name": "Function Agent",

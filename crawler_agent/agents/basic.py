@@ -52,24 +52,20 @@ class BasicAgent(BaseCrawlerAgent):
         
         prompt = f"""Extract the {config['object_description']} from the following HTML content.
 
-TARGET FIELDS TO EXTRACT:
-{chr(10).join(field_descriptions)}
-
-Please provide the extracted data in this JSON format:
-{{
-    "{object_name}": {{
-        "field_name": "extracted_value_or_null"
-    }}
-}}
-
-EXTRACTION GUIDELINES:
-- Extract data exactly as it appears in the HTML
-- Use null for missing or unclear data
-- Preserve original formatting and units for numbers
-- Return only the JSON response, no additional text
-
-HTML CONTENT:
-{html_content}"""
+        TARGET FIELDS TO EXTRACT:
+        {chr(10).join(field_descriptions)}
+        
+        Please provide the extracted data in this JSON format:
+        {{
+            "{object_name}": {{
+                "field_name": "extracted_value_or_null"
+            }}
+        }}
+        
+        - Return only the JSON response, no additional text
+        
+        HTML CONTENT:
+        {html_content}"""
         
         response = model.generate_content(prompt)
         

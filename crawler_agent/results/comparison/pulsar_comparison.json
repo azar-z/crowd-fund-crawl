@@ -2,7 +2,7 @@
   "basic_agent": {
     "agent_name": "Basic Agent",
     "success": true,
-    "processing_time": 2.1593434810638428,
+    "processing_time": 2.1282799243927,
     "data": {
       "project": {
         "name": "طرح تامین سرمایه در گردش خرید قطعات متصله کابین و ملحقات برای تولید خودروهای سنگین تجاری",
@@ -10,10 +10,11 @@
         "profit": "40",
         "guarantee": "بدون تضمین سود و با تضمین بانک سامان برای اصل سرمایه",
         "investment_amount": "250,000,000,000",
-        "duration": "12",
+        "duration": "12 ماه",
         "status": null
       }
-    }
+    },
+    "error": null
   },
   "function_agent": {
     "agent_name": "Function Agent",

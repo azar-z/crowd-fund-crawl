@@ -2,7 +2,7 @@
   "basic_agent": {
     "agent_name": "Basic Agent",
     "success": true,
-    "processing_time": 3.0729150772094727,
+    "processing_time": 3.430856466293335,
     "data": {
       "project": {
         "name": "تأمین سرمایه در گردش خریدوفروش انواع حبوبات",
@@ -10,10 +10,11 @@
         "profit": "43",
         "guarantee": "ضمانتنامه تعهد پرداخت بانک ملی",
         "investment_amount": "15 میلیارد",
-        "duration": "12",
+        "duration": "12 ماه",
         "status": "inProgress"
       }
-    }
+    },
+    "error": null
   },
   "function_agent": {
     "agent_name": "Function Agent",

@@ -2,18 +2,19 @@
   "basic_agent": {
     "agent_name": "Basic Agent",
     "success": true,
-    "processing_time": 3.593416690826416,
+    "processing_time": 3.4529454708099365,
     "data": {
       "project": {
         "name": "نگارین تکمیل یزد",
         "company": "نگارین تکمیل یزد",
         "profit": "43",
-        "guarantee": " بدون تضمین سود و با تضمین ( ضمانت نامه تعهد پرداخت ) برای اصل سرمایه ",
-        "investment_amount": "120,000,000,000",
+        "guarantee": "بدون تضمین سود و با تضمین ( ضمانت نامه تعهد پرداخت ) برای اصل سرمایه ",
+        "investment_amount": "72,000,000,000 ریال",
         "duration": "12 ماهه",
         "status": "موفقیت جمع آوری وجوه"
       }
-    }
+    },
+    "error": null
   },
   "function_agent": {
     "agent_name": "Function Agent",

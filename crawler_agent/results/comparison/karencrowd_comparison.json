@@ -2,7 +2,7 @@
   "basic_agent": {
     "agent_name": "Basic Agent",
     "success": true,
-    "processing_time": 2.2397258281707764,
+    "processing_time": 2.239224910736084,
     "data": {
       "project": {
         "name": "تولید و فروش انواع چسب پهن",
@@ -10,10 +10,11 @@
         "profit": "45",
         "guarantee": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق دولتی برای اصل سرمایه",
         "investment_amount": null,
-        "duration": "12 ماهه",
+        "duration": "12  ماهه",
         "status": "در حال اجرا"
       }
-    }
+    },
+    "error": null
   },
   "function_agent": {
     "agent_name": "Function Agent",

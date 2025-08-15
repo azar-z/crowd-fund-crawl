@@ -2,10 +2,10 @@
   "project": {
     "name": "تولید محتوای آموزشی",
     "company": "موسسه آموزشی راشد نوین رضوی",
-    "profit": 45,
-    "guarantee": "طرح تحت نظارت کارگزاری بورس و اوراق بهادار رضوی می باشد.",
-    "investment_amount": "117 میلیارد ریال",
-    "duration": "دوازده ماه",
+    "profit": "45",
+    "guarantee": null,
+    "investment_amount": "117,000,000,000",
+    "duration": "12 months",
     "status": "تکمیل‌سرمایه‌شده"
   }
 }

@@ -2,18 +2,19 @@
   "basic_agent": {
     "agent_name": "Basic Agent",
     "success": true,
-    "processing_time": 2.77306866645813,
+    "processing_time": 2.436344623565674,
     "data": {
       "project": {
         "name": "مشارکت در تولید و فروش بادی اسپلش",
         "company": "شمیم رایحه یاس نوین",
-        "profit": "43",
+        "profit": 43,
         "guarantee": "ضمانت‌نامه تعهد پرداخت صندوق ضمانت سرمایه‌گذاری صنایع کوچک برای اصل سرمایه",
         "investment_amount": "33,300,000,000",
         "duration": "12",
         "status": "موفق"
       }
-    }
+    },
+    "error": null
   },
   "function_agent": {
     "agent_name": "Function Agent",
