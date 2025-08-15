@@ -19,7 +19,7 @@ def find_validation_files():
 
     validation_files = []
     for filename in os.listdir(validation_dir):
-        if filename.endswith("_three_agents_validation.json"):
+        if filename.endswith("_validation.json"):
             filepath = os.path.join(validation_dir, filename)
             validation_files.append(filepath)
 
@@ -208,7 +208,7 @@ def save_scoring_report(agent_stats: Dict, project_details: List[Dict]):
     }
 
     # Save to file
-    report_file = "results/three_agent_scoring_report.json"
+    report_file = "results/scoring_report.json"
     with open(report_file, 'w', encoding='utf-8') as f:
         json.dump(report_data, f, indent=2, ensure_ascii=False)
 

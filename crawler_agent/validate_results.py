@@ -252,7 +252,7 @@ def save_validation_results(validation_results):
 
     validation_dir = create_validation_directory()
     project_name = validation_results["project_name"]
-    filename = f"{project_name}_three_agents_validation.json"
+    filename = f"{project_name}_validation.json"
     filepath = os.path.join(validation_dir, filename)
 
     with open(filepath, 'w', encoding='utf-8') as f:
