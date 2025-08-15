@@ -1,24 +1,27 @@
+#!/usr/bin/env python3
 """
-Comparison script to test both Simple and Advanced crawler agents.
+Simple comparison script for Basic, Function, and Expert crawler agents.
 """
 
 import os
 import json
 import time
 from dotenv import load_dotenv
-from crawler_agent.agents.simple import SimpleCrawlerAgent
-from crawler_agent.agents.advanced import AdvancedCrawlerAgent
+from crawler_agent.agents.basic import BasicAgent
+from crawler_agent.agents.function import FunctionAgent
+from crawler_agent.agents.expert import ExpertAgent
 
 
 def create_results_directory():
     """Create results directory structure if it doesn't exist."""
     directories = [
         "results",
-        "results/simple",
-        "results/advanced",
+        "results/basic",
+        "results/function",
+        "results/expert",
         "results/comparison"
     ]
-    
+
     for directory in directories:
         if not os.path.exists(directory):
             os.makedirs(directory)
@@ -26,311 +29,137 @@ def create_results_directory():
 
 
 def test_agent(agent, agent_name, input_file, config_file, output_file):
-    """
-    Test a single agent and return results with timing.
-    
-    Args:
-        agent: The crawler agent to test
-        agent_name (str): Name of the agent for logging
-        input_file (str): Path to input file (HTML or TXT)
-        config_file (str): Path to config file
-        output_file (str): Path to output file
-        
-    Returns:
-        dict: Test results with timing and success status
-    """
+    """Test a single agent and return results."""
     print(f"\n{'='*50}")
     print(f"🧪 Testing {agent_name}")
     print(f"{'='*50}")
-    
-    start_time = time.time()
-    
-    try:
-        # Remove existing output file if it exists
-        # if os.path.exists(output_file):
-        #     os.remove(output_file)
-        #     print(f"   🗑️ Removed existing output file: {output_file}")
 
+    start_time = time.time()
+
+    try:
         if not os.path.exists(output_file):
-        # Process and save results
             agent.process_and_save(input_file, config_file, output_file)
-        
+
         end_time = time.time()
         processing_time = end_time - start_time
-        
-        # Load and return the saved results
+
         if os.path.exists(output_file):
             with open(output_file, 'r', encoding='utf-8') as f:
                 saved_data = json.load(f)
-            
-            result = {
+
+            print(f"✅ {agent_name} completed in {processing_time:.2f} seconds")
+            return {
                 "agent_name": agent_name,
                 "success": True,
                 "processing_time": processing_time,
-                "output_file": output_file,
-                "data": saved_data,
-                "error": None
+                "data": saved_data
             }
         else:
-            result = {
+            print(f"❌ {agent_name} failed - no output file created")
+            return {
                 "agent_name": agent_name,
                 "success": False,
                 "processing_time": processing_time,
-                "output_file": output_file,
-                "data": None,
-                "error": "Output file not created"
+                "data": None
             }
-        
-        print(f"✅ {agent_name} completed in {processing_time:.2f} seconds")
-        return result
-        
+
     except Exception as e:
         end_time = time.time()
         processing_time = end_time - start_time
-        
-        result = {
+        print(f"❌ {agent_name} failed after {processing_time:.2f} seconds: {e}")
+        return {
             "agent_name": agent_name,
             "success": False,
             "processing_time": processing_time,
-            "output_file": output_file,
-            "data": None,
-            "error": str(e)
+            "data": None
         }
-        
-        print(f"❌ {agent_name} failed after {processing_time:.2f} seconds: {e}")
-        return result
 
 
-def compare_results(simple_result, advanced_result):
-    """
-    Compare results from both agents.
-    
-    Args:
-        simple_result (dict): Results from simple agent
-        advanced_result (dict): Results from advanced agent
-        
-    Returns:
-        dict: Comparison analysis
-    """
-    print(f"\n{'='*50}")
-    print("📊 COMPARISON ANALYSIS")
-    print(f"{'='*50}")
-    
-    comparison = {
-        "simple_agent": {
-            "success": simple_result["success"],
-            "processing_time": simple_result["processing_time"],
-            "error": simple_result["error"]
-        },
-        "advanced_agent": {
-            "success": advanced_result["success"],
-            "processing_time": advanced_result["processing_time"],
-            "error": advanced_result["error"]
-        },
-        "analysis": {}
-    }
-    
-    # Performance comparison
-    if simple_result["success"] and advanced_result["success"]:
-        time_diff = advanced_result["processing_time"] - simple_result["processing_time"]
-        comparison["analysis"]["speed"] = {
-            "simple_faster": time_diff > 0,
-            "time_difference": time_diff,
-            # "speed_ratio": advanced_result["processing_time"] / simple_result["processing_time"]
-        }
-        
-        print(f"⏱️ Speed Comparison:")
-        print(f"   Simple Agent: {simple_result['processing_time']:.2f}s")
-        print(f"   Advanced Agent: {advanced_result['processing_time']:.2f}s")
-        print(f"   Difference: {time_diff:+.2f}s")
-        
-        # Data quality comparison
-        simple_data = simple_result["data"]
-        advanced_data = advanced_result["data"]
-        
-        # Extract actual data (handle metadata wrapper)
-        if isinstance(advanced_data, dict) and "data" in advanced_data:
-            advanced_data = advanced_data["data"]
-        
-        # Helper function to flatten nested dictionaries
-        def flatten_dict(data, parent_key='', sep='.'):
-            items = []
-            if isinstance(data, dict):
-                for k, v in data.items():
-                    new_key = f"{parent_key}{sep}{k}" if parent_key else k
-                    if isinstance(v, dict):
-                        items.extend(flatten_dict(v, new_key, sep=sep).items())
-                    else:
-                        items.append((new_key, v))
-            else:
-                items.append((parent_key, data))
-            return dict(items)
-        
-        # Create unified field comparison with flattened fields
-        field_comparison = {}
-        if simple_data and advanced_data:
-            # Flatten both data structures
-            simple_flat = flatten_dict(simple_data) if simple_data else {}
-            advanced_flat = flatten_dict(advanced_data) if advanced_data else {}
-            
-            # Get all field paths from both datasets
-            all_fields = set(simple_flat.keys()) | set(advanced_flat.keys())
-            
-            for field in sorted(all_fields):
-                simple_val = simple_flat.get(field, None)
-                advanced_val = advanced_flat.get(field, None)
-                
-                # Determine comparison status
-                if simple_val == advanced_val:
-                    status = "MATCH"
-                elif simple_val is None:
-                    status = "ADVANCED_ONLY"
-                elif advanced_val is None:
-                    status = "SIMPLE_ONLY"
-                else:
-                    status = "DIFFERENT"
-                
-                field_comparison[field] = {
-                    "simple_value": simple_val,
-                    "advanced_value": advanced_val,
-                    "status": status,
-                    "match": status == "MATCH"
-                }
-        
-        # Count flattened fields for more accurate comparison
-        simple_flat_count = len(flatten_dict(simple_data)) if simple_data else 0
-        advanced_flat_count = len(flatten_dict(advanced_data)) if advanced_data else 0
-        
-        comparison["analysis"]["data_comparison"] = {
-            "simple_fields_count": simple_flat_count,
-            "advanced_fields_count": advanced_flat_count,
-            "simple_top_level_count": len(simple_data) if simple_data else 0,
-            "advanced_top_level_count": len(advanced_data) if advanced_data else 0,
-            "field_comparison": field_comparison,
-            "simple_data": simple_data,
-            "advanced_data": advanced_data
-        }
-        
-        print(f"\n📋 Data Quality Comparison:")
-        print(f"   Simple Agent extracted {simple_flat_count} fields ({len(simple_data) if simple_data else 0} top-level)")
-        print(f"   Advanced Agent extracted {advanced_flat_count} fields ({len(advanced_data) if advanced_data else 0} top-level)")
-        
-        # Field-by-field comparison display
-        if field_comparison:
-            print(f"\n🔍 Field-by-field comparison:")
-            
-            for field, comparison_data in field_comparison.items():
-                status = comparison_data["status"]
-                simple_val = comparison_data["simple_value"]
-                advanced_val = comparison_data["advanced_value"]
-                
-                # Display status with emojis
-                status_display = {
-                    "MATCH": "✅ MATCH",
-                    "ADVANCED_ONLY": "🆕 ADVANCED ONLY",
-                    "SIMPLE_ONLY": "🔶 SIMPLE ONLY",
-                    "DIFFERENT": "🔄 DIFFERENT"
-                }
-                
-                print(f"   {field}: {status_display[status]}")
-                if status != "MATCH":
-                    print(f"      Simple: {simple_val if simple_val is not None else '❌ MISSING'}")
-                    print(f"      Advanced: {advanced_val if advanced_val is not None else '❌ MISSING'}")
-    
-    elif simple_result["success"] and not advanced_result["success"]:
-        print("⚠️ Simple agent succeeded, but Advanced agent failed!")
-        comparison["analysis"]["winner"] = "simple"
-        
-    elif not simple_result["success"] and advanced_result["success"]:
-        print("🎉 Advanced agent succeeded, but Simple agent failed!")
-        comparison["analysis"]["winner"] = "advanced"
-        
-    else:
-        print("❌ Both agents failed!")
-        comparison["analysis"]["winner"] = "none"
-    
-    return comparison
+def compare_agents(project_name):
+    """Main function to test all three agents."""
+    print("🚀 Starting Three-Agent Comparison Test")
 
-
-def main(project_name):
-    """
-    Main function to run the agent comparison.
-    
-    Args:
-        project_name (str): Name of the project to test. Will look for either 
-                           {project_name}.html or {project_name}.txt in single_samples/
-    """
-    print(f"🚀 Starting Agent Comparison Test for project: {project_name}")
-    
     # Load environment variables
     load_dotenv()
     api_key = os.getenv("GEMINI_API_KEY")
     if not api_key:
         raise ValueError("GEMINI_API_KEY environment variable is not set.")
-    
+
     # Create results directory
     create_results_directory()
-    
-    # Define test files based on project name - support both .html and .txt
-    html_file = None
-    txt_file = None
-    
-    # Check for HTML file first
-    html_candidate = f"single_samples/{project_name}.html"
-    txt_candidate = f"single_samples/{project_name}.txt"
-    
-    if os.path.exists(html_candidate):
-        html_file = html_candidate
-        input_file = html_file
-        file_type = "HTML"
-    elif os.path.exists(txt_candidate):
-        txt_file = txt_candidate
-        input_file = txt_file
-        file_type = "TXT"
-    else:
-        raise FileNotFoundError(f"Neither HTML nor TXT file found for project: {project_name}\n"
-                               f"Checked: {html_candidate}, {txt_candidate}")
-    
+
+    # Configuration
+    html_file = f"single_samples/{project_name}.html"
     config_file = "configs/single_project_config.json"
-    
-    # Validate that config file exists
+
+    if not os.path.exists(html_file):
+        print(f"❌ HTML file not found: {html_file}")
+        return
     if not os.path.exists(config_file):
-        raise FileNotFoundError(f"Config file not found: {config_file}")
-    
-    print(f"📄 {file_type} file: {input_file}")
-    print(f"⚙️ Config file: {config_file}")
-    
-    # Output files based on project name
-    simple_output = f"results/simple/{project_name}_simple.json"
-    advanced_output = f"results/advanced/{project_name}_advanced.json"
-    comparison_output = f"results/comparison/{project_name}_comparison.json"
-    
+        print(f"❌ Config file not found: {config_file}")
+        return
+
+    print(f"📄 Testing with: {html_file}")
+    print(f"⚙️ Using config: {config_file}")
+
+    # Output files
+    basic_output = f"results/basic/{project_name}_basic.json"
+    function_output = f"results/function/{project_name}_function.json"
+    expert_output = f"results/expert/{project_name}_expert.json"
+
     # Initialize agents
-    print("🔧 Initializing agents...")
-    simple_agent = SimpleCrawlerAgent(api_key=api_key)
-    advanced_agent = AdvancedCrawlerAgent(api_key=api_key, max_retries=3, voting_rounds=3)
-    
-    # Test both agents
-    simple_result = test_agent(simple_agent, "Simple Agent", input_file, config_file, simple_output)
-    advanced_result = test_agent(advanced_agent, "Advanced Agent", input_file, config_file, advanced_output)
-    
-    # Compare results
-    comparison = compare_results(simple_result, advanced_result)
+    print("\n🔧 Initializing agents...")
+    basic_agent = BasicAgent(api_key=api_key)
+    function_agent = FunctionAgent(api_key=api_key)
+    expert_agent = ExpertAgent(api_key=api_key)
+
+    # Test all agents
+    basic_result = test_agent(basic_agent, "Basic Agent", html_file, config_file, basic_output)
+    function_result = test_agent(function_agent, "Function Agent", html_file, config_file, function_output)
+    expert_result = test_agent(expert_agent, "Expert Agent", html_file, config_file, expert_output)
+
+    # Summary
+    print(f"\n{'='*50}")
+    print("📊 COMPARISON SUMMARY")
+    print(f"{'='*50}")
+
+    agents = [basic_result, function_result, expert_result]
+    successful_agents = [a for a in agents if a["success"]]
+
+    print(f"✅ Successful agents: {len(successful_agents)}/3")
+    for agent in successful_agents:
+        print(f"   • {agent['agent_name']}: {agent['processing_time']:.2f}s")
+
+    if len(successful_agents) > 1:
+        # Find fastest
+        fastest = min(successful_agents, key=lambda x: x["processing_time"])
+        print(f"\n🏆 Fastest: {fastest['agent_name']} ({fastest['processing_time']:.2f}s)")
 
     # Save comparison results
+    comparison_output = f"results/comparison/{project_name}_comparison.json"
+    comparison_data = {
+        "basic_agent": basic_result,
+        "function_agent": function_result,
+        "expert_agent": expert_result,
+        "summary": {
+            "successful_count": len(successful_agents),
+            "total_count": 3,
+            "fastest_agent": fastest["agent_name"] if successful_agents else None
+        }
+    }
+
     with open(comparison_output, 'w', encoding='utf-8') as f:
-        json.dump(comparison, f, indent=2, ensure_ascii=False)
+        json.dump(comparison_data, f, indent=2, ensure_ascii=False)
 
-    print(f"\n💾 Comparison results saved to: {comparison_output}")
-    print(f"📁 Simple agent results: {simple_output}")
-    print(f"📁 Advanced agent results: {advanced_output}")
+    print(f"\n💾 Results saved:")
+    print(f"   📁 Basic: {basic_output}")
+    print(f"   📁 Function: {function_output}")
+    print(f"   📁 Expert: {expert_output}")
+    print(f"   📁 Comparison: {comparison_output}")
 
-    print(f"\n{'='*50}")
-    print("🏁 Comparison Complete!")
-    print(f"{'='*50}")
+    print(f"\n🏁 Three-Agent Comparison Complete!")
 
 
 if __name__ == "__main__":
-    project_name = "charisma"  # Will look for .html or .txt
-    main(project_name)
-
+    project_name = "ifund"
+    compare_agents(project_name)

@@ -37,8 +37,6 @@ class BaseCrawlerAgent(ABC):
         genai.configure(
             api_key=self.api_key,
             transport="rest",
-            # client_options=ClientOptions(api_endpoint="https://openrouter.ai/api/v1")
-            # client_options=ClientOptions(api_endpoint="https://api.gapgpt.app/")
         )
     
     @abstractmethod

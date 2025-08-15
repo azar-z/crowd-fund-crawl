@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 """
-Interactive validation script for agent extraction results.
+Interactive validation script for three-agent extraction results.
 Allows manual validation of each extracted field and saves results to validation files.
 """
 
 import os
 import json
-import sys
 import random
 from datetime import datetime
 
@@ -21,41 +20,46 @@ def create_validation_directory():
 
 
 def load_project_results(project_name):
-    """Load both simple and advanced agent results for a project."""
-    simple_file = f"results/simple/{project_name}_simple.json"
-    advanced_file = f"results/advanced/{project_name}_advanced.json"
-    
-    simple_data = None
-    advanced_data = None
-    
-    if os.path.exists(simple_file):
-        with open(simple_file, 'r', encoding='utf-8') as f:
-            simple_data = json.load(f)
-    
-    if os.path.exists(advanced_file):
-        with open(advanced_file, 'r', encoding='utf-8') as f:
-            advanced_data = json.load(f)
-    
-    return simple_data, advanced_data
+    """Load results from all three agents for a project."""
+    basic_file = f"results/basic/{project_name}_basic.json"
+    function_file = f"results/function/{project_name}_function.json"
+    expert_file = f"results/expert/{project_name}_expert.json"
+
+    basic_data = None
+    function_data = None
+    expert_data = None
+
+    if os.path.exists(basic_file):
+        with open(basic_file, 'r', encoding='utf-8') as f:
+            basic_data = json.load(f)
+
+    if os.path.exists(function_file):
+        with open(function_file, 'r', encoding='utf-8') as f:
+            function_data = json.load(f)
+
+    if os.path.exists(expert_file):
+        with open(expert_file, 'r', encoding='utf-8') as f:
+            expert_data = json.load(f)
+
+    return basic_data, function_data, expert_data
 
 
 def extract_project_fields(data):
     """Extract project fields from nested data structure."""
     if not data:
         return {}
-    
+
     # Handle different data structures
     if isinstance(data, dict):
-        if "data" in data and isinstance(data["data"], dict):
-            if "project" in data["data"]:
-                return data["data"]["project"]
-            else:
-                return data["data"]
-        elif "project" in data:
-            return data["project"]
-        else:
-            return data
-    
+        # Look for common object names
+        for key in ["project", "data", "product", "item"]:
+            if key in data:
+                if isinstance(data[key], dict):
+                    return data[key]
+
+        # If no nested structure, return the data itself
+        return data
+
     return {}
 
 
@@ -69,280 +73,241 @@ def format_field_value(field_value):
         return str(field_value)
 
 
-def get_user_validation_comparison(field_name, simple_value, advanced_value):
-    """Get user validation when comparing both agent results."""
+def get_user_validation_three_agents(field_name, basic_value, function_value, expert_value):
+    """Get user validation for three agent results."""
     print(f"\n📋 Field: {field_name}")
-    
-    simple_display = format_field_value(simple_value)
-    advanced_display = format_field_value(advanced_value)
-    
-    # Check if values are the same (considering None and empty string differences)
-    values_are_same = False
-    if simple_value == advanced_value:
-        values_are_same = True
-    elif (simple_value is None and advanced_value == "") or (advanced_value is None and simple_value == ""):
-        values_are_same = True
-    elif isinstance(simple_value, str) and isinstance(advanced_value, str):
-        if simple_value.strip() == advanced_value.strip():
-            values_are_same = True
-    
-    if values_are_same:
-        # Show single value with t/f options
-        print(f"🤖 Both agents: {simple_display}")
-        
+
+    basic_display = format_field_value(basic_value)
+    function_display = format_field_value(function_value)
+    expert_display = format_field_value(expert_value)
+
+    # Check if all values are the same
+    values = [basic_value, function_value, expert_value]
+    displays = [basic_display, function_display, expert_display]
+
+    # Normalize for comparison (handle None vs empty string)
+    normalized_values = []
+    for val in values:
+        if val is None or (isinstance(val, str) and val.strip() == ""):
+            normalized_values.append(None)
+        elif isinstance(val, str):
+            normalized_values.append(val.strip())
+        else:
+            normalized_values.append(val)
+
+    # Check if all are the same
+    if len(set(str(v) for v in normalized_values)) == 1:
+        # All agents have the same value
+        print(f"🤖 All agents: {basic_display}")
+
         while True:
             user_input = input("✅ Is this correct? (t=true/f=false/s=skip): ").lower().strip()
             if user_input in ['t', 'true']:
-                return True, True  # Both correct
+                return [True, True, True]  # All correct
             elif user_input in ['f', 'false']:
-                return False, False  # Both incorrect
+                return [False, False, False]  # All incorrect
             elif user_input in ['s', 'skip']:
-                return None, None  # Both skipped
+                return [None, None, None]  # All skipped
             else:
-                print("⚠️ Please enter 't' for true, 'f' for false, or 's' to skip")
+                print("❌ Invalid input. Please use 't', 'f', or 's'.")
+
     else:
-        # Randomize the order to avoid bias
-        if random.choice([True, False]):
-            # Simple first
-            print(f"🤖 Agent 1: {simple_display}")
-            print(f"🤖 Agent 2: {advanced_display}")
-            first_is_simple = True
-        else:
-            # Advanced first
-            print(f"🤖 Agent 1: {advanced_display}")
-            print(f"🤖 Agent 2: {simple_display}")
-            first_is_simple = False
-        
+        # Values differ - show all three with randomized order
+        agents = ["Basic", "Function", "Expert"]
+        agent_values = [basic_value, function_value, expert_value]
+        agent_displays = [basic_display, function_display, expert_display]
+
+        # Create randomized display order
+        combined = list(zip(agents, agent_values, agent_displays))
+        random.shuffle(combined)
+
+        # Track which positions correspond to which agents
+        position_to_agent = {}
+
+        print("🤖 Agent results:")
+        for i, (agent, value, display) in enumerate(combined, 1):
+            print(f"   {i}. {display}")
+            # Find original agent index
+            original_idx = agents.index(agent)
+            position_to_agent[i] = original_idx
+
         while True:
-            user_input = input("✅ Which is correct? (1=first/2=second/b=both/n=neither/s=skip): ").lower().strip()
-            if user_input == '1':
-                if first_is_simple:
-                    return True, False  # Simple correct, Advanced incorrect
-                else:
-                    return False, True  # Simple incorrect, Advanced correct
-            elif user_input == '2':
-                if first_is_simple:
-                    return False, True  # Simple incorrect, Advanced correct
-                else:
-                    return True, False  # Simple correct, Advanced incorrect
-            elif user_input in ['b', 'both']:
-                return True, True  # Both correct
-            elif user_input in ['n', 'neither']:
-                return False, False  # Both incorrect
-            elif user_input in ['s', 'skip']:
-                return None, None  # Both skipped
+            user_input = input("✅ Which are correct? (1/2/3/multiple like '1,3'/none/skip): ").lower().strip()
+
+            if user_input == 'skip' or user_input == 's':
+                return [None, None, None]
+            elif user_input == 'none' or user_input == 'n':
+                return [False, False, False]
             else:
-                print("⚠️ Please enter '1', '2', 'b' (both), 'n' (neither), or 's' (skip)")
+                try:
+                    # Parse selection
+                    if ',' in user_input:
+                        selections = [int(x.strip()) for x in user_input.split(',')]
+                    else:
+                        selections = [int(user_input)]
+
+                    # Validate selections
+                    if all(1 <= sel <= 3 for sel in selections):
+                        # Initialize all as False
+                        results = [False, False, False]
+
+                        # Mark selected positions as True
+                        for sel in selections:
+                            original_agent_idx = position_to_agent[sel]
+                            results[original_agent_idx] = True
+
+                        return results
+                    else:
+                        print("❌ Invalid selection. Use numbers 1-3.")
+
+                except ValueError:
+                    print("❌ Invalid input. Use numbers or 'skip'/'none'.")
 
 
 def validate_project(project_name):
-    """Validate extraction results for a single project."""
-    print(f"\n{'='*60}")
-    print(f"🔍 VALIDATING PROJECT: {project_name.upper()}")
-    print(f"{'='*60}")
-    
-    # Load project results
-    simple_data, advanced_data = load_project_results(project_name)
-    
-    if not simple_data and not advanced_data:
-        print(f"❌ No results found for project: {project_name}")
+    """Validate extraction results for a project."""
+    print(f"\n{'=' * 60}")
+    print(f"🔍 VALIDATING PROJECT: {project_name}")
+    print(f"{'=' * 60}")
+
+    # Load data from all three agents
+    basic_data, function_data, expert_data = load_project_results(project_name)
+
+    if not any([basic_data, function_data, expert_data]):
+        print(f"❌ No data found for project '{project_name}'")
         return None
-    
+
     # Extract project fields
-    simple_fields = extract_project_fields(simple_data)
-    advanced_fields = extract_project_fields(advanced_data)
-    
+    basic_fields = extract_project_fields(basic_data)
+    function_fields = extract_project_fields(function_data)
+    expert_fields = extract_project_fields(expert_data)
+
+    print(f"📊 Data loaded:")
+    print(f"   Basic Agent: {'✅' if basic_data else '❌'} ({len(basic_fields)} fields)")
+    print(f"   Function Agent: {'✅' if function_data else '❌'} ({len(function_fields)} fields)")
+    print(f"   Expert Agent: {'✅' if expert_data else '❌'} ({len(expert_fields)} fields)")
+
     # Get all unique field names
     all_fields = set()
-    if simple_fields:
-        all_fields.update(simple_fields.keys())
-    if advanced_fields:
-        all_fields.update(advanced_fields.keys())
-    
+    all_fields.update(basic_fields.keys())
+    all_fields.update(function_fields.keys())
+    all_fields.update(expert_fields.keys())
+
     if not all_fields:
-        print(f"❌ No fields found in results for project: {project_name}")
+        print("❌ No fields found to validate")
         return None
-    
-    # Initialize validation results
+
+    print(f"\n🎯 Total fields to validate: {len(all_fields)}")
+    print("📝 Instructions:")
+    print("   • When values are same: t=true, f=false, s=skip")
+    print("   • When values differ: select correct numbers (e.g., '1', '1,3', 'none')")
+
+    # Validation results
     validation_results = {
         "project_name": project_name,
-        "validation_timestamp": datetime.now().isoformat(),
-        "simple_agent": {
-            "available": simple_data is not None,
-            "field_validations": {}
-        },
-        "advanced_agent": {
-            "available": advanced_data is not None,
-            "field_validations": {}
-        }
+        "validation_date": datetime.now().isoformat(),
+        "basic_agent": {"correct": 0, "incorrect": 0, "skipped": 0},
+        "function_agent": {"correct": 0, "incorrect": 0, "skipped": 0},
+        "expert_agent": {"correct": 0, "incorrect": 0, "skipped": 0},
+        "field_validations": {}
     }
-    
-    print(f"📊 Found {len(all_fields)} fields to validate: {', '.join(sorted(all_fields))}")
-    print(f"🤖 Simple Agent: {'✅ Available' if simple_data else '❌ Not available'}")
-    print(f"🤖 Advanced Agent: {'✅ Available' if advanced_data else '❌ Not available'}")
-    
-    # Validate each field for both agents
+
+    # Validate each field
     for field_name in sorted(all_fields):
-        print(f"\n{'-'*40}")
-        print(f"🔍 VALIDATING FIELD: {field_name}")
-        print(f"{'-'*40}")
-        
-        # Get values from both agents
-        simple_value = simple_fields.get(field_name) if simple_data else None
-        advanced_value = advanced_fields.get(field_name) if advanced_data else None
-        
-        # Handle cases where only one agent has data
-        if simple_data and not advanced_data:
-            # Only simple agent available
-            simple_display = format_field_value(simple_value)
-            print(f"🤖 Simple Agent: {simple_display}")
-            
-            while True:
-                user_input = input("✅ Is this correct? (t=true/f=false/s=skip): ").lower().strip()
-                if user_input in ['t', 'true']:
-                    simple_validation = True
-                    break
-                elif user_input in ['f', 'false']:
-                    simple_validation = False
-                    break
-                elif user_input in ['s', 'skip']:
-                    simple_validation = None
-                    break
-                else:
-                    print("⚠️ Please enter 't' for true, 'f' for false, or 's' to skip")
-            
-            validation_results["simple_agent"]["field_validations"][field_name] = {
-                "value": simple_value,
-                "is_correct": simple_validation
-            }
-            
-        elif advanced_data and not simple_data:
-            # Only advanced agent available
-            advanced_display = format_field_value(advanced_value)
-            print(f"🤖 Advanced Agent: {advanced_display}")
-            
-            while True:
-                user_input = input("✅ Is this correct? (t=true/f=false/s=skip): ").lower().strip()
-                if user_input in ['t', 'true']:
-                    advanced_validation = True
-                    break
-                elif user_input in ['f', 'false']:
-                    advanced_validation = False
-                    break
-                elif user_input in ['s', 'skip']:
-                    advanced_validation = None
-                    break
-                else:
-                    print("⚠️ Please enter 't' for true, 'f' for false, or 's' to skip")
-            
-            validation_results["advanced_agent"]["field_validations"][field_name] = {
-                "value": advanced_value,
-                "is_correct": advanced_validation
-            }
-            
-        elif simple_data and advanced_data:
-            # Both agents available - use comparison function
-            simple_validation, advanced_validation = get_user_validation_comparison(
-                field_name, simple_value, advanced_value
-            )
-            
-            validation_results["simple_agent"]["field_validations"][field_name] = {
-                "value": simple_value,
-                "is_correct": simple_validation
-            }
-            validation_results["advanced_agent"]["field_validations"][field_name] = {
-                "value": advanced_value,
-                "is_correct": advanced_validation
-            }
-    
+        basic_value = basic_fields.get(field_name)
+        function_value = function_fields.get(field_name)
+        expert_value = expert_fields.get(field_name)
+
+        # Get user validation
+        results = get_user_validation_three_agents(field_name, basic_value, function_value, expert_value)
+
+        # Store results
+        validation_results["field_validations"][field_name] = {
+            "basic_value": basic_value,
+            "function_value": function_value,
+            "expert_value": expert_value,
+            "basic_correct": results[0],
+            "function_correct": results[1],
+            "expert_correct": results[2]
+        }
+
+        # Update counters
+        for i, (agent_key, result) in enumerate(zip(
+                ["basic_agent", "function_agent", "expert_agent"], results
+        )):
+            if result is True:
+                validation_results[agent_key]["correct"] += 1
+            elif result is False:
+                validation_results[agent_key]["incorrect"] += 1
+            else:  # None (skipped)
+                validation_results[agent_key]["skipped"] += 1
+
     return validation_results
 
 
-def save_validation_results(validation_results, validation_dir):
-    """Save validation results to a JSON file."""
+def save_validation_results(validation_results):
+    """Save validation results to file."""
     if not validation_results:
-        return None
-    
+        return
+
+    validation_dir = create_validation_directory()
     project_name = validation_results["project_name"]
-    validation_file = os.path.join(validation_dir, f"{project_name}_validation.json")
-    
-    with open(validation_file, 'w', encoding='utf-8') as f:
+    filename = f"{project_name}_three_agents_validation.json"
+    filepath = os.path.join(validation_dir, filename)
+
+    with open(filepath, 'w', encoding='utf-8') as f:
         json.dump(validation_results, f, indent=2, ensure_ascii=False)
-    
-    print(f"\n💾 Validation results saved to: {validation_file}")
-    return validation_file
+
+    print(f"\n💾 Validation results saved to: {filepath}")
 
 
 def print_validation_summary(validation_results):
     """Print a summary of validation results."""
     if not validation_results:
         return
-    
-    print(f"\n📊 VALIDATION SUMMARY FOR {validation_results['project_name'].upper()}")
-    print("=" * 50)
-    
-    for agent_name in ["simple_agent", "advanced_agent"]:
-        agent_data = validation_results[agent_name]
-        if not agent_data["available"]:
-            print(f"🤖 {agent_name.replace('_', ' ').title()}: Not available")
-            continue
-        
-        validations = agent_data["field_validations"]
-        correct_count = sum(1 for v in validations.values() if v["is_correct"] is True)
-        incorrect_count = sum(1 for v in validations.values() if v["is_correct"] is False)
-        skipped_count = sum(1 for v in validations.values() if v["is_correct"] is None)
-        total_count = len(validations)
-        
-        print(f"🤖 {agent_name.replace('_', ' ').title()}:")
-        print(f"   ✅ Correct: {correct_count}/{total_count}")
-        print(f"   ❌ Incorrect: {incorrect_count}/{total_count}")
-        print(f"   ⏭️ Skipped: {skipped_count}/{total_count}")
-        if total_count > 0:
-            accuracy = (correct_count / (correct_count + incorrect_count)) * 100 if (correct_count + incorrect_count) > 0 else 0
-            print(f"   📈 Accuracy: {accuracy:.1f}% (excluding skipped)")
+
+    print(f"\n{'=' * 60}")
+    print("📊 VALIDATION SUMMARY")
+    print(f"{'=' * 60}")
+
+    agents = ["basic_agent", "function_agent", "expert_agent"]
+    agent_names = ["Basic Agent", "Function Agent", "Expert Agent"]
+
+    for agent_key, agent_name in zip(agents, agent_names):
+        stats = validation_results[agent_key]
+        total = stats["correct"] + stats["incorrect"] + stats["skipped"]
+        evaluated = stats["correct"] + stats["incorrect"]
+
+        if evaluated > 0:
+            accuracy = (stats["correct"] / evaluated) * 100
+            print(f"\n🤖 {agent_name}:")
+            print(f"   ✅ Correct: {stats['correct']}")
+            print(f"   ❌ Incorrect: {stats['incorrect']}")
+            print(f"   ⏭️ Skipped: {stats['skipped']}")
+            print(f"   📊 Accuracy: {accuracy:.1f}% ({stats['correct']}/{evaluated})")
+        else:
+            print(f"\n🤖 {agent_name}: No evaluations (all skipped)")
 
 
 def main(project_name):
-    """Main function to run interactive validation."""
+    print("🎯 Three-Agent Validation Tool")
+    print("=" * 40)
 
-    print("🚀 AGENT RESULTS VALIDATION SYSTEM")
-    print("=" * 50)
-    print("This script helps you validate the accuracy of agent extractions.")
-    print("")
-    print("🔍 Validation Options:")
-    print("  • When values are the same: t=true, f=false, s=skip")
-    print("  • When values differ: 1=first, 2=second, b=both correct, n=neither, s=skip")
-    print("  • Agents are shown as 'Agent 1' and 'Agent 2' (order is randomized)")
-    print("")
-    
-    # Create validation directory
-    validation_dir = create_validation_directory()
-    
-    # Check if validation already exists
-    existing_validation = os.path.join(validation_dir, f"{project_name}_validation.json")
-    if os.path.exists(existing_validation):
-        overwrite = input(f"\n⚠️ Validation file already exists: {existing_validation}\nOverwrite? (y/n): ")
-        if overwrite.lower().strip() not in ['y', 'yes']:
-            print("❌ Validation cancelled.")
-            sys.exit(0)
-    
-    # Validate project
+    # Validate the project
     validation_results = validate_project(project_name)
-    
+
     if validation_results:
         # Save results
-        save_validation_results(validation_results, validation_dir)
-        
+        save_validation_results(validation_results)
+
         # Print summary
         print_validation_summary(validation_results)
-        
-        print(f"\n🎉 Validation completed for project: {project_name}")
-        print("Use the scoring script to calculate overall scores across projects.")
+
+        print(f"\n🏁 Validation complete for project: {project_name}")
     else:
-        print(f"❌ Validation failed for project: {project_name}")
-        sys.exit(1)
+        print(f"\n❌ Validation failed for project: {project_name}")
 
 
 if __name__ == "__main__":
-    project_name = "halalfund"
+    project_name = "ifund"
     main(project_name)

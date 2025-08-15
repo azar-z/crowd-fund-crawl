@@ -1,5 +1,5 @@
 """
-BasicCrawlerAgent implementation for structured data extraction from HTML.
+FunctionAgent implementation for structured data extraction from HTML using function calling.
 """
 
 import json
@@ -9,10 +9,10 @@ from crawler_agent.agents.base import BaseCrawlerAgent
 from crawler_agent.utils import create_function_declaration_from_config
 
 
-class SimpleCrawlerAgent(BaseCrawlerAgent):
+class FunctionAgent(BaseCrawlerAgent):
     """
-    Basic implementation of CrawlerAgent for extracting structured data from HTML
-    using Google's Generative AI with dynamic function declarations.
+    Function-based implementation of CrawlerAgent for extracting structured data from HTML
+    using Google's Generative AI with dynamic function declarations and tool calling.
     """
     
     def process_html(self, html_file_path: str, config_file_path: str):
@@ -42,7 +42,7 @@ class SimpleCrawlerAgent(BaseCrawlerAgent):
             )
         ]
 
-        # Define system prompt with role-based instructions
+        # Define system prompt for Function Agent role
         system_prompt = """You are a Web Data Extraction Agent."""
 
         model = genai.GenerativeModel(
