@@ -5,7 +5,6 @@ AdvancedCrawlerAgent implementation with multiple accuracy improvement technique
 import json
 import re
 from typing import Dict, Any, List, Tuple
-from collections import Counter
 from google.generativeai.types import Tool
 import google.generativeai as genai
 from crawler_agent.agents.base import BaseCrawlerAgent
@@ -191,20 +190,23 @@ class AdvancedCrawlerAgent(BaseCrawlerAgent):
             if self.debug_mode:
                 print(f"   🔍 Validating field quality: {data_dict}")
             
-            # Extract the actual project data - handle nested structure
-            project_data = data_dict
-            if config["object_name"] in data_dict:
-                project_data = data_dict[config["object_name"]]
-            elif "project" in data_dict:
-                project_data = data_dict["project"]
+            # Extract the actual data - handle nested structure using config object_name
+            object_name = config.get("object_name", "data")
+            extracted_data = data_dict
+            
+            if object_name in data_dict:
+                extracted_data = data_dict[object_name]
+            elif isinstance(data_dict, dict) and len(data_dict) == 1:
+                # If there's only one top-level key, use its value
+                extracted_data = list(data_dict.values())[0]
             
             if self.debug_mode:
-                print(f"   🔍 Object name from config: {config['object_name']}")
+                print(f"   🔍 Object name from config: {object_name}")
                 print(f"   🔍 Data dict keys: {list(data_dict.keys())}")
-                print(f"   🔍 Project data: {project_data}")
-                print(f"   🔍 Project data type: {type(project_data)}")
-                if isinstance(project_data, dict):
-                    print(f"   🔍 Project data keys: {list(project_data.keys())}")
+                print(f"   🔍 Extracted data: {extracted_data}")
+                print(f"   🔍 Extracted data type: {type(extracted_data)}")
+                if isinstance(extracted_data, dict):
+                    print(f"   🔍 Extracted data keys: {list(extracted_data.keys())}")
             
             issues = []
             total_fields = len(config["fields"])
@@ -212,7 +214,7 @@ class AdvancedCrawlerAgent(BaseCrawlerAgent):
             quality_score = 0.0
             
             for field_name, field_config in config["fields"].items():
-                field_value = project_data.get(field_name)
+                field_value = extracted_data.get(field_name) if isinstance(extracted_data, dict) else None
                 field_score = 0.0
                 
                 # Check if required field is present
@@ -366,12 +368,13 @@ class AdvancedCrawlerAgent(BaseCrawlerAgent):
             d[parts[-1]] = value
         return result
     
-    def _intelligent_merge(self, extractions: List[Tuple[Any, float]]) -> Any:
+    def _intelligent_merge(self, extractions: List[Tuple[Any, float]], config: Dict) -> Any:
         """
         Intelligently merge multiple extractions with confidence weighting.
         
         Args:
             extractions (List[Tuple[Any, float]]): List of (extraction, confidence) tuples
+            config (Dict): Configuration containing object_name for structure
             
         Returns:
             Any: Best merged extraction
@@ -385,46 +388,50 @@ class AdvancedCrawlerAgent(BaseCrawlerAgent):
         # Sort by confidence (highest first)
         extractions.sort(key=lambda x: x[1], reverse=True)
         
-        # Convert all extractions to dictionaries and extract project data
-        processed_project_data = []
+        # Convert all extractions to dictionaries and extract data using config object_name
+        object_name = config.get("object_name", "data")
+        processed_data = []
         for extraction, confidence in extractions:
             if extraction:
                 try:
                     data_dict = proto_to_dict(extraction)
-                    # Extract the project data from nested structure
+                    # Extract the data from nested structure using config object_name
                     if isinstance(data_dict, dict):
-                        if "project" in data_dict:
-                            project_data = data_dict["project"]
+                        if object_name in data_dict:
+                            data = data_dict[object_name]
+                        elif len(data_dict) == 1:
+                            # If there's only one top-level key, use its value
+                            data = list(data_dict.values())[0]
                         else:
-                            # Assume the whole dict is the project data
-                            project_data = data_dict
-                        processed_project_data.append((project_data, confidence))
+                            # Assume the whole dict is the data
+                            data = data_dict
+                        processed_data.append((data, confidence))
                 except Exception as e:
                     if self.debug_mode:
                         print(f"   ⚠️ Failed to process extraction: {e}")
                     continue
         
-        if not processed_project_data:
+        if not processed_data:
             return None
         
         # Start with the highest confidence extraction as base
-        base_project_data = processed_project_data[0][0].copy()
-        highest_confidence = processed_project_data[0][1]
+        base_data = processed_data[0][0].copy()
+        highest_confidence = processed_data[0][1]
         
         if self.debug_mode:
-            print(f"   📊 Base extraction (confidence: {highest_confidence:.2f}): {base_project_data}")
+            print(f"   📊 Base extraction (confidence: {highest_confidence:.2f}): {base_data}")
         
         # Enhance with better values from other extractions
-        for project_data, confidence in processed_project_data[1:]:
-            for field_name, field_value in project_data.items():
-                current_value = base_project_data.get(field_name)
+        for data, confidence in processed_data[1:]:
+            for field_name, field_value in data.items():
+                current_value = base_data.get(field_name)
                 
                 # Replace current value if:
                 # 1. Current field is missing or null
                 # 2. Current field is shorter text and new one is longer
                 # 3. Current field has error indicators
                 should_replace = False
-                
+                reason = ""
                 if current_value is None and field_value is not None:
                     should_replace = True
                     reason = "filling missing field"
@@ -439,12 +446,12 @@ class AdvancedCrawlerAgent(BaseCrawlerAgent):
                         reason = "using more complete text"
                 
                 if should_replace:
-                    base_project_data[field_name] = field_value
+                    base_data[field_name] = field_value
                     if self.debug_mode:
                         print(f"   🔄 Updated {field_name}: {reason}")
         
-        # Return in the expected nested format
-        final_result = {"project": base_project_data}
+        # Return the expected nested format using config object_name
+        final_result = {object_name: base_data}
         
         if self.debug_mode:
             print(f"   ✅ Final merged result: {final_result}")
@@ -502,7 +509,7 @@ class AdvancedCrawlerAgent(BaseCrawlerAgent):
         
         # Step 3: Intelligent merging instead of simple voting
         if extractions_with_confidence:
-            final_result = self._intelligent_merge(extractions_with_confidence)
+            final_result = self._intelligent_merge(extractions_with_confidence, config)
             avg_confidence = sum(conf for _, conf in extractions_with_confidence) / len(extractions_with_confidence)
             
             if self.debug_mode:
