@@ -42,9 +42,13 @@ class SimpleCrawlerAgent(BaseCrawlerAgent):
             )
         ]
 
+        # Define system prompt with role-based instructions
+        system_prompt = """You are a Web Data Extraction Agent."""
+
         model = genai.GenerativeModel(
             model_name=self.model_name,
-            tools=tools
+            tools=tools,
+            system_instruction=system_prompt
         )
 
         prompt = f"Use the function `{config['function_name']}` to return the {config['object_description']} from the following HTML. " \

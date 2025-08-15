@@ -87,7 +87,15 @@ class AdvancedCrawlerAgent(BaseCrawlerAgent):
             function_declaration = create_function_declaration_from_config(config)
             
             tools = [Tool(function_declarations=[function_declaration])]
-            model = genai.GenerativeModel(model_name=self.model_name, tools=tools)
+            
+            # Define system prompt for Advanced Agent role
+            system_prompt = """You are a Web Data Extraction Agent."""
+            
+            model = genai.GenerativeModel(
+                model_name=self.model_name, 
+                tools=tools,
+                system_instruction=system_prompt
+            )
             
             # Build field-specific guidance
             field_guidance = []
