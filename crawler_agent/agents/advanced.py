@@ -110,7 +110,7 @@ class AdvancedCrawlerAgent(BaseCrawlerAgent):
                 - Extract ALL available information for each field
                 - Use exact text from the HTML when possible
                 - If a field is not found, set it to null
-                - Pay special attention to numerical values (preserve formatting)
+                - Pay special attention to numerical values (preserve formatting and units)
                 - Look for complete text in guarantee/description fields
                 
                 HTML:
