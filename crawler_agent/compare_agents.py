@@ -78,6 +78,10 @@ def test_agent(agent, agent_name, input_file, config_file, output_file):
 def compare_agents(project_name):
     """Main function to test all three agents."""
     print("🚀 Starting Three-Agent Comparison Test")
+    comparison_output = f"results/comparison/{project_name}_comparison.json"
+    if os.path.exists(comparison_output):
+        print(f"Comparison file already exists. Skipping {project_name} comparison")
+        return
 
     # Load environment variables
     load_dotenv()
@@ -136,7 +140,6 @@ def compare_agents(project_name):
         print(f"\n🏆 Fastest: {fastest['agent_name']} ({fastest['processing_time']:.2f}s)")
 
     # Save comparison results
-    comparison_output = f"results/comparison/{project_name}_comparison.json"
     comparison_data = {
         "basic_agent": basic_result,
         "function_agent": function_result,
@@ -160,6 +163,102 @@ def compare_agents(project_name):
     print(f"\n🏁 Three-Agent Comparison Complete!")
 
 
+def compare_all_projects():
+    """Compare all three agents for all projects in single_samples folder."""
+    print("🚀 Starting Batch Comparison for All Projects")
+    print("=" * 60)
+    
+    # Get all project names from single_samples folder
+    single_samples_dir = "single_samples"
+    if not os.path.exists(single_samples_dir):
+        print(f"❌ Directory not found: {single_samples_dir}")
+        return
+    
+    # Find all HTML files and extract project names
+    project_names = []
+    for filename in os.listdir(single_samples_dir):
+        if filename.endswith('.html'):
+            project_name = filename[:-5]  # Remove .html extension
+            project_names.append(project_name)
+    
+    if not project_names:
+        print(f"❌ No HTML files found in {single_samples_dir}")
+        return
+    
+    project_names.sort()  # Sort alphabetically for consistent processing
+    
+    print(f"📁 Found {len(project_names)} projects:")
+    for i, project_name in enumerate(project_names, 1):
+        print(f"   {i}. {project_name}")
+    
+    print(f"\n⏱️ Starting batch processing...")
+    
+    # Track overall results
+    overall_results = []
+    successful_projects = 0
+    failed_projects = 0
+    
+    start_time = time.time()
+    
+    # Process each project
+    for i, project_name in enumerate(project_names, 1):
+        print(f"\n{'🔄' * 60}")
+        print(f"📋 Processing Project {i}/{len(project_names)}: {project_name}")
+        print(f"{'🔄' * 60}")
+        
+        try:
+            # Run comparison for this project
+            compare_agents(project_name)
+            successful_projects += 1
+            overall_results.append({"project": project_name, "status": "success"})
+            
+        except Exception as e:
+            print(f"❌ Failed to process {project_name}: {e}")
+            failed_projects += 1
+            overall_results.append({"project": project_name, "status": "failed", "error": str(e)})
+        
+        # Progress indicator
+        remaining = len(project_names) - i
+        if remaining > 0:
+            print(f"\n⏳ {remaining} projects remaining...")
+    
+    # Final summary
+    end_time = time.time()
+    total_time = end_time - start_time
+    
+    print(f"\n{'🏁' * 60}")
+    print("📊 BATCH PROCESSING COMPLETE")
+    print(f"{'🏁' * 60}")
+    
+    print(f"✅ Successful projects: {successful_projects}")
+    print(f"❌ Failed projects: {failed_projects}")
+    print(f"📈 Total projects: {len(project_names)}")
+    print(f"⏱️ Total processing time: {total_time:.2f} seconds")
+    print(f"⚡ Average time per project: {total_time/len(project_names):.2f} seconds")
+    
+    # Save batch summary
+    batch_summary = {
+        "batch_date": time.strftime("%Y-%m-%d %H:%M:%S"),
+        "total_projects": len(project_names),
+        "successful_projects": successful_projects,
+        "failed_projects": failed_projects,
+        "total_time_seconds": total_time,
+        "average_time_per_project": total_time / len(project_names),
+        "project_results": overall_results
+    }
+    
+    batch_summary_file = "results/comparison/batch_summary.json"
+    with open(batch_summary_file, 'w', encoding='utf-8') as f:
+        json.dump(batch_summary, f, indent=2, ensure_ascii=False)
+    
+    print(f"\n💾 Batch summary saved to: {batch_summary_file}")
+    
+    if failed_projects > 0:
+        print(f"\n⚠️ Failed projects:")
+        for result in overall_results:
+            if result["status"] == "failed":
+                print(f"   • {result['project']}: {result.get('error', 'Unknown error')}")
+
+
 if __name__ == "__main__":
-    project_name = "ifund"
-    compare_agents(project_name)
+    compare_all_projects()

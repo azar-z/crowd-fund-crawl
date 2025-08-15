@@ -308,6 +308,128 @@ def main(project_name):
         print(f"\n❌ Validation failed for project: {project_name}")
 
 
+def validate_all_projects():
+    """Validate all projects that have comparison results."""
+    print("🚀 Starting Batch Validation for All Projects")
+    print("=" * 60)
+    
+    # Get all projects that have comparison results
+    comparison_dir = "results/comparison"
+    if not os.path.exists(comparison_dir):
+        print(f"❌ Comparison directory not found: {comparison_dir}")
+        print("💡 Run comparison first using: python compare_agents.py")
+        return
+    
+    # Find all comparison files and extract project names
+    project_names = []
+    for filename in os.listdir(comparison_dir):
+        if filename.endswith('_comparison.json') and filename != 'batch_summary.json':
+            project_name = filename[:-16]  # Remove _comparison.json
+            project_names.append(project_name)
+    
+    if not project_names:
+        print(f"❌ No comparison files found in {comparison_dir}")
+        print("💡 Run comparison first using: python compare_agents.py")
+        return
+    
+    project_names.sort()  # Sort alphabetically for consistent processing
+    
+    print(f"📁 Found {len(project_names)} projects with results:")
+    for i, project_name in enumerate(project_names, 1):
+        print(f"   {i}. {project_name}")
+    
+    # Check which projects already have validations
+    validation_dir = "results/validation"
+    existing_validations = []
+    pending_validations = []
+    
+    for project_name in project_names:
+        validation_file = os.path.join(validation_dir, f"{project_name}_validation.json")
+        if os.path.exists(validation_file):
+            existing_validations.append(project_name)
+        else:
+            pending_validations.append(project_name)
+    
+    if existing_validations:
+        print(f"\n✅ Projects with existing validations ({len(existing_validations)}):")
+        for project_name in existing_validations:
+            print(f"   • {project_name}")
+    
+    if not pending_validations:
+        print(f"\n🎉 All projects already validated!")
+        return
+    
+    print(f"\n⏳ Projects pending validation ({len(pending_validations)}):")
+    for i, project_name in enumerate(pending_validations, 1):
+        print(f"   {i}. {project_name}")
+    
+    print(f"\n📝 Batch Validation Instructions:")
+    print("   • This is interactive - you'll validate each field manually")
+    print("   • When values are same: t=true, f=false, s=skip")
+    print("   • When values differ: select correct numbers (e.g., '1', '1,3', 'none')")
+    print("   • You can quit anytime with Ctrl+C")
+    
+    proceed = input(f"\n🤔 Proceed with validating {len(pending_validations)} projects? (y/n): ").lower().strip()
+    if proceed not in ['y', 'yes']:
+        print("❌ Batch validation cancelled.")
+        return
+    
+    print(f"\n⏱️ Starting batch validation...")
+    
+    # Track overall results
+    completed_validations = 0
+    failed_validations = 0
+    skipped_validations = 0
+    
+    # Process each pending project
+    for i, project_name in enumerate(pending_validations, 1):
+        print(f"\n{'🔄' * 60}")
+        print(f"📋 Validating Project {i}/{len(pending_validations)}: {project_name}")
+        print(f"{'🔄' * 60}")
+        
+        try:
+            # Run validation for this project
+            validation_results = validate_project(project_name)
+            
+            if validation_results:
+                save_validation_results(validation_results)
+                print_validation_summary(validation_results)
+                completed_validations += 1
+                print(f"✅ Validation completed for {project_name}")
+            else:
+                failed_validations += 1
+                print(f"❌ Validation failed for {project_name}")
+            
+        except KeyboardInterrupt:
+            print(f"\n\n⏹️ Batch validation interrupted by user.")
+            print(f"📊 Progress so far:")
+            print(f"   ✅ Completed: {completed_validations}")
+            print(f"   ❌ Failed: {failed_validations}")
+            print(f"   ⏭️ Remaining: {len(pending_validations) - i}")
+            return
+            
+        except Exception as e:
+            print(f"❌ Error validating {project_name}: {e}")
+            failed_validations += 1
+        
+        # Progress indicator
+        remaining = len(pending_validations) - i
+        if remaining > 0:
+            print(f"\n⏳ {remaining} projects remaining...")
+    
+    # Final summary
+    print(f"\n{'🏁' * 60}")
+    print("📊 BATCH VALIDATION COMPLETE")
+    print(f"{'🏁' * 60}")
+    
+    print(f"✅ Completed validations: {completed_validations}")
+    print(f"❌ Failed validations: {failed_validations}")
+    print(f"📈 Total projects processed: {len(pending_validations)}")
+    
+    if completed_validations > 0:
+        print(f"\n💾 Validation files saved in: {validation_dir}")
+        print(f"🔄 Run scoring next: python calculate_scores.py")
+
+
 if __name__ == "__main__":
-    project_name = "ifund"
-    main(project_name)
+    validate_all_projects()
