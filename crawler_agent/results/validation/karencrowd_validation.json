@@ -1,44 +1,44 @@
 {
   "project_name": "karencrowd",
-  "validation_date": "2025-08-15T21:33:47.560929",
+  "validation_date": "2025-08-15T22:05:02.481818",
   "basic_agent": {
     "correct": 6,
-    "incorrect": 2,
+    "incorrect": 1,
     "skipped": 0
   },
   "function_agent": {
-    "correct": 0,
-    "incorrect": 8,
+    "correct": 6,
+    "incorrect": 1,
     "skipped": 0
   },
   "expert_agent": {
-    "correct": 7,
+    "correct": 6,
     "incorrect": 1,
     "skipped": 0
   },
   "field_validations": {
     "company": {
       "basic_value": "توسعه تجارت پارس یسنا",
-      "function_value": null,
+      "function_value": "توسعه تجارت پارس یسنا",
       "expert_value": "توسعه تجارت پارس یسنا",
       "basic_correct": true,
-      "function_correct": false,
+      "function_correct": true,
       "expert_correct": true
     },
     "duration": {
-      "basic_value": "12  ماهه",
-      "function_value": null,
+      "basic_value": "12 ماهه",
+      "function_value": "12 ماهه",
       "expert_value": "12\n                            ماهه",
       "basic_correct": true,
-      "function_correct": false,
+      "function_correct": true,
       "expert_correct": true
     },
     "guarantee": {
       "basic_value": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق دولتی برای اصل سرمایه",
-      "function_value": null,
+      "function_value": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق دولتی برای اصل سرمایه",
       "expert_value": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق دولتی برای اصل سرمایه",
       "basic_correct": true,
-      "function_correct": false,
+      "function_correct": true,
       "expert_correct": true
     },
     "investment_amount": {
@@ -51,34 +51,26 @@
     },
     "name": {
       "basic_value": "تولید و فروش انواع چسب پهن",
-      "function_value": null,
+      "function_value": "تولید و فروش انواع چسب پهن",
       "expert_value": "تولید و فروش انواع چسب پهن",
       "basic_correct": true,
-      "function_correct": false,
+      "function_correct": true,
       "expert_correct": true
     },
     "profit": {
       "basic_value": "45",
-      "function_value": null,
+      "function_value": 45.0,
       "expert_value": 45.0,
       "basic_correct": true,
-      "function_correct": false,
-      "expert_correct": true
-    },
-    "project": {
-      "basic_value": null,
-      "function_value": "\nproject = {\n    \"name\": \"تولید و فروش انواع چسب پهن\",\n    \"company\": \"توسعه تجارت پارس یسنا\",\n    \"profit\": 45.0,\n    \"guarantee\": \"بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق دولتی برای اصل سرمایه\",\n    \"investment_amount\": None,\n    \"duration\": \"12 ماهه\",\n    \"status\": \"در حال اجرا\"\n}\n",
-      "expert_value": null,
-      "basic_correct": false,
-      "function_correct": false,
+      "function_correct": true,
       "expert_correct": true
     },
     "status": {
       "basic_value": "در حال اجرا",
-      "function_value": null,
+      "function_value": "در حال اجرا",
       "expert_value": "در حال اجرا",
       "basic_correct": true,
-      "function_correct": false,
+      "function_correct": true,
       "expert_correct": true
     }
   }

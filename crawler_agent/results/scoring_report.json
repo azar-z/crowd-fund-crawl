@@ -1,32 +1,32 @@
 {
-  "report_date": "2025-08-15T21:34:36.329171",
+  "report_date": "2025-08-15T22:05:35.216954",
   "report_type": "three_agent_scoring",
   "overall_scores": {
     "basic_agent": {
       "agent_name": "Basic Agent",
       "correct": 51,
-      "incorrect": 20,
+      "incorrect": 19,
       "skipped": 0,
-      "evaluated": 71,
-      "accuracy": 71.8,
+      "evaluated": 70,
+      "accuracy": 72.9,
       "projects_count": 10
     },
     "function_agent": {
       "agent_name": "Function Agent",
-      "correct": 50,
-      "incorrect": 21,
+      "correct": 56,
+      "incorrect": 14,
       "skipped": 0,
-      "evaluated": 71,
-      "accuracy": 70.4,
+      "evaluated": 70,
+      "accuracy": 80.0,
       "projects_count": 10
     },
     "expert_agent": {
       "agent_name": "Expert Agent",
-      "correct": 68,
+      "correct": 67,
       "incorrect": 3,
       "skipped": 0,
-      "evaluated": 71,
-      "accuracy": 95.8,
+      "evaluated": 70,
+      "accuracy": 95.7,
       "projects_count": 10
     }
   },
@@ -141,28 +141,28 @@
     },
     {
       "project_name": "karencrowd",
-      "validation_date": "2025-08-15T21:33:47.560929",
+      "validation_date": "2025-08-15T22:05:02.481818",
       "agents": {
         "basic_agent": {
           "correct": 6,
-          "incorrect": 2,
-          "skipped": 0,
-          "evaluated": 8,
-          "accuracy": 75.0
-        },
-        "function_agent": {
-          "correct": 0,
-          "incorrect": 8,
-          "skipped": 0,
-          "evaluated": 8,
-          "accuracy": 0.0
-        },
-        "expert_agent": {
-          "correct": 7,
           "incorrect": 1,
           "skipped": 0,
-          "evaluated": 8,
-          "accuracy": 87.5
+          "evaluated": 7,
+          "accuracy": 85.7
+        },
+        "function_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 85.7
+        },
+        "expert_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 85.7
         }
       }
     },
