@@ -1,9 +1,9 @@
 {
   "project_name": "maskanplus",
-  "validation_date": "2025-08-15T20:57:12.921843",
+  "validation_date": "2025-08-15T21:33:47.563164",
   "basic_agent": {
-    "correct": 6,
-    "incorrect": 1,
+    "correct": 5,
+    "incorrect": 2,
     "skipped": 0
   },
   "function_agent": {
@@ -58,7 +58,7 @@
       "expert_correct": true
     },
     "profit": {
-      "basic_value": "43",
+      "basic_value": 43,
       "function_value": 43.0,
       "expert_value": 43.0,
       "basic_correct": true,

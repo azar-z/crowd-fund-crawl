@@ -1,9 +1,9 @@
 {
   "project_name": "dongi",
-  "validation_date": "2025-08-15T20:50:20.066607",
+  "validation_date": "2025-08-15T21:31:41.191296",
   "basic_agent": {
-    "correct": 7,
-    "incorrect": 0,
+    "correct": 6,
+    "incorrect": 1,
     "skipped": 0
   },
   "function_agent": {
@@ -34,7 +34,7 @@
       "expert_correct": true
     },
     "guarantee": {
-      "basic_value": "ضمانت بازپرداخت اصل سرمایه توسط ضمانت‌نامه تعهد پرداخت بانک کشاورزی به شماره سپام 0110304676665192",
+      "basic_value": "ضمانت بازپرداخت اصل سرمایه توسط ضمانت‌نامه تعهد پرداخت بانک کشاورزی\n",
       "function_value": "بانک کشاورزی",
       "expert_value": "1- ضمانت بازپرداخت اصل سرمایه توسط ضمانت‌نامه تعهد پرداخت بانک کشاورزی به شماره سپام 0110304676665192\n2- کاهش ریسک با بیمه انبارها، بازخرید محصولات فروش نرفته و اولویت پرداخت به سرمایه‌گذاران\n3- پیش بینی پرداخت سود علی‌الحساب 11.25 درصد به صورت هرسه ماه یکبار\n4- سابقه دو تامین مالی موفق و تسویه شده طی یکسال گذشته",
       "basic_correct": true,
@@ -42,10 +42,10 @@
       "expert_correct": true
     },
     "investment_amount": {
-      "basic_value": "125,000میلیون ریال",
+      "basic_value": "125,000,000,000",
       "function_value": "125,000",
       "expert_value": "125,000میلیون ریال",
-      "basic_correct": true,
+      "basic_correct": false,
       "function_correct": false,
       "expert_correct": true
     },

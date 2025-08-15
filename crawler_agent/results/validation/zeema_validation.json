@@ -1,9 +1,9 @@
 {
   "project_name": "zeema",
-  "validation_date": "2025-08-15T21:00:08.838474",
+  "validation_date": "2025-08-15T21:34:03.703044",
   "basic_agent": {
-    "correct": 5,
-    "incorrect": 2,
+    "correct": 6,
+    "incorrect": 1,
     "skipped": 0
   },
   "function_agent": {
@@ -26,10 +26,10 @@
       "expert_correct": true
     },
     "duration": {
-      "basic_value": "12",
+      "basic_value": "12 ماه",
       "function_value": "12 ماه",
       "expert_value": "12\nماه",
-      "basic_correct": false,
+      "basic_correct": true,
       "function_correct": true,
       "expert_correct": true
     },

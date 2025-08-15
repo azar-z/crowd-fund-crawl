@@ -1,9 +1,9 @@
 {
   "project_name": "razavi",
-  "validation_date": "2025-08-15T20:59:27.542782",
+  "validation_date": "2025-08-15T21:34:03.699822",
   "basic_agent": {
-    "correct": 7,
-    "incorrect": 0,
+    "correct": 5,
+    "incorrect": 2,
     "skipped": 0
   },
   "function_agent": {
@@ -26,7 +26,7 @@
       "expert_correct": true
     },
     "duration": {
-      "basic_value": "دوازده ماه",
+      "basic_value": "12 months",
       "function_value": null,
       "expert_value": "12 ماه پس از واریز وجوه به حساب متقاضی (طی حداکثر 2روز کاری)",
       "basic_correct": true,
@@ -34,18 +34,18 @@
       "expert_correct": true
     },
     "guarantee": {
-      "basic_value": "طرح تحت نظارت کارگزاری بورس و اوراق بهادار رضوی می باشد.",
+      "basic_value": null,
       "function_value": "اطلاعات بیشتر در متن",
       "expert_value": "طرح تحت نظارت <a href=\"https://rbc.ir/\" target=\"_blank\">کارگزاری بورس و اوراق بهادار رضوی</a> می باشد.",
-      "basic_correct": true,
+      "basic_correct": false,
       "function_correct": false,
       "expert_correct": true
     },
     "investment_amount": {
-      "basic_value": "117 میلیارد ریال",
+      "basic_value": "117,000,000,000",
       "function_value": null,
       "expert_value": "117 میلیارد ریال",
-      "basic_correct": true,
+      "basic_correct": false,
       "function_correct": false,
       "expert_correct": true
     },
@@ -58,7 +58,7 @@
       "expert_correct": true
     },
     "profit": {
-      "basic_value": 45,
+      "basic_value": "45",
       "function_value": 45.0,
       "expert_value": 45.0,
       "basic_correct": true,

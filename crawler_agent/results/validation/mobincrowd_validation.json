@@ -1,6 +1,6 @@
 {
   "project_name": "mobincrowd",
-  "validation_date": "2025-08-15T20:58:03.139261",
+  "validation_date": "2025-08-15T21:33:47.564843",
   "basic_agent": {
     "correct": 5,
     "incorrect": 2,
@@ -58,7 +58,7 @@
       "expert_correct": true
     },
     "profit": {
-      "basic_value": "21",
+      "basic_value": 21,
       "function_value": 21.0,
       "expert_value": 21.0,
       "basic_correct": true,

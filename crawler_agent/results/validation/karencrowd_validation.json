@@ -1,9 +1,9 @@
 {
   "project_name": "karencrowd",
-  "validation_date": "2025-08-15T20:54:30.273128",
+  "validation_date": "2025-08-15T21:33:47.560929",
   "basic_agent": {
-    "correct": 7,
-    "incorrect": 1,
+    "correct": 6,
+    "incorrect": 2,
     "skipped": 0
   },
   "function_agent": {
@@ -26,7 +26,7 @@
       "expert_correct": true
     },
     "duration": {
-      "basic_value": "12 ماهه",
+      "basic_value": "12  ماهه",
       "function_value": null,
       "expert_value": "12\n                            ماهه",
       "basic_correct": true,
@@ -69,7 +69,7 @@
       "basic_value": null,
       "function_value": "\nproject = {\n    \"name\": \"تولید و فروش انواع چسب پهن\",\n    \"company\": \"توسعه تجارت پارس یسنا\",\n    \"profit\": 45.0,\n    \"guarantee\": \"بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق دولتی برای اصل سرمایه\",\n    \"investment_amount\": None,\n    \"duration\": \"12 ماهه\",\n    \"status\": \"در حال اجرا\"\n}\n",
       "expert_value": null,
-      "basic_correct": true,
+      "basic_correct": false,
       "function_correct": false,
       "expert_correct": true
     },

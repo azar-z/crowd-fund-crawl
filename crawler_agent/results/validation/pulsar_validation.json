@@ -1,6 +1,6 @@
 {
   "project_name": "pulsar",
-  "validation_date": "2025-08-15T20:58:45.294595",
+  "validation_date": "2025-08-15T21:33:50.267549",
   "basic_agent": {
     "correct": 5,
     "incorrect": 2,
@@ -26,10 +26,10 @@
       "expert_correct": true
     },
     "duration": {
-      "basic_value": "12",
+      "basic_value": "12 ماه",
       "function_value": "12 ماه",
       "expert_value": "12 ماه",
-      "basic_correct": false,
+      "basic_correct": true,
       "function_correct": true,
       "expert_correct": true
     },
@@ -69,7 +69,7 @@
       "basic_value": null,
       "function_value": "active",
       "expert_value": null,
-      "basic_correct": true,
+      "basic_correct": false,
       "function_correct": false,
       "expert_correct": true
     }
