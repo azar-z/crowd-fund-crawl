@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.6600797176361084,
+    "data": {
+      "project": {
+        "name": "تامین سرمایه در گردش جهت خرید و فروش مواد غذایی",
+        "company": "شرکت یزدان مطهر قائم وسطی",
+        "profit": 8.5,
+        "guarantee": "اصل سرمایه توسط متقاضی ضمانت شده است. شماره سپام ضمانت نامه صادر شده از سوی بانک ملی، 0949604689744623 می باشد و تا تاریخ 1405/05/13 اعتبار داشته و با درخواست شرکت حساب یاری امین ملل قابل تمدید می باشد.",
+        "investment_amount": "5,000,000",
+        "duration": "12",
+        "status": "تایید شده"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 1.680753231048584,
+    "data": {
+      "project": {
+        "company": "شرکت یزدان مطهر قائم وسطی",
+        "duration": "12 ماه",
+        "investment_amount": "250,000 میلیون ریال",
+        "guarantee": "اصل سرمایه توسط متقاضی ضمانت شده است",
+        "profit": 8.5,
+        "status": "تایید شده",
+        "name": "تامین سرمایه در گردش جهت خرید و فروش مواد غذایی"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 5.903277635574341,
+    "data": {
+      "project": {
+        "duration": "12 ماه",
+        "company": "شرکت یزدان مطهر قائم وسطی",
+        "investment_amount": "250,000 میلیون ریال",
+        "guarantee": "اصل سرمایه توسط متقاضی ضمانت شده است. شماره سپام ضمانت نامه صادر شده از سوی بانک ملی، 0949604689744623 می باشد و تا تاریخ 1405/05/13 اعتبار داشته و با درخواست شرکت حساب یاری امین ملل قابل تمدید می باشد.",
+        "profit": 43.0,
+        "status": "تامین مالی شده",
+        "name": "تامین سرمایه در گردش جهت خرید و فروش مواد غذایی"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

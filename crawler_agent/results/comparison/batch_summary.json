@@ -1,0 +1,50 @@
+{
+  "batch_date": "2025-08-15 19:19:30",
+  "total_projects": 10,
+  "successful_projects": 10,
+  "failed_projects": 0,
+  "total_time_seconds": 40.434048652648926,
+  "average_time_per_project": 4.043404865264892,
+  "project_results": [
+    {
+      "project": "dongi",
+      "status": "success"
+    },
+    {
+      "project": "halalfund",
+      "status": "success"
+    },
+    {
+      "project": "hamafarin",
+      "status": "success"
+    },
+    {
+      "project": "ifund",
+      "status": "success"
+    },
+    {
+      "project": "karencrowd",
+      "status": "success"
+    },
+    {
+      "project": "maskanplus",
+      "status": "success"
+    },
+    {
+      "project": "mobincrowd",
+      "status": "success"
+    },
+    {
+      "project": "pulsar",
+      "status": "success"
+    },
+    {
+      "project": "razavi",
+      "status": "success"
+    },
+    {
+      "project": "zeema",
+      "status": "success"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "project_name": "ifund",
+  "validation_date": "2025-08-15T20:54:04.706797",
+  "basic_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "نگارین تکمیل یزد",
+      "function_value": "نگارین تکمیل یزد",
+      "expert_value": "نگارین تکمیل یزد",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "12 ماهه",
+      "function_value": "12 ماهه",
+      "expert_value": "12 ماهه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": " بدون تضمین سود و با تضمین ( ضمانت نامه تعهد پرداخت ) برای اصل سرمایه ",
+      "function_value": "بدون تضمین سود و با تضمین ( ضمانت نامه تعهد پرداخت ) برای اصل سرمایه",
+      "expert_value": "بدون تضمین سود و با تضمین ( ضمانت نامه تعهد پرداخت ) برای اصل سرمایه \n\nضمانت نامه این طرح از سوی بانک ملی با شناسه سپام: 0350104681895316 صادر شده که تا تاریخ 22/04/1404 معتبر می‌باشد و با درخواست شرکت سامانه تامین هوشمند نوآفرینان ایرانیان تا زمان مورد درخواست این شرکت قابل تمدید است.",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "120,000,000,000",
+      "function_value": "120,000,000,000 ریال",
+      "expert_value": "120,000,000,000 ریال",
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "نگارین تکمیل یزد",
+      "function_value": "نگارین تکمیل یزد",
+      "expert_value": "نگارین تکمیل یزد",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "43",
+      "function_value": 43.0,
+      "expert_value": 43.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "موفقیت جمع آوری وجوه",
+      "function_value": "موفقیت جمع آوری وجوه",
+      "expert_value": "موفقیت جمع آوری وجوه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    }
+  }
+}

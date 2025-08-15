@@ -1,0 +1,77 @@
+{
+  "project_name": "dongi",
+  "validation_date": "2025-08-15T20:50:20.066607",
+  "basic_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "گروه صنعتی گناباد",
+      "function_value": "گروه صنعتی گناباد",
+      "expert_value": "گروه صنعتی گناباد",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "12 ماه",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "ضمانت بازپرداخت اصل سرمایه توسط ضمانت‌نامه تعهد پرداخت بانک کشاورزی به شماره سپام 0110304676665192",
+      "function_value": "بانک کشاورزی",
+      "expert_value": "1- ضمانت بازپرداخت اصل سرمایه توسط ضمانت‌نامه تعهد پرداخت بانک کشاورزی به شماره سپام 0110304676665192\n2- کاهش ریسک با بیمه انبارها، بازخرید محصولات فروش نرفته و اولویت پرداخت به سرمایه‌گذاران\n3- پیش بینی پرداخت سود علی‌الحساب 11.25 درصد به صورت هرسه ماه یکبار\n4- سابقه دو تامین مالی موفق و تسویه شده طی یکسال گذشته",
+      "basic_correct": true,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "125,000میلیون ریال",
+      "function_value": "125,000",
+      "expert_value": "125,000میلیون ریال",
+      "basic_correct": true,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "تامین سرمایه در گردش جهت خرید و فروش بذر ذرت",
+      "function_value": "تامین سرمایه در گردش جهت خرید و فروش بذر ذرت",
+      "expert_value": "تامین سرمایه در گردش جهت خرید و فروش بذر ذرت",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "45",
+      "function_value": 45.0,
+      "expert_value": 45.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "موفق شد",
+      "function_value": "موفق شد",
+      "expert_value": "موفق شد",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    }
+  }
+}

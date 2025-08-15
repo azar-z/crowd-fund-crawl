@@ -1,0 +1,85 @@
+{
+  "project_name": "karencrowd",
+  "validation_date": "2025-08-15T20:54:30.273128",
+  "basic_agent": {
+    "correct": 7,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 0,
+    "incorrect": 8,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "توسعه تجارت پارس یسنا",
+      "function_value": null,
+      "expert_value": "توسعه تجارت پارس یسنا",
+      "basic_correct": true,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "12 ماهه",
+      "function_value": null,
+      "expert_value": "12\n                            ماهه",
+      "basic_correct": true,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق دولتی برای اصل سرمایه",
+      "function_value": null,
+      "expert_value": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق دولتی برای اصل سرمایه",
+      "basic_correct": true,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": null,
+      "function_value": null,
+      "expert_value": null,
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": false
+    },
+    "name": {
+      "basic_value": "تولید و فروش انواع چسب پهن",
+      "function_value": null,
+      "expert_value": "تولید و فروش انواع چسب پهن",
+      "basic_correct": true,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "45",
+      "function_value": null,
+      "expert_value": 45.0,
+      "basic_correct": true,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "project": {
+      "basic_value": null,
+      "function_value": "\nproject = {\n    \"name\": \"تولید و فروش انواع چسب پهن\",\n    \"company\": \"توسعه تجارت پارس یسنا\",\n    \"profit\": 45.0,\n    \"guarantee\": \"بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق دولتی برای اصل سرمایه\",\n    \"investment_amount\": None,\n    \"duration\": \"12 ماهه\",\n    \"status\": \"در حال اجرا\"\n}\n",
+      "expert_value": null,
+      "basic_correct": true,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "در حال اجرا",
+      "function_value": null,
+      "expert_value": "در حال اجرا",
+      "basic_correct": true,
+      "function_correct": false,
+      "expert_correct": true
+    }
+  }
+}

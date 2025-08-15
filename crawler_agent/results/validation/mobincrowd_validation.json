@@ -1,0 +1,77 @@
+{
+  "project_name": "mobincrowd",
+  "validation_date": "2025-08-15T20:58:03.139261",
+  "basic_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "شرکت کیمیا جاوید سپاهان",
+      "function_value": "شرکت کیمیا جاوید سپاهان",
+      "expert_value": "شرکت کیمیا جاوید سپاهان",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "6",
+      "function_value": "6",
+      "expert_value": "6",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": false
+    },
+    "guarantee": {
+      "basic_value": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق پژوهش و فناوری برای اصل سرمایه",
+      "function_value": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق پژوهش و فناوری برای اصل سرمایه",
+      "expert_value": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق پژوهش و فناوری برای اصل سرمایه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "250,000,000,000",
+      "function_value": "250,000,000,000",
+      "expert_value": "250,000,000,000 ریال",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "تامین سرمایه در گردش به منظور تولید پوشش پلیمری لوله‌های فولادی",
+      "function_value": "تامین سرمایه در گردش به منظور تولید پوشش پلیمری لوله‌های فولادی",
+      "expert_value": "تامین سرمایه در گردش به منظور تولید پوشش پلیمری لوله‌های فولادی",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "21",
+      "function_value": 21.0,
+      "expert_value": 21.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "موفق در جذب سرمایه",
+      "function_value": "موفق در جذب سرمایه",
+      "expert_value": "موفق در جذب سرمایه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    }
+  }
+}

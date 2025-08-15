@@ -1,795 +1,309 @@
 {
-  "report_timestamp": "2025-08-13T18:49:19.366658",
-  "final_scores": {
-    "simple_agent": 82.85714285714286,
-    "advanced_agent": 92.85714285714286
-  },
-  "agent_statistics": {
-    "simple_agent": {
-      "total_fields": 70,
-      "correct_fields": 58,
-      "incorrect_fields": 12,
-      "skipped_fields": 0,
-      "projects_with_data": 10,
-      "field_scores": {
-        "company": {
-          "correct": 10,
-          "total": 10
-        },
-        "duration": {
-          "correct": 10,
-          "total": 10
-        },
-        "guarantee": {
-          "correct": 6,
-          "total": 10
-        },
-        "investment_amount": {
-          "correct": 7,
-          "total": 10
-        },
-        "name": {
-          "correct": 10,
-          "total": 10
-        },
-        "profit": {
-          "correct": 9,
-          "total": 10
-        },
-        "status": {
-          "correct": 6,
-          "total": 10
-        }
-      }
+  "report_date": "2025-08-15T21:01:55.907613",
+  "report_type": "three_agent_scoring",
+  "overall_scores": {
+    "basic_agent": {
+      "agent_name": "Basic Agent",
+      "correct": 57,
+      "incorrect": 14,
+      "skipped": 0,
+      "evaluated": 71,
+      "accuracy": 80.3,
+      "projects_count": 10
     },
-    "advanced_agent": {
-      "total_fields": 70,
-      "correct_fields": 65,
-      "incorrect_fields": 5,
-      "skipped_fields": 0,
-      "projects_with_data": 10,
-      "field_scores": {
-        "company": {
-          "correct": 10,
-          "total": 10
-        },
-        "duration": {
-          "correct": 9,
-          "total": 10
-        },
-        "guarantee": {
-          "correct": 10,
-          "total": 10
-        },
-        "investment_amount": {
-          "correct": 7,
-          "total": 10
-        },
-        "name": {
-          "correct": 10,
-          "total": 10
-        },
-        "profit": {
-          "correct": 10,
-          "total": 10
-        },
-        "status": {
-          "correct": 9,
-          "total": 10
-        }
-      }
+    "function_agent": {
+      "agent_name": "Function Agent",
+      "correct": 50,
+      "incorrect": 21,
+      "skipped": 0,
+      "evaluated": 71,
+      "accuracy": 70.4,
+      "projects_count": 10
+    },
+    "expert_agent": {
+      "agent_name": "Expert Agent",
+      "correct": 68,
+      "incorrect": 3,
+      "skipped": 0,
+      "evaluated": 71,
+      "accuracy": 95.8,
+      "projects_count": 10
     }
   },
   "project_details": [
     {
       "project_name": "dongi",
-      "simple_agent": {
-        "available": true,
-        "score": 71.42857142857143,
-        "details": {
-          "company": {
-            "value": "گروه صنعتی گناباد",
-            "is_correct": true
-          },
-          "duration": {
-            "value": "12 ماه",
-            "is_correct": true
-          },
-          "guarantee": {
-            "value": "بانک کشاورزی",
-            "is_correct": false
-          },
-          "investment_amount": {
-            "value": "125,000",
-            "is_correct": false
-          },
-          "name": {
-            "value": "تامین سرمایه در گردش جهت خرید و فروش بذر ذرت",
-            "is_correct": true
-          },
-          "profit": {
-            "value": 45.0,
-            "is_correct": true
-          },
-          "status": {
-            "value": "موفق شد",
-            "is_correct": true
-          }
-        }
-      },
-      "advanced_agent": {
-        "available": true,
-        "score": 100.0,
-        "details": {
-          "company": {
-            "value": "گروه صنعتی گناباد",
-            "is_correct": true
-          },
-          "duration": {
-            "value": "12 ماه",
-            "is_correct": true
-          },
-          "guarantee": {
-            "value": "1- ضمانت بازپرداخت اصل سرمایه توسط ضمانت‌نامه تعهد پرداخت بانک کشاورزی به شماره سپام 0110304676665192\n2- کاهش ریسک با بیمه انبارها، بازخرید محصولات فروش نرفته و اولویت پرداخت به سرمایه‌گذاران\n3- پیش بینی پرداخت سود علی‌الحساب 11.25 درصد به صورت هرسه ماه یکبار\n4- سابقه دو تامین مالی موفق و تسویه شده طی یکسال گذشته",
-            "is_correct": true
-          },
-          "investment_amount": {
-            "value": "125,000میلیون ریال",
-            "is_correct": true
-          },
-          "name": {
-            "value": "تامین سرمایه در گردش جهت خرید و فروش بذر ذرت",
-            "is_correct": true
-          },
-          "profit": {
-            "value": 45.0,
-            "is_correct": true
-          },
-          "status": {
-            "value": "موفق شد",
-            "is_correct": true
-          }
+      "validation_date": "2025-08-15T20:50:20.066607",
+      "agents": {
+        "basic_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 100.0
+        },
+        "function_agent": {
+          "correct": 5,
+          "incorrect": 2,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 71.4
+        },
+        "expert_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 100.0
         }
       }
     },
     {
       "project_name": "halalfund",
-      "simple_agent": {
-        "available": true,
-        "score": 71.42857142857143,
-        "details": {
-          "company": {
-            "value": "شرکت یزدان مطهر قائم وسطی",
-            "is_correct": true
-          },
-          "duration": {
-            "value": "12 ماه",
-            "is_correct": true
-          },
-          "guarantee": {
-            "value": "اصل سرمایه توسط متقاضی ضمانت شده است.",
-            "is_correct": true
-          },
-          "investment_amount": {
-            "value": "250,000 میلیون ریال",
-            "is_correct": true
-          },
-          "name": {
-            "value": "تامین سرمایه در گردش جهت خرید و فروش مواد غذایی",
-            "is_correct": true
-          },
-          "profit": {
-            "value": 8.5,
-            "is_correct": false
-          },
-          "status": {
-            "value": "تایید شده",
-            "is_correct": false
-          }
-        }
-      },
-      "advanced_agent": {
-        "available": true,
-        "score": 100.0,
-        "details": {
-          "company": {
-            "value": "شرکت یزدان مطهر قائم وسطی",
-            "is_correct": true
-          },
-          "duration": {
-            "value": "12 ماه",
-            "is_correct": true
-          },
-          "guarantee": {
-            "value": "اصل سرمایه توسط متقاضی ضمانت شده است. شماره سپام ضمانت نامه صادر شده از سوی بانک ملی، 0949604689744623 می باشد و تا تاریخ 1405/05/13 اعتبار داشته و با درخواست شرکت حساب یاری امین ملل قابل تمدید می باشد.",
-            "is_correct": true
-          },
-          "investment_amount": {
-            "value": "۲۵۰٬۰۰۰٬۰۰۰٬۰۰۰ ریال",
-            "is_correct": true
-          },
-          "name": {
-            "value": "تامین سرمایه در گردش جهت خرید و فروش مواد غذایی",
-            "is_correct": true
-          },
-          "profit": {
-            "value": 43.0,
-            "is_correct": true
-          },
-          "status": {
-            "value": "تامین مالی شده",
-            "is_correct": true
-          }
+      "validation_date": "2025-08-15T20:51:19.295617",
+      "agents": {
+        "basic_agent": {
+          "correct": 3,
+          "incorrect": 4,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 42.9
+        },
+        "function_agent": {
+          "correct": 5,
+          "incorrect": 2,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 71.4
+        },
+        "expert_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 100.0
         }
       }
     },
     {
       "project_name": "hamafarin",
-      "simple_agent": {
-        "available": true,
-        "score": 100.0,
-        "details": {
-          "company": {
-            "value": "فرگشت پندار پارسیان",
-            "is_correct": true
-          },
-          "duration": {
-            "value": "دوازده ماهه",
-            "is_correct": true
-          },
-          "guarantee": {
-            "value": "ضمانت نامه تعهد پرداخت از بانک ملی ایران",
-            "is_correct": true
-          },
-          "investment_amount": {
-            "value": "۱۰٬۰۰۰٬۰۰۰٬۰۰۰",
-            "is_correct": true
-          },
-          "name": {
-            "value": "تولید کرم ضد آفتاب",
-            "is_correct": true
-          },
-          "profit": {
-            "value": 41.0,
-            "is_correct": true
-          },
-          "status": {
-            "value": "با موفقیت تکمیل شد",
-            "is_correct": true
-          }
-        }
-      },
-      "advanced_agent": {
-        "available": true,
-        "score": 100.0,
-        "details": {
-          "company": {
-            "value": "فرگشت پندار پارسیان",
-            "is_correct": true
-          },
-          "duration": {
-            "value": "دوازده ماهه",
-            "is_correct": true
-          },
-          "guarantee": {
-            "value": "ضمانت نامه تعهد پرداخت از بانک ملی ایران با کد سپام: 0300104645534516 و شناسه ملی ذینفع: 14007219634\nو چک شرکت",
-            "is_correct": true
-          },
-          "investment_amount": {
-            "value": "۱۰٬۰۰۰٬۰۰۰٬۰۰۰",
-            "is_correct": true
-          },
-          "name": {
-            "value": "تولید کرم ضد آفتاب",
-            "is_correct": true
-          },
-          "profit": {
-            "value": 41.0,
-            "is_correct": true
-          },
-          "status": {
-            "value": "با موفقیت تکمیل شد",
-            "is_correct": true
-          }
+      "validation_date": "2025-08-15T20:52:44.897574",
+      "agents": {
+        "basic_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 85.7
+        },
+        "function_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 85.7
+        },
+        "expert_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 100.0
         }
       }
     },
     {
       "project_name": "ifund",
-      "simple_agent": {
-        "available": true,
-        "score": 100.0,
-        "details": {
-          "company": {
-            "value": "نگارین تکمیل یزد",
-            "is_correct": true
-          },
-          "duration": {
-            "value": "12 ماهه ",
-            "is_correct": true
-          },
-          "guarantee": {
-            "value": "بدون تضمین سود و با تضمین ( ضمانت نامه تعهد پرداخت ) برای اصل سرمایه",
-            "is_correct": true
-          },
-          "investment_amount": {
-            "value": "120,000,000,000 ریال",
-            "is_correct": true
-          },
-          "name": {
-            "value": "تأمین سرمایه در گردش جهت تولید پارچه رومبلی ساده",
-            "is_correct": true
-          },
-          "profit": {
-            "value": 43.0,
-            "is_correct": true
-          },
-          "status": {
-            "value": "موفقیت جمع آوری وجوه",
-            "is_correct": true
-          }
-        }
-      },
-      "advanced_agent": {
-        "available": true,
-        "score": 85.71428571428571,
-        "details": {
-          "company": {
-            "value": "نگارین تکمیل یزد",
-            "is_correct": true
-          },
-          "duration": {
-            "value": "12 ماهه ",
-            "is_correct": true
-          },
-          "guarantee": {
-            "value": "بدون تضمین سود و با تضمین ( ضمانت نامه تعهد پرداخت ) برای اصل سرمایه \n\nضمانت نامه این طرح از سوی بانک ملی با شناسه سپام: 0350104681895316 صادر شده که تا تاریخ 22/04/1404 معتبر می‌باشد و با درخواست شرکت سامانه تامین هوشمند نوآفرینان ایرانیان تا زمان مورد درخواست این شرکت قابل تمدید است.",
-            "is_correct": true
-          },
-          "investment_amount": {
-            "value": "120,000,000,000",
-            "is_correct": false
-          },
-          "name": {
-            "value": "تأمین سرمایه در گردش جهت تولید پارچه رومبلی ساده",
-            "is_correct": true
-          },
-          "profit": {
-            "value": 43.0,
-            "is_correct": true
-          },
-          "status": {
-            "value": "موفقیت جمع آوری وجوه",
-            "is_correct": true
-          }
+      "validation_date": "2025-08-15T20:54:04.706797",
+      "agents": {
+        "basic_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 85.7
+        },
+        "function_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 100.0
+        },
+        "expert_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 100.0
         }
       }
     },
     {
       "project_name": "karencrowd",
-      "simple_agent": {
-        "available": true,
-        "score": 85.71428571428571,
-        "details": {
-          "company": {
-            "value": "توسعه تجارت پارس یسنا",
-            "is_correct": true
-          },
-          "duration": {
-            "value": "12 ماهه",
-            "is_correct": true
-          },
-          "guarantee": {
-            "value": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق دولتی برای اصل سرمایه",
-            "is_correct": true
-          },
-          "investment_amount": {
-            "value": null,
-            "is_correct": false
-          },
-          "name": {
-            "value": "تولید و فروش انواع چسب پهن",
-            "is_correct": true
-          },
-          "profit": {
-            "value": 45.0,
-            "is_correct": true
-          },
-          "status": {
-            "value": "در حال اجرا",
-            "is_correct": true
-          }
-        }
-      },
-      "advanced_agent": {
-        "available": true,
-        "score": 100.0,
-        "details": {
-          "company": {
-            "value": "توسعه تجارت پارس یسنا",
-            "is_correct": true
-          },
-          "duration": {
-            "value": "12\n                            ماهه",
-            "is_correct": true
-          },
-          "guarantee": {
-            "value": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق دولتی برای اصل سرمایه",
-            "is_correct": true
-          },
-          "investment_amount": {
-            "value": "10,000,000,000",
-            "is_correct": true
-          },
-          "name": {
-            "value": "تولید و فروش انواع چسب پهن",
-            "is_correct": true
-          },
-          "profit": {
-            "value": 45.0,
-            "is_correct": true
-          },
-          "status": {
-            "value": "در حال اجرا",
-            "is_correct": true
-          }
+      "validation_date": "2025-08-15T20:54:30.273128",
+      "agents": {
+        "basic_agent": {
+          "correct": 7,
+          "incorrect": 1,
+          "skipped": 0,
+          "evaluated": 8,
+          "accuracy": 87.5
+        },
+        "function_agent": {
+          "correct": 0,
+          "incorrect": 8,
+          "skipped": 0,
+          "evaluated": 8,
+          "accuracy": 0.0
+        },
+        "expert_agent": {
+          "correct": 7,
+          "incorrect": 1,
+          "skipped": 0,
+          "evaluated": 8,
+          "accuracy": 87.5
         }
       }
     },
     {
       "project_name": "maskanplus",
-      "simple_agent": {
-        "available": true,
-        "score": 85.71428571428571,
-        "details": {
-          "company": {
-            "value": "شمیم رایحه یاس نوین",
-            "is_correct": true
-          },
-          "duration": {
-            "value": "12 ماهه",
-            "is_correct": true
-          },
-          "guarantee": {
-            "value": "ضمانت‌نامه تعهد پرداخت صندوق ضمانت سرمایه‌گذاری صنایع کوچک",
-            "is_correct": false
-          },
-          "investment_amount": {
-            "value": "55,500 میلیون ریال",
-            "is_correct": true
-          },
-          "name": {
-            "value": "مشارکت در تولید و فروش بادی اسپلش",
-            "is_correct": true
-          },
-          "profit": {
-            "value": 43.0,
-            "is_correct": true
-          },
-          "status": {
-            "value": "موفق",
-            "is_correct": true
-          }
-        }
-      },
-      "advanced_agent": {
-        "available": true,
-        "score": 71.42857142857143,
-        "details": {
-          "company": {
-            "value": "شمیم رایحه یاس نوین",
-            "is_correct": true
-          },
-          "duration": {
-            "value": "Project duration or investment period",
-            "is_correct": false
-          },
-          "guarantee": {
-            "value": "ضمانت‌نامه تعهد پرداخت صندوق ضمانت سرمایه‌گذاری صنایع کوچک برای اصل سرمایه",
-            "is_correct": true
-          },
-          "investment_amount": {
-            "value": "33,300,000,000 تا 55,500,000,000",
-            "is_correct": true
-          },
-          "name": {
-            "value": "مشارکت در تولید و فروش بادی اسپلش",
-            "is_correct": true
-          },
-          "profit": {
-            "value": 43.0,
-            "is_correct": true
-          },
-          "status": {
-            "value": "Current status of the project (active, completed, pending, etc.)",
-            "is_correct": false
-          }
+      "validation_date": "2025-08-15T20:57:12.921843",
+      "agents": {
+        "basic_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 85.7
+        },
+        "function_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 100.0
+        },
+        "expert_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 100.0
         }
       }
     },
     {
       "project_name": "mobincrowd",
-      "simple_agent": {
-        "available": true,
-        "score": 100.0,
-        "details": {
-          "company": {
-            "value": "شرکت کیمیا جاوید سپاهان",
-            "is_correct": true
-          },
-          "duration": {
-            "value": "6",
-            "is_correct": true
-          },
-          "guarantee": {
-            "value": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق پژوهش و فناوری برای اصل سرمایه",
-            "is_correct": true
-          },
-          "investment_amount": {
-            "value": "250,000,000,000",
-            "is_correct": true
-          },
-          "name": {
-            "value": "تامین سرمایه در گردش به منظور تولید پوشش پلیمری لوله‌های فولادی",
-            "is_correct": true
-          },
-          "profit": {
-            "value": 21.0,
-            "is_correct": true
-          },
-          "status": {
-            "value": "موفق در جذب سرمایه",
-            "is_correct": true
-          }
-        }
-      },
-      "advanced_agent": {
-        "available": true,
-        "score": 100.0,
-        "details": {
-          "company": {
-            "value": "شرکت کیمیا جاوید سپاهان",
-            "is_correct": true
-          },
-          "duration": {
-            "value": "6",
-            "is_correct": true
-          },
-          "guarantee": {
-            "value": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق پژوهش و فناوری برای اصل سرمایه",
-            "is_correct": true
-          },
-          "investment_amount": {
-            "value": "250,000,000,000",
-            "is_correct": true
-          },
-          "name": {
-            "value": "تامین سرمایه در گردش به منظور تولید پوشش پلیمری لوله‌های فولادی",
-            "is_correct": true
-          },
-          "profit": {
-            "value": 21.0,
-            "is_correct": true
-          },
-          "status": {
-            "value": "موفق در جذب سرمایه",
-            "is_correct": true
-          }
+      "validation_date": "2025-08-15T20:58:03.139261",
+      "agents": {
+        "basic_agent": {
+          "correct": 5,
+          "incorrect": 2,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 71.4
+        },
+        "function_agent": {
+          "correct": 5,
+          "incorrect": 2,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 71.4
+        },
+        "expert_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 85.7
         }
       }
     },
     {
       "project_name": "pulsar",
-      "simple_agent": {
-        "available": true,
-        "score": 85.71428571428571,
-        "details": {
-          "company": {
-            "value": "ویرا دیزل",
-            "is_correct": true
-          },
-          "duration": {
-            "value": "12 ماه",
-            "is_correct": true
-          },
-          "guarantee": {
-            "value": "بدون تضمین سود و با تضمین بانک سامان برای اصل سرمایه",
-            "is_correct": true
-          },
-          "investment_amount": {
-            "value": "250,000,000,000 ریال",
-            "is_correct": true
-          },
-          "name": {
-            "value": "طرح تامین سرمایه در گردش خرید قطعات متصله کابین و ملحقات برای تولید خودروهای سنگین تجاری",
-            "is_correct": true
-          },
-          "profit": {
-            "value": 40.0,
-            "is_correct": true
-          },
-          "status": {
-            "value": "",
-            "is_correct": false
-          }
-        }
-      },
-      "advanced_agent": {
-        "available": true,
-        "score": 85.71428571428571,
-        "details": {
-          "company": {
-            "value": "ویرا دیزل",
-            "is_correct": true
-          },
-          "duration": {
-            "value": "12 ماه",
-            "is_correct": true
-          },
-          "guarantee": {
-            "value": "بدون تضمین سود و با تضمین بانک سامان برای اصل سرمایه",
-            "is_correct": true
-          },
-          "investment_amount": {
-            "value": "250,000,000,000",
-            "is_correct": false
-          },
-          "name": {
-            "value": "طرح تامین سرمایه در گردش خرید قطعات متصله کابین و ملحقات برای تولید خودروهای سنگین تجاری",
-            "is_correct": true
-          },
-          "profit": {
-            "value": 40.0,
-            "is_correct": true
-          },
-          "status": {
-            "value": "active",
-            "is_correct": true
-          }
+      "validation_date": "2025-08-15T20:58:45.294595",
+      "agents": {
+        "basic_agent": {
+          "correct": 5,
+          "incorrect": 2,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 71.4
+        },
+        "function_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 85.7
+        },
+        "expert_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 100.0
         }
       }
     },
     {
       "project_name": "razavi",
-      "simple_agent": {
-        "available": true,
-        "score": 71.42857142857143,
-        "details": {
-          "company": {
-            "value": "موسسه آموزشی راشد نوین رضوی",
-            "is_correct": true
-          },
-          "duration": {
-            "value": "12 ماه",
-            "is_correct": true
-          },
-          "guarantee": {
-            "value": "None",
-            "is_correct": false
-          },
-          "investment_amount": {
-            "value": "117,000,000,000 ریال",
-            "is_correct": true
-          },
-          "name": {
-            "value": "تولید محتوای آموزشی",
-            "is_correct": true
-          },
-          "profit": {
-            "value": 45.0,
-            "is_correct": true
-          },
-          "status": {
-            "value": "تکمیل‌شده",
-            "is_correct": false
-          }
-        }
-      },
-      "advanced_agent": {
-        "available": true,
-        "score": 85.71428571428571,
-        "details": {
-          "company": {
-            "value": "موسسه آموزشی راشد نوین رضوی",
-            "is_correct": true
-          },
-          "duration": {
-            "value": "دوازده ماه",
-            "is_correct": true
-          },
-          "guarantee": {
-            "value": "طرح تحت نظارت  کارگزاری بورس و اوراق بهادار رضوی  می باشد.",
-            "is_correct": true
-          },
-          "investment_amount": {
-            "value": "117,000,000,000",
-            "is_correct": false
-          },
-          "name": {
-            "value": "تولید محتوای آموزشی",
-            "is_correct": true
-          },
-          "profit": {
-            "value": 45.0,
-            "is_correct": true
-          },
-          "status": {
-            "value": "تکمیل‌سرمایه‌شده",
-            "is_correct": true
-          }
+      "validation_date": "2025-08-15T20:59:27.542782",
+      "agents": {
+        "basic_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 100.0
+        },
+        "function_agent": {
+          "correct": 3,
+          "incorrect": 4,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 42.9
+        },
+        "expert_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 100.0
         }
       }
     },
     {
       "project_name": "zeema",
-      "simple_agent": {
-        "available": true,
-        "score": 57.14285714285714,
-        "details": {
-          "company": {
-            "value": "یزدان مطهر قائم وسطی",
-            "is_correct": true
-          },
-          "duration": {
-            "value": "12 ماه",
-            "is_correct": true
-          },
-          "guarantee": {
-            "value": "ضمانتنامه تعهد پرداخت بانک ملی",
-            "is_correct": false
-          },
-          "investment_amount": {
-            "value": "15 میلیارد",
-            "is_correct": false
-          },
-          "name": {
-            "value": "تأمین سرمایه در گردش خریدوفروش انواع حبوبات",
-            "is_correct": true
-          },
-          "profit": {
-            "value": 43.0,
-            "is_correct": true
-          },
-          "status": {
-            "value": "inProgress",
-            "is_correct": false
-          }
-        }
-      },
-      "advanced_agent": {
-        "available": true,
-        "score": 100.0,
-        "details": {
-          "company": {
-            "value": "یزدان مطهر قائم وسطی",
-            "is_correct": true
-          },
-          "duration": {
-            "value": "12\nماه",
-            "is_correct": true
-          },
-          "guarantee": {
-            "value": "ضمانتنامه تعهد پرداخت بانک ملی\nتضمین اصل سرمایه",
-            "is_correct": true
-          },
-          "investment_amount": {
-            "value": "15 میلیارد تومان ",
-            "is_correct": true
-          },
-          "name": {
-            "value": "طرح کرادفاندینگ تأمین سرمایه در گردش خریدوفروش انواع حبوبات - زیما",
-            "is_correct": true
-          },
-          "profit": {
-            "value": 43.0,
-            "is_correct": true
-          },
-          "status": {
-            "value": "سرمایه تأمین شده ",
-            "is_correct": true
-          }
+      "validation_date": "2025-08-15T21:00:08.838474",
+      "agents": {
+        "basic_agent": {
+          "correct": 5,
+          "incorrect": 2,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 71.4
+        },
+        "function_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 85.7
+        },
+        "expert_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 85.7
         }
       }
     }
-  ]
+  ],
+  "summary": {
+    "total_projects": 10,
+    "best_agent": "expert_agent"
+  }
 }

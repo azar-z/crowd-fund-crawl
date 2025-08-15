@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.3317434787750244,
+    "data": {
+      "project": {
+        "name": "تامین سرمایه در گردش به منظور تولید پوشش پلیمری لوله‌های فولادی",
+        "company": "شرکت کیمیا جاوید سپاهان",
+        "profit": "21",
+        "guarantee": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق پژوهش و فناوری برای اصل سرمایه",
+        "investment_amount": "250,000,000,000",
+        "duration": "6",
+        "status": "موفق در جذب سرمایه"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 1.7724452018737793,
+    "data": {
+      "project": {
+        "company": "شرکت کیمیا جاوید سپاهان",
+        "duration": "6",
+        "investment_amount": "250,000,000,000",
+        "guarantee": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق پژوهش و فناوری برای اصل سرمایه",
+        "profit": 21.0,
+        "status": "موفق در جذب سرمایه",
+        "name": "تامین سرمایه در گردش به منظور تولید پوشش پلیمری لوله‌های فولادی"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 5.270789623260498,
+    "data": {
+      "project": {
+        "company": "شرکت کیمیا جاوید سپاهان",
+        "duration": "6",
+        "investment_amount": "250,000,000,000 ریال",
+        "guarantee": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق پژوهش و فناوری برای اصل سرمایه",
+        "profit": 21.0,
+        "status": "موفق در جذب سرمایه",
+        "name": "تامین سرمایه در گردش به منظور تولید پوشش پلیمری لوله‌های فولادی"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

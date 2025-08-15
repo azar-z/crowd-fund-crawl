@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.77306866645813,
+    "data": {
+      "project": {
+        "name": "مشارکت در تولید و فروش بادی اسپلش",
+        "company": "شمیم رایحه یاس نوین",
+        "profit": "43",
+        "guarantee": "ضمانت‌نامه تعهد پرداخت صندوق ضمانت سرمایه‌گذاری صنایع کوچک برای اصل سرمایه",
+        "investment_amount": "33,300,000,000",
+        "duration": "12",
+        "status": "موفق"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 1.868856430053711,
+    "data": {
+      "project": {
+        "company": "شمیم رایحه یاس نوین",
+        "duration": "12 ماهه",
+        "investment_amount": "33,300,000,000",
+        "guarantee": "ضمانت‌نامه تعهد پرداخت صندوق ضمانت سرمایه‌گذاری صنایع کوچک برای اصل سرمایه",
+        "profit": 43.0,
+        "status": "موفق",
+        "name": "مشارکت در تولید و فروش بادی اسپلش"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 6.049493312835693,
+    "data": {
+      "project": {
+        "duration": "12 ماهه",
+        "company": "شمیم رایحه یاس نوین",
+        "investment_amount": "33,300,000,000 تا 55,500,000,000",
+        "guarantee": "ضمانت‌نامه تعهد پرداخت به میزان اصل",
+        "profit": 43.0,
+        "status": "موفق",
+        "name": "مشارکت در تولید و فروش بادی اسپلش"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

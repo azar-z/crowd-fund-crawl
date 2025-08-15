@@ -1,0 +1,47 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.2397258281707764,
+    "data": {
+      "project": {
+        "name": "تولید و فروش انواع چسب پهن",
+        "company": "توسعه تجارت پارس یسنا",
+        "profit": "45",
+        "guarantee": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق دولتی برای اصل سرمایه",
+        "investment_amount": null,
+        "duration": "12 ماهه",
+        "status": "در حال اجرا"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 1.5257537364959717,
+    "data": {
+      "project": "\nproject = {\n    \"name\": \"تولید و فروش انواع چسب پهن\",\n    \"company\": \"توسعه تجارت پارس یسنا\",\n    \"profit\": 45.0,\n    \"guarantee\": \"بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق دولتی برای اصل سرمایه\",\n    \"investment_amount\": None,\n    \"duration\": \"12 ماهه\",\n    \"status\": \"در حال اجرا\"\n}\n"
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 10.141726970672607,
+    "data": {
+      "project": {
+        "company": "توسعه تجارت پارس یسنا",
+        "duration": "12\n                            ماهه",
+        "investment_amount": null,
+        "guarantee": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق دولتی برای اصل سرمایه",
+        "profit": 45.0,
+        "status": "در حال اجرا",
+        "name": "تولید و فروش انواع چسب پهن"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

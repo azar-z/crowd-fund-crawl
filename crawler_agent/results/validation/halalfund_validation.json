@@ -1,0 +1,77 @@
+{
+  "project_name": "halalfund",
+  "validation_date": "2025-08-15T20:51:19.295617",
+  "basic_agent": {
+    "correct": 3,
+    "incorrect": 4,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "شرکت یزدان مطهر قائم وسطی",
+      "function_value": "شرکت یزدان مطهر قائم وسطی",
+      "expert_value": "شرکت یزدان مطهر قائم وسطی",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "12",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "اصل سرمایه توسط متقاضی ضمانت شده است. شماره سپام ضمانت نامه صادر شده از سوی بانک ملی، 0949604689744623 می باشد و تا تاریخ 1405/05/13 اعتبار داشته و با درخواست شرکت حساب یاری امین ملل قابل تمدید می باشد.",
+      "function_value": "اصل سرمایه توسط متقاضی ضمانت شده است",
+      "expert_value": "اصل سرمایه توسط متقاضی ضمانت شده است. شماره سپام ضمانت نامه صادر شده از سوی بانک ملی، 0949604689744623 می باشد و تا تاریخ 1405/05/13 اعتبار داشته و با درخواست شرکت حساب یاری امین ملل قابل تمدید می باشد.",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "5,000,000",
+      "function_value": "250,000 میلیون ریال",
+      "expert_value": "250,000 میلیون ریال",
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "تامین سرمایه در گردش جهت خرید و فروش مواد غذایی",
+      "function_value": "تامین سرمایه در گردش جهت خرید و فروش مواد غذایی",
+      "expert_value": "تامین سرمایه در گردش جهت خرید و فروش مواد غذایی",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": 8.5,
+      "function_value": 8.5,
+      "expert_value": 43.0,
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "تایید شده",
+      "function_value": "تایید شده",
+      "expert_value": "تامین مالی شده",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": true
+    }
+  }
+}

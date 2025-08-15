@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 3.0729150772094727,
+    "data": {
+      "project": {
+        "name": "تأمین سرمایه در گردش خریدوفروش انواع حبوبات",
+        "company": "یزدان مطهر قائم وسطی",
+        "profit": "43",
+        "guarantee": "ضمانتنامه تعهد پرداخت بانک ملی",
+        "investment_amount": "15 میلیارد",
+        "duration": "12",
+        "status": "inProgress"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 2.3848042488098145,
+    "data": {
+      "project": {
+        "duration": "12 ماه",
+        "company": "یزدان مطهر قائم وسطی",
+        "investment_amount": "15 میلیارد",
+        "guarantee": "ضمانتنامه تعهد پرداخت بانک ملی",
+        "profit": 43.0,
+        "status": "inProgress",
+        "name": "تأمین سرمایه در گردش خریدوفروش انواع حبوبات"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 6.378808975219727,
+    "data": {
+      "project": {
+        "company": "یزدان مطهر قائم وسطی",
+        "duration": "12\nماه",
+        "investment_amount": "15 میلیارد",
+        "guarantee": "ضمانتنامه تعهد پرداخت بانک ملی\nتضمین اصل سرمایه",
+        "profit": 43.0,
+        "status": "inProgress",
+        "name": "تأمین سرمایه در گردش خریدوفروش انواع حبوبات"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

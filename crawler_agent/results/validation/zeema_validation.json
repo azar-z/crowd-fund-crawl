@@ -1,0 +1,77 @@
+{
+  "project_name": "zeema",
+  "validation_date": "2025-08-15T21:00:08.838474",
+  "basic_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "یزدان مطهر قائم وسطی",
+      "function_value": "یزدان مطهر قائم وسطی",
+      "expert_value": "یزدان مطهر قائم وسطی",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "12",
+      "function_value": "12 ماه",
+      "expert_value": "12\nماه",
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "ضمانتنامه تعهد پرداخت بانک ملی",
+      "function_value": "ضمانتنامه تعهد پرداخت بانک ملی",
+      "expert_value": "ضمانتنامه تعهد پرداخت بانک ملی\nتضمین اصل سرمایه",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "15 میلیارد",
+      "function_value": "15 میلیارد",
+      "expert_value": "15 میلیارد",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "تأمین سرمایه در گردش خریدوفروش انواع حبوبات",
+      "function_value": "تأمین سرمایه در گردش خریدوفروش انواع حبوبات",
+      "expert_value": "تأمین سرمایه در گردش خریدوفروش انواع حبوبات",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "43",
+      "function_value": 43.0,
+      "expert_value": 43.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "inProgress",
+      "function_value": "inProgress",
+      "expert_value": "inProgress",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    }
+  }
+}

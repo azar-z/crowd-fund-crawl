@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 3.593416690826416,
+    "data": {
+      "project": {
+        "name": "نگارین تکمیل یزد",
+        "company": "نگارین تکمیل یزد",
+        "profit": "43",
+        "guarantee": " بدون تضمین سود و با تضمین ( ضمانت نامه تعهد پرداخت ) برای اصل سرمایه ",
+        "investment_amount": "120,000,000,000",
+        "duration": "12 ماهه",
+        "status": "موفقیت جمع آوری وجوه"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 2.506369113922119,
+    "data": {
+      "project": {
+        "company": "نگارین تکمیل یزد",
+        "duration": "12 ماهه",
+        "investment_amount": "120,000,000,000 ریال",
+        "guarantee": "بدون تضمین سود و با تضمین ( ضمانت نامه تعهد پرداخت ) برای اصل سرمایه",
+        "profit": 43.0,
+        "status": "موفقیت جمع آوری وجوه",
+        "name": "نگارین تکمیل یزد"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 6.3613831996917725,
+    "data": {
+      "project": {
+        "company": "نگارین تکمیل یزد",
+        "duration": "12 ماهه",
+        "investment_amount": "120,000,000,000 ریال",
+        "guarantee": "بدون تضمین سود و با تضمین ( ضمانت نامه تعهد پرداخت ) برای اصل سرمایه \n\nضمانت نامه این طرح از سوی بانک ملی با شناسه سپام: 0350104681895316 صادر شده که تا تاریخ 22/04/1404 معتبر می‌باشد و با درخواست شرکت سامانه تامین هوشمند نوآفرینان ایرانیان تا زمان مورد درخواست این شرکت قابل تمدید است.",
+        "profit": 43.0,
+        "status": "موفقیت جمع آوری وجوه",
+        "name": "نگارین تکمیل یزد"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

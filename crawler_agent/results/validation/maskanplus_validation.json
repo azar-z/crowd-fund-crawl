@@ -1,0 +1,77 @@
+{
+  "project_name": "maskanplus",
+  "validation_date": "2025-08-15T20:57:12.921843",
+  "basic_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "شمیم رایحه یاس نوین",
+      "function_value": "شمیم رایحه یاس نوین",
+      "expert_value": "شمیم رایحه یاس نوین",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "12",
+      "function_value": "12 ماهه",
+      "expert_value": "12 ماهه",
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "ضمانت‌نامه تعهد پرداخت صندوق ضمانت سرمایه‌گذاری صنایع کوچک برای اصل سرمایه",
+      "function_value": "ضمانت‌نامه تعهد پرداخت صندوق ضمانت سرمایه‌گذاری صنایع کوچک برای اصل سرمایه",
+      "expert_value": "ضمانت‌نامه تعهد پرداخت به میزان اصل",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "33,300,000,000",
+      "function_value": "33,300,000,000",
+      "expert_value": "33,300,000,000 تا 55,500,000,000",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "مشارکت در تولید و فروش بادی اسپلش",
+      "function_value": "مشارکت در تولید و فروش بادی اسپلش",
+      "expert_value": "مشارکت در تولید و فروش بادی اسپلش",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "43",
+      "function_value": 43.0,
+      "expert_value": 43.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "موفق",
+      "function_value": "موفق",
+      "expert_value": "موفق",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    }
+  }
+}

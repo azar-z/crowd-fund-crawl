@@ -1,0 +1,52 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 3.3826892375946045,
+    "data": {
+      "project": {
+        "name": "تولید محتوای آموزشی",
+        "company": "موسسه آموزشی راشد نوین رضوی",
+        "profit": 45,
+        "guarantee": "طرح تحت نظارت کارگزاری بورس و اوراق بهادار رضوی می باشد.",
+        "investment_amount": "117 میلیارد ریال",
+        "duration": "دوازده ماه",
+        "status": "تکمیل‌سرمایه‌شده"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 2.0575175285339355,
+    "data": {
+      "project": {
+        "company": "موسسه آموزشی راشد نوین رضوی",
+        "profit": 45.0,
+        "guarantee": "اطلاعات بیشتر در متن",
+        "name": "تولید محتوای آموزشی"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 8.259662628173828,
+    "data": {
+      "project": {
+        "duration": "12 ماه پس از واریز وجوه به حساب متقاضی (طی حداکثر 2روز کاری)",
+        "company": "موسسه آموزشی راشد نوین رضوی",
+        "investment_amount": "117 میلیارد ریال",
+        "guarantee": "طرح تحت نظارت <a href=\"https://rbc.ir/\" target=\"_blank\">کارگزاری بورس و اوراق بهادار رضوی</a> می باشد.",
+        "profit": 45.0,
+        "status": "تکمیل‌سرمایه‌شده",
+        "name": "تولید محتوای آموزشی"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}
