@@ -1,0 +1,182 @@
+{
+  "project_name": "ebtekar",
+  "evaluation_date": "2025-08-17T22:01:39.351241",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.4,
+    "average_confidence": 0.914
+  },
+  "function_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.4,
+    "average_confidence": 0.914
+  },
+  "expert_agent": {
+    "correct": 4,
+    "incorrect": 3,
+    "total_confidence": 6.4,
+    "average_confidence": 0.914
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "فنی و مهندسی یکتا تست",
+      "function_value": "فنی و مهندسی یکتا تست",
+      "expert_value": "فنی و مهندسی یکتا تست",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"فنی و مهندسی یکتا تست\" appears multiple times in the HTML content and is clearly identified as the company name associated with the project. The extraction is accurate and complete.",
+        "function_explanation": "The extracted value \"فنی و مهندسی یکتا تست\" appears multiple times in the HTML content and is clearly identified as the company name associated with the project. The extraction is accurate and complete.",
+        "expert_explanation": "The extracted value \"فنی و مهندسی یکتا تست\" appears multiple times in the HTML content and is clearly identified as the company name associated with the project. The extraction is accurate and complete.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "دوازده ماهه",
+      "function_value": "دوازده ماهه",
+      "expert_value": "دوازده ماهه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"دوازده ماهه\" (twelve months) is explicitly present in the HTML content within the \"مدت طرح:\" (Project Duration:) section. The text \"یک سال (12 ماه)\" which translates to \"one year (12 months)\" also confirms the duration. Therefore, the extraction is accurate and complete.",
+        "function_explanation": "The extracted value \"دوازده ماهه\" (twelve months) is explicitly present in the HTML content within the \"مدت طرح:\" (Project Duration:) section. The text \"یک سال (12 ماه)\" which translates to \"one year (12 months)\" also confirms the duration. Therefore, the extraction is accurate and complete.",
+        "expert_explanation": "The extracted value \"دوازده ماهه\" (twelve months) is explicitly present in the HTML content within the \"مدت طرح:\" (Project Duration:) section. The text \"یک سال (12 ماه)\" which translates to \"one year (12 months)\" also confirms the duration. Therefore, the extraction is accurate and complete.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "guarantee": {
+      "basic_value": "اصل سرمایه",
+      "function_value": "اصل سرمایه",
+      "expert_value": "اصل سرمایه  اصل سرمایه ",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": false,
+        "basic_explanation": "Group 1 correctly extracts \"اصل سرمایه\" which translates to \"principal capital\" and accurately reflects the guarantee mentioned in the text: \"باز پرداخت اصل سرمایه در سررسید می باشد\" (repayment of principal capital at maturity). Group 2 repeats the value unnecessarily, making it less clean and not adding any value. While technically present, the repetition doesn't improve the extraction.",
+        "function_explanation": "Group 1 correctly extracts \"اصل سرمایه\" which translates to \"principal capital\" and accurately reflects the guarantee mentioned in the text: \"باز پرداخت اصل سرمایه در سررسید می باشد\" (repayment of principal capital at maturity). Group 2 repeats the value unnecessarily, making it less clean and not adding any value. While technically present, the repetition doesn't improve the extraction.",
+        "expert_explanation": "Group 1 correctly extracts \"اصل سرمایه\" which translates to \"principal capital\" and accurately reflects the guarantee mentioned in the text: \"باز پرداخت اصل سرمایه در سررسید می باشد\" (repayment of principal capital at maturity). Group 2 repeats the value unnecessarily, making it less clean and not adding any value. While technically present, the repetition doesn't improve the extraction.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          2
+        ],
+        "response_groups": 2
+      }
+    },
+    "investment_amount": {
+      "basic_value": "25,000,000,000",
+      "function_value": "25,000,000,000",
+      "expert_value": "25,000,000,000",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "Failed to parse LLM response",
+        "function_explanation": "Failed to parse LLM response",
+        "expert_explanation": "Failed to parse LLM response",
+        "basic_confidence": 0.5,
+        "function_confidence": 0.5,
+        "expert_confidence": 0.5,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": []
+      }
+    },
+    "name": {
+      "basic_value": "تست تامین سرمایه در گردش لازم",
+      "function_value": "تست تامین سرمایه در گردش لازم",
+      "expert_value": "تست تامین سرمایه در گردش لازم",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تست تامین سرمایه در گردش لازم\" appears multiple times in the HTML content as the title of the project/scheme. It accurately represents the name of the crowdfunding project.",
+        "function_explanation": "The extracted value \"تست تامین سرمایه در گردش لازم\" appears multiple times in the HTML content as the title of the project/scheme. It accurately represents the name of the crowdfunding project.",
+        "expert_explanation": "The extracted value \"تست تامین سرمایه در گردش لازم\" appears multiple times in the HTML content as the title of the project/scheme. It accurately represents the name of the crowdfunding project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": "42",
+      "function_value": 42.0,
+      "expert_value": 42.0,
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Both groups extracted \"42\" or \"42.0\", which is the correct profit percentage as stated in the HTML content: \"پیش بینی سود 42%\". The decimal representation is also acceptable.",
+        "function_explanation": "Both groups extracted \"42\" or \"42.0\", which is the correct profit percentage as stated in the HTML content: \"پیش بینی سود 42%\". The decimal representation is also acceptable.",
+        "expert_explanation": "Both groups extracted \"42\" or \"42.0\", which is the correct profit percentage as stated in the HTML content: \"پیش بینی سود 42%\". The decimal representation is also acceptable.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": null,
+      "function_value": "active",
+      "expert_value": "فعال",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": false,
+        "basic_explanation": "Group 1 provides NULL/NOT_FOUND, which is incorrect as the project is clearly ongoing. Group 3 provides \"فعال\" which translates to \"active\" in English, but it's better to provide the English equivalent directly. Group 2 correctly identifies the status as \"active\". The HTML content indicates the project is actively seeking funding (\"اقدام به تامین مالی\") and has a remaining time (\"زمان باقی مانده 4 روز\"), confirming its active status.",
+        "function_explanation": "Group 1 provides NULL/NOT_FOUND, which is incorrect as the project is clearly ongoing. Group 3 provides \"فعال\" which translates to \"active\" in English, but it's better to provide the English equivalent directly. Group 2 correctly identifies the status as \"active\". The HTML content indicates the project is actively seeking funding (\"اقدام به تامین مالی\") and has a remaining time (\"زمان باقی مانده 4 روز\"), confirming its active status.",
+        "expert_explanation": "Group 1 provides NULL/NOT_FOUND, which is incorrect as the project is clearly ongoing. Group 3 provides \"فعال\" which translates to \"active\" in English, but it's better to provide the English equivalent directly. Group 2 correctly identifies the status as \"active\". The HTML content indicates the project is actively seeking funding (\"اقدام به تامین مالی\") and has a remaining time (\"زمان باقی مانده 4 روز\"), confirming its active status.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2
+        ],
+        "response_groups": 3
+      }
+    }
+  }
+}

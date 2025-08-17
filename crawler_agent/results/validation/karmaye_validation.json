@@ -1,0 +1,77 @@
+{
+  "project_name": "karmaye",
+  "validation_date": "2025-08-17T21:58:51.426161",
+  "basic_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "انرژی و معدن سیمیا",
+      "function_value": "انرژی و معدن سیمیا",
+      "expert_value": "انرژی و معدن سیمیا",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "12 ماه",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "ضمانت‌نامه تعهد پرداخت",
+      "function_value": "ضمانت‌نامه تعهد پرداخت",
+      "expert_value": "ضمانت‌نامه تعهد پرداخت\n ضمانت‌نامه تعهد پرداخت از بانک سینا به شماره 0421704665013699",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "200,000,000,000",
+      "function_value": "200,000,000,000",
+      "expert_value": "200,000,000,000",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "تامین سرمایه در گردش جهت تامین فروسیلیس 60-10 به عنوان مواد اولیه فولادسازی برای تولید آلیاژهای نشکن",
+      "function_value": "تامین سرمایه در گردش جهت تامین فروسیلیس 60-10 به عنوان مواد اولیه فولادسازی برای تولید آلیاژهای نشکن",
+      "expert_value": "تامین سرمایه در گردش جهت تامین فروسیلیس 60-10 به عنوان مواد اولیه فولادسازی برای تولید آلیاژهای نشکن",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "45",
+      "function_value": 45.0,
+      "expert_value": 45.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "تامین مالی شده",
+      "function_value": "تامین مالی شده",
+      "expert_value": " تامین مالی شده ",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    }
+  }
+}

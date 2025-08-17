@@ -1,0 +1,180 @@
+{
+  "project_name": "ibcrowd",
+  "evaluation_date": "2025-08-17T23:51:42.531525",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 3,
+    "incorrect": 4,
+    "total_confidence": 6.45,
+    "average_confidence": 0.921
+  },
+  "function_agent": {
+    "correct": 4,
+    "incorrect": 3,
+    "total_confidence": 6.45,
+    "average_confidence": 0.921
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.45,
+    "average_confidence": 0.921
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "تولیدی شکوه نادی",
+      "function_value": "تولیدی شکوه نادی",
+      "expert_value": "تولیدی شکوه نادی",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تولیدی شکوه نادی\" (Tolidy Shokohe Nadi) appears multiple times in the HTML content and clearly identifies the company associated with the crowdfunding project. It is accurately extracted.",
+        "function_explanation": "The extracted value \"تولیدی شکوه نادی\" (Tolidy Shokohe Nadi) appears multiple times in the HTML content and clearly identifies the company associated with the crowdfunding project. It is accurately extracted.",
+        "expert_explanation": "The extracted value \"تولیدی شکوه نادی\" (Tolidy Shokohe Nadi) appears multiple times in the HTML content and clearly identifies the company associated with the crowdfunding project. It is accurately extracted.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "12 ماه",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"12 ماه\" (12 months) is explicitly stated in the HTML content as \"دوره سرمایه گذاری 12 ماه\" (Investment period 12 months). It accurately represents the duration of the investment.",
+        "function_explanation": "The extracted value \"12 ماه\" (12 months) is explicitly stated in the HTML content as \"دوره سرمایه گذاری 12 ماه\" (Investment period 12 months). It accurately represents the duration of the investment.",
+        "expert_explanation": "The extracted value \"12 ماه\" (12 months) is explicitly stated in the HTML content as \"دوره سرمایه گذاری 12 ماه\" (Investment period 12 months). It accurately represents the duration of the investment.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "guarantee": {
+      "basic_value": "گواهی‌های شراکت اين طرح، دارای ضمانت‌نامه تعهد پرداخت بانکی به عنوان وثایق مالی می‌باشد.",
+      "function_value": "گواهی‌های شراکت اين طرح، دارای ضمانت‌نامه تعهد پرداخت بانکی به عنوان وثایق مالی می‌باشد.",
+      "expert_value": "گواهی‌های شراکت اين طرح، دارای ضمانت‌نامه تعهد پرداخت بانکی به عنوان وثایق مالی می‌باشد.",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"گواهی‌های شراکت اين طرح، دارای ضمانت‌نامه تعهد پرداخت بانکی به عنوان وثایق مالی می‌باشد.\" is directly present in the provided HTML content and accurately describes the guarantee offered for the project. It corresponds to the field description of a guarantee description.",
+        "function_explanation": "The extracted value \"گواهی‌های شراکت اين طرح، دارای ضمانت‌نامه تعهد پرداخت بانکی به عنوان وثایق مالی می‌باشد.\" is directly present in the provided HTML content and accurately describes the guarantee offered for the project. It corresponds to the field description of a guarantee description.",
+        "expert_explanation": "The extracted value \"گواهی‌های شراکت اين طرح، دارای ضمانت‌نامه تعهد پرداخت بانکی به عنوان وثایق مالی می‌باشد.\" is directly present in the provided HTML content and accurately describes the guarantee offered for the project. It corresponds to the field description of a guarantee description.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "investment_amount": {
+      "basic_value": "250,000,000,000",
+      "function_value": "250,000,000,000",
+      "expert_value": "250,000,000,000  ریال",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 2 correctly extracted \"250,000,000,000 ريال\" which is explicitly stated in the HTML as the amount of capital needed (\"میزان سرمایه تامین شده 250,000,000,000 ريال\" and \"سرمایه مورد نیاز طرح 250,000,000,000 ريال\"). Group 1 is missing the \"ریال\" unit, making it less precise and therefore incorrect. While the number is present, the unit is crucial for this field.",
+        "function_explanation": "Group 2 correctly extracted \"250,000,000,000 ريال\" which is explicitly stated in the HTML as the amount of capital needed (\"میزان سرمایه تامین شده 250,000,000,000 ريال\" and \"سرمایه مورد نیاز طرح 250,000,000,000 ريال\"). Group 1 is missing the \"ریال\" unit, making it less precise and therefore incorrect. While the number is present, the unit is crucial for this field.",
+        "expert_explanation": "Group 2 correctly extracted \"250,000,000,000 ريال\" which is explicitly stated in the HTML as the amount of capital needed (\"میزان سرمایه تامین شده 250,000,000,000 ريال\" and \"سرمایه مورد نیاز طرح 250,000,000,000 ريال\"). Group 1 is missing the \"ریال\" unit, making it less precise and therefore incorrect. While the number is present, the unit is crucial for this field.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "name": {
+      "basic_value": "تأمین سرمایه در گردش شرکت تولیدی شکوه نادی جهت تولید و فروش انواع ویفر",
+      "function_value": "تأمین سرمایه در گردش شرکت تولیدی شکوه نادی جهت تولید و فروش انواع ویفر",
+      "expert_value": "تأمین سرمایه در گردش شرکت تولیدی شکوه نادی جهت تولید و فروش انواع ویفر (محصولات غذایی و آشامیدنی به جز قند و شکر)",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 2's response exactly matches the project name as it appears in the source HTML content, including the parenthetical clarification about the product category. Group 1's response is missing the parenthetical clarification, making it incomplete and therefore incorrect. The field requires a complete and accurate name, and only Group 2 provides that.",
+        "function_explanation": "Group 2's response exactly matches the project name as it appears in the source HTML content, including the parenthetical clarification about the product category. Group 1's response is missing the parenthetical clarification, making it incomplete and therefore incorrect. The field requires a complete and accurate name, and only Group 2 provides that.",
+        "expert_explanation": "Group 2's response exactly matches the project name as it appears in the source HTML content, including the parenthetical clarification about the product category. Group 1's response is missing the parenthetical clarification, making it incomplete and therefore incorrect. The field requires a complete and accurate name, and only Group 2 provides that.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "profit": {
+      "basic_value": null,
+      "function_value": 34.0,
+      "expert_value": 34.0,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 incorrectly identified the profit as not found. The source HTML clearly states \"پیش بینی سود مشارکت دوره سرمایه‌گذاری 34%\" which translates to \"Profit forecast for the investment period is 34%\". Group 2 correctly extracted the profit as 34.0.",
+        "function_explanation": "Group 1 incorrectly identified the profit as not found. The source HTML clearly states \"پیش بینی سود مشارکت دوره سرمایه‌گذاری 34%\" which translates to \"Profit forecast for the investment period is 34%\". Group 2 correctly extracted the profit as 34.0.",
+        "expert_explanation": "Group 1 incorrectly identified the profit as not found. The source HTML clearly states \"پیش بینی سود مشارکت دوره سرمایه‌گذاری 34%\" which translates to \"Profit forecast for the investment period is 34%\". Group 2 correctly extracted the profit as 34.0.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "تکمیل سرمایه گذاری",
+      "function_value": "تکمیل سرمایه گذاری",
+      "expert_value": "تکمیل سرمایه گذاری",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "Failed to parse LLM response",
+        "function_explanation": "Failed to parse LLM response",
+        "expert_explanation": "Failed to parse LLM response",
+        "basic_confidence": 0.5,
+        "function_confidence": 0.5,
+        "expert_confidence": 0.5,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": []
+      }
+    }
+  }
+}

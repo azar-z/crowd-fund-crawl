@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.4200732707977295,
+    "data": {
+      "project": {
+        "name": "تامین سرمایه در گردش جهت تامین فروسیلیس 60-10 به عنوان مواد اولیه فولادسازی برای تولید آلیاژهای نشکن",
+        "company": "انرژی و معدن سیمیا",
+        "profit": "45",
+        "guarantee": "ضمانت‌نامه تعهد پرداخت",
+        "investment_amount": "200,000,000,000",
+        "duration": "12 ماه",
+        "status": "تامین مالی شده"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 1.7080910205841064,
+    "data": {
+      "project": {
+        "company": "انرژی و معدن سیمیا",
+        "duration": "12 ماه",
+        "investment_amount": "200,000,000,000",
+        "guarantee": "ضمانت‌نامه تعهد پرداخت",
+        "profit": 45.0,
+        "status": "تامین مالی شده",
+        "name": "تامین سرمایه در گردش جهت تامین فروسیلیس 60-10 به عنوان مواد اولیه فولادسازی برای تولید آلیاژهای نشکن"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 4.72104287147522,
+    "data": {
+      "project": {
+        "duration": "12 ماه",
+        "company": "انرژی و معدن سیمیا",
+        "investment_amount": "200,000,000,000",
+        "guarantee": "ضمانت‌نامه تعهد پرداخت\n ضمانت‌نامه تعهد پرداخت از بانک سینا به شماره 0421704665013699",
+        "profit": 45.0,
+        "status": " تامین مالی شده ",
+        "name": "تامین سرمایه در گردش جهت تامین فروسیلیس 60-10 به عنوان مواد اولیه فولادسازی برای تولید آلیاژهای نشکن"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

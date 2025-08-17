@@ -1,0 +1,182 @@
+{
+  "project_name": "karmaye",
+  "evaluation_date": "2025-08-17T22:05:20.477608",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 5.9,
+    "average_confidence": 0.843
+  },
+  "function_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 5.9,
+    "average_confidence": 0.843
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 5.9,
+    "average_confidence": 0.843
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "انرژی و معدن سیمیا",
+      "function_value": "انرژی و معدن سیمیا",
+      "expert_value": "انرژی و معدن سیمیا",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"انرژی و معدن سیمیا\" (Enerzhi va Ma'den Simia) appears multiple times within the provided HTML content, clearly identifying the company associated with the crowdfunding project. The extraction is accurate and complete.",
+        "function_explanation": "The extracted value \"انرژی و معدن سیمیا\" (Enerzhi va Ma'den Simia) appears multiple times within the provided HTML content, clearly identifying the company associated with the crowdfunding project. The extraction is accurate and complete.",
+        "expert_explanation": "The extracted value \"انرژی و معدن سیمیا\" (Enerzhi va Ma'den Simia) appears multiple times within the provided HTML content, clearly identifying the company associated with the crowdfunding project. The extraction is accurate and complete.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "12 ماه",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"12 ماه\" (12 months) is explicitly stated in the HTML content as the duration of the project: \"شرکت انرژی و معدن سیمیا در نظر دارد تا طرح فوق با نام تامین سرمایه در گردش جهت تامین فروسیلیس به عنوان مواد اولیه فولادسازی را طی 12 ماه به پایان برساند.\" and \"مدت طرح: 12 ماهمهلت سرمایه‌گذاری\".",
+        "function_explanation": "The extracted value \"12 ماه\" (12 months) is explicitly stated in the HTML content as the duration of the project: \"شرکت انرژی و معدن سیمیا در نظر دارد تا طرح فوق با نام تامین سرمایه در گردش جهت تامین فروسیلیس به عنوان مواد اولیه فولادسازی را طی 12 ماه به پایان برساند.\" and \"مدت طرح: 12 ماهمهلت سرمایه‌گذاری\".",
+        "expert_explanation": "The extracted value \"12 ماه\" (12 months) is explicitly stated in the HTML content as the duration of the project: \"شرکت انرژی و معدن سیمیا در نظر دارد تا طرح فوق با نام تامین سرمایه در گردش جهت تامین فروسیلیس به عنوان مواد اولیه فولادسازی را طی 12 ماه به پایان برساند.\" and \"مدت طرح: 12 ماهمهلت سرمایه‌گذاری\".",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "guarantee": {
+      "basic_value": "ضمانت‌نامه تعهد پرداخت",
+      "function_value": "ضمانت‌نامه تعهد پرداخت",
+      "expert_value": "ضمانت‌نامه تعهد پرداخت\n ضمانت‌نامه تعهد پرداخت از بانک سینا به شماره 0421704665013699",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 2 accurately extracts the guarantee information, including the type (\"ضمانت‌نامه تعهد پرداخت\") and the bank details (\"از بانک سینا به شماره 0421704665013699\"). Group 1 provides only the type of guarantee, which is incomplete. The source HTML clearly states the full guarantee details, making Group 2 the correct extraction.",
+        "function_explanation": "Group 2 accurately extracts the guarantee information, including the type (\"ضمانت‌نامه تعهد پرداخت\") and the bank details (\"از بانک سینا به شماره 0421704665013699\"). Group 1 provides only the type of guarantee, which is incomplete. The source HTML clearly states the full guarantee details, making Group 2 the correct extraction.",
+        "expert_explanation": "Group 2 accurately extracts the guarantee information, including the type (\"ضمانت‌نامه تعهد پرداخت\") and the bank details (\"از بانک سینا به شماره 0421704665013699\"). Group 1 provides only the type of guarantee, which is incomplete. The source HTML clearly states the full guarantee details, making Group 2 the correct extraction.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "investment_amount": {
+      "basic_value": "200,000,000,000",
+      "function_value": "200,000,000,000",
+      "expert_value": "200,000,000,000",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The HTML content clearly states \"200.000.000.000 ریال\" which translates to 200,000,000,000. This is the total investment amount requested for the project and matches the extracted value.",
+        "function_explanation": "The HTML content clearly states \"200.000.000.000 ریال\" which translates to 200,000,000,000. This is the total investment amount requested for the project and matches the extracted value.",
+        "expert_explanation": "The HTML content clearly states \"200.000.000.000 ریال\" which translates to 200,000,000,000. This is the total investment amount requested for the project and matches the extracted value.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "name": {
+      "basic_value": "تامین سرمایه در گردش جهت تامین فروسیلیس 60-10 به عنوان مواد اولیه فولادسازی برای تولید آلیاژهای نشکن",
+      "function_value": "تامین سرمایه در گردش جهت تامین فروسیلیس 60-10 به عنوان مواد اولیه فولادسازی برای تولید آلیاژهای نشکن",
+      "expert_value": "تامین سرمایه در گردش جهت تامین فروسیلیس 60-10 به عنوان مواد اولیه فولادسازی برای تولید آلیاژهای نشکن",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تامین سرمایه در گردش جهت تامین فروسیلیس 60-10 به عنوان مواد اولیه فولادسازی برای تولید آلیاژهای نشکن\" is present in the source HTML content and accurately represents the project's name as stated multiple times within the text. It is a complete and accurate extraction for the 'name' field.",
+        "function_explanation": "The extracted value \"تامین سرمایه در گردش جهت تامین فروسیلیس 60-10 به عنوان مواد اولیه فولادسازی برای تولید آلیاژهای نشکن\" is present in the source HTML content and accurately represents the project's name as stated multiple times within the text. It is a complete and accurate extraction for the 'name' field.",
+        "expert_explanation": "The extracted value \"تامین سرمایه در گردش جهت تامین فروسیلیس 60-10 به عنوان مواد اولیه فولادسازی برای تولید آلیاژهای نشکن\" is present in the source HTML content and accurately represents the project's name as stated multiple times within the text. It is a complete and accurate extraction for the 'name' field.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": "45",
+      "function_value": 45.0,
+      "expert_value": 45.0,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "The provided HTML content does not contain any explicit profit percentage. The requested amount is 200,000,000,000 ریال, but this is not the profit. The agents extracted '45' or '45.0' which are not present in the document and are therefore incorrect. There is no profit information available in the provided text.",
+        "function_explanation": "The provided HTML content does not contain any explicit profit percentage. The requested amount is 200,000,000,000 ریال, but this is not the profit. The agents extracted '45' or '45.0' which are not present in the document and are therefore incorrect. There is no profit information available in the provided text.",
+        "expert_explanation": "The provided HTML content does not contain any explicit profit percentage. The requested amount is 200,000,000,000 ریال, but this is not the profit. The agents extracted '45' or '45.0' which are not present in the document and are therefore incorrect. There is no profit information available in the provided text.",
+        "basic_confidence": 0.0,
+        "function_confidence": 0.0,
+        "expert_confidence": 0.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "تامین مالی شده",
+      "function_value": "تامین مالی شده",
+      "expert_value": " تامین مالی شده ",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تامین مالی شده\" (meaning \"funded\" in Persian) appears directly in the HTML content, indicating the project's status. This accurately reflects the project's current state as a completed funding round.",
+        "function_explanation": "The extracted value \"تامین مالی شده\" (meaning \"funded\" in Persian) appears directly in the HTML content, indicating the project's status. This accurately reflects the project's current state as a completed funding round.",
+        "expert_explanation": "The extracted value \"تامین مالی شده\" (meaning \"funded\" in Persian) appears directly in the HTML content, indicating the project's status. This accurately reflects the project's current state as a completed funding round.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    }
+  }
+}

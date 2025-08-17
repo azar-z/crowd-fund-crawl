@@ -1,0 +1,77 @@
+{
+  "project_name": "sdcrowd",
+  "validation_date": "2025-08-17T23:02:49.886181",
+  "basic_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "سرمایه دانش",
+      "function_value": "سرمایه دانش",
+      "expert_value": "سرمایه دانش",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "12 ماه",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "بدون تضمین سود و بدون تضمین اصل سرمایه",
+      "function_value": "بدون تضمین سود و بدون تضمین اصل سرمایه",
+      "expert_value": "بدون تضمین سود و بدون تضمین اصل سرمایه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "1  ریال",
+      "function_value": "250,000,000,000",
+      "expert_value": "250,000,000,000",
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "تأمین سرمایه در گردش سرمایه دانش",
+      "function_value": "تأمین سرمایه در گردش سرمایه دانش",
+      "expert_value": "تأمین سرمایه در گردش سرمایه دانش",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": 12,
+      "function_value": 12.0,
+      "expert_value": 12.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "جمع آوری وجوه",
+      "function_value": "جمع آوری وجوه",
+      "expert_value": "جمع آوری وجوه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    }
+  }
+}

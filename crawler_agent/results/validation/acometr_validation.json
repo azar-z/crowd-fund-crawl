@@ -1,0 +1,77 @@
+{
+  "project_name": "acometr",
+  "validation_date": "2025-08-17T23:42:25.629472",
+  "basic_agent": {
+    "correct": 3,
+    "incorrect": 4,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 4,
+    "incorrect": 3,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "علیرضا عموی نوده",
+      "function_value": "علیرضا عموی نوده",
+      "expert_value": "علیرضا عموی نوده",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "9",
+      "function_value": "9 ماه",
+      "expert_value": "9 ماه",
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "۹ ماه",
+      "function_value": "نامشخص",
+      "expert_value": "-3% \nسود باقیمانده تا پایان پروژه",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": false
+    },
+    "investment_amount": {
+      "basic_value": "33,250",
+      "function_value": "نامشخص",
+      "expert_value": "33/250 میلیون تومان",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "شهرک آکو پارک / ویلای شماره 5",
+      "function_value": "شهرک آکو پارک / ویلای شماره 5",
+      "expert_value": "شهرک آکو پارک / ویلای شماره 5",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "30",
+      "function_value": 30.0,
+      "expert_value": 30.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "active",
+      "function_value": "نامشخص",
+      "expert_value": "",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": false
+    }
+  }
+}

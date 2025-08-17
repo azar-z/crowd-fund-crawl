@@ -1,0 +1,77 @@
+{
+  "project_name": "fankamfund",
+  "validation_date": "2025-08-17T21:57:20.823446",
+  "basic_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "شرکت آریان تجارت کیان امید",
+      "function_value": "شرکت آریان تجارت کیان امید",
+      "expert_value": "شرکت آریان تجارت کیان امید",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "12",
+      "function_value": "12",
+      "expert_value": "12 ماه",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "بدون تضمین سود و با تضمین توثیق سهام بورسی برای اصل سرمایه",
+      "function_value": "بدون تضمین سود و با تضمین توثیق سهام بورسی برای اصل سرمایه",
+      "expert_value": "بدون تضمین سود و با تضمین توثیق سهام بورسی برای اصل سرمایه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "250,000,000,000",
+      "function_value": "250,000,000,000",
+      "expert_value": "250,000,000,000",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "تامین سرمایه در گردش جهت خرید و فروش محصولات بهداشتی برند الیو",
+      "function_value": "تامین سرمایه در گردش جهت خرید و فروش محصولات بهداشتی برند الیو",
+      "expert_value": "تامین سرمایه در گردش جهت خرید و فروش محصولات بهداشتی برند الیو",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": 45,
+      "function_value": 45.0,
+      "expert_value": 45.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "موفق در جذب سرمایه",
+      "function_value": "موفق در جذب سرمایه",
+      "expert_value": "موفق در جذب سرمایه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    }
+  }
+}

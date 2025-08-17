@@ -1,0 +1,77 @@
+{
+  "project_name": "ebtekar",
+  "validation_date": "2025-08-17T21:56:16.991853",
+  "basic_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "فنی و مهندسی یکتا تست",
+      "function_value": "فنی و مهندسی یکتا تست",
+      "expert_value": "فنی و مهندسی یکتا تست",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "دوازده ماهه",
+      "function_value": "دوازده ماهه",
+      "expert_value": "دوازده ماهه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "اصل سرمایه",
+      "function_value": "اصل سرمایه",
+      "expert_value": "اصل سرمایه  اصل سرمایه ",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "25,000,000,000",
+      "function_value": "25,000,000,000",
+      "expert_value": "25,000,000,000",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "تست تامین سرمایه در گردش لازم",
+      "function_value": "تست تامین سرمایه در گردش لازم",
+      "expert_value": "تست تامین سرمایه در گردش لازم",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "42",
+      "function_value": 42.0,
+      "expert_value": 42.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": null,
+      "function_value": "active",
+      "expert_value": "فعال",
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": true
+    }
+  }
+}

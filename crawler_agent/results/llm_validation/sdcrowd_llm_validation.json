@@ -1,0 +1,182 @@
+{
+  "project_name": "sdcrowd",
+  "evaluation_date": "2025-08-17T23:04:09.228654",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 4,
+    "incorrect": 3,
+    "total_confidence": 6.3500000000000005,
+    "average_confidence": 0.907
+  },
+  "function_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.3500000000000005,
+    "average_confidence": 0.907
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.3500000000000005,
+    "average_confidence": 0.907
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "سرمایه دانش",
+      "function_value": "سرمایه دانش",
+      "expert_value": "سرمایه دانش",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"سرمایه دانش\" (Sarmaye Danesh) appears multiple times in the HTML content as the name of the company associated with the project. It is accurately extracted and complete.",
+        "function_explanation": "The extracted value \"سرمایه دانش\" (Sarmaye Danesh) appears multiple times in the HTML content as the name of the company associated with the project. It is accurately extracted and complete.",
+        "expert_explanation": "The extracted value \"سرمایه دانش\" (Sarmaye Danesh) appears multiple times in the HTML content as the name of the company associated with the project. It is accurately extracted and complete.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "12 ماه",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"12 ماه\" (12 months) is explicitly stated in the HTML content as \"دوره سرمایه گذاری: 12 ماه\" (Investment period: 12 months). It accurately represents the duration of the investment.",
+        "function_explanation": "The extracted value \"12 ماه\" (12 months) is explicitly stated in the HTML content as \"دوره سرمایه گذاری: 12 ماه\" (Investment period: 12 months). It accurately represents the duration of the investment.",
+        "expert_explanation": "The extracted value \"12 ماه\" (12 months) is explicitly stated in the HTML content as \"دوره سرمایه گذاری: 12 ماه\" (Investment period: 12 months). It accurately represents the duration of the investment.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "guarantee": {
+      "basic_value": "بدون تضمین سود و بدون تضمین اصل سرمایه",
+      "function_value": "بدون تضمین سود و بدون تضمین اصل سرمایه",
+      "expert_value": "بدون تضمین سود و بدون تضمین اصل سرمایه",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "Failed to parse LLM response",
+        "function_explanation": "Failed to parse LLM response",
+        "expert_explanation": "Failed to parse LLM response",
+        "basic_confidence": 0.5,
+        "function_confidence": 0.5,
+        "expert_confidence": 0.5,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": []
+      }
+    },
+    "investment_amount": {
+      "basic_value": "1  ریال",
+      "function_value": "250,000,000,000",
+      "expert_value": "250,000,000,000",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 extracted \"1 ریال\" which is the *minimum* investment amount, not the total investment amount. The field description asks for the total investment amount. Group 2 correctly extracted \"250,000,000,000\" which is explicitly stated as the \"سرمایه مورد نیاز طرح\" (total capital required for the project) and \"سرمایه در گردشی به مبلغ 250,000 میلیون ریال\" (working capital of 250,000 million Rials). The units \"ریال\" are also present in the source.",
+        "function_explanation": "Group 1 extracted \"1 ریال\" which is the *minimum* investment amount, not the total investment amount. The field description asks for the total investment amount. Group 2 correctly extracted \"250,000,000,000\" which is explicitly stated as the \"سرمایه مورد نیاز طرح\" (total capital required for the project) and \"سرمایه در گردشی به مبلغ 250,000 میلیون ریال\" (working capital of 250,000 million Rials). The units \"ریال\" are also present in the source.",
+        "expert_explanation": "Group 1 extracted \"1 ریال\" which is the *minimum* investment amount, not the total investment amount. The field description asks for the total investment amount. Group 2 correctly extracted \"250,000,000,000\" which is explicitly stated as the \"سرمایه مورد نیاز طرح\" (total capital required for the project) and \"سرمایه در گردشی به مبلغ 250,000 میلیون ریال\" (working capital of 250,000 million Rials). The units \"ریال\" are also present in the source.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "name": {
+      "basic_value": "تأمین سرمایه در گردش سرمایه دانش",
+      "function_value": "تأمین سرمایه در گردش سرمایه دانش",
+      "expert_value": "تأمین سرمایه در گردش سرمایه دانش",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تأمین سرمایه در گردش سرمایه دانش\" exactly matches the title of the project as it appears in the HTML content, specifically in the \"عنوان:\" field and also in the main heading. It is a string value as expected.",
+        "function_explanation": "The extracted value \"تأمین سرمایه در گردش سرمایه دانش\" exactly matches the title of the project as it appears in the HTML content, specifically in the \"عنوان:\" field and also in the main heading. It is a string value as expected.",
+        "expert_explanation": "The extracted value \"تأمین سرمایه در گردش سرمایه دانش\" exactly matches the title of the project as it appears in the HTML content, specifically in the \"عنوان:\" field and also in the main heading. It is a string value as expected.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": 12,
+      "function_value": 12.0,
+      "expert_value": 12.0,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The source HTML clearly states \"پیش بینی سود مشارکت پیش بینی شده دوره سرمایه‌گذاری: (بدون تضمین سود) 12%\". Therefore, 12.0 is the correct value for the profit field. Group 1 provides only \"12\" without the decimal, which is less precise and could be misinterpreted. Group 2 accurately extracts \"12.0\".",
+        "function_explanation": "The source HTML clearly states \"پیش بینی سود مشارکت پیش بینی شده دوره سرمایه‌گذاری: (بدون تضمین سود) 12%\". Therefore, 12.0 is the correct value for the profit field. Group 1 provides only \"12\" without the decimal, which is less precise and could be misinterpreted. Group 2 accurately extracts \"12.0\".",
+        "expert_explanation": "The source HTML clearly states \"پیش بینی سود مشارکت پیش بینی شده دوره سرمایه‌گذاری: (بدون تضمین سود) 12%\". Therefore, 12.0 is the correct value for the profit field. Group 1 provides only \"12\" without the decimal, which is less precise and could be misinterpreted. Group 2 accurately extracts \"12.0\".",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "جمع آوری وجوه",
+      "function_value": "جمع آوری وجوه",
+      "expert_value": "جمع آوری وجوه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The HTML content clearly states \"وضعیت اجرای طرح: جمع آوری وجوه\" which translates to \"Project execution status: Funds collection\". This directly corresponds to the extracted value \"جمع آوری وجوه\".",
+        "function_explanation": "The HTML content clearly states \"وضعیت اجرای طرح: جمع آوری وجوه\" which translates to \"Project execution status: Funds collection\". This directly corresponds to the extracted value \"جمع آوری وجوه\".",
+        "expert_explanation": "The HTML content clearly states \"وضعیت اجرای طرح: جمع آوری وجوه\" which translates to \"Project execution status: Funds collection\". This directly corresponds to the extracted value \"جمع آوری وجوه\".",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    }
+  }
+}

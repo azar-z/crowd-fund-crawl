@@ -1,0 +1,184 @@
+{
+  "project_name": "khoonemetri",
+  "evaluation_date": "2025-08-17T23:53:06.110154",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.800000000000001,
+    "average_confidence": 0.971
+  },
+  "function_agent": {
+    "correct": 0,
+    "incorrect": 7,
+    "total_confidence": 6.800000000000001,
+    "average_confidence": 0.971
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.800000000000001,
+    "average_confidence": 0.971
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "ماموت ساختمان",
+      "function_value": null,
+      "expert_value": "ماموت ساختمان",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 correctly extracted \"ماموت ساختمان\" which is explicitly mentioned as the سازنده (developer) and مالک (owner) of the project in the HTML content. Group 2 incorrectly returned NULL/NOT_FOUND, as the company name is clearly present.",
+        "function_explanation": "Group 1 correctly extracted \"ماموت ساختمان\" which is explicitly mentioned as the سازنده (developer) and مالک (owner) of the project in the HTML content. Group 2 incorrectly returned NULL/NOT_FOUND, as the company name is clearly present.",
+        "expert_explanation": "Group 1 correctly extracted \"ماموت ساختمان\" which is explicitly mentioned as the سازنده (developer) and مالک (owner) of the project in the HTML content. Group 2 incorrectly returned NULL/NOT_FOUND, as the company name is clearly present.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "duration": {
+      "basic_value": "18 ماه",
+      "function_value": null,
+      "expert_value": "18 ماه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 correctly extracted \"18 ماه\" which translates to \"18 months\" and is explicitly stated in the HTML content: \"زمان پروژه18 ماه\" (Project duration 18 months). Group 2 incorrectly returned NULL/NOT_FOUND as the duration is clearly present.",
+        "function_explanation": "Group 1 correctly extracted \"18 ماه\" which translates to \"18 months\" and is explicitly stated in the HTML content: \"زمان پروژه18 ماه\" (Project duration 18 months). Group 2 incorrectly returned NULL/NOT_FOUND as the duration is clearly present.",
+        "expert_explanation": "Group 1 correctly extracted \"18 ماه\" which translates to \"18 months\" and is explicitly stated in the HTML content: \"زمان پروژه18 ماه\" (Project duration 18 months). Group 2 incorrectly returned NULL/NOT_FOUND as the duration is clearly present.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "guarantee": {
+      "basic_value": "با توجه به کیفیت ساخت و امکانات ارائه شده، پیش‌بینی می‌شود که سودآوری آن بین 40 تا 50 درصد باشد",
+      "function_value": null,
+      "expert_value": "پروژه «ساختمان بهروز - طبقه دوم» در منطقه لوکس و محبوب جهانشهر کرج در حال احداث است و شامل 5 طبقه مسکونی تک‌واحدی است که هر واحد آن حدود 300 متر مربع مساحت دارد. این پروژه با هدف ارائه مسکنی فاخر و باکیفیت طراحی شده و هر واحد از دو پارکینگ اختصاصی برخوردار است. استفاده از مصالح مرغوب و کیفیت ساخت بالا، به همراه امکاناتی همچون لابی مجلل، سالن اجتماعات، سالن جیم، سرایداری، فضای سبز و روف گاردن، این پروژه را به یکی از برجسته‌ترین پروژه‌های منطقه تبدیل کرده است. موقعیت مکانی پروژه در نزدیکی بلوار جمهوری و احاطه شده توسط پارک‌های متعددی مانند پارک ایران کوچک، پارک کسری و باغ فاتح، از نظر دسترسی به طبیعت و امکانات رفاهی، آن را به گزینه‌ای ایده‌آل برای زندگی تبدیل کرده است. همچنین، فاصله 400 متری تا ایستگاه مترو و نزدیکی به مراکز خرید، دسترسی آسان به امکانات شهری را برای ساکنین فراهم می‌کند. ساخت این پروژه با اسکلت فولادی پیچ و مهره‌ای و سقف‌های کامپوزیت یا عرشه فولادی انجام می‌شود و هر واحد شامل چهار خواب، پذیرایی، سالن، تی وی روم، سیستم مدیریت هوشمند ساختمان (BMS)، جاروبرقی مرکزی و آنتن مرکزی است. مدت زمان برآورد شده برای اتمام پروژه 18 ماه است و با توجه به کیفیت ساخت و امکانات ارائه شده، پیش‌بینی می‌شود که سودآوری آن بین 40 تا 50 درصد باشد. این ویژگی‌ها، به همراه دسترسی‌های مناسب به اتوبان، مترو و مراکز خرید، «ساختمان بهروز - طبقه دوم» را به یکی از گزینه‌های ممتاز برای زندگی و سرمایه‌گذاری تبدیل کرده است.",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "Group 1 accurately extracts the guarantee information (\"پیش‌بینی می‌شود که سودآوری آن بین 40 تا 50 درصد باشد\") which is present in the HTML content. Group 2 returns NULL/NOT_FOUND, which is incorrect as the guarantee is explicitly stated. Group 3 repeats the entire project description instead of extracting the guarantee specifically. The HTML source contains the text \"سود به دست آمده از ابتدای پروژه9.04 درصد\" but this is not the guarantee, it is the profit *achieved* so far, not a guarantee of future profit. Therefore, only Group 1 is correct.",
+        "function_explanation": "Group 1 accurately extracts the guarantee information (\"پیش‌بینی می‌شود که سودآوری آن بین 40 تا 50 درصد باشد\") which is present in the HTML content. Group 2 returns NULL/NOT_FOUND, which is incorrect as the guarantee is explicitly stated. Group 3 repeats the entire project description instead of extracting the guarantee specifically. The HTML source contains the text \"سود به دست آمده از ابتدای پروژه9.04 درصد\" but this is not the guarantee, it is the profit *achieved* so far, not a guarantee of future profit. Therefore, only Group 1 is correct.",
+        "expert_explanation": "Group 1 accurately extracts the guarantee information (\"پیش‌بینی می‌شود که سودآوری آن بین 40 تا 50 درصد باشد\") which is present in the HTML content. Group 2 returns NULL/NOT_FOUND, which is incorrect as the guarantee is explicitly stated. Group 3 repeats the entire project description instead of extracting the guarantee specifically. The HTML source contains the text \"سود به دست آمده از ابتدای پروژه9.04 درصد\" but this is not the guarantee, it is the profit *achieved* so far, not a guarantee of future profit. Therefore, only Group 1 is correct.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1
+        ],
+        "response_groups": 3
+      }
+    },
+    "investment_amount": {
+      "basic_value": "500,000",
+      "function_value": null,
+      "expert_value": "500,000",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 correctly extracted \"500,000\" as the investment amount. The HTML content explicitly states \"شروع سرمایه گذاری از 500,000 تومان\" which translates to \"Start investing from 500,000 Tomans\". This clearly indicates the minimum investment amount. Group 2 incorrectly reported NULL/NOT_FOUND, as the investment amount is present in the text.",
+        "function_explanation": "Group 1 correctly extracted \"500,000\" as the investment amount. The HTML content explicitly states \"شروع سرمایه گذاری از 500,000 تومان\" which translates to \"Start investing from 500,000 Tomans\". This clearly indicates the minimum investment amount. Group 2 incorrectly reported NULL/NOT_FOUND, as the investment amount is present in the text.",
+        "expert_explanation": "Group 1 correctly extracted \"500,000\" as the investment amount. The HTML content explicitly states \"شروع سرمایه گذاری از 500,000 تومان\" which translates to \"Start investing from 500,000 Tomans\". This clearly indicates the minimum investment amount. Group 2 incorrectly reported NULL/NOT_FOUND, as the investment amount is present in the text.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "name": {
+      "basic_value": "ساختمان بهروز - طبقه دوم",
+      "function_value": null,
+      "expert_value": "ساختمان بهروز - طبقه دوم",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 correctly extracted \"ساختمان بهروز - طبقه دوم\" which is the project name and appears multiple times throughout the HTML content, including at the very beginning and in project descriptions. Group 2 returned NULL/NOT_FOUND, which is incorrect as the name is clearly present.",
+        "function_explanation": "Group 1 correctly extracted \"ساختمان بهروز - طبقه دوم\" which is the project name and appears multiple times throughout the HTML content, including at the very beginning and in project descriptions. Group 2 returned NULL/NOT_FOUND, which is incorrect as the name is clearly present.",
+        "expert_explanation": "Group 1 correctly extracted \"ساختمان بهروز - طبقه دوم\" which is the project name and appears multiple times throughout the HTML content, including at the very beginning and in project descriptions. Group 2 returned NULL/NOT_FOUND, which is incorrect as the name is clearly present.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "profit": {
+      "basic_value": "40",
+      "function_value": null,
+      "expert_value": 40.0,
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "The HTML content states: \"پیش‌بینی می‌شود که سودآوری آن بین 40 تا 50 درصد باشد.\" which translates to \"It is predicted that its profitability will be between 40 to 50 percent.\" Both Group 1 and Group 3 correctly extract 40 as the profit. Group 3 provides the value with a decimal, which is acceptable. Group 2 incorrectly returns NULL/NOT_FOUND.",
+        "function_explanation": "The HTML content states: \"پیش‌بینی می‌شود که سودآوری آن بین 40 تا 50 درصد باشد.\" which translates to \"It is predicted that its profitability will be between 40 to 50 percent.\" Both Group 1 and Group 3 correctly extract 40 as the profit. Group 3 provides the value with a decimal, which is acceptable. Group 2 incorrectly returns NULL/NOT_FOUND.",
+        "expert_explanation": "The HTML content states: \"پیش‌بینی می‌شود که سودآوری آن بین 40 تا 50 درصد باشد.\" which translates to \"It is predicted that its profitability will be between 40 to 50 percent.\" Both Group 1 and Group 3 correctly extract 40 as the profit. Group 3 provides the value with a decimal, which is acceptable. Group 2 incorrectly returns NULL/NOT_FOUND.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 3
+      }
+    },
+    "status": {
+      "basic_value": "در حال عرضه",
+      "function_value": null,
+      "expert_value": "در حال احداث",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "The HTML content states \"در حال احداث است\" which translates to \"under construction\". Group 3 correctly extracted \"در حال احداث\". Group 1 extracted \"در حال عرضه\" (on offer/available for sale) which is not the primary status of the project, although it is mentioned in relation to the square meters. Group 2 extracted NULL/NOT_FOUND which is incorrect as the status is clearly stated.",
+        "function_explanation": "The HTML content states \"در حال احداث است\" which translates to \"under construction\". Group 3 correctly extracted \"در حال احداث\". Group 1 extracted \"در حال عرضه\" (on offer/available for sale) which is not the primary status of the project, although it is mentioned in relation to the square meters. Group 2 extracted NULL/NOT_FOUND which is incorrect as the status is clearly stated.",
+        "expert_explanation": "The HTML content states \"در حال احداث است\" which translates to \"under construction\". Group 3 correctly extracted \"در حال احداث\". Group 1 extracted \"در حال عرضه\" (on offer/available for sale) which is not the primary status of the project, although it is mentioned in relation to the square meters. Group 2 extracted NULL/NOT_FOUND which is incorrect as the status is clearly stated.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          3
+        ],
+        "response_groups": 3
+      }
+    }
+  }
+}

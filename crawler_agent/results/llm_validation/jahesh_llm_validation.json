@@ -1,0 +1,185 @@
+{
+  "project_name": "jahesh",
+  "evaluation_date": "2025-08-17T23:03:18.212820",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.95,
+    "average_confidence": 0.993
+  },
+  "function_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.95,
+    "average_confidence": 0.993
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.95,
+    "average_confidence": 0.993
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "شرکت سبدگردان پاداش سرمایه",
+      "function_value": "زیر ساخت مرکز داده ارم",
+      "expert_value": " شرکت سبدگردان پاداش سرمایه ",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 correctly identifies \"شرکت سبدگردان پاداش سرمایه\" as a company mentioned in the text, specifically as the financial institution and under which جهش کراد operates. Group 2 extracts \"زیر ساخت مرکز داده ارم\" which is the applicant for the project, not the overall company associated with the platform or investment. The context specifies we are looking for the company *associated with the project*, and the HTML clearly states \"نهاد مالی: شرکت سبدگردان پاداش سرمایه\".",
+        "function_explanation": "Group 1 correctly identifies \"شرکت سبدگردان پاداش سرمایه\" as a company mentioned in the text, specifically as the financial institution and under which جهش کراد operates. Group 2 extracts \"زیر ساخت مرکز داده ارم\" which is the applicant for the project, not the overall company associated with the platform or investment. The context specifies we are looking for the company *associated with the project*, and the HTML clearly states \"نهاد مالی: شرکت سبدگردان پاداش سرمایه\".",
+        "expert_explanation": "Group 1 correctly identifies \"شرکت سبدگردان پاداش سرمایه\" as a company mentioned in the text, specifically as the financial institution and under which جهش کراد operates. Group 2 extracts \"زیر ساخت مرکز داده ارم\" which is the applicant for the project, not the overall company associated with the platform or investment. The context specifies we are looking for the company *associated with the project*, and the HTML clearly states \"نهاد مالی: شرکت سبدگردان پاداش سرمایه\".",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "duration": {
+      "basic_value": "12 ماهه",
+      "function_value": "12 ماهه",
+      "expert_value": " 12 ماهه ",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"12 ماهه\" (12 months) is directly present in the HTML content next to the \"مدت طرح\" (Project Duration) label. It accurately represents the project duration.",
+        "function_explanation": "The extracted value \"12 ماهه\" (12 months) is directly present in the HTML content next to the \"مدت طرح\" (Project Duration) label. It accurately represents the project duration.",
+        "expert_explanation": "The extracted value \"12 ماهه\" (12 months) is directly present in the HTML content next to the \"مدت طرح\" (Project Duration) label. It accurately represents the project duration.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "guarantee": {
+      "basic_value": "بدون تضمین سود و بدون تضمین اصل سرمایه",
+      "function_value": "بدون تضمین سود و بدون تضمین اصل سرمایه",
+      "expert_value": " بدون تضمین سود و بدون تضمین اصل سرمایه ",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"بدون تضمین سود و بدون تضمین اصل سرمایه\" (without guarantee of profit and without guarantee of principal) is directly present in the source HTML content and accurately represents the guarantee information for the investment scheme.",
+        "function_explanation": "The extracted value \"بدون تضمین سود و بدون تضمین اصل سرمایه\" (without guarantee of profit and without guarantee of principal) is directly present in the source HTML content and accurately represents the guarantee information for the investment scheme.",
+        "expert_explanation": "The extracted value \"بدون تضمین سود و بدون تضمین اصل سرمایه\" (without guarantee of profit and without guarantee of principal) is directly present in the source HTML content and accurately represents the guarantee information for the investment scheme.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "investment_amount": {
+      "basic_value": "10 میلیون ریال",
+      "function_value": "10 میلیون ریال",
+      "expert_value": " 10 میلیون ریال ",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"10 میلیون ریال\" is directly present in the HTML content and accurately represents the \"مبلغ مورد نیاز طرح\" (required amount of the project), which corresponds to the \"investment_amount\" field. The extraction is accurate and complete.",
+        "function_explanation": "The extracted value \"10 میلیون ریال\" is directly present in the HTML content and accurately represents the \"مبلغ مورد نیاز طرح\" (required amount of the project), which corresponds to the \"investment_amount\" field. The extraction is accurate and complete.",
+        "expert_explanation": "The extracted value \"10 میلیون ریال\" is directly present in the HTML content and accurately represents the \"مبلغ مورد نیاز طرح\" (required amount of the project), which corresponds to the \"investment_amount\" field. The extraction is accurate and complete.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "name": {
+      "basic_value": "سکوی تأمین مالی جمعی جهش‌کراد",
+      "function_value": "طرح تست - سرمایه در گردش شرکت زیرساخت مرکز داده ارم جهت تولید سیستم خنک کننده اتاق سرور",
+      "expert_value": " طرح تست - سرمایه در گردش شرکت زیرساخت مرکز داده ارم جهت تولید سیستم خنک کننده اتاق سرور ",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 2 correctly extracts \"طرح تست - سرمایه در گردش شرکت زیرساخت مرکز داده ارم جهت تولید سیستم خنک کننده اتاق سرور\" which is explicitly stated as the \"نام طرح\" (name of the project) in the HTML content. Group 1 extracts \"سکوی تأمین مالی جمعی جهش‌کراد\" which refers to the platform name, not the project name. Therefore, only Group 2 is correct.",
+        "function_explanation": "Group 2 correctly extracts \"طرح تست - سرمایه در گردش شرکت زیرساخت مرکز داده ارم جهت تولید سیستم خنک کننده اتاق سرور\" which is explicitly stated as the \"نام طرح\" (name of the project) in the HTML content. Group 1 extracts \"سکوی تأمین مالی جمعی جهش‌کراد\" which refers to the platform name, not the project name. Therefore, only Group 2 is correct.",
+        "expert_explanation": "Group 2 correctly extracts \"طرح تست - سرمایه در گردش شرکت زیرساخت مرکز داده ارم جهت تولید سیستم خنک کننده اتاق سرور\" which is explicitly stated as the \"نام طرح\" (name of the project) in the HTML content. Group 1 extracts \"سکوی تأمین مالی جمعی جهش‌کراد\" which refers to the platform name, not the project name. Therefore, only Group 2 is correct.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "profit": {
+      "basic_value": "45.00",
+      "function_value": 45.0,
+      "expert_value": 45.0,
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "The source HTML clearly states \"سودپیش بینی شده طرح: 45.00%\" which translates to \"Predicted profit of the scheme: 45.00%\". Group 1 correctly extracts \"45.00\". Group 2 extracts \"45.0\" which is a less precise representation of the value found in the HTML. Therefore, only Group 1 is correct.",
+        "function_explanation": "The source HTML clearly states \"سودپیش بینی شده طرح: 45.00%\" which translates to \"Predicted profit of the scheme: 45.00%\". Group 1 correctly extracts \"45.00\". Group 2 extracts \"45.0\" which is a less precise representation of the value found in the HTML. Therefore, only Group 1 is correct.",
+        "expert_explanation": "The source HTML clearly states \"سودپیش بینی شده طرح: 45.00%\" which translates to \"Predicted profit of the scheme: 45.00%\". Group 1 correctly extracts \"45.00\". Group 2 extracts \"45.0\" which is a less precise representation of the value found in the HTML. Therefore, only Group 1 is correct.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "خاتمه یافته",
+      "function_value": "خاتمه یافته",
+      "expert_value": "خاتمه یافته",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"خاتمه یافته\" (meaning \"completed\" in Persian) is present in the HTML content and accurately reflects the status of the project as indicated by the text \"خاتمه یافته\" next to the number of investors.",
+        "function_explanation": "The extracted value \"خاتمه یافته\" (meaning \"completed\" in Persian) is present in the HTML content and accurately reflects the status of the project as indicated by the text \"خاتمه یافته\" next to the number of investors.",
+        "expert_explanation": "The extracted value \"خاتمه یافته\" (meaning \"completed\" in Persian) is present in the HTML content and accurately reflects the status of the project as indicated by the text \"خاتمه یافته\" next to the number of investors.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    }
+  }
+}

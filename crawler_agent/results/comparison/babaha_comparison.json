@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 4.10420560836792,
+    "data": {
+      "project": {
+        "name": "خرید و فروش منگنز سولفات",
+        "company": "بسپار شیمی سپیدان",
+        "profit": 48,
+        "guarantee": null,
+        "investment_amount": null,
+        "duration": "4 ماهه",
+        "status": "در حال اجرا"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 3.765289783477783,
+    "data": {
+      "project": {
+        "duration": "4 ماهه",
+        "company": "بسپار شیمی سپیدان",
+        "investment_amount": "۴٬۵۰۰٬۰۰۰٬۰۰۰",
+        "guarantee": "فروش تضمینی به بازار و بازپرداخت اصل سرمایه",
+        "profit": 48.0,
+        "status": "در حال اجرا",
+        "name": "خرید و فروش سولفات منگنز"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 20.183768033981323,
+    "data": {
+      "project": {
+        "company": "بسپار شیمی سپیدان",
+        "duration": "4 ماهه",
+        "investment_amount": "۴٬۵۰۰٬۰۰۰٬۰۰۰",
+        "guarantee": "فروش تضمینی به بازار و بازپرداخت اصل سرمایه",
+        "profit": 48.0,
+        "status": "active",
+        "name": "خرید و فروش سولفات منگنز"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

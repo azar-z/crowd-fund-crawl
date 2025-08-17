@@ -1,0 +1,186 @@
+{
+  "project_name": "petrocrowd",
+  "evaluation_date": "2025-08-17T22:07:12.554853",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.9,
+    "average_confidence": 0.986
+  },
+  "function_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.9,
+    "average_confidence": 0.986
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "total_confidence": 6.9,
+    "average_confidence": 0.986
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "صندوق نفت",
+      "function_value": "صندوق نفت",
+      "expert_value": "صندوق نفت",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"صندوق نفت\" (Sandogh-e Naft) is clearly present in the HTML content as the \"نام شرکت\" (Name of Company) for the project. It is a string value and accurately represents the company associated with the crowdfunding project.",
+        "function_explanation": "The extracted value \"صندوق نفت\" (Sandogh-e Naft) is clearly present in the HTML content as the \"نام شرکت\" (Name of Company) for the project. It is a string value and accurately represents the company associated with the crowdfunding project.",
+        "expert_explanation": "The extracted value \"صندوق نفت\" (Sandogh-e Naft) is clearly present in the HTML content as the \"نام شرکت\" (Name of Company) for the project. It is a string value and accurately represents the company associated with the crowdfunding project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "12 ماه",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"12 ماه\" (12 months) is directly present in the HTML content within the \"دوره سرمایه‌گذاری\" (investment period) label. It accurately represents the duration of the investment.",
+        "function_explanation": "The extracted value \"12 ماه\" (12 months) is directly present in the HTML content within the \"دوره سرمایه‌گذاری\" (investment period) label. It accurately represents the duration of the investment.",
+        "expert_explanation": "The extracted value \"12 ماه\" (12 months) is directly present in the HTML content within the \"دوره سرمایه‌گذاری\" (investment period) label. It accurately represents the duration of the investment.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "guarantee": {
+      "basic_value": "بدون تضمین سود و با تضمین بانکی برای اصل سرمایه",
+      "function_value": "بدون تضمین سود و با تضمین بانکی برای اصل سرمایه",
+      "expert_value": "بدون تضمین سود و با تضمین بانکی برای اصل سرمایه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"بدون تضمین سود و با تضمین بانکی برای اصل سرمایه\" (without guaranteed profit but with bank guarantee for the principal) is directly present in the HTML content under the label \"ضمانت‌نامه\" (guarantee). It accurately reflects the guarantee offered for the investment.",
+        "function_explanation": "The extracted value \"بدون تضمین سود و با تضمین بانکی برای اصل سرمایه\" (without guaranteed profit but with bank guarantee for the principal) is directly present in the HTML content under the label \"ضمانت‌نامه\" (guarantee). It accurately reflects the guarantee offered for the investment.",
+        "expert_explanation": "The extracted value \"بدون تضمین سود و با تضمین بانکی برای اصل سرمایه\" (without guaranteed profit but with bank guarantee for the principal) is directly present in the HTML content under the label \"ضمانت‌نامه\" (guarantee). It accurately reflects the guarantee offered for the investment.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "investment_amount": {
+      "basic_value": "100,000",
+      "function_value": "100,000",
+      "expert_value": "100,000 ریال",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 2 correctly extracted \"100,000 ریال\" which is the total amount of the scheme as stated in the HTML content (\"مبلغ کل طرح100,000 ریال\"). Group 1 extracted \"100,000\" which is present but lacks the currency unit (ریال) and is therefore less precise and potentially ambiguous. The context indicates the amount is in Rial, making Group 2's response more accurate.",
+        "function_explanation": "Group 2 correctly extracted \"100,000 ریال\" which is the total amount of the scheme as stated in the HTML content (\"مبلغ کل طرح100,000 ریال\"). Group 1 extracted \"100,000\" which is present but lacks the currency unit (ریال) and is therefore less precise and potentially ambiguous. The context indicates the amount is in Rial, making Group 2's response more accurate.",
+        "expert_explanation": "Group 2 correctly extracted \"100,000 ریال\" which is the total amount of the scheme as stated in the HTML content (\"مبلغ کل طرح100,000 ریال\"). Group 1 extracted \"100,000\" which is present but lacks the currency unit (ریال) and is therefore less precise and potentially ambiguous. The context indicates the amount is in Rial, making Group 2's response more accurate.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "name": {
+      "basic_value": "طرح تست درگاه پرداخت",
+      "function_value": "طرح تست درگاه پرداخت",
+      "expert_value": "طرح تست درگاه پرداخت",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"طرح تست درگاه پرداخت\" (Tarh Test Dergah Payesh) is clearly visible multiple times within the provided HTML content, specifically as a title or heading related to the project. It accurately represents the name of the project.",
+        "function_explanation": "The extracted value \"طرح تست درگاه پرداخت\" (Tarh Test Dergah Payesh) is clearly visible multiple times within the provided HTML content, specifically as a title or heading related to the project. It accurately represents the name of the project.",
+        "expert_explanation": "The extracted value \"طرح تست درگاه پرداخت\" (Tarh Test Dergah Payesh) is clearly visible multiple times within the provided HTML content, specifically as a title or heading related to the project. It accurately represents the name of the project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": "45",
+      "function_value": 45.0,
+      "expert_value": 45.0,
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Both groups extracted \"45\" or \"45.0\" which is explicitly stated in the HTML content as \"پیشبینی سود مشارکت دوره سرمایه‌گذاری 45٪\" (predicted participation profit rate of 45%). The decimal representation is also acceptable as it represents the same value.",
+        "function_explanation": "Both groups extracted \"45\" or \"45.0\" which is explicitly stated in the HTML content as \"پیشبینی سود مشارکت دوره سرمایه‌گذاری 45٪\" (predicted participation profit rate of 45%). The decimal representation is also acceptable as it represents the same value.",
+        "expert_explanation": "Both groups extracted \"45\" or \"45.0\" which is explicitly stated in the HTML content as \"پیشبینی سود مشارکت دوره سرمایه‌گذاری 45٪\" (predicted participation profit rate of 45%). The decimal representation is also acceptable as it represents the same value.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": null,
+      "function_value": "اتمام مالی موفق",
+      "expert_value": "با موفقیت تامین مالی شده است",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The HTML content clearly states \"اتمام مالی موفق\" (completion of successful funding) and \"با موفقیت تامین مالی شده است\" (successfully funded). These phrases indicate the project has been successfully funded, which aligns with the 'status' field. Group 1 incorrectly reports NULL/NOT_FOUND, as the status is explicitly mentioned in the text. Both Group 2 and 3 provide accurate translations of the project's funding status.",
+        "function_explanation": "The HTML content clearly states \"اتمام مالی موفق\" (completion of successful funding) and \"با موفقیت تامین مالی شده است\" (successfully funded). These phrases indicate the project has been successfully funded, which aligns with the 'status' field. Group 1 incorrectly reports NULL/NOT_FOUND, as the status is explicitly mentioned in the text. Both Group 2 and 3 provide accurate translations of the project's funding status.",
+        "expert_explanation": "The HTML content clearly states \"اتمام مالی موفق\" (completion of successful funding) and \"با موفقیت تامین مالی شده است\" (successfully funded). These phrases indicate the project has been successfully funded, which aligns with the 'status' field. Group 1 incorrectly reports NULL/NOT_FOUND, as the status is explicitly mentioned in the text. Both Group 2 and 3 provide accurate translations of the project's funding status.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 3
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.478745460510254,
+    "data": {
+      "project": {
+        "name": "طرح تست درگاه پرداخت",
+        "company": "صندوق نفت",
+        "profit": "45",
+        "guarantee": "بدون تضمین سود و با تضمین بانکی برای اصل سرمایه",
+        "investment_amount": "100,000",
+        "duration": "12 ماه",
+        "status": null
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 1.610600233078003,
+    "data": {
+      "project": {
+        "company": "صندوق نفت",
+        "duration": "12 ماه",
+        "investment_amount": "100,000",
+        "guarantee": "بدون تضمین سود و با تضمین بانکی برای اصل سرمایه",
+        "profit": 45.0,
+        "status": "اتمام مالی موفق",
+        "name": "طرح تست درگاه پرداخت"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 5.5895836353302,
+    "data": {
+      "project": {
+        "duration": "12 ماه",
+        "company": "صندوق نفت",
+        "investment_amount": "100,000 ریال",
+        "guarantee": "بدون تضمین سود و با تضمین بانکی برای اصل سرمایه",
+        "profit": 45.0,
+        "status": "با موفقیت تامین مالی شده است",
+        "name": "طرح تست درگاه پرداخت"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

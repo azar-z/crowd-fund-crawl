@@ -1,0 +1,185 @@
+{
+  "project_name": "ghoghnoos",
+  "evaluation_date": "2025-08-17T23:51:14.750953",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 4,
+    "incorrect": 3,
+    "total_confidence": 6.8500000000000005,
+    "average_confidence": 0.979
+  },
+  "function_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.8500000000000005,
+    "average_confidence": 0.979
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "total_confidence": 6.8500000000000005,
+    "average_confidence": 0.979
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": null,
+      "function_value": "سکوی تامین مالی جمعی",
+      "expert_value": "شرکت یکتا ققنوس پارس",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 returned NULL, which is incorrect as the company name is present. Group 2 extracted \"سکوی تامین مالی جمعی\" which translates to \"Crowdfunding Platform\", while it *is* mentioned in the text, it's a description of the platform itself, not the company *operating* the platform. Group 3 correctly extracted \"شرکت یکتا ققنوس پارس\" (Sherkat-e Yekta Qaqnous Pars), which is explicitly stated as the owner of all rights to the site at the bottom of the HTML content (\"تمامی حقوق این سایت متعلق به شرکت یکتا ققنوس پارس می باشد\"). This is the correct company name.",
+        "function_explanation": "Group 1 returned NULL, which is incorrect as the company name is present. Group 2 extracted \"سکوی تامین مالی جمعی\" which translates to \"Crowdfunding Platform\", while it *is* mentioned in the text, it's a description of the platform itself, not the company *operating* the platform. Group 3 correctly extracted \"شرکت یکتا ققنوس پارس\" (Sherkat-e Yekta Qaqnous Pars), which is explicitly stated as the owner of all rights to the site at the bottom of the HTML content (\"تمامی حقوق این سایت متعلق به شرکت یکتا ققنوس پارس می باشد\"). This is the correct company name.",
+        "expert_explanation": "Group 1 returned NULL, which is incorrect as the company name is present. Group 2 extracted \"سکوی تامین مالی جمعی\" which translates to \"Crowdfunding Platform\", while it *is* mentioned in the text, it's a description of the platform itself, not the company *operating* the platform. Group 3 correctly extracted \"شرکت یکتا ققنوس پارس\" (Sherkat-e Yekta Qaqnous Pars), which is explicitly stated as the owner of all rights to the site at the bottom of the HTML content (\"تمامی حقوق این سایت متعلق به شرکت یکتا ققنوس پارس می باشد\"). This is the correct company name.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          3
+        ],
+        "response_groups": 3
+      }
+    },
+    "duration": {
+      "basic_value": "365 روز",
+      "function_value": "۳۶۵ روز",
+      "expert_value": "365 روز",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 (Agents 1 & 3) correctly extracted \"365 روز\" which translates to \"365 days\" and is explicitly stated in the HTML content as the \"بازه اجرای طرح\" (project execution period). Group 2 (Agent 2) extracted \"۳۶۵ روز\" which is the same value but uses a different numerical representation (Arabic numerals vs. Persian numerals). While functionally equivalent, the Persian numeral representation in Group 1 is preferred as it matches the source document's style. Therefore, only Group 1 is considered fully correct.",
+        "function_explanation": "Group 1 (Agents 1 & 3) correctly extracted \"365 روز\" which translates to \"365 days\" and is explicitly stated in the HTML content as the \"بازه اجرای طرح\" (project execution period). Group 2 (Agent 2) extracted \"۳۶۵ روز\" which is the same value but uses a different numerical representation (Arabic numerals vs. Persian numerals). While functionally equivalent, the Persian numeral representation in Group 1 is preferred as it matches the source document's style. Therefore, only Group 1 is considered fully correct.",
+        "expert_explanation": "Group 1 (Agents 1 & 3) correctly extracted \"365 روز\" which translates to \"365 days\" and is explicitly stated in the HTML content as the \"بازه اجرای طرح\" (project execution period). Group 2 (Agent 2) extracted \"۳۶۵ روز\" which is the same value but uses a different numerical representation (Arabic numerals vs. Persian numerals). While functionally equivalent, the Persian numeral representation in Group 1 is preferred as it matches the source document's style. Therefore, only Group 1 is considered fully correct.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "guarantee": {
+      "basic_value": "ضمانت نامه بانکی",
+      "function_value": "ضمانت نامه بانکی",
+      "expert_value": "ضمانت نامه بانکی",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"ضمانت نامه بانکی\" (bank guarantee) is directly present in the HTML content under the label \"نوع ضمانت\" (type of guarantee). It accurately represents the guarantee offered for the crowdfunding project.",
+        "function_explanation": "The extracted value \"ضمانت نامه بانکی\" (bank guarantee) is directly present in the HTML content under the label \"نوع ضمانت\" (type of guarantee). It accurately represents the guarantee offered for the crowdfunding project.",
+        "expert_explanation": "The extracted value \"ضمانت نامه بانکی\" (bank guarantee) is directly present in the HTML content under the label \"نوع ضمانت\" (type of guarantee). It accurately represents the guarantee offered for the crowdfunding project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "investment_amount": {
+      "basic_value": "58,000,000,000",
+      "function_value": "58,000,000,000",
+      "expert_value": "58,000,000,000",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"58,000,000,000\" appears multiple times in the HTML content, specifically labeled as \"سرمایه هدف 58,000,000,000 (ریال)\" (Target capital 58,000,000,000 (Rial)) and \"مبلغ مورد نیاز(ریال)58,000,000,000\" (Required amount (Rial) 58,000,000,000). This accurately represents the total investment amount for the crowdfunding project.",
+        "function_explanation": "The extracted value \"58,000,000,000\" appears multiple times in the HTML content, specifically labeled as \"سرمایه هدف 58,000,000,000 (ریال)\" (Target capital 58,000,000,000 (Rial)) and \"مبلغ مورد نیاز(ریال)58,000,000,000\" (Required amount (Rial) 58,000,000,000). This accurately represents the total investment amount for the crowdfunding project.",
+        "expert_explanation": "The extracted value \"58,000,000,000\" appears multiple times in the HTML content, specifically labeled as \"سرمایه هدف 58,000,000,000 (ریال)\" (Target capital 58,000,000,000 (Rial)) and \"مبلغ مورد نیاز(ریال)58,000,000,000\" (Required amount (Rial) 58,000,000,000). This accurately represents the total investment amount for the crowdfunding project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "name": {
+      "basic_value": "توسعه ماژول تبلیغات هوشمند پلتفرم اپیزود",
+      "function_value": "توسعه ماژول تبلیغات هوشمند پلتفرم اپیزود",
+      "expert_value": "توسعه ماژول تبلیغات هوشمند پلتفرم اپیزود",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"توسعه ماژول تبلیغات هوشمند پلتفرم اپیزود\" is present multiple times in the HTML content and accurately represents the project name as indicated by the \"نام طرح\" field. It is a complete and accurate extraction.",
+        "function_explanation": "The extracted value \"توسعه ماژول تبلیغات هوشمند پلتفرم اپیزود\" is present multiple times in the HTML content and accurately represents the project name as indicated by the \"نام طرح\" field. It is a complete and accurate extraction.",
+        "expert_explanation": "The extracted value \"توسعه ماژول تبلیغات هوشمند پلتفرم اپیزود\" is present multiple times in the HTML content and accurately represents the project name as indicated by the \"نام طرح\" field. It is a complete and accurate extraction.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": null,
+      "function_value": 14.0,
+      "expert_value": 14.0,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The HTML content clearly states \"14%\" as the profit percentage next to \"سرمایه هدف 58,000,000,000 (ریال) 14%\". Group 2 correctly extracted this value as 14.0. Group 1 incorrectly returned NULL/NOT_FOUND.",
+        "function_explanation": "The HTML content clearly states \"14%\" as the profit percentage next to \"سرمایه هدف 58,000,000,000 (ریال) 14%\". Group 2 correctly extracted this value as 14.0. Group 1 incorrectly returned NULL/NOT_FOUND.",
+        "expert_explanation": "The HTML content clearly states \"14%\" as the profit percentage next to \"سرمایه هدف 58,000,000,000 (ریال) 14%\". Group 2 correctly extracted this value as 14.0. Group 1 incorrectly returned NULL/NOT_FOUND.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": null,
+      "function_value": "active",
+      "expert_value": "active",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The HTML content indicates the project is currently collecting funds with a defined start and end date (\"تاریخ شروع جمع آوری وجوه\" and \"تاریخ پایان جمع آوری وجوه\"). This implies the project is 'active'. Group 2 correctly identified the status as \"active\". Group 1 incorrectly reported \"NULL/NOT_FOUND\". There is no explicit \"status\" field declared in the HTML, but the context of the page clearly indicates an active project.",
+        "function_explanation": "The HTML content indicates the project is currently collecting funds with a defined start and end date (\"تاریخ شروع جمع آوری وجوه\" and \"تاریخ پایان جمع آوری وجوه\"). This implies the project is 'active'. Group 2 correctly identified the status as \"active\". Group 1 incorrectly reported \"NULL/NOT_FOUND\". There is no explicit \"status\" field declared in the HTML, but the context of the page clearly indicates an active project.",
+        "expert_explanation": "The HTML content indicates the project is currently collecting funds with a defined start and end date (\"تاریخ شروع جمع آوری وجوه\" and \"تاریخ پایان جمع آوری وجوه\"). This implies the project is 'active'. Group 2 correctly identified the status as \"active\". Group 1 incorrectly reported \"NULL/NOT_FOUND\". There is no explicit \"status\" field declared in the HTML, but the context of the page clearly indicates an active project.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.0205061435699463,
+    "data": {
+      "project": {
+        "name": "توسعه ماژول تبلیغات هوشمند پلتفرم اپیزود",
+        "company": null,
+        "profit": null,
+        "guarantee": "ضمانت نامه بانکی",
+        "investment_amount": "58,000,000,000",
+        "duration": "365 روز",
+        "status": null
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 1.4650914669036865,
+    "data": {
+      "project": {
+        "company": "سکوی تامین مالی جمعی",
+        "duration": "۳۶۵ روز",
+        "investment_amount": "58,000,000,000",
+        "guarantee": "ضمانت نامه بانکی",
+        "profit": 14.0,
+        "status": "active",
+        "name": "توسعه ماژول تبلیغات هوشمند پلتفرم اپیزود"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 7.708494186401367,
+    "data": {
+      "project": {
+        "company": "شرکت یکتا ققنوس پارس",
+        "duration": "365 روز",
+        "investment_amount": "58,000,000,000",
+        "guarantee": "ضمانت نامه بانکی",
+        "profit": 14.0,
+        "status": "active",
+        "name": "توسعه ماژول تبلیغات هوشمند پلتفرم اپیزود"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

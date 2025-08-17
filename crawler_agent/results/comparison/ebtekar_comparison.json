@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 4.415707349777222,
+    "data": {
+      "project": {
+        "name": "تست تامین سرمایه در گردش لازم",
+        "company": "فنی و مهندسی یکتا تست",
+        "profit": "42",
+        "guarantee": "اصل سرمایه",
+        "investment_amount": "25,000,000,000",
+        "duration": "دوازده ماهه",
+        "status": null
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 5.002042770385742,
+    "data": {
+      "project": {
+        "duration": "دوازده ماهه",
+        "company": "فنی و مهندسی یکتا تست",
+        "investment_amount": "25,000,000,000",
+        "guarantee": "اصل سرمایه",
+        "profit": 42.0,
+        "status": "active",
+        "name": "تست تامین سرمایه در گردش لازم"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 14.658612489700317,
+    "data": {
+      "project": {
+        "duration": "دوازده ماهه",
+        "company": "فنی و مهندسی یکتا تست",
+        "investment_amount": "25,000,000,000",
+        "guarantee": "اصل سرمایه  اصل سرمایه ",
+        "profit": 42.0,
+        "status": "فعال",
+        "name": "تست تامین سرمایه در گردش لازم"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Basic Agent"
+  }
+}

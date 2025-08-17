@@ -1,17 +1,29 @@
 {
-  "batch_date": "2025-08-17 19:50:20",
-  "total_projects": 35,
-  "successful_projects": 35,
+  "batch_date": "2025-08-17 23:42:09",
+  "total_projects": 52,
+  "successful_projects": 52,
   "failed_projects": 0,
-  "total_time_seconds": 64.91145539283752,
-  "average_time_per_project": 1.8546130112239292,
+  "total_time_seconds": 29.8559410572052,
+  "average_time_per_project": 0.5741527126385615,
   "project_results": [
+    {
+      "project": "acometr",
+      "status": "success"
+    },
     {
       "project": "aticrowd",
       "status": "success"
     },
     {
       "project": "atiyeiranian",
+      "status": "success"
+    },
+    {
+      "project": "babaha",
+      "status": "success"
+    },
+    {
+      "project": "bithome",
       "status": "success"
     },
     {
@@ -31,7 +43,23 @@
       "status": "success"
     },
     {
+      "project": "ebtekar",
+      "status": "success"
+    },
+    {
+      "project": "fankamfund",
+      "status": "success"
+    },
+    {
       "project": "fundocrowd",
+      "status": "success"
+    },
+    {
+      "project": "ghoghnoos",
+      "status": "success"
+    },
+    {
+      "project": "gholakcrowd",
       "status": "success"
     },
     {
@@ -51,6 +79,10 @@
       "status": "success"
     },
     {
+      "project": "ibcrowd",
+      "status": "success"
+    },
+    {
       "project": "ideafund",
       "status": "success"
     },
@@ -59,7 +91,15 @@
       "status": "success"
     },
     {
+      "project": "investorun",
+      "status": "success"
+    },
+    {
       "project": "isatiscrowd",
+      "status": "success"
+    },
+    {
+      "project": "jahesh",
       "status": "success"
     },
     {
@@ -75,6 +115,14 @@
       "status": "success"
     },
     {
+      "project": "karmaye",
+      "status": "success"
+    },
+    {
+      "project": "khoonemetri",
+      "status": "success"
+    },
+    {
       "project": "maskanplus",
       "status": "success"
     },
@@ -87,11 +135,23 @@
       "status": "success"
     },
     {
+      "project": "omid",
+      "status": "success"
+    },
+    {
       "project": "opalcrowd",
       "status": "success"
     },
     {
       "project": "paresh",
+      "status": "success"
+    },
+    {
+      "project": "petrocrowd",
+      "status": "success"
+    },
+    {
+      "project": "pishrun",
       "status": "success"
     },
     {
@@ -111,6 +171,10 @@
       "status": "success"
     },
     {
+      "project": "sdcrowd",
+      "status": "success"
+    },
+    {
       "project": "sepehrino",
       "status": "success"
     },
@@ -124,6 +188,10 @@
     },
     {
       "project": "startamin",
+      "status": "success"
+    },
+    {
+      "project": "submelk",
       "status": "success"
     },
     {

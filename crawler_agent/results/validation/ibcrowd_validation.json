@@ -1,0 +1,77 @@
+{
+  "project_name": "ibcrowd",
+  "validation_date": "2025-08-17T23:45:58.975938",
+  "basic_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "تولیدی شکوه نادی",
+      "function_value": "تولیدی شکوه نادی",
+      "expert_value": "تولیدی شکوه نادی",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "12 ماه",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "گواهی‌های شراکت اين طرح، دارای ضمانت‌نامه تعهد پرداخت بانکی به عنوان وثایق مالی می‌باشد.",
+      "function_value": "گواهی‌های شراکت اين طرح، دارای ضمانت‌نامه تعهد پرداخت بانکی به عنوان وثایق مالی می‌باشد.",
+      "expert_value": "گواهی‌های شراکت اين طرح، دارای ضمانت‌نامه تعهد پرداخت بانکی به عنوان وثایق مالی می‌باشد.",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "250,000,000,000",
+      "function_value": "250,000,000,000",
+      "expert_value": "250,000,000,000  ریال",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "تأمین سرمایه در گردش شرکت تولیدی شکوه نادی جهت تولید و فروش انواع ویفر",
+      "function_value": "تأمین سرمایه در گردش شرکت تولیدی شکوه نادی جهت تولید و فروش انواع ویفر",
+      "expert_value": "تأمین سرمایه در گردش شرکت تولیدی شکوه نادی جهت تولید و فروش انواع ویفر (محصولات غذایی و آشامیدنی به جز قند و شکر)",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": null,
+      "function_value": 34.0,
+      "expert_value": 34.0,
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "تکمیل سرمایه گذاری",
+      "function_value": "تکمیل سرمایه گذاری",
+      "expert_value": "تکمیل سرمایه گذاری",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    }
+  }
+}

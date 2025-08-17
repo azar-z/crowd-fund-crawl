@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 6.0059754848480225,
+    "data": {
+      "project": {
+        "name": "تامین سرمایه در گردش جهت خرید و فروش محصولات بهداشتی برند الیو",
+        "company": "شرکت آریان تجارت کیان امید",
+        "profit": 45,
+        "guarantee": "بدون تضمین سود و با تضمین توثیق سهام بورسی برای اصل سرمایه",
+        "investment_amount": "250,000,000,000",
+        "duration": "12",
+        "status": "موفق در جذب سرمایه"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 4.159059524536133,
+    "data": {
+      "project": {
+        "company": "شرکت آریان تجارت کیان امید",
+        "duration": "12",
+        "investment_amount": "250,000,000,000",
+        "guarantee": "بدون تضمین سود و با تضمین توثیق سهام بورسی برای اصل سرمایه",
+        "profit": 45.0,
+        "status": "موفق در جذب سرمایه",
+        "name": "تامین سرمایه در گردش جهت خرید و فروش محصولات بهداشتی برند الیو"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 8.340564012527466,
+    "data": {
+      "project": {
+        "duration": "12 ماه",
+        "company": "شرکت آریان تجارت کیان امید",
+        "investment_amount": "250,000,000,000",
+        "guarantee": "بدون تضمین سود و با تضمین توثیق سهام بورسی برای اصل سرمایه",
+        "profit": 45.0,
+        "status": "موفق در جذب سرمایه",
+        "name": "تامین سرمایه در گردش جهت خرید و فروش محصولات بهداشتی برند الیو"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

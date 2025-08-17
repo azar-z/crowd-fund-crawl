@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.6573195457458496,
+    "data": {
+      "project": {
+        "name": "طرح پرورش دام سبک در لرستان",
+        "company": "تامین سرمایه امید",
+        "profit": "23.5",
+        "guarantee": "تست",
+        "investment_amount": "1000000",
+        "duration": "12",
+        "status": "active"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 1.6541557312011719,
+    "data": {
+      "project": {
+        "duration": "12 ماه",
+        "company": "تست",
+        "investment_amount": "1,000,000 تومان",
+        "guarantee": "تست",
+        "profit": 23.5,
+        "status": "",
+        "name": "طرح پرورش دام سبک در لرستان"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 4.555692911148071,
+    "data": {
+      "project": {
+        "company": "تست",
+        "duration": "12 ماه",
+        "investment_amount": "1,000,000",
+        "guarantee": "(بدون تضمین سود)",
+        "profit": 23.5,
+        "status": "Active",
+        "name": "طرح پرورش دام سبک در لرستان"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

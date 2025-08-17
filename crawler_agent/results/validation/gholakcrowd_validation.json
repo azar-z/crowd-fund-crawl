@@ -1,0 +1,77 @@
+{
+  "project_name": "gholakcrowd",
+  "validation_date": "2025-08-17T21:57:41.112897",
+  "basic_agent": {
+    "correct": 4,
+    "incorrect": 3,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 4,
+    "incorrect": 3,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "شرکت برنا نیک آریان",
+      "function_value": "شرکت برنا نیک آریان",
+      "expert_value": "شرکت برنا نیک آریان",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "6 ماه",
+      "function_value": "6 ماه",
+      "expert_value": "6 ماه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "بانکی",
+      "function_value": "بانکی",
+      "expert_value": "بانکی",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": false
+    },
+    "investment_amount": {
+      "basic_value": "100,000,000,000",
+      "function_value": "100,000,000,000",
+      "expert_value": "100,000,000,000 ریال",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "مونتاژ پنکه به تعداد 3780دستگاه",
+      "function_value": "مونتاژ پنکه به تعداد 3780دستگاه",
+      "expert_value": "مونتاژ پنکه به تعداد 3780دستگاه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "38",
+      "function_value": 38.0,
+      "expert_value": 38.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": null,
+      "function_value": "100%",
+      "expert_value": "تامین شده ( 100 ٪) ",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": true
+    }
+  }
+}

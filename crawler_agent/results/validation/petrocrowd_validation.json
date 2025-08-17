@@ -1,0 +1,77 @@
+{
+  "project_name": "petrocrowd",
+  "validation_date": "2025-08-17T22:00:06.458606",
+  "basic_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "صندوق نفت",
+      "function_value": "صندوق نفت",
+      "expert_value": "صندوق نفت",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "12 ماه",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "بدون تضمین سود و با تضمین بانکی برای اصل سرمایه",
+      "function_value": "بدون تضمین سود و با تضمین بانکی برای اصل سرمایه",
+      "expert_value": "بدون تضمین سود و با تضمین بانکی برای اصل سرمایه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "100,000",
+      "function_value": "100,000",
+      "expert_value": "100,000 ریال",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "طرح تست درگاه پرداخت",
+      "function_value": "طرح تست درگاه پرداخت",
+      "expert_value": "طرح تست درگاه پرداخت",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "45",
+      "function_value": 45.0,
+      "expert_value": 45.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": null,
+      "function_value": "اتمام مالی موفق",
+      "expert_value": "با موفقیت تامین مالی شده است",
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": true
+    }
+  }
+}

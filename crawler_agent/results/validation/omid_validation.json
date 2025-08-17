@@ -1,0 +1,77 @@
+{
+  "project_name": "omid",
+  "validation_date": "2025-08-17T21:59:08.425487",
+  "basic_agent": {
+    "correct": 4,
+    "incorrect": 3,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 4,
+    "incorrect": 3,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "تامین سرمایه امید",
+      "function_value": "تست",
+      "expert_value": "تست",
+      "basic_correct": true,
+      "function_correct": false,
+      "expert_correct": false
+    },
+    "duration": {
+      "basic_value": "12",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "تست",
+      "function_value": "تست",
+      "expert_value": "(بدون تضمین سود)",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "1000000",
+      "function_value": "1,000,000 تومان",
+      "expert_value": "1,000,000",
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": false
+    },
+    "name": {
+      "basic_value": "طرح پرورش دام سبک در لرستان",
+      "function_value": "طرح پرورش دام سبک در لرستان",
+      "expert_value": "طرح پرورش دام سبک در لرستان",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "23.5",
+      "function_value": 23.5,
+      "expert_value": 23.5,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "active",
+      "function_value": "",
+      "expert_value": "Active",
+      "basic_correct": true,
+      "function_correct": false,
+      "expert_correct": true
+    }
+  }
+}

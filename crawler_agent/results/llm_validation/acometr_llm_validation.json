@@ -1,0 +1,181 @@
+{
+  "project_name": "acometr",
+  "evaluation_date": "2025-08-17T23:49:19.902938",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 3,
+    "incorrect": 4,
+    "total_confidence": 6.0,
+    "average_confidence": 0.857
+  },
+  "function_agent": {
+    "correct": 4,
+    "incorrect": 3,
+    "total_confidence": 6.0,
+    "average_confidence": 0.857
+  },
+  "expert_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.0,
+    "average_confidence": 0.857
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "علیرضا عموی نوده",
+      "function_value": "علیرضا عموی نوده",
+      "expert_value": "علیرضا عموی نوده",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"علیرضا عموی نوده\" is clearly present in the HTML content as the سازنده (constructor/developer) of the project. It accurately represents the company/individual responsible for the project.",
+        "function_explanation": "The extracted value \"علیرضا عموی نوده\" is clearly present in the HTML content as the سازنده (constructor/developer) of the project. It accurately represents the company/individual responsible for the project.",
+        "expert_explanation": "The extracted value \"علیرضا عموی نوده\" is clearly present in the HTML content as the سازنده (constructor/developer) of the project. It accurately represents the company/individual responsible for the project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "9",
+      "function_value": "9 ماه",
+      "expert_value": "9 ماه",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 provides only \"9\" which is a number without units. The source HTML clearly states \"زمان اجرای پروژه 9 ماه\" (Project execution time 9 months). Group 2 correctly extracts \"9 ماه\" (9 months), including the unit \"ماه\" (month), making it the accurate and complete extraction for the 'duration' field.",
+        "function_explanation": "Group 1 provides only \"9\" which is a number without units. The source HTML clearly states \"زمان اجرای پروژه 9 ماه\" (Project execution time 9 months). Group 2 correctly extracts \"9 ماه\" (9 months), including the unit \"ماه\" (month), making it the accurate and complete extraction for the 'duration' field.",
+        "expert_explanation": "Group 1 provides only \"9\" which is a number without units. The source HTML clearly states \"زمان اجرای پروژه 9 ماه\" (Project execution time 9 months). Group 2 correctly extracts \"9 ماه\" (9 months), including the unit \"ماه\" (month), making it the accurate and complete extraction for the 'duration' field.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "guarantee": {
+      "basic_value": "۹ ماه",
+      "function_value": "نامشخص",
+      "expert_value": "-3% \nسود باقیمانده تا پایان پروژه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "Group 1 correctly extracts \"۹ ماه\" which translates to \"9 months\". This is explicitly stated in the text: \"اجرای این پروژه در مدت زمان ۹ ماه صورت می پذیرد که در قرارداد قید شده\" (This project will be implemented in 9 months as stated in the contract). Group 2 provides \"نامشخص\" (unknown) which is incorrect as the duration is specified. Group 3 extracts \"-3%\" and \"سود باقیمانده تا پایان پروژه\" which refers to the remaining profit and a negative profit percentage, not a guarantee or duration. Therefore, only Group 1 is correct.",
+        "function_explanation": "Group 1 correctly extracts \"۹ ماه\" which translates to \"9 months\". This is explicitly stated in the text: \"اجرای این پروژه در مدت زمان ۹ ماه صورت می پذیرد که در قرارداد قید شده\" (This project will be implemented in 9 months as stated in the contract). Group 2 provides \"نامشخص\" (unknown) which is incorrect as the duration is specified. Group 3 extracts \"-3%\" and \"سود باقیمانده تا پایان پروژه\" which refers to the remaining profit and a negative profit percentage, not a guarantee or duration. Therefore, only Group 1 is correct.",
+        "expert_explanation": "Group 1 correctly extracts \"۹ ماه\" which translates to \"9 months\". This is explicitly stated in the text: \"اجرای این پروژه در مدت زمان ۹ ماه صورت می پذیرد که در قرارداد قید شده\" (This project will be implemented in 9 months as stated in the contract). Group 2 provides \"نامشخص\" (unknown) which is incorrect as the duration is specified. Group 3 extracts \"-3%\" and \"سود باقیمانده تا پایان پروژه\" which refers to the remaining profit and a negative profit percentage, not a guarantee or duration. Therefore, only Group 1 is correct.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1
+        ],
+        "response_groups": 3
+      }
+    },
+    "investment_amount": {
+      "basic_value": "33,250",
+      "function_value": "نامشخص",
+      "expert_value": "33/250 میلیون تومان",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 3 provides \"33/250 میلیون تومان\" which directly matches the text \"33/250 میلیون تومان\" found in the HTML content under the label \"حداقل مبلغ سرمایه گذاری\" (minimum investment amount). Group 1 provides a number without units, which is less preferable when units are present in the source. Group 2 provides \"نامشخص\" (unspecified) which is incorrect as the investment amount is clearly stated.",
+        "function_explanation": "Group 3 provides \"33/250 میلیون تومان\" which directly matches the text \"33/250 میلیون تومان\" found in the HTML content under the label \"حداقل مبلغ سرمایه گذاری\" (minimum investment amount). Group 1 provides a number without units, which is less preferable when units are present in the source. Group 2 provides \"نامشخص\" (unspecified) which is incorrect as the investment amount is clearly stated.",
+        "expert_explanation": "Group 3 provides \"33/250 میلیون تومان\" which directly matches the text \"33/250 میلیون تومان\" found in the HTML content under the label \"حداقل مبلغ سرمایه گذاری\" (minimum investment amount). Group 1 provides a number without units, which is less preferable when units are present in the source. Group 2 provides \"نامشخص\" (unspecified) which is incorrect as the investment amount is clearly stated.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          3
+        ],
+        "response_groups": 3
+      }
+    },
+    "name": {
+      "basic_value": "شهرک آکو پارک / ویلای شماره 5",
+      "function_value": "شهرک آکو پارک / ویلای شماره 5",
+      "expert_value": "شهرک آکو پارک / ویلای شماره 5",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"شهرک آکو پارک / ویلای شماره 5\" is clearly present at the beginning of the HTML content and accurately represents the project's name. It is also repeated later in the document, confirming its role as the project title.",
+        "function_explanation": "The extracted value \"شهرک آکو پارک / ویلای شماره 5\" is clearly present at the beginning of the HTML content and accurately represents the project's name. It is also repeated later in the document, confirming its role as the project title.",
+        "expert_explanation": "The extracted value \"شهرک آکو پارک / ویلای شماره 5\" is clearly present at the beginning of the HTML content and accurately represents the project's name. It is also repeated later in the document, confirming its role as the project title.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": "30",
+      "function_value": 30.0,
+      "expert_value": 30.0,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 2 (Agent 2, Agent 3) correctly extracted \"30.0\" as the profit percentage. The HTML content explicitly states \"سود کل پروژه 30 درصد\" which translates to \"Total project profit 30 percent\". Group 1 extracted \"30\" which is also present, but the \".0\" provides more precision and is preferable.",
+        "function_explanation": "Group 2 (Agent 2, Agent 3) correctly extracted \"30.0\" as the profit percentage. The HTML content explicitly states \"سود کل پروژه 30 درصد\" which translates to \"Total project profit 30 percent\". Group 1 extracted \"30\" which is also present, but the \".0\" provides more precision and is preferable.",
+        "expert_explanation": "Group 2 (Agent 2, Agent 3) correctly extracted \"30.0\" as the profit percentage. The HTML content explicitly states \"سود کل پروژه 30 درصد\" which translates to \"Total project profit 30 percent\". Group 1 extracted \"30\" which is also present, but the \".0\" provides more precision and is preferable.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "active",
+      "function_value": "نامشخص",
+      "expert_value": "",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "The HTML content describes a crowdfunding project that is currently undergoing construction and has had multiple price increases. While not explicitly stated as \"active\", it is clearly *not* completed. \"نامشخص\" (unknown) is a possible interpretation, but not ideal. \"EMPTY_STRING\" is incorrect as there is information about the project's progress. The project is ongoing, with updates as recent as 1404/05/20, indicating it's still active in some sense, but there's no definitive \"status\" field present in the text. Therefore, none of the provided responses are fully correct. A better response would be \"ongoing\" or \"in progress\".",
+        "function_explanation": "The HTML content describes a crowdfunding project that is currently undergoing construction and has had multiple price increases. While not explicitly stated as \"active\", it is clearly *not* completed. \"نامشخص\" (unknown) is a possible interpretation, but not ideal. \"EMPTY_STRING\" is incorrect as there is information about the project's progress. The project is ongoing, with updates as recent as 1404/05/20, indicating it's still active in some sense, but there's no definitive \"status\" field present in the text. Therefore, none of the provided responses are fully correct. A better response would be \"ongoing\" or \"in progress\".",
+        "expert_explanation": "The HTML content describes a crowdfunding project that is currently undergoing construction and has had multiple price increases. While not explicitly stated as \"active\", it is clearly *not* completed. \"نامشخص\" (unknown) is a possible interpretation, but not ideal. \"EMPTY_STRING\" is incorrect as there is information about the project's progress. The project is ongoing, with updates as recent as 1404/05/20, indicating it's still active in some sense, but there's no definitive \"status\" field present in the text. Therefore, none of the provided responses are fully correct. A better response would be \"ongoing\" or \"in progress\".",
+        "basic_confidence": 0.2,
+        "function_confidence": 0.2,
+        "expert_confidence": 0.2,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [],
+        "response_groups": 3
+      }
+    }
+  }
+}

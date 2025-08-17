@@ -1,0 +1,181 @@
+{
+  "project_name": "pishrun",
+  "evaluation_date": "2025-08-17T23:03:43.911592",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 4,
+    "incorrect": 3,
+    "total_confidence": 6.8,
+    "average_confidence": 0.971
+  },
+  "function_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.8,
+    "average_confidence": 0.971
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.8,
+    "average_confidence": 0.971
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "کشاورزی و دامداری چالتاسیان",
+      "function_value": "کشاورزی و دامداری چالتاسیان",
+      "expert_value": "کشاورزی و دامداری چالتاسیان",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"کشاورزی و دامداری چالتاسیان\" (Keshavarzi va Damdari Chaltasian) appears multiple times in the HTML content as the name of the company associated with the project, specifically in sections like \"نام شرکت\" (Company Name) and within the project description. The extraction is accurate and complete.",
+        "function_explanation": "The extracted value \"کشاورزی و دامداری چالتاسیان\" (Keshavarzi va Damdari Chaltasian) appears multiple times in the HTML content as the name of the company associated with the project, specifically in sections like \"نام شرکت\" (Company Name) and within the project description. The extraction is accurate and complete.",
+        "expert_explanation": "The extracted value \"کشاورزی و دامداری چالتاسیان\" (Keshavarzi va Damdari Chaltasian) appears multiple times in the HTML content as the name of the company associated with the project, specifically in sections like \"نام شرکت\" (Company Name) and within the project description. The extraction is accurate and complete.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "12 ماه",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"12 ماه\" (12 months) is directly present in the HTML content next to the label \"مدت طرح\" (duration of the project). It accurately represents the project duration.",
+        "function_explanation": "The extracted value \"12 ماه\" (12 months) is directly present in the HTML content next to the label \"مدت طرح\" (duration of the project). It accurately represents the project duration.",
+        "expert_explanation": "The extracted value \"12 ماه\" (12 months) is directly present in the HTML content next to the label \"مدت طرح\" (duration of the project). It accurately represents the project duration.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "guarantee": {
+      "basic_value": "بدون تضمین سود و با ضمانت نامه تعهد پرداخت بانک کشاورزی برای اصل سرمایه",
+      "function_value": "بدون تضمین سود و با ضمانت نامه تعهد پرداخت بانک کشاورزی برای اصل سرمایه",
+      "expert_value": "بدون تضمین سود و با ضمانت نامه تعهد پرداخت بانک کشاورزی برای اصل سرمایه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"بدون تضمین سود و با ضمانت نامه تعهد پرداخت بانک کشاورزی برای اصل سرمایه\" (without guaranteed profit and with a commitment letter from Agricultural Bank for the principal) is directly present in the source HTML content within the project description. It accurately describes the guarantee offered for the investment.",
+        "function_explanation": "The extracted value \"بدون تضمین سود و با ضمانت نامه تعهد پرداخت بانک کشاورزی برای اصل سرمایه\" (without guaranteed profit and with a commitment letter from Agricultural Bank for the principal) is directly present in the source HTML content within the project description. It accurately describes the guarantee offered for the investment.",
+        "expert_explanation": "The extracted value \"بدون تضمین سود و با ضمانت نامه تعهد پرداخت بانک کشاورزی برای اصل سرمایه\" (without guaranteed profit and with a commitment letter from Agricultural Bank for the principal) is directly present in the source HTML content within the project description. It accurately describes the guarantee offered for the investment.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "investment_amount": {
+      "basic_value": "6,000,000,000",
+      "function_value": "6,000,000,000",
+      "expert_value": "6,000,000,000 ریال",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 2 correctly extracted \"6,000,000,000 ریال\" which is the total amount needed for the project as stated in the HTML content (\"مبلغ مورد نیاز طرح6,000,000,000 ریال\"). Group 1 extracted only the numerical value without the currency unit (ریال), making it incomplete and less accurate. While the number is present, the inclusion of the currency is crucial for this field.",
+        "function_explanation": "Group 2 correctly extracted \"6,000,000,000 ریال\" which is the total amount needed for the project as stated in the HTML content (\"مبلغ مورد نیاز طرح6,000,000,000 ریال\"). Group 1 extracted only the numerical value without the currency unit (ریال), making it incomplete and less accurate. While the number is present, the inclusion of the currency is crucial for this field.",
+        "expert_explanation": "Group 2 correctly extracted \"6,000,000,000 ریال\" which is the total amount needed for the project as stated in the HTML content (\"مبلغ مورد نیاز طرح6,000,000,000 ریال\"). Group 1 extracted only the numerical value without the currency unit (ریال), making it incomplete and less accurate. While the number is present, the inclusion of the currency is crucial for this field.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "name": {
+      "basic_value": "تولید و فروش شیر خام",
+      "function_value": "تولید و فروش شیر خام",
+      "expert_value": "تولید و فروش شیر خام",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تولید و فروش شیر خام\" (Production and sale of raw milk) is clearly present in the HTML content and accurately represents the project's name as described in the text. It's the first prominent description of the project.",
+        "function_explanation": "The extracted value \"تولید و فروش شیر خام\" (Production and sale of raw milk) is clearly present in the HTML content and accurately represents the project's name as described in the text. It's the first prominent description of the project.",
+        "expert_explanation": "The extracted value \"تولید و فروش شیر خام\" (Production and sale of raw milk) is clearly present in the HTML content and accurately represents the project's name as described in the text. It's the first prominent description of the project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": "41",
+      "function_value": 41.0,
+      "expert_value": 41.0,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The source HTML clearly states \"سود پیش بینی شده طرح41\" which translates to \"Predicted profit of the scheme 41\". Group 2 correctly extracts this as 41.0. Group 1 extracts 41, which is also present, but the inclusion of the \".0\" in Group 2's response is preferable as it explicitly indicates a numerical value, aligning with the field type definition.",
+        "function_explanation": "The source HTML clearly states \"سود پیش بینی شده طرح41\" which translates to \"Predicted profit of the scheme 41\". Group 2 correctly extracts this as 41.0. Group 1 extracts 41, which is also present, but the inclusion of the \".0\" in Group 2's response is preferable as it explicitly indicates a numerical value, aligning with the field type definition.",
+        "expert_explanation": "The source HTML clearly states \"سود پیش بینی شده طرح41\" which translates to \"Predicted profit of the scheme 41\". Group 2 correctly extracts this as 41.0. Group 1 extracts 41, which is also present, but the inclusion of the \".0\" in Group 2's response is preferable as it explicitly indicates a numerical value, aligning with the field type definition.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": null,
+      "function_value": null,
+      "expert_value": null,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "The HTML content indicates the project is active and collecting funds (\"وجوه جمع آوری شده707,228,000 ریال\"). While there isn't a direct \"status\" field explicitly stated, the fact that funds are being collected implies an active status. \"NULL/NOT_FOUND\" is therefore incorrect. A more appropriate value would be \"active\" or \"funding\".",
+        "function_explanation": "The HTML content indicates the project is active and collecting funds (\"وجوه جمع آوری شده707,228,000 ریال\"). While there isn't a direct \"status\" field explicitly stated, the fact that funds are being collected implies an active status. \"NULL/NOT_FOUND\" is therefore incorrect. A more appropriate value would be \"active\" or \"funding\".",
+        "expert_explanation": "The HTML content indicates the project is active and collecting funds (\"وجوه جمع آوری شده707,228,000 ریال\"). While there isn't a direct \"status\" field explicitly stated, the fact that funds are being collected implies an active status. \"NULL/NOT_FOUND\" is therefore incorrect. A more appropriate value would be \"active\" or \"funding\".",
+        "basic_confidence": 0.8,
+        "function_confidence": 0.8,
+        "expert_confidence": 0.8,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": []
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 3.2793567180633545,
+    "data": {
+      "project": {
+        "name": "زیست اروند فارمد",
+        "company": "زیست اروند فارمد",
+        "profit": 43,
+        "guarantee": "بدون تضمين سود و بدون تضمين اصل سرمايه",
+        "investment_amount": "250,000,000,000",
+        "duration": "12 ماهه",
+        "status": "onTheGo"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 2.2749176025390625,
+    "data": {
+      "project": {
+        "duration": "12 ماهه",
+        "company": "زیست اروند فارمد",
+        "investment_amount": "۲۵ میلیارد تومان",
+        "guarantee": "بدون تضمين سود و بدون تضمين اصل سرمايه",
+        "profit": 43.0,
+        "status": null,
+        "name": "زیست اروند فارمد"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 9.5767343044281,
+    "data": {
+      "project": {
+        "company": "زیست اروند فارمد",
+        "duration": "12 ماهه",
+        "investment_amount": "250,000,000,000",
+        "guarantee": "بدون تضمين سود و بدون تضمين اصل سرمايه",
+        "profit": 43.0,
+        "status": null,
+        "name": "زیست اروند فارمد"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

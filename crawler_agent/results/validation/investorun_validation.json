@@ -1,0 +1,77 @@
+{
+  "project_name": "investorun",
+  "validation_date": "2025-08-17T21:58:02.763918",
+  "basic_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "زیست اروند فارمد",
+      "function_value": "زیست اروند فارمد",
+      "expert_value": "زیست اروند فارمد",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "12 ماهه",
+      "function_value": "12 ماهه",
+      "expert_value": "12 ماهه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "بدون تضمين سود و بدون تضمين اصل سرمايه",
+      "function_value": "بدون تضمين سود و بدون تضمين اصل سرمايه",
+      "expert_value": "بدون تضمين سود و بدون تضمين اصل سرمايه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "250,000,000,000",
+      "function_value": "۲۵ میلیارد تومان",
+      "expert_value": "250,000,000,000",
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": false
+    },
+    "name": {
+      "basic_value": "زیست اروند فارمد",
+      "function_value": "زیست اروند فارمد",
+      "expert_value": "زیست اروند فارمد",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": 43,
+      "function_value": 43.0,
+      "expert_value": 43.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "onTheGo",
+      "function_value": null,
+      "expert_value": null,
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": false
+    }
+  }
+}

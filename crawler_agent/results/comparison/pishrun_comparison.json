@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.2857279777526855,
+    "data": {
+      "project": {
+        "name": "تولید و فروش شیر خام",
+        "company": "کشاورزی و دامداری چالتاسیان",
+        "profit": "41",
+        "guarantee": "بدون تضمین سود و با ضمانت نامه تعهد پرداخت بانک کشاورزی برای اصل سرمایه",
+        "investment_amount": "6,000,000,000",
+        "duration": "12 ماه",
+        "status": null
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 1.591627597808838,
+    "data": {
+      "project": {
+        "duration": "12 ماه",
+        "company": "کشاورزی و دامداری چالتاسیان",
+        "investment_amount": "6,000,000,000",
+        "guarantee": "بدون تضمین سود و با ضمانت نامه تعهد پرداخت بانک کشاورزی برای اصل سرمایه",
+        "profit": 41.0,
+        "status": null,
+        "name": "تولید و فروش شیر خام"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 7.904020071029663,
+    "data": {
+      "project": {
+        "company": "کشاورزی و دامداری چالتاسیان",
+        "duration": "12 ماه",
+        "investment_amount": "6,000,000,000 ریال",
+        "guarantee": "بدون تضمین سود و با ضمانت نامه تعهد پرداخت بانک کشاورزی برای اصل سرمایه",
+        "profit": 41.0,
+        "status": null,
+        "name": "تولید و فروش شیر خام"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

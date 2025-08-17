@@ -1,0 +1,184 @@
+{
+  "project_name": "investorun",
+  "evaluation_date": "2025-08-17T22:04:51.993643",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.1000000000000005,
+    "average_confidence": 0.871
+  },
+  "function_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.1000000000000005,
+    "average_confidence": 0.871
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.1000000000000005,
+    "average_confidence": 0.871
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "زیست اروند فارمد",
+      "function_value": "زیست اروند فارمد",
+      "expert_value": "زیست اروند فارمد",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"زیست اروند فارمد\" (Zist Arvand Pharmed) appears multiple times within the HTML content, clearly identifying the company associated with the project. It is accurately extracted and complete.",
+        "function_explanation": "The extracted value \"زیست اروند فارمد\" (Zist Arvand Pharmed) appears multiple times within the HTML content, clearly identifying the company associated with the project. It is accurately extracted and complete.",
+        "expert_explanation": "The extracted value \"زیست اروند فارمد\" (Zist Arvand Pharmed) appears multiple times within the HTML content, clearly identifying the company associated with the project. It is accurately extracted and complete.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "12 ماهه",
+      "function_value": "12 ماهه",
+      "expert_value": "12 ماهه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"12 ماهه\" (12 months) appears multiple times in the HTML content, specifically associated with the project duration (\"مدت طرح: 12 ماهه\"). It accurately represents the duration of the project as described in the source.",
+        "function_explanation": "The extracted value \"12 ماهه\" (12 months) appears multiple times in the HTML content, specifically associated with the project duration (\"مدت طرح: 12 ماهه\"). It accurately represents the duration of the project as described in the source.",
+        "expert_explanation": "The extracted value \"12 ماهه\" (12 months) appears multiple times in the HTML content, specifically associated with the project duration (\"مدت طرح: 12 ماهه\"). It accurately represents the duration of the project as described in the source.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "guarantee": {
+      "basic_value": "بدون تضمين سود و بدون تضمين اصل سرمايه",
+      "function_value": "بدون تضمين سود و بدون تضمين اصل سرمايه",
+      "expert_value": "بدون تضمين سود و بدون تضمين اصل سرمايه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"بدون تضمين سود و بدون تضمين اصل سرمايه\" (without guarantee of profit and without guarantee of principal) appears multiple times within the HTML content, specifically in the sections related to \"نوع ضمانت\" (type of guarantee) and general project details. It accurately reflects the guarantee information for this project.",
+        "function_explanation": "The extracted value \"بدون تضمين سود و بدون تضمين اصل سرمايه\" (without guarantee of profit and without guarantee of principal) appears multiple times within the HTML content, specifically in the sections related to \"نوع ضمانت\" (type of guarantee) and general project details. It accurately reflects the guarantee information for this project.",
+        "expert_explanation": "The extracted value \"بدون تضمين سود و بدون تضمين اصل سرمايه\" (without guarantee of profit and without guarantee of principal) appears multiple times within the HTML content, specifically in the sections related to \"نوع ضمانت\" (type of guarantee) and general project details. It accurately reflects the guarantee information for this project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "investment_amount": {
+      "basic_value": "250,000,000,000",
+      "function_value": "۲۵ میلیارد تومان",
+      "expert_value": "250,000,000,000",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 (Agents 1 & 3) correctly extracted \"250,000,000,000\" which appears multiple times in the HTML as the required investment amount in Rial. The HTML also states this is equivalent to \"۲۵ میلیارد تومان\", which is what Group 2 extracted. However, the prompt asks for the investment amount, and providing the value in Rial is more precise and preferred. Therefore, Group 1 is correct. Group 2 provides a correct equivalent value, but it's less precise and not the primary value listed for the investment amount.",
+        "function_explanation": "Group 1 (Agents 1 & 3) correctly extracted \"250,000,000,000\" which appears multiple times in the HTML as the required investment amount in Rial. The HTML also states this is equivalent to \"۲۵ میلیارد تومان\", which is what Group 2 extracted. However, the prompt asks for the investment amount, and providing the value in Rial is more precise and preferred. Therefore, Group 1 is correct. Group 2 provides a correct equivalent value, but it's less precise and not the primary value listed for the investment amount.",
+        "expert_explanation": "Group 1 (Agents 1 & 3) correctly extracted \"250,000,000,000\" which appears multiple times in the HTML as the required investment amount in Rial. The HTML also states this is equivalent to \"۲۵ میلیارد تومان\", which is what Group 2 extracted. However, the prompt asks for the investment amount, and providing the value in Rial is more precise and preferred. Therefore, Group 1 is correct. Group 2 provides a correct equivalent value, but it's less precise and not the primary value listed for the investment amount.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "name": {
+      "basic_value": "زیست اروند فارمد",
+      "function_value": "زیست اروند فارمد",
+      "expert_value": "زیست اروند فارمد",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"زیست اروند فارمد\" appears multiple times in the HTML content as the name of the project/company, including in the title and within the project details section. It is accurately extracted.",
+        "function_explanation": "The extracted value \"زیست اروند فارمد\" appears multiple times in the HTML content as the name of the project/company, including in the title and within the project details section. It is accurately extracted.",
+        "expert_explanation": "The extracted value \"زیست اروند فارمد\" appears multiple times in the HTML content as the name of the project/company, including in the title and within the project details section. It is accurately extracted.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": 43,
+      "function_value": 43.0,
+      "expert_value": 43.0,
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Both groups extracted \"43\", which is explicitly stated multiple times in the HTML content as the predicted profit percentage (\"سود پیش بینی شده طرح 43 درصد\"). The \".0\" in group 2 doesn't change the value and is acceptable. The context specifies the field type is a number, and 43 satisfies this requirement.",
+        "function_explanation": "Both groups extracted \"43\", which is explicitly stated multiple times in the HTML content as the predicted profit percentage (\"سود پیش بینی شده طرح 43 درصد\"). The \".0\" in group 2 doesn't change the value and is acceptable. The context specifies the field type is a number, and 43 satisfies this requirement.",
+        "expert_explanation": "Both groups extracted \"43\", which is explicitly stated multiple times in the HTML content as the predicted profit percentage (\"سود پیش بینی شده طرح 43 درصد\"). The \".0\" in group 2 doesn't change the value and is acceptable. The context specifies the field type is a number, and 43 satisfies this requirement.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "onTheGo",
+      "function_value": null,
+      "expert_value": null,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "The HTML content describes a crowdfunding project for \"زیست اروند فارمد\". However, there is no explicit \"status\" field mentioned in the provided HTML snippet. Group 1 provides \"onTheGo\" which is not present in the text. Group 2 provides \"NULL/NOT_FOUND\" which is a reasonable response given the lack of a status field, but it's not definitively correct as the project *appears* active based on the presence of investment options (\"سرمایه گذاری کنید\"). Without more context or a clearer indication of project status, neither group can be considered correct. The project is 100% funded (\"روند پیشرفت100%\"), but that doesn't necessarily mean it's completed.",
+        "function_explanation": "The HTML content describes a crowdfunding project for \"زیست اروند فارمد\". However, there is no explicit \"status\" field mentioned in the provided HTML snippet. Group 1 provides \"onTheGo\" which is not present in the text. Group 2 provides \"NULL/NOT_FOUND\" which is a reasonable response given the lack of a status field, but it's not definitively correct as the project *appears* active based on the presence of investment options (\"سرمایه گذاری کنید\"). Without more context or a clearer indication of project status, neither group can be considered correct. The project is 100% funded (\"روند پیشرفت100%\"), but that doesn't necessarily mean it's completed.",
+        "expert_explanation": "The HTML content describes a crowdfunding project for \"زیست اروند فارمد\". However, there is no explicit \"status\" field mentioned in the provided HTML snippet. Group 1 provides \"onTheGo\" which is not present in the text. Group 2 provides \"NULL/NOT_FOUND\" which is a reasonable response given the lack of a status field, but it's not definitively correct as the project *appears* active based on the presence of investment options (\"سرمایه گذاری کنید\"). Without more context or a clearer indication of project status, neither group can be considered correct. The project is 100% funded (\"روند پیشرفت100%\"), but that doesn't necessarily mean it's completed.",
+        "basic_confidence": 0.2,
+        "function_confidence": 0.2,
+        "expert_confidence": 0.2,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [],
+        "response_groups": 2
+      }
+    }
+  }
+}

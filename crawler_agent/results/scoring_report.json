@@ -1,36 +1,63 @@
 {
-  "report_date": "2025-08-17T19:56:59.295141",
+  "report_date": "2025-08-17T23:52:59.344270",
   "report_type": "three_agent_scoring",
   "overall_scores": {
     "basic_agent": {
       "agent_name": "Basic Agent",
-      "correct": 197,
-      "incorrect": 48,
+      "correct": 284,
+      "incorrect": 80,
       "skipped": 1,
-      "evaluated": 245,
-      "accuracy": 80.4,
-      "projects_count": 35
+      "evaluated": 364,
+      "accuracy": 78.0,
+      "projects_count": 52
     },
     "function_agent": {
       "agent_name": "Function Agent",
-      "correct": 188,
-      "incorrect": 57,
+      "correct": 280,
+      "incorrect": 84,
       "skipped": 1,
-      "evaluated": 245,
-      "accuracy": 76.7,
-      "projects_count": 35
+      "evaluated": 364,
+      "accuracy": 76.9,
+      "projects_count": 52
     },
     "expert_agent": {
       "agent_name": "Expert Agent",
-      "correct": 229,
-      "incorrect": 16,
+      "correct": 331,
+      "incorrect": 33,
       "skipped": 1,
-      "evaluated": 245,
-      "accuracy": 93.5,
-      "projects_count": 35
+      "evaluated": 364,
+      "accuracy": 90.9,
+      "projects_count": 52
     }
   },
   "project_details": [
+    {
+      "project_name": "acometr",
+      "validation_date": "2025-08-17T23:42:25.629472",
+      "agents": {
+        "basic_agent": {
+          "correct": 3,
+          "incorrect": 4,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 42.9
+        },
+        "function_agent": {
+          "correct": 4,
+          "incorrect": 3,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 57.1
+        },
+        "expert_agent": {
+          "correct": 5,
+          "incorrect": 2,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 71.4
+        }
+      }
+    },
     {
       "project_name": "aticrowd",
       "validation_date": "2025-08-17T18:20:24.381480",
@@ -82,6 +109,60 @@
           "skipped": 0,
           "evaluated": 7,
           "accuracy": 71.4
+        }
+      }
+    },
+    {
+      "project_name": "babaha",
+      "validation_date": "2025-08-17T21:56:00.785080",
+      "agents": {
+        "basic_agent": {
+          "correct": 5,
+          "incorrect": 2,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 71.4
+        },
+        "function_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 100.0
+        },
+        "expert_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 85.7
+        }
+      }
+    },
+    {
+      "project_name": "bithome",
+      "validation_date": "2025-08-17T23:43:29.875941",
+      "agents": {
+        "basic_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 85.7
+        },
+        "function_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 85.7
+        },
+        "expert_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 85.7
         }
       }
     },
@@ -194,6 +275,60 @@
       }
     },
     {
+      "project_name": "ebtekar",
+      "validation_date": "2025-08-17T21:56:16.991853",
+      "agents": {
+        "basic_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 85.7
+        },
+        "function_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 100.0
+        },
+        "expert_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 100.0
+        }
+      }
+    },
+    {
+      "project_name": "fankamfund",
+      "validation_date": "2025-08-17T21:57:20.823446",
+      "agents": {
+        "basic_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 85.7
+        },
+        "function_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 85.7
+        },
+        "expert_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 100.0
+        }
+      }
+    },
+    {
       "project_name": "fundocrowd",
       "validation_date": "2025-08-17T18:22:13.186685",
       "agents": {
@@ -217,6 +352,60 @@
           "skipped": 1,
           "evaluated": 7,
           "accuracy": 100.0
+        }
+      }
+    },
+    {
+      "project_name": "ghoghnoos",
+      "validation_date": "2025-08-17T23:44:13.134634",
+      "agents": {
+        "basic_agent": {
+          "correct": 4,
+          "incorrect": 3,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 57.1
+        },
+        "function_agent": {
+          "correct": 5,
+          "incorrect": 2,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 71.4
+        },
+        "expert_agent": {
+          "correct": 5,
+          "incorrect": 2,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 71.4
+        }
+      }
+    },
+    {
+      "project_name": "gholakcrowd",
+      "validation_date": "2025-08-17T21:57:41.112897",
+      "agents": {
+        "basic_agent": {
+          "correct": 4,
+          "incorrect": 3,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 57.1
+        },
+        "function_agent": {
+          "correct": 4,
+          "incorrect": 3,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 57.1
+        },
+        "expert_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 85.7
         }
       }
     },
@@ -329,6 +518,33 @@
       }
     },
     {
+      "project_name": "ibcrowd",
+      "validation_date": "2025-08-17T23:45:58.975938",
+      "agents": {
+        "basic_agent": {
+          "correct": 5,
+          "incorrect": 2,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 71.4
+        },
+        "function_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 85.7
+        },
+        "expert_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 100.0
+        }
+      }
+    },
+    {
       "project_name": "ideafund",
       "validation_date": "2025-08-17T19:52:57.304632",
       "agents": {
@@ -383,6 +599,33 @@
       }
     },
     {
+      "project_name": "investorun",
+      "validation_date": "2025-08-17T21:58:02.763918",
+      "agents": {
+        "basic_agent": {
+          "correct": 5,
+          "incorrect": 2,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 71.4
+        },
+        "function_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 85.7
+        },
+        "expert_agent": {
+          "correct": 5,
+          "incorrect": 2,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 71.4
+        }
+      }
+    },
+    {
       "project_name": "isatiscrowd",
       "validation_date": "2025-08-17T19:53:25.111108",
       "agents": {
@@ -406,6 +649,33 @@
           "skipped": 0,
           "evaluated": 7,
           "accuracy": 100.0
+        }
+      }
+    },
+    {
+      "project_name": "jahesh",
+      "validation_date": "2025-08-17T23:01:56.217367",
+      "agents": {
+        "basic_agent": {
+          "correct": 5,
+          "incorrect": 2,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 71.4
+        },
+        "function_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 100.0
+        },
+        "expert_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 85.7
         }
       }
     },
@@ -491,6 +761,60 @@
       }
     },
     {
+      "project_name": "karmaye",
+      "validation_date": "2025-08-17T21:58:51.426161",
+      "agents": {
+        "basic_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 100.0
+        },
+        "function_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 100.0
+        },
+        "expert_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 100.0
+        }
+      }
+    },
+    {
+      "project_name": "khoonemetri",
+      "validation_date": "2025-08-17T23:46:21.905284",
+      "agents": {
+        "basic_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 85.7
+        },
+        "function_agent": {
+          "correct": 0,
+          "incorrect": 7,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 0.0
+        },
+        "expert_agent": {
+          "correct": 5,
+          "incorrect": 2,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 71.4
+        }
+      }
+    },
+    {
       "project_name": "maskanplus",
       "validation_date": "2025-08-15T21:33:47.563164",
       "agents": {
@@ -572,6 +896,33 @@
       }
     },
     {
+      "project_name": "omid",
+      "validation_date": "2025-08-17T21:59:08.425487",
+      "agents": {
+        "basic_agent": {
+          "correct": 4,
+          "incorrect": 3,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 57.1
+        },
+        "function_agent": {
+          "correct": 4,
+          "incorrect": 3,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 57.1
+        },
+        "expert_agent": {
+          "correct": 5,
+          "incorrect": 2,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 71.4
+        }
+      }
+    },
+    {
       "project_name": "opalcrowd",
       "validation_date": "2025-08-17T18:24:38.174419",
       "agents": {
@@ -601,6 +952,60 @@
     {
       "project_name": "paresh",
       "validation_date": "2025-08-17T18:25:21.726763",
+      "agents": {
+        "basic_agent": {
+          "correct": 5,
+          "incorrect": 2,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 71.4
+        },
+        "function_agent": {
+          "correct": 5,
+          "incorrect": 2,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 71.4
+        },
+        "expert_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 85.7
+        }
+      }
+    },
+    {
+      "project_name": "petrocrowd",
+      "validation_date": "2025-08-17T22:00:06.458606",
+      "agents": {
+        "basic_agent": {
+          "correct": 5,
+          "incorrect": 2,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 71.4
+        },
+        "function_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 85.7
+        },
+        "expert_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 100.0
+        }
+      }
+    },
+    {
+      "project_name": "pishrun",
+      "validation_date": "2025-08-17T23:02:37.033666",
       "agents": {
         "basic_agent": {
           "correct": 5,
@@ -734,6 +1139,33 @@
       }
     },
     {
+      "project_name": "sdcrowd",
+      "validation_date": "2025-08-17T23:02:49.886181",
+      "agents": {
+        "basic_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 85.7
+        },
+        "function_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 100.0
+        },
+        "expert_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 100.0
+        }
+      }
+    },
+    {
       "project_name": "sepehrino",
       "validation_date": "2025-08-17T18:26:17.588460",
       "agents": {
@@ -838,6 +1270,33 @@
           "skipped": 0,
           "evaluated": 7,
           "accuracy": 85.7
+        }
+      }
+    },
+    {
+      "project_name": "submelk",
+      "validation_date": "2025-08-17T23:48:10.112703",
+      "agents": {
+        "basic_agent": {
+          "correct": 5,
+          "incorrect": 2,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 71.4
+        },
+        "function_agent": {
+          "correct": 5,
+          "incorrect": 2,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 71.4
+        },
+        "expert_agent": {
+          "correct": 5,
+          "incorrect": 2,
+          "skipped": 0,
+          "evaluated": 7,
+          "accuracy": 71.4
         }
       }
     },
@@ -978,7 +1437,7 @@
     }
   ],
   "summary": {
-    "total_projects": 35,
+    "total_projects": 52,
     "best_agent": "expert_agent"
   }
 }

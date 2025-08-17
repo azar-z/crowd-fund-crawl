@@ -1,0 +1,77 @@
+{
+  "project_name": "pishrun",
+  "validation_date": "2025-08-17T23:02:37.033666",
+  "basic_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "کشاورزی و دامداری چالتاسیان",
+      "function_value": "کشاورزی و دامداری چالتاسیان",
+      "expert_value": "کشاورزی و دامداری چالتاسیان",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "12 ماه",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "بدون تضمین سود و با ضمانت نامه تعهد پرداخت بانک کشاورزی برای اصل سرمایه",
+      "function_value": "بدون تضمین سود و با ضمانت نامه تعهد پرداخت بانک کشاورزی برای اصل سرمایه",
+      "expert_value": "بدون تضمین سود و با ضمانت نامه تعهد پرداخت بانک کشاورزی برای اصل سرمایه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "6,000,000,000",
+      "function_value": "6,000,000,000",
+      "expert_value": "6,000,000,000 ریال",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "تولید و فروش شیر خام",
+      "function_value": "تولید و فروش شیر خام",
+      "expert_value": "تولید و فروش شیر خام",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "41",
+      "function_value": 41.0,
+      "expert_value": 41.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": null,
+      "function_value": null,
+      "expert_value": null,
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": false
+    }
+  }
+}

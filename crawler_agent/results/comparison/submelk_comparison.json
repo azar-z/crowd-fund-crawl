@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.208211898803711,
+    "data": {
+      "project": {
+        "name": "پروژه شهریار",
+        "company": "صاب ملک",
+        "profit": "15",
+        "guarantee": "سود سالانه ۱۵ تا ۲۵ درصد علاوه بر تورم مسکن",
+        "investment_amount": null,
+        "duration": "12 ماه باقی‌مانده",
+        "status": "در حال جذب سرمایه"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 1.3957889080047607,
+    "data": {
+      "project": {
+        "duration": "12 ماه",
+        "company": "مهندس سجاد پارسی نژاد",
+        "investment_amount": null,
+        "guarantee": "سود سالانه ۱۵ تا ۲۵ درصد علاوه بر تورم مسکن",
+        "profit": 20.0,
+        "status": "در حال جذب سرمایه",
+        "name": "شهریار"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 9.590375900268555,
+    "data": {
+      "project": {
+        "company": "صاب‌ملک",
+        "duration": "12 ماه باقی‌مانده",
+        "investment_amount": null,
+        "guarantee": "سود سالانه ۱۵ تا ۲۵ درصد علاوه بر تورم مسکن",
+        "profit": 15.0,
+        "status": "در حال جذب سرمایه",
+        "name": "پروژه شهریار"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

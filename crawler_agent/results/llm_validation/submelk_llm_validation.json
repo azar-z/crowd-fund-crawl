@@ -1,0 +1,182 @@
+{
+  "project_name": "submelk",
+  "evaluation_date": "2025-08-17T23:53:34.041778",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.6000000000000005,
+    "average_confidence": 0.943
+  },
+  "function_agent": {
+    "correct": 2,
+    "incorrect": 5,
+    "total_confidence": 6.6000000000000005,
+    "average_confidence": 0.943
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.6000000000000005,
+    "average_confidence": 0.943
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "صاب ملک",
+      "function_value": "مهندس سجاد پارسی نژاد",
+      "expert_value": "صاب‌ملک",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 and 3 both extracted \"صاب ملک\" or \"صاب‌ملک\" which is the name of the company/project mentioned repeatedly throughout the HTML content. Group 2 extracted \"مهندس سجاد پارسی نژاد\" which is a person's name associated with the project, but not the company itself. Therefore, groups 1 and 3 are correct, while group 2 is incorrect.",
+        "function_explanation": "Group 1 and 3 both extracted \"صاب ملک\" or \"صاب‌ملک\" which is the name of the company/project mentioned repeatedly throughout the HTML content. Group 2 extracted \"مهندس سجاد پارسی نژاد\" which is a person's name associated with the project, but not the company itself. Therefore, groups 1 and 3 are correct, while group 2 is incorrect.",
+        "expert_explanation": "Group 1 and 3 both extracted \"صاب ملک\" or \"صاب‌ملک\" which is the name of the company/project mentioned repeatedly throughout the HTML content. Group 2 extracted \"مهندس سجاد پارسی نژاد\" which is a person's name associated with the project, but not the company itself. Therefore, groups 1 and 3 are correct, while group 2 is incorrect.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 3
+      }
+    },
+    "duration": {
+      "basic_value": "12 ماه باقی‌مانده",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه باقی‌مانده",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 (\"12 ماه باقی‌مانده\") is correct. The HTML content explicitly states \"12 ماه باقی‌مانده\" which translates to \"12 months remaining\". Group 2 (\"12 ماه\") is incomplete as it omits the \"باقی‌مانده\" (remaining) part, making it less accurate. The field asks for duration, and \"12 months remaining\" is a more complete and accurate representation of the project's remaining duration.",
+        "function_explanation": "Group 1 (\"12 ماه باقی‌مانده\") is correct. The HTML content explicitly states \"12 ماه باقی‌مانده\" which translates to \"12 months remaining\". Group 2 (\"12 ماه\") is incomplete as it omits the \"باقی‌مانده\" (remaining) part, making it less accurate. The field asks for duration, and \"12 months remaining\" is a more complete and accurate representation of the project's remaining duration.",
+        "expert_explanation": "Group 1 (\"12 ماه باقی‌مانده\") is correct. The HTML content explicitly states \"12 ماه باقی‌مانده\" which translates to \"12 months remaining\". Group 2 (\"12 ماه\") is incomplete as it omits the \"باقی‌مانده\" (remaining) part, making it less accurate. The field asks for duration, and \"12 months remaining\" is a more complete and accurate representation of the project's remaining duration.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "guarantee": {
+      "basic_value": "سود سالانه ۱۵ تا ۲۵ درصد علاوه بر تورم مسکن",
+      "function_value": "سود سالانه ۱۵ تا ۲۵ درصد علاوه بر تورم مسکن",
+      "expert_value": "سود سالانه ۱۵ تا ۲۵ درصد علاوه بر تورم مسکن",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"سود سالانه ۱۵ تا ۲۵ درصد علاوه بر تورم مسکن\" (annual profit of 15 to 25 percent in addition to housing inflation) is directly present and accurately reflects the guarantee mentioned multiple times within the provided HTML content, specifically in the \"سود سالانه\" (annual profit) section.",
+        "function_explanation": "The extracted value \"سود سالانه ۱۵ تا ۲۵ درصد علاوه بر تورم مسکن\" (annual profit of 15 to 25 percent in addition to housing inflation) is directly present and accurately reflects the guarantee mentioned multiple times within the provided HTML content, specifically in the \"سود سالانه\" (annual profit) section.",
+        "expert_explanation": "The extracted value \"سود سالانه ۱۵ تا ۲۵ درصد علاوه بر تورم مسکن\" (annual profit of 15 to 25 percent in addition to housing inflation) is directly present and accurately reflects the guarantee mentioned multiple times within the provided HTML content, specifically in the \"سود سالانه\" (annual profit) section.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "investment_amount": {
+      "basic_value": null,
+      "function_value": null,
+      "expert_value": null,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "The HTML content mentions \"تامین مالی 39 میلیارد تومان\" which translates to \"Funding 39 billion Tomans\". This could be considered the total investment amount. However, the extracted value is NULL/NOT_FOUND. While there isn't a single field explicitly labeled \"investment_amount\", the funding amount is the closest available information. Therefore, the extraction is incorrect as it failed to identify this value.",
+        "function_explanation": "The HTML content mentions \"تامین مالی 39 میلیارد تومان\" which translates to \"Funding 39 billion Tomans\". This could be considered the total investment amount. However, the extracted value is NULL/NOT_FOUND. While there isn't a single field explicitly labeled \"investment_amount\", the funding amount is the closest available information. Therefore, the extraction is incorrect as it failed to identify this value.",
+        "expert_explanation": "The HTML content mentions \"تامین مالی 39 میلیارد تومان\" which translates to \"Funding 39 billion Tomans\". This could be considered the total investment amount. However, the extracted value is NULL/NOT_FOUND. While there isn't a single field explicitly labeled \"investment_amount\", the funding amount is the closest available information. Therefore, the extraction is incorrect as it failed to identify this value.",
+        "basic_confidence": 0.8,
+        "function_confidence": 0.8,
+        "expert_confidence": 0.8,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": []
+      }
+    },
+    "name": {
+      "basic_value": "پروژه شهریار",
+      "function_value": "شهریار",
+      "expert_value": "پروژه شهریار",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 (\"پروژه شهریار\") is correct. The HTML content clearly identifies the project as \"پروژه شهریار\" multiple times, including in the title and throughout the description. Group 2 (\"شهریار\") is incomplete; while \"شهریار\" is part of the project name, it's not the full and accurate name as presented in the source. The full name \"پروژه شهریار\" is preferred.",
+        "function_explanation": "Group 1 (\"پروژه شهریار\") is correct. The HTML content clearly identifies the project as \"پروژه شهریار\" multiple times, including in the title and throughout the description. Group 2 (\"شهریار\") is incomplete; while \"شهریار\" is part of the project name, it's not the full and accurate name as presented in the source. The full name \"پروژه شهریار\" is preferred.",
+        "expert_explanation": "Group 1 (\"پروژه شهریار\") is correct. The HTML content clearly identifies the project as \"پروژه شهریار\" multiple times, including in the title and throughout the description. Group 2 (\"شهریار\") is incomplete; while \"شهریار\" is part of the project name, it's not the full and accurate name as presented in the source. The full name \"پروژه شهریار\" is preferred.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "profit": {
+      "basic_value": "15",
+      "function_value": 20.0,
+      "expert_value": 15.0,
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "The source HTML clearly states \"سود سالانه: ۱۵ تا ۲۵ درصد علاوه بر تورم مسکن\", which translates to \"Annual profit: 15 to 25 percent in addition to housing inflation\". Both Group 1 (15) and Group 3 (15.0) correctly extract the lower bound of the profit range. Group 2 (20.0) extracts a value within the range but isn't the most precise or representative value given the stated range. Therefore, Groups 1 and 3 are considered correct.",
+        "function_explanation": "The source HTML clearly states \"سود سالانه: ۱۵ تا ۲۵ درصد علاوه بر تورم مسکن\", which translates to \"Annual profit: 15 to 25 percent in addition to housing inflation\". Both Group 1 (15) and Group 3 (15.0) correctly extract the lower bound of the profit range. Group 2 (20.0) extracts a value within the range but isn't the most precise or representative value given the stated range. Therefore, Groups 1 and 3 are considered correct.",
+        "expert_explanation": "The source HTML clearly states \"سود سالانه: ۱۵ تا ۲۵ درصد علاوه بر تورم مسکن\", which translates to \"Annual profit: 15 to 25 percent in addition to housing inflation\". Both Group 1 (15) and Group 3 (15.0) correctly extract the lower bound of the profit range. Group 2 (20.0) extracts a value within the range but isn't the most precise or representative value given the stated range. Therefore, Groups 1 and 3 are considered correct.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 3
+      }
+    },
+    "status": {
+      "basic_value": "در حال جذب سرمایه",
+      "function_value": "در حال جذب سرمایه",
+      "expert_value": "در حال جذب سرمایه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"در حال جذب سرمایه\" (which translates to \"attracting investment\" or \"in the process of fundraising\") is explicitly stated in the HTML content next to the project name: \"مهندس سجاد پارسی نژاد در حال جذب سرمایه\". This accurately reflects the project's current status.",
+        "function_explanation": "The extracted value \"در حال جذب سرمایه\" (which translates to \"attracting investment\" or \"in the process of fundraising\") is explicitly stated in the HTML content next to the project name: \"مهندس سجاد پارسی نژاد در حال جذب سرمایه\". This accurately reflects the project's current status.",
+        "expert_explanation": "The extracted value \"در حال جذب سرمایه\" (which translates to \"attracting investment\" or \"in the process of fundraising\") is explicitly stated in the HTML content next to the project name: \"مهندس سجاد پارسی نژاد در حال جذب سرمایه\". This accurately reflects the project's current status.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    }
+  }
+}

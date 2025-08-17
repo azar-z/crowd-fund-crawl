@@ -1,0 +1,182 @@
+{
+  "project_name": "omid",
+  "evaluation_date": "2025-08-17T22:05:45.577563",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 3,
+    "incorrect": 4,
+    "total_confidence": 6.3500000000000005,
+    "average_confidence": 0.907
+  },
+  "function_agent": {
+    "correct": 4,
+    "incorrect": 3,
+    "total_confidence": 6.3500000000000005,
+    "average_confidence": 0.907
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.3500000000000005,
+    "average_confidence": 0.907
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "تامین سرمایه امید",
+      "function_value": "تست",
+      "expert_value": "تست",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "Failed to parse LLM response",
+        "function_explanation": "Failed to parse LLM response",
+        "expert_explanation": "Failed to parse LLM response",
+        "basic_confidence": 0.5,
+        "function_confidence": 0.5,
+        "expert_confidence": 0.5,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [],
+        "response_groups": 2
+      }
+    },
+    "duration": {
+      "basic_value": "12",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 provides only the number \"12\" which is present in the text but lacks the unit \"ماه\" (months). Group 2 correctly extracts \"12 ماه\" which accurately represents the project duration as stated in the HTML content (\"طول عمر طرح 12 ماه\"). Therefore, Group 2 is the correct extraction.",
+        "function_explanation": "Group 1 provides only the number \"12\" which is present in the text but lacks the unit \"ماه\" (months). Group 2 correctly extracts \"12 ماه\" which accurately represents the project duration as stated in the HTML content (\"طول عمر طرح 12 ماه\"). Therefore, Group 2 is the correct extraction.",
+        "expert_explanation": "Group 1 provides only the number \"12\" which is present in the text but lacks the unit \"ماه\" (months). Group 2 correctly extracts \"12 ماه\" which accurately represents the project duration as stated in the HTML content (\"طول عمر طرح 12 ماه\"). Therefore, Group 2 is the correct extraction.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "guarantee": {
+      "basic_value": "تست",
+      "function_value": "تست",
+      "expert_value": "(بدون تضمین سود)",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 extracted \"تست\" which is a test string appearing in the document but is not related to the guarantee. Group 2 correctly extracted \"(بدون تضمین سود)\" which translates to \"(no profit guarantee)\" and is explicitly mentioned in the HTML content as a disclaimer regarding profit. This is the correct value for the 'guarantee' field.",
+        "function_explanation": "Group 1 extracted \"تست\" which is a test string appearing in the document but is not related to the guarantee. Group 2 correctly extracted \"(بدون تضمین سود)\" which translates to \"(no profit guarantee)\" and is explicitly mentioned in the HTML content as a disclaimer regarding profit. This is the correct value for the 'guarantee' field.",
+        "expert_explanation": "Group 1 extracted \"تست\" which is a test string appearing in the document but is not related to the guarantee. Group 2 correctly extracted \"(بدون تضمین سود)\" which translates to \"(no profit guarantee)\" and is explicitly mentioned in the HTML content as a disclaimer regarding profit. This is the correct value for the 'guarantee' field.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "investment_amount": {
+      "basic_value": "1000000",
+      "function_value": "1,000,000 تومان",
+      "expert_value": "1,000,000",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 provides only \"1000000\" which is present but lacks context (currency). Group 2 provides \"1,000,000 تومان\" which is accurate and includes the currency \"تومان\". Group 3 provides \"1,000,000\" which is also present in the HTML as \"1,000,000 تومان\" and is the minimum investment amount. Both Group 2 and 3 are correct because the HTML mentions both 1,000,000 تومان as the minimum investment and 1,000,000 as the minimum investment amount.",
+        "function_explanation": "Group 1 provides only \"1000000\" which is present but lacks context (currency). Group 2 provides \"1,000,000 تومان\" which is accurate and includes the currency \"تومان\". Group 3 provides \"1,000,000\" which is also present in the HTML as \"1,000,000 تومان\" and is the minimum investment amount. Both Group 2 and 3 are correct because the HTML mentions both 1,000,000 تومان as the minimum investment and 1,000,000 as the minimum investment amount.",
+        "expert_explanation": "Group 1 provides only \"1000000\" which is present but lacks context (currency). Group 2 provides \"1,000,000 تومان\" which is accurate and includes the currency \"تومان\". Group 3 provides \"1,000,000\" which is also present in the HTML as \"1,000,000 تومان\" and is the minimum investment amount. Both Group 2 and 3 are correct because the HTML mentions both 1,000,000 تومان as the minimum investment and 1,000,000 as the minimum investment amount.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 3
+      }
+    },
+    "name": {
+      "basic_value": "طرح پرورش دام سبک در لرستان",
+      "function_value": "طرح پرورش دام سبک در لرستان",
+      "expert_value": "طرح پرورش دام سبک در لرستان",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"طرح پرورش دام سبک در لرستان\" is directly present in the HTML content as the title of the project, appearing near the beginning of the document and within the context of describing the scheme. It accurately represents the project's name.",
+        "function_explanation": "The extracted value \"طرح پرورش دام سبک در لرستان\" is directly present in the HTML content as the title of the project, appearing near the beginning of the document and within the context of describing the scheme. It accurately represents the project's name.",
+        "expert_explanation": "The extracted value \"طرح پرورش دام سبک در لرستان\" is directly present in the HTML content as the title of the project, appearing near the beginning of the document and within the context of describing the scheme. It accurately represents the project's name.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": "23.5",
+      "function_value": 23.5,
+      "expert_value": 23.5,
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The HTML content clearly states \"پیش‌بینی سود (بدون تضمین سود) 23.5 درصد\" which translates to \"Profit forecast (without guaranteed profit) 23.5 percent\". This directly corresponds to the extracted value of 23.5 for the 'profit' field.",
+        "function_explanation": "The HTML content clearly states \"پیش‌بینی سود (بدون تضمین سود) 23.5 درصد\" which translates to \"Profit forecast (without guaranteed profit) 23.5 percent\". This directly corresponds to the extracted value of 23.5 for the 'profit' field.",
+        "expert_explanation": "The HTML content clearly states \"پیش‌بینی سود (بدون تضمین سود) 23.5 درصد\" which translates to \"Profit forecast (without guaranteed profit) 23.5 percent\". This directly corresponds to the extracted value of 23.5 for the 'profit' field.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "status": {
+      "basic_value": "active",
+      "function_value": "",
+      "expert_value": "Active",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "The HTML content indicates the project is currently collecting funds (\"شروع جمع‌آوری وجوه 1404/05/26\" and \"پایان جمع‌آوری وجوه 1404/06/26\" and \"زمان باقی‌مانده تا پایان 31 روز باقی‌مانده\"). Therefore, \"active\" and \"Active\" (Group 1 and 3) are correct. Group 2 provides an empty string, which is incorrect as the project is clearly ongoing.",
+        "function_explanation": "The HTML content indicates the project is currently collecting funds (\"شروع جمع‌آوری وجوه 1404/05/26\" and \"پایان جمع‌آوری وجوه 1404/06/26\" and \"زمان باقی‌مانده تا پایان 31 روز باقی‌مانده\"). Therefore, \"active\" and \"Active\" (Group 1 and 3) are correct. Group 2 provides an empty string, which is incorrect as the project is clearly ongoing.",
+        "expert_explanation": "The HTML content indicates the project is currently collecting funds (\"شروع جمع‌آوری وجوه 1404/05/26\" and \"پایان جمع‌آوری وجوه 1404/06/26\" and \"زمان باقی‌مانده تا پایان 31 روز باقی‌مانده\"). Therefore, \"active\" and \"Active\" (Group 1 and 3) are correct. Group 2 provides an empty string, which is incorrect as the project is clearly ongoing.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 3
+      }
+    }
+  }
+}

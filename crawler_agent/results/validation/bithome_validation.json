@@ -1,0 +1,77 @@
+{
+  "project_name": "bithome",
+  "validation_date": "2025-08-17T23:43:29.875941",
+  "basic_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "نیاوران امن بنا قشم",
+      "function_value": "نیاوران امن بنا قشم",
+      "expert_value": "نیاوران امن بنا قشم",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "24",
+      "function_value": "24 ماه",
+      "expert_value": "24 ماه",
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "دریافت ضمانت‌نامه بانکی از سازنده به میزان ۱۲۰ درصد قیمت روز پرو‌ژه",
+      "function_value": "نامشخص",
+      "expert_value": "سرمایه‌گذاری در این پروژه به صورت خشتی انجام می‌شود",
+      "basic_correct": true,
+      "function_correct": false,
+      "expert_correct": false
+    },
+    "investment_amount": {
+      "basic_value": "101,000",
+      "function_value": "101,000",
+      "expert_value": "101,000",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "رویال قشم",
+      "function_value": "رویال قشم",
+      "expert_value": "رویال قشم",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": 0,
+      "function_value": 0.0,
+      "expert_value": 0.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "در حال سرمایه پذیری",
+      "function_value": "در حال سرمایه پذیری",
+      "expert_value": "در حال سرمایه پذیری",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    }
+  }
+}

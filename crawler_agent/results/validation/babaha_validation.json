@@ -1,0 +1,77 @@
+{
+  "project_name": "babaha",
+  "validation_date": "2025-08-17T21:56:00.785080",
+  "basic_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "بسپار شیمی سپیدان",
+      "function_value": "بسپار شیمی سپیدان",
+      "expert_value": "بسپار شیمی سپیدان",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "4 ماهه",
+      "function_value": "4 ماهه",
+      "expert_value": "4 ماهه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": null,
+      "function_value": "فروش تضمینی به بازار و بازپرداخت اصل سرمایه",
+      "expert_value": "فروش تضمینی به بازار و بازپرداخت اصل سرمایه",
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": null,
+      "function_value": "۴٬۵۰۰٬۰۰۰٬۰۰۰",
+      "expert_value": "۴٬۵۰۰٬۰۰۰٬۰۰۰",
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "خرید و فروش منگنز سولفات",
+      "function_value": "خرید و فروش سولفات منگنز",
+      "expert_value": "خرید و فروش سولفات منگنز",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": 48,
+      "function_value": 48.0,
+      "expert_value": 48.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "در حال اجرا",
+      "function_value": "در حال اجرا",
+      "expert_value": "active",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": false
+    }
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "project_name": "bithome",
+  "evaluation_date": "2025-08-17T23:49:50.113561",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 3,
+    "incorrect": 4,
+    "total_confidence": 6.4,
+    "average_confidence": 0.914
+  },
+  "function_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.4,
+    "average_confidence": 0.914
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.4,
+    "average_confidence": 0.914
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "نیاوران امن بنا قشم",
+      "function_value": "نیاوران امن بنا قشم",
+      "expert_value": "نیاوران امن بنا قشم",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"نیاوران امن بنا قشم\" is explicitly present multiple times within the HTML content as the \"سازنده\" (developer/builder) of the project. It accurately represents the company associated with the project.",
+        "function_explanation": "The extracted value \"نیاوران امن بنا قشم\" is explicitly present multiple times within the HTML content as the \"سازنده\" (developer/builder) of the project. It accurately represents the company associated with the project.",
+        "expert_explanation": "The extracted value \"نیاوران امن بنا قشم\" is explicitly present multiple times within the HTML content as the \"سازنده\" (developer/builder) of the project. It accurately represents the company associated with the project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "24",
+      "function_value": "24 ماه",
+      "expert_value": "24 ماه",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 provides only \"24\", which is present but lacks context. The HTML clearly states \"24 ماه\" (24 months) as the project duration. Group 2 correctly extracts \"24 ماه\", including the unit \"ماه\" (month), making it the accurate and complete extraction for the 'duration' field.",
+        "function_explanation": "Group 1 provides only \"24\", which is present but lacks context. The HTML clearly states \"24 ماه\" (24 months) as the project duration. Group 2 correctly extracts \"24 ماه\", including the unit \"ماه\" (month), making it the accurate and complete extraction for the 'duration' field.",
+        "expert_explanation": "Group 1 provides only \"24\", which is present but lacks context. The HTML clearly states \"24 ماه\" (24 months) as the project duration. Group 2 correctly extracts \"24 ماه\", including the unit \"ماه\" (month), making it the accurate and complete extraction for the 'duration' field.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "guarantee": {
+      "basic_value": "دریافت ضمانت‌نامه بانکی از سازنده به میزان ۱۲۰ درصد قیمت روز پرو‌ژه",
+      "function_value": "نامشخص",
+      "expert_value": "سرمایه‌گذاری در این پروژه به صورت خشتی انجام می‌شود",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1's response about a bank guarantee of 120% of the project price is not found in the provided HTML. Group 2's response of \"نامشخص\" (unspecified) is also not supported by the text. Group 3 correctly identifies that investment in the project is done in \"خشتی\" (brick-by-brick) fashion, which is explicitly stated multiple times in the HTML content. Therefore, only Group 3 is correct.",
+        "function_explanation": "Group 1's response about a bank guarantee of 120% of the project price is not found in the provided HTML. Group 2's response of \"نامشخص\" (unspecified) is also not supported by the text. Group 3 correctly identifies that investment in the project is done in \"خشتی\" (brick-by-brick) fashion, which is explicitly stated multiple times in the HTML content. Therefore, only Group 3 is correct.",
+        "expert_explanation": "Group 1's response about a bank guarantee of 120% of the project price is not found in the provided HTML. Group 2's response of \"نامشخص\" (unspecified) is also not supported by the text. Group 3 correctly identifies that investment in the project is done in \"خشتی\" (brick-by-brick) fashion, which is explicitly stated multiple times in the HTML content. Therefore, only Group 3 is correct.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          3
+        ],
+        "response_groups": 3
+      }
+    },
+    "investment_amount": {
+      "basic_value": "101,000",
+      "function_value": "101,000",
+      "expert_value": "101,000",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "Failed to parse LLM response",
+        "function_explanation": "Failed to parse LLM response",
+        "expert_explanation": "Failed to parse LLM response",
+        "basic_confidence": 0.5,
+        "function_confidence": 0.5,
+        "expert_confidence": 0.5,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": []
+      }
+    },
+    "name": {
+      "basic_value": "رویال قشم",
+      "function_value": "رویال قشم",
+      "expert_value": "رویال قشم",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"رویال قشم\" (Royal Qeshm) appears multiple times in the HTML content and clearly represents the name of the project. It is accurately extracted and complete.",
+        "function_explanation": "The extracted value \"رویال قشم\" (Royal Qeshm) appears multiple times in the HTML content and clearly represents the name of the project. It is accurately extracted and complete.",
+        "expert_explanation": "The extracted value \"رویال قشم\" (Royal Qeshm) appears multiple times in the HTML content and clearly represents the name of the project. It is accurately extracted and complete.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": 0,
+      "function_value": 0.0,
+      "expert_value": 0.0,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The HTML content clearly states \"سود محقق شده% 0\" which translates to \"Realized profit % 0\". Group 2 correctly extracted this as 0.0. Group 1 extracted 0, which is acceptable but less precise than 0.0 given the presence of the percentage sign in the source. Therefore, Group 2 is preferred.",
+        "function_explanation": "The HTML content clearly states \"سود محقق شده% 0\" which translates to \"Realized profit % 0\". Group 2 correctly extracted this as 0.0. Group 1 extracted 0, which is acceptable but less precise than 0.0 given the presence of the percentage sign in the source. Therefore, Group 2 is preferred.",
+        "expert_explanation": "The HTML content clearly states \"سود محقق شده% 0\" which translates to \"Realized profit % 0\". Group 2 correctly extracted this as 0.0. Group 1 extracted 0, which is acceptable but less precise than 0.0 given the presence of the percentage sign in the source. Therefore, Group 2 is preferred.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "در حال سرمایه پذیری",
+      "function_value": "در حال سرمایه پذیری",
+      "expert_value": "در حال سرمایه پذیری",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"در حال سرمایه پذیری\" (which translates to \"currently accepting investment\" or \"capital raising\") is directly present in the HTML content multiple times, accurately reflecting the project's status. It's the correct value for the 'status' field.",
+        "function_explanation": "The extracted value \"در حال سرمایه پذیری\" (which translates to \"currently accepting investment\" or \"capital raising\") is directly present in the HTML content multiple times, accurately reflecting the project's status. It's the correct value for the 'status' field.",
+        "expert_explanation": "The extracted value \"در حال سرمایه پذیری\" (which translates to \"currently accepting investment\" or \"capital raising\") is directly present in the HTML content multiple times, accurately reflecting the project's status. It's the correct value for the 'status' field.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    }
+  }
+}

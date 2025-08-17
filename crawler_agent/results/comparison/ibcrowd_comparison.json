@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.1770105361938477,
+    "data": {
+      "project": {
+        "name": "تأمین سرمایه در گردش شرکت تولیدی شکوه نادی جهت تولید و فروش انواع ویفر",
+        "company": "تولیدی شکوه نادی",
+        "profit": null,
+        "guarantee": "گواهی‌های شراکت اين طرح، دارای ضمانت‌نامه تعهد پرداخت بانکی به عنوان وثایق مالی می‌باشد.",
+        "investment_amount": "250,000,000,000",
+        "duration": "12 ماه",
+        "status": "تکمیل سرمایه گذاری"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 1.4640653133392334,
+    "data": {
+      "project": {
+        "company": "تولیدی شکوه نادی",
+        "duration": "12 ماه",
+        "investment_amount": "250,000,000,000",
+        "guarantee": "گواهی‌های شراکت اين طرح، دارای ضمانت‌نامه تعهد پرداخت بانکی به عنوان وثایق مالی می‌باشد.",
+        "profit": 34.0,
+        "status": "تکمیل سرمایه گذاری",
+        "name": "تأمین سرمایه در گردش شرکت تولیدی شکوه نادی جهت تولید و فروش انواع ویفر"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 5.393768310546875,
+    "data": {
+      "project": {
+        "duration": "12 ماه",
+        "company": "تولیدی شکوه نادی",
+        "investment_amount": "250,000,000,000  ریال",
+        "guarantee": "گواهی‌های شراکت اين طرح، دارای ضمانت‌نامه تعهد پرداخت بانکی به عنوان وثایق مالی می‌باشد.",
+        "profit": 34.0,
+        "status": "تکمیل سرمایه گذاری",
+        "name": "تأمین سرمایه در گردش شرکت تولیدی شکوه نادی جهت تولید و فروش انواع ویفر (محصولات غذایی و آشامیدنی به جز قند و شکر)"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

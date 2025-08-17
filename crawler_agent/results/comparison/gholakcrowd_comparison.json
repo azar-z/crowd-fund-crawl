@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.4430015087127686,
+    "data": {
+      "project": {
+        "name": "مونتاژ پنکه به تعداد 3780دستگاه",
+        "company": "شرکت برنا نیک آریان",
+        "profit": "38",
+        "guarantee": "بانکی",
+        "investment_amount": "100,000,000,000",
+        "duration": "6 ماه",
+        "status": null
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 3.5887720584869385,
+    "data": {
+      "project": {
+        "duration": "6 ماه",
+        "company": "شرکت برنا نیک آریان",
+        "investment_amount": "100,000,000,000",
+        "guarantee": "بانکی",
+        "profit": 38.0,
+        "status": "100%",
+        "name": "مونتاژ پنکه به تعداد 3780دستگاه"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 6.533675193786621,
+    "data": {
+      "project": {
+        "company": "شرکت برنا نیک آریان",
+        "duration": "6 ماه",
+        "investment_amount": "100,000,000,000 ریال",
+        "guarantee": "بانکی",
+        "profit": 38.0,
+        "status": "تامین شده ( 100 ٪) ",
+        "name": "مونتاژ پنکه به تعداد 3780دستگاه"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Basic Agent"
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "project_name": "fankamfund",
+  "evaluation_date": "2025-08-17T22:03:03.559585",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.9,
+    "average_confidence": 0.986
+  },
+  "function_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "total_confidence": 6.9,
+    "average_confidence": 0.986
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.9,
+    "average_confidence": 0.986
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "شرکت آریان تجارت کیان امید",
+      "function_value": "شرکت آریان تجارت کیان امید",
+      "expert_value": "شرکت آریان تجارت کیان امید",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"شرکت آریان تجارت کیان امید\" is directly present and accurately identifies the company associated with the crowdfunding project as stated in the source HTML content. It appears multiple times throughout the text.",
+        "function_explanation": "The extracted value \"شرکت آریان تجارت کیان امید\" is directly present and accurately identifies the company associated with the crowdfunding project as stated in the source HTML content. It appears multiple times throughout the text.",
+        "expert_explanation": "The extracted value \"شرکت آریان تجارت کیان امید\" is directly present and accurately identifies the company associated with the crowdfunding project as stated in the source HTML content. It appears multiple times throughout the text.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "12",
+      "function_value": "12",
+      "expert_value": "12 ماه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": false,
+        "basic_explanation": "Group 1 provides the value \"12\", which corresponds to the \"دوره سرمایه گذاری(ماه):12\" (Investment period (months): 12) found in the HTML content. Group 2 provides \"12 ماه\" which is also correct, but less preferable as it includes the unit within the value itself, making it harder to process numerically. Since the field type is string, both are acceptable, but I prefer the cleaner numerical value.",
+        "function_explanation": "Group 1 provides the value \"12\", which corresponds to the \"دوره سرمایه گذاری(ماه):12\" (Investment period (months): 12) found in the HTML content. Group 2 provides \"12 ماه\" which is also correct, but less preferable as it includes the unit within the value itself, making it harder to process numerically. Since the field type is string, both are acceptable, but I prefer the cleaner numerical value.",
+        "expert_explanation": "Group 1 provides the value \"12\", which corresponds to the \"دوره سرمایه گذاری(ماه):12\" (Investment period (months): 12) found in the HTML content. Group 2 provides \"12 ماه\" which is also correct, but less preferable as it includes the unit within the value itself, making it harder to process numerically. Since the field type is string, both are acceptable, but I prefer the cleaner numerical value.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          2
+        ],
+        "response_groups": 2
+      }
+    },
+    "guarantee": {
+      "basic_value": "بدون تضمین سود و با تضمین توثیق سهام بورسی برای اصل سرمایه",
+      "function_value": "بدون تضمین سود و با تضمین توثیق سهام بورسی برای اصل سرمایه",
+      "expert_value": "بدون تضمین سود و با تضمین توثیق سهام بورسی برای اصل سرمایه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"بدون تضمین سود و با تضمین توثیق سهام بورسی برای اصل سرمایه\" (without profit guarantee and with guarantee of pledging stock exchange shares for the principal) is directly present in the HTML content under the \"نوع ضمانت\" (type of guarantee) label. It accurately represents the guarantee offered for the investment.",
+        "function_explanation": "The extracted value \"بدون تضمین سود و با تضمین توثیق سهام بورسی برای اصل سرمایه\" (without profit guarantee and with guarantee of pledging stock exchange shares for the principal) is directly present in the HTML content under the \"نوع ضمانت\" (type of guarantee) label. It accurately represents the guarantee offered for the investment.",
+        "expert_explanation": "The extracted value \"بدون تضمین سود و با تضمین توثیق سهام بورسی برای اصل سرمایه\" (without profit guarantee and with guarantee of pledging stock exchange shares for the principal) is directly present in the HTML content under the \"نوع ضمانت\" (type of guarantee) label. It accurately represents the guarantee offered for the investment.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "investment_amount": {
+      "basic_value": "250,000,000,000",
+      "function_value": "250,000,000,000",
+      "expert_value": "250,000,000,000",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"250,000,000,000\" appears multiple times in the HTML content, specifically stating \"250,000 میلیون ریال\" (250,000 million Rials) and \"250,000,000,000 ریال\" as the total capital needed and the capital successfully raised. This matches the field description of the investment amount.",
+        "function_explanation": "The extracted value \"250,000,000,000\" appears multiple times in the HTML content, specifically stating \"250,000 میلیون ریال\" (250,000 million Rials) and \"250,000,000,000 ریال\" as the total capital needed and the capital successfully raised. This matches the field description of the investment amount.",
+        "expert_explanation": "The extracted value \"250,000,000,000\" appears multiple times in the HTML content, specifically stating \"250,000 میلیون ریال\" (250,000 million Rials) and \"250,000,000,000 ریال\" as the total capital needed and the capital successfully raised. This matches the field description of the investment amount.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "name": {
+      "basic_value": "تامین سرمایه در گردش جهت خرید و فروش محصولات بهداشتی برند الیو",
+      "function_value": "تامین سرمایه در گردش جهت خرید و فروش محصولات بهداشتی برند الیو",
+      "expert_value": "تامین سرمایه در گردش جهت خرید و فروش محصولات بهداشتی برند الیو",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تامین سرمایه در گردش جهت خرید و فروش محصولات بهداشتی برند الیو\" is the title of the project and is clearly present at the beginning of the HTML content. It accurately represents the project's name.",
+        "function_explanation": "The extracted value \"تامین سرمایه در گردش جهت خرید و فروش محصولات بهداشتی برند الیو\" is the title of the project and is clearly present at the beginning of the HTML content. It accurately represents the project's name.",
+        "expert_explanation": "The extracted value \"تامین سرمایه در گردش جهت خرید و فروش محصولات بهداشتی برند الیو\" is the title of the project and is clearly present at the beginning of the HTML content. It accurately represents the project's name.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": 45,
+      "function_value": 45.0,
+      "expert_value": 45.0,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The source HTML clearly states \"برآورد سود پیش بینی شده:45%\" which translates to \"Estimated predicted profit: 45%\". Group 2 correctly extracts this value as 45.0. Group 1 extracts 45, which is also correct, but the inclusion of the decimal point in Group 2's response is preferable as it indicates a percentage. Therefore, Group 2 is the more accurate extraction.",
+        "function_explanation": "The source HTML clearly states \"برآورد سود پیش بینی شده:45%\" which translates to \"Estimated predicted profit: 45%\". Group 2 correctly extracts this value as 45.0. Group 1 extracts 45, which is also correct, but the inclusion of the decimal point in Group 2's response is preferable as it indicates a percentage. Therefore, Group 2 is the more accurate extraction.",
+        "expert_explanation": "The source HTML clearly states \"برآورد سود پیش بینی شده:45%\" which translates to \"Estimated predicted profit: 45%\". Group 2 correctly extracts this value as 45.0. Group 1 extracts 45, which is also correct, but the inclusion of the decimal point in Group 2's response is preferable as it indicates a percentage. Therefore, Group 2 is the more accurate extraction.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "موفق در جذب سرمایه",
+      "function_value": "موفق در جذب سرمایه",
+      "expert_value": "موفق در جذب سرمایه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"موفق در جذب سرمایه\" (Successful in attracting investment) appears multiple times in the HTML content under the \"وضعیت طرح:\" (Project Status:) label, confirming its accuracy as the project's status.",
+        "function_explanation": "The extracted value \"موفق در جذب سرمایه\" (Successful in attracting investment) appears multiple times in the HTML content under the \"وضعیت طرح:\" (Project Status:) label, confirming its accuracy as the project's status.",
+        "expert_explanation": "The extracted value \"موفق در جذب سرمایه\" (Successful in attracting investment) appears multiple times in the HTML content under the \"وضعیت طرح:\" (Project Status:) label, confirming its accuracy as the project's status.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    }
+  }
+}

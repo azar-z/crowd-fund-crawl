@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 3.5784242153167725,
+    "data": {
+      "project": {
+        "name": "شهرک آکو پارک / ویلای شماره 5",
+        "company": "علیرضا عموی نوده",
+        "profit": "30",
+        "guarantee": "۹ ماه",
+        "investment_amount": "33,250",
+        "duration": "9",
+        "status": "active"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 1.7805135250091553,
+    "data": {
+      "project": {
+        "company": "علیرضا عموی نوده",
+        "duration": "9 ماه",
+        "investment_amount": "نامشخص",
+        "guarantee": "نامشخص",
+        "profit": 30.0,
+        "status": "نامشخص",
+        "name": "شهرک آکو پارک / ویلای شماره 5"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 10.64475393295288,
+    "data": {
+      "project": {
+        "duration": "9 ماه",
+        "company": "علیرضا عموی نوده",
+        "investment_amount": "33/250 میلیون تومان",
+        "guarantee": "-3% \nسود باقیمانده تا پایان پروژه",
+        "profit": 30.0,
+        "status": "",
+        "name": "شهرک آکو پارک / ویلای شماره 5"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

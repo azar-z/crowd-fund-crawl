@@ -1,0 +1,77 @@
+{
+  "project_name": "ghoghnoos",
+  "validation_date": "2025-08-17T23:44:13.134634",
+  "basic_agent": {
+    "correct": 4,
+    "incorrect": 3,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": null,
+      "function_value": "سکوی تامین مالی جمعی",
+      "expert_value": "شرکت یکتا ققنوس پارس",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": false
+    },
+    "duration": {
+      "basic_value": "365 روز",
+      "function_value": "۳۶۵ روز",
+      "expert_value": "365 روز",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "ضمانت نامه بانکی",
+      "function_value": "ضمانت نامه بانکی",
+      "expert_value": "ضمانت نامه بانکی",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "58,000,000,000",
+      "function_value": "58,000,000,000",
+      "expert_value": "58,000,000,000",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "توسعه ماژول تبلیغات هوشمند پلتفرم اپیزود",
+      "function_value": "توسعه ماژول تبلیغات هوشمند پلتفرم اپیزود",
+      "expert_value": "توسعه ماژول تبلیغات هوشمند پلتفرم اپیزود",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": null,
+      "function_value": 14.0,
+      "expert_value": 14.0,
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": null,
+      "function_value": "active",
+      "expert_value": "active",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": false
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "project_name": "submelk",
+  "validation_date": "2025-08-17T23:48:10.112703",
+  "basic_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "صاب ملک",
+      "function_value": "مهندس سجاد پارسی نژاد",
+      "expert_value": "صاب‌ملک",
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": false
+    },
+    "duration": {
+      "basic_value": "12 ماه باقی‌مانده",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه باقی‌مانده",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "سود سالانه ۱۵ تا ۲۵ درصد علاوه بر تورم مسکن",
+      "function_value": "سود سالانه ۱۵ تا ۲۵ درصد علاوه بر تورم مسکن",
+      "expert_value": "سود سالانه ۱۵ تا ۲۵ درصد علاوه بر تورم مسکن",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": null,
+      "function_value": null,
+      "expert_value": null,
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": false
+    },
+    "name": {
+      "basic_value": "پروژه شهریار",
+      "function_value": "شهریار",
+      "expert_value": "پروژه شهریار",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "15",
+      "function_value": 20.0,
+      "expert_value": 15.0,
+      "basic_correct": true,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "در حال جذب سرمایه",
+      "function_value": "در حال جذب سرمایه",
+      "expert_value": "در حال جذب سرمایه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    }
+  }
+}
