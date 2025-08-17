@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.484637975692749,
+    "data": {
+      "project": {
+        "name": "تامین سرمایه در گردش تولید فرو آلیاژهای مقاوم به حرارت و خوردگی در زنجیره صنایع تبدیلی مس و مولیبدنیوم",
+        "company": "تولیدی زنجان برنز",
+        "profit": "47",
+        "guarantee": "تضمین اصل سرمایه توثیق سهم ثفارس توسط شرکت آلیاژ خاتون ",
+        "investment_amount": "۱۷۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال",
+        "duration": "12 ماهه",
+        "status": "موفقیت جمع آوری وجوه"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 1.8750801086425781,
+    "data": {
+      "project": {
+        "duration": "12 ماهه",
+        "company": "تولیدی زنجان برنز",
+        "investment_amount": "۱۷۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال",
+        "guarantee": "تضمین اصل سرمایه توثیق سهم ثفارس توسط شرکت آلیاژ خاتون ",
+        "profit": 47.0,
+        "status": "موفقیت جمع آوری وجوه",
+        "name": "تامین سرمایه در گردش تولید فرو آلیاژهای مقاوم به حرارت و خوردگی در زنجیره صنایع تبدیلی مس و مولیبدنیوم"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 5.232915878295898,
+    "data": {
+      "project": {
+        "duration": "12 ماهه",
+        "company": "تولیدی زنجان برنز",
+        "investment_amount": "۱۷۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال",
+        "guarantee": "تضمین اصل سرمایه توثیق سهم ثفارس توسط شرکت آلیاژ خاتون ",
+        "profit": 47.0,
+        "status": "موفقیت جمع آوری وجوه",
+        "name": "تامین سرمایه در گردش تولید فرو آلیاژهای مقاوم به حرارت و خوردگی در زنجیره صنایع تبدیلی مس و مولیبدنیوم"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

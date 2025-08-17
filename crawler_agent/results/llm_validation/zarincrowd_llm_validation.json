@@ -1,0 +1,182 @@
+{
+  "project_name": "zarincrowd",
+  "evaluation_date": "2025-08-17T17:39:48.260156",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.4,
+    "average_confidence": 0.914
+  },
+  "function_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.4,
+    "average_confidence": 0.914
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.4,
+    "average_confidence": 0.914
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "تولیدی چینی بهداشتی ایساتیس",
+      "function_value": "تولیدی چینی بهداشتی ایساتیس",
+      "expert_value": "تولیدی چینی بهداشتی ایساتیس",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "Failed to parse LLM response",
+        "function_explanation": "Failed to parse LLM response",
+        "expert_explanation": "Failed to parse LLM response",
+        "basic_confidence": 0.5,
+        "function_confidence": 0.5,
+        "expert_confidence": 0.5,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": []
+      }
+    },
+    "duration": {
+      "basic_value": "3 ماه",
+      "function_value": "3 ماه",
+      "expert_value": "3 ماه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"3 ماه\" (3 months) is explicitly stated multiple times in the HTML content as the duration of the project/investment period. For example: \"مدت طرح 3 ماه\" (Project duration 3 months) and \"طی دوره ۳ ماهه، سود معادل ۱۱.۵ درصد ۳ ماهه به سرمایه گذاران پرداخت شود\" (During the 3-month period, a profit equivalent to 11.5% per 3 months will be paid to investors).",
+        "function_explanation": "The extracted value \"3 ماه\" (3 months) is explicitly stated multiple times in the HTML content as the duration of the project/investment period. For example: \"مدت طرح 3 ماه\" (Project duration 3 months) and \"طی دوره ۳ ماهه، سود معادل ۱۱.۵ درصد ۳ ماهه به سرمایه گذاران پرداخت شود\" (During the 3-month period, a profit equivalent to 11.5% per 3 months will be paid to investors).",
+        "expert_explanation": "The extracted value \"3 ماه\" (3 months) is explicitly stated multiple times in the HTML content as the duration of the project/investment period. For example: \"مدت طرح 3 ماه\" (Project duration 3 months) and \"طی دوره ۳ ماهه، سود معادل ۱۱.۵ درصد ۳ ماهه به سرمایه گذاران پرداخت شود\" (During the 3-month period, a profit equivalent to 11.5% per 3 months will be paid to investors).",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "guarantee": {
+      "basic_value": "دارای ضمانت نامه",
+      "function_value": "دارای ضمانت نامه",
+      "expert_value": "دارای ضمانت نامه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"دارای ضمانت نامه\" (meaning \"with guarantee\") appears multiple times in the source HTML, accurately describing the project's guarantee status. It is the correct value for the 'guarantee' field.",
+        "function_explanation": "The extracted value \"دارای ضمانت نامه\" (meaning \"with guarantee\") appears multiple times in the source HTML, accurately describing the project's guarantee status. It is the correct value for the 'guarantee' field.",
+        "expert_explanation": "The extracted value \"دارای ضمانت نامه\" (meaning \"with guarantee\") appears multiple times in the source HTML, accurately describing the project's guarantee status. It is the correct value for the 'guarantee' field.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "investment_amount": {
+      "basic_value": "200,000,000,000",
+      "function_value": "200,000,000,000 ریال",
+      "expert_value": "200,000,000,000 ریال",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 2 correctly identifies the investment amount as \"200,000,000,000 ریال\" which is explicitly stated multiple times in the HTML content as the required funding amount. Group 1 provides only the numerical value without the currency (ریال), making it incomplete and less accurate. The context is a Persian/Farsi crowdfunding page, so including the currency is important.",
+        "function_explanation": "Group 2 correctly identifies the investment amount as \"200,000,000,000 ریال\" which is explicitly stated multiple times in the HTML content as the required funding amount. Group 1 provides only the numerical value without the currency (ریال), making it incomplete and less accurate. The context is a Persian/Farsi crowdfunding page, so including the currency is important.",
+        "expert_explanation": "Group 2 correctly identifies the investment amount as \"200,000,000,000 ریال\" which is explicitly stated multiple times in the HTML content as the required funding amount. Group 1 provides only the numerical value without the currency (ریال), making it incomplete and less accurate. The context is a Persian/Farsi crowdfunding page, so including the currency is important.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "name": {
+      "basic_value": "خط تولید سرویس های بهداشتی ایرانی و فرنگی",
+      "function_value": "خط تولید سرویس های بهداشتی ایرانی و فرنگی",
+      "expert_value": "خط تولید سرویس های بهداشتی ایرانی و فرنگی",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"خط تولید سرویس های بهداشتی ایرانی و فرنگی\" appears multiple times in the HTML content, clearly identifying the project's focus. It accurately represents the name of the project as described within the text.",
+        "function_explanation": "The extracted value \"خط تولید سرویس های بهداشتی ایرانی و فرنگی\" appears multiple times in the HTML content, clearly identifying the project's focus. It accurately represents the name of the project as described within the text.",
+        "expert_explanation": "The extracted value \"خط تولید سرویس های بهداشتی ایرانی و فرنگی\" appears multiple times in the HTML content, clearly identifying the project's focus. It accurately represents the name of the project as described within the text.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": 11.5,
+      "function_value": 11.5,
+      "expert_value": 11.5,
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The HTML content clearly states \"11.5 % سود پیش بینی شده\" which translates to \"11.5% predicted profit\". The extracted value of 11.5 matches this information and is a valid number representing a percentage.",
+        "function_explanation": "The HTML content clearly states \"11.5 % سود پیش بینی شده\" which translates to \"11.5% predicted profit\". The extracted value of 11.5 matches this information and is a valid number representing a percentage.",
+        "expert_explanation": "The HTML content clearly states \"11.5 % سود پیش بینی شده\" which translates to \"11.5% predicted profit\". The extracted value of 11.5 matches this information and is a valid number representing a percentage.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "status": {
+      "basic_value": "active",
+      "function_value": "active",
+      "expert_value": "active",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The HTML content describes an ongoing crowdfunding project with details about investment amounts, timelines, and financial projections. The project is actively seeking funding and has a defined start and end date, indicating an \"active\" status. While the word \"active\" isn't explicitly stated, it's the most accurate description of the project's current state based on the provided information.",
+        "function_explanation": "The HTML content describes an ongoing crowdfunding project with details about investment amounts, timelines, and financial projections. The project is actively seeking funding and has a defined start and end date, indicating an \"active\" status. While the word \"active\" isn't explicitly stated, it's the most accurate description of the project's current state based on the provided information.",
+        "expert_explanation": "The HTML content describes an ongoing crowdfunding project with details about investment amounts, timelines, and financial projections. The project is actively seeking funding and has a defined start and end date, indicating an \"active\" status. While the word \"active\" isn't explicitly stated, it's the most accurate description of the project's current state based on the provided information.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    }
+  }
+}

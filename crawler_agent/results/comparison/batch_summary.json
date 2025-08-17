@@ -1,11 +1,15 @@
 {
-  "batch_date": "2025-08-15 19:19:30",
-  "total_projects": 10,
-  "successful_projects": 10,
+  "batch_date": "2025-08-17 17:26:59",
+  "total_projects": 15,
+  "successful_projects": 15,
   "failed_projects": 0,
-  "total_time_seconds": 40.434048652648926,
-  "average_time_per_project": 4.043404865264892,
+  "total_time_seconds": 11.629243850708008,
+  "average_time_per_project": 0.7752829233805338,
   "project_results": [
+    {
+      "project": "charisma",
+      "status": "success"
+    },
     {
       "project": "dongi",
       "status": "success"
@@ -16,6 +20,10 @@
     },
     {
       "project": "hamafarin",
+      "status": "success"
+    },
+    {
+      "project": "hamashena",
       "status": "success"
     },
     {
@@ -39,7 +47,19 @@
       "status": "success"
     },
     {
+      "project": "rayan",
+      "status": "success"
+    },
+    {
       "project": "razavi",
+      "status": "success"
+    },
+    {
+      "project": "startamin",
+      "status": "success"
+    },
+    {
+      "project": "zarincrowd",
       "status": "success"
     },
     {

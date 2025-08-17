@@ -1,0 +1,182 @@
+{
+  "project_name": "rayan",
+  "evaluation_date": "2025-08-17T17:38:54.816406",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 2,
+    "incorrect": 5,
+    "total_confidence": 6.6,
+    "average_confidence": 0.943
+  },
+  "function_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.6,
+    "average_confidence": 0.943
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.6,
+    "average_confidence": 0.943
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": null,
+      "function_value": "شرکت صدف خاور میانه",
+      "expert_value": "شرکت صدف خاور میانه",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 incorrectly identified the company as not found. Group 2 correctly extracted \"شرکت صدف خاور میانه\" which appears in the text as a guarantor for the project: \"چک شخص ثالث و چک شرکت صدف خاور میانه\". This is the company associated with the project's financial backing.",
+        "function_explanation": "Group 1 incorrectly identified the company as not found. Group 2 correctly extracted \"شرکت صدف خاور میانه\" which appears in the text as a guarantor for the project: \"چک شخص ثالث و چک شرکت صدف خاور میانه\". This is the company associated with the project's financial backing.",
+        "expert_explanation": "Group 1 incorrectly identified the company as not found. Group 2 correctly extracted \"شرکت صدف خاور میانه\" which appears in the text as a guarantor for the project: \"چک شخص ثالث و چک شرکت صدف خاور میانه\". This is the company associated with the project's financial backing.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "duration": {
+      "basic_value": "9",
+      "function_value": "9 ماه",
+      "expert_value": "9 ماه",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 2 correctly extracted \"9 ماه\" (9 months) which is explicitly stated in the HTML content as \"دوره سرمایه گذاری9 ماهمعرفی طرح\" (Investment period 9 months introduction to the plan). Group 1 only extracted \"9\" which is a number but lacks the crucial unit \"ماه\" (month) and therefore is incomplete and less accurate. The context specifies the field type as string, and including the unit is important for a string value.",
+        "function_explanation": "Group 2 correctly extracted \"9 ماه\" (9 months) which is explicitly stated in the HTML content as \"دوره سرمایه گذاری9 ماهمعرفی طرح\" (Investment period 9 months introduction to the plan). Group 1 only extracted \"9\" which is a number but lacks the crucial unit \"ماه\" (month) and therefore is incomplete and less accurate. The context specifies the field type as string, and including the unit is important for a string value.",
+        "expert_explanation": "Group 2 correctly extracted \"9 ماه\" (9 months) which is explicitly stated in the HTML content as \"دوره سرمایه گذاری9 ماهمعرفی طرح\" (Investment period 9 months introduction to the plan). Group 1 only extracted \"9\" which is a number but lacks the crucial unit \"ماه\" (month) and therefore is incomplete and less accurate. The context specifies the field type as string, and including the unit is important for a string value.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "guarantee": {
+      "basic_value": "چک شخص ثالث و چک شرکت صدف خاور میانه",
+      "function_value": "چک شخص ثالث و چک شرکت صدف خاور میانه",
+      "expert_value": "چک شخص ثالث و چک شرکت صدف خاور میانه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"چک شخص ثالث و چک شرکت صدف خاور میانه\" (Check of a third party and check of Sadaf Khavar Miane Company) is directly present in the HTML content under the label \"ضمانت اصل سرمایه\" (Guarantee of principal). It accurately represents the guarantee offered for the crowdfunding project.",
+        "function_explanation": "The extracted value \"چک شخص ثالث و چک شرکت صدف خاور میانه\" (Check of a third party and check of Sadaf Khavar Miane Company) is directly present in the HTML content under the label \"ضمانت اصل سرمایه\" (Guarantee of principal). It accurately represents the guarantee offered for the crowdfunding project.",
+        "expert_explanation": "The extracted value \"چک شخص ثالث و چک شرکت صدف خاور میانه\" (Check of a third party and check of Sadaf Khavar Miane Company) is directly present in the HTML content under the label \"ضمانت اصل سرمایه\" (Guarantee of principal). It accurately represents the guarantee offered for the crowdfunding project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "investment_amount": {
+      "basic_value": "50,000,000",
+      "function_value": "50,000,000 ریال",
+      "expert_value": "100,000,000,000 ریال",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 provides only \"50,000,000\" which is the minimum investment amount, but the context asks for either minimum *or* total investment amount. The total investment amount is clearly stated as \"100,000,000,000 ریال\" in the HTML, and is also present as \"مبلغ کل تامین مالی جمعی 100,000,000,000 ریال\". Group 2 correctly extracts \"50,000,000 ریال\" which is the minimum investment amount. Group 3 correctly extracts \"100,000,000,000 ریال\" which is the total investment amount. Since the prompt asks for either minimum or total, both Group 2 and 3 are correct.",
+        "function_explanation": "Group 1 provides only \"50,000,000\" which is the minimum investment amount, but the context asks for either minimum *or* total investment amount. The total investment amount is clearly stated as \"100,000,000,000 ریال\" in the HTML, and is also present as \"مبلغ کل تامین مالی جمعی 100,000,000,000 ریال\". Group 2 correctly extracts \"50,000,000 ریال\" which is the minimum investment amount. Group 3 correctly extracts \"100,000,000,000 ریال\" which is the total investment amount. Since the prompt asks for either minimum or total, both Group 2 and 3 are correct.",
+        "expert_explanation": "Group 1 provides only \"50,000,000\" which is the minimum investment amount, but the context asks for either minimum *or* total investment amount. The total investment amount is clearly stated as \"100,000,000,000 ریال\" in the HTML, and is also present as \"مبلغ کل تامین مالی جمعی 100,000,000,000 ریال\". Group 2 correctly extracts \"50,000,000 ریال\" which is the minimum investment amount. Group 3 correctly extracts \"100,000,000,000 ریال\" which is the total investment amount. Since the prompt asks for either minimum or total, both Group 2 and 3 are correct.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 3
+      }
+    },
+    "name": {
+      "basic_value": "تأمین سرمایه در گردش برش و بسته بندی کاغذ فتوکپی A4",
+      "function_value": "تأمین سرمایه در گردش برش و بسته بندی کاغذ فتوکپی A4",
+      "expert_value": "تأمین سرمایه در گردش برش و بسته بندی کاغذ فتوکپی A4",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تأمین سرمایه در گردش برش و بسته بندی کاغذ فتوکپی A4\" appears multiple times in the HTML content and accurately represents the project's name/title. It is a string value as expected.",
+        "function_explanation": "The extracted value \"تأمین سرمایه در گردش برش و بسته بندی کاغذ فتوکپی A4\" appears multiple times in the HTML content and accurately represents the project's name/title. It is a string value as expected.",
+        "expert_explanation": "The extracted value \"تأمین سرمایه در گردش برش و بسته بندی کاغذ فتوکپی A4\" appears multiple times in the HTML content and accurately represents the project's name/title. It is a string value as expected.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": "35",
+      "function_value": 35.25,
+      "expert_value": 35.25,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The source HTML clearly states \"پیش‌بینی سود 35.25% (معادل 47% سالانه)\". This directly translates to a predicted profit of 35.25%. Group 2 correctly extracted this value. Group 1 extracted 35, which is a rounded value and less precise than the available information. Therefore, Group 2 is the more accurate extraction.",
+        "function_explanation": "The source HTML clearly states \"پیش‌بینی سود 35.25% (معادل 47% سالانه)\". This directly translates to a predicted profit of 35.25%. Group 2 correctly extracted this value. Group 1 extracted 35, which is a rounded value and less precise than the available information. Therefore, Group 2 is the more accurate extraction.",
+        "expert_explanation": "The source HTML clearly states \"پیش‌بینی سود 35.25% (معادل 47% سالانه)\". This directly translates to a predicted profit of 35.25%. Group 2 correctly extracted this value. Group 1 extracted 35, which is a rounded value and less precise than the available information. Therefore, Group 2 is the more accurate extraction.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": null,
+      "function_value": null,
+      "expert_value": null,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "The HTML content does not explicitly state the project's status (e.g., active, completed). While the page is live and allows investment (\"درخواست سرمایه گذاری\"), it doesn't have a clear status indicator. Therefore, \"NULL/NOT_FOUND\" is a reasonable outcome, but the page *implies* an active status, making a NULL value potentially incorrect. A more accurate extraction would require identifying a status label within the HTML. However, given the lack of such a label, marking it as incorrect is justified as the field requires a string value representing the status.",
+        "function_explanation": "The HTML content does not explicitly state the project's status (e.g., active, completed). While the page is live and allows investment (\"درخواست سرمایه گذاری\"), it doesn't have a clear status indicator. Therefore, \"NULL/NOT_FOUND\" is a reasonable outcome, but the page *implies* an active status, making a NULL value potentially incorrect. A more accurate extraction would require identifying a status label within the HTML. However, given the lack of such a label, marking it as incorrect is justified as the field requires a string value representing the status.",
+        "expert_explanation": "The HTML content does not explicitly state the project's status (e.g., active, completed). While the page is live and allows investment (\"درخواست سرمایه گذاری\"), it doesn't have a clear status indicator. Therefore, \"NULL/NOT_FOUND\" is a reasonable outcome, but the page *implies* an active status, making a NULL value potentially incorrect. A more accurate extraction would require identifying a status label within the HTML. However, given the lack of such a label, marking it as incorrect is justified as the field requires a string value representing the status.",
+        "basic_confidence": 0.8,
+        "function_confidence": 0.8,
+        "expert_confidence": 0.8,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": []
+      }
+    }
+  }
+}

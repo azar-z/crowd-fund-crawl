@@ -1,0 +1,45 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 3.0483949184417725,
+    "data": {
+      "project": {
+        "name": "تأمین مالی جمعی تأمین سرمایه در گردش خرید مواد اولیه تولید سیدرال فورت",
+        "company": "شرکت تدبیرکالای جم (سهامی خاص )",
+        "profit": "41",
+        "guarantee": "ضمانت نامه تعهد پرداخت بانکی",
+        "investment_amount": "۲۵۰٬۰۰۰٬۰۰۰٬۰۰۰",
+        "duration": "۱۲",
+        "status": "موفق"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": false,
+    "processing_time": 1.822648286819458,
+    "data": null
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 5.24705696105957,
+    "data": {
+      "project": {
+        "company": "شرکت تدبیرکالای جم (سهامی خاص )",
+        "duration": "۱۲",
+        "investment_amount": "۲۵۰٬۰۰۰٬۰۰۰٬۰۰۰",
+        "guarantee": "ضمانتنامه تعهد پرداخت بانکی",
+        "profit": 41.0,
+        "status": "موفق",
+        "name": "تأمین مالی جمعی تأمین سرمایه در گردش خرید مواد اولیه تولید سیدرال فورت"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 2,
+    "total_count": 3,
+    "fastest_agent": "Basic Agent"
+  }
+}

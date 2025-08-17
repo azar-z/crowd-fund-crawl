@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.107248306274414,
+    "data": {
+      "project": {
+        "name": "تأمین سرمایه در گردش برش و بسته بندی کاغذ فتوکپی A4",
+        "company": null,
+        "profit": "35",
+        "guarantee": "چک شخص ثالث و چک شرکت صدف خاور میانه",
+        "investment_amount": "50,000,000",
+        "duration": "9",
+        "status": null
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 1.4748451709747314,
+    "data": {
+      "project": {
+        "company": "شرکت صدف خاور میانه",
+        "duration": "9 ماه",
+        "investment_amount": "50,000,000 ریال",
+        "guarantee": "چک شخص ثالث و چک شرکت صدف خاور میانه",
+        "profit": 35.25,
+        "status": null,
+        "name": "تأمین سرمایه در گردش برش و بسته بندی کاغذ فتوکپی A4"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 9.617504835128784,
+    "data": {
+      "project": {
+        "company": "شرکت صدف خاور میانه",
+        "duration": "9 ماه",
+        "investment_amount": "100,000,000,000 ریال",
+        "guarantee": "چک شخص ثالث و چک شرکت صدف خاور میانه",
+        "profit": 35.25,
+        "status": null,
+        "name": "تأمین سرمایه در گردش برش و بسته بندی کاغذ فتوکپی A4"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

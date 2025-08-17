@@ -1,0 +1,77 @@
+{
+  "project_name": "charisma",
+  "validation_date": "2025-08-17T17:27:39.946795",
+  "basic_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 0,
+    "incorrect": 7,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "شرکت تدبیرکالای جم (سهامی خاص )",
+      "function_value": null,
+      "expert_value": "شرکت تدبیرکالای جم (سهامی خاص )",
+      "basic_correct": true,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "۱۲",
+      "function_value": null,
+      "expert_value": "۱۲",
+      "basic_correct": true,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "ضمانت نامه تعهد پرداخت بانکی",
+      "function_value": null,
+      "expert_value": "ضمانتنامه تعهد پرداخت بانکی",
+      "basic_correct": true,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "۲۵۰٬۰۰۰٬۰۰۰٬۰۰۰",
+      "function_value": null,
+      "expert_value": "۲۵۰٬۰۰۰٬۰۰۰٬۰۰۰",
+      "basic_correct": true,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "تأمین مالی جمعی تأمین سرمایه در گردش خرید مواد اولیه تولید سیدرال فورت",
+      "function_value": null,
+      "expert_value": "تأمین مالی جمعی تأمین سرمایه در گردش خرید مواد اولیه تولید سیدرال فورت",
+      "basic_correct": true,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "41",
+      "function_value": null,
+      "expert_value": 41.0,
+      "basic_correct": true,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "موفق",
+      "function_value": null,
+      "expert_value": "موفق",
+      "basic_correct": true,
+      "function_correct": false,
+      "expert_correct": true
+    }
+  }
+}

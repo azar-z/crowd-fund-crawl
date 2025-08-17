@@ -1,0 +1,187 @@
+{
+  "project_name": "startamin",
+  "evaluation_date": "2025-08-17T17:39:23.272561",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.8500000000000005,
+    "average_confidence": 0.979
+  },
+  "function_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "total_confidence": 6.8500000000000005,
+    "average_confidence": 0.979
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.8500000000000005,
+    "average_confidence": 0.979
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "سپهر آسا دیزل",
+      "function_value": "سپهر آسا دیزل  (شرکت سهامی خاص)",
+      "expert_value": "سپهر آسا دیزل (شرکت سهامی خاص)",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Groups 2 and 3 both correctly extract \"سپهر آسا دیزل (شرکت سهامی خاص)\" which is the full company name as it appears in the source HTML under the \"سرمایه پذیر\" heading. Group 1 is missing the \"(شرکت سهامی خاص)\" part, making it incomplete. While \"سپهر آسا دیزل\" alone is present, the complete name is preferred for accuracy.",
+        "function_explanation": "Groups 2 and 3 both correctly extract \"سپهر آسا دیزل (شرکت سهامی خاص)\" which is the full company name as it appears in the source HTML under the \"سرمایه پذیر\" heading. Group 1 is missing the \"(شرکت سهامی خاص)\" part, making it incomplete. While \"سپهر آسا دیزل\" alone is present, the complete name is preferred for accuracy.",
+        "expert_explanation": "Groups 2 and 3 both correctly extract \"سپهر آسا دیزل (شرکت سهامی خاص)\" which is the full company name as it appears in the source HTML under the \"سرمایه پذیر\" heading. Group 1 is missing the \"(شرکت سهامی خاص)\" part, making it incomplete. While \"سپهر آسا دیزل\" alone is present, the complete name is preferred for accuracy.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 3
+      }
+    },
+    "duration": {
+      "basic_value": "12 ماه",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"12 ماه\" (12 months) is explicitly present in the HTML content within the \"دوره ی سرمایه گذاری\" (Investment period) label. It accurately represents the duration of the investment.",
+        "function_explanation": "The extracted value \"12 ماه\" (12 months) is explicitly present in the HTML content within the \"دوره ی سرمایه گذاری\" (Investment period) label. It accurately represents the duration of the investment.",
+        "expert_explanation": "The extracted value \"12 ماه\" (12 months) is explicitly present in the HTML content within the \"دوره ی سرمایه گذاری\" (Investment period) label. It accurately represents the duration of the investment.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "guarantee": {
+      "basic_value": "ضمانت نامه تعهد پرداخت از بانک سینا",
+      "function_value": "ضمانت نامه تعهد پرداخت از بانک سینا",
+      "expert_value": "ضمانت نامه تعهد پرداخت از بانک سینا",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"ضمانت نامه تعهد پرداخت از بانک سینا\" is directly present in the HTML content and accurately represents the guarantee offered for the investment project.",
+        "function_explanation": "The extracted value \"ضمانت نامه تعهد پرداخت از بانک سینا\" is directly present in the HTML content and accurately represents the guarantee offered for the investment project.",
+        "expert_explanation": "The extracted value \"ضمانت نامه تعهد پرداخت از بانک سینا\" is directly present in the HTML content and accurately represents the guarantee offered for the investment project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "investment_amount": {
+      "basic_value": null,
+      "function_value": "10 میلیارد تومان",
+      "expert_value": "10 میلیارد",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 incorrectly identified the investment amount as not found. The HTML clearly states \"10 میلیارد از 10 میلیارد تومان مبلغ هدف تامین شده\" which translates to \"10 billion out of 10 billion Tomans of the target amount has been secured\". Both Group 2 and 3 correctly extracted the investment amount. Group 2 includes the unit \"تومان\" which is preferable, but both \"10 میلیارد تومان\" and \"10 میلیارد\" are acceptable extractions for this field.",
+        "function_explanation": "Group 1 incorrectly identified the investment amount as not found. The HTML clearly states \"10 میلیارد از 10 میلیارد تومان مبلغ هدف تامین شده\" which translates to \"10 billion out of 10 billion Tomans of the target amount has been secured\". Both Group 2 and 3 correctly extracted the investment amount. Group 2 includes the unit \"تومان\" which is preferable, but both \"10 میلیارد تومان\" and \"10 میلیارد\" are acceptable extractions for this field.",
+        "expert_explanation": "Group 1 incorrectly identified the investment amount as not found. The HTML clearly states \"10 میلیارد از 10 میلیارد تومان مبلغ هدف تامین شده\" which translates to \"10 billion out of 10 billion Tomans of the target amount has been secured\". Both Group 2 and 3 correctly extracted the investment amount. Group 2 includes the unit \"تومان\" which is preferable, but both \"10 میلیارد تومان\" and \"10 میلیارد\" are acceptable extractions for this field.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 3
+      }
+    },
+    "name": {
+      "basic_value": "تامین سرمایه جهت ساخت و سرهم‌بندی ماشین کشنده",
+      "function_value": "تامین سرمایه جهت ساخت و سرهم‌بندی ماشین کشنده",
+      "expert_value": "تامین سرمایه جهت ساخت و سرهم‌بندی ماشین کشنده",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تامین سرمایه جهت ساخت و سرهم‌بندی ماشین کشنده\" is directly present in the HTML content and accurately represents the project's name as displayed on the page.",
+        "function_explanation": "The extracted value \"تامین سرمایه جهت ساخت و سرهم‌بندی ماشین کشنده\" is directly present in the HTML content and accurately represents the project's name as displayed on the page.",
+        "expert_explanation": "The extracted value \"تامین سرمایه جهت ساخت و سرهم‌بندی ماشین کشنده\" is directly present in the HTML content and accurately represents the project's name as displayed on the page.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": "45",
+      "function_value": 45.0,
+      "expert_value": 45.0,
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Both groups extracted \"45\", which is clearly visible in the HTML content as \" %45 \" representing the predicted profit percentage. The \".0\" in group 2 doesn't change the meaning or correctness of the value.",
+        "function_explanation": "Both groups extracted \"45\", which is clearly visible in the HTML content as \" %45 \" representing the predicted profit percentage. The \".0\" in group 2 doesn't change the meaning or correctness of the value.",
+        "expert_explanation": "Both groups extracted \"45\", which is clearly visible in the HTML content as \" %45 \" representing the predicted profit percentage. The \".0\" in group 2 doesn't change the meaning or correctness of the value.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "active",
+      "function_value": "active",
+      "expert_value": "تکمیل شده",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": false,
+        "basic_explanation": "Group 1's response of \"active\" is the most appropriate status for this project. The project is actively seeking funding (\"طرح خود را برای تامین مالی ثبت نمایید\") and displays current data like investment amounts and investor counts. Group 2's response of \"تکمیل شده\" (completed) is incorrect as the project is still ongoing and accepting investments. The text indicates the project is under development and actively raising funds.",
+        "function_explanation": "Group 1's response of \"active\" is the most appropriate status for this project. The project is actively seeking funding (\"طرح خود را برای تامین مالی ثبت نمایید\") and displays current data like investment amounts and investor counts. Group 2's response of \"تکمیل شده\" (completed) is incorrect as the project is still ongoing and accepting investments. The text indicates the project is under development and actively raising funds.",
+        "expert_explanation": "Group 1's response of \"active\" is the most appropriate status for this project. The project is actively seeking funding (\"طرح خود را برای تامین مالی ثبت نمایید\") and displays current data like investment amounts and investor counts. Group 2's response of \"تکمیل شده\" (completed) is incorrect as the project is still ongoing and accepting investments. The text indicates the project is under development and actively raising funds.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          2
+        ],
+        "response_groups": 2
+      }
+    }
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "project_name": "charisma",
+  "evaluation_date": "2025-08-17T17:37:03.608835",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "total_confidence": 6.800000000000001,
+    "average_confidence": 0.971
+  },
+  "function_agent": {
+    "correct": 0,
+    "incorrect": 7,
+    "total_confidence": 6.800000000000001,
+    "average_confidence": 0.971
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "total_confidence": 6.800000000000001,
+    "average_confidence": 0.971
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "شرکت تدبیرکالای جم (سهامی خاص )",
+      "function_value": null,
+      "expert_value": "شرکت تدبیرکالای جم (سهامی خاص )",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 correctly extracted \"شرکت تدبیرکالای جم (سهامی خاص )\" which is the company name explicitly mentioned in the source HTML content: \"شرکت تدبیرکالای جم (سهامی خاص )\". Group 2 incorrectly returned NULL/NOT_FOUND, as the company name is clearly present.",
+        "function_explanation": "Group 1 correctly extracted \"شرکت تدبیرکالای جم (سهامی خاص )\" which is the company name explicitly mentioned in the source HTML content: \"شرکت تدبیرکالای جم (سهامی خاص )\". Group 2 incorrectly returned NULL/NOT_FOUND, as the company name is clearly present.",
+        "expert_explanation": "Group 1 correctly extracted \"شرکت تدبیرکالای جم (سهامی خاص )\" which is the company name explicitly mentioned in the source HTML content: \"شرکت تدبیرکالای جم (سهامی خاص )\". Group 2 incorrectly returned NULL/NOT_FOUND, as the company name is clearly present.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "duration": {
+      "basic_value": "۱۲",
+      "function_value": null,
+      "expert_value": "۱۲",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 correctly extracted \"۱۲\" which corresponds to the \"دوره اجرای طرح(به ماه)۱۲\" (Project execution period (in months) 12) found in the HTML content. Group 2 incorrectly returned NULL/NOT_FOUND as the duration is clearly stated in the source document.",
+        "function_explanation": "Group 1 correctly extracted \"۱۲\" which corresponds to the \"دوره اجرای طرح(به ماه)۱۲\" (Project execution period (in months) 12) found in the HTML content. Group 2 incorrectly returned NULL/NOT_FOUND as the duration is clearly stated in the source document.",
+        "expert_explanation": "Group 1 correctly extracted \"۱۲\" which corresponds to the \"دوره اجرای طرح(به ماه)۱۲\" (Project execution period (in months) 12) found in the HTML content. Group 2 incorrectly returned NULL/NOT_FOUND as the duration is clearly stated in the source document.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "guarantee": {
+      "basic_value": "ضمانت نامه تعهد پرداخت بانکی",
+      "function_value": null,
+      "expert_value": "ضمانتنامه تعهد پرداخت بانکی",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Both Group 1 and Group 3 correctly extracted \"ضمانت نامه تعهد پرداخت بانکی\" which translates to \"Bank Payment Commitment Guarantee\" and is explicitly mentioned in the source HTML content: \"با ضمانت‌نامه تعهد پرداخت بانک رفاه کارگران می‌باشد.\" and \"نوع ضمانتضمانت نامه تعهد پرداخت بانکی\". Group 2 incorrectly returned NULL/NOT_FOUND, as the guarantee is clearly present.",
+        "function_explanation": "Both Group 1 and Group 3 correctly extracted \"ضمانت نامه تعهد پرداخت بانکی\" which translates to \"Bank Payment Commitment Guarantee\" and is explicitly mentioned in the source HTML content: \"با ضمانت‌نامه تعهد پرداخت بانک رفاه کارگران می‌باشد.\" and \"نوع ضمانتضمانت نامه تعهد پرداخت بانکی\". Group 2 incorrectly returned NULL/NOT_FOUND, as the guarantee is clearly present.",
+        "expert_explanation": "Both Group 1 and Group 3 correctly extracted \"ضمانت نامه تعهد پرداخت بانکی\" which translates to \"Bank Payment Commitment Guarantee\" and is explicitly mentioned in the source HTML content: \"با ضمانت‌نامه تعهد پرداخت بانک رفاه کارگران می‌باشد.\" and \"نوع ضمانتضمانت نامه تعهد پرداخت بانکی\". Group 2 incorrectly returned NULL/NOT_FOUND, as the guarantee is clearly present.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 3
+      }
+    },
+    "investment_amount": {
+      "basic_value": "۲۵۰٬۰۰۰٬۰۰۰٬۰۰۰",
+      "function_value": null,
+      "expert_value": "۲۵۰٬۰۰۰٬۰۰۰٬۰۰۰",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 correctly extracted \"۲۵۰٬۰۰۰٬۰۰۰٬۰۰۰\" which represents 250 billion rials, the stated سرمایه هدف (target capital) and سرمایه جذب شده (capital raised) in the HTML content. Group 2 incorrectly reported NULL/NOT_FOUND, as the investment amount is clearly stated multiple times in the document.",
+        "function_explanation": "Group 1 correctly extracted \"۲۵۰٬۰۰۰٬۰۰۰٬۰۰۰\" which represents 250 billion rials, the stated سرمایه هدف (target capital) and سرمایه جذب شده (capital raised) in the HTML content. Group 2 incorrectly reported NULL/NOT_FOUND, as the investment amount is clearly stated multiple times in the document.",
+        "expert_explanation": "Group 1 correctly extracted \"۲۵۰٬۰۰۰٬۰۰۰٬۰۰۰\" which represents 250 billion rials, the stated سرمایه هدف (target capital) and سرمایه جذب شده (capital raised) in the HTML content. Group 2 incorrectly reported NULL/NOT_FOUND, as the investment amount is clearly stated multiple times in the document.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "name": {
+      "basic_value": "تأمین مالی جمعی تأمین سرمایه در گردش خرید مواد اولیه تولید سیدرال فورت",
+      "function_value": null,
+      "expert_value": "تأمین مالی جمعی تأمین سرمایه در گردش خرید مواد اولیه تولید سیدرال فورت",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 accurately extracted the project name \"تأمین مالی جمعی تأمین سرمایه در گردش خرید مواد اولیه تولید سیدرال فورت\" which is present multiple times within the HTML content, including as the project title and in descriptive text. Group 2 returned NULL/NOT_FOUND, which is incorrect as the name is clearly present.",
+        "function_explanation": "Group 1 accurately extracted the project name \"تأمین مالی جمعی تأمین سرمایه در گردش خرید مواد اولیه تولید سیدرال فورت\" which is present multiple times within the HTML content, including as the project title and in descriptive text. Group 2 returned NULL/NOT_FOUND, which is incorrect as the name is clearly present.",
+        "expert_explanation": "Group 1 accurately extracted the project name \"تأمین مالی جمعی تأمین سرمایه در گردش خرید مواد اولیه تولید سیدرال فورت\" which is present multiple times within the HTML content, including as the project title and in descriptive text. Group 2 returned NULL/NOT_FOUND, which is incorrect as the name is clearly present.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "profit": {
+      "basic_value": "41",
+      "function_value": null,
+      "expert_value": 41.0,
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "The HTML content clearly states \"نرخ سود مشارکت گواهی‌های منتشر شده ۴۱ درصد\" which translates to \"The profit rate of issued certificates is 41 percent\". Both Group 1 and Group 3 correctly extracted \"41\" and \"41.0\" respectively. Group 2 incorrectly returned NULL/NOT_FOUND. While \"41.0\" is more precise, \"41\" is also acceptable as the field type is number.",
+        "function_explanation": "The HTML content clearly states \"نرخ سود مشارکت گواهی‌های منتشر شده ۴۱ درصد\" which translates to \"The profit rate of issued certificates is 41 percent\". Both Group 1 and Group 3 correctly extracted \"41\" and \"41.0\" respectively. Group 2 incorrectly returned NULL/NOT_FOUND. While \"41.0\" is more precise, \"41\" is also acceptable as the field type is number.",
+        "expert_explanation": "The HTML content clearly states \"نرخ سود مشارکت گواهی‌های منتشر شده ۴۱ درصد\" which translates to \"The profit rate of issued certificates is 41 percent\". Both Group 1 and Group 3 correctly extracted \"41\" and \"41.0\" respectively. Group 2 incorrectly returned NULL/NOT_FOUND. While \"41.0\" is more precise, \"41\" is also acceptable as the field type is number.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 3
+      }
+    },
+    "status": {
+      "basic_value": "موفق",
+      "function_value": null,
+      "expert_value": "موفق",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 correctly extracted \"موفق\" which translates to \"Successful\" in English. This accurately reflects the status of the project as indicated multiple times in the HTML content, specifically near \"زمان باقی مانده اتمام فرصت (موفق)\" and \"وضعیت طرحموفق\". Group 2 incorrectly identified the status as NULL/NOT_FOUND, despite the clear indication of success throughout the document.",
+        "function_explanation": "Group 1 correctly extracted \"موفق\" which translates to \"Successful\" in English. This accurately reflects the status of the project as indicated multiple times in the HTML content, specifically near \"زمان باقی مانده اتمام فرصت (موفق)\" and \"وضعیت طرحموفق\". Group 2 incorrectly identified the status as NULL/NOT_FOUND, despite the clear indication of success throughout the document.",
+        "expert_explanation": "Group 1 correctly extracted \"موفق\" which translates to \"Successful\" in English. This accurately reflects the status of the project as indicated multiple times in the HTML content, specifically near \"زمان باقی مانده اتمام فرصت (موفق)\" and \"وضعیت طرحموفق\". Group 2 incorrectly identified the status as NULL/NOT_FOUND, despite the clear indication of success throughout the document.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 2
+      }
+    }
+  }
+}

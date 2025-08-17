@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.9054336547851562,
+    "data": {
+      "project": {
+        "name": "خط تولید سرویس های بهداشتی ایرانی و فرنگی",
+        "company": "تولیدی چینی بهداشتی ایساتیس",
+        "profit": 11.5,
+        "guarantee": "دارای ضمانت نامه",
+        "investment_amount": "200,000,000,000",
+        "duration": "3 ماه",
+        "status": "active"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 1.8282153606414795,
+    "data": {
+      "project": {
+        "duration": "3 ماه",
+        "company": "تولیدی چینی بهداشتی ایساتیس",
+        "investment_amount": "200,000,000,000 ریال",
+        "guarantee": "دارای ضمانت نامه",
+        "profit": 11.5,
+        "status": "active",
+        "name": "خط تولید سرویس های بهداشتی ایرانی و فرنگی"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 6.866142749786377,
+    "data": {
+      "project": {
+        "company": "تولیدی چینی بهداشتی ایساتیس",
+        "duration": "3 ماه",
+        "investment_amount": "200,000,000,000 ریال",
+        "guarantee": "دارای ضمانت نامه",
+        "profit": 11.5,
+        "status": "active",
+        "name": "خط تولید سرویس های بهداشتی ایرانی و فرنگی"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

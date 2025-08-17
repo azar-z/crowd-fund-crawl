@@ -1,0 +1,77 @@
+{
+  "project_name": "startamin",
+  "validation_date": "2025-08-17T17:31:55.449798",
+  "basic_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "سپهر آسا دیزل",
+      "function_value": "سپهر آسا دیزل  (شرکت سهامی خاص)",
+      "expert_value": "سپهر آسا دیزل (شرکت سهامی خاص)",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "12 ماه",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "ضمانت نامه تعهد پرداخت از بانک سینا",
+      "function_value": "ضمانت نامه تعهد پرداخت از بانک سینا",
+      "expert_value": "ضمانت نامه تعهد پرداخت از بانک سینا",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": null,
+      "function_value": "10 میلیارد تومان",
+      "expert_value": "10 میلیارد",
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": false
+    },
+    "name": {
+      "basic_value": "تامین سرمایه جهت ساخت و سرهم‌بندی ماشین کشنده",
+      "function_value": "تامین سرمایه جهت ساخت و سرهم‌بندی ماشین کشنده",
+      "expert_value": "تامین سرمایه جهت ساخت و سرهم‌بندی ماشین کشنده",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "45",
+      "function_value": 45.0,
+      "expert_value": 45.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "active",
+      "function_value": "active",
+      "expert_value": "تکمیل شده",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": true
+    }
+  }
+}

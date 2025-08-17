@@ -37,8 +37,7 @@ def test_agent(agent, agent_name, input_file, config_file, output_file):
     start_time = time.time()
 
     try:
-        if not os.path.exists(output_file):
-            agent.process_and_save(input_file, config_file, output_file)
+        agent.process_and_save(input_file, config_file, output_file)
 
         end_time = time.time()
         processing_time = end_time - start_time

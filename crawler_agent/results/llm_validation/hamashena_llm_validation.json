@@ -1,0 +1,182 @@
+{
+  "project_name": "hamashena",
+  "evaluation_date": "2025-08-17T17:37:31.457161",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.5,
+    "average_confidence": 0.929
+  },
+  "function_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.5,
+    "average_confidence": 0.929
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.5,
+    "average_confidence": 0.929
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "تولیدی زنجان برنز",
+      "function_value": "تولیدی زنجان برنز",
+      "expert_value": "تولیدی زنجان برنز",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تولیدی زنجان برنز\" (translated as \"Zanjan Bronze Production\") is explicitly present in the HTML content under the \"نام شرکت\" (Company Name) label. It is the correct value for the 'company' field.",
+        "function_explanation": "The extracted value \"تولیدی زنجان برنز\" (translated as \"Zanjan Bronze Production\") is explicitly present in the HTML content under the \"نام شرکت\" (Company Name) label. It is the correct value for the 'company' field.",
+        "expert_explanation": "The extracted value \"تولیدی زنجان برنز\" (translated as \"Zanjan Bronze Production\") is explicitly present in the HTML content under the \"نام شرکت\" (Company Name) label. It is the correct value for the 'company' field.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "12 ماهه",
+      "function_value": "12 ماهه",
+      "expert_value": "12 ماهه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"12 ماهه\" (12 months) is explicitly present in the HTML content under the label \"دوره سرمایه گذاری :\" (Investment period:). It accurately represents the duration of the investment.",
+        "function_explanation": "The extracted value \"12 ماهه\" (12 months) is explicitly present in the HTML content under the label \"دوره سرمایه گذاری :\" (Investment period:). It accurately represents the duration of the investment.",
+        "expert_explanation": "The extracted value \"12 ماهه\" (12 months) is explicitly present in the HTML content under the label \"دوره سرمایه گذاری :\" (Investment period:). It accurately represents the duration of the investment.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "guarantee": {
+      "basic_value": "تضمین اصل سرمایه توثیق سهم ثفارس توسط شرکت آلیاژ خاتون ",
+      "function_value": "تضمین اصل سرمایه توثیق سهم ثفارس توسط شرکت آلیاژ خاتون ",
+      "expert_value": "تضمین اصل سرمایه توثیق سهم ثفارس توسط شرکت آلیاژ خاتون ",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تضمین اصل سرمایه توثیق سهم ثفارس توسط شرکت آلیاژ خاتون\" is directly present and accurately reflects the guarantee information provided in the HTML content under the \"تضمین اصل سرمایه:\" label. It appears multiple times in the document, confirming its relevance.",
+        "function_explanation": "The extracted value \"تضمین اصل سرمایه توثیق سهم ثفارس توسط شرکت آلیاژ خاتون\" is directly present and accurately reflects the guarantee information provided in the HTML content under the \"تضمین اصل سرمایه:\" label. It appears multiple times in the document, confirming its relevance.",
+        "expert_explanation": "The extracted value \"تضمین اصل سرمایه توثیق سهم ثفارس توسط شرکت آلیاژ خاتون\" is directly present and accurately reflects the guarantee information provided in the HTML content under the \"تضمین اصل سرمایه:\" label. It appears multiple times in the document, confirming its relevance.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "investment_amount": {
+      "basic_value": "۱۷۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال",
+      "function_value": "۱۷۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال",
+      "expert_value": "۱۷۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "Failed to parse LLM response",
+        "function_explanation": "Failed to parse LLM response",
+        "expert_explanation": "Failed to parse LLM response",
+        "basic_confidence": 0.5,
+        "function_confidence": 0.5,
+        "expert_confidence": 0.5,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": []
+      }
+    },
+    "name": {
+      "basic_value": "تامین سرمایه در گردش تولید فرو آلیاژهای مقاوم به حرارت و خوردگی در زنجیره صنایع تبدیلی مس و مولیبدنیوم",
+      "function_value": "تامین سرمایه در گردش تولید فرو آلیاژهای مقاوم به حرارت و خوردگی در زنجیره صنایع تبدیلی مس و مولیبدنیوم",
+      "expert_value": "تامین سرمایه در گردش تولید فرو آلیاژهای مقاوم به حرارت و خوردگی در زنجیره صنایع تبدیلی مس و مولیبدنیوم",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تامین سرمایه در گردش تولید فرو آلیاژهای مقاوم به حرارت و خوردگی در زنجیره صنایع تبدیلی مس و مولیبدنیوم\" appears multiple times at the beginning of the HTML content and accurately represents the project's name.",
+        "function_explanation": "The extracted value \"تامین سرمایه در گردش تولید فرو آلیاژهای مقاوم به حرارت و خوردگی در زنجیره صنایع تبدیلی مس و مولیبدنیوم\" appears multiple times at the beginning of the HTML content and accurately represents the project's name.",
+        "expert_explanation": "The extracted value \"تامین سرمایه در گردش تولید فرو آلیاژهای مقاوم به حرارت و خوردگی در زنجیره صنایع تبدیلی مس و مولیبدنیوم\" appears multiple times at the beginning of the HTML content and accurately represents the project's name.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": "47",
+      "function_value": 47.0,
+      "expert_value": 47.0,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The source HTML clearly states \"47% سود پیش بینی شده\" (47% predicted profit) multiple times. Group 2 provides \"47.0\" which is a more precise representation of the percentage found in the text. Group 1 provides \"47\" which is also correct, but less precise than Group 2. Since the prompt asks for a number between 0 and 100 representing the profit percentage, both are acceptable, but I prefer the one with the decimal point.",
+        "function_explanation": "The source HTML clearly states \"47% سود پیش بینی شده\" (47% predicted profit) multiple times. Group 2 provides \"47.0\" which is a more precise representation of the percentage found in the text. Group 1 provides \"47\" which is also correct, but less precise than Group 2. Since the prompt asks for a number between 0 and 100 representing the profit percentage, both are acceptable, but I prefer the one with the decimal point.",
+        "expert_explanation": "The source HTML clearly states \"47% سود پیش بینی شده\" (47% predicted profit) multiple times. Group 2 provides \"47.0\" which is a more precise representation of the percentage found in the text. Group 1 provides \"47\" which is also correct, but less precise than Group 2. Since the prompt asks for a number between 0 and 100 representing the profit percentage, both are acceptable, but I prefer the one with the decimal point.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "موفقیت جمع آوری وجوه",
+      "function_value": "موفقیت جمع آوری وجوه",
+      "expert_value": "موفقیت جمع آوری وجوه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"موفقیت جمع آوری وجوه\" (meaning \"successful fundraising\" in English) is directly present in the HTML content next to the label \"وضعیت :\" (meaning \"status:\" in English). This accurately reflects the project's current status.",
+        "function_explanation": "The extracted value \"موفقیت جمع آوری وجوه\" (meaning \"successful fundraising\" in English) is directly present in the HTML content next to the label \"وضعیت :\" (meaning \"status:\" in English). This accurately reflects the project's current status.",
+        "expert_explanation": "The extracted value \"موفقیت جمع آوری وجوه\" (meaning \"successful fundraising\" in English) is directly present in the HTML content next to the label \"وضعیت :\" (meaning \"status:\" in English). This accurately reflects the project's current status.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    }
+  }
+}

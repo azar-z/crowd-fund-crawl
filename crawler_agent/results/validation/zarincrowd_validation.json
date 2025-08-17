@@ -1,0 +1,77 @@
+{
+  "project_name": "zarincrowd",
+  "validation_date": "2025-08-17T17:32:23.745787",
+  "basic_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "تولیدی چینی بهداشتی ایساتیس",
+      "function_value": "تولیدی چینی بهداشتی ایساتیس",
+      "expert_value": "تولیدی چینی بهداشتی ایساتیس",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "3 ماه",
+      "function_value": "3 ماه",
+      "expert_value": "3 ماه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "دارای ضمانت نامه",
+      "function_value": "دارای ضمانت نامه",
+      "expert_value": "دارای ضمانت نامه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "200,000,000,000",
+      "function_value": "200,000,000,000 ریال",
+      "expert_value": "200,000,000,000 ریال",
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "خط تولید سرویس های بهداشتی ایرانی و فرنگی",
+      "function_value": "خط تولید سرویس های بهداشتی ایرانی و فرنگی",
+      "expert_value": "خط تولید سرویس های بهداشتی ایرانی و فرنگی",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": 11.5,
+      "function_value": 11.5,
+      "expert_value": 11.5,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "active",
+      "function_value": "active",
+      "expert_value": "active",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": false
+    }
+  }
+}

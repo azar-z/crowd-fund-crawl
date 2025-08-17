@@ -1,0 +1,77 @@
+{
+  "project_name": "hamashena",
+  "validation_date": "2025-08-17T17:28:51.993491",
+  "basic_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "تولیدی زنجان برنز",
+      "function_value": "تولیدی زنجان برنز",
+      "expert_value": "تولیدی زنجان برنز",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "12 ماهه",
+      "function_value": "12 ماهه",
+      "expert_value": "12 ماهه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "تضمین اصل سرمایه توثیق سهم ثفارس توسط شرکت آلیاژ خاتون ",
+      "function_value": "تضمین اصل سرمایه توثیق سهم ثفارس توسط شرکت آلیاژ خاتون ",
+      "expert_value": "تضمین اصل سرمایه توثیق سهم ثفارس توسط شرکت آلیاژ خاتون ",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "۱۷۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال",
+      "function_value": "۱۷۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال",
+      "expert_value": "۱۷۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "تامین سرمایه در گردش تولید فرو آلیاژهای مقاوم به حرارت و خوردگی در زنجیره صنایع تبدیلی مس و مولیبدنیوم",
+      "function_value": "تامین سرمایه در گردش تولید فرو آلیاژهای مقاوم به حرارت و خوردگی در زنجیره صنایع تبدیلی مس و مولیبدنیوم",
+      "expert_value": "تامین سرمایه در گردش تولید فرو آلیاژهای مقاوم به حرارت و خوردگی در زنجیره صنایع تبدیلی مس و مولیبدنیوم",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "47",
+      "function_value": 47.0,
+      "expert_value": 47.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "موفقیت جمع آوری وجوه",
+      "function_value": "موفقیت جمع آوری وجوه",
+      "expert_value": "موفقیت جمع آوری وجوه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    }
+  }
+}

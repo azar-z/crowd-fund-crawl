@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.9353671073913574,
+    "data": {
+      "project": {
+        "name": "تامین سرمایه جهت ساخت و سرهم‌بندی ماشین کشنده",
+        "company": "سپهر آسا دیزل",
+        "profit": "45",
+        "guarantee": "ضمانت نامه تعهد پرداخت از بانک سینا",
+        "investment_amount": null,
+        "duration": "12 ماه",
+        "status": "active"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 2.0118191242218018,
+    "data": {
+      "project": {
+        "company": "سپهر آسا دیزل  (شرکت سهامی خاص)",
+        "duration": "12 ماه",
+        "investment_amount": "10 میلیارد تومان",
+        "guarantee": "ضمانت نامه تعهد پرداخت از بانک سینا",
+        "profit": 45.0,
+        "status": "active",
+        "name": "تامین سرمایه جهت ساخت و سرهم‌بندی ماشین کشنده"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 9.668998956680298,
+    "data": {
+      "project": {
+        "duration": "12 ماه",
+        "company": "سپهر آسا دیزل (شرکت سهامی خاص)",
+        "investment_amount": "10 میلیارد",
+        "guarantee": "ضمانت نامه تعهد پرداخت از بانک سینا",
+        "profit": 45.0,
+        "status": "تکمیل شده",
+        "name": "تامین سرمایه جهت ساخت و سرهم‌بندی ماشین کشنده"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

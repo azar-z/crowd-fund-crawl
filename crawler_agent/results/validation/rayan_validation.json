@@ -1,0 +1,77 @@
+{
+  "project_name": "rayan",
+  "validation_date": "2025-08-17T17:30:33.315663",
+  "basic_agent": {
+    "correct": 2,
+    "incorrect": 5,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": null,
+      "function_value": "شرکت صدف خاور میانه",
+      "expert_value": "شرکت صدف خاور میانه",
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "9",
+      "function_value": "9 ماه",
+      "expert_value": "9 ماه",
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "چک شخص ثالث و چک شرکت صدف خاور میانه",
+      "function_value": "چک شخص ثالث و چک شرکت صدف خاور میانه",
+      "expert_value": "چک شخص ثالث و چک شرکت صدف خاور میانه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "50,000,000",
+      "function_value": "50,000,000 ریال",
+      "expert_value": "100,000,000,000 ریال",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "تأمین سرمایه در گردش برش و بسته بندی کاغذ فتوکپی A4",
+      "function_value": "تأمین سرمایه در گردش برش و بسته بندی کاغذ فتوکپی A4",
+      "expert_value": "تأمین سرمایه در گردش برش و بسته بندی کاغذ فتوکپی A4",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "35",
+      "function_value": 35.25,
+      "expert_value": 35.25,
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": null,
+      "function_value": null,
+      "expert_value": null,
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": false
+    }
+  }
+}
