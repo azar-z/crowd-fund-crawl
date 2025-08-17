@@ -1,0 +1,183 @@
+{
+  "project_name": "atiyeiranian",
+  "evaluation_date": "2025-08-17T19:57:24.722786",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 4,
+    "incorrect": 3,
+    "total_confidence": 6.8,
+    "average_confidence": 0.971
+  },
+  "function_agent": {
+    "correct": 4,
+    "incorrect": 3,
+    "total_confidence": 6.8,
+    "average_confidence": 0.971
+  },
+  "expert_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.8,
+    "average_confidence": 0.971
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "توسعه تجارت پایدار آتیه نوین ایرانیان",
+      "function_value": "توسعه تجارت پایدار آتیه نوین ایرانیان",
+      "expert_value": "توسعه تجارت پایدار آتیه نوین ایرانیان",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"توسعه تجارت پایدار آتیه نوین ایرانیان\" is explicitly mentioned in the HTML content as the applicant/requester of the funding (\"متقاضی: توسعه تجارت پایدار آتیه نوین ایرانیان\") and is also mentioned again in a more detailed description of the company (\"شرکت توسعه تجارت پایدار آتیه نوین ایرانیان\"). It accurately represents the company associated with the project.",
+        "function_explanation": "The extracted value \"توسعه تجارت پایدار آتیه نوین ایرانیان\" is explicitly mentioned in the HTML content as the applicant/requester of the funding (\"متقاضی: توسعه تجارت پایدار آتیه نوین ایرانیان\") and is also mentioned again in a more detailed description of the company (\"شرکت توسعه تجارت پایدار آتیه نوین ایرانیان\"). It accurately represents the company associated with the project.",
+        "expert_explanation": "The extracted value \"توسعه تجارت پایدار آتیه نوین ایرانیان\" is explicitly mentioned in the HTML content as the applicant/requester of the funding (\"متقاضی: توسعه تجارت پایدار آتیه نوین ایرانیان\") and is also mentioned again in a more detailed description of the company (\"شرکت توسعه تجارت پایدار آتیه نوین ایرانیان\"). It accurately represents the company associated with the project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "12ماهه",
+      "function_value": "12ماهه",
+      "expert_value": "یکساله (12ماهه)",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 2's response \"یکساله (12ماهه)\" accurately reflects the duration stated in the HTML content: \"دوره قرارداد: یکساله (12ماهه)\". Group 1's response \"12ماهه\" is present but less complete as it omits the \"یکساله\" which is also part of the original text. The HTML explicitly states \"یکساله (12ماهه)\" as the duration.",
+        "function_explanation": "Group 2's response \"یکساله (12ماهه)\" accurately reflects the duration stated in the HTML content: \"دوره قرارداد: یکساله (12ماهه)\". Group 1's response \"12ماهه\" is present but less complete as it omits the \"یکساله\" which is also part of the original text. The HTML explicitly states \"یکساله (12ماهه)\" as the duration.",
+        "expert_explanation": "Group 2's response \"یکساله (12ماهه)\" accurately reflects the duration stated in the HTML content: \"دوره قرارداد: یکساله (12ماهه)\". Group 1's response \"12ماهه\" is present but less complete as it omits the \"یکساله\" which is also part of the original text. The HTML explicitly states \"یکساله (12ماهه)\" as the duration.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "guarantee": {
+      "basic_value": "با تضمین اصل سرمایه توسط بانک ملی ایران",
+      "function_value": "با تضمین اصل سرمایه توسط بانک ملی ایران",
+      "expert_value": "با تضمین اصل سرمایه توسط بانک ملی ایران<a href=\"https://atiyehiraniancf.com/sepam/d52ab6b2-d3d9-428e-a9e8-29375821545b.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">(مشاهد</a><a href=\"https://atiyehiraniancf.com/sepam/d52ab6b2-d3d9-428e-a9e8-29375821545b.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">ه)</a>",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": false,
+        "basic_explanation": "Group 1 accurately extracts the guarantee information: \"با تضمین اصل سرمایه توسط بانک ملی ایران\" which translates to \"with the guarantee of the principal by Bank Melli Iran\". This phrase is directly present in the source HTML. Group 2 includes extraneous link information that is not part of the guarantee description itself, making it incorrect.",
+        "function_explanation": "Group 1 accurately extracts the guarantee information: \"با تضمین اصل سرمایه توسط بانک ملی ایران\" which translates to \"with the guarantee of the principal by Bank Melli Iran\". This phrase is directly present in the source HTML. Group 2 includes extraneous link information that is not part of the guarantee description itself, making it incorrect.",
+        "expert_explanation": "Group 1 accurately extracts the guarantee information: \"با تضمین اصل سرمایه توسط بانک ملی ایران\" which translates to \"with the guarantee of the principal by Bank Melli Iran\". This phrase is directly present in the source HTML. Group 2 includes extraneous link information that is not part of the guarantee description itself, making it incorrect.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          2
+        ],
+        "response_groups": 2
+      }
+    },
+    "investment_amount": {
+      "basic_value": "10,000,000",
+      "function_value": "100,000,000,000",
+      "expert_value": "100.000.000.000 ریال",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 3's response \"100.000.000.000 ریال\" directly matches the \"مبلغ تامین مالی: 100.000.000.000 ریال\" found in the HTML. Group 1's response \"10,000,000\" is the minimum investment amount, not the total. Group 2's response \"100,000,000,000\" is a significantly incorrect value and not present in the text. The correct investment amount is 100,000,000,000 ریال.",
+        "function_explanation": "Group 3's response \"100.000.000.000 ریال\" directly matches the \"مبلغ تامین مالی: 100.000.000.000 ریال\" found in the HTML. Group 1's response \"10,000,000\" is the minimum investment amount, not the total. Group 2's response \"100,000,000,000\" is a significantly incorrect value and not present in the text. The correct investment amount is 100,000,000,000 ریال.",
+        "expert_explanation": "Group 3's response \"100.000.000.000 ریال\" directly matches the \"مبلغ تامین مالی: 100.000.000.000 ریال\" found in the HTML. Group 1's response \"10,000,000\" is the minimum investment amount, not the total. Group 2's response \"100,000,000,000\" is a significantly incorrect value and not present in the text. The correct investment amount is 100,000,000,000 ریال.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          3
+        ],
+        "response_groups": 3
+      }
+    },
+    "name": {
+      "basic_value": "تامین سرمایه واردات خمیرکاغذ الیاف کوتاه سفید نشده (شناور)",
+      "function_value": "تامین سرمایه واردات خمیرکاغذ الیاف کوتاه سفید نشده (شناور)",
+      "expert_value": "تامین سرمایه واردات خمیرکاغذ الیاف کوتاه سفید نشده (شناور)",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تامین سرمایه واردات خمیرکاغذ الیاف کوتاه سفید نشده (شناور)\" exactly matches the \"نام طرح:\" (Project Name) value present in the HTML content. It is a string and accurately represents the project's name.",
+        "function_explanation": "The extracted value \"تامین سرمایه واردات خمیرکاغذ الیاف کوتاه سفید نشده (شناور)\" exactly matches the \"نام طرح:\" (Project Name) value present in the HTML content. It is a string and accurately represents the project's name.",
+        "expert_explanation": "The extracted value \"تامین سرمایه واردات خمیرکاغذ الیاف کوتاه سفید نشده (شناور)\" exactly matches the \"نام طرح:\" (Project Name) value present in the HTML content. It is a string and accurately represents the project's name.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": "40",
+      "function_value": 40.0,
+      "expert_value": 40.0,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The source HTML clearly states \"نرخ سود پیش بینی شده: ۴۰ درصد سالیانه\" which translates to \"Predicted interest rate: 40% annually\". Group 2 (Agent 2, Agent 3) correctly extracted \"40.0\" representing the 40% profit. Group 1 extracted \"40\" which is acceptable, but the \".0\" provides more precision and is preferred. Therefore, Group 2 is the more accurate extraction.",
+        "function_explanation": "The source HTML clearly states \"نرخ سود پیش بینی شده: ۴۰ درصد سالیانه\" which translates to \"Predicted interest rate: 40% annually\". Group 2 (Agent 2, Agent 3) correctly extracted \"40.0\" representing the 40% profit. Group 1 extracted \"40\" which is acceptable, but the \".0\" provides more precision and is preferred. Therefore, Group 2 is the more accurate extraction.",
+        "expert_explanation": "The source HTML clearly states \"نرخ سود پیش بینی شده: ۴۰ درصد سالیانه\" which translates to \"Predicted interest rate: 40% annually\". Group 2 (Agent 2, Agent 3) correctly extracted \"40.0\" representing the 40% profit. Group 1 extracted \"40\" which is acceptable, but the \".0\" provides more precision and is preferred. Therefore, Group 2 is the more accurate extraction.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "فعال",
+      "function_value": "",
+      "expert_value": "",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "Group 1 correctly extracted \"فعال\" which translates to \"active\" in English. This accurately reflects the project's status as it is currently open for investment (\"سرمایه گذاری میکنم!\"). The HTML content indicates the project is actively collecting funds (\"دوره جمع آوری وجوه و سرمایه‌گذاری در طرح فوق به مدت 30 روز از تاریخ 1404/05/14 می باشد\"). Group 2 incorrectly extracted an empty string, failing to identify the project's active status.",
+        "function_explanation": "Group 1 correctly extracted \"فعال\" which translates to \"active\" in English. This accurately reflects the project's status as it is currently open for investment (\"سرمایه گذاری میکنم!\"). The HTML content indicates the project is actively collecting funds (\"دوره جمع آوری وجوه و سرمایه‌گذاری در طرح فوق به مدت 30 روز از تاریخ 1404/05/14 می باشد\"). Group 2 incorrectly extracted an empty string, failing to identify the project's active status.",
+        "expert_explanation": "Group 1 correctly extracted \"فعال\" which translates to \"active\" in English. This accurately reflects the project's status as it is currently open for investment (\"سرمایه گذاری میکنم!\"). The HTML content indicates the project is actively collecting funds (\"دوره جمع آوری وجوه و سرمایه‌گذاری در طرح فوق به مدت 30 روز از تاریخ 1404/05/14 می باشد\"). Group 2 incorrectly extracted an empty string, failing to identify the project's active status.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1
+        ],
+        "response_groups": 2
+      }
+    }
+  }
+}

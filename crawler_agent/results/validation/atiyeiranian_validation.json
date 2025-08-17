@@ -1,0 +1,77 @@
+{
+  "project_name": "atiyeiranian",
+  "validation_date": "2025-08-17T19:51:18.680551",
+  "basic_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "توسعه تجارت پایدار آتیه نوین ایرانیان",
+      "function_value": "توسعه تجارت پایدار آتیه نوین ایرانیان",
+      "expert_value": "توسعه تجارت پایدار آتیه نوین ایرانیان",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "12ماهه",
+      "function_value": "12ماهه",
+      "expert_value": "یکساله (12ماهه)",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "با تضمین اصل سرمایه توسط بانک ملی ایران",
+      "function_value": "با تضمین اصل سرمایه توسط بانک ملی ایران",
+      "expert_value": "با تضمین اصل سرمایه توسط بانک ملی ایران<a href=\"https://atiyehiraniancf.com/sepam/d52ab6b2-d3d9-428e-a9e8-29375821545b.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">(مشاهد</a><a href=\"https://atiyehiraniancf.com/sepam/d52ab6b2-d3d9-428e-a9e8-29375821545b.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">ه)</a>",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": false
+    },
+    "investment_amount": {
+      "basic_value": "10,000,000",
+      "function_value": "100,000,000,000",
+      "expert_value": "100.000.000.000 ریال",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "تامین سرمایه واردات خمیرکاغذ الیاف کوتاه سفید نشده (شناور)",
+      "function_value": "تامین سرمایه واردات خمیرکاغذ الیاف کوتاه سفید نشده (شناور)",
+      "expert_value": "تامین سرمایه واردات خمیرکاغذ الیاف کوتاه سفید نشده (شناور)",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "40",
+      "function_value": 40.0,
+      "expert_value": 40.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "فعال",
+      "function_value": "",
+      "expert_value": "",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": false
+    }
+  }
+}

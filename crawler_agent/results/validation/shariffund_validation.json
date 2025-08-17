@@ -1,0 +1,77 @@
+{
+  "project_name": "shariffund",
+  "validation_date": "2025-08-17T19:55:31.438597",
+  "basic_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "شرکت آرمان گستر نوین کنارک",
+      "function_value": "آرمان گستر نوین کنارک",
+      "expert_value": "شرکت آرمان گستر نوین کنارک",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "12 ماهه",
+      "function_value": "12 ماهه",
+      "expert_value": "12 ماهه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "ضمانت نامه تعهد پرداخت بانکی",
+      "function_value": "ضمانت نامه تعهد پرداخت از بانک صادرات",
+      "expert_value": "تضمین اصل سرمایه با ضمانت نامه تعهد پرداخت از بانک صادرات",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "1 میلیون ریال",
+      "function_value": "1 میلیون ریال",
+      "expert_value": "250,000,000,000&nbsp;ریال",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "سرمایه در گردش شرکت آرمان گستر نوین کنارک جهت تولید و فروش درب ایزی اپن",
+      "function_value": "سرمایه در گردش شرکت آرمان گستر نوین کنارک جهت تولید و فروش درب ایزی اپن",
+      "expert_value": "سرمایه در گردش شرکت آرمان گستر نوین کنارک جهت تولید و فروش درب ایزی اپن",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "42.50",
+      "function_value": 42.5,
+      "expert_value": 42.5,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "خاتمه یافته",
+      "function_value": "خاتمه یافته",
+      "expert_value": "خاتمه یافته",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    }
+  }
+}

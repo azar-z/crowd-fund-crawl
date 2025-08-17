@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.602695941925049,
+    "data": {
+      "project": {
+        "name": "تأمین سرمایه در گردش جهت تولید سبد داروهای دامپزشکی‌",
+        "company": "شرکت آزمایشگاه‌های  تولیدی  داروسازان ایران",
+        "profit": "45",
+        "guarantee": "این طرح با پشتوانه ضمانت‌نامه بانکی و بازپرداخت اصل سرمایه به‌صورت یکجا در پایان دوره",
+        "investment_amount": "250 میلیارد ریال",
+        "duration": "12 ماه",
+        "status": "خاتمه یافته"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 1.9868152141571045,
+    "data": {
+      "project": {
+        "company": "شرکت آزمایشگاه های تولیدی داروسازان ایران",
+        "duration": "12 ماه",
+        "investment_amount": "250 میلیارد ریال",
+        "guarantee": "ضمانت‌نامه بانکی",
+        "profit": 45.0,
+        "status": "خاتمه یافته",
+        "name": "‌ ‌تأمین سرمایه در گردش جهت تولید سبد داروهای دامپزشکی‌"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 7.084087610244751,
+    "data": {
+      "project": {
+        "company": "شرکت آزمایشگاه‌های تولیدی داروسازان ایران",
+        "duration": "12 ماه",
+        "investment_amount": "۲۵۰ میلیارد ریال",
+        "guarantee": "این طرح با پشتوانه ضمانت‌نامه بانکی و بازپرداخت اصل سرمایه به‌صورت یکجا در پایان دوره, پیش‌بینی سود ۴۵ درصدی برای سرمایه‌گذاران دارد که هر سه ماه یک‌بار پرداخت خواهد شد.",
+        "profit": 45.0,
+        "status": "خاتمه یافته",
+        "name": "‌ ‌تأمین سرمایه در گردش جهت تولید سبد داروهای دامپزشکی‌"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "project_name": "yektacrowd",
+  "evaluation_date": "2025-08-17T20:05:22.298632",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.9,
+    "average_confidence": 0.986
+  },
+  "function_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "total_confidence": 6.9,
+    "average_confidence": 0.986
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.9,
+    "average_confidence": 0.986
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "گروه شرکت های ساخت و ساز بین المللی بیشمار",
+      "function_value": "گروه شرکت های ساخت و ساز بین المللی بیشمار",
+      "expert_value": "گروه شرکت های ساخت و ساز بین المللی بیشمار",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"گروه شرکت های ساخت و ساز بین المللی بیشمار\" (Group of International Construction Companies Bishmar) is explicitly mentioned as the متقاضی (applicant) in the HTML content and is also described further down in the text as the company that started operations in 1391 (2012). It accurately represents the company associated with the project.",
+        "function_explanation": "The extracted value \"گروه شرکت های ساخت و ساز بین المللی بیشمار\" (Group of International Construction Companies Bishmar) is explicitly mentioned as the متقاضی (applicant) in the HTML content and is also described further down in the text as the company that started operations in 1391 (2012). It accurately represents the company associated with the project.",
+        "expert_explanation": "The extracted value \"گروه شرکت های ساخت و ساز بین المللی بیشمار\" (Group of International Construction Companies Bishmar) is explicitly mentioned as the متقاضی (applicant) in the HTML content and is also described further down in the text as the company that started operations in 1391 (2012). It accurately represents the company associated with the project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "12 ماه",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The HTML content clearly states \"مدت طرح 12 ماه\" which translates to \"Project duration 12 months\". The extracted value \"12 ماه\" is present and accurately represents the project duration.",
+        "function_explanation": "The HTML content clearly states \"مدت طرح 12 ماه\" which translates to \"Project duration 12 months\". The extracted value \"12 ماه\" is present and accurately represents the project duration.",
+        "expert_explanation": "The HTML content clearly states \"مدت طرح 12 ماه\" which translates to \"Project duration 12 months\". The extracted value \"12 ماه\" is present and accurately represents the project duration.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "guarantee": {
+      "basic_value": "بدون تضمین سود و با ضمانت اصل سرمایه از بانک ملی ایران (تعهد پرداخت)",
+      "function_value": "بدون تضمین سود و با ضمانت اصل سرمایه از بانک ملی ایران (تعهد پرداخت)",
+      "expert_value": "بدون تضمین سود و با ضمانت اصل سرمایه از بانک ملی ایران (تعهد پرداخت)",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"بدون تضمین سود و با ضمانت اصل سرمایه از بانک ملی ایران (تعهد پرداخت)\" is directly present in the source HTML content and accurately represents the guarantee offered for the investment. It correctly identifies that there is no guaranteed profit but the principal is guaranteed by Bank Melli Iran (payment commitment).",
+        "function_explanation": "The extracted value \"بدون تضمین سود و با ضمانت اصل سرمایه از بانک ملی ایران (تعهد پرداخت)\" is directly present in the source HTML content and accurately represents the guarantee offered for the investment. It correctly identifies that there is no guaranteed profit but the principal is guaranteed by Bank Melli Iran (payment commitment).",
+        "expert_explanation": "The extracted value \"بدون تضمین سود و با ضمانت اصل سرمایه از بانک ملی ایران (تعهد پرداخت)\" is directly present in the source HTML content and accurately represents the guarantee offered for the investment. It correctly identifies that there is no guaranteed profit but the principal is guaranteed by Bank Melli Iran (payment commitment).",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "investment_amount": {
+      "basic_value": "250,000",
+      "function_value": "250,000 میلیون ﷼",
+      "expert_value": "250 میلیارد ﷼",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 provides only \"250,000\" which is ambiguous without units. The source HTML clearly states \"250 میلیارد ﷼\" and \"250,000 میلیون ریال\". Group 2 correctly extracts \"250,000 میلیون ﷼\" and Group 3 correctly extracts \"250 میلیارد ﷼\". Both are valid representations of the investment amount as stated in the source. Since \"میلیارد\" (billion) and \"میلیون\" (million) are present in the source, these extractions are preferred over the unitless number in Group 1.",
+        "function_explanation": "Group 1 provides only \"250,000\" which is ambiguous without units. The source HTML clearly states \"250 میلیارد ﷼\" and \"250,000 میلیون ریال\". Group 2 correctly extracts \"250,000 میلیون ﷼\" and Group 3 correctly extracts \"250 میلیارد ﷼\". Both are valid representations of the investment amount as stated in the source. Since \"میلیارد\" (billion) and \"میلیون\" (million) are present in the source, these extractions are preferred over the unitless number in Group 1.",
+        "expert_explanation": "Group 1 provides only \"250,000\" which is ambiguous without units. The source HTML clearly states \"250 میلیارد ﷼\" and \"250,000 میلیون ریال\". Group 2 correctly extracts \"250,000 میلیون ﷼\" and Group 3 correctly extracts \"250 میلیارد ﷼\". Both are valid representations of the investment amount as stated in the source. Since \"میلیارد\" (billion) and \"میلیون\" (million) are present in the source, these extractions are preferred over the unitless number in Group 1.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 3
+      }
+    },
+    "name": {
+      "basic_value": "تأمین سرمایه در گردش عرضه میلگرد فولادی",
+      "function_value": "تأمین سرمایه در گردش عرضه میلگرد فولادی",
+      "expert_value": "تأمین سرمایه در گردش عرضه میلگرد فولادی",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تأمین سرمایه در گردش عرضه میلگرد فولادی\" exactly matches the \"نام طرح:\" (Project Name) value present in the HTML content.",
+        "function_explanation": "The extracted value \"تأمین سرمایه در گردش عرضه میلگرد فولادی\" exactly matches the \"نام طرح:\" (Project Name) value present in the HTML content.",
+        "expert_explanation": "The extracted value \"تأمین سرمایه در گردش عرضه میلگرد فولادی\" exactly matches the \"نام طرح:\" (Project Name) value present in the HTML content.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": "43",
+      "function_value": 43.0,
+      "expert_value": 43.0,
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Both groups extracted \"43\" or \"43.0\", which is the correct profit percentage as stated in the HTML content: \"سود پیش‌بینی‌شده سرمایه ‌گذاران طی این دوره 43 درصد خواهد بود.\" The decimal representation is also acceptable.",
+        "function_explanation": "Both groups extracted \"43\" or \"43.0\", which is the correct profit percentage as stated in the HTML content: \"سود پیش‌بینی‌شده سرمایه ‌گذاران طی این دوره 43 درصد خواهد بود.\" The decimal representation is also acceptable.",
+        "expert_explanation": "Both groups extracted \"43\" or \"43.0\", which is the correct profit percentage as stated in the HTML content: \"سود پیش‌بینی‌شده سرمایه ‌گذاران طی این دوره 43 درصد خواهد بود.\" The decimal representation is also acceptable.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "active",
+      "function_value": "active",
+      "expert_value": null,
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": false,
+        "basic_explanation": "The HTML content clearly indicates the project is currently accepting investments (\"مهلت سرمایه‌گذاری29 روز مانده\" - \"29 days remaining for investment\"). This implies an 'active' status. Group 2 incorrectly identifies the status as NULL/NOT_FOUND, which is not supported by the text. The project is demonstrably ongoing.",
+        "function_explanation": "The HTML content clearly indicates the project is currently accepting investments (\"مهلت سرمایه‌گذاری29 روز مانده\" - \"29 days remaining for investment\"). This implies an 'active' status. Group 2 incorrectly identifies the status as NULL/NOT_FOUND, which is not supported by the text. The project is demonstrably ongoing.",
+        "expert_explanation": "The HTML content clearly indicates the project is currently accepting investments (\"مهلت سرمایه‌گذاری29 روز مانده\" - \"29 days remaining for investment\"). This implies an 'active' status. Group 2 incorrectly identifies the status as NULL/NOT_FOUND, which is not supported by the text. The project is demonstrably ongoing.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          2
+        ],
+        "response_groups": 2
+      }
+    }
+  }
+}

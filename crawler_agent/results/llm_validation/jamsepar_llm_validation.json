@@ -1,0 +1,186 @@
+{
+  "project_name": "jamsepar",
+  "evaluation_date": "2025-08-17T20:01:34.016451",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.95,
+    "average_confidence": 0.993
+  },
+  "function_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "total_confidence": 6.95,
+    "average_confidence": 0.993
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "total_confidence": 6.95,
+    "average_confidence": 0.993
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "شرکت پارسادان طبرستان",
+      "function_value": "شرکت پارسادان طبرستان",
+      "expert_value": "شرکت پارسادان طبرستان",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"شرکت پارسادان طبرستان\" is explicitly mentioned in the source HTML content as the company name: \"شکایت از طرح شرکت پارسادان طبرستان\". It accurately represents the company associated with the project.",
+        "function_explanation": "The extracted value \"شرکت پارسادان طبرستان\" is explicitly mentioned in the source HTML content as the company name: \"شکایت از طرح شرکت پارسادان طبرستان\". It accurately represents the company associated with the project.",
+        "expert_explanation": "The extracted value \"شرکت پارسادان طبرستان\" is explicitly mentioned in the source HTML content as the company name: \"شکایت از طرح شرکت پارسادان طبرستان\". It accurately represents the company associated with the project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "12",
+      "function_value": "12",
+      "expert_value": "12",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The HTML content clearly states \"دوره سرمایه گذاری(ماه):12\" which translates to \"Investment period (months): 12\". Therefore, the extracted value of 12 is correct and accurately represents the project duration in months.",
+        "function_explanation": "The HTML content clearly states \"دوره سرمایه گذاری(ماه):12\" which translates to \"Investment period (months): 12\". Therefore, the extracted value of 12 is correct and accurately represents the project duration in months.",
+        "expert_explanation": "The HTML content clearly states \"دوره سرمایه گذاری(ماه):12\" which translates to \"Investment period (months): 12\". Therefore, the extracted value of 12 is correct and accurately represents the project duration in months.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "guarantee": {
+      "basic_value": "بدون تضمین سود و با تضمین ضمانت نامه بانکی برای اصل سرمایه",
+      "function_value": "بدون تضمین سود و با تضمین ضمانت نامه بانکی برای اصل سرمایه",
+      "expert_value": "بدون تضمین سود و با تضمین ضمانت نامه بانکی برای اصل سرمایه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"بدون تضمین سود و با تضمین ضمانت نامه بانکی برای اصل سرمایه\" (without profit guarantee and with a bank guarantee for the principal) is directly present in the HTML content under the \"تضامین:\" (Guarantees:) section and also under \"نوع ضمانت:\" (Type of Guarantee:). It accurately reflects the guarantee offered for the investment.",
+        "function_explanation": "The extracted value \"بدون تضمین سود و با تضمین ضمانت نامه بانکی برای اصل سرمایه\" (without profit guarantee and with a bank guarantee for the principal) is directly present in the HTML content under the \"تضامین:\" (Guarantees:) section and also under \"نوع ضمانت:\" (Type of Guarantee:). It accurately reflects the guarantee offered for the investment.",
+        "expert_explanation": "The extracted value \"بدون تضمین سود و با تضمین ضمانت نامه بانکی برای اصل سرمایه\" (without profit guarantee and with a bank guarantee for the principal) is directly present in the HTML content under the \"تضامین:\" (Guarantees:) section and also under \"نوع ضمانت:\" (Type of Guarantee:). It accurately reflects the guarantee offered for the investment.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "investment_amount": {
+      "basic_value": "100,000,000,000",
+      "function_value": "100,000,000,000",
+      "expert_value": "100,000,000,000",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"100,000,000,000\" appears multiple times in the HTML content, explicitly stated as the \"مبلغ موردنیاز\" (required amount) in ریال (Rial). It is the correct total investment amount for the project.",
+        "function_explanation": "The extracted value \"100,000,000,000\" appears multiple times in the HTML content, explicitly stated as the \"مبلغ موردنیاز\" (required amount) in ریال (Rial). It is the correct total investment amount for the project.",
+        "expert_explanation": "The extracted value \"100,000,000,000\" appears multiple times in the HTML content, explicitly stated as the \"مبلغ موردنیاز\" (required amount) in ریال (Rial). It is the correct total investment amount for the project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "name": {
+      "basic_value": "تامین سرمایه در گردش تولید متیونین برای خوراک طیور ",
+      "function_value": "تامین سرمایه در گردش تولید متیونین برای خوراک طیور",
+      "expert_value": "تامین سرمایه در گردش تولید متیونین برای خوراک طیور",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تامین سرمایه در گردش تولید متیونین برای خوراک طیور\" is the title of the project and is clearly present at the beginning of the HTML content. It accurately represents the project's name.",
+        "function_explanation": "The extracted value \"تامین سرمایه در گردش تولید متیونین برای خوراک طیور\" is the title of the project and is clearly present at the beginning of the HTML content. It accurately represents the project's name.",
+        "expert_explanation": "The extracted value \"تامین سرمایه در گردش تولید متیونین برای خوراک طیور\" is the title of the project and is clearly present at the beginning of the HTML content. It accurately represents the project's name.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": 43,
+      "function_value": 43.0,
+      "expert_value": 43.0,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The source HTML clearly states \"سود پیش‌بینی شده طرح (یکساله): 43%\" which translates to \"Predicted scheme profit (annual): 43%\". Group 2 correctly extracts this as 43.0. Group 1 extracts 43, which is also present, but the inclusion of the decimal point in Group 2's response is preferable as it indicates a percentage value.",
+        "function_explanation": "The source HTML clearly states \"سود پیش‌بینی شده طرح (یکساله): 43%\" which translates to \"Predicted scheme profit (annual): 43%\". Group 2 correctly extracts this as 43.0. Group 1 extracts 43, which is also present, but the inclusion of the decimal point in Group 2's response is preferable as it indicates a percentage value.",
+        "expert_explanation": "The source HTML clearly states \"سود پیش‌بینی شده طرح (یکساله): 43%\" which translates to \"Predicted scheme profit (annual): 43%\". Group 2 correctly extracts this as 43.0. Group 1 extracts 43, which is also present, but the inclusion of the decimal point in Group 2's response is preferable as it indicates a percentage value.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "موفق در جذب سرمایه",
+      "function_value": "موفق در جذب سرمایه",
+      "expert_value": "موفق در جذب سرمایه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"موفق در جذب سرمایه\" (Successful in attracting investment) appears multiple times in the HTML content, specifically under the \"وضعیت طرح:\" (Project Status:) label. This accurately reflects the current status of the project.",
+        "function_explanation": "The extracted value \"موفق در جذب سرمایه\" (Successful in attracting investment) appears multiple times in the HTML content, specifically under the \"وضعیت طرح:\" (Project Status:) label. This accurately reflects the current status of the project.",
+        "expert_explanation": "The extracted value \"موفق در جذب سرمایه\" (Successful in attracting investment) appears multiple times in the HTML content, specifically under the \"وضعیت طرح:\" (Project Status:) label. This accurately reflects the current status of the project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    }
+  }
+}

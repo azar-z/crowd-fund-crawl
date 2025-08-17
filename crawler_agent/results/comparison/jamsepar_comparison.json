@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.742971897125244,
+    "data": {
+      "project": {
+        "name": "تامین سرمایه در گردش تولید متیونین برای خوراک طیور ",
+        "company": "شرکت پارسادان طبرستان",
+        "profit": 43,
+        "guarantee": "بدون تضمین سود و با تضمین ضمانت نامه بانکی برای اصل سرمایه",
+        "investment_amount": "100,000,000,000",
+        "duration": "12",
+        "status": "موفق در جذب سرمایه"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 1.9760158061981201,
+    "data": {
+      "project": {
+        "company": "شرکت پارسادان طبرستان",
+        "duration": "12",
+        "investment_amount": "100,000,000,000",
+        "guarantee": "بدون تضمین سود و با تضمین ضمانت نامه بانکی برای اصل سرمایه",
+        "profit": 43.0,
+        "status": "موفق در جذب سرمایه",
+        "name": "تامین سرمایه در گردش تولید متیونین برای خوراک طیور"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 5.511210680007935,
+    "data": {
+      "project": {
+        "duration": "12",
+        "company": "شرکت پارسادان طبرستان",
+        "investment_amount": "100,000,000,000",
+        "guarantee": "بدون تضمین سود و با تضمین ضمانت نامه بانکی برای اصل سرمایه",
+        "profit": 43.0,
+        "status": "موفق در جذب سرمایه",
+        "name": "تامین سرمایه در گردش تولید متیونین برای خوراک طیور"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

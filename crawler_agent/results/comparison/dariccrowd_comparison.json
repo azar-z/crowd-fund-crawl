@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.482203722000122,
+    "data": {
+      "project": {
+        "name": "تامین سرمایه درگردش توسعه خدمات مشاوره سرمایه گذاری",
+        "company": "اعتمادسازان توی",
+        "profit": "47",
+        "guarantee": "چک شرکت و اعضای هیات مدیره",
+        "investment_amount": "5,000,000",
+        "duration": "12",
+        "status": "خاتمه یافته"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 1.5344102382659912,
+    "data": {
+      "project": {
+        "company": "اعتمادسازان توی",
+        "duration": "12 ماه",
+        "investment_amount": "5 میلیون ریال",
+        "guarantee": "چک شرکت و اعضای هیات مدیره",
+        "profit": 47.0,
+        "status": "خاتمه یافته",
+        "name": "تامین سرمایه درگردش توسعه خدمات مشاوره سرمایه گذاری"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 4.298713445663452,
+    "data": {
+      "project": {
+        "duration": "12 ماه",
+        "company": "اعتمادسازان توی",
+        "investment_amount": "5 میلیون ریال",
+        "guarantee": "چک شرکت و اعضای هیات مدیره",
+        "profit": 47.0,
+        "status": "خاتمه یافته",
+        "name": "تامین سرمایه درگردش توسعه خدمات مشاوره سرمایه گذاری"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

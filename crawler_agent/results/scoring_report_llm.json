@@ -1,35 +1,35 @@
 {
-  "report_date": "2025-08-17T19:15:26.309166",
+  "report_date": "2025-08-17T20:06:25.888117",
   "report_type": "llm_based_three_agent_scoring",
   "llm_model": "gemma-3-27b-it",
   "evaluation_method": "automated_llm_judgment",
   "overall_scores": {
     "basic_agent": {
       "agent_name": "Basic Agent",
-      "correct": 116,
-      "incorrect": 59,
-      "evaluated": 175,
-      "accuracy": 66.3,
-      "overall_confidence": 0.914,
-      "projects_count": 25
+      "correct": 164,
+      "incorrect": 81,
+      "evaluated": 245,
+      "accuracy": 66.9,
+      "overall_confidence": 0.925,
+      "projects_count": 35
     },
     "function_agent": {
       "agent_name": "Function Agent",
-      "correct": 114,
-      "incorrect": 61,
-      "evaluated": 175,
-      "accuracy": 65.1,
-      "overall_confidence": 0.914,
-      "projects_count": 25
+      "correct": 171,
+      "incorrect": 74,
+      "evaluated": 245,
+      "accuracy": 69.8,
+      "overall_confidence": 0.925,
+      "projects_count": 35
     },
     "expert_agent": {
       "agent_name": "Expert Agent",
-      "correct": 141,
-      "incorrect": 34,
-      "evaluated": 175,
-      "accuracy": 80.6,
-      "overall_confidence": 0.914,
-      "projects_count": 25
+      "correct": 199,
+      "incorrect": 46,
+      "evaluated": 245,
+      "accuracy": 81.2,
+      "overall_confidence": 0.925,
+      "projects_count": 35
     }
   },
   "project_details": [
@@ -62,6 +62,34 @@
       }
     },
     {
+      "project_name": "atiyeiranian",
+      "evaluation_date": "2025-08-17T19:57:24.722786",
+      "llm_model": "gemma-3-27b-it",
+      "agents": {
+        "basic_agent": {
+          "correct": 4,
+          "incorrect": 3,
+          "evaluated": 7,
+          "accuracy": 57.1,
+          "average_confidence": 0.971
+        },
+        "function_agent": {
+          "correct": 4,
+          "incorrect": 3,
+          "evaluated": 7,
+          "accuracy": 57.1,
+          "average_confidence": 0.971
+        },
+        "expert_agent": {
+          "correct": 5,
+          "incorrect": 2,
+          "evaluated": 7,
+          "accuracy": 71.4,
+          "average_confidence": 0.971
+        }
+      }
+    },
+    {
       "project_name": "charisma",
       "evaluation_date": "2025-08-17T17:37:03.608835",
       "llm_model": "gemma-3-27b-it",
@@ -86,6 +114,34 @@
           "evaluated": 7,
           "accuracy": 100.0,
           "average_confidence": 0.971
+        }
+      }
+    },
+    {
+      "project_name": "dariccrowd",
+      "evaluation_date": "2025-08-17T19:57:55.323030",
+      "llm_model": "gemma-3-27b-it",
+      "agents": {
+        "basic_agent": {
+          "correct": 4,
+          "incorrect": 3,
+          "evaluated": 7,
+          "accuracy": 57.1,
+          "average_confidence": 0.921
+        },
+        "function_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "evaluated": 7,
+          "accuracy": 85.7,
+          "average_confidence": 0.921
+        },
+        "expert_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "evaluated": 7,
+          "accuracy": 85.7,
+          "average_confidence": 0.921
         }
       }
     },
@@ -174,6 +230,34 @@
       }
     },
     {
+      "project_name": "golrang",
+      "evaluation_date": "2025-08-17T19:59:19.809098",
+      "llm_model": "gemma-3-27b-it",
+      "agents": {
+        "basic_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "evaluated": 7,
+          "accuracy": 85.7,
+          "average_confidence": 1.0
+        },
+        "function_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "evaluated": 7,
+          "accuracy": 100.0,
+          "average_confidence": 1.0
+        },
+        "expert_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "evaluated": 7,
+          "accuracy": 100.0,
+          "average_confidence": 1.0
+        }
+      }
+    },
+    {
       "project_name": "halalfund",
       "evaluation_date": "2025-08-17T14:59:38.846282",
       "llm_model": "gemma-3-27b-it",
@@ -258,6 +342,34 @@
       }
     },
     {
+      "project_name": "ideafund",
+      "evaluation_date": "2025-08-17T19:59:45.266256",
+      "llm_model": "gemma-3-27b-it",
+      "agents": {
+        "basic_agent": {
+          "correct": 5,
+          "incorrect": 2,
+          "evaluated": 7,
+          "accuracy": 71.4,
+          "average_confidence": 0.921
+        },
+        "function_agent": {
+          "correct": 5,
+          "incorrect": 2,
+          "evaluated": 7,
+          "accuracy": 71.4,
+          "average_confidence": 0.921
+        },
+        "expert_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "evaluated": 7,
+          "accuracy": 85.7,
+          "average_confidence": 0.921
+        }
+      }
+    },
+    {
       "project_name": "ifund",
       "evaluation_date": "2025-08-17T15:04:15.638036",
       "llm_model": "gemma-3-27b-it",
@@ -282,6 +394,90 @@
           "evaluated": 7,
           "accuracy": 85.7,
           "average_confidence": 0.921
+        }
+      }
+    },
+    {
+      "project_name": "isatiscrowd",
+      "evaluation_date": "2025-08-17T20:01:08.871504",
+      "llm_model": "gemma-3-27b-it",
+      "agents": {
+        "basic_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "evaluated": 7,
+          "accuracy": 85.7,
+          "average_confidence": 0.986
+        },
+        "function_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "evaluated": 7,
+          "accuracy": 85.7,
+          "average_confidence": 0.986
+        },
+        "expert_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "evaluated": 7,
+          "accuracy": 85.7,
+          "average_confidence": 0.986
+        }
+      }
+    },
+    {
+      "project_name": "jamsepar",
+      "evaluation_date": "2025-08-17T20:01:34.016451",
+      "llm_model": "gemma-3-27b-it",
+      "agents": {
+        "basic_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "evaluated": 7,
+          "accuracy": 85.7,
+          "average_confidence": 0.993
+        },
+        "function_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "evaluated": 7,
+          "accuracy": 100.0,
+          "average_confidence": 0.993
+        },
+        "expert_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "evaluated": 7,
+          "accuracy": 100.0,
+          "average_confidence": 0.993
+        }
+      }
+    },
+    {
+      "project_name": "karamad",
+      "evaluation_date": "2025-08-17T20:01:58.931869",
+      "llm_model": "gemma-3-27b-it",
+      "agents": {
+        "basic_agent": {
+          "correct": 4,
+          "incorrect": 3,
+          "evaluated": 7,
+          "accuracy": 57.1,
+          "average_confidence": 0.893
+        },
+        "function_agent": {
+          "correct": 5,
+          "incorrect": 2,
+          "evaluated": 7,
+          "accuracy": 71.4,
+          "average_confidence": 0.893
+        },
+        "expert_agent": {
+          "correct": 5,
+          "incorrect": 2,
+          "evaluated": 7,
+          "accuracy": 71.4,
+          "average_confidence": 0.893
         }
       }
     },
@@ -510,6 +706,34 @@
       }
     },
     {
+      "project_name": "rayfund",
+      "evaluation_date": "2025-08-17T20:03:25.668203",
+      "llm_model": "gemma-3-27b-it",
+      "agents": {
+        "basic_agent": {
+          "correct": 5,
+          "incorrect": 2,
+          "evaluated": 7,
+          "accuracy": 71.4,
+          "average_confidence": 0.993
+        },
+        "function_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "evaluated": 7,
+          "accuracy": 100.0,
+          "average_confidence": 0.993
+        },
+        "expert_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "evaluated": 7,
+          "accuracy": 100.0,
+          "average_confidence": 0.993
+        }
+      }
+    },
+    {
       "project_name": "razavi",
       "evaluation_date": "2025-08-17T15:08:26.418425",
       "llm_model": "gemma-3-27b-it",
@@ -562,6 +786,34 @@
           "evaluated": 7,
           "accuracy": 100.0,
           "average_confidence": 0.979
+        }
+      }
+    },
+    {
+      "project_name": "shariffund",
+      "evaluation_date": "2025-08-17T20:03:53.422594",
+      "llm_model": "gemma-3-27b-it",
+      "agents": {
+        "basic_agent": {
+          "correct": 2,
+          "incorrect": 5,
+          "evaluated": 7,
+          "accuracy": 28.6,
+          "average_confidence": 0.871
+        },
+        "function_agent": {
+          "correct": 3,
+          "incorrect": 4,
+          "evaluated": 7,
+          "accuracy": 42.9,
+          "average_confidence": 0.871
+        },
+        "expert_agent": {
+          "correct": 3,
+          "incorrect": 4,
+          "evaluated": 7,
+          "accuracy": 42.9,
+          "average_confidence": 0.871
         }
       }
     },
@@ -646,6 +898,34 @@
           "evaluated": 7,
           "accuracy": 85.7,
           "average_confidence": 0.836
+        }
+      }
+    },
+    {
+      "project_name": "yektacrowd",
+      "evaluation_date": "2025-08-17T20:05:22.298632",
+      "llm_model": "gemma-3-27b-it",
+      "agents": {
+        "basic_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "evaluated": 7,
+          "accuracy": 85.7,
+          "average_confidence": 0.986
+        },
+        "function_agent": {
+          "correct": 7,
+          "incorrect": 0,
+          "evaluated": 7,
+          "accuracy": 100.0,
+          "average_confidence": 0.986
+        },
+        "expert_agent": {
+          "correct": 6,
+          "incorrect": 1,
+          "evaluated": 7,
+          "accuracy": 85.7,
+          "average_confidence": 0.986
         }
       }
     },
@@ -735,9 +1015,9 @@
     }
   ],
   "summary": {
-    "total_projects": 25,
+    "total_projects": 35,
     "best_agent": "expert_agent",
-    "avg_confidence_across_agents": 0.914
+    "avg_confidence_across_agents": 0.925
   },
   "comparison_note": "This report uses LLM-based automatic evaluation instead of human validation"
 }

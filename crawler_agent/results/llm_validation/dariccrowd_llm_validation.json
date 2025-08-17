@@ -1,0 +1,183 @@
+{
+  "project_name": "dariccrowd",
+  "evaluation_date": "2025-08-17T19:57:55.323030",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 4,
+    "incorrect": 3,
+    "total_confidence": 6.45,
+    "average_confidence": 0.921
+  },
+  "function_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.45,
+    "average_confidence": 0.921
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.45,
+    "average_confidence": 0.921
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "اعتمادسازان توی",
+      "function_value": "اعتمادسازان توی",
+      "expert_value": "اعتمادسازان توی",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"اعتمادسازان توی\" (Etemadsazaan Tooy) is explicitly mentioned multiple times within the HTML content, and it clearly refers to the company associated with the crowdfunding project. The context confirms it's the correct company name.",
+        "function_explanation": "The extracted value \"اعتمادسازان توی\" (Etemadsazaan Tooy) is explicitly mentioned multiple times within the HTML content, and it clearly refers to the company associated with the crowdfunding project. The context confirms it's the correct company name.",
+        "expert_explanation": "The extracted value \"اعتمادسازان توی\" (Etemadsazaan Tooy) is explicitly mentioned multiple times within the HTML content, and it clearly refers to the company associated with the crowdfunding project. The context confirms it's the correct company name.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "12",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 provides only the number \"12\" which is present in the text but lacks context. Group 2 correctly extracts \"12 ماه\" (12 months), which accurately represents the project duration as stated in the HTML content (\"طول دوره سرمایه‌گذاری12 ماه\"). The inclusion of \"ماه\" (months) provides the necessary unit and context for the duration.",
+        "function_explanation": "Group 1 provides only the number \"12\" which is present in the text but lacks context. Group 2 correctly extracts \"12 ماه\" (12 months), which accurately represents the project duration as stated in the HTML content (\"طول دوره سرمایه‌گذاری12 ماه\"). The inclusion of \"ماه\" (months) provides the necessary unit and context for the duration.",
+        "expert_explanation": "Group 1 provides only the number \"12\" which is present in the text but lacks context. Group 2 correctly extracts \"12 ماه\" (12 months), which accurately represents the project duration as stated in the HTML content (\"طول دوره سرمایه‌گذاری12 ماه\"). The inclusion of \"ماه\" (months) provides the necessary unit and context for the duration.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "guarantee": {
+      "basic_value": "چک شرکت و اعضای هیات مدیره",
+      "function_value": "چک شرکت و اعضای هیات مدیره",
+      "expert_value": "چک شرکت و اعضای هیات مدیره",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"چک شرکت و اعضای هیات مدیره\" (Check of the company and members of the board of directors) is directly present in the HTML content under the \"تضامین\" (Guarantees) section. It accurately represents the guarantee offered for the investment.",
+        "function_explanation": "The extracted value \"چک شرکت و اعضای هیات مدیره\" (Check of the company and members of the board of directors) is directly present in the HTML content under the \"تضامین\" (Guarantees) section. It accurately represents the guarantee offered for the investment.",
+        "expert_explanation": "The extracted value \"چک شرکت و اعضای هیات مدیره\" (Check of the company and members of the board of directors) is directly present in the HTML content under the \"تضامین\" (Guarantees) section. It accurately represents the guarantee offered for the investment.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "investment_amount": {
+      "basic_value": "5,000,000",
+      "function_value": "5 میلیون ریال",
+      "expert_value": "5 میلیون ریال",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "Failed to parse LLM response",
+        "function_explanation": "Failed to parse LLM response",
+        "expert_explanation": "Failed to parse LLM response",
+        "basic_confidence": 0.5,
+        "function_confidence": 0.5,
+        "expert_confidence": 0.5,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [],
+        "response_groups": 2
+      }
+    },
+    "name": {
+      "basic_value": "تامین سرمایه درگردش توسعه خدمات مشاوره سرمایه گذاری",
+      "function_value": "تامین سرمایه درگردش توسعه خدمات مشاوره سرمایه گذاری",
+      "expert_value": "تامین سرمایه درگردش توسعه خدمات مشاوره سرمایه گذاری",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تامین سرمایه درگردش توسعه خدمات مشاوره سرمایه گذاری\" is present in the source HTML content and accurately represents the project name displayed prominently at the top of the page.",
+        "function_explanation": "The extracted value \"تامین سرمایه درگردش توسعه خدمات مشاوره سرمایه گذاری\" is present in the source HTML content and accurately represents the project name displayed prominently at the top of the page.",
+        "expert_explanation": "The extracted value \"تامین سرمایه درگردش توسعه خدمات مشاوره سرمایه گذاری\" is present in the source HTML content and accurately represents the project name displayed prominently at the top of the page.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": "47",
+      "function_value": 47.0,
+      "expert_value": 47.0,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The HTML content clearly states \"سود پیش بینی شده طرح47%\" which translates to \"Predicted profit of the scheme 47%\". Group 2 correctly extracts this as 47.0. Group 1 extracts 47, which is also correct, but the inclusion of the decimal point in Group 2's response is preferable as it indicates a percentage. However, both are acceptable. Since the prompt asks to prefer values with units, Group 2 is slightly better.",
+        "function_explanation": "The HTML content clearly states \"سود پیش بینی شده طرح47%\" which translates to \"Predicted profit of the scheme 47%\". Group 2 correctly extracts this as 47.0. Group 1 extracts 47, which is also correct, but the inclusion of the decimal point in Group 2's response is preferable as it indicates a percentage. However, both are acceptable. Since the prompt asks to prefer values with units, Group 2 is slightly better.",
+        "expert_explanation": "The HTML content clearly states \"سود پیش بینی شده طرح47%\" which translates to \"Predicted profit of the scheme 47%\". Group 2 correctly extracts this as 47.0. Group 1 extracts 47, which is also correct, but the inclusion of the decimal point in Group 2's response is preferable as it indicates a percentage. However, both are acceptable. Since the prompt asks to prefer values with units, Group 2 is slightly better.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "خاتمه یافته",
+      "function_value": "خاتمه یافته",
+      "expert_value": "خاتمه یافته",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The HTML content clearly states \"خاتمه یافته\" next to \"سرمایه جمع آوری شده\", which translates to \"Completed\" in English. This accurately reflects the status of the crowdfunding project.",
+        "function_explanation": "The HTML content clearly states \"خاتمه یافته\" next to \"سرمایه جمع آوری شده\", which translates to \"Completed\" in English. This accurately reflects the status of the crowdfunding project.",
+        "expert_explanation": "The HTML content clearly states \"خاتمه یافته\" next to \"سرمایه جمع آوری شده\", which translates to \"Completed\" in English. This accurately reflects the status of the crowdfunding project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    }
+  }
+}

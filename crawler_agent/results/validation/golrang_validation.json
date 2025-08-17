@@ -1,0 +1,77 @@
+{
+  "project_name": "golrang",
+  "validation_date": "2025-08-17T19:52:36.967818",
+  "basic_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "فام تک صنعت چاپ",
+      "function_value": "فام تک صنعت چاپ",
+      "expert_value": "فام تک صنعت چاپ",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "12 ماه",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "سایر\n(این طرح فاقد ضمانت نامه اصل و سود سرمایه و دارای وثایق مالی (چک متقاضی و شخص ثالث) می‌باشد که در بخش اطلاعات مالی، وثایق اخذ شده قابل مشاهده است.)",
+      "function_value": "سایر",
+      "expert_value": "سایر (این طرح فاقد ضمانت نامه اصل و سود سرمایه و دارای وثایق مالی (چک متقاضی و شخص ثالث) می‌باشد که در بخش اطلاعات مالی، وثایق اخذ شده قابل مشاهده است.)",
+      "basic_correct": true,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "25 میلیارد تومان",
+      "function_value": "25 میلیارد تومان",
+      "expert_value": "25 میلیارد تومان",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "تولید لیبل پشت چسب دار",
+      "function_value": "تولید لیبل پشت چسب دار",
+      "expert_value": "تولید لیبل پشت چسب دار",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "44",
+      "function_value": 44.0,
+      "expert_value": 44.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "طرح در مرحله سرمایه‌گذاری نیست",
+      "function_value": "طرح در مرحله سرمایه‌گذاری نیست",
+      "expert_value": "طرح در مرحله سرمایه‌گذاری نیست",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    }
+  }
+}

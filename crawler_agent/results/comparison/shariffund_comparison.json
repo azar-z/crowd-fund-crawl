@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.182258367538452,
+    "data": {
+      "project": {
+        "name": "سرمایه در گردش شرکت آرمان گستر نوین کنارک جهت تولید و فروش درب ایزی اپن",
+        "company": "شرکت آرمان گستر نوین کنارک",
+        "profit": "42.50",
+        "guarantee": "ضمانت نامه تعهد پرداخت بانکی",
+        "investment_amount": "1 میلیون ریال",
+        "duration": "12 ماهه",
+        "status": "خاتمه یافته"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 1.5878727436065674,
+    "data": {
+      "project": {
+        "duration": "12 ماهه",
+        "company": "آرمان گستر نوین کنارک",
+        "investment_amount": "1 میلیون ریال",
+        "guarantee": "ضمانت نامه تعهد پرداخت از بانک صادرات",
+        "profit": 42.5,
+        "status": "خاتمه یافته",
+        "name": "سرمایه در گردش شرکت آرمان گستر نوین کنارک جهت تولید و فروش درب ایزی اپن"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 5.585064649581909,
+    "data": {
+      "project": {
+        "duration": "12 ماهه",
+        "company": "شرکت آرمان گستر نوین کنارک",
+        "investment_amount": "250,000,000,000&nbsp;ریال",
+        "guarantee": "تضمین اصل سرمایه با ضمانت نامه تعهد پرداخت از بانک صادرات",
+        "profit": 42.5,
+        "status": "خاتمه یافته",
+        "name": "سرمایه در گردش شرکت آرمان گستر نوین کنارک جهت تولید و فروش درب ایزی اپن"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "project_name": "shariffund",
+  "evaluation_date": "2025-08-17T20:03:53.422594",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 2,
+    "incorrect": 5,
+    "total_confidence": 6.1,
+    "average_confidence": 0.871
+  },
+  "function_agent": {
+    "correct": 3,
+    "incorrect": 4,
+    "total_confidence": 6.1,
+    "average_confidence": 0.871
+  },
+  "expert_agent": {
+    "correct": 3,
+    "incorrect": 4,
+    "total_confidence": 6.1,
+    "average_confidence": 0.871
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "شرکت آرمان گستر نوین کنارک",
+      "function_value": "آرمان گستر نوین کنارک",
+      "expert_value": "شرکت آرمان گستر نوین کنارک",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": false,
+        "basic_explanation": "Group 2 (Agent 2) provides the most accurate and concise extraction of the company name: \"آرمان گستر نوین کنارک\". This matches the company name as it appears multiple times throughout the document, including in the \"درباره ما\" section and the \"نام شرکت\" field. Group 1 (Agent 1, Agent 3) includes \"شرکت\" at the beginning, which is redundant and not part of the core company name as presented in the source text. While technically present, it's not the cleanest or most accurate extraction.",
+        "function_explanation": "Group 2 (Agent 2) provides the most accurate and concise extraction of the company name: \"آرمان گستر نوین کنارک\". This matches the company name as it appears multiple times throughout the document, including in the \"درباره ما\" section and the \"نام شرکت\" field. Group 1 (Agent 1, Agent 3) includes \"شرکت\" at the beginning, which is redundant and not part of the core company name as presented in the source text. While technically present, it's not the cleanest or most accurate extraction.",
+        "expert_explanation": "Group 2 (Agent 2) provides the most accurate and concise extraction of the company name: \"آرمان گستر نوین کنارک\". This matches the company name as it appears multiple times throughout the document, including in the \"درباره ما\" section and the \"نام شرکت\" field. Group 1 (Agent 1, Agent 3) includes \"شرکت\" at the beginning, which is redundant and not part of the core company name as presented in the source text. While technically present, it's not the cleanest or most accurate extraction.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2
+        ],
+        "response_groups": 2
+      }
+    },
+    "duration": {
+      "basic_value": "12 ماهه",
+      "function_value": "12 ماهه",
+      "expert_value": "12 ماهه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The HTML content states \"طی یک دوره یکساله\" which translates to \"during a one-year period\". \"12 ماهه\" translates to \"12 months\" or \"one year\", accurately representing the duration of the investment.",
+        "function_explanation": "The HTML content states \"طی یک دوره یکساله\" which translates to \"during a one-year period\". \"12 ماهه\" translates to \"12 months\" or \"one year\", accurately representing the duration of the investment.",
+        "expert_explanation": "The HTML content states \"طی یک دوره یکساله\" which translates to \"during a one-year period\". \"12 ماهه\" translates to \"12 months\" or \"one year\", accurately representing the duration of the investment.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "guarantee": {
+      "basic_value": "ضمانت نامه تعهد پرداخت بانکی",
+      "function_value": "ضمانت نامه تعهد پرداخت از بانک صادرات",
+      "expert_value": "تضمین اصل سرمایه با ضمانت نامه تعهد پرداخت از بانک صادرات",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "",
+        "function_explanation": "",
+        "expert_explanation": "",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 3
+      }
+    },
+    "investment_amount": {
+      "basic_value": "1 میلیون ریال",
+      "function_value": "1 میلیون ریال",
+      "expert_value": "250,000,000,000&nbsp;ریال",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 2 correctly extracted \"250,000,000,000 ریال\" which is explicitly stated in the text: \"مبلغ 250 میلیارد ریال\". Group 1's extraction of \"1 میلیون ریال\" is incorrect and not found in the source document.",
+        "function_explanation": "Group 2 correctly extracted \"250,000,000,000 ریال\" which is explicitly stated in the text: \"مبلغ 250 میلیارد ریال\". Group 1's extraction of \"1 میلیون ریال\" is incorrect and not found in the source document.",
+        "expert_explanation": "Group 2 correctly extracted \"250,000,000,000 ریال\" which is explicitly stated in the text: \"مبلغ 250 میلیارد ریال\". Group 1's extraction of \"1 میلیون ریال\" is incorrect and not found in the source document.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "name": {
+      "basic_value": "سرمایه در گردش شرکت آرمان گستر نوین کنارک جهت تولید و فروش درب ایزی اپن",
+      "function_value": "سرمایه در گردش شرکت آرمان گستر نوین کنارک جهت تولید و فروش درب ایزی اپن",
+      "expert_value": "سرمایه در گردش شرکت آرمان گستر نوین کنارک جهت تولید و فروش درب ایزی اپن",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "Failed to parse LLM response",
+        "function_explanation": "Failed to parse LLM response",
+        "expert_explanation": "Failed to parse LLM response",
+        "basic_confidence": 0.5,
+        "function_confidence": 0.5,
+        "expert_confidence": 0.5,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": []
+      }
+    },
+    "profit": {
+      "basic_value": "42.50",
+      "function_value": 42.5,
+      "expert_value": 42.5,
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "Group 1 (Agent 1) correctly extracted \"42.50\" as the profit percentage. The source HTML explicitly states \"با پرداخت سود پیش بینی شده سالیانه 42.5 درصد\" (with an expected annual profit of 42.5 percent). Group 2 (Agent 2, Agent 3) extracted \"42.5\" which is also present, but the more precise value with the decimal place is preferred.",
+        "function_explanation": "Group 1 (Agent 1) correctly extracted \"42.50\" as the profit percentage. The source HTML explicitly states \"با پرداخت سود پیش بینی شده سالیانه 42.5 درصد\" (with an expected annual profit of 42.5 percent). Group 2 (Agent 2, Agent 3) extracted \"42.5\" which is also present, but the more precise value with the decimal place is preferred.",
+        "expert_explanation": "Group 1 (Agent 1) correctly extracted \"42.50\" as the profit percentage. The source HTML explicitly states \"با پرداخت سود پیش بینی شده سالیانه 42.5 درصد\" (with an expected annual profit of 42.5 percent). Group 2 (Agent 2, Agent 3) extracted \"42.5\" which is also present, but the more precise value with the decimal place is preferred.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "خاتمه یافته",
+      "function_value": "خاتمه یافته",
+      "expert_value": "خاتمه یافته",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "The provided HTML does not explicitly state the project's \"status\" as \"خاتمه یافته\" (completed). While the dates for attracting capital have passed (start: June 2nd, 2024, end: August 29th, 2024), there's no definitive statement confirming the project is finished. Therefore, extracting \"completed\" without explicit confirmation is inaccurate. It's possible the project is completed, but the HTML doesn't confirm it.",
+        "function_explanation": "The provided HTML does not explicitly state the project's \"status\" as \"خاتمه یافته\" (completed). While the dates for attracting capital have passed (start: June 2nd, 2024, end: August 29th, 2024), there's no definitive statement confirming the project is finished. Therefore, extracting \"completed\" without explicit confirmation is inaccurate. It's possible the project is completed, but the HTML doesn't confirm it.",
+        "expert_explanation": "The provided HTML does not explicitly state the project's \"status\" as \"خاتمه یافته\" (completed). While the dates for attracting capital have passed (start: June 2nd, 2024, end: August 29th, 2024), there's no definitive statement confirming the project is finished. Therefore, extracting \"completed\" without explicit confirmation is inaccurate. It's possible the project is completed, but the HTML doesn't confirm it.",
+        "basic_confidence": 0.8,
+        "function_confidence": 0.8,
+        "expert_confidence": 0.8,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": []
+      }
+    }
+  }
+}

@@ -73,9 +73,10 @@ class ExpertAgent(BaseCrawlerAgent):
         if self.debug_mode:
             print("🧹 Cleaning HTML efficiently...")
 
-        # Remove script and style tags completely
+        # Remove script and style and path tags completely
         html_content = re.sub(r'<script[^>]*>.*?</script>', '', html_content, flags=re.DOTALL | re.IGNORECASE)
         html_content = re.sub(r'<style[^>]*>.*?</style>', '', html_content, flags=re.DOTALL | re.IGNORECASE)
+        html_content = re.sub(r'<path[^>]*>.*?</path>', '', html_content, flags=re.DOTALL | re.IGNORECASE)
 
         # Remove comments
         html_content = re.sub(r'<!--.*?-->', '', html_content, flags=re.DOTALL)
@@ -461,18 +462,7 @@ class ExpertAgent(BaseCrawlerAgent):
             if self.debug_mode:
                 print(f"🎲 Extraction round {round_num + 1}/{self.voting_rounds}")
             
-            # Use the appropriate HTML version for each round
-            if round_num == 0:
-                # First round: use cleaned HTML with enhanced prompts
-                html_to_use = cleaned_html
-            elif round_num == 1:
-                # Second round: use original HTML for comparison
-                html_to_use = html_content
-            else:
-                # Third round: use cleaned HTML with different strategy
-                html_to_use = cleaned_html
-            
-            extraction, confidence = self._extract_with_smart_retry(html_to_use, config, round_num)
+            extraction, confidence = self._extract_with_smart_retry(cleaned_html, config, round_num)
             
             if extraction and confidence > 0.3:  # Only include reasonable extractions
                 extractions_with_confidence.append((extraction, confidence))

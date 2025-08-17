@@ -1,0 +1,182 @@
+{
+  "project_name": "karamad",
+  "evaluation_date": "2025-08-17T20:01:58.931869",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 4,
+    "incorrect": 3,
+    "total_confidence": 6.25,
+    "average_confidence": 0.893
+  },
+  "function_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.25,
+    "average_confidence": 0.893
+  },
+  "expert_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.25,
+    "average_confidence": 0.893
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "شرکت آزمایشگاه‌های  تولیدی  داروسازان ایران",
+      "function_value": "شرکت آزمایشگاه های تولیدی داروسازان ایران",
+      "expert_value": "شرکت آزمایشگاه‌های تولیدی داروسازان ایران",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The HTML content clearly states \"شرکت آزمایشگاه های تولیدی داروسازان ایران\" as the company name multiple times. Group 1 has a slight difference (\"شرکت آزمایشگاه‌های تولیدی داروسازان ایران\") due to using a different form of \"های\" (haay vs. hay), which is a minor stylistic variation but still valid. However, Groups 2 and 3 are identical and match the exact string found in the HTML, making them the most accurate. Therefore, I prioritize Groups 2 and 3 as correct.",
+        "function_explanation": "The HTML content clearly states \"شرکت آزمایشگاه های تولیدی داروسازان ایران\" as the company name multiple times. Group 1 has a slight difference (\"شرکت آزمایشگاه‌های تولیدی داروسازان ایران\") due to using a different form of \"های\" (haay vs. hay), which is a minor stylistic variation but still valid. However, Groups 2 and 3 are identical and match the exact string found in the HTML, making them the most accurate. Therefore, I prioritize Groups 2 and 3 as correct.",
+        "expert_explanation": "The HTML content clearly states \"شرکت آزمایشگاه های تولیدی داروسازان ایران\" as the company name multiple times. Group 1 has a slight difference (\"شرکت آزمایشگاه‌های تولیدی داروسازان ایران\") due to using a different form of \"های\" (haay vs. hay), which is a minor stylistic variation but still valid. However, Groups 2 and 3 are identical and match the exact string found in the HTML, making them the most accurate. Therefore, I prioritize Groups 2 and 3 as correct.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 3
+      }
+    },
+    "duration": {
+      "basic_value": "12 ماه",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The text \"۱۲ ماه\" which translates to \"12 months\" is present in the HTML content and accurately represents the project duration as stated: \"با ارائه سود پیش‌بینی‌شده ۴۵ درصد در مدت ۱۲ ماه\" (offering a predicted 45% profit within 12 months).",
+        "function_explanation": "The text \"۱۲ ماه\" which translates to \"12 months\" is present in the HTML content and accurately represents the project duration as stated: \"با ارائه سود پیش‌بینی‌شده ۴۵ درصد در مدت ۱۲ ماه\" (offering a predicted 45% profit within 12 months).",
+        "expert_explanation": "The text \"۱۲ ماه\" which translates to \"12 months\" is present in the HTML content and accurately represents the project duration as stated: \"با ارائه سود پیش‌بینی‌شده ۴۵ درصد در مدت ۱۲ ماه\" (offering a predicted 45% profit within 12 months).",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "guarantee": {
+      "basic_value": "این طرح با پشتوانه ضمانت‌نامه بانکی و بازپرداخت اصل سرمایه به‌صورت یکجا در پایان دوره",
+      "function_value": "ضمانت‌نامه بانکی",
+      "expert_value": "این طرح با پشتوانه ضمانت‌نامه بانکی و بازپرداخت اصل سرمایه به‌صورت یکجا در پایان دوره, پیش‌بینی سود ۴۵ درصدی برای سرمایه‌گذاران دارد که هر سه ماه یک‌بار پرداخت خواهد شد.",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "Failed to parse LLM response",
+        "function_explanation": "Failed to parse LLM response",
+        "expert_explanation": "Failed to parse LLM response",
+        "basic_confidence": 0.5,
+        "function_confidence": 0.5,
+        "expert_confidence": 0.5,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [],
+        "response_groups": 3
+      }
+    },
+    "investment_amount": {
+      "basic_value": "250 میلیارد ریال",
+      "function_value": "250 میلیارد ریال",
+      "expert_value": "۲۵۰ میلیارد ریال",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Both groups extracted \"250 میلیارد ریال\" which is explicitly stated in the source HTML as the required investment amount: \"با جذب ۲۵۰ میلیارد ریال سرمایه\". Group 1 uses the correct formatting. Group 2 uses a slightly different character for the number 2, but it is still understandable and represents the same value. Both are acceptable.",
+        "function_explanation": "Both groups extracted \"250 میلیارد ریال\" which is explicitly stated in the source HTML as the required investment amount: \"با جذب ۲۵۰ میلیارد ریال سرمایه\". Group 1 uses the correct formatting. Group 2 uses a slightly different character for the number 2, but it is still understandable and represents the same value. Both are acceptable.",
+        "expert_explanation": "Both groups extracted \"250 میلیارد ریال\" which is explicitly stated in the source HTML as the required investment amount: \"با جذب ۲۵۰ میلیارد ریال سرمایه\". Group 1 uses the correct formatting. Group 2 uses a slightly different character for the number 2, but it is still understandable and represents the same value. Both are acceptable.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "name": {
+      "basic_value": "تأمین سرمایه در گردش جهت تولید سبد داروهای دامپزشکی‌",
+      "function_value": "‌ ‌تأمین سرمایه در گردش جهت تولید سبد داروهای دامپزشکی‌",
+      "expert_value": "‌ ‌تأمین سرمایه در گردش جهت تولید سبد داروهای دامپزشکی‌",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Both groups extracted the exact same string: \"تأمین سرمایه در گردش جهت تولید سبد داروهای دامپزشکی‌\". This string appears multiple times within the source HTML content, specifically as the project title. Therefore, both groups are correct. The slight difference in spacing (with or without leading spaces) is negligible and doesn't affect the correctness of the extraction.",
+        "function_explanation": "Both groups extracted the exact same string: \"تأمین سرمایه در گردش جهت تولید سبد داروهای دامپزشکی‌\". This string appears multiple times within the source HTML content, specifically as the project title. Therefore, both groups are correct. The slight difference in spacing (with or without leading spaces) is negligible and doesn't affect the correctness of the extraction.",
+        "expert_explanation": "Both groups extracted the exact same string: \"تأمین سرمایه در گردش جهت تولید سبد داروهای دامپزشکی‌\". This string appears multiple times within the source HTML content, specifically as the project title. Therefore, both groups are correct. The slight difference in spacing (with or without leading spaces) is negligible and doesn't affect the correctness of the extraction.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "profit": {
+      "basic_value": "45",
+      "function_value": 45.0,
+      "expert_value": 45.0,
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Both groups correctly extracted the profit percentage of 45, which is explicitly stated in the text: \"پیش‌بینی سود ۴۵ درصدی برای سرمایه‌گذاران دارد\" (predicts a 45% profit for investors). The difference between 45 and 45.0 is negligible and both are valid number representations for this field.",
+        "function_explanation": "Both groups correctly extracted the profit percentage of 45, which is explicitly stated in the text: \"پیش‌بینی سود ۴۵ درصدی برای سرمایه‌گذاران دارد\" (predicts a 45% profit for investors). The difference between 45 and 45.0 is negligible and both are valid number representations for this field.",
+        "expert_explanation": "Both groups correctly extracted the profit percentage of 45, which is explicitly stated in the text: \"پیش‌بینی سود ۴۵ درصدی برای سرمایه‌گذاران دارد\" (predicts a 45% profit for investors). The difference between 45 and 45.0 is negligible and both are valid number representations for this field.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "خاتمه یافته",
+      "function_value": "خاتمه یافته",
+      "expert_value": "خاتمه یافته",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "The provided HTML does not explicitly state the \"status\" of the crowdfunding project as \"خاتمه یافته\" (completed). While the dates for fundraising (start: ۱۱ مرداد ۱۴۰۴, end: ۱۲ مرداد ۱۴۰۴) have passed, this doesn't automatically mean the project is completed. It could be paused, failed, or still undergoing processing. There's no clear indication of completion within the given text. Therefore, extracting \"خاتمه یافته\" is an assumption, not a direct extraction.",
+        "function_explanation": "The provided HTML does not explicitly state the \"status\" of the crowdfunding project as \"خاتمه یافته\" (completed). While the dates for fundraising (start: ۱۱ مرداد ۱۴۰۴, end: ۱۲ مرداد ۱۴۰۴) have passed, this doesn't automatically mean the project is completed. It could be paused, failed, or still undergoing processing. There's no clear indication of completion within the given text. Therefore, extracting \"خاتمه یافته\" is an assumption, not a direct extraction.",
+        "expert_explanation": "The provided HTML does not explicitly state the \"status\" of the crowdfunding project as \"خاتمه یافته\" (completed). While the dates for fundraising (start: ۱۱ مرداد ۱۴۰۴, end: ۱۲ مرداد ۱۴۰۴) have passed, this doesn't automatically mean the project is completed. It could be paused, failed, or still undergoing processing. There's no clear indication of completion within the given text. Therefore, extracting \"خاتمه یافته\" is an assumption, not a direct extraction.",
+        "basic_confidence": 0.8,
+        "function_confidence": 0.8,
+        "expert_confidence": 0.8,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": []
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "project_name": "jamsepar",
+  "validation_date": "2025-08-17T19:54:11.032696",
+  "basic_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "شرکت پارسادان طبرستان",
+      "function_value": "شرکت پارسادان طبرستان",
+      "expert_value": "شرکت پارسادان طبرستان",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "12",
+      "function_value": "12",
+      "expert_value": "12",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": false
+    },
+    "guarantee": {
+      "basic_value": "بدون تضمین سود و با تضمین ضمانت نامه بانکی برای اصل سرمایه",
+      "function_value": "بدون تضمین سود و با تضمین ضمانت نامه بانکی برای اصل سرمایه",
+      "expert_value": "بدون تضمین سود و با تضمین ضمانت نامه بانکی برای اصل سرمایه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "100,000,000,000",
+      "function_value": "100,000,000,000",
+      "expert_value": "100,000,000,000",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "تامین سرمایه در گردش تولید متیونین برای خوراک طیور ",
+      "function_value": "تامین سرمایه در گردش تولید متیونین برای خوراک طیور",
+      "expert_value": "تامین سرمایه در گردش تولید متیونین برای خوراک طیور",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": 43,
+      "function_value": 43.0,
+      "expert_value": 43.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "موفق در جذب سرمایه",
+      "function_value": "موفق در جذب سرمایه",
+      "expert_value": "موفق در جذب سرمایه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    }
+  }
+}

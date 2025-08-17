@@ -1,0 +1,181 @@
+{
+  "project_name": "ideafund",
+  "evaluation_date": "2025-08-17T19:59:45.266256",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.45,
+    "average_confidence": 0.921
+  },
+  "function_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.45,
+    "average_confidence": 0.921
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.45,
+    "average_confidence": 0.921
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "درسان طب پارس",
+      "function_value": "درسان طب پارس",
+      "expert_value": "درسان طب پارس",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"درسان طب پارس\" (Darsan Teb Pars) appears multiple times in the HTML content as the company name associated with the project. It is accurately extracted and complete.",
+        "function_explanation": "The extracted value \"درسان طب پارس\" (Darsan Teb Pars) appears multiple times in the HTML content as the company name associated with the project. It is accurately extracted and complete.",
+        "expert_explanation": "The extracted value \"درسان طب پارس\" (Darsan Teb Pars) appears multiple times in the HTML content as the company name associated with the project. It is accurately extracted and complete.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "6 ماه",
+      "function_value": "6 ماه",
+      "expert_value": "6 ماه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"6 ماه\" (6 months) is explicitly stated multiple times in the HTML content as the \"دوره بازگشت\" (return period/duration) for the investment. It accurately represents the project's duration.",
+        "function_explanation": "The extracted value \"6 ماه\" (6 months) is explicitly stated multiple times in the HTML content as the \"دوره بازگشت\" (return period/duration) for the investment. It accurately represents the project's duration.",
+        "expert_explanation": "The extracted value \"6 ماه\" (6 months) is explicitly stated multiple times in the HTML content as the \"دوره بازگشت\" (return period/duration) for the investment. It accurately represents the project's duration.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "guarantee": {
+      "basic_value": "با تضمین صندوق تجهیزات پزشکی برای اصل سرمایه",
+      "function_value": "با تضمین صندوق تجهیزات پزشکی برای اصل سرمایه",
+      "expert_value": "با تضمین صندوق تجهیزات پزشکی برای اصل سرمایه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"با تضمین صندوق تجهیزات پزشکی برای اصل سرمایه\" (with the guarantee of the medical equipment fund for the principal) is directly present in the HTML content under the \"ضمانت سرمایه\" (capital guarantee) section. It accurately reflects the guarantee offered for the investment.",
+        "function_explanation": "The extracted value \"با تضمین صندوق تجهیزات پزشکی برای اصل سرمایه\" (with the guarantee of the medical equipment fund for the principal) is directly present in the HTML content under the \"ضمانت سرمایه\" (capital guarantee) section. It accurately reflects the guarantee offered for the investment.",
+        "expert_explanation": "The extracted value \"با تضمین صندوق تجهیزات پزشکی برای اصل سرمایه\" (with the guarantee of the medical equipment fund for the principal) is directly present in the HTML content under the \"ضمانت سرمایه\" (capital guarantee) section. It accurately reflects the guarantee offered for the investment.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "investment_amount": {
+      "basic_value": "15,000,000,000",
+      "function_value": null,
+      "expert_value": "25,000,000,000",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 3 correctly identifies \"25,000,000,000\" as the total investment amount, which is explicitly stated in the HTML content as \"مجموع سرمایه‌گذاری تا الان25,000,000,000تومان\" and also as \"هدف سرمایه گذاری25,000,000,000تومان\". Group 1 extracts \"15,000,000,000\" which corresponds to the \"حد شناوری طرح\" (float limit) and \"حد موفقیت طرح\" (success limit), not the total investment amount. Group 2 returns NULL/NOT_FOUND, which is incorrect as the investment amount is clearly present.",
+        "function_explanation": "Group 3 correctly identifies \"25,000,000,000\" as the total investment amount, which is explicitly stated in the HTML content as \"مجموع سرمایه‌گذاری تا الان25,000,000,000تومان\" and also as \"هدف سرمایه گذاری25,000,000,000تومان\". Group 1 extracts \"15,000,000,000\" which corresponds to the \"حد شناوری طرح\" (float limit) and \"حد موفقیت طرح\" (success limit), not the total investment amount. Group 2 returns NULL/NOT_FOUND, which is incorrect as the investment amount is clearly present.",
+        "expert_explanation": "Group 3 correctly identifies \"25,000,000,000\" as the total investment amount, which is explicitly stated in the HTML content as \"مجموع سرمایه‌گذاری تا الان25,000,000,000تومان\" and also as \"هدف سرمایه گذاری25,000,000,000تومان\". Group 1 extracts \"15,000,000,000\" which corresponds to the \"حد شناوری طرح\" (float limit) and \"حد موفقیت طرح\" (success limit), not the total investment amount. Group 2 returns NULL/NOT_FOUND, which is incorrect as the investment amount is clearly present.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          3
+        ],
+        "response_groups": 3
+      }
+    },
+    "name": {
+      "basic_value": "تجهیز بخشی از خط تولید ایمپلنت دندان",
+      "function_value": "تجهیز بخشی از خط تولید ایمپلنت دندان",
+      "expert_value": "تجهیز بخشی از خط تولید ایمپلنت دندان",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تجهیز بخشی از خط تولید ایمپلنت دندان\" is directly present in the HTML content as the title of the project, and accurately represents the project's name.",
+        "function_explanation": "The extracted value \"تجهیز بخشی از خط تولید ایمپلنت دندان\" is directly present in the HTML content as the title of the project, and accurately represents the project's name.",
+        "expert_explanation": "The extracted value \"تجهیز بخشی از خط تولید ایمپلنت دندان\" is directly present in the HTML content as the title of the project, and accurately represents the project's name.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": "22.5",
+      "function_value": 22.5,
+      "expert_value": 22.5,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "Failed to parse LLM response",
+        "function_explanation": "Failed to parse LLM response",
+        "expert_explanation": "Failed to parse LLM response",
+        "basic_confidence": 0.5,
+        "function_confidence": 0.5,
+        "expert_confidence": 0.5,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": []
+      }
+    },
+    "status": {
+      "basic_value": "موفق شده",
+      "function_value": "موفق شده",
+      "expert_value": "موفق شده",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"موفق شده\" (meaning \"successful\" in Persian) appears multiple times in the HTML content, specifically in the \"وضعیت\" (status) section and within the project description, confirming it as the correct status of the project.",
+        "function_explanation": "The extracted value \"موفق شده\" (meaning \"successful\" in Persian) appears multiple times in the HTML content, specifically in the \"وضعیت\" (status) section and within the project description, confirming it as the correct status of the project.",
+        "expert_explanation": "The extracted value \"موفق شده\" (meaning \"successful\" in Persian) appears multiple times in the HTML content, specifically in the \"وضعیت\" (status) section and within the project description, confirming it as the correct status of the project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    }
+  }
+}

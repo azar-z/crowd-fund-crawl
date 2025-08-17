@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.460188627243042,
+    "data": {
+      "project": {
+        "name": "تامین سرمایه در گردش تولید بدنه لامپ های LED",
+        "company": "داریا توسعه آتیه",
+        "profit": "45",
+        "guarantee": "بدون تضمین سود، با تضمین بازپرداخت اصل سرمایه توسط بانک ملی ایران",
+        "investment_amount": "۱۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال",
+        "duration": "12 ماهه",
+        "status": "موفقیت جمع آوری وجوه"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 1.679912805557251,
+    "data": {
+      "project": {
+        "company": "داریا توسعه آتیه",
+        "duration": "12 ماهه",
+        "investment_amount": "۲۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال",
+        "guarantee": "بدون تضمین سود، با تضمین بازپرداخت اصل سرمایه توسط بانک ملی ایران",
+        "profit": 45.0,
+        "status": "موفقیت جمع آوری وجوه",
+        "name": "تامین سرمایه در گردش تولید بدنه لامپ های LED"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 6.0190393924713135,
+    "data": {
+      "project": {
+        "duration": "12 ماهه",
+        "company": "داریا توسعه آتیه",
+        "investment_amount": "۲۵٬۰۰۰٬۰۰۰٬۰۰۰",
+        "guarantee": "بدون تضمین سود، با تضمین بازپرداخت اصل سرمایه توسط بانک ملی ایران",
+        "profit": 45.0,
+        "status": "موفقیت جمع آوری وجوه",
+        "name": "تامین سرمایه در گردش تولید بدنه لامپ های LED"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "project_name": "rayfund",
+  "validation_date": "2025-08-17T19:55:14.400126",
+  "basic_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "داریا توسعه آتیه",
+      "function_value": "داریا توسعه آتیه",
+      "expert_value": "داریا توسعه آتیه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "12 ماهه",
+      "function_value": "12 ماهه",
+      "expert_value": "12 ماهه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "بدون تضمین سود، با تضمین بازپرداخت اصل سرمایه توسط بانک ملی ایران",
+      "function_value": "بدون تضمین سود، با تضمین بازپرداخت اصل سرمایه توسط بانک ملی ایران",
+      "expert_value": "بدون تضمین سود، با تضمین بازپرداخت اصل سرمایه توسط بانک ملی ایران",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "۱۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال",
+      "function_value": "۲۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال",
+      "expert_value": "۲۵٬۰۰۰٬۰۰۰٬۰۰۰",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": false
+    },
+    "name": {
+      "basic_value": "تامین سرمایه در گردش تولید بدنه لامپ های LED",
+      "function_value": "تامین سرمایه در گردش تولید بدنه لامپ های LED",
+      "expert_value": "تامین سرمایه در گردش تولید بدنه لامپ های LED",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "45",
+      "function_value": 45.0,
+      "expert_value": 45.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "موفقیت جمع آوری وجوه",
+      "function_value": "موفقیت جمع آوری وجوه",
+      "expert_value": "موفقیت جمع آوری وجوه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    }
+  }
+}

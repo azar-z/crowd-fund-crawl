@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.698878526687622,
+    "data": {
+      "project": {
+        "name": "تولید و فروش گروه محصولات پنیرخامه ای",
+        "company": "پالود پارسیان خیام",
+        "profit": "44.00",
+        "guarantee": "این طرح شامل پوشش های بیمه ای نیست",
+        "investment_amount": "1,000,000 ریال",
+        "duration": "12 ماه",
+        "status": "آغاز جمع آوری وجوه"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 1.61716628074646,
+    "data": {
+      "project": {
+        "company": "پالود پارسیان خیام",
+        "duration": "12 ماه",
+        "investment_amount": "250,000,000,000 ریال",
+        "guarantee": "این طرح شامل پوشش های بیمه ای نیست",
+        "profit": 44.0,
+        "status": "آغاز جمع آوری وجوه",
+        "name": "تولید و فروش گروه محصولات پنیرخامه ای"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 4.2399985790252686,
+    "data": {
+      "project": {
+        "duration": "12 ماه",
+        "company": "پالود پارسیان خیام",
+        "investment_amount": "250,000,000,000 ریال",
+        "guarantee": "این طرح شامل پوشش های بیمه ای نیست",
+        "profit": 44.0,
+        "status": "آغاز جمع آوری وجوه",
+        "name": "تولید و فروش گروه محصولات پنیرخامه ای"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

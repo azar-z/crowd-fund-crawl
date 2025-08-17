@@ -1,0 +1,77 @@
+{
+  "project_name": "dariccrowd",
+  "validation_date": "2025-08-17T19:52:17.356821",
+  "basic_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "اعتمادسازان توی",
+      "function_value": "اعتمادسازان توی",
+      "expert_value": "اعتمادسازان توی",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "12",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "چک شرکت و اعضای هیات مدیره",
+      "function_value": "چک شرکت و اعضای هیات مدیره",
+      "expert_value": "چک شرکت و اعضای هیات مدیره",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "5,000,000",
+      "function_value": "5 میلیون ریال",
+      "expert_value": "5 میلیون ریال",
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "تامین سرمایه درگردش توسعه خدمات مشاوره سرمایه گذاری",
+      "function_value": "تامین سرمایه درگردش توسعه خدمات مشاوره سرمایه گذاری",
+      "expert_value": "تامین سرمایه درگردش توسعه خدمات مشاوره سرمایه گذاری",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "47",
+      "function_value": 47.0,
+      "expert_value": 47.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "خاتمه یافته",
+      "function_value": "خاتمه یافته",
+      "expert_value": "خاتمه یافته",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    }
+  }
+}

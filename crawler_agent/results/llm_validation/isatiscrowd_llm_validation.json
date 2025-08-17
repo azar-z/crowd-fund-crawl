@@ -1,0 +1,185 @@
+{
+  "project_name": "isatiscrowd",
+  "evaluation_date": "2025-08-17T20:01:08.871504",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.9,
+    "average_confidence": 0.986
+  },
+  "function_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.9,
+    "average_confidence": 0.986
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.9,
+    "average_confidence": 0.986
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "پالود پارسیان خیام",
+      "function_value": "پالود پارسیان خیام",
+      "expert_value": "پالود پارسیان خیام",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"پالود پارسیان خیام\" appears multiple times in the HTML content and is clearly identified as the company name associated with the crowdfunding project. It is accurately extracted.",
+        "function_explanation": "The extracted value \"پالود پارسیان خیام\" appears multiple times in the HTML content and is clearly identified as the company name associated with the crowdfunding project. It is accurately extracted.",
+        "expert_explanation": "The extracted value \"پالود پارسیان خیام\" appears multiple times in the HTML content and is clearly identified as the company name associated with the crowdfunding project. It is accurately extracted.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "12 ماه",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"12 ماه\" (12 months) is explicitly stated in the HTML content as \"طول دوره طرح 12 ماها\" which translates to \"Project duration 12 months\". It accurately represents the project duration.",
+        "function_explanation": "The extracted value \"12 ماه\" (12 months) is explicitly stated in the HTML content as \"طول دوره طرح 12 ماها\" which translates to \"Project duration 12 months\". It accurately represents the project duration.",
+        "expert_explanation": "The extracted value \"12 ماه\" (12 months) is explicitly stated in the HTML content as \"طول دوره طرح 12 ماها\" which translates to \"Project duration 12 months\". It accurately represents the project duration.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "guarantee": {
+      "basic_value": "این طرح شامل پوشش های بیمه ای نیست",
+      "function_value": "این طرح شامل پوشش های بیمه ای نیست",
+      "expert_value": "این طرح شامل پوشش های بیمه ای نیست",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"این طرح شامل پوشش های بیمه ای نیست\" (This scheme does not include insurance coverage) is directly present in the source HTML content and accurately represents the guarantee information for this crowdfunding project.",
+        "function_explanation": "The extracted value \"این طرح شامل پوشش های بیمه ای نیست\" (This scheme does not include insurance coverage) is directly present in the source HTML content and accurately represents the guarantee information for this crowdfunding project.",
+        "expert_explanation": "The extracted value \"این طرح شامل پوشش های بیمه ای نیست\" (This scheme does not include insurance coverage) is directly present in the source HTML content and accurately represents the guarantee information for this crowdfunding project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "investment_amount": {
+      "basic_value": "1,000,000 ریال",
+      "function_value": "250,000,000,000 ریال",
+      "expert_value": "250,000,000,000 ریال",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 2 correctly identifies the total investment amount as 250,000,000,000 ریال, which is explicitly stated in the HTML content under \"مبلغ مورد نیاز (ریال)\". Group 1 extracts 1,000,000 ریال, which represents the minimum investment amount for individuals, but the field asks for the investment amount, which is the total amount needed. Therefore, Group 2 is the correct extraction.",
+        "function_explanation": "Group 2 correctly identifies the total investment amount as 250,000,000,000 ریال, which is explicitly stated in the HTML content under \"مبلغ مورد نیاز (ریال)\". Group 1 extracts 1,000,000 ریال, which represents the minimum investment amount for individuals, but the field asks for the investment amount, which is the total amount needed. Therefore, Group 2 is the correct extraction.",
+        "expert_explanation": "Group 2 correctly identifies the total investment amount as 250,000,000,000 ریال, which is explicitly stated in the HTML content under \"مبلغ مورد نیاز (ریال)\". Group 1 extracts 1,000,000 ریال, which represents the minimum investment amount for individuals, but the field asks for the investment amount, which is the total amount needed. Therefore, Group 2 is the correct extraction.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "name": {
+      "basic_value": "تولید و فروش گروه محصولات پنیرخامه ای",
+      "function_value": "تولید و فروش گروه محصولات پنیرخامه ای",
+      "expert_value": "تولید و فروش گروه محصولات پنیرخامه ای",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تولید و فروش گروه محصولات پنیرخامه ای\" exactly matches the project title mentioned multiple times within the HTML content, specifically in the context of the funding request: \"طرح « تولید و فروش گروه محصولات پنیر خامه ای »\". It is the correct name for the project.",
+        "function_explanation": "The extracted value \"تولید و فروش گروه محصولات پنیرخامه ای\" exactly matches the project title mentioned multiple times within the HTML content, specifically in the context of the funding request: \"طرح « تولید و فروش گروه محصولات پنیر خامه ای »\". It is the correct name for the project.",
+        "expert_explanation": "The extracted value \"تولید و فروش گروه محصولات پنیرخامه ای\" exactly matches the project title mentioned multiple times within the HTML content, specifically in the context of the funding request: \"طرح « تولید و فروش گروه محصولات پنیر خامه ای »\". It is the correct name for the project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": "44.00",
+      "function_value": 44.0,
+      "expert_value": 44.0,
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "Group 1 (Agent 1) extracted \"44.00\" which is present in the HTML content as \"سود%44.00\" (profit %44.00). Group 2 (Agent 2, Agent 3) extracted \"44.0\" which is also present, but \"44.00\" is more precise and includes the decimal place as it appears in the source. Therefore, Group 1 is preferred.",
+        "function_explanation": "Group 1 (Agent 1) extracted \"44.00\" which is present in the HTML content as \"سود%44.00\" (profit %44.00). Group 2 (Agent 2, Agent 3) extracted \"44.0\" which is also present, but \"44.00\" is more precise and includes the decimal place as it appears in the source. Therefore, Group 1 is preferred.",
+        "expert_explanation": "Group 1 (Agent 1) extracted \"44.00\" which is present in the HTML content as \"سود%44.00\" (profit %44.00). Group 2 (Agent 2, Agent 3) extracted \"44.0\" which is also present, but \"44.00\" is more precise and includes the decimal place as it appears in the source. Therefore, Group 1 is preferred.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "آغاز جمع آوری وجوه",
+      "function_value": "آغاز جمع آوری وجوه",
+      "expert_value": "آغاز جمع آوری وجوه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"آغاز جمع آوری وجوه\" (meaning \"Start of fund collection\") directly matches the \"وضعیت پروژه\" (project status) value present in the HTML content. It accurately reflects the current status of the crowdfunding project.",
+        "function_explanation": "The extracted value \"آغاز جمع آوری وجوه\" (meaning \"Start of fund collection\") directly matches the \"وضعیت پروژه\" (project status) value present in the HTML content. It accurately reflects the current status of the crowdfunding project.",
+        "expert_explanation": "The extracted value \"آغاز جمع آوری وجوه\" (meaning \"Start of fund collection\") directly matches the \"وضعیت پروژه\" (project status) value present in the HTML content. It accurately reflects the current status of the crowdfunding project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    }
+  }
+}

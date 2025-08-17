@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" data-critters-container=""><head>
+  <meta charset="utf-8">
+  <title>سامانه تامين مالي جمعي كرادفاندينگ گلرنگ</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="/assets/icons/icon-48-48.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="assets/fonts/iransans/woff2/IRANSansX-Black.woff2" as="fonts" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="assets/fonts/iransans/woff2/IRANSansX-Bold.woff2" as="fonts" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="assets/fonts/iransans/woff2/IRANSansX-DemiBold.woff2" as="fonts" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="assets/fonts/iransans/woff2/IRANSansX-ExtraBold.woff2" as="fonts" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="assets/fonts/iransans/woff2/IRANSansX-Light.woff2" as="fonts" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="assets/fonts/iransans/woff2/IRANSansX-Medium.woff2" as="fonts" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="assets/fonts/iransans/woff2/IRANSansX-Regular.woff2" as="fonts" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="assets/fonts/iransans/woff2/IRANSansX-Thin.woff2" as="fonts" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="assets/fonts/iransans/woff2/IRANSansX-UltraLight.woff2" as="fonts" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="styles.scss" as="styles">
+  <meta name="theme-color" content="#006a6d">
+<style>:root{font-family:Inter var,sans-serif;font-feature-settings:"cv02","cv03","cv04","cv11";font-variation-settings:normal;--font-family:"Inter var", sans-serif;--font-feature-settings:"cv02", "cv03", "cv04", "cv11";--surface-a:#ffffff;--surface-b:#f9fafb;--surface-c:#f3f4f6;--surface-d:#e5e7eb;--surface-e:#ffffff;--surface-f:#ffffff;--text-color:#4b5563;--text-color-secondary:#6b7280;--primary-color:#10b981;--primary-color-text:#ffffff;--surface-0:#ffffff;--surface-50:#f9fafb;--surface-100:#f3f4f6;--surface-200:#e5e7eb;--surface-300:#d1d5db;--surface-400:#9ca3af;--surface-500:#6b7280;--surface-600:#4b5563;--surface-700:#374151;--surface-800:#1f2937;--surface-900:#111827;--gray-50:#f9fafb;--gray-100:#f3f4f6;--gray-200:#e5e7eb;--gray-300:#d1d5db;--gray-400:#9ca3af;--gray-500:#6b7280;--gray-600:#4b5563;--gray-700:#374151;--gray-800:#1f2937;--gray-900:#111827;--content-padding:1.25rem;--inline-spacing:.5rem;--border-radius:6px;--surface-ground:#f9fafb;--surface-section:#ffffff;--surface-card:#ffffff;--surface-overlay:#ffffff;--surface-border:#dfe7ef;--surface-hover:#f6f9fc;--focus-ring:0 0 0 .2rem #a7f3d0;--maskbg:rgba(0, 0, 0, .4);--highlight-bg:#F0FDFA;--highlight-text-color:#047857;color-scheme:light}@font-face{font-family:Inter var;font-weight:100 900;font-display:swap;font-style:normal;font-named-instance:"Regular";src:url("./media/Inter-roman.var-5VGNBR6A.woff2?v=3.19") format("woff2")}@font-face{font-family:Inter var;font-weight:100 900;font-display:swap;font-style:italic;font-named-instance:"Italic";src:url("./media/Inter-italic.var-YRHKCDAA.woff2?v=3.19") format("woff2")}:root{--blue-50:#f5f9ff;--blue-100:#d0e1fd;--blue-200:#abc9fb;--blue-300:#85b2f9;--blue-400:#609af8;--blue-500:#3b82f6;--blue-600:#326fd1;--blue-700:#295bac;--blue-800:#204887;--blue-900:#183462;--green-50:#f4fcf7;--green-100:#caf1d8;--green-200:#a0e6ba;--green-300:#76db9b;--green-400:#4cd07d;--green-500:#22c55e;--green-600:#1da750;--green-700:#188a42;--green-800:#136c34;--green-900:#0e4f26;--yellow-50:#fefbf3;--yellow-100:#faedc4;--yellow-200:#f6de95;--yellow-300:#f2d066;--yellow-400:#eec137;--yellow-500:#eab308;--yellow-600:#c79807;--yellow-700:#a47d06;--yellow-800:#816204;--yellow-900:#5e4803;--cyan-50:#f3fbfd;--cyan-100:#c3edf5;--cyan-200:#94e0ed;--cyan-300:#65d2e4;--cyan-400:#35c4dc;--cyan-500:#06b6d4;--cyan-600:#059bb4;--cyan-700:#047f94;--cyan-800:#036475;--cyan-900:#024955;--pink-50:#fef6fa;--pink-100:#fad3e7;--pink-200:#f7b0d3;--pink-300:#f38ec0;--pink-400:#f06bac;--pink-500:#ec4899;--pink-600:#c93d82;--pink-700:#a5326b;--pink-800:#822854;--pink-900:#5e1d3d;--indigo-50:#f7f7fe;--indigo-100:#dadafc;--indigo-200:#bcbdf9;--indigo-300:#9ea0f6;--indigo-400:#8183f4;--indigo-500:#6366f1;--indigo-600:#5457cd;--indigo-700:#4547a9;--indigo-800:#363885;--indigo-900:#282960;--teal-50:#f3fbfb;--teal-100:#c7eeea;--teal-200:#9ae0d9;--teal-300:#6dd3c8;--teal-400:#41c5b7;--teal-500:#14b8a6;--teal-600:#119c8d;--teal-700:#0e8174;--teal-800:#0b655b;--teal-900:#084a42;--orange-50:#fff8f3;--orange-100:#feddc7;--orange-200:#fcc39b;--orange-300:#fba86f;--orange-400:#fa8e42;--orange-500:#f97316;--orange-600:#d46213;--orange-700:#ae510f;--orange-800:#893f0c;--orange-900:#642e09;--bluegray-50:#f7f8f9;--bluegray-100:#dadee3;--bluegray-200:#bcc3cd;--bluegray-300:#9fa9b7;--bluegray-400:#818ea1;--bluegray-500:#64748b;--bluegray-600:#556376;--bluegray-700:#465161;--bluegray-800:#37404c;--bluegray-900:#282e38;--purple-50:#fbf7ff;--purple-100:#ead6fd;--purple-200:#dab6fc;--purple-300:#c996fa;--purple-400:#b975f9;--purple-500:#a855f7;--purple-600:#8f48d2;--purple-700:#763cad;--purple-800:#5c2f88;--purple-900:#432263;--red-50:#fff5f5;--red-100:#ffd0ce;--red-200:#ffaca7;--red-300:#ff8780;--red-400:#ff6259;--red-500:#ff3d32;--red-600:#d9342b;--red-700:#b32b23;--red-800:#8c221c;--red-900:#661814;--primary-50:#f3fcf9;--primary-100:#c6eee1;--primary-200:#98e1c9;--primary-300:#6bd4b1;--primary-400:#3dc699;--primary-500:#10b981;--primary-600:#0e9d6e;--primary-700:#0b825a;--primary-800:#096647;--primary-900:#064a34}@layer primeng{*{box-sizing:border-box}}@layer primeng{@-webkit-keyframes p-fadein{0%{opacity:0}to{opacity:1}}}@-webkit-keyframes p-icon-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0)}to{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0)}to{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}:root{--font-family:"IRANSansX", sans-serif;--font-feature-settings:"cv02", "cv03", "cv04", "cv11", "ss02";--nav-header-height:4rem;--fold-height:calc(100vh - var(--nav-header-height));--home-carousel-height:calc(var(--fold-height) * .6);--color-navy:#003e52;--color-teal:#41748d;--color-turquoise:#64ccc9;--color-orange:#c96939;--color-ice:#d9e3e8;--color-silver:#bbbcbc;--color-black:#000000;--color-white:#ffffff;--surface-light:var(--color-white);--surface-light-text:var(--color-black);--surface-dark:var(--color-navy);--surface-dark-text:var(--color-white);--surface-primary:var(--color-teal);--surface-primary-text:var(--color-white);--surface-secondary:var(--color-turquoise);--surface-secondary-text:var(--color-black);--surface-tertiary:var(--color-orange);--surface-tertiary-text:var(--color-white);--surface-neutral:var(--color-silver);--surface-neutral-text:var(--color-black);--surface-muted:var(--color-ice);--surface-muted-text:var(--color-black)}@font-face{font-family:IRANSansX;font-style:normal;font-weight:100;src:url("./media/IRANSansX-Thin-262LEDFB.woff") format("woff"),url("./media/IRANSansX-Thin-UIG4KT3U.woff2") format("woff2")}@font-face{font-family:IRANSansX;font-style:normal;font-weight:200;src:url("./media/IRANSansX-UltraLight-KKYL2JKF.woff") format("woff"),url("./media/IRANSansX-UltraLight-VYODZWOF.woff2") format("woff2")}@font-face{font-family:IRANSansX;font-style:normal;font-weight:300;src:url("./media/IRANSansX-Light-Q7PHRTCY.woff") format("woff"),url("./media/IRANSansX-Light-D633JT76.woff2") format("woff2")}@font-face{font-family:IRANSansX;font-style:normal;font-weight:500;src:url("./media/IRANSansX-Medium-TJUS76RE.woff") format("woff"),url("./media/IRANSansX-Medium-53YCGN23.woff2") format("woff2")}@font-face{font-family:IRANSansX;font-style:normal;font-weight:600;src:url("./media/IRANSansX-DemiBold-PNAR4727.woff") format("woff"),url("./media/IRANSansX-DemiBold-2TFKHQSZ.woff2") format("woff2")}@font-face{font-family:IRANSansX;font-style:normal;font-weight:800;src:url("./media/IRANSansX-ExtraBold-JVFRC6OK.woff") format("woff"),url("./media/IRANSansX-ExtraBold-RXXHELIR.woff2") format("woff2")}@font-face{font-family:IRANSansX;font-style:normal;font-weight:900;src:url("./media/IRANSansX-Black-S5NFJBU2.woff") format("woff"),url("./media/IRANSansX-Black-FPJOKAKY.woff2") format("woff2")}@font-face{font-family:IRANSansX;font-style:normal;font-weight:700;src:url("./media/IRANSansX-Bold-YXFS4J7V.woff") format("woff"),url("./media/IRANSansX-Bold-BL4IL4ZP.woff2") format("woff2")}@font-face{font-family:IRANSansX;font-style:normal;font-weight:400;src:url("./media/IRANSansX-Regular-NCI5Z2RG.woff") format("woff"),url("./media/IRANSansX-Regular-UKQWARGH.woff2") format("woff2")}body{-moz-font-feature-settings:"ss02";-webkit-font-feature-settings:"ss02";font-feature-settings:"ss02"}body{margin:0}html,body{height:100%}*,:before,:after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / .5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }html,body{font-family:var(--font-family);direction:rtl}body{font-size:1.125rem;line-height:1.75rem;line-height:1.5}</style><link rel="stylesheet" href="styles-UHZPNQZO.css" media="all" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-UHZPNQZO.css"></noscript><style>@layer primeng{.p-toast{position:fixed;width:25rem}.p-toast-message{overflow:hidden}.p-toast-message-content{display:flex;align-items:flex-start}.p-toast-message-text{flex:1 1 auto}.p-toast-top-right{top:20px;right:20px}.p-toast-top-left{top:20px;left:20px}.p-toast-bottom-left{bottom:20px;left:20px}.p-toast-bottom-right{bottom:20px;right:20px}.p-toast-top-center{top:20px;left:50%;transform:translate(-50%)}.p-toast-bottom-center{bottom:20px;left:50%;transform:translate(-50%)}.p-toast-center{left:50%;top:50%;min-width:20vw;transform:translate(-50%,-50%)}.p-toast-icon-close{display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;flex:none}.p-toast-icon-close.p-link{cursor:pointer}}
+</style><style>div[_ngcontent-ng-c2307725653] > h4[_ngcontent-ng-c2307725653]{margin-bottom:.5rem}a[_ngcontent-ng-c2307725653]{text-decoration:none;transition:color .2s}a[_ngcontent-ng-c2307725653]:hover{color:var(--text-white)}</style><style type="text/css">
+            #pn_id_2 .p-carousel-item {
+				flex: 1 0 14.285714285714286%
+			}
+
+                    @media screen and (max-width: 768px) {
+                        #pn_id_2 .p-carousel-item {
+                            flex: 1 0 25%
+                        }
+                    }
+
+                    @media screen and (max-width: 360px) {
+                        #pn_id_2 .p-carousel-item {
+                            flex: 1 0 50%
+                        }
+                    }
+                </style><style>@layer primeng{.p-dialog-mask{position:fixed;top:0;left:0;width:100%;height:100%;display:flex;justify-content:center;align-items:center;pointer-events:none}.p-dialog-mask.p-component-overlay{pointer-events:auto}.p-dialog{display:flex;flex-direction:column;pointer-events:auto;max-height:90%;transform:scale(1);position:relative}.p-dialog-content{overflow-y:auto;flex-grow:1}.p-dialog-header{display:flex;align-items:center;justify-content:space-between;flex-shrink:0}.p-dialog-draggable .p-dialog-header{cursor:move}.p-dialog-footer{flex-shrink:0}.p-dialog .p-dialog-header-icons{display:flex;align-items:center}.p-dialog .p-dialog-header-icon{display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}.p-fluid .p-dialog-footer .p-button{width:auto}.p-dialog-top .p-dialog,.p-dialog-bottom .p-dialog,.p-dialog-left .p-dialog,.p-dialog-right .p-dialog,.p-dialog-top-left .p-dialog,.p-dialog-top-right .p-dialog,.p-dialog-bottom-left .p-dialog,.p-dialog-bottom-right .p-dialog{margin:.75rem;transform:translateZ(0)}.p-dialog-maximized{-webkit-transition:none;transition:none;transform:none;width:100vw!important;height:100vh!important;top:0!important;left:0!important;max-height:100%;height:100%}.p-dialog-maximized .p-dialog-content{flex-grow:1}.p-dialog-left{justify-content:flex-start}.p-dialog-right{justify-content:flex-end}.p-dialog-top{align-items:flex-start}.p-dialog-top-left{justify-content:flex-start;align-items:flex-start}.p-dialog-top-right{justify-content:flex-end;align-items:flex-start}.p-dialog-bottom{align-items:flex-end}.p-dialog-bottom-left{justify-content:flex-start;align-items:flex-end}.p-dialog-bottom-right{justify-content:flex-end;align-items:flex-end}.p-dialog .p-resizable-handle{position:absolute;font-size:.1px;display:block;cursor:se-resize;width:12px;height:12px;right:1px;bottom:1px}.p-confirm-dialog .p-dialog-content{display:flex;align-items:center}}
+</style><style>@layer primeng{.p-password{position:relative;display:inline-flex}.p-password-panel{position:absolute;top:0;left:0}.p-password .p-password-panel{min-width:100%}.p-password-meter{height:10px}.p-password-strength{height:100%;width:0%;transition:width 1s ease-in-out}.p-fluid .p-password{display:flex}.p-password-input::-ms-reveal,.p-password-input::-ms-clear{display:none}.p-password-clear-icon{position:absolute;top:50%;margin-top:-.5rem;cursor:pointer}.p-password .p-icon{cursor:pointer}.p-password-clearable.p-password-mask .p-password-clear-icon{margin-top:unset}.p-password-clearable{position:relative}}
+</style><style>@layer primeng{.p-progressbar{position:relative;overflow:hidden}.p-progressbar-determinate .p-progressbar-value{height:100%;width:0%;position:absolute;display:none;border:0 none;display:flex;align-items:center;justify-content:center;overflow:hidden}.p-progressbar-determinate .p-progressbar-label{display:inline-flex}.p-progressbar-determinate .p-progressbar-value-animate{transition:width 1s ease-in-out}.p-progressbar-indeterminate .p-progressbar-value:before{content:"";position:absolute;background-color:inherit;top:0;left:0;bottom:0;will-change:left,right;-webkit-animation:p-progressbar-indeterminate-anim 2.1s cubic-bezier(.65,.815,.735,.395) infinite;animation:p-progressbar-indeterminate-anim 2.1s cubic-bezier(.65,.815,.735,.395) infinite}.p-progressbar-indeterminate .p-progressbar-value:after{content:"";position:absolute;background-color:inherit;top:0;left:0;bottom:0;will-change:left,right;-webkit-animation:p-progressbar-indeterminate-anim-short 2.1s cubic-bezier(.165,.84,.44,1) infinite;animation:p-progressbar-indeterminate-anim-short 2.1s cubic-bezier(.165,.84,.44,1) infinite;-webkit-animation-delay:1.15s;animation-delay:1.15s}}@-webkit-keyframes p-progressbar-indeterminate-anim{0%{left:-35%;right:100%}60%{left:100%;right:-90%}to{left:100%;right:-90%}}@keyframes p-progressbar-indeterminate-anim{0%{left:-35%;right:100%}60%{left:100%;right:-90%}to{left:100%;right:-90%}}@-webkit-keyframes p-progressbar-indeterminate-anim-short{0%{left:-200%;right:100%}60%{left:107%;right:-8%}to{left:107%;right:-8%}}@keyframes p-progressbar-indeterminate-anim-short{0%{left:-200%;right:100%}60%{left:107%;right:-8%}to{left:107%;right:-8%}}
+</style><style>@layer primeng{.p-tabview-nav-container{position:relative}.p-tabview-scrollable .p-tabview-nav-container{overflow:hidden}.p-tabview-nav-content{overflow-x:auto;overflow-y:hidden;scroll-behavior:smooth;scrollbar-width:none;overscroll-behavior:contain auto}.p-tabview-nav{display:inline-flex;min-width:100%;margin:0;padding:0;list-style-type:none;flex:1 1 auto}.p-tabview-nav-link{cursor:pointer;-webkit-user-select:none;user-select:none;display:flex;align-items:center;position:relative;text-decoration:none;overflow:hidden}.p-tabview-ink-bar{display:none;z-index:1}.p-tabview-nav-link:focus{z-index:1}.p-tabview-title{line-height:1;white-space:nowrap}.p-tabview-nav-btn{position:absolute;top:0;z-index:2;height:100%;display:flex;align-items:center;justify-content:center}.p-tabview-nav-prev{left:0}.p-tabview-nav-next{right:0}.p-tabview-nav-content::-webkit-scrollbar{display:none}.p-tabview-close{z-index:1}}
+</style><style>@layer primeng{.p-accordion-header-link{cursor:pointer;display:flex;align-items:center;-webkit-user-select:none;user-select:none;position:relative;text-decoration:none}.p-accordion-header-link:focus{z-index:1}.p-accordion-header-text{line-height:1}.p-accordion .p-toggleable-content{overflow:hidden}.p-accordion .p-accordion-tab-active>.p-toggleable-content:not(.ng-animating){overflow:inherit}.p-accordion-toggle-icon-end{order:1;margin-left:auto}.p-accordion-toggle-icon{order:0}}
+</style><style>@layer primeng{.p-inline-message{display:inline-flex;align-items:center;justify-content:center;vertical-align:top}.p-inline-message-icon-only .p-inline-message-text{visibility:hidden;width:0}.p-fluid .p-inline-message{display:flex}}
+</style></head>
+<body>
+  <app-root _nghost-ng-c4038419596="" ng-version="18.2.12"><app-content-loader _ngcontent-ng-c4038419596="" key="custom-css" _nghost-ng-c2099021976=""><app-content-viewer _ngcontent-ng-c2099021976="" _nghost-ng-c4157113975="" class="ng-star-inserted"><!----><!----><!----><!----><!----><div _ngcontent-ng-c4157113975="" class="ng-star-inserted"><style>.sc-container-readable {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 .75rem;
+}
+
+.sc-intro-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.25em;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.sc-font-bold {
+  font-weight: 700;
+}
+.sc-font-bolder {
+  font-weight: 900;
+}
+
+.sc-intro-icon {
+  width: 3rem;
+  align-self: flex-end;
+}
+
+.sc-flex {
+  display: flex;
+}
+
+.sc-flex-col {
+  flex-direction: column;
+}
+.sc-items-start {
+align-items: start;
+}
+.sc-gap-6 {
+  gap: 1.5rem;
+}
+
+.sc-gap-8 {
+  gap: 2rem;
+}
+
+.sc-py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.sc-gap-4 {
+  gap: 1rem;
+}
+
+.sc-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.sc-p-4 {
+  padding: 1rem;
+}
+
+.sc-rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.sc-flex-grow {
+  flex-grow: 1;
+}
+
+.sc-min-w-xs {
+  min-width: 20rem;
+}
+
+.sc-text-lg {
+  font-size: 1.125rem;
+}
+.sc-text-xl {
+  font-size: 1.25rem;
+}
+.sc-text-2xl {
+  font-size: 1.5rem;
+}
+.sc-text-3xl {
+  font-size: 1.875rem;
+}
+
+.sc-p-6 {
+  padding: 1.5rem;
+}
+
+.sc-mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.sc-rounded-lg {
+  border-radius: 0.25rem;
+}
+
+.sc-py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.sc-px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.sc-why-item {
+  width: 14rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 auto;
+  gap: .5rem;
+}
+
+.sc-items-center {
+  align-items: center;
+}
+
+.sc-justify-between {
+  justify-content: space-between;
+}
+
+.sc-gap-2 {
+  gap: .5rem;
+}
+
+.sc-px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.sc-self-center {
+  align-self: center;
+}
+
+.sc-border-0 {
+  border-width: 0;
+}
+
+.sc-w-full {
+  width: 100%;
+}
+
+.sc-why-license-highlight {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  align-self: center;
+  border-bottom: .25rem solid black;
+  padding: 1rem 2rem;
+}
+
+.sc-why-license-highlight img {
+  width: 4rem;
+}
+
+.sc-why-gig-text {
+  max-width: 36rem;
+  line-height: 2.2;
+  text-align: justify;
+}
+.sc-why-gig-logo {
+  max-width: 100%;
+  width: 24rem;
+  background-color: #eee;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+}
+
+.sc-text-justify {
+  text-align: justify;
+}
+
+.sc-font-thick {
+  font-weight: 900;
+}
+
+.sc-leading-loose {
+  line-height: 2;
+}
+
+.sc-max-w-xl {
+  max-width: 36rem;
+}
+
+.sc-max-w-80 {
+  max-width: 20rem;
+}
+.sc-btn-shadow{
+  border: none;
+  box-shadow: 7px 7px 10px 4px rgb(0 0 0 / 60%);
+  font-weight: 900;
+  justify-content: center;
+  padding: 1rem 2rem;
+
+}
+
+.sc-hero-headline {
+  font-size: 2rem;
+  font-weight: 900;
+}
+.sc-hero-photo {
+  max-width: 100%;
+  width: 30rem;
+  aspect-ratio: 3/2;
+  border-radius: .75rem;
+  background-image: url(/api/content/$gcf/9c689188-c288-4843-a000-d584c7f8e3c2.jpg);
+  background-position: center;
+    background-size: cover;
+
+}
+
+.sc-about-team-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+}
+
+.sc-about-team-item {
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  max-width: 20rem;
+  min-width: 20rem;
+}
+
+.sc-about-team-item img {
+  width: 16rem;
+  aspect-ratio: 1/1;
+  border-radius: .75rem;
+  background-color: white;
+  align-self: center;
+}</style></div><!----><!----><!----><!----><!----></app-content-viewer><!----></app-content-loader><router-outlet _ngcontent-ng-c4038419596=""></router-outlet><app-default-layout _nghost-ng-c1205619564="" class="ng-star-inserted"><div _ngcontent-ng-c1205619564=""><app-top-nav _ngcontent-ng-c1205619564="" class="tw-sticky tw-top-0 tw-z-20" _nghost-ng-c659384772=""><nav _ngcontent-ng-c659384772="" class="tw-h-[var(--nav-header-height)] tw-bg-white"><div _ngcontent-ng-c659384772="" class="tw-mx-auto lg:uw-max-w-readable tw-px-2 lg:tw-px-4"><div _ngcontent-ng-c659384772="" class="tw-relative tw-flex tw-h-16 tw-items-center tw-justify-between"><div _ngcontent-ng-c659384772="" class="tw-absolute tw-inset-y-0 tw-left-0 tw-flex tw-items-center md:tw-hidden"><p-button _ngcontent-ng-c659384772="" icon="pi pi-bars" severity="info" class="p-element"><button pripple="" pautofocus="" class="p-ripple p-element p-button p-component p-button-icon-only p-button-info p-button-text" type="button" data-pc-name="button" data-pc-section="root"><!----><!----><span data-pc-section="icon" class="p-button-icon pi pi-bars ng-star-inserted"></span><!----><!----><!----><!----><!----><!----></button></p-button></div><div _ngcontent-ng-c659384772="" class="tw-flex tw-flex-1 tw-gap-3 tw-items-center tw-justify-center md:tw-items-stretch md:tw-justify-start"><a _ngcontent-ng-c659384772="" routerlink="/" title="صفحه اصلی" class="tw-flex tw-flex-shrink-0 tw-items-center" href="/"><img _ngcontent-ng-c659384772="" src="/assets/images/logo/logo-horizontal.svg" alt="سکوی تامین مالی گلرنگ ونچرز" class="tw-hidden md:tw-block tw-h-16 tw-w-52 tw-object-cover"><img _ngcontent-ng-c659384772="" src="/assets/images/logo/icon-square.png" alt="سکوی تامین مالی گلرنگ ونچرز" class="md:tw-hidden tw-h-14 tw-object-cover"></a><div _ngcontent-ng-c659384772="" class="tw-hidden md:tw-flex tw-items-center"><div _ngcontent-ng-c659384772="" class="tw-flex tw-gap-3"><a _ngcontent-ng-c659384772="" routerlinkactive="!tw-bg-teal-700 !tw-text-white" class="hover:surface-primary tw-rounded-md tw-px-3 tw-py-2 tw-font-bold ng-star-inserted" href="/projects?status=Approved">سرمایه‌گذاری</a><a _ngcontent-ng-c659384772="" routerlinkactive="!tw-bg-teal-700 !tw-text-white" class="hover:surface-primary tw-rounded-md tw-px-3 tw-py-2 tw-font-bold ng-star-inserted" href="/proposal-form">+ جذب سرمایه</a><a _ngcontent-ng-c659384772="" routerlinkactive="!tw-bg-teal-700 !tw-text-white" class="hover:surface-primary tw-rounded-md tw-px-3 tw-py-2 tw-font-bold ng-star-inserted" href="/about">درباره ما</a><a _ngcontent-ng-c659384772="" routerlinkactive="!tw-bg-teal-700 !tw-text-white" class="hover:surface-primary tw-rounded-md tw-px-3 tw-py-2 tw-font-bold ng-star-inserted" href="/contact">تماس با ما</a><!----></div></div></div><div _ngcontent-ng-c659384772="" class="tw-absolute tw-flex tw-items-center tw-inset-y-0 tw-right-0 tw-pr-2 md:tw-static md:tw-inset-auto md:tw-pr-0"><app-user-status _ngcontent-ng-c659384772="" _nghost-ng-c1792468826=""><!----><app-login _ngcontent-ng-c1792468826="" _nghost-ng-c1955490944="" class="ng-star-inserted"><p-button _ngcontent-ng-c1955490944="" severity="warning" size="small" class="p-element ng-star-inserted"><button pripple="" pautofocus="" class="p-ripple p-element p-button p-component p-button-warning p-button-sm" type="button" data-pc-name="button" data-pc-section="root"><div _ngcontent-ng-c1955490944="" class="lg:tw-px-6 tw-py-1 lg:tw-text-lg">ورود/ثبت‌نام</div><!----><!----><!----><!----><!----><!----><!----><!----></button></p-button><p-dialog _ngcontent-ng-c1955490944="" appendto="body" class="p-element ng-tns-c1946505645-1 ng-star-inserted"><!----></p-dialog><!----><!----><!----><!----></app-login><!----><!----></app-user-status></div></div></div><!----></nav></app-top-nav><main _ngcontent-ng-c1205619564="" class="tw-flex tw-flex-col tw-min-h-[calc(100vh-6rem)] tw-overflow-x-auto"><router-outlet _ngcontent-ng-c1205619564=""></router-outlet><app-project-detail _nghost-ng-c3596641245="" class="ng-star-inserted"><div _ngcontent-ng-c3596641245="" class="tw-container tw-max-w-6xl relative tw-min-h-40"><app-spinner _ngcontent-ng-c3596641245="" _nghost-ng-c3774901462="" style="display: none;"><!----></app-spinner><div _ngcontent-ng-c3596641245="" class="tw-w-full tw-h-80 tw-bg-cover tw-bg-center tw-mb-[-5%] tw-relative tw-z-0 lg:tw-rounded-b-md ng-star-inserted" style="background-image: url(&quot;/api/content/$gcf/44808bf8-ee0e-47a4-9a8c-539299c3d1f4.jpg&quot;);"></div><div _ngcontent-ng-c3596641245="" class="tw-relative tw-z-10 tw-px-4 tw-pb-[20vh] ng-star-inserted"><div _ngcontent-ng-c3596641245="" class="tw-container tw-flex tw-flex-col tw-gap-3 tw-max-w-5xl tw-p-4 md:tw-p-8 tw-bg-white tw-rounded-xl tw-shadow-xl"><h3 _ngcontent-ng-c3596641245="" class="tw-text-gray-500">فام تک صنعت چاپ</h3><h1 _ngcontent-ng-c3596641245="">تولید لیبل پشت چسب دار</h1><div _ngcontent-ng-c3596641245="" class="tw-flex tw-flex-col lg:tw-flex-row tw-my-4 tw-gap-2"><div _ngcontent-ng-c3596641245="" class="tw-flex tw-flex-wrap tw-flex-grow tw-p-3 tw-rounded tw-shadow"><div _ngcontent-ng-c3596641245="" class="tw-flex-grow tw-flex tw-flex-col tw-gap-4 tw-p-3"><div _ngcontent-ng-c3596641245="" class="tw-flex tw-flex-wrap tw-gap-1 *:tw-flex-1"><div _ngcontent-ng-c3596641245="" class="tw-flex tw-flex-col tw-gap-1"><div _ngcontent-ng-c3596641245="" class="tw-text-sm tw-text-gray-500">پیش‌بینی سود سالانه (بدون تضمین سود)</div><div _ngcontent-ng-c3596641245="" class="tw-text-xl tw-font-bold">44%</div></div><div _ngcontent-ng-c3596641245="" class="tw-flex tw-flex-col tw-gap-1"><div _ngcontent-ng-c3596641245="" class="tw-text-sm tw-text-gray-500">مهلت سرمایه‌گذاری</div><div _ngcontent-ng-c3596641245="" class="tw-font-bold">24 اردیبهشت 1404</div></div><div _ngcontent-ng-c3596641245="" class="tw-flex tw-flex-col tw-gap-1"><div _ngcontent-ng-c3596641245="" class="tw-text-sm tw-text-gray-500">دوره سرمایه‌گذاری</div><div _ngcontent-ng-c3596641245="" class="tw-text-xl tw-font-bold">12 ماه</div></div></div><div _ngcontent-ng-c3596641245="" class="tw-flex tw-flex-wrap tw-gap-1 *:tw-flex-1"><div _ngcontent-ng-c3596641245="" class="tw-flex tw-flex-col tw-gap-1"><div _ngcontent-ng-c3596641245="" class="tw-text-sm tw-text-gray-500">تامین شده</div><div _ngcontent-ng-c3596641245="" class="tw-font-bold">25 میلیارد تومان</div></div><div _ngcontent-ng-c3596641245="" class="tw-flex tw-flex-col tw-gap-1"><div _ngcontent-ng-c3596641245="" class="tw-text-sm tw-text-gray-500">توسط</div><div _ngcontent-ng-c3596641245="" class="tw-font-bold">39 سرمایه‌گذار</div></div><div _ngcontent-ng-c3596641245="" class="tw-flex tw-flex-col tw-gap-1"><div _ngcontent-ng-c3596641245="" class="tw-text-sm tw-text-gray-500">وثایق طرح</div><div _ngcontent-ng-c3596641245="" class="tw-font-bold">سایر</div></div></div></div></div><div _ngcontent-ng-c3596641245="" class="tw-flex tw-flex-col tw-w-full lg:tw-max-w-80 tw-py-5 lg:tw-py-0 md:tw-px-5 p-fluid tw-justify-between tw-gap-4"><div _ngcontent-ng-c3596641245="" class="tw-flex tw-flex-col tw-gap-1 tw-items-center"><div _ngcontent-ng-c3596641245="" class="tw-text-sm tw-text-gray-500">سرمایه مورد نیاز</div><div _ngcontent-ng-c3596641245="" class="tw-text-xl tw-font-bold">25 میلیارد تومان</div></div><p-progressbar _ngcontent-ng-c3596641245="" class="p-element"><div role="progressbar" aria-valuemin="0" aria-valuenow="100" aria-valuemax="100" data-pc-name="progressbar" data-pc-section="root" class="p-progressbar p-component p-progressbar-determinate"><div class="p-progressbar-value p-progressbar-value-animate ng-star-inserted" data-pc-section="value" style="width: 100%; display: flex;"><div class="p-progressbar-label"><!----><!----></div></div><!----><!----></div></p-progressbar><div _ngcontent-ng-c3596641245="" class="tw-flex tw-justify-center">100%</div><!----><p-button _ngcontent-ng-c3596641245="" label="طرح در مرحله سرمایه‌گذاری نیست" icon="pi pi-ban" class="p-element tw-text-nowrap p-disabled ng-star-inserted"><button pripple="" pautofocus="" class="p-ripple p-element p-button p-component" disabled="" type="button" data-pc-name="button" data-pc-section="root"><!----><!----><span data-pc-section="icon" class="p-button-icon p-button-icon-left pi pi-ban ng-star-inserted"></span><!----><!----><!----><!----><span class="p-button-label ng-star-inserted" aria-hidden="false" data-pc-section="label">طرح در مرحله سرمایه‌گذاری نیست</span><!----><!----></button></p-button><!----></div></div><p-tabview _ngcontent-ng-c3596641245="" class="p-element"><div data-pc-name="tabview" class="p-tabview p-component"><div class="p-tabview-nav-container"><!----><div class="p-tabview-nav-content" data-pc-section="navcontent"><ul role="tablist" class="p-tabview-nav" data-pc-section="nav"><li role="presentation" data-p-disabled="false" class="p-highlight ng-star-inserted"><a role="tab" pripple="" class="p-element p-ripple p-tabview-nav-link" id="pn_id_5_header_action" aria-controls="pn_id_5_content" aria-selected="true" tabindex="0" aria-disabled="false" data-pc-index="0" data-pc-section="headeraction"><!----><!----><span class="p-tabview-title ng-star-inserted">معرفی طرح</span><!----><!----><!----><!----><!----><!----></a><!----></li><!----><li role="presentation" data-p-disabled="false" class="ng-star-inserted"><a role="tab" pripple="" class="p-element p-ripple p-tabview-nav-link" id="pn_id_6_header_action" aria-controls="pn_id_6_content" aria-selected="false" tabindex="-1" aria-disabled="false" data-pc-index="1" data-pc-section="headeraction"><!----><!----><span class="p-tabview-title ng-star-inserted">اطلاعات مالی</span><!----><!----><!----><!----><!----><!----></a><!----></li><!----><li role="presentation" data-p-disabled="false" class="ng-star-inserted"><a role="tab" pripple="" class="p-element p-ripple p-tabview-nav-link" id="pn_id_7_header_action" aria-controls="pn_id_7_content" aria-selected="false" tabindex="-1" aria-disabled="false" data-pc-index="2" data-pc-section="headeraction"><!----><!----><span class="p-tabview-title ng-star-inserted">گزارش  پیشرفت</span><!----><!----><!----><!----><!----><!----></a><!----></li><!----><li role="presentation" data-p-disabled="false" class="ng-star-inserted"><a role="tab" pripple="" class="p-element p-ripple p-tabview-nav-link" id="pn_id_8_header_action" aria-controls="pn_id_8_content" aria-selected="false" tabindex="-1" aria-disabled="false" data-pc-index="3" data-pc-section="headeraction"><!----><!----><span class="p-tabview-title ng-star-inserted">گالری</span><!----><!----><!----><!----><!----><!----></a><!----></li><!----><!----><li role="presentation" aria-hidden="true" class="p-tabview-ink-bar" data-pc-section="inkbar" style="width: 115px; left: 845.262px;"></li></ul></div><!----></div><div class="p-tabview-panels"><p-tabpanel _ngcontent-ng-c3596641245="" header="معرفی طرح" class="p-element"><div role="tabpanel" class="p-tabview-panel ng-star-inserted" id="pn_id_5_content" aria-hidden="false" aria-labelledby="pn_id_5_header_action" data-pc-name="tabpanel"><!----><app-content-viewer _ngcontent-ng-c3596641245="" _nghost-ng-c4157113975="" class="ng-star-inserted"><p-accordion _ngcontent-ng-c4157113975="" class="p-element ng-star-inserted"><div class="p-accordion p-component"><p-accordiontab _ngcontent-ng-c4157113975="" class="p-element ng-tns-c3596192458-3 ng-star-inserted"><div class="p-accordion-tab ng-tns-c3596192458-3 p-accordion-tab-active" data-pc-name="accordiontab"><div role="heading" class="p-accordion-header ng-tns-c3596192458-3 p-highlight" aria-level="2" data-pc-section="header"><a role="button" class="p-accordion-header-link ng-tns-c3596192458-3" tabindex="0" id="pn_id_13_header_action" aria-controls="pn_id_13_content" aria-expanded="true" data-pc-section="headeraction"><!----><chevrondownicon class="p-element p-icon-wrapper ng-tns-c3596192458-3 p-accordion-toggle-icon ng-star-inserted" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="p-icon" aria-hidden="true"><path d="M7.01744 10.398C6.91269 10.3985 6.8089 10.378 6.71215 10.3379C6.61541 10.2977 6.52766 10.2386 6.45405 10.1641L1.13907 4.84913C1.03306 4.69404 0.985221 4.5065 1.00399 4.31958C1.02276 4.13266 1.10693 3.95838 1.24166 3.82747C1.37639 3.69655 1.55301 3.61742 1.74039 3.60402C1.92777 3.59062 2.11386 3.64382 2.26584 3.75424L7.01744 8.47394L11.769 3.75424C11.9189 3.65709 12.097 3.61306 12.2748 3.62921C12.4527 3.64535 12.6199 3.72073 12.7498 3.84328C12.8797 3.96582 12.9647 4.12842 12.9912 4.30502C13.0177 4.48162 12.9841 4.662 12.8958 4.81724L7.58083 10.1322C7.50996 10.2125 7.42344 10.2775 7.32656 10.3232C7.22968 10.3689 7.12449 10.3944 7.01744 10.398Z" fill="currentColor"></path></svg></chevrondownicon><!----><!----><!----><!----><!----><!----><!----><span class="p-accordion-header-text ng-tns-c3596192458-3 ng-star-inserted"> خلاصه طرح  </span><!----><!----><!----></a></div><div role="region" class="p-toggleable-content ng-tns-c3596192458-3 ng-trigger ng-trigger-tabContent" id="pn_id_13_content" aria-hidden="false" aria-labelledby="pn_id_13_header_action" data-pc-section="toggleablecontent" style="visibility: visible;"><div class="p-accordion-content ng-tns-c3596192458-3"><div _ngcontent-ng-c4157113975="" class="tw-whitespace-pre-wrap tw-leading-normal ng-tns-c3596192458-3">نام سکوی تامین مالی جمعی: گلرنگ کراد
+نهاد مالی: سبدگردان کوروش
+نام طرح: تولید لیبل پشت چسب دار
+نوع طرح: شناور
+مبلغ مورد نیاز طرح: 250 میلیارد ریال
+مدت طرح: 12 ماه
+سود پیش بینی شده طرح: 44%
+نماد طرح: <a href="/home/ViewProject">گلرنگچاپ</a>
+مواعد پرداخت سود پیش‌بینی‌شده: هر 3 ماه یکبار
+بدون تضمین سود و بدون تضمین اصل سرمایه</div><!----></div></div></div></p-accordiontab><p-accordiontab _ngcontent-ng-c4157113975="" class="p-element ng-tns-c3596192458-4 ng-star-inserted"><div class="p-accordion-tab ng-tns-c3596192458-4" data-pc-name="accordiontab"><div role="heading" class="p-accordion-header ng-tns-c3596192458-4" aria-level="2" data-pc-section="header"><a role="button" class="p-accordion-header-link ng-tns-c3596192458-4" tabindex="0" id="pn_id_14_header_action" aria-controls="pn_id_14_content" aria-expanded="false" data-pc-section="headeraction"><!----><!----><chevronrighticon class="p-element p-icon-wrapper ng-tns-c3596192458-4 p-accordion-toggle-icon ng-star-inserted" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="p-icon" aria-hidden="true"><path d="M4.38708 13C4.28408 13.0005 4.18203 12.9804 4.08691 12.9409C3.99178 12.9014 3.9055 12.8433 3.83313 12.7701C3.68634 12.6231 3.60388 12.4238 3.60388 12.2161C3.60388 12.0084 3.68634 11.8091 3.83313 11.6622L8.50507 6.99022L3.83313 2.31827C3.69467 2.16968 3.61928 1.97313 3.62287 1.77005C3.62645 1.56698 3.70872 1.37322 3.85234 1.22959C3.99596 1.08597 4.18972 1.00371 4.3928 1.00012C4.59588 0.996539 4.79242 1.07192 4.94102 1.21039L10.1669 6.43628C10.3137 6.58325 10.3962 6.78249 10.3962 6.99022C10.3962 7.19795 10.3137 7.39718 10.1669 7.54416L4.94102 12.7701C4.86865 12.8433 4.78237 12.9014 4.68724 12.9409C4.59212 12.9804 4.49007 13.0005 4.38708 13Z" fill="currentColor"></path></svg></chevronrighticon><!----><!----><!----><!----><!----><!----><span class="p-accordion-header-text ng-tns-c3596192458-4 ng-star-inserted"> بازار هدف </span><!----><!----><!----></a></div><div role="region" class="p-toggleable-content ng-tns-c3596192458-4 ng-trigger ng-trigger-tabContent" id="pn_id_14_content" aria-hidden="true" aria-labelledby="pn_id_14_header_action" data-pc-section="toggleablecontent" style="height: 0px; visibility: hidden;"><div class="p-accordion-content ng-tns-c3596192458-4"><div _ngcontent-ng-c4157113975="" class="tw-whitespace-pre-wrap tw-leading-normal ng-tns-c3596192458-4">مشتریان هدف این طرح، واحدهای تولیدی و صنعتی هستند که به لیبل‌های چاپی برای بسته‌بندی و شناسایی محصولات خود نیاز دارند مانند تولیدکنندگان مواد غذایی و نوشیدنی، شرکت‌های داروسازی و تجهیزات پزشکی، برندهای آرایشی و بهداشتی و ...</div><!----></div></div></div></p-accordiontab><p-accordiontab _ngcontent-ng-c4157113975="" class="p-element ng-tns-c3596192458-5 ng-star-inserted"><div class="p-accordion-tab ng-tns-c3596192458-5" data-pc-name="accordiontab"><div role="heading" class="p-accordion-header ng-tns-c3596192458-5" aria-level="2" data-pc-section="header"><a role="button" class="p-accordion-header-link ng-tns-c3596192458-5" tabindex="0" id="pn_id_15_header_action" aria-controls="pn_id_15_content" aria-expanded="false" data-pc-section="headeraction"><!----><!----><chevronrighticon class="p-element p-icon-wrapper ng-tns-c3596192458-5 p-accordion-toggle-icon ng-star-inserted" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="p-icon" aria-hidden="true"><path d="M4.38708 13C4.28408 13.0005 4.18203 12.9804 4.08691 12.9409C3.99178 12.9014 3.9055 12.8433 3.83313 12.7701C3.68634 12.6231 3.60388 12.4238 3.60388 12.2161C3.60388 12.0084 3.68634 11.8091 3.83313 11.6622L8.50507 6.99022L3.83313 2.31827C3.69467 2.16968 3.61928 1.97313 3.62287 1.77005C3.62645 1.56698 3.70872 1.37322 3.85234 1.22959C3.99596 1.08597 4.18972 1.00371 4.3928 1.00012C4.59588 0.996539 4.79242 1.07192 4.94102 1.21039L10.1669 6.43628C10.3137 6.58325 10.3962 6.78249 10.3962 6.99022C10.3962 7.19795 10.3137 7.39718 10.1669 7.54416L4.94102 12.7701C4.86865 12.8433 4.78237 12.9014 4.68724 12.9409C4.59212 12.9804 4.49007 13.0005 4.38708 13Z" fill="currentColor"></path></svg></chevronrighticon><!----><!----><!----><!----><!----><!----><span class="p-accordion-header-text ng-tns-c3596192458-5 ng-star-inserted"> وثایق </span><!----><!----><!----></a></div><div role="region" class="p-toggleable-content ng-tns-c3596192458-5 ng-trigger ng-trigger-tabContent" id="pn_id_15_content" aria-hidden="true" aria-labelledby="pn_id_15_header_action" data-pc-section="toggleablecontent" style="height: 0px; visibility: hidden;"><div class="p-accordion-content ng-tns-c3596192458-5"><div _ngcontent-ng-c4157113975="" class="tw-whitespace-pre-wrap tw-leading-normal ng-tns-c3596192458-5">سایر
+(این طرح فاقد ضمانت نامه اصل و سود سرمایه و دارای وثایق مالی (چک متقاضی و شخص ثالث) می‌باشد که در بخش اطلاعات مالی، وثایق اخذ شده قابل مشاهده است.)</div><!----></div></div></div></p-accordiontab><p-accordiontab _ngcontent-ng-c4157113975="" class="p-element ng-tns-c3596192458-6 ng-star-inserted"><div class="p-accordion-tab ng-tns-c3596192458-6" data-pc-name="accordiontab"><div role="heading" class="p-accordion-header ng-tns-c3596192458-6" aria-level="2" data-pc-section="header"><a role="button" class="p-accordion-header-link ng-tns-c3596192458-6" tabindex="0" id="pn_id_16_header_action" aria-controls="pn_id_16_content" aria-expanded="false" data-pc-section="headeraction"><!----><!----><chevronrighticon class="p-element p-icon-wrapper ng-tns-c3596192458-6 p-accordion-toggle-icon ng-star-inserted" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="p-icon" aria-hidden="true"><path d="M4.38708 13C4.28408 13.0005 4.18203 12.9804 4.08691 12.9409C3.99178 12.9014 3.9055 12.8433 3.83313 12.7701C3.68634 12.6231 3.60388 12.4238 3.60388 12.2161C3.60388 12.0084 3.68634 11.8091 3.83313 11.6622L8.50507 6.99022L3.83313 2.31827C3.69467 2.16968 3.61928 1.97313 3.62287 1.77005C3.62645 1.56698 3.70872 1.37322 3.85234 1.22959C3.99596 1.08597 4.18972 1.00371 4.3928 1.00012C4.59588 0.996539 4.79242 1.07192 4.94102 1.21039L10.1669 6.43628C10.3137 6.58325 10.3962 6.78249 10.3962 6.99022C10.3962 7.19795 10.3137 7.39718 10.1669 7.54416L4.94102 12.7701C4.86865 12.8433 4.78237 12.9014 4.68724 12.9409C4.59212 12.9804 4.49007 13.0005 4.38708 13Z" fill="currentColor"></path></svg></chevronrighticon><!----><!----><!----><!----><!----><!----><span class="p-accordion-header-text ng-tns-c3596192458-6 ng-star-inserted"> ارزیابی طرح </span><!----><!----><!----></a></div><div role="region" class="p-toggleable-content ng-tns-c3596192458-6 ng-trigger ng-trigger-tabContent" id="pn_id_16_content" aria-hidden="true" aria-labelledby="pn_id_16_header_action" data-pc-section="toggleablecontent" style="height: 0px; visibility: hidden;"><div class="p-accordion-content ng-tns-c3596192458-6"><div _ngcontent-ng-c4157113975="" class="tw-whitespace-pre-wrap tw-leading-normal ng-tns-c3596192458-6">با توجه به ارزیابی‌های صورت‌گرفته بر روی این شرکت، وضعیت آن، مناسب ارزیابی شده و شرکت توانایی مدیریت منابع و بهروری از آن را خواهد داشت.
+لازم به ذکر است اطلاعات جامع شرکت، طرح، اعتبارسنجی و ریسک‌های سرمایه‌گذاری در گزارش ارزیابی مندرج شده است.</div><!----></div></div></div></p-accordiontab><p-accordiontab _ngcontent-ng-c4157113975="" class="p-element ng-tns-c3596192458-7 ng-star-inserted"><div class="p-accordion-tab ng-tns-c3596192458-7" data-pc-name="accordiontab"><div role="heading" class="p-accordion-header ng-tns-c3596192458-7" aria-level="2" data-pc-section="header"><a role="button" class="p-accordion-header-link ng-tns-c3596192458-7" tabindex="0" id="pn_id_17_header_action" aria-controls="pn_id_17_content" aria-expanded="false" data-pc-section="headeraction"><!----><!----><chevronrighticon class="p-element p-icon-wrapper ng-tns-c3596192458-7 p-accordion-toggle-icon ng-star-inserted" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="p-icon" aria-hidden="true"><path d="M4.38708 13C4.28408 13.0005 4.18203 12.9804 4.08691 12.9409C3.99178 12.9014 3.9055 12.8433 3.83313 12.7701C3.68634 12.6231 3.60388 12.4238 3.60388 12.2161C3.60388 12.0084 3.68634 11.8091 3.83313 11.6622L8.50507 6.99022L3.83313 2.31827C3.69467 2.16968 3.61928 1.97313 3.62287 1.77005C3.62645 1.56698 3.70872 1.37322 3.85234 1.22959C3.99596 1.08597 4.18972 1.00371 4.3928 1.00012C4.59588 0.996539 4.79242 1.07192 4.94102 1.21039L10.1669 6.43628C10.3137 6.58325 10.3962 6.78249 10.3962 6.99022C10.3962 7.19795 10.3137 7.39718 10.1669 7.54416L4.94102 12.7701C4.86865 12.8433 4.78237 12.9014 4.68724 12.9409C4.59212 12.9804 4.49007 13.0005 4.38708 13Z" fill="currentColor"></path></svg></chevronrighticon><!----><!----><!----><!----><!----><!----><span class="p-accordion-header-text ng-tns-c3596192458-7 ng-star-inserted"> معرفی طرح </span><!----><!----><!----></a></div><div role="region" class="p-toggleable-content ng-tns-c3596192458-7 ng-trigger ng-trigger-tabContent" id="pn_id_17_content" aria-hidden="true" aria-labelledby="pn_id_17_header_action" data-pc-section="toggleablecontent" style="height: 0px; visibility: hidden;"><div class="p-accordion-content ng-tns-c3596192458-7"><div _ngcontent-ng-c4157113975="" class="tw-whitespace-pre-wrap tw-leading-normal ng-tns-c3596192458-7">کاربرد لیبل‌های پشت چسب‌دار تولیدی این شرکت به شرح زیر است:
+•	صنایع غذایی: درج اطلاعات محصول، تاریخ تولید و انقضا، ترکیبات و برند روی بسته‌بندی مواد غذایی.
+•	صنایع دارویی: شناسایی داروها، اطلاعات مصرف و هشدارهای بهداشتی روی بسته‌بندی شیشه‌ها و جعبه‌ها.
+•	محصولات آرایشی و بهداشتی: نمایش برند، ترکیبات، دستور مصرف و بارکد.
+•	صنایع شیمیایی: برچسب‌گذاری روی بطری‌ها و ظروف حاوی مواد شوینده، ضدعفونی‌کننده و سایر مواد شیمیایی.
+•	کاربردهای صنعتی: شماره‌گذاری، بارکدگذاری، لیبل‌های هشدار یا فنی روی تجهیزات و قطعات صنعتی.
+</div><!----></div></div></div></p-accordiontab><p-accordiontab _ngcontent-ng-c4157113975="" class="p-element ng-tns-c3596192458-8 ng-star-inserted"><div class="p-accordion-tab ng-tns-c3596192458-8" data-pc-name="accordiontab"><div role="heading" class="p-accordion-header ng-tns-c3596192458-8" aria-level="2" data-pc-section="header"><a role="button" class="p-accordion-header-link ng-tns-c3596192458-8" tabindex="0" id="pn_id_18_header_action" aria-controls="pn_id_18_content" aria-expanded="false" data-pc-section="headeraction"><!----><!----><chevronrighticon class="p-element p-icon-wrapper ng-tns-c3596192458-8 p-accordion-toggle-icon ng-star-inserted" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="p-icon" aria-hidden="true"><path d="M4.38708 13C4.28408 13.0005 4.18203 12.9804 4.08691 12.9409C3.99178 12.9014 3.9055 12.8433 3.83313 12.7701C3.68634 12.6231 3.60388 12.4238 3.60388 12.2161C3.60388 12.0084 3.68634 11.8091 3.83313 11.6622L8.50507 6.99022L3.83313 2.31827C3.69467 2.16968 3.61928 1.97313 3.62287 1.77005C3.62645 1.56698 3.70872 1.37322 3.85234 1.22959C3.99596 1.08597 4.18972 1.00371 4.3928 1.00012C4.59588 0.996539 4.79242 1.07192 4.94102 1.21039L10.1669 6.43628C10.3137 6.58325 10.3962 6.78249 10.3962 6.99022C10.3962 7.19795 10.3137 7.39718 10.1669 7.54416L4.94102 12.7701C4.86865 12.8433 4.78237 12.9014 4.68724 12.9409C4.59212 12.9804 4.49007 13.0005 4.38708 13Z" fill="currentColor"></path></svg></chevronrighticon><!----><!----><!----><!----><!----><!----><span class="p-accordion-header-text ng-tns-c3596192458-8 ng-star-inserted"> پرداخت دوره‌ای </span><!----><!----><!----></a></div><div role="region" class="p-toggleable-content ng-tns-c3596192458-8 ng-trigger ng-trigger-tabContent" id="pn_id_18_content" aria-hidden="true" aria-labelledby="pn_id_18_header_action" data-pc-section="toggleablecontent" style="height: 0px; visibility: hidden;"><div class="p-accordion-content ng-tns-c3596192458-8"><div _ngcontent-ng-c4157113975="" class="tw-whitespace-pre-wrap tw-leading-normal ng-tns-c3596192458-8">تاریخ پیش‌بینی شده پرداخت دوره‌ای طرح به شرح زیر است:
+
+- پرداخت دوره‌ای اول: 11 شهریور ماه 1404
+- پرداخت دوره‌ای دوم: 11 آذر ماه 1404
+- پرداخت دوره‌ای سوم: 11 اسفند ماه 1404
+- پرداخت دوره‌ای چهارم: 11 خرداد ماه 1405
+- پرداخت اصل سرمایه: 21 خرداد ماه 1405
+
+*** تاریخ‌های فوق به صورت پیش‌بینی است.</div><!----></div></div></div></p-accordiontab><p-accordiontab _ngcontent-ng-c4157113975="" class="p-element ng-tns-c3596192458-9 ng-star-inserted"><div class="p-accordion-tab ng-tns-c3596192458-9" data-pc-name="accordiontab"><div role="heading" class="p-accordion-header ng-tns-c3596192458-9" aria-level="2" data-pc-section="header"><a role="button" class="p-accordion-header-link ng-tns-c3596192458-9" tabindex="0" id="pn_id_19_header_action" aria-controls="pn_id_19_content" aria-expanded="false" data-pc-section="headeraction"><!----><!----><chevronrighticon class="p-element p-icon-wrapper ng-tns-c3596192458-9 p-accordion-toggle-icon ng-star-inserted" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="p-icon" aria-hidden="true"><path d="M4.38708 13C4.28408 13.0005 4.18203 12.9804 4.08691 12.9409C3.99178 12.9014 3.9055 12.8433 3.83313 12.7701C3.68634 12.6231 3.60388 12.4238 3.60388 12.2161C3.60388 12.0084 3.68634 11.8091 3.83313 11.6622L8.50507 6.99022L3.83313 2.31827C3.69467 2.16968 3.61928 1.97313 3.62287 1.77005C3.62645 1.56698 3.70872 1.37322 3.85234 1.22959C3.99596 1.08597 4.18972 1.00371 4.3928 1.00012C4.59588 0.996539 4.79242 1.07192 4.94102 1.21039L10.1669 6.43628C10.3137 6.58325 10.3962 6.78249 10.3962 6.99022C10.3962 7.19795 10.3137 7.39718 10.1669 7.54416L4.94102 12.7701C4.86865 12.8433 4.78237 12.9014 4.68724 12.9409C4.59212 12.9804 4.49007 13.0005 4.38708 13Z" fill="currentColor"></path></svg></chevronrighticon><!----><!----><!----><!----><!----><!----><span class="p-accordion-header-text ng-tns-c3596192458-9 ng-star-inserted"> درباره سرمایه‌پذیر </span><!----><!----><!----></a></div><div role="region" class="p-toggleable-content ng-tns-c3596192458-9 ng-trigger ng-trigger-tabContent" id="pn_id_19_content" aria-hidden="true" aria-labelledby="pn_id_19_header_action" data-pc-section="toggleablecontent" style="height: 0px; visibility: hidden;"><div class="p-accordion-content ng-tns-c3596192458-9"><div _ngcontent-ng-c4157113975="" class="tw-whitespace-pre-wrap tw-leading-normal ng-tns-c3596192458-9">شرکت فام‌تک صنعت چاپ از سال ۱۳۹۴ فعالیت خود را در حوزه تولید لیبل‌های پشت چسب‌دار آغاز کرده و تمرکز آن بر تأمین نیاز صنایع مختلف از جمله غذایی، دارویی، آرایشی و شیمیایی است. این شرکت با بهره‌گیری از ماشین‌آلات چاپ پیشرفته و فرایندهای تخصصی چاپ، طراحی، برش و بسته‌بندی، به تولید لیبل‌هایی با کیفیت بالا می‌پردازد. فعالیت‌های آن شامل کل چرخه تولید لیبل از طراحی اولیه تا آماده‌سازی نهایی برای مصرف‌کننده صنعتی است.</div><!----></div></div></div></p-accordiontab><p-accordiontab _ngcontent-ng-c4157113975="" class="p-element ng-tns-c3596192458-10 ng-star-inserted"><div class="p-accordion-tab ng-tns-c3596192458-10" data-pc-name="accordiontab"><div role="heading" class="p-accordion-header ng-tns-c3596192458-10" aria-level="2" data-pc-section="header"><a role="button" class="p-accordion-header-link ng-tns-c3596192458-10" tabindex="0" id="pn_id_20_header_action" aria-controls="pn_id_20_content" aria-expanded="false" data-pc-section="headeraction"><!----><!----><chevronrighticon class="p-element p-icon-wrapper ng-tns-c3596192458-10 p-accordion-toggle-icon ng-star-inserted" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="p-icon" aria-hidden="true"><path d="M4.38708 13C4.28408 13.0005 4.18203 12.9804 4.08691 12.9409C3.99178 12.9014 3.9055 12.8433 3.83313 12.7701C3.68634 12.6231 3.60388 12.4238 3.60388 12.2161C3.60388 12.0084 3.68634 11.8091 3.83313 11.6622L8.50507 6.99022L3.83313 2.31827C3.69467 2.16968 3.61928 1.97313 3.62287 1.77005C3.62645 1.56698 3.70872 1.37322 3.85234 1.22959C3.99596 1.08597 4.18972 1.00371 4.3928 1.00012C4.59588 0.996539 4.79242 1.07192 4.94102 1.21039L10.1669 6.43628C10.3137 6.58325 10.3962 6.78249 10.3962 6.99022C10.3962 7.19795 10.3137 7.39718 10.1669 7.54416L4.94102 12.7701C4.86865 12.8433 4.78237 12.9014 4.68724 12.9409C4.59212 12.9804 4.49007 13.0005 4.38708 13Z" fill="currentColor"></path></svg></chevronrighticon><!----><!----><!----><!----><!----><!----><span class="p-accordion-header-text ng-tns-c3596192458-10 ng-star-inserted"> مزایای طرح </span><!----><!----><!----></a></div><div role="region" class="p-toggleable-content ng-tns-c3596192458-10 ng-trigger ng-trigger-tabContent" id="pn_id_20_content" aria-hidden="true" aria-labelledby="pn_id_20_header_action" data-pc-section="toggleablecontent" style="height: 0px; visibility: hidden;"><div class="p-accordion-content ng-tns-c3596192458-10"><div _ngcontent-ng-c4157113975="" class="tw-whitespace-pre-wrap tw-leading-normal ng-tns-c3596192458-10">سرمایه‌گذاری با حداقل 500 هزار تومان
+طرح شناور
+پیش‌بینی سود 44 درصد سالانه (بدون تضمین سود)
+مدت طرح 12 ماه
+تسویه سود پیش‌بینی شده هر 3 ماه یک بار و اصل سرمایه در انتهای دوره
+</div><!----></div></div></div></p-accordiontab><p-accordiontab _ngcontent-ng-c4157113975="" class="p-element ng-tns-c3596192458-11 ng-star-inserted"><div class="p-accordion-tab ng-tns-c3596192458-11" data-pc-name="accordiontab"><div role="heading" class="p-accordion-header ng-tns-c3596192458-11" aria-level="2" data-pc-section="header"><a role="button" class="p-accordion-header-link ng-tns-c3596192458-11" tabindex="0" id="pn_id_21_header_action" aria-controls="pn_id_21_content" aria-expanded="false" data-pc-section="headeraction"><!----><!----><chevronrighticon class="p-element p-icon-wrapper ng-tns-c3596192458-11 p-accordion-toggle-icon ng-star-inserted" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="p-icon" aria-hidden="true"><path d="M4.38708 13C4.28408 13.0005 4.18203 12.9804 4.08691 12.9409C3.99178 12.9014 3.9055 12.8433 3.83313 12.7701C3.68634 12.6231 3.60388 12.4238 3.60388 12.2161C3.60388 12.0084 3.68634 11.8091 3.83313 11.6622L8.50507 6.99022L3.83313 2.31827C3.69467 2.16968 3.61928 1.97313 3.62287 1.77005C3.62645 1.56698 3.70872 1.37322 3.85234 1.22959C3.99596 1.08597 4.18972 1.00371 4.3928 1.00012C4.59588 0.996539 4.79242 1.07192 4.94102 1.21039L10.1669 6.43628C10.3137 6.58325 10.3962 6.78249 10.3962 6.99022C10.3962 7.19795 10.3137 7.39718 10.1669 7.54416L4.94102 12.7701C4.86865 12.8433 4.78237 12.9014 4.68724 12.9409C4.59212 12.9804 4.49007 13.0005 4.38708 13Z" fill="currentColor"></path></svg></chevronrighticon><!----><!----><!----><!----><!----><!----><span class="p-accordion-header-text ng-tns-c3596192458-11 ng-star-inserted"> سهامداران </span><!----><!----><!----></a></div><div role="region" class="p-toggleable-content ng-tns-c3596192458-11 ng-trigger ng-trigger-tabContent" id="pn_id_21_content" aria-hidden="true" aria-labelledby="pn_id_21_header_action" data-pc-section="toggleablecontent" style="height: 0px; visibility: hidden;"><div class="p-accordion-content ng-tns-c3596192458-11"><div _ngcontent-ng-c4157113975="" class="tw-whitespace-pre-wrap tw-leading-normal ng-tns-c3596192458-11">صادق حسینی خیرآبادی 37.5%
+محمد رستمی 25%
+صابر حسینی خیرآبادی 24%
+زینب محبتی ثمرین 11.5%
+مهناز حسینی خیرآبادی 2%</div><!----></div></div></div></p-accordiontab><p-accordiontab _ngcontent-ng-c4157113975="" class="p-element ng-tns-c3596192458-12 ng-star-inserted"><div class="p-accordion-tab ng-tns-c3596192458-12" data-pc-name="accordiontab"><div role="heading" class="p-accordion-header ng-tns-c3596192458-12" aria-level="2" data-pc-section="header"><a role="button" class="p-accordion-header-link ng-tns-c3596192458-12" tabindex="0" id="pn_id_22_header_action" aria-controls="pn_id_22_content" aria-expanded="false" data-pc-section="headeraction"><!----><!----><chevronrighticon class="p-element p-icon-wrapper ng-tns-c3596192458-12 p-accordion-toggle-icon ng-star-inserted" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="p-icon" aria-hidden="true"><path d="M4.38708 13C4.28408 13.0005 4.18203 12.9804 4.08691 12.9409C3.99178 12.9014 3.9055 12.8433 3.83313 12.7701C3.68634 12.6231 3.60388 12.4238 3.60388 12.2161C3.60388 12.0084 3.68634 11.8091 3.83313 11.6622L8.50507 6.99022L3.83313 2.31827C3.69467 2.16968 3.61928 1.97313 3.62287 1.77005C3.62645 1.56698 3.70872 1.37322 3.85234 1.22959C3.99596 1.08597 4.18972 1.00371 4.3928 1.00012C4.59588 0.996539 4.79242 1.07192 4.94102 1.21039L10.1669 6.43628C10.3137 6.58325 10.3962 6.78249 10.3962 6.99022C10.3962 7.19795 10.3137 7.39718 10.1669 7.54416L4.94102 12.7701C4.86865 12.8433 4.78237 12.9014 4.68724 12.9409C4.59212 12.9804 4.49007 13.0005 4.38708 13Z" fill="currentColor"></path></svg></chevronrighticon><!----><!----><!----><!----><!----><!----><span class="p-accordion-header-text ng-tns-c3596192458-12 ng-star-inserted"> اعضای هیئت مدیره </span><!----><!----><!----></a></div><div role="region" class="p-toggleable-content ng-tns-c3596192458-12 ng-trigger ng-trigger-tabContent" id="pn_id_22_content" aria-hidden="true" aria-labelledby="pn_id_22_header_action" data-pc-section="toggleablecontent" style="height: 0px; visibility: hidden;"><div class="p-accordion-content ng-tns-c3596192458-12"><div _ngcontent-ng-c4157113975="" class="tw-whitespace-pre-wrap tw-leading-normal ng-tns-c3596192458-12">مدیرعامل: مهناز حسینی خیرآبادی
+رئیس هیئت مدیره: صابر حسینی خیرآبادی
+نایب رئیس هیئت مدیره: صادق حسینی خیرآبادی</div><!----></div></div></div></p-accordiontab><!----></div></p-accordion><!----><!----><!----><!----><!----><!----><!----><!----><!----></app-content-viewer><!----><!----><!----></div><!----></p-tabpanel><!----><p-tabpanel _ngcontent-ng-c3596641245="" header="اطلاعات مالی" class="p-element"><div role="tabpanel" class="p-tabview-panel ng-star-inserted" hidden="" id="pn_id_6_content" aria-hidden="true" aria-labelledby="pn_id_6_header_action" data-pc-name="tabpanel"><!----><!----></div><!----></p-tabpanel><!----><p-tabpanel _ngcontent-ng-c3596641245="" header="گزارش  پیشرفت" class="p-element"><div role="tabpanel" class="p-tabview-panel ng-star-inserted" hidden="" id="pn_id_7_content" aria-hidden="true" aria-labelledby="pn_id_7_header_action" data-pc-name="tabpanel"><!----><!----></div><!----></p-tabpanel><!----><p-tabpanel _ngcontent-ng-c3596641245="" header="گالری" class="p-element"><div role="tabpanel" class="p-tabview-panel ng-star-inserted" hidden="" id="pn_id_8_content" aria-hidden="true" aria-labelledby="pn_id_8_header_action" data-pc-name="tabpanel"><!----><!----></div><!----></p-tabpanel><!----></div></div></p-tabview><div _ngcontent-ng-c3596641245="" class="tw-flex tw-gap-4"><a _ngcontent-ng-c3596641245="" href="https://cf.ifb.ir/home/CreateViolation" target="_blank" class="tw-flex tw-items-center tw-gap-2 tw-text-sm tw-ms-auto"><i _ngcontent-ng-c3596641245="" class="pi pi-exclamation-circle"></i>ثبت شکایت</a></div><app-project-comments _ngcontent-ng-c3596641245="" _nghost-ng-c1558256826=""><div _ngcontent-ng-c1558256826="" class="tw-flex tw-flex-col tw-gap-4 tw-p-4"><div _ngcontent-ng-c1558256826="" class="tw-flex tw-items-center tw-justify-between"><h4 _ngcontent-ng-c1558256826="">نظرات</h4><div _ngcontent-ng-c1558256826="">0 نظر</div></div><!----><div _ngcontent-ng-c1558256826="" class="tw-flex tw-flex-col tw-items-center tw-gap-2 tw-self-center ng-star-inserted"><p-message _ngcontent-ng-c1558256826="" severity="warning" text="برای ثبت نظر ابتدا ثبت‌نام کنید یا وارد حساب کاربری خود شوید" class="p-element"><div aria-live="polite" class="p-inline-message p-component p-inline-message-warning"><!----><!----><!----><!----><span class="p-inline-message-text ng-star-inserted">برای ثبت نظر ابتدا ثبت‌نام کنید یا وارد حساب کاربری خود شوید</span><!----><!----><!----></div></p-message><app-login _ngcontent-ng-c1558256826="" _nghost-ng-c1955490944=""><p-button _ngcontent-ng-c1955490944="" severity="warning" size="small" class="p-element ng-star-inserted"><button pripple="" pautofocus="" class="p-ripple p-element p-button p-component p-button-warning p-button-sm" type="button" data-pc-name="button" data-pc-section="root"><div _ngcontent-ng-c1955490944="" class="lg:tw-px-6 tw-py-1 lg:tw-text-lg">ورود/ثبت‌نام</div><!----><!----><!----><!----><!----><!----><!----><!----></button></p-button><p-dialog _ngcontent-ng-c1955490944="" appendto="body" class="p-element ng-tns-c1946505645-13 ng-star-inserted"><!----></p-dialog><!----><!----><!----><!----></app-login></div><!----><!----><!----></div></app-project-comments></div></div><!----></div></app-project-detail><!----></main><app-footer _ngcontent-ng-c1205619564="" _nghost-ng-c2307725653=""><div _ngcontent-ng-c2307725653="" class="surface-primary tw-px-4 tw-py-10"><div _ngcontent-ng-c2307725653="" class="tw-container tw-grid tw-grid-cols-2 lg:tw-grid-cols-5 tw-gap-3 tw-justify-between tw-px-2 tw-text-sm"><div _ngcontent-ng-c2307725653="" class="tw-flex tw-flex-col tw-gap-2"><h4 _ngcontent-ng-c2307725653="">گلرنگ کراد</h4><a _ngcontent-ng-c2307725653="" routerlink="/crowdfunding" href="/crowdfunding">کرادفادینگ</a><a _ngcontent-ng-c2307725653="" routerlink="/about" href="/about">درباره ما</a><div _ngcontent-ng-c2307725653="" class="tw-flex tw-items-center tw-flex-wrap tw-gap-3 tw-mt-auto"><a _ngcontent-ng-c2307725653="" href="https://www.linkedin.com/company/103945412" target="_blank" title="لینکدین"><i _ngcontent-ng-c2307725653="" class="pi pi-linkedin"></i></a><a _ngcontent-ng-c2307725653="" href="https://www.instagram.com/golrangcrowd?igsh=MXNlNGttZnhib2NnOQ==" target="_blank" title="اینستاگرام"><i _ngcontent-ng-c2307725653="" class="pi pi-instagram"></i></a></div></div><div _ngcontent-ng-c2307725653="" class="tw-flex tw-flex-col tw-gap-2"><h4 _ngcontent-ng-c2307725653="">راهنمای استفاده از گلرنک کراد</h4><a _ngcontent-ng-c2307725653="" routerlink="/investing" href="/investing">فرایند سرمایه‌گذاری</a><a _ngcontent-ng-c2307725653="" routerlink="/funding" href="/funding">فرایند تقاضای سرمایه</a><a _ngcontent-ng-c2307725653="" routerlink="/faq" href="/faq">سوالات متداول</a></div><div _ngcontent-ng-c2307725653="" class="tw-flex tw-flex-col tw-gap-2"><h4 _ngcontent-ng-c2307725653="">قوانین و مقررات</h4><a _ngcontent-ng-c2307725653="" routerlink="/terms" href="/terms">قوانین و شرایط سایت</a><a _ngcontent-ng-c2307725653="" routerlink="/risk-statement" href="/risk-statement">هشدار ریسک</a></div><div _ngcontent-ng-c2307725653="" class="tw-flex tw-flex-col tw-gap-2"><h4 _ngcontent-ng-c2307725653="">تماس با ما:</h4><div _ngcontent-ng-c2307725653="">تهران، خیابان ولیعصر، ساعی یکم</div><div _ngcontent-ng-c2307725653="">برج گلرنگ، طبقه هفتم جنوبی</div><a _ngcontent-ng-c2307725653="" href="tel:02142661839" dir="ltr" class="tw-text-right">021 - 42661839</a><a _ngcontent-ng-c2307725653="" href="mailto:info@golrangcrowd.com" dir="ltr" class="tw-text-right">info@golrangcrowd.com</a></div><div _ngcontent-ng-c2307725653=""><h4 _ngcontent-ng-c2307725653="">مجوزها</h4><div _ngcontent-ng-c2307725653="" class="tw-flex tw-flex-wrap tw-gap-2 tw-justify-center"><img _ngcontent-ng-c2307725653="" id="rgvlgwmdxlaphwlabrgw" onclick="window.open('https://cf.ifb.ir/report/PlatformActivityLicenseTrustSealDetail?licenseguid=b1981543-0344-4fc0-a615-8bb34ae2c9ae')" alt="" src="https://cf.ifb.ir/report/PlatformActivityLicenseTrustSealImage?licenseguid=b1981543-0344-4fc0-a615-8bb34ae2c9ae" class="tw-rounded-md tw-w-24 tw-object-contain tw-cursor-pointer tw-bg-white"><a _ngcontent-ng-c2307725653="" referrerpolicy="origin" target="_blank" href="https://trustseal.enamad.ir/?id=498266&amp;Code=qu2jdxNrASdc252iXoGAC6RjJ5yBirte"><img _ngcontent-ng-c2307725653="" referrerpolicy="origin" src="https://trustseal.enamad.ir/logo.aspx?id=498266&amp;Code=qu2jdxNrASdc252iXoGAC6RjJ5yBirte" alt="" code="qu2jdxNrASdc252iXoGAC6RjJ5yBirte" class="tw-rounded-md tw-w-24 tw-cursor-pointer tw-bg-white"></a><a _ngcontent-ng-c2307725653="" href="https://kouroshinvest.ir/" target="_blank" title="سبدگردان کورش"><img _ngcontent-ng-c2307725653="" src="/assets/images/footer/kouroshinvest.jpg" alt="سبدگردان کورش" class="tw-rounded-md tw-w-24"></a></div><div _ngcontent-ng-c2307725653="">گلرنگ کراد دارای مجوز از فرابورس بوده و تحت نظارت نهاد مالی سبدگردان کوروش فعالیت می نماید.</div></div></div></div></app-footer></div></app-default-layout><!----><p-toast _ngcontent-ng-c4038419596="" class="p-element ng-tns-c1067615279-0"><div class="p-toast p-component ng-tns-c1067615279-0 p-toast-top-right"><!----></div></p-toast></app-root>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
+<link rel="modulepreload" href="chunk-AVHNZHYG.js"><link rel="modulepreload" href="chunk-BIGBC6RF.js"><link rel="modulepreload" href="chunk-GAL4ENT6.js"><script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-UOJ72XPO.js" type="module"></script>
+
+</body></html>

@@ -1,17 +1,25 @@
 {
-  "batch_date": "2025-08-17 18:20:05",
-  "total_projects": 25,
-  "successful_projects": 25,
+  "batch_date": "2025-08-17 19:50:20",
+  "total_projects": 35,
+  "successful_projects": 35,
   "failed_projects": 0,
-  "total_time_seconds": 13.777765989303589,
-  "average_time_per_project": 0.5511106395721436,
+  "total_time_seconds": 64.91145539283752,
+  "average_time_per_project": 1.8546130112239292,
   "project_results": [
     {
       "project": "aticrowd",
       "status": "success"
     },
     {
+      "project": "atiyeiranian",
+      "status": "success"
+    },
+    {
       "project": "charisma",
+      "status": "success"
+    },
+    {
+      "project": "dariccrowd",
       "status": "success"
     },
     {
@@ -27,6 +35,10 @@
       "status": "success"
     },
     {
+      "project": "golrang",
+      "status": "success"
+    },
+    {
       "project": "halalfund",
       "status": "success"
     },
@@ -39,7 +51,23 @@
       "status": "success"
     },
     {
+      "project": "ideafund",
+      "status": "success"
+    },
+    {
       "project": "ifund",
+      "status": "success"
+    },
+    {
+      "project": "isatiscrowd",
+      "status": "success"
+    },
+    {
+      "project": "jamsepar",
+      "status": "success"
+    },
+    {
+      "project": "karamad",
       "status": "success"
     },
     {
@@ -75,11 +103,19 @@
       "status": "success"
     },
     {
+      "project": "rayfund",
+      "status": "success"
+    },
+    {
       "project": "razavi",
       "status": "success"
     },
     {
       "project": "sepehrino",
+      "status": "success"
+    },
+    {
+      "project": "shariffund",
       "status": "success"
     },
     {
@@ -92,6 +128,10 @@
     },
     {
       "project": "vestacrowd",
+      "status": "success"
+    },
+    {
+      "project": "yektacrowd",
       "status": "success"
     },
     {

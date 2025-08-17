@@ -1,0 +1,187 @@
+{
+  "project_name": "golrang",
+  "evaluation_date": "2025-08-17T19:59:19.809098",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 7.0,
+    "average_confidence": 1.0
+  },
+  "function_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "total_confidence": 7.0,
+    "average_confidence": 1.0
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "total_confidence": 7.0,
+    "average_confidence": 1.0
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "فام تک صنعت چاپ",
+      "function_value": "فام تک صنعت چاپ",
+      "expert_value": "فام تک صنعت چاپ",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"فام تک صنعت چاپ\" (Fam Tek Sanat Chap) is clearly present in the HTML content and correctly identifies the company associated with the crowdfunding project. It appears multiple times within the text, confirming its accuracy.",
+        "function_explanation": "The extracted value \"فام تک صنعت چاپ\" (Fam Tek Sanat Chap) is clearly present in the HTML content and correctly identifies the company associated with the crowdfunding project. It appears multiple times within the text, confirming its accuracy.",
+        "expert_explanation": "The extracted value \"فام تک صنعت چاپ\" (Fam Tek Sanat Chap) is clearly present in the HTML content and correctly identifies the company associated with the crowdfunding project. It appears multiple times within the text, confirming its accuracy.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "12 ماه",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The HTML content clearly states \"دوره سرمایه‌گذاری12 ماه\" which translates to \"Investment period 12 months\". The extracted value \"12 ماه\" is present and accurately represents the duration of the investment.",
+        "function_explanation": "The HTML content clearly states \"دوره سرمایه‌گذاری12 ماه\" which translates to \"Investment period 12 months\". The extracted value \"12 ماه\" is present and accurately represents the duration of the investment.",
+        "expert_explanation": "The HTML content clearly states \"دوره سرمایه‌گذاری12 ماه\" which translates to \"Investment period 12 months\". The extracted value \"12 ماه\" is present and accurately represents the duration of the investment.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "guarantee": {
+      "basic_value": "سایر\n(این طرح فاقد ضمانت نامه اصل و سود سرمایه و دارای وثایق مالی (چک متقاضی و شخص ثالث) می‌باشد که در بخش اطلاعات مالی، وثایق اخذ شده قابل مشاهده است.)",
+      "function_value": "سایر",
+      "expert_value": "سایر (این طرح فاقد ضمانت نامه اصل و سود سرمایه و دارای وثایق مالی (چک متقاضی و شخص ثالث) می‌باشد که در بخش اطلاعات مالی، وثایق اخذ شده قابل مشاهده است.)",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "All three groups correctly extracted the guarantee information as it appears in the source HTML. The text \"سایر (این طرح فاقد ضمانت نامه اصل و سود سرمایه و دارای وثایق مالی (چک متقاضی و شخص ثالث) می‌باشد که در بخش اطلاعات مالی، وثایق اخذ شده قابل مشاهده است.)\" is present in the \"وثایق طرح\" section and accurately describes the lack of guarantees for principal and profit, and the presence of financial collateral.",
+        "function_explanation": "All three groups correctly extracted the guarantee information as it appears in the source HTML. The text \"سایر (این طرح فاقد ضمانت نامه اصل و سود سرمایه و دارای وثایق مالی (چک متقاضی و شخص ثالث) می‌باشد که در بخش اطلاعات مالی، وثایق اخذ شده قابل مشاهده است.)\" is present in the \"وثایق طرح\" section and accurately describes the lack of guarantees for principal and profit, and the presence of financial collateral.",
+        "expert_explanation": "All three groups correctly extracted the guarantee information as it appears in the source HTML. The text \"سایر (این طرح فاقد ضمانت نامه اصل و سود سرمایه و دارای وثایق مالی (چک متقاضی و شخص ثالث) می‌باشد که در بخش اطلاعات مالی، وثایق اخذ شده قابل مشاهده است.)\" is present in the \"وثایق طرح\" section and accurately describes the lack of guarantees for principal and profit, and the presence of financial collateral.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ],
+        "response_groups": 3
+      }
+    },
+    "investment_amount": {
+      "basic_value": "25 میلیارد تومان",
+      "function_value": "25 میلیارد تومان",
+      "expert_value": "25 میلیارد تومان",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"25 میلیارد تومان\" is explicitly stated in the HTML content as the amount \"تامین شده 25 میلیارد تومان\" (funded 25 billion Tomans) and \"سرمایه مورد نیاز 25 میلیارد تومان\" (required capital 25 billion Tomans). It accurately represents the investment amount.",
+        "function_explanation": "The extracted value \"25 میلیارد تومان\" is explicitly stated in the HTML content as the amount \"تامین شده 25 میلیارد تومان\" (funded 25 billion Tomans) and \"سرمایه مورد نیاز 25 میلیارد تومان\" (required capital 25 billion Tomans). It accurately represents the investment amount.",
+        "expert_explanation": "The extracted value \"25 میلیارد تومان\" is explicitly stated in the HTML content as the amount \"تامین شده 25 میلیارد تومان\" (funded 25 billion Tomans) and \"سرمایه مورد نیاز 25 میلیارد تومان\" (required capital 25 billion Tomans). It accurately represents the investment amount.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "name": {
+      "basic_value": "تولید لیبل پشت چسب دار",
+      "function_value": "تولید لیبل پشت چسب دار",
+      "expert_value": "تولید لیبل پشت چسب دار",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تولید لیبل پشت چسب دار\" (Production of Adhesive Labels) is explicitly stated as the name of the project multiple times within the HTML content, including in the \"نام طرح\" (Project Name) section. It accurately represents the project's focus.",
+        "function_explanation": "The extracted value \"تولید لیبل پشت چسب دار\" (Production of Adhesive Labels) is explicitly stated as the name of the project multiple times within the HTML content, including in the \"نام طرح\" (Project Name) section. It accurately represents the project's focus.",
+        "expert_explanation": "The extracted value \"تولید لیبل پشت چسب دار\" (Production of Adhesive Labels) is explicitly stated as the name of the project multiple times within the HTML content, including in the \"نام طرح\" (Project Name) section. It accurately represents the project's focus.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": "44",
+      "function_value": 44.0,
+      "expert_value": 44.0,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The source HTML clearly states \"پیش‌بینی سود سالانه (بدون تضمین سود)44%\" which translates to \"Annual profit forecast (profit not guaranteed) 44%\". Group 2 correctly extracts this as 44.0. Group 1 extracts 44, which is also present, but the inclusion of the decimal point in Group 2's response is preferable as it indicates a percentage value.",
+        "function_explanation": "The source HTML clearly states \"پیش‌بینی سود سالانه (بدون تضمین سود)44%\" which translates to \"Annual profit forecast (profit not guaranteed) 44%\". Group 2 correctly extracts this as 44.0. Group 1 extracts 44, which is also present, but the inclusion of the decimal point in Group 2's response is preferable as it indicates a percentage value.",
+        "expert_explanation": "The source HTML clearly states \"پیش‌بینی سود سالانه (بدون تضمین سود)44%\" which translates to \"Annual profit forecast (profit not guaranteed) 44%\". Group 2 correctly extracts this as 44.0. Group 1 extracts 44, which is also present, but the inclusion of the decimal point in Group 2's response is preferable as it indicates a percentage value.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "طرح در مرحله سرمایه‌گذاری نیست",
+      "function_value": "طرح در مرحله سرمایه‌گذاری نیست",
+      "expert_value": "طرح در مرحله سرمایه‌گذاری نیست",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"طرح در مرحله سرمایه‌گذاری نیست\" (The project is not in the investment stage) is directly present in the provided HTML content. It accurately reflects the status of the project as stated on the page.",
+        "function_explanation": "The extracted value \"طرح در مرحله سرمایه‌گذاری نیست\" (The project is not in the investment stage) is directly present in the provided HTML content. It accurately reflects the status of the project as stated on the page.",
+        "expert_explanation": "The extracted value \"طرح در مرحله سرمایه‌گذاری نیست\" (The project is not in the investment stage) is directly present in the provided HTML content. It accurately reflects the status of the project as stated on the page.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    }
+  }
+}

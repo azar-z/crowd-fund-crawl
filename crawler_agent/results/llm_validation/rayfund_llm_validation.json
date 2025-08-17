@@ -1,0 +1,186 @@
+{
+  "project_name": "rayfund",
+  "evaluation_date": "2025-08-17T20:03:25.668203",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.95,
+    "average_confidence": 0.993
+  },
+  "function_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "total_confidence": 6.95,
+    "average_confidence": 0.993
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "total_confidence": 6.95,
+    "average_confidence": 0.993
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "داریا توسعه آتیه",
+      "function_value": "داریا توسعه آتیه",
+      "expert_value": "داریا توسعه آتیه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"داریا توسعه آتیه\" (Darya توسعه Atiyeh) is explicitly present in the HTML content as the \"نام شرکت\" (company name) under the \"اطلاعات شرکت\" (company information) section. It is accurately extracted.",
+        "function_explanation": "The extracted value \"داریا توسعه آتیه\" (Darya توسعه Atiyeh) is explicitly present in the HTML content as the \"نام شرکت\" (company name) under the \"اطلاعات شرکت\" (company information) section. It is accurately extracted.",
+        "expert_explanation": "The extracted value \"داریا توسعه آتیه\" (Darya توسعه Atiyeh) is explicitly present in the HTML content as the \"نام شرکت\" (company name) under the \"اطلاعات شرکت\" (company information) section. It is accurately extracted.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "12 ماهه",
+      "function_value": "12 ماهه",
+      "expert_value": "12 ماهه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"12 ماهه\" (12 months) is explicitly present in the HTML content under the label \"دوره سرمایه گذاری :\" (Investment period:). It accurately represents the duration of the investment.",
+        "function_explanation": "The extracted value \"12 ماهه\" (12 months) is explicitly present in the HTML content under the label \"دوره سرمایه گذاری :\" (Investment period:). It accurately represents the duration of the investment.",
+        "expert_explanation": "The extracted value \"12 ماهه\" (12 months) is explicitly present in the HTML content under the label \"دوره سرمایه گذاری :\" (Investment period:). It accurately represents the duration of the investment.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "guarantee": {
+      "basic_value": "بدون تضمین سود، با تضمین بازپرداخت اصل سرمایه توسط بانک ملی ایران",
+      "function_value": "بدون تضمین سود، با تضمین بازپرداخت اصل سرمایه توسط بانک ملی ایران",
+      "expert_value": "بدون تضمین سود، با تضمین بازپرداخت اصل سرمایه توسط بانک ملی ایران",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"بدون تضمین سود، با تضمین بازپرداخت اصل سرمایه توسط بانک ملی ایران\" appears multiple times verbatim within the provided HTML content, specifically under the \"تضمین اصل سرمایه:\" label. It accurately represents the guarantee offered for the investment.",
+        "function_explanation": "The extracted value \"بدون تضمین سود، با تضمین بازپرداخت اصل سرمایه توسط بانک ملی ایران\" appears multiple times verbatim within the provided HTML content, specifically under the \"تضمین اصل سرمایه:\" label. It accurately represents the guarantee offered for the investment.",
+        "expert_explanation": "The extracted value \"بدون تضمین سود، با تضمین بازپرداخت اصل سرمایه توسط بانک ملی ایران\" appears multiple times verbatim within the provided HTML content, specifically under the \"تضمین اصل سرمایه:\" label. It accurately represents the guarantee offered for the investment.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "investment_amount": {
+      "basic_value": "۱۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال",
+      "function_value": "۲۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال",
+      "expert_value": "۲۵٬۰۰۰٬۰۰۰٬۰۰۰",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 extracted \"۱۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال\" which represents the *minimum* investment amount (\"حداقل میزان شناوری\"). The field asks for the investment amount, which can be either minimum or total. However, the total investment amount is more prominent and is \"۲۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال\" as stated in multiple places (\"کل سرمایه مورد نیاز :۲۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال\", \"حداکثر میزان سرمایه پذیری :۲۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال\"). Groups 2 and 3 both correctly extracted \"۲۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال\" or \"۲۵٬۰۰۰٬۰۰۰٬۰۰۰\", which is the total investment amount. Group 3 is missing the unit \"ریال\" but the number is correct and present in the source.",
+        "function_explanation": "Group 1 extracted \"۱۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال\" which represents the *minimum* investment amount (\"حداقل میزان شناوری\"). The field asks for the investment amount, which can be either minimum or total. However, the total investment amount is more prominent and is \"۲۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال\" as stated in multiple places (\"کل سرمایه مورد نیاز :۲۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال\", \"حداکثر میزان سرمایه پذیری :۲۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال\"). Groups 2 and 3 both correctly extracted \"۲۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال\" or \"۲۵٬۰۰۰٬۰۰۰٬۰۰۰\", which is the total investment amount. Group 3 is missing the unit \"ریال\" but the number is correct and present in the source.",
+        "expert_explanation": "Group 1 extracted \"۱۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال\" which represents the *minimum* investment amount (\"حداقل میزان شناوری\"). The field asks for the investment amount, which can be either minimum or total. However, the total investment amount is more prominent and is \"۲۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال\" as stated in multiple places (\"کل سرمایه مورد نیاز :۲۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال\", \"حداکثر میزان سرمایه پذیری :۲۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال\"). Groups 2 and 3 both correctly extracted \"۲۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال\" or \"۲۵٬۰۰۰٬۰۰۰٬۰۰۰\", which is the total investment amount. Group 3 is missing the unit \"ریال\" but the number is correct and present in the source.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 3
+      }
+    },
+    "name": {
+      "basic_value": "تامین سرمایه در گردش تولید بدنه لامپ های LED",
+      "function_value": "تامین سرمایه در گردش تولید بدنه لامپ های LED",
+      "expert_value": "تامین سرمایه در گردش تولید بدنه لامپ های LED",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تامین سرمایه در گردش تولید بدنه لامپ های LED\" appears multiple times at the beginning of the HTML content and accurately represents the name/title of the project. It is a complete and accurate extraction.",
+        "function_explanation": "The extracted value \"تامین سرمایه در گردش تولید بدنه لامپ های LED\" appears multiple times at the beginning of the HTML content and accurately represents the name/title of the project. It is a complete and accurate extraction.",
+        "expert_explanation": "The extracted value \"تامین سرمایه در گردش تولید بدنه لامپ های LED\" appears multiple times at the beginning of the HTML content and accurately represents the name/title of the project. It is a complete and accurate extraction.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": "45",
+      "function_value": 45.0,
+      "expert_value": 45.0,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The HTML content clearly states \"۴۵% سود پیش بینی شده\" (45% predicted profit) multiple times. Group 2 provides \"45.0\" which is the correct numerical representation of the profit percentage. Group 1 provides \"45\" which is acceptable, but less precise than \"45.0\". Since the prompt asks to prefer values with units, Group 2 is preferred.",
+        "function_explanation": "The HTML content clearly states \"۴۵% سود پیش بینی شده\" (45% predicted profit) multiple times. Group 2 provides \"45.0\" which is the correct numerical representation of the profit percentage. Group 1 provides \"45\" which is acceptable, but less precise than \"45.0\". Since the prompt asks to prefer values with units, Group 2 is preferred.",
+        "expert_explanation": "The HTML content clearly states \"۴۵% سود پیش بینی شده\" (45% predicted profit) multiple times. Group 2 provides \"45.0\" which is the correct numerical representation of the profit percentage. Group 1 provides \"45\" which is acceptable, but less precise than \"45.0\". Since the prompt asks to prefer values with units, Group 2 is preferred.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "موفقیت جمع آوری وجوه",
+      "function_value": "موفقیت جمع آوری وجوه",
+      "expert_value": "موفقیت جمع آوری وجوه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"موفقیت جمع آوری وجوه\" (meaning \"successful fundraising\") is directly present in the HTML content under the label \"وضعیت :\" (meaning \"status:\"). It accurately reflects the project's current status.",
+        "function_explanation": "The extracted value \"موفقیت جمع آوری وجوه\" (meaning \"successful fundraising\") is directly present in the HTML content under the label \"وضعیت :\" (meaning \"status:\"). It accurately reflects the project's current status.",
+        "expert_explanation": "The extracted value \"موفقیت جمع آوری وجوه\" (meaning \"successful fundraising\") is directly present in the HTML content under the label \"وضعیت :\" (meaning \"status:\"). It accurately reflects the project's current status.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    }
+  }
+}

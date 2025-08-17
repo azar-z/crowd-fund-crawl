@@ -1,0 +1,77 @@
+{
+  "project_name": "isatiscrowd",
+  "validation_date": "2025-08-17T19:53:25.111108",
+  "basic_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "پالود پارسیان خیام",
+      "function_value": "پالود پارسیان خیام",
+      "expert_value": "پالود پارسیان خیام",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "12 ماه",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "این طرح شامل پوشش های بیمه ای نیست",
+      "function_value": "این طرح شامل پوشش های بیمه ای نیست",
+      "expert_value": "این طرح شامل پوشش های بیمه ای نیست",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "1,000,000 ریال",
+      "function_value": "250,000,000,000 ریال",
+      "expert_value": "250,000,000,000 ریال",
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "تولید و فروش گروه محصولات پنیرخامه ای",
+      "function_value": "تولید و فروش گروه محصولات پنیرخامه ای",
+      "expert_value": "تولید و فروش گروه محصولات پنیرخامه ای",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "44.00",
+      "function_value": 44.0,
+      "expert_value": 44.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "آغاز جمع آوری وجوه",
+      "function_value": "آغاز جمع آوری وجوه",
+      "expert_value": "آغاز جمع آوری وجوه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    }
+  }
+}

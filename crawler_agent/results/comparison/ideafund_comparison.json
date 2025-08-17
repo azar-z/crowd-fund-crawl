@@ -1,0 +1,45 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 4.476645231246948,
+    "data": {
+      "project": {
+        "name": "تجهیز بخشی از خط تولید ایمپلنت دندان",
+        "company": "درسان طب پارس",
+        "profit": "22.5",
+        "guarantee": "با تضمین صندوق تجهیزات پزشکی برای اصل سرمایه",
+        "investment_amount": "15,000,000,000",
+        "duration": "6 ماه",
+        "status": "موفق شده"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": false,
+    "processing_time": 3.089553117752075,
+    "data": null
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 4.892010927200317,
+    "data": {
+      "project": {
+        "company": "درسان طب پارس",
+        "duration": "6 ماه",
+        "investment_amount": "25,000,000,000",
+        "guarantee": "با تضمین صندوق تجهیزات پزشکی برای اصل سرمایه",
+        "profit": 22.5,
+        "status": "موفق شده",
+        "name": "تجهیز بخشی از خط تولید ایمپلنت دندان"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 2,
+    "total_count": 3,
+    "fastest_agent": "Basic Agent"
+  }
+}

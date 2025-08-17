@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.4968783855438232,
+    "data": {
+      "project": {
+        "name": "تأمین سرمایه در گردش عرضه میلگرد فولادی",
+        "company": "گروه شرکت های ساخت و ساز بین المللی بیشمار",
+        "profit": "43",
+        "guarantee": "بدون تضمین سود و با ضمانت اصل سرمایه از بانک ملی ایران (تعهد پرداخت)",
+        "investment_amount": "250,000",
+        "duration": "12 ماه",
+        "status": "active"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 1.8915395736694336,
+    "data": {
+      "project": {
+        "company": "گروه شرکت های ساخت و ساز بین المللی بیشمار",
+        "duration": "12 ماه",
+        "investment_amount": "250,000 میلیون ﷼",
+        "guarantee": "بدون تضمین سود و با ضمانت اصل سرمایه از بانک ملی ایران (تعهد پرداخت)",
+        "profit": 43.0,
+        "status": "active",
+        "name": "تأمین سرمایه در گردش عرضه میلگرد فولادی"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 10.115601062774658,
+    "data": {
+      "project": {
+        "duration": "12 ماه",
+        "company": "گروه شرکت های ساخت و ساز بین المللی بیشمار",
+        "investment_amount": "250 میلیارد ﷼",
+        "guarantee": "بدون تضمین سود و با ضمانت اصل سرمایه از بانک ملی ایران (تعهد پرداخت)",
+        "profit": 43.0,
+        "status": null,
+        "name": "تأمین سرمایه در گردش عرضه میلگرد فولادی"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}
