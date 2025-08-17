@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.503798484802246,
+    "data": {
+      "project": {
+        "name": "تامین بخشی از منابع مالی مورد نیاز  ساخت پروژه نسیم محمودیه",
+        "company": "پایاسازه پاسارگاد",
+        "profit": 37,
+        "guarantee": "چک صیادی",
+        "investment_amount": "57,763,150,000",
+        "duration": "6 ماهه",
+        "status": "موفق"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 1.7786240577697754,
+    "data": {
+      "project": {
+        "duration": "6 ماهه",
+        "company": "پایاسازه پاسارگاد",
+        "investment_amount": "57,763,150,000",
+        "guarantee": "چک صیادی",
+        "profit": 37.0,
+        "status": "موفق",
+        "name": "تامین بخشی از منابع مالی مورد نیاز  ساخت پروژه نسیم محمودیه"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 4.56990385055542,
+    "data": {
+      "project": {
+        "company": "پایاسازه پاسارگاد",
+        "duration": "6 ماهه",
+        "investment_amount": "57,763,150,000",
+        "guarantee": " چک صیادی ",
+        "profit": 37.0,
+        "status": "موفق",
+        "name": "تامین بخشی از منابع مالی مورد نیاز  ساخت پروژه نسیم محمودیه"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

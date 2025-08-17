@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.1271519660949707,
+    "data": {
+      "project": {
+        "name": "تأمین سرمایه در گردش جهت خرید و فروش شمش فولادی گرید 5",
+        "company": "شرکت سبدگردان هامرز",
+        "profit": "43",
+        "guarantee": "بدون تضمین سود و با تضمین ضمانت نامه تعهد پرداخت برای اصل سرمایه",
+        "investment_amount": "۲۵,۰۰۰,۰۰۰,۰۰۰ تومان",
+        "duration": "۱۲ ماه",
+        "status": null
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 1.7161734104156494,
+    "data": {
+      "project": {
+        "duration": "۱۲ ماه",
+        "company": "شرکت سبدگردان هامرز",
+        "investment_amount": "۲۵,۰۰۰,۰۰۰,۰۰۰ تومان",
+        "guarantee": "بدون تضمین سود و با تضمین ضمانت نامه تعهد پرداخت برای اصل سرمایه",
+        "profit": 43.0,
+        "status": null,
+        "name": "تأمین سرمایه در گردش جهت خرید و فروش شمش فولادی گرید 5"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 8.882479667663574,
+    "data": {
+      "project": {
+        "company": "شرکت لوور",
+        "duration": "۱۲ ماه",
+        "investment_amount": "۲۵,۰۰۰,۰۰۰,۰۰۰ تومان",
+        "guarantee": "بدون تضمین سود و با تضمین ضمانت نامه تعهد پرداخت برای اصل سرمایه",
+        "profit": 43.0,
+        "status": null,
+        "name": "تأمین سرمایه در گردش جهت خرید و فروش شمش فولادی گرید 5"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

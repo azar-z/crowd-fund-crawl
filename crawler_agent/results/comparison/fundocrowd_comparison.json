@@ -1,0 +1,47 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 3.063192129135132,
+    "data": {
+      "project": {
+        "name": "تامین سرمایه در گردش تامین قطعات کیت کلاچ 215 میلیمتری",
+        "company": "بازرگانی سایپا یدک (شرکت سهامی خاص)",
+        "profit": "42",
+        "guarantee": " ارائه ضمانت‌نامه (دریافت فایل)",
+        "investment_amount": "25 میلیارد تومان",
+        "duration": "12 ماه",
+        "status": "موفق"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 2.3066930770874023,
+    "data": {
+      "project": "project name : تامین سرمایه در گردش تامین قطعات کیت کلاچ 215 میلیمتری\ncompany : بازرگانی سایپا یدک (شرکت سهامی خاص)\nprofit : 42\nguarantee : ارائه ضمانت‌نامه (دریافت فایل)\ninvestment_amount: 25,000,000,000 تومان\nduration: 12 ماه\nstatus: موفق"
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 5.847436904907227,
+    "data": {
+      "project": {
+        "duration": "12 ماه",
+        "company": "بازرگانی سایپا یدک (شرکت سهامی خاص)",
+        "investment_amount": "25 میلیارد تومان",
+        "guarantee": " ارائه ضمانت‌نامه (دریافت فایل)",
+        "profit": 42.0,
+        "status": "موفق",
+        "name": "تامین سرمایه در گردش تامین قطعات کیت کلاچ 215 میلیمتری"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

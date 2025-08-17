@@ -1,0 +1,77 @@
+{
+  "project_name": "novincrowd",
+  "validation_date": "2025-08-17T18:24:24.970432",
+  "basic_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "صنایع غذایی بهروز نیک",
+      "function_value": "صنایع غذایی بهروز نیک",
+      "expert_value": "صنایع غذایی بهروز نیک",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "12 ماه",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "بدون تضمین سود و با ضمانت نامه تعهد پرداخت بانک کشاورزی برای اصل سرمایه",
+      "function_value": "بدون تضمین سود و با ضمانت نامه تعهد پرداخت بانک کشاورزی برای اصل سرمایه",
+      "expert_value": "بدون تضمین سود و با ضمانت نامه تعهد پرداخت بانک کشاورزی برای اصل سرمایه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "250,000,000,000",
+      "function_value": "250,000,000,000",
+      "expert_value": "250,000,000,000",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "تامین سرمایه در گردش بهبود فرمولاسیون تولید انواع کنسرو",
+      "function_value": "تامین سرمایه در گردش بهبود فرمولاسیون تولید انواع کنسرو",
+      "expert_value": "تامین سرمایه در گردش بهبود فرمولاسیون تولید انواع کنسرو",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "44.0",
+      "function_value": 44.0,
+      "expert_value": 44.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "موفقیت جمع آوری وجوه",
+      "function_value": "موفقیت جمع آوری وجوه",
+      "expert_value": "موفقیت جمع آوری وجوه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    }
+  }
+}

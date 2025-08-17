@@ -1,0 +1,77 @@
+{
+  "project_name": "smartfunding",
+  "validation_date": "2025-08-17T18:26:43.402671",
+  "basic_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "شرکت سبدگردان هامرز",
+      "function_value": "شرکت سبدگردان هامرز",
+      "expert_value": "شرکت لوور",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "۱۲ ماه",
+      "function_value": "۱۲ ماه",
+      "expert_value": "۱۲ ماه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "بدون تضمین سود و با تضمین ضمانت نامه تعهد پرداخت برای اصل سرمایه",
+      "function_value": "بدون تضمین سود و با تضمین ضمانت نامه تعهد پرداخت برای اصل سرمایه",
+      "expert_value": "بدون تضمین سود و با تضمین ضمانت نامه تعهد پرداخت برای اصل سرمایه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "۲۵,۰۰۰,۰۰۰,۰۰۰ تومان",
+      "function_value": "۲۵,۰۰۰,۰۰۰,۰۰۰ تومان",
+      "expert_value": "۲۵,۰۰۰,۰۰۰,۰۰۰ تومان",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "تأمین سرمایه در گردش جهت خرید و فروش شمش فولادی گرید 5",
+      "function_value": "تأمین سرمایه در گردش جهت خرید و فروش شمش فولادی گرید 5",
+      "expert_value": "تأمین سرمایه در گردش جهت خرید و فروش شمش فولادی گرید 5",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "43",
+      "function_value": 43.0,
+      "expert_value": 43.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": null,
+      "function_value": null,
+      "expert_value": null,
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": false
+    }
+  }
+}

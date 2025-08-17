@@ -1,0 +1,77 @@
+{
+  "project_name": "zotch",
+  "validation_date": "2025-08-17T18:27:50.717947",
+  "basic_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "پایاسازه پاسارگاد",
+      "function_value": "پایاسازه پاسارگاد",
+      "expert_value": "پایاسازه پاسارگاد",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "6 ماهه",
+      "function_value": "6 ماهه",
+      "expert_value": "6 ماهه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "چک صیادی",
+      "function_value": "چک صیادی",
+      "expert_value": " چک صیادی ",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "57,763,150,000",
+      "function_value": "57,763,150,000",
+      "expert_value": "57,763,150,000",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "تامین بخشی از منابع مالی مورد نیاز  ساخت پروژه نسیم محمودیه",
+      "function_value": "تامین بخشی از منابع مالی مورد نیاز  ساخت پروژه نسیم محمودیه",
+      "expert_value": "تامین بخشی از منابع مالی مورد نیاز  ساخت پروژه نسیم محمودیه",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": 37,
+      "function_value": 37.0,
+      "expert_value": 37.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "موفق",
+      "function_value": "موفق",
+      "expert_value": "موفق",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    }
+  }
+}

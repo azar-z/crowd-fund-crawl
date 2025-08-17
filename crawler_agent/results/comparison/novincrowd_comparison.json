@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.7024030685424805,
+    "data": {
+      "project": {
+        "name": "تامین سرمایه در گردش بهبود فرمولاسیون تولید انواع کنسرو",
+        "company": "صنایع غذایی بهروز نیک",
+        "profit": "44.0",
+        "guarantee": "بدون تضمین سود و با ضمانت نامه تعهد پرداخت بانک کشاورزی برای اصل سرمایه",
+        "investment_amount": "250,000,000,000",
+        "duration": "12 ماه",
+        "status": "موفقیت جمع آوری وجوه"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 1.7539966106414795,
+    "data": {
+      "project": {
+        "duration": "12 ماه",
+        "company": "صنایع غذایی بهروز نیک",
+        "investment_amount": "250,000,000,000",
+        "guarantee": "بدون تضمین سود و با ضمانت نامه تعهد پرداخت بانک کشاورزی برای اصل سرمایه",
+        "profit": 44.0,
+        "status": "موفقیت جمع آوری وجوه",
+        "name": "تامین سرمایه در گردش بهبود فرمولاسیون تولید انواع کنسرو"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 6.766743421554565,
+    "data": {
+      "project": {
+        "company": "صنایع غذایی بهروز نیک",
+        "duration": "12 ماه",
+        "investment_amount": "250,000,000,000",
+        "guarantee": "بدون تضمین سود و با ضمانت نامه تعهد پرداخت بانک کشاورزی برای اصل سرمایه",
+        "profit": 44.0,
+        "status": "موفقیت جمع آوری وجوه",
+        "name": "تامین سرمایه در گردش بهبود فرمولاسیون تولید انواع کنسرو"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

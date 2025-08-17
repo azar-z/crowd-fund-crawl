@@ -1,0 +1,77 @@
+{
+  "project_name": "dayancrowd",
+  "validation_date": "2025-08-17T18:21:00.947512",
+  "basic_agent": {
+    "correct": 3,
+    "incorrect": 4,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 4,
+    "incorrect": 3,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "انتشاراتی سرزمین بچه‌های خوشحال",
+      "function_value": "انتشاراتی سرزمین بچه‌های خوشحال",
+      "expert_value": "انتشاراتی سرزمین بچه‌های خوشحال",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "6",
+      "function_value": "6 ماه",
+      "expert_value": "6 ماه",
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "دارای ضمانت نامه",
+      "function_value": "دارای ضمانت نامه",
+      "expert_value": "دارای ضمانت نامه ",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": false
+    },
+    "investment_amount": {
+      "basic_value": "250,000,000,000",
+      "function_value": "250,000,000,000",
+      "expert_value": "250,000,000,000 ریال",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "خرید کاغذ خام  و  تولید کتب آموزشی اجتماعی برای رده سنی نوجوانان",
+      "function_value": "خرید کاغذ خام  و  تولید کتب آموزشی اجتماعی برای رده سنی نوجوانان",
+      "expert_value": "خرید کاغذ خام  و  تولید کتب آموزشی اجتماعی برای رده سنی نوجوانان",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "23",
+      "function_value": 23.0,
+      "expert_value": 23.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "active",
+      "function_value": "",
+      "expert_value": "",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": false
+    }
+  }
+}

@@ -482,7 +482,10 @@ Important: Be strict in your evaluation. Only mark as CORRECT if you are confide
                         data = json.load(f)
                         # Extract project fields
                         if isinstance(data, dict) and "project" in data:
-                            agent_data[agent] = data["project"]
+                            if isinstance(data["project"], dict):
+                                agent_data[agent] = data["project"]
+                            else:
+                                agent_data[agent] = {}
                         else:
                             agent_data[agent] = data
                 except Exception as e:

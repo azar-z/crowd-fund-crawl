@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.8128645420074463,
+    "data": {
+      "project": {
+        "name": "تأمین سرمایه در گردش جهت خرید پودر آلومینا شرکت آراد لیان فراورآریا ",
+        "company": "آراد لیان فراور آریا",
+        "profit": 40,
+        "guarantee": "بدون تضمین سود و بدون تضمین اصل سرمایه",
+        "investment_amount": "111,120,000,000 ریال",
+        "duration": "12 ماه",
+        "status": "تکمیل سرمایه گذاری"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 3.9688987731933594,
+    "data": {
+      "project": {
+        "duration": "12 ماه",
+        "company": "آراد لیان فراور آریا",
+        "investment_amount": "۱۱۱,۱۲۰,۰۰۰,۰۰۰ ریال",
+        "guarantee": "شرکت آراد لیان فراورآریا (سهامی خاص) متعهد به واریز سود و اصل سرمایه در موعدهای مقرر به حساب عامل جهت واریز به حساب سرمایه گذاران می باشد.",
+        "profit": 40.0,
+        "status": "تکمیل سرمایه گذاری",
+        "name": "تأمین سرمایه در گردش جهت خرید پودر آلومینا شرکت آراد لیان فراورآریا "
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 6.909075498580933,
+    "data": {
+      "project": {
+        "duration": "یک سال (12 ماه)",
+        "company": "آراد لیان فراور آریا",
+        "investment_amount": "۱۱۱,۱۲۰,۰۰۰,۰۰۰ ریال",
+        "guarantee": "شرکت آراد لیان فراورآریا (سهامی خاص) متعهد به واریز سود و اصل سرمایه در موعدهای مقرر به حساب عامل جهت واریز به حساب سرمایه گذاران می باشد.",
+        "profit": 40.0,
+        "status": "تکمیل سرمایه گذاری",
+        "name": "تأمین سرمایه در گردش جهت خرید پودر آلومینا شرکت آراد لیان فراورآریا"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Basic Agent"
+  }
+}

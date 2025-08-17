@@ -1,17 +1,29 @@
 {
-  "batch_date": "2025-08-17 17:26:59",
-  "total_projects": 15,
-  "successful_projects": 15,
+  "batch_date": "2025-08-17 18:20:05",
+  "total_projects": 25,
+  "successful_projects": 25,
   "failed_projects": 0,
-  "total_time_seconds": 11.629243850708008,
-  "average_time_per_project": 0.7752829233805338,
+  "total_time_seconds": 13.777765989303589,
+  "average_time_per_project": 0.5511106395721436,
   "project_results": [
+    {
+      "project": "aticrowd",
+      "status": "success"
+    },
     {
       "project": "charisma",
       "status": "success"
     },
     {
+      "project": "dayancrowd",
+      "status": "success"
+    },
+    {
       "project": "dongi",
+      "status": "success"
+    },
+    {
+      "project": "fundocrowd",
       "status": "success"
     },
     {
@@ -43,6 +55,18 @@
       "status": "success"
     },
     {
+      "project": "novincrowd",
+      "status": "success"
+    },
+    {
+      "project": "opalcrowd",
+      "status": "success"
+    },
+    {
+      "project": "paresh",
+      "status": "success"
+    },
+    {
       "project": "pulsar",
       "status": "success"
     },
@@ -55,7 +79,19 @@
       "status": "success"
     },
     {
+      "project": "sepehrino",
+      "status": "success"
+    },
+    {
+      "project": "smartfunding",
+      "status": "success"
+    },
+    {
       "project": "startamin",
+      "status": "success"
+    },
+    {
+      "project": "vestacrowd",
       "status": "success"
     },
     {
@@ -64,6 +100,10 @@
     },
     {
       "project": "zeema",
+      "status": "success"
+    },
+    {
+      "project": "zotch",
       "status": "success"
     }
   ]

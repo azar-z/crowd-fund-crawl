@@ -1,0 +1,77 @@
+{
+  "project_name": "paresh",
+  "validation_date": "2025-08-17T18:25:21.726763",
+  "basic_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "توسعه آرمان نیک اندیشان",
+      "function_value": "توسعه آرمان نیک اندیشان",
+      "expert_value": "توسعه آرمان نیک اندیشان",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "12",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": "ضمانت‌نامه تعهد پرداخت بانکی",
+      "function_value": "ضمانت‌نامه تعهد پرداخت بانکی",
+      "expert_value": "ضمانت‌نامه تعهد پرداخت بانکی ",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "250,000,000,000",
+      "function_value": "250,000,000,000",
+      "expert_value": "250,000,000,000 ریال",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "تأمین مالی به منظور تجهیز و توسعه زیرساخت‌های ارائه سرویس VoIP",
+      "function_value": "تأمین مالی به منظور تجهیز و توسعه زیرساخت‌های ارائه سرویس VoIP",
+      "expert_value": " تأمین مالی به منظور تجهیز و توسعه زیرساخت‌های ارائه سرویس VoIP",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "43",
+      "function_value": 43.0,
+      "expert_value": 43.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "در حال اجرا",
+      "function_value": null,
+      "expert_value": null,
+      "basic_correct": true,
+      "function_correct": false,
+      "expert_correct": false
+    }
+  }
+}

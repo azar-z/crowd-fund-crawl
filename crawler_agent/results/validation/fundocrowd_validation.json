@@ -1,0 +1,85 @@
+{
+  "project_name": "fundocrowd",
+  "validation_date": "2025-08-17T18:22:13.186685",
+  "basic_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 1
+  },
+  "function_agent": {
+    "correct": 0,
+    "incorrect": 7,
+    "skipped": 1
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 1
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "بازرگانی سایپا یدک (شرکت سهامی خاص)",
+      "function_value": null,
+      "expert_value": "بازرگانی سایپا یدک (شرکت سهامی خاص)",
+      "basic_correct": true,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "12 ماه",
+      "function_value": null,
+      "expert_value": "12 ماه",
+      "basic_correct": true,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": " ارائه ضمانت‌نامه (دریافت فایل)",
+      "function_value": null,
+      "expert_value": " ارائه ضمانت‌نامه (دریافت فایل)",
+      "basic_correct": false,
+      "function_correct": false,
+      "expert_correct": false
+    },
+    "investment_amount": {
+      "basic_value": "25 میلیارد تومان",
+      "function_value": null,
+      "expert_value": "25 میلیارد تومان",
+      "basic_correct": true,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "تامین سرمایه در گردش تامین قطعات کیت کلاچ 215 میلیمتری",
+      "function_value": null,
+      "expert_value": "تامین سرمایه در گردش تامین قطعات کیت کلاچ 215 میلیمتری",
+      "basic_correct": true,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "42",
+      "function_value": null,
+      "expert_value": 42.0,
+      "basic_correct": true,
+      "function_correct": false,
+      "expert_correct": true
+    },
+    "project": {
+      "basic_value": null,
+      "function_value": "project name : تامین سرمایه در گردش تامین قطعات کیت کلاچ 215 میلیمتری\ncompany : بازرگانی سایپا یدک (شرکت سهامی خاص)\nprofit : 42\nguarantee : ارائه ضمانت‌نامه (دریافت فایل)\ninvestment_amount: 25,000,000,000 تومان\nduration: 12 ماه\nstatus: موفق",
+      "expert_value": null,
+      "basic_correct": null,
+      "function_correct": null,
+      "expert_correct": null
+    },
+    "status": {
+      "basic_value": "موفق",
+      "function_value": null,
+      "expert_value": "موفق",
+      "basic_correct": true,
+      "function_correct": false,
+      "expert_correct": true
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 1.9216535091400146,
+    "data": {
+      "project": {
+        "name": "خرید کاغذ خام  و  تولید کتب آموزشی اجتماعی برای رده سنی نوجوانان",
+        "company": "انتشاراتی سرزمین بچه‌های خوشحال",
+        "profit": "23",
+        "guarantee": "دارای ضمانت نامه",
+        "investment_amount": "250,000,000,000",
+        "duration": "6",
+        "status": "active"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 1.6706876754760742,
+    "data": {
+      "project": {
+        "company": "انتشاراتی سرزمین بچه‌های خوشحال",
+        "duration": "6 ماه",
+        "investment_amount": "250,000,000,000",
+        "guarantee": "دارای ضمانت نامه",
+        "profit": 23.0,
+        "status": "",
+        "name": "خرید کاغذ خام  و  تولید کتب آموزشی اجتماعی برای رده سنی نوجوانان"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 9.5815110206604,
+    "data": {
+      "project": {
+        "company": "انتشاراتی سرزمین بچه‌های خوشحال",
+        "duration": "6 ماه",
+        "investment_amount": "250,000,000,000 ریال",
+        "guarantee": "دارای ضمانت نامه ",
+        "profit": 23.0,
+        "status": "",
+        "name": "خرید کاغذ خام  و  تولید کتب آموزشی اجتماعی برای رده سنی نوجوانان"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

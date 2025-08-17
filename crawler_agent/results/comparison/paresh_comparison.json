@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.23378324508667,
+    "data": {
+      "project": {
+        "name": "تأمین مالی به منظور تجهیز و توسعه زیرساخت‌های ارائه سرویس VoIP",
+        "company": "توسعه آرمان نیک اندیشان",
+        "profit": "43",
+        "guarantee": "ضمانت‌نامه تعهد پرداخت بانکی",
+        "investment_amount": "250,000,000,000",
+        "duration": "12",
+        "status": "در حال اجرا"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 1.4755058288574219,
+    "data": {
+      "project": {
+        "duration": "12 ماه",
+        "company": "توسعه آرمان نیک اندیشان",
+        "investment_amount": "250,000,000,000",
+        "guarantee": "ضمانت‌نامه تعهد پرداخت بانکی",
+        "profit": 43.0,
+        "status": null,
+        "name": "تأمین مالی به منظور تجهیز و توسعه زیرساخت‌های ارائه سرویس VoIP"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 9.908406734466553,
+    "data": {
+      "project": {
+        "duration": "12 ماه",
+        "company": "توسعه آرمان نیک اندیشان",
+        "investment_amount": "250,000,000,000 ریال",
+        "guarantee": "ضمانت‌نامه تعهد پرداخت بانکی ",
+        "profit": 43.0,
+        "status": null,
+        "name": " تأمین مالی به منظور تجهیز و توسعه زیرساخت‌های ارائه سرویس VoIP"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

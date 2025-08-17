@@ -1,0 +1,55 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.556462526321411,
+    "data": {
+      "project": {
+        "name": "افزایش ظرفیت اکسیداسیون سولفور مولیبدنیوم جهت تکمیل زنجیره فروآلیاژ  ",
+        "company": "شرکت فنی مهندسی آلیاژ خاتون (سهامی خاص)",
+        "profit": "46",
+        "guarantee": " توثیق سهام بورسی",
+        "investment_amount": "250,000,000,000",
+        "duration": "12",
+        "status": "تامین مالی شده"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": true,
+    "processing_time": 1.703434705734253,
+    "data": {
+      "project": {
+        "duration": "12 ماه",
+        "company": "شرکت فنی مهندسی آلیاژ خاتون",
+        "investment_amount": "250,000,000,000",
+        "guarantee": "توثیق سهام",
+        "profit": 46.0,
+        "status": "تامین مالی شده",
+        "name": "افزایش ظرفیت اکسیداسیون سولفور مولیبدنیوم جهت تکمیل زنجیره فروآلیاژ"
+      }
+    }
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 6.721859455108643,
+    "data": {
+      "project": {
+        "duration": "12 ماه",
+        "company": "شرکت فنی مهندسی آلیاژ خاتون (سهامی خاص)",
+        "investment_amount": "250,000,000,000",
+        "guarantee": "توثیق سهام",
+        "profit": 46.0,
+        "status": "تامین مالی شده",
+        "name": "افزایش ظرفیت اکسیداسیون سولفور مولیبدنیوم جهت تکمیل زنجیره فروآلیاژ  "
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 3,
+    "total_count": 3,
+    "fastest_agent": "Function Agent"
+  }
+}

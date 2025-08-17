@@ -1,0 +1,77 @@
+{
+  "project_name": "opalcrowd",
+  "validation_date": "2025-08-17T18:24:38.174419",
+  "basic_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
+  },
+  "function_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
+  },
+  "field_validations": {
+    "company": {
+      "basic_value": "شرکت فنی مهندسی آلیاژ خاتون (سهامی خاص)",
+      "function_value": "شرکت فنی مهندسی آلیاژ خاتون",
+      "expert_value": "شرکت فنی مهندسی آلیاژ خاتون (سهامی خاص)",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "duration": {
+      "basic_value": "12",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "basic_correct": false,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "guarantee": {
+      "basic_value": " توثیق سهام بورسی",
+      "function_value": "توثیق سهام",
+      "expert_value": "توثیق سهام",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "investment_amount": {
+      "basic_value": "250,000,000,000",
+      "function_value": "250,000,000,000",
+      "expert_value": "250,000,000,000",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "name": {
+      "basic_value": "افزایش ظرفیت اکسیداسیون سولفور مولیبدنیوم جهت تکمیل زنجیره فروآلیاژ  ",
+      "function_value": "افزایش ظرفیت اکسیداسیون سولفور مولیبدنیوم جهت تکمیل زنجیره فروآلیاژ",
+      "expert_value": "افزایش ظرفیت اکسیداسیون سولفور مولیبدنیوم جهت تکمیل زنجیره فروآلیاژ  ",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "profit": {
+      "basic_value": "46",
+      "function_value": 46.0,
+      "expert_value": 46.0,
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    },
+    "status": {
+      "basic_value": "تامین مالی شده",
+      "function_value": "تامین مالی شده",
+      "expert_value": "تامین مالی شده",
+      "basic_correct": true,
+      "function_correct": true,
+      "expert_correct": true
+    }
+  }
+}

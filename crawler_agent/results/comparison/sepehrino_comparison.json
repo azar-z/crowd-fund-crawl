@@ -1,0 +1,45 @@
+{
+  "basic_agent": {
+    "agent_name": "Basic Agent",
+    "success": true,
+    "processing_time": 2.365570068359375,
+    "data": {
+      "project": {
+        "name": "تامین سرمایه در گردش خرید و فروش کولر گازی ایرانی",
+        "company": "راهبردهای شبکه خلاق پارس",
+        "profit": "42.5",
+        "guarantee": "ضمانتنامه تعهد پرداخت بانکی",
+        "investment_amount": "9,000,000,000",
+        "duration": "12 ماهه",
+        "status": "در حال جذب سرمایه"
+      }
+    }
+  },
+  "function_agent": {
+    "agent_name": "Function Agent",
+    "success": false,
+    "processing_time": 1.525883436203003,
+    "data": null
+  },
+  "expert_agent": {
+    "agent_name": "Expert Agent",
+    "success": true,
+    "processing_time": 8.865948915481567,
+    "data": {
+      "project": {
+        "duration": "12 ماهه",
+        "company": "شرکت راهبردهای شبکه خلاق پارس",
+        "investment_amount": "9,000,000,000",
+        "guarantee": "ضمانتنامه تعهد پرداخت بانکی",
+        "profit": 42.5,
+        "status": "در حال جذب سرمایه",
+        "name": "تامین سرمایه در گردش خرید و فروش کولر گازی ایرانی"
+      }
+    }
+  },
+  "summary": {
+    "successful_count": 2,
+    "total_count": 3,
+    "fastest_agent": "Basic Agent"
+  }
+}
