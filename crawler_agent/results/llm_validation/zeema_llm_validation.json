@@ -1,0 +1,184 @@
+{
+  "project_name": "zeema",
+  "evaluation_date": "2025-08-17T15:14:00.937109",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.6000000000000005,
+    "average_confidence": 0.943
+  },
+  "function_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.6000000000000005,
+    "average_confidence": 0.943
+  },
+  "expert_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.6000000000000005,
+    "average_confidence": 0.943
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "یزدان مطهر قائم وسطی",
+      "function_value": "یزدان مطهر قائم وسطی",
+      "expert_value": "یزدان مطهر قائم وسطی",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"یزدان مطهر قائم وسطی\" (Yazdan Motahher Ghaem Vosta) appears multiple times in the HTML content as the name of the company/applicant (\"سرمایه‌پذیر\") associated with the crowdfunding project. It is accurately extracted and complete.",
+        "function_explanation": "The extracted value \"یزدان مطهر قائم وسطی\" (Yazdan Motahher Ghaem Vosta) appears multiple times in the HTML content as the name of the company/applicant (\"سرمایه‌پذیر\") associated with the crowdfunding project. It is accurately extracted and complete.",
+        "expert_explanation": "The extracted value \"یزدان مطهر قائم وسطی\" (Yazdan Motahher Ghaem Vosta) appears multiple times in the HTML content as the name of the company/applicant (\"سرمایه‌پذیر\") associated with the crowdfunding project. It is accurately extracted and complete.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "12 ماه",
+      "function_value": "12 ماه",
+      "expert_value": "12\nماه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": false,
+        "basic_explanation": "Group 1 correctly extracted \"12 ماه\" which translates to \"12 months\" and accurately reflects the project duration stated in the HTML content: \"مدت مشارکت 12ماه\". Group 2 only extracted \"12\" which is incomplete and lacks the unit \"ماه\" (months), making it an incorrect extraction for the 'duration' field.",
+        "function_explanation": "Group 1 correctly extracted \"12 ماه\" which translates to \"12 months\" and accurately reflects the project duration stated in the HTML content: \"مدت مشارکت 12ماه\". Group 2 only extracted \"12\" which is incomplete and lacks the unit \"ماه\" (months), making it an incorrect extraction for the 'duration' field.",
+        "expert_explanation": "Group 1 correctly extracted \"12 ماه\" which translates to \"12 months\" and accurately reflects the project duration stated in the HTML content: \"مدت مشارکت 12ماه\". Group 2 only extracted \"12\" which is incomplete and lacks the unit \"ماه\" (months), making it an incorrect extraction for the 'duration' field.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          2
+        ],
+        "response_groups": 2
+      }
+    },
+    "guarantee": {
+      "basic_value": "ضمانتنامه تعهد پرداخت بانک ملی",
+      "function_value": "ضمانتنامه تعهد پرداخت بانک ملی",
+      "expert_value": "ضمانتنامه تعهد پرداخت بانک ملی\nتضمین اصل سرمایه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Both groups correctly extracted \"ضمانتنامه تعهد پرداخت بانک ملی\" and \"تضمین اصل سرمایه\" which are explicitly mentioned in the source HTML under the heading \"تضمینات\". Group 2 includes both lines, making it slightly more complete, but both are acceptable as the field asks for a description of guarantees.",
+        "function_explanation": "Both groups correctly extracted \"ضمانتنامه تعهد پرداخت بانک ملی\" and \"تضمین اصل سرمایه\" which are explicitly mentioned in the source HTML under the heading \"تضمینات\". Group 2 includes both lines, making it slightly more complete, but both are acceptable as the field asks for a description of guarantees.",
+        "expert_explanation": "Both groups correctly extracted \"ضمانتنامه تعهد پرداخت بانک ملی\" and \"تضمین اصل سرمایه\" which are explicitly mentioned in the source HTML under the heading \"تضمینات\". Group 2 includes both lines, making it slightly more complete, but both are acceptable as the field asks for a description of guarantees.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "investment_amount": {
+      "basic_value": "15 میلیارد",
+      "function_value": "15 میلیارد",
+      "expert_value": "15 میلیارد",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"15 میلیارد\" is explicitly mentioned in the HTML content as \"حداقل سرمایه مورد نیاز اجرای طرح: 15 میلیارد تومان تأمین شد\", which translates to \"Minimum capital required to implement the project: 15 billion Tomans has been secured\". This matches the field definition for investment_amount.",
+        "function_explanation": "The extracted value \"15 میلیارد\" is explicitly mentioned in the HTML content as \"حداقل سرمایه مورد نیاز اجرای طرح: 15 میلیارد تومان تأمین شد\", which translates to \"Minimum capital required to implement the project: 15 billion Tomans has been secured\". This matches the field definition for investment_amount.",
+        "expert_explanation": "The extracted value \"15 میلیارد\" is explicitly mentioned in the HTML content as \"حداقل سرمایه مورد نیاز اجرای طرح: 15 میلیارد تومان تأمین شد\", which translates to \"Minimum capital required to implement the project: 15 billion Tomans has been secured\". This matches the field definition for investment_amount.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "name": {
+      "basic_value": "تأمین سرمایه در گردش خریدوفروش انواع حبوبات",
+      "function_value": "تأمین سرمایه در گردش خریدوفروش انواع حبوبات",
+      "expert_value": "تأمین سرمایه در گردش خریدوفروش انواع حبوبات",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تأمین سرمایه در گردش خریدوفروش انواع حبوبات\" (Tamin Sarmaye Dar Gardesh Kharid o Forush Anvae Hobobat) is directly present and accurately reflects the project name as displayed multiple times within the source HTML content, particularly at the beginning of the document and as a heading for the project details. It is a string value, as expected for the 'name' field.",
+        "function_explanation": "The extracted value \"تأمین سرمایه در گردش خریدوفروش انواع حبوبات\" (Tamin Sarmaye Dar Gardesh Kharid o Forush Anvae Hobobat) is directly present and accurately reflects the project name as displayed multiple times within the source HTML content, particularly at the beginning of the document and as a heading for the project details. It is a string value, as expected for the 'name' field.",
+        "expert_explanation": "The extracted value \"تأمین سرمایه در گردش خریدوفروش انواع حبوبات\" (Tamin Sarmaye Dar Gardesh Kharid o Forush Anvae Hobobat) is directly present and accurately reflects the project name as displayed multiple times within the source HTML content, particularly at the beginning of the document and as a heading for the project details. It is a string value, as expected for the 'name' field.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": "43",
+      "function_value": 43.0,
+      "expert_value": 43.0,
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Both groups extracted \"43\" or \"43.0\" which is explicitly stated in the HTML content as \"پیش‌بینی سود(بدون تضمین سود)43درصد\" (Predicted profit (profit not guaranteed) 43 percent). The decimal representation is also acceptable as it represents the same value.",
+        "function_explanation": "Both groups extracted \"43\" or \"43.0\" which is explicitly stated in the HTML content as \"پیش‌بینی سود(بدون تضمین سود)43درصد\" (Predicted profit (profit not guaranteed) 43 percent). The decimal representation is also acceptable as it represents the same value.",
+        "expert_explanation": "Both groups extracted \"43\" or \"43.0\" which is explicitly stated in the HTML content as \"پیش‌بینی سود(بدون تضمین سود)43درصد\" (Predicted profit (profit not guaranteed) 43 percent). The decimal representation is also acceptable as it represents the same value.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "inProgress",
+      "function_value": "inProgress",
+      "expert_value": "inProgress",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "The provided HTML does not explicitly state the \"status\" as \"inProgress\". While the project is active and accepting investments, there's no direct label indicating its status as \"inProgress\". The page details suggest it's currently running, but the exact status isn't explicitly stated as such. Therefore, extracting \"inProgress\" is an interpretation rather than a direct extraction.",
+        "function_explanation": "The provided HTML does not explicitly state the \"status\" as \"inProgress\". While the project is active and accepting investments, there's no direct label indicating its status as \"inProgress\". The page details suggest it's currently running, but the exact status isn't explicitly stated as such. Therefore, extracting \"inProgress\" is an interpretation rather than a direct extraction.",
+        "expert_explanation": "The provided HTML does not explicitly state the \"status\" as \"inProgress\". While the project is active and accepting investments, there's no direct label indicating its status as \"inProgress\". The page details suggest it's currently running, but the exact status isn't explicitly stated as such. Therefore, extracting \"inProgress\" is an interpretation rather than a direct extraction.",
+        "basic_confidence": 0.7,
+        "function_confidence": 0.7,
+        "expert_confidence": 0.7,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": []
+      }
+    }
+  }
+}

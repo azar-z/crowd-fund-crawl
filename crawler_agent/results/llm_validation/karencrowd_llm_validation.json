@@ -1,0 +1,183 @@
+{
+  "project_name": "karencrowd",
+  "evaluation_date": "2025-08-17T15:05:40.719018",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.9,
+    "average_confidence": 0.986
+  },
+  "function_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.9,
+    "average_confidence": 0.986
+  },
+  "expert_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.9,
+    "average_confidence": 0.986
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "توسعه تجارت پارس یسنا",
+      "function_value": "توسعه تجارت پارس یسنا",
+      "expert_value": "توسعه تجارت پارس یسنا",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"توسعه تجارت پارس یسنا\" (Tose'e Tejarat Pars Yasna) appears multiple times in the HTML content, clearly identifying the company associated with the project. It is accurately extracted and complete.",
+        "function_explanation": "The extracted value \"توسعه تجارت پارس یسنا\" (Tose'e Tejarat Pars Yasna) appears multiple times in the HTML content, clearly identifying the company associated with the project. It is accurately extracted and complete.",
+        "expert_explanation": "The extracted value \"توسعه تجارت پارس یسنا\" (Tose'e Tejarat Pars Yasna) appears multiple times in the HTML content, clearly identifying the company associated with the project. It is accurately extracted and complete.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "12 ماهه",
+      "function_value": "12 ماهه",
+      "expert_value": "12\n                            ماهه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": false,
+        "basic_explanation": "Group 1 correctly extracted \"12 ماهه\" which directly corresponds to \"مدت طرح 12 ماهه\" in the source HTML. Group 2 incorrectly split the value, omitting the \"ماه\" part, making it incomplete. The field requires the duration string, and including the unit (ماه) is crucial for understanding the duration.",
+        "function_explanation": "Group 1 correctly extracted \"12 ماهه\" which directly corresponds to \"مدت طرح 12 ماهه\" in the source HTML. Group 2 incorrectly split the value, omitting the \"ماه\" part, making it incomplete. The field requires the duration string, and including the unit (ماه) is crucial for understanding the duration.",
+        "expert_explanation": "Group 1 correctly extracted \"12 ماهه\" which directly corresponds to \"مدت طرح 12 ماهه\" in the source HTML. Group 2 incorrectly split the value, omitting the \"ماه\" part, making it incomplete. The field requires the duration string, and including the unit (ماه) is crucial for understanding the duration.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          2
+        ],
+        "response_groups": 2
+      }
+    },
+    "guarantee": {
+      "basic_value": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق دولتی برای اصل سرمایه",
+      "function_value": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق دولتی برای اصل سرمایه",
+      "expert_value": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق دولتی برای اصل سرمایه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق دولتی برای اصل سرمایه\" is directly present in the HTML content under the \"وثایق\" section, which translates to \"guarantees\". It accurately describes the guarantee offered for the project.",
+        "function_explanation": "The extracted value \"بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق دولتی برای اصل سرمایه\" is directly present in the HTML content under the \"وثایق\" section, which translates to \"guarantees\". It accurately describes the guarantee offered for the project.",
+        "expert_explanation": "The extracted value \"بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق دولتی برای اصل سرمایه\" is directly present in the HTML content under the \"وثایق\" section, which translates to \"guarantees\". It accurately describes the guarantee offered for the project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "investment_amount": {
+      "basic_value": null,
+      "function_value": null,
+      "expert_value": null,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "The HTML content clearly states \"مبلغ موردنیاز طرح: 10 میلیارد تومن\" which translates to \"Required amount of the project: 10 billion Tomans\". The extracted value is NULL/NOT_FOUND, indicating a failure to extract this crucial information. Therefore, the extraction is incorrect.",
+        "function_explanation": "The HTML content clearly states \"مبلغ موردنیاز طرح: 10 میلیارد تومن\" which translates to \"Required amount of the project: 10 billion Tomans\". The extracted value is NULL/NOT_FOUND, indicating a failure to extract this crucial information. Therefore, the extraction is incorrect.",
+        "expert_explanation": "The HTML content clearly states \"مبلغ موردنیاز طرح: 10 میلیارد تومن\" which translates to \"Required amount of the project: 10 billion Tomans\". The extracted value is NULL/NOT_FOUND, indicating a failure to extract this crucial information. Therefore, the extraction is incorrect.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": []
+      }
+    },
+    "name": {
+      "basic_value": "تولید و فروش انواع چسب پهن",
+      "function_value": "تولید و فروش انواع چسب پهن",
+      "expert_value": "تولید و فروش انواع چسب پهن",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تولید و فروش انواع چسب پهن\" (Production and sale of various types of adhesive tape) is clearly present in the HTML content multiple times, and accurately represents the name/title of the project as described in the context.",
+        "function_explanation": "The extracted value \"تولید و فروش انواع چسب پهن\" (Production and sale of various types of adhesive tape) is clearly present in the HTML content multiple times, and accurately represents the name/title of the project as described in the context.",
+        "expert_explanation": "The extracted value \"تولید و فروش انواع چسب پهن\" (Production and sale of various types of adhesive tape) is clearly present in the HTML content multiple times, and accurately represents the name/title of the project as described in the context.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": "45",
+      "function_value": 45.0,
+      "expert_value": 45.0,
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Both groups correctly extracted the profit percentage as 45. The HTML content explicitly states \"سود پیش‌بینی‌شده طرح: 45%\" (Predicted profit of the project: 45%). The difference between 45 and 45.0 is negligible and both are valid representations of the value.",
+        "function_explanation": "Both groups correctly extracted the profit percentage as 45. The HTML content explicitly states \"سود پیش‌بینی‌شده طرح: 45%\" (Predicted profit of the project: 45%). The difference between 45 and 45.0 is negligible and both are valid representations of the value.",
+        "expert_explanation": "Both groups correctly extracted the profit percentage as 45. The HTML content explicitly states \"سود پیش‌بینی‌شده طرح: 45%\" (Predicted profit of the project: 45%). The difference between 45 and 45.0 is negligible and both are valid representations of the value.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "در حال اجرا",
+      "function_value": "در حال اجرا",
+      "expert_value": "در حال اجرا",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"در حال اجرا\" (which translates to \"in progress\" or \"running\") is explicitly present in the HTML content under the label \"وضعیت\" (status). It accurately reflects the current status of the project.",
+        "function_explanation": "The extracted value \"در حال اجرا\" (which translates to \"in progress\" or \"running\") is explicitly present in the HTML content under the label \"وضعیت\" (status). It accurately reflects the current status of the project.",
+        "expert_explanation": "The extracted value \"در حال اجرا\" (which translates to \"in progress\" or \"running\") is explicitly present in the HTML content under the label \"وضعیت\" (status). It accurately reflects the current status of the project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    }
+  }
+}

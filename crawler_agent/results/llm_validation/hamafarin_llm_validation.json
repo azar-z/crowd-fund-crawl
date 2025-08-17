@@ -1,0 +1,186 @@
+{
+  "project_name": "hamafarin",
+  "evaluation_date": "2025-08-17T15:03:48.343850",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 4,
+    "incorrect": 3,
+    "total_confidence": 6.75,
+    "average_confidence": 0.964
+  },
+  "function_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "total_confidence": 6.75,
+    "average_confidence": 0.964
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.75,
+    "average_confidence": 0.964
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "فرگشت پندار پارسیان",
+      "function_value": "فرگشت پندار پارسیان",
+      "expert_value": "فرگشت پندار پارسیان",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"فرگشت پندار پارسیان\" is explicitly mentioned as the \"نام شرکت\" (company name) in the HTML content and also appears in the company introduction section. It is a complete and accurate extraction for the 'company' field.",
+        "function_explanation": "The extracted value \"فرگشت پندار پارسیان\" is explicitly mentioned as the \"نام شرکت\" (company name) in the HTML content and also appears in the company introduction section. It is a complete and accurate extraction for the 'company' field.",
+        "expert_explanation": "The extracted value \"فرگشت پندار پارسیان\" is explicitly mentioned as the \"نام شرکت\" (company name) in the HTML content and also appears in the company introduction section. It is a complete and accurate extraction for the 'company' field.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "دوازده ماهه",
+      "function_value": "دوازده ماهه",
+      "expert_value": "دوازده ماهه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"دوازده ماهه\" (twelve months) appears multiple times in the HTML content, specifically associated with the \"مدت طرح\" (project duration) field. The text also explicitly states \"یک سال (12 ماه)\" (one year (12 months)), confirming the duration. Therefore, the extraction is accurate and complete.",
+        "function_explanation": "The extracted value \"دوازده ماهه\" (twelve months) appears multiple times in the HTML content, specifically associated with the \"مدت طرح\" (project duration) field. The text also explicitly states \"یک سال (12 ماه)\" (one year (12 months)), confirming the duration. Therefore, the extraction is accurate and complete.",
+        "expert_explanation": "The extracted value \"دوازده ماهه\" (twelve months) appears multiple times in the HTML content, specifically associated with the \"مدت طرح\" (project duration) field. The text also explicitly states \"یک سال (12 ماه)\" (one year (12 months)), confirming the duration. Therefore, the extraction is accurate and complete.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "guarantee": {
+      "basic_value": "ضمانت نامه تعهد پرداخت",
+      "function_value": "ضمانت نامه تعهد پرداخت از بانک ملی ایران",
+      "expert_value": "وثایق\nاصل سرمایه",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": false,
+        "basic_explanation": "Group 1 provides a very general guarantee description (\"guarantee commitment to pay\") which is present but incomplete. Group 3 extracts \"collateral\" and \"principal\" which are related concepts but not the guarantee itself. Group 2 (\"guarantee commitment to pay from Bank Melli Iran\") is the most accurate and complete extraction as it specifically mentions the guarantor (Bank Melli Iran) which is implied in the text: \"ضمانت­نامه و وثایق قرارداد به اجرا گذاشته شده\" (the guarantee and collateral of the contract will be executed). The text explicitly states there are \"valid guarantees and letters of credit\".",
+        "function_explanation": "Group 1 provides a very general guarantee description (\"guarantee commitment to pay\") which is present but incomplete. Group 3 extracts \"collateral\" and \"principal\" which are related concepts but not the guarantee itself. Group 2 (\"guarantee commitment to pay from Bank Melli Iran\") is the most accurate and complete extraction as it specifically mentions the guarantor (Bank Melli Iran) which is implied in the text: \"ضمانت­نامه و وثایق قرارداد به اجرا گذاشته شده\" (the guarantee and collateral of the contract will be executed). The text explicitly states there are \"valid guarantees and letters of credit\".",
+        "expert_explanation": "Group 1 provides a very general guarantee description (\"guarantee commitment to pay\") which is present but incomplete. Group 3 extracts \"collateral\" and \"principal\" which are related concepts but not the guarantee itself. Group 2 (\"guarantee commitment to pay from Bank Melli Iran\") is the most accurate and complete extraction as it specifically mentions the guarantor (Bank Melli Iran) which is implied in the text: \"ضمانت­نامه و وثایق قرارداد به اجرا گذاشته شده\" (the guarantee and collateral of the contract will be executed). The text explicitly states there are \"valid guarantees and letters of credit\".",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2
+        ],
+        "response_groups": 3
+      }
+    },
+    "investment_amount": {
+      "basic_value": "10,000,000,000",
+      "function_value": "۱۰٬۰۰۰٬۰۰۰٬۰۰۰",
+      "expert_value": "۱۰٬۰۰۰٬۰۰۰٬۰۰۰",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 2 correctly extracted the investment amount as \"۱۰٬۰۰۰٬۰۰۰٬۰۰۰\", which matches the value presented in the HTML content as \"مبلغ هدف (تومان)۱۰٬۰۰۰٬۰۰۰٬۰۰۰\". Group 1 provided \"10,000,000,000\" which is the numerical equivalent but lacks the correct formatting and units (تومان) as presented in the source. The Persian numerals and unit are crucial for accuracy in this context.",
+        "function_explanation": "Group 2 correctly extracted the investment amount as \"۱۰٬۰۰۰٬۰۰۰٬۰۰۰\", which matches the value presented in the HTML content as \"مبلغ هدف (تومان)۱۰٬۰۰۰٬۰۰۰٬۰۰۰\". Group 1 provided \"10,000,000,000\" which is the numerical equivalent but lacks the correct formatting and units (تومان) as presented in the source. The Persian numerals and unit are crucial for accuracy in this context.",
+        "expert_explanation": "Group 2 correctly extracted the investment amount as \"۱۰٬۰۰۰٬۰۰۰٬۰۰۰\", which matches the value presented in the HTML content as \"مبلغ هدف (تومان)۱۰٬۰۰۰٬۰۰۰٬۰۰۰\". Group 1 provided \"10,000,000,000\" which is the numerical equivalent but lacks the correct formatting and units (تومان) as presented in the source. The Persian numerals and unit are crucial for accuracy in this context.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "name": {
+      "basic_value": "تولید کرم ضد آفتاب",
+      "function_value": "تولید کرم ضد آفتاب",
+      "expert_value": "تولید کرم ضد آفتاب",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تولید کرم ضد آفتاب\" (Production of Sunscreen Cream) appears multiple times in the HTML content, accurately representing the project's name/title. It is a string value as expected for the 'name' field.",
+        "function_explanation": "The extracted value \"تولید کرم ضد آفتاب\" (Production of Sunscreen Cream) appears multiple times in the HTML content, accurately representing the project's name/title. It is a string value as expected for the 'name' field.",
+        "expert_explanation": "The extracted value \"تولید کرم ضد آفتاب\" (Production of Sunscreen Cream) appears multiple times in the HTML content, accurately representing the project's name/title. It is a string value as expected for the 'name' field.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": 41,
+      "function_value": 41.0,
+      "expert_value": 41.0,
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Both groups correctly extracted \"41\" as the profit percentage. The source HTML clearly states \"پیش‌بینی سود41%\" which translates to \"Profit forecast 41%\". Both 41 and 41.0 are acceptable representations of this value.",
+        "function_explanation": "Both groups correctly extracted \"41\" as the profit percentage. The source HTML clearly states \"پیش‌بینی سود41%\" which translates to \"Profit forecast 41%\". Both 41 and 41.0 are acceptable representations of this value.",
+        "expert_explanation": "Both groups correctly extracted \"41\" as the profit percentage. The source HTML clearly states \"پیش‌بینی سود41%\" which translates to \"Profit forecast 41%\". Both 41 and 41.0 are acceptable representations of this value.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "active",
+      "function_value": "با موفقیت تکمیل شد",
+      "expert_value": "با موفقیت تکمیل شد",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 provides \"active\" which is not present in the HTML. Group 2 provides \"با موفقیت تکمیل شد\" which translates to \"successfully completed\" in English. This is explicitly stated in the HTML: \"با موفقیت تکمیل شد\" next to the investment amount. Therefore, Group 2 is the correct extraction for the 'status' field.",
+        "function_explanation": "Group 1 provides \"active\" which is not present in the HTML. Group 2 provides \"با موفقیت تکمیل شد\" which translates to \"successfully completed\" in English. This is explicitly stated in the HTML: \"با موفقیت تکمیل شد\" next to the investment amount. Therefore, Group 2 is the correct extraction for the 'status' field.",
+        "expert_explanation": "Group 1 provides \"active\" which is not present in the HTML. Group 2 provides \"با موفقیت تکمیل شد\" which translates to \"successfully completed\" in English. This is explicitly stated in the HTML: \"با موفقیت تکمیل شد\" next to the investment amount. Therefore, Group 2 is the correct extraction for the 'status' field.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    }
+  }
+}

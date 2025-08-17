@@ -1,0 +1,184 @@
+{
+  "project_name": "ifund",
+  "evaluation_date": "2025-08-17T15:04:15.638036",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.45,
+    "average_confidence": 0.921
+  },
+  "function_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.45,
+    "average_confidence": 0.921
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.45,
+    "average_confidence": 0.921
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "نگارین تکمیل یزد",
+      "function_value": "نگارین تکمیل یزد",
+      "expert_value": "نگارین تکمیل یزد",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"نگارین تکمیل یزد\" (Negaarin Tekmil Yazd) appears multiple times in the HTML content, specifically in the \"معرفی شرکت\" (Company Introduction) section and within the company details (name, registration number, etc.). It is clearly identified as the company associated with the project.",
+        "function_explanation": "The extracted value \"نگارین تکمیل یزد\" (Negaarin Tekmil Yazd) appears multiple times in the HTML content, specifically in the \"معرفی شرکت\" (Company Introduction) section and within the company details (name, registration number, etc.). It is clearly identified as the company associated with the project.",
+        "expert_explanation": "The extracted value \"نگارین تکمیل یزد\" (Negaarin Tekmil Yazd) appears multiple times in the HTML content, specifically in the \"معرفی شرکت\" (Company Introduction) section and within the company details (name, registration number, etc.). It is clearly identified as the company associated with the project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "12 ماهه",
+      "function_value": "12 ماهه",
+      "expert_value": "12 ماهه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"12 ماهه\" (12 months) is explicitly present in the HTML content within the \"مدت طرح\" (Project Duration) section. It accurately represents the project's duration.",
+        "function_explanation": "The extracted value \"12 ماهه\" (12 months) is explicitly present in the HTML content within the \"مدت طرح\" (Project Duration) section. It accurately represents the project's duration.",
+        "expert_explanation": "The extracted value \"12 ماهه\" (12 months) is explicitly present in the HTML content within the \"مدت طرح\" (Project Duration) section. It accurately represents the project's duration.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "guarantee": {
+      "basic_value": "بدون تضمین سود و با تضمین ( ضمانت نامه تعهد پرداخت ) برای اصل سرمایه ",
+      "function_value": "بدون تضمین سود و با تضمین ( ضمانت نامه تعهد پرداخت ) برای اصل سرمایه",
+      "expert_value": "بدون تضمین سود و با تضمین ( ضمانت نامه تعهد پرداخت ) برای اصل سرمایه \n\nضمانت نامه این طرح از سوی بانک ملی با شناسه سپام: 0350104681895316 صادر شده که تا تاریخ 22/04/1404 معتبر می‌باشد و با درخواست شرکت سامانه تامین هوشمند نوآفرینان ایرانیان تا زمان مورد درخواست این شرکت قابل تمدید است.",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Both groups provided the exact same, and correct, extraction for the 'guarantee' field. The text \"بدون تضمین سود و با تضمین ( ضمانت نامه تعهد پرداخت ) برای اصل سرمایه\" is present in the source HTML content under the \"تضامین طرح\" heading. It accurately describes the guarantee offered for the project.",
+        "function_explanation": "Both groups provided the exact same, and correct, extraction for the 'guarantee' field. The text \"بدون تضمین سود و با تضمین ( ضمانت نامه تعهد پرداخت ) برای اصل سرمایه\" is present in the source HTML content under the \"تضامین طرح\" heading. It accurately describes the guarantee offered for the project.",
+        "expert_explanation": "Both groups provided the exact same, and correct, extraction for the 'guarantee' field. The text \"بدون تضمین سود و با تضمین ( ضمانت نامه تعهد پرداخت ) برای اصل سرمایه\" is present in the source HTML content under the \"تضامین طرح\" heading. It accurately describes the guarantee offered for the project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "investment_amount": {
+      "basic_value": "72,000,000,000 ریال",
+      "function_value": "120,000,000,000 ریال",
+      "expert_value": "120,000,000,000 ریال",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 2 (Agents 2 & 3) correctly extracted \"120,000,000,000 ریال\" as the investment amount. This value appears multiple times in the HTML content as the \"مبلغ مورد نیاز طرح\" (required amount) and also as a \"سرمایه دریافتی\" (received capital). Group 1 extracted \"72,000,000,000 ریال\", which also appears in the HTML as \"سرمایه دریافتی\", but the context indicates that 120,000,000,000 ریال is the total amount needed for the project, making it the more appropriate extraction for \"investment_amount\".",
+        "function_explanation": "Group 2 (Agents 2 & 3) correctly extracted \"120,000,000,000 ریال\" as the investment amount. This value appears multiple times in the HTML content as the \"مبلغ مورد نیاز طرح\" (required amount) and also as a \"سرمایه دریافتی\" (received capital). Group 1 extracted \"72,000,000,000 ریال\", which also appears in the HTML as \"سرمایه دریافتی\", but the context indicates that 120,000,000,000 ریال is the total amount needed for the project, making it the more appropriate extraction for \"investment_amount\".",
+        "expert_explanation": "Group 2 (Agents 2 & 3) correctly extracted \"120,000,000,000 ریال\" as the investment amount. This value appears multiple times in the HTML content as the \"مبلغ مورد نیاز طرح\" (required amount) and also as a \"سرمایه دریافتی\" (received capital). Group 1 extracted \"72,000,000,000 ریال\", which also appears in the HTML as \"سرمایه دریافتی\", but the context indicates that 120,000,000,000 ریال is the total amount needed for the project, making it the more appropriate extraction for \"investment_amount\".",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "name": {
+      "basic_value": "نگارین تکمیل یزد",
+      "function_value": "نگارین تکمیل یزد",
+      "expert_value": "نگارین تکمیل یزد",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"نگارین تکمیل یزد\" (Negaarin Tekmil Yazd) appears multiple times in the HTML content, specifically as the company name associated with the project. It is accurately extracted as the project name.",
+        "function_explanation": "The extracted value \"نگارین تکمیل یزد\" (Negaarin Tekmil Yazd) appears multiple times in the HTML content, specifically as the company name associated with the project. It is accurately extracted as the project name.",
+        "expert_explanation": "The extracted value \"نگارین تکمیل یزد\" (Negaarin Tekmil Yazd) appears multiple times in the HTML content, specifically as the company name associated with the project. It is accurately extracted as the project name.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": "43",
+      "function_value": 43.0,
+      "expert_value": 43.0,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "Failed to parse LLM response",
+        "function_explanation": "Failed to parse LLM response",
+        "expert_explanation": "Failed to parse LLM response",
+        "basic_confidence": 0.5,
+        "function_confidence": 0.5,
+        "expert_confidence": 0.5,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "موفقیت جمع آوری وجوه",
+      "function_value": "موفقیت جمع آوری وجوه",
+      "expert_value": "موفقیت جمع آوری وجوه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"موفقیت جمع آوری وجوه\" (meaning \"Successful fundraising\") is directly present in the HTML content under the \"وضعیت\" (status) label. It accurately reflects the project's current status.",
+        "function_explanation": "The extracted value \"موفقیت جمع آوری وجوه\" (meaning \"Successful fundraising\") is directly present in the HTML content under the \"وضعیت\" (status) label. It accurately reflects the project's current status.",
+        "expert_explanation": "The extracted value \"موفقیت جمع آوری وجوه\" (meaning \"Successful fundraising\") is directly present in the HTML content under the \"وضعیت\" (status) label. It accurately reflects the project's current status.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    }
+  }
+}

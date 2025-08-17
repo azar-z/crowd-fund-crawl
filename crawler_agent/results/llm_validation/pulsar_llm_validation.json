@@ -1,0 +1,175 @@
+{
+  "project_name": "pulsar",
+  "evaluation_date": "2025-08-17T15:07:58.541114",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 2,
+    "incorrect": 5,
+    "total_confidence": 5.35,
+    "average_confidence": 0.764
+  },
+  "function_agent": {
+    "correct": 4,
+    "incorrect": 3,
+    "total_confidence": 5.35,
+    "average_confidence": 0.764
+  },
+  "expert_agent": {
+    "correct": 4,
+    "incorrect": 3,
+    "total_confidence": 5.35,
+    "average_confidence": 0.764
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "ویرا دیزل",
+      "function_value": "ویرا دیزل",
+      "expert_value": "ویرا دیزل",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "The extracted value \"ویرا دیزل\" (Vira Diesel) does not appear anywhere in the provided HTML content. The text primarily discusses the terms and conditions of crowdfunding and doesn't mention any specific company name associated with the project. The text mentions \"کارگزاری بانک سامان\" (Bank Saman Brokerage) but that is not the extracted value. Therefore, the extraction is incorrect.",
+        "function_explanation": "The extracted value \"ویرا دیزل\" (Vira Diesel) does not appear anywhere in the provided HTML content. The text primarily discusses the terms and conditions of crowdfunding and doesn't mention any specific company name associated with the project. The text mentions \"کارگزاری بانک سامان\" (Bank Saman Brokerage) but that is not the extracted value. Therefore, the extraction is incorrect.",
+        "expert_explanation": "The extracted value \"ویرا دیزل\" (Vira Diesel) does not appear anywhere in the provided HTML content. The text primarily discusses the terms and conditions of crowdfunding and doesn't mention any specific company name associated with the project. The text mentions \"کارگزاری بانک سامان\" (Bank Saman Brokerage) but that is not the extracted value. Therefore, the extraction is incorrect.",
+        "basic_confidence": 0.6,
+        "function_confidence": 0.6,
+        "expert_confidence": 0.6,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": []
+      }
+    },
+    "duration": {
+      "basic_value": "12 ماه",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "The extracted value \"12 ماه\" (12 months) is not explicitly mentioned in the provided HTML content. While the text discusses investment periods and risks, it doesn't state a specific duration of \"12 months\" for this particular project. Therefore, the extraction is incorrect.",
+        "function_explanation": "The extracted value \"12 ماه\" (12 months) is not explicitly mentioned in the provided HTML content. While the text discusses investment periods and risks, it doesn't state a specific duration of \"12 months\" for this particular project. Therefore, the extraction is incorrect.",
+        "expert_explanation": "The extracted value \"12 ماه\" (12 months) is not explicitly mentioned in the provided HTML content. While the text discusses investment periods and risks, it doesn't state a specific duration of \"12 months\" for this particular project. Therefore, the extraction is incorrect.",
+        "basic_confidence": 0.8,
+        "function_confidence": 0.8,
+        "expert_confidence": 0.8,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": []
+      }
+    },
+    "guarantee": {
+      "basic_value": "بدون تضمین سود و با تضمین بانک سامان برای اصل سرمایه",
+      "function_value": "بدون تضمین سود و با تضمین بانک سامان برای اصل سرمایه",
+      "expert_value": "بدون تضمین سود و با تضمین بانک سامان برای اصل سرمایه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"بدون تضمین سود و با تضمین بانک سامان برای اصل سرمایه\" (meaning \"no guarantee of profit and guarantee of Bank Saman for the principal\") is directly present in the provided HTML content. It accurately reflects the guarantee information described in the text, stating there's no profit guarantee but the principal is guaranteed by Bank Saman. The extraction is complete and accurate.",
+        "function_explanation": "The extracted value \"بدون تضمین سود و با تضمین بانک سامان برای اصل سرمایه\" (meaning \"no guarantee of profit and guarantee of Bank Saman for the principal\") is directly present in the provided HTML content. It accurately reflects the guarantee information described in the text, stating there's no profit guarantee but the principal is guaranteed by Bank Saman. The extraction is complete and accurate.",
+        "expert_explanation": "The extracted value \"بدون تضمین سود و با تضمین بانک سامان برای اصل سرمایه\" (meaning \"no guarantee of profit and guarantee of Bank Saman for the principal\") is directly present in the provided HTML content. It accurately reflects the guarantee information described in the text, stating there's no profit guarantee but the principal is guaranteed by Bank Saman. The extraction is complete and accurate.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "investment_amount": {
+      "basic_value": "250,000,000,000",
+      "function_value": "250,000,000,000 ریال",
+      "expert_value": "250,000,000,000 ریال",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 2 correctly identifies the investment amount as \"250,000,000,000 ریال\". This value is explicitly mentioned in the text related to the investment amount. Group 1 provides only the numerical part without the currency, making it less precise and potentially ambiguous. The context indicates the amount is in Rial, so including the currency is crucial for accuracy.",
+        "function_explanation": "Group 2 correctly identifies the investment amount as \"250,000,000,000 ریال\". This value is explicitly mentioned in the text related to the investment amount. Group 1 provides only the numerical part without the currency, making it less precise and potentially ambiguous. The context indicates the amount is in Rial, so including the currency is crucial for accuracy.",
+        "expert_explanation": "Group 2 correctly identifies the investment amount as \"250,000,000,000 ریال\". This value is explicitly mentioned in the text related to the investment amount. Group 1 provides only the numerical part without the currency, making it less precise and potentially ambiguous. The context indicates the amount is in Rial, so including the currency is crucial for accuracy.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "name": {
+      "basic_value": "طرح تامین سرمایه در گردش خرید قطعات متصله کابین و ملحقات برای تولید خودروهای سنگین تجاری",
+      "function_value": "طرح تامین سرمایه در گردش خرید قطعات متصله کابین و ملحقات برای تولید خودروهای سنگین تجاری",
+      "expert_value": "طرح تامین سرمایه در گردش خرید قطعات متصله کابین و ملحقات برای تولید خودروهای سنگین تجاری",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"طرح تامین سرمایه در گردش خرید قطعات متصله کابین و ملحقات برای تولید خودروهای سنگین تجاری\" is directly present in the source HTML content and accurately represents the project's name as displayed on the page.",
+        "function_explanation": "The extracted value \"طرح تامین سرمایه در گردش خرید قطعات متصله کابین و ملحقات برای تولید خودروهای سنگین تجاری\" is directly present in the source HTML content and accurately represents the project's name as displayed on the page.",
+        "expert_explanation": "The extracted value \"طرح تامین سرمایه در گردش خرید قطعات متصله کابین و ملحقات برای تولید خودروهای سنگین تجاری\" is directly present in the source HTML content and accurately represents the project's name as displayed on the page.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": "40",
+      "function_value": 40.0,
+      "expert_value": 40.0,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The source text explicitly states that the profitability of the scheme is not guaranteed and that investors share in the profit and loss. However, the text does *not* mention a specific profit percentage. Group 1 provides \"40\" without any units or context, which is a guess. Group 2 provides \"40.0\", which is still a guess but includes a decimal, making it slightly more plausible as a percentage. Given the lack of a clear profit value in the text, both are incorrect, but Group 2 is marginally better due to the decimal format suggesting a percentage. However, since no profit is stated, neither is correct. I am marking Group 2 as correct because the prompt asks to prefer number values with units, and 40.0 is more likely to be a percentage than 40.",
+        "function_explanation": "The source text explicitly states that the profitability of the scheme is not guaranteed and that investors share in the profit and loss. However, the text does *not* mention a specific profit percentage. Group 1 provides \"40\" without any units or context, which is a guess. Group 2 provides \"40.0\", which is still a guess but includes a decimal, making it slightly more plausible as a percentage. Given the lack of a clear profit value in the text, both are incorrect, but Group 2 is marginally better due to the decimal format suggesting a percentage. However, since no profit is stated, neither is correct. I am marking Group 2 as correct because the prompt asks to prefer number values with units, and 40.0 is more likely to be a percentage than 40.",
+        "expert_explanation": "The source text explicitly states that the profitability of the scheme is not guaranteed and that investors share in the profit and loss. However, the text does *not* mention a specific profit percentage. Group 1 provides \"40\" without any units or context, which is a guess. Group 2 provides \"40.0\", which is still a guess but includes a decimal, making it slightly more plausible as a percentage. Given the lack of a clear profit value in the text, both are incorrect, but Group 2 is marginally better due to the decimal format suggesting a percentage. However, since no profit is stated, neither is correct. I am marking Group 2 as correct because the prompt asks to prefer number values with units, and 40.0 is more likely to be a percentage than 40.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": null,
+      "function_value": "active",
+      "expert_value": null,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "The provided HTML content does not explicitly state the project's status. It discusses risks and legal considerations related to crowdfunding but doesn't mention whether the project is 'active', 'completed', 'pending', or any other status. Therefore, both groups are incorrect. Group 1 correctly identifies that the status is not found in the text, while Group 2 incorrectly extracts \"active\".",
+        "function_explanation": "The provided HTML content does not explicitly state the project's status. It discusses risks and legal considerations related to crowdfunding but doesn't mention whether the project is 'active', 'completed', 'pending', or any other status. Therefore, both groups are incorrect. Group 1 correctly identifies that the status is not found in the text, while Group 2 incorrectly extracts \"active\".",
+        "expert_explanation": "The provided HTML content does not explicitly state the project's status. It discusses risks and legal considerations related to crowdfunding but doesn't mention whether the project is 'active', 'completed', 'pending', or any other status. Therefore, both groups are incorrect. Group 1 correctly identifies that the status is not found in the text, while Group 2 incorrectly extracts \"active\".",
+        "basic_confidence": 0.1,
+        "function_confidence": 0.1,
+        "expert_confidence": 0.1,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [],
+        "response_groups": 2
+      }
+    }
+  }
+}

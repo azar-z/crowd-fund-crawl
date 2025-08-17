@@ -1,0 +1,185 @@
+{
+  "project_name": "dongi",
+  "evaluation_date": "2025-08-17T15:03:20.907013",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.8500000000000005,
+    "average_confidence": 0.979
+  },
+  "function_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.8500000000000005,
+    "average_confidence": 0.979
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.8500000000000005,
+    "average_confidence": 0.979
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "گروه صنعتی گناباد",
+      "function_value": "گروه صنعتی گناباد",
+      "expert_value": "گروه صنعتی گناباد",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"گروه صنعتی گناباد\" (Group Sanati Genabad) appears multiple times within the HTML content, clearly identifying the company associated with the project. It is accurately extracted and complete.",
+        "function_explanation": "The extracted value \"گروه صنعتی گناباد\" (Group Sanati Genabad) appears multiple times within the HTML content, clearly identifying the company associated with the project. It is accurately extracted and complete.",
+        "expert_explanation": "The extracted value \"گروه صنعتی گناباد\" (Group Sanati Genabad) appears multiple times within the HTML content, clearly identifying the company associated with the project. It is accurately extracted and complete.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "12 ماه",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"12 ماه\" (12 months) is explicitly stated in the HTML content as the \"دوره سرمایه گذاری\" (investment period). It accurately represents the duration of the investment.",
+        "function_explanation": "The extracted value \"12 ماه\" (12 months) is explicitly stated in the HTML content as the \"دوره سرمایه گذاری\" (investment period). It accurately represents the duration of the investment.",
+        "expert_explanation": "The extracted value \"12 ماه\" (12 months) is explicitly stated in the HTML content as the \"دوره سرمایه گذاری\" (investment period). It accurately represents the duration of the investment.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "guarantee": {
+      "basic_value": "ضمانت بازپرداخت اصل سرمایه توسط ضمانت‌نامه تعهد پرداخت بانک کشاورزی\n",
+      "function_value": "بانک کشاورزی",
+      "expert_value": "1- ضمانت بازپرداخت اصل سرمایه توسط ضمانت‌نامه تعهد پرداخت بانک کشاورزی به شماره سپام 0110304676665192\n2- کاهش ریسک با بیمه انبارها، بازخرید محصولات فروش نرفته و اولویت پرداخت به سرمایه‌گذاران\n3- پیش بینی پرداخت سود علی‌الحساب 11.25 درصد به صورت هرسه ماه یکبار\n4- سابقه دو تامین مالی موفق و تسویه شده طی یکسال گذشته",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 3 provides the most complete and accurate extraction of the guarantee information. The HTML content explicitly states: \"1- ضمانت بازپرداخت اصل سرمایه توسط ضمانت‌نامه تعهد پرداخت بانک کشاورزی به شماره سپام 0110304676665192 2- کاهش ریسک با بیمه انبارها...\". Group 1 is partially correct but lacks the specific شماره سپام (spam number). Group 2 is too brief and only mentions \"بانک کشاورزی\" without the details of the guarantee. Therefore, only Group 3 accurately reflects the guarantee details as presented in the source HTML.",
+        "function_explanation": "Group 3 provides the most complete and accurate extraction of the guarantee information. The HTML content explicitly states: \"1- ضمانت بازپرداخت اصل سرمایه توسط ضمانت‌نامه تعهد پرداخت بانک کشاورزی به شماره سپام 0110304676665192 2- کاهش ریسک با بیمه انبارها...\". Group 1 is partially correct but lacks the specific شماره سپام (spam number). Group 2 is too brief and only mentions \"بانک کشاورزی\" without the details of the guarantee. Therefore, only Group 3 accurately reflects the guarantee details as presented in the source HTML.",
+        "expert_explanation": "Group 3 provides the most complete and accurate extraction of the guarantee information. The HTML content explicitly states: \"1- ضمانت بازپرداخت اصل سرمایه توسط ضمانت‌نامه تعهد پرداخت بانک کشاورزی به شماره سپام 0110304676665192 2- کاهش ریسک با بیمه انبارها...\". Group 1 is partially correct but lacks the specific شماره سپام (spam number). Group 2 is too brief and only mentions \"بانک کشاورزی\" without the details of the guarantee. Therefore, only Group 3 accurately reflects the guarantee details as presented in the source HTML.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          3
+        ],
+        "response_groups": 3
+      }
+    },
+    "investment_amount": {
+      "basic_value": "125,000,000,000",
+      "function_value": "125,000",
+      "expert_value": "125,000میلیون ریال",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "Group 1 provides \"125,000,000,000\" which corresponds to \"125 میلیارد ریال\" found in the text: \"مبلغ جمع‌ آوری شده 125 میلیارد ریال\". Group 2 provides \"125,000\" which is too small and doesn't match any value in the text. Group 3 provides \"125,000میلیون ریال\" which is equivalent to 125,000,000,000 but includes the Persian word \"میلیون\" which is not ideal for a numerical field. Therefore, Group 1 is the most accurate extraction.",
+        "function_explanation": "Group 1 provides \"125,000,000,000\" which corresponds to \"125 میلیارد ریال\" found in the text: \"مبلغ جمع‌ آوری شده 125 میلیارد ریال\". Group 2 provides \"125,000\" which is too small and doesn't match any value in the text. Group 3 provides \"125,000میلیون ریال\" which is equivalent to 125,000,000,000 but includes the Persian word \"میلیون\" which is not ideal for a numerical field. Therefore, Group 1 is the most accurate extraction.",
+        "expert_explanation": "Group 1 provides \"125,000,000,000\" which corresponds to \"125 میلیارد ریال\" found in the text: \"مبلغ جمع‌ آوری شده 125 میلیارد ریال\". Group 2 provides \"125,000\" which is too small and doesn't match any value in the text. Group 3 provides \"125,000میلیون ریال\" which is equivalent to 125,000,000,000 but includes the Persian word \"میلیون\" which is not ideal for a numerical field. Therefore, Group 1 is the most accurate extraction.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1
+        ],
+        "response_groups": 3
+      }
+    },
+    "name": {
+      "basic_value": "تامین سرمایه در گردش جهت خرید و فروش بذر ذرت",
+      "function_value": "تامین سرمایه در گردش جهت خرید و فروش بذر ذرت",
+      "expert_value": "تامین سرمایه در گردش جهت خرید و فروش بذر ذرت",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تامین سرمایه در گردش جهت خرید و فروش بذر ذرت\" is present multiple times in the source HTML and accurately represents the project's name/title. It is a string value as expected for the 'name' field.",
+        "function_explanation": "The extracted value \"تامین سرمایه در گردش جهت خرید و فروش بذر ذرت\" is present multiple times in the source HTML and accurately represents the project's name/title. It is a string value as expected for the 'name' field.",
+        "expert_explanation": "The extracted value \"تامین سرمایه در گردش جهت خرید و فروش بذر ذرت\" is present multiple times in the source HTML and accurately represents the project's name/title. It is a string value as expected for the 'name' field.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": "45",
+      "function_value": 45.0,
+      "expert_value": 45.0,
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Both groups correctly extracted the profit percentage as 45. The source HTML clearly states \"سود پیش بینی شده طرح %45\" which translates to \"Predicted profit percentage of the project: 45%\". The \".0\" in group 2 is simply a formatting difference and doesn't affect the correctness of the value.",
+        "function_explanation": "Both groups correctly extracted the profit percentage as 45. The source HTML clearly states \"سود پیش بینی شده طرح %45\" which translates to \"Predicted profit percentage of the project: 45%\". The \".0\" in group 2 is simply a formatting difference and doesn't affect the correctness of the value.",
+        "expert_explanation": "Both groups correctly extracted the profit percentage as 45. The source HTML clearly states \"سود پیش بینی شده طرح %45\" which translates to \"Predicted profit percentage of the project: 45%\". The \".0\" in group 2 is simply a formatting difference and doesn't affect the correctness of the value.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "موفق شد",
+      "function_value": "موفق شد",
+      "expert_value": "موفق شد",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"موفق شد\" (meaning \"successful\" in Farsi) is present in the HTML content and accurately reflects the project's status as indicated by \"100% موفق شد\" (100% successful). It is a valid status indicator for a crowdfunding project.",
+        "function_explanation": "The extracted value \"موفق شد\" (meaning \"successful\" in Farsi) is present in the HTML content and accurately reflects the project's status as indicated by \"100% موفق شد\" (100% successful). It is a valid status indicator for a crowdfunding project.",
+        "expert_explanation": "The extracted value \"موفق شد\" (meaning \"successful\" in Farsi) is present in the HTML content and accurately reflects the project's status as indicated by \"100% موفق شد\" (100% successful). It is a valid status indicator for a crowdfunding project.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    }
+  }
+}

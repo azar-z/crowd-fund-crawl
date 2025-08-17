@@ -1,0 +1,185 @@
+{
+  "project_name": "halalfund",
+  "evaluation_date": "2025-08-17T14:59:38.846282",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 4,
+    "incorrect": 3,
+    "total_confidence": 6.75,
+    "average_confidence": 0.964
+  },
+  "function_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.75,
+    "average_confidence": 0.964
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.75,
+    "average_confidence": 0.964
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "شرکت یزدان مطهر قائم وسطی",
+      "function_value": "شرکت یزدان مطهر قائم وسطی",
+      "expert_value": "شرکت یزدان مطهر قائم وسطی",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"شرکت یزدان مطهر قائم وسطی\" (Sherkat Yazdan Motahar Ghaem Vosta) is directly present in the HTML content as the name of the سرمایه‌پذیر (capital receiver/company). It accurately represents the company associated with the project.",
+        "function_explanation": "The extracted value \"شرکت یزدان مطهر قائم وسطی\" (Sherkat Yazdan Motahar Ghaem Vosta) is directly present in the HTML content as the name of the سرمایه‌پذیر (capital receiver/company). It accurately represents the company associated with the project.",
+        "expert_explanation": "The extracted value \"شرکت یزدان مطهر قائم وسطی\" (Sherkat Yazdan Motahar Ghaem Vosta) is directly present in the HTML content as the name of the سرمایه‌پذیر (capital receiver/company). It accurately represents the company associated with the project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "12",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 provides only the number \"12\" which is present in the text but lacks the unit \"ماه\" (months). Group 2 correctly extracts \"12 ماه\" which accurately represents the project duration as stated in the HTML content (\"مدت زمان12 ماه\"). Therefore, Group 2 is the correct extraction.",
+        "function_explanation": "Group 1 provides only the number \"12\" which is present in the text but lacks the unit \"ماه\" (months). Group 2 correctly extracts \"12 ماه\" which accurately represents the project duration as stated in the HTML content (\"مدت زمان12 ماه\"). Therefore, Group 2 is the correct extraction.",
+        "expert_explanation": "Group 1 provides only the number \"12\" which is present in the text but lacks the unit \"ماه\" (months). Group 2 correctly extracts \"12 ماه\" which accurately represents the project duration as stated in the HTML content (\"مدت زمان12 ماه\"). Therefore, Group 2 is the correct extraction.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "guarantee": {
+      "basic_value": "اصل سرمایه توسط متقاضی ضمانت شده است. شماره سپام ضمانت نامه صادر شده از سوی بانک ملی، 0949604689744623 می باشد و تا تاریخ 1405/05/13 اعتبار داشته و با درخواست شرکت حساب یاری امین ملل قابل تمدید می باشد.",
+      "function_value": "اصل سرمایه توسط متقاضی ضمانت شده است",
+      "expert_value": "اصل سرمایه توسط متقاضی ضمانت شده است. شماره سپام ضمانت نامه صادر شده از سوی بانک ملی، 0949604689744623 می باشد و تا تاریخ 1405/05/13 اعتبار داشته و با درخواست شرکت حساب یاری امین ملل قابل تمدید می باشد.",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 provides a complete and accurate extraction of the guarantee information as it appears in the source HTML. It includes details about the guarantor, the guarantee number, validity date, and renewal options. Group 2 only extracts the first sentence, omitting crucial details about the guarantee number and validity, making it incomplete. Therefore, only Group 1 is correct.",
+        "function_explanation": "Group 1 provides a complete and accurate extraction of the guarantee information as it appears in the source HTML. It includes details about the guarantor, the guarantee number, validity date, and renewal options. Group 2 only extracts the first sentence, omitting crucial details about the guarantee number and validity, making it incomplete. Therefore, only Group 1 is correct.",
+        "expert_explanation": "Group 1 provides a complete and accurate extraction of the guarantee information as it appears in the source HTML. It includes details about the guarantor, the guarantee number, validity date, and renewal options. Group 2 only extracts the first sentence, omitting crucial details about the guarantee number and validity, making it incomplete. Therefore, only Group 1 is correct.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "investment_amount": {
+      "basic_value": "5,000,000",
+      "function_value": "250,000 میلیون ریال",
+      "expert_value": "250,000 میلیون ریال",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 2 correctly extracted \"250,000 میلیون ریال\" which is the stated سرمایه مورد نیاز (required capital) in the HTML content. Group 1 extracted \"5,000,000\" which is not present in the source document and appears to be a calculation based on other numbers in the document (6,476,589 میلیون ریال). Therefore, Group 2 is the correct extraction.",
+        "function_explanation": "Group 2 correctly extracted \"250,000 میلیون ریال\" which is the stated سرمایه مورد نیاز (required capital) in the HTML content. Group 1 extracted \"5,000,000\" which is not present in the source document and appears to be a calculation based on other numbers in the document (6,476,589 میلیون ریال). Therefore, Group 2 is the correct extraction.",
+        "expert_explanation": "Group 2 correctly extracted \"250,000 میلیون ریال\" which is the stated سرمایه مورد نیاز (required capital) in the HTML content. Group 1 extracted \"5,000,000\" which is not present in the source document and appears to be a calculation based on other numbers in the document (6,476,589 میلیون ریال). Therefore, Group 2 is the correct extraction.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "name": {
+      "basic_value": "تامین سرمایه در گردش جهت خرید و فروش مواد غذایی",
+      "function_value": "تامین سرمایه در گردش جهت خرید و فروش مواد غذایی",
+      "expert_value": "تامین سرمایه در گردش جهت خرید و فروش مواد غذایی",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تامین سرمایه در گردش جهت خرید و فروش مواد غذایی\" is directly present in the HTML content as the project title and is accurately extracted for the 'name' field.",
+        "function_explanation": "The extracted value \"تامین سرمایه در گردش جهت خرید و فروش مواد غذایی\" is directly present in the HTML content as the project title and is accurately extracted for the 'name' field.",
+        "expert_explanation": "The extracted value \"تامین سرمایه در گردش جهت خرید و فروش مواد غذایی\" is directly present in the HTML content as the project title and is accurately extracted for the 'name' field.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": 8.5,
+      "function_value": 8.5,
+      "expert_value": 43.0,
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": false,
+        "basic_explanation": "Group 1's response of 8.5 is directly mentioned in the text: \"همچنین طبق اظهارات متقاضی میانگین و حاشیه سود حدود 8.5 درصد برآورد می گردد.\" (Also, according to the applicant, the average and profit margin are estimated at around 8.5 percent). Group 2's response of 43.0 is also present in the text: \"پیش‌بینی نرخ سود(تضمین نشده)٪43 سالیانه\" (Predicted interest rate (not guaranteed) 43% annually) and \"پیش بینی سود پلن (سالیانه)%43\" (Predicted plan profit (annual) 43%). However, the prompt asks for the profit, and the 8.5% is a more direct statement of the profit margin, while 43% is a predicted rate of return. Therefore, Group 1 is more accurate.",
+        "function_explanation": "Group 1's response of 8.5 is directly mentioned in the text: \"همچنین طبق اظهارات متقاضی میانگین و حاشیه سود حدود 8.5 درصد برآورد می گردد.\" (Also, according to the applicant, the average and profit margin are estimated at around 8.5 percent). Group 2's response of 43.0 is also present in the text: \"پیش‌بینی نرخ سود(تضمین نشده)٪43 سالیانه\" (Predicted interest rate (not guaranteed) 43% annually) and \"پیش بینی سود پلن (سالیانه)%43\" (Predicted plan profit (annual) 43%). However, the prompt asks for the profit, and the 8.5% is a more direct statement of the profit margin, while 43% is a predicted rate of return. Therefore, Group 1 is more accurate.",
+        "expert_explanation": "Group 1's response of 8.5 is directly mentioned in the text: \"همچنین طبق اظهارات متقاضی میانگین و حاشیه سود حدود 8.5 درصد برآورد می گردد.\" (Also, according to the applicant, the average and profit margin are estimated at around 8.5 percent). Group 2's response of 43.0 is also present in the text: \"پیش‌بینی نرخ سود(تضمین نشده)٪43 سالیانه\" (Predicted interest rate (not guaranteed) 43% annually) and \"پیش بینی سود پلن (سالیانه)%43\" (Predicted plan profit (annual) 43%). However, the prompt asks for the profit, and the 8.5% is a more direct statement of the profit margin, while 43% is a predicted rate of return. Therefore, Group 1 is more accurate.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          2
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "تایید شده",
+      "function_value": "تایید شده",
+      "expert_value": "تامین مالی شده",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 2 correctly extracted \"تامین مالی شده\" (Tamin Mali Shode) which translates to \"Financed\" or \"Funded\". This accurately reflects the text \"%100 تامین مالی شده\" (100% Tamin Mali Shode) found in the HTML content, indicating the project is fully funded. Group 1 extracted \"تایید شده\" (Taid Shode) which translates to \"Approved\". While approval is a step in the process, the text explicitly states the project is *funded*, not merely approved. Therefore, Group 1 is incorrect.",
+        "function_explanation": "Group 2 correctly extracted \"تامین مالی شده\" (Tamin Mali Shode) which translates to \"Financed\" or \"Funded\". This accurately reflects the text \"%100 تامین مالی شده\" (100% Tamin Mali Shode) found in the HTML content, indicating the project is fully funded. Group 1 extracted \"تایید شده\" (Taid Shode) which translates to \"Approved\". While approval is a step in the process, the text explicitly states the project is *funded*, not merely approved. Therefore, Group 1 is incorrect.",
+        "expert_explanation": "Group 2 correctly extracted \"تامین مالی شده\" (Tamin Mali Shode) which translates to \"Financed\" or \"Funded\". This accurately reflects the text \"%100 تامین مالی شده\" (100% Tamin Mali Shode) found in the HTML content, indicating the project is fully funded. Group 1 extracted \"تایید شده\" (Taid Shode) which translates to \"Approved\". While approval is a step in the process, the text explicitly states the project is *funded*, not merely approved. Therefore, Group 1 is incorrect.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          3
+        ],
+        "response_groups": 2
+      }
+    }
+  }
+}

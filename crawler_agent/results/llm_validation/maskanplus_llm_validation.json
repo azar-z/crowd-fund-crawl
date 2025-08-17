@@ -1,0 +1,165 @@
+{
+  "project_name": "maskanplus",
+  "evaluation_date": "2025-08-17T15:06:08.132919",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 0,
+    "incorrect": 7,
+    "total_confidence": 3.3500000000000005,
+    "average_confidence": 0.479
+  },
+  "function_agent": {
+    "correct": 1,
+    "incorrect": 6,
+    "total_confidence": 3.3500000000000005,
+    "average_confidence": 0.479
+  },
+  "expert_agent": {
+    "correct": 1,
+    "incorrect": 6,
+    "total_confidence": 3.3500000000000005,
+    "average_confidence": 0.479
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "شمیم رایحه یاس نوین",
+      "function_value": "شمیم رایحه یاس نوین",
+      "expert_value": "شمیم رایحه یاس نوین",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "The extracted value \"شمیم رایحه یاس نوین\" (Shamim Rayehe Yas Novin) is not present in the provided HTML content. The company associated with the project is \"مسکن پلاس\" (Maskan Plus), which is clearly indicated throughout the text. The extracted value appears to be unrelated to the content.",
+        "function_explanation": "The extracted value \"شمیم رایحه یاس نوین\" (Shamim Rayehe Yas Novin) is not present in the provided HTML content. The company associated with the project is \"مسکن پلاس\" (Maskan Plus), which is clearly indicated throughout the text. The extracted value appears to be unrelated to the content.",
+        "expert_explanation": "The extracted value \"شمیم رایحه یاس نوین\" (Shamim Rayehe Yas Novin) is not present in the provided HTML content. The company associated with the project is \"مسکن پلاس\" (Maskan Plus), which is clearly indicated throughout the text. The extracted value appears to be unrelated to the content.",
+        "basic_confidence": 0.8,
+        "function_confidence": 0.8,
+        "expert_confidence": 0.8,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": []
+      }
+    },
+    "duration": {
+      "basic_value": "12",
+      "function_value": "12 ماهه",
+      "expert_value": "12 ماهه",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 provides only the number \"12\" which is not found in the HTML. Group 2 provides \"12 ماهه\" which translates to \"12 months\" and is a reasonable duration format. While the HTML doesn't explicitly state the project duration, the inclusion of \"ماهه\" (months) makes it a more plausible extraction for the 'duration' field than just the number 12.",
+        "function_explanation": "Group 1 provides only the number \"12\" which is not found in the HTML. Group 2 provides \"12 ماهه\" which translates to \"12 months\" and is a reasonable duration format. While the HTML doesn't explicitly state the project duration, the inclusion of \"ماهه\" (months) makes it a more plausible extraction for the 'duration' field than just the number 12.",
+        "expert_explanation": "Group 1 provides only the number \"12\" which is not found in the HTML. Group 2 provides \"12 ماهه\" which translates to \"12 months\" and is a reasonable duration format. While the HTML doesn't explicitly state the project duration, the inclusion of \"ماهه\" (months) makes it a more plausible extraction for the 'duration' field than just the number 12.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "guarantee": {
+      "basic_value": "ضمانت‌نامه تعهد پرداخت صندوق ضمانت سرمایه‌گذاری صنایع کوچک برای اصل سرمایه",
+      "function_value": "ضمانت‌نامه تعهد پرداخت صندوق ضمانت سرمایه‌گذاری صنایع کوچک برای اصل سرمایه",
+      "expert_value": "ضمانت‌نامه تعهد پرداخت به میزان اصل",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "Neither group provides a guarantee description present in the provided HTML content. The text focuses on investment details and contact information but does not mention any specific guarantees or commitment to repayment from a fund. Both responses appear to be hallucinations or based on external knowledge rather than the given source.",
+        "function_explanation": "Neither group provides a guarantee description present in the provided HTML content. The text focuses on investment details and contact information but does not mention any specific guarantees or commitment to repayment from a fund. Both responses appear to be hallucinations or based on external knowledge rather than the given source.",
+        "expert_explanation": "Neither group provides a guarantee description present in the provided HTML content. The text focuses on investment details and contact information but does not mention any specific guarantees or commitment to repayment from a fund. Both responses appear to be hallucinations or based on external knowledge rather than the given source.",
+        "basic_confidence": 0.1,
+        "function_confidence": 0.1,
+        "expert_confidence": 0.1,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [],
+        "response_groups": 2
+      }
+    },
+    "investment_amount": {
+      "basic_value": "33,300,000,000",
+      "function_value": "33,300,000,000",
+      "expert_value": "33,300,000,000 تا 55,500,000,000",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "The provided HTML content does not contain any explicit investment amount. The agents extracted a number, but it's not present in the text. Group 2 provides a range, which is also not found in the source. Therefore, neither group is correct.",
+        "function_explanation": "The provided HTML content does not contain any explicit investment amount. The agents extracted a number, but it's not present in the text. Group 2 provides a range, which is also not found in the source. Therefore, neither group is correct.",
+        "expert_explanation": "The provided HTML content does not contain any explicit investment amount. The agents extracted a number, but it's not present in the text. Group 2 provides a range, which is also not found in the source. Therefore, neither group is correct.",
+        "basic_confidence": 0.1,
+        "function_confidence": 0.1,
+        "expert_confidence": 0.1,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [],
+        "response_groups": 2
+      }
+    },
+    "name": {
+      "basic_value": "مشارکت در تولید و فروش بادی اسپلش",
+      "function_value": "مشارکت در تولید و فروش بادی اسپلش",
+      "expert_value": "مشارکت در تولید و فروش بادی اسپلش",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "The extracted value \"مشارکت در تولید و فروش بادی اسپلش\" (Participation in the production and sale of body splash) is not present in the provided HTML content. The text describes a general investment opportunity in producing and providing services, but doesn't mention a specific product like \"body splash\". The correct name should be related to \"مسکن پلاس\" (Maskan Plus) which is the name of the platform/company.",
+        "function_explanation": "The extracted value \"مشارکت در تولید و فروش بادی اسپلش\" (Participation in the production and sale of body splash) is not present in the provided HTML content. The text describes a general investment opportunity in producing and providing services, but doesn't mention a specific product like \"body splash\". The correct name should be related to \"مسکن پلاس\" (Maskan Plus) which is the name of the platform/company.",
+        "expert_explanation": "The extracted value \"مشارکت در تولید و فروش بادی اسپلش\" (Participation in the production and sale of body splash) is not present in the provided HTML content. The text describes a general investment opportunity in producing and providing services, but doesn't mention a specific product like \"body splash\". The correct name should be related to \"مسکن پلاس\" (Maskan Plus) which is the name of the platform/company.",
+        "basic_confidence": 0.6,
+        "function_confidence": 0.6,
+        "expert_confidence": 0.6,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": []
+      }
+    },
+    "profit": {
+      "basic_value": 43,
+      "function_value": 43.0,
+      "expert_value": 43.0,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "The provided HTML content does not contain any information about the \"profit\" of the project. Therefore, neither group's extraction is correct. The text is a general description of the crowdfunding platform and contact information, but it doesn't specify a profit percentage.",
+        "function_explanation": "The provided HTML content does not contain any information about the \"profit\" of the project. Therefore, neither group's extraction is correct. The text is a general description of the crowdfunding platform and contact information, but it doesn't specify a profit percentage.",
+        "expert_explanation": "The provided HTML content does not contain any information about the \"profit\" of the project. Therefore, neither group's extraction is correct. The text is a general description of the crowdfunding platform and contact information, but it doesn't specify a profit percentage.",
+        "basic_confidence": 0.0,
+        "function_confidence": 0.0,
+        "expert_confidence": 0.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "موفق",
+      "function_value": "موفق",
+      "expert_value": "موفق",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "The extracted value \"موفق\" translates to \"successful\" in English. While it *could* represent a project status, it is not explicitly stated as such within the provided HTML content. The text appears to be general marketing copy describing the platform and does not contain a clear project status indicator. Therefore, extracting \"موفق\" as the status is an assumption and not directly supported by the source.",
+        "function_explanation": "The extracted value \"موفق\" translates to \"successful\" in English. While it *could* represent a project status, it is not explicitly stated as such within the provided HTML content. The text appears to be general marketing copy describing the platform and does not contain a clear project status indicator. Therefore, extracting \"موفق\" as the status is an assumption and not directly supported by the source.",
+        "expert_explanation": "The extracted value \"موفق\" translates to \"successful\" in English. While it *could* represent a project status, it is not explicitly stated as such within the provided HTML content. The text appears to be general marketing copy describing the platform and does not contain a clear project status indicator. Therefore, extracting \"موفق\" as the status is an assumption and not directly supported by the source.",
+        "basic_confidence": 0.8,
+        "function_confidence": 0.8,
+        "expert_confidence": 0.8,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": []
+      }
+    }
+  }
+}
