@@ -1,0 +1,170 @@
+{
+  "project_name": "novincrowd",
+  "evaluation_date": "2025-08-17T18:31:33.466067",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 3,
+    "incorrect": 4,
+    "total_confidence": 5.949999999999999,
+    "average_confidence": 0.85
+  },
+  "function_agent": {
+    "correct": 3,
+    "incorrect": 4,
+    "total_confidence": 5.949999999999999,
+    "average_confidence": 0.85
+  },
+  "expert_agent": {
+    "correct": 3,
+    "incorrect": 4,
+    "total_confidence": 5.949999999999999,
+    "average_confidence": 0.85
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "صنایع غذایی بهروز نیک",
+      "function_value": "صنایع غذایی بهروز نیک",
+      "expert_value": "صنایع غذایی بهروز نیک",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"صنایع غذایی بهروز نیک\" (Sanaye Ghazayi Behrooz Nik) is explicitly mentioned in the HTML content as the company name: \"شرکت «بهروز نیک»\". It is the correct company associated with the project.",
+        "function_explanation": "The extracted value \"صنایع غذایی بهروز نیک\" (Sanaye Ghazayi Behrooz Nik) is explicitly mentioned in the HTML content as the company name: \"شرکت «بهروز نیک»\". It is the correct company associated with the project.",
+        "expert_explanation": "The extracted value \"صنایع غذایی بهروز نیک\" (Sanaye Ghazayi Behrooz Nik) is explicitly mentioned in the HTML content as the company name: \"شرکت «بهروز نیک»\". It is the correct company associated with the project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "12 ماه",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "The extracted value \"12 ماه\" (12 months) is not explicitly mentioned in the provided HTML content. While the text discusses a timeframe of \"1400 تا 1402\" (1400 to 1402 - corresponding to 2021-2023), this refers to the company's growth period and not the project's duration. Therefore, the extracted value is not supported by the given context.",
+        "function_explanation": "The extracted value \"12 ماه\" (12 months) is not explicitly mentioned in the provided HTML content. While the text discusses a timeframe of \"1400 تا 1402\" (1400 to 1402 - corresponding to 2021-2023), this refers to the company's growth period and not the project's duration. Therefore, the extracted value is not supported by the given context.",
+        "expert_explanation": "The extracted value \"12 ماه\" (12 months) is not explicitly mentioned in the provided HTML content. While the text discusses a timeframe of \"1400 تا 1402\" (1400 to 1402 - corresponding to 2021-2023), this refers to the company's growth period and not the project's duration. Therefore, the extracted value is not supported by the given context.",
+        "basic_confidence": 0.8,
+        "function_confidence": 0.8,
+        "expert_confidence": 0.8,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": []
+      }
+    },
+    "guarantee": {
+      "basic_value": "بدون تضمین سود و با ضمانت نامه تعهد پرداخت بانک کشاورزی برای اصل سرمایه",
+      "function_value": "بدون تضمین سود و با ضمانت نامه تعهد پرداخت بانک کشاورزی برای اصل سرمایه",
+      "expert_value": "بدون تضمین سود و با ضمانت نامه تعهد پرداخت بانک کشاورزی برای اصل سرمایه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"بدون تضمین سود و با ضمانت نامه تعهد پرداخت بانک کشاورزی برای اصل سرمایه\" (meaning \"no guarantee of profit and with a commitment letter from Agricultural Bank for the principal\") is present within the provided HTML content, specifically within the risk section discussing the project's financial aspects. It accurately describes the guarantee offered for the principal investment.",
+        "function_explanation": "The extracted value \"بدون تضمین سود و با ضمانت نامه تعهد پرداخت بانک کشاورزی برای اصل سرمایه\" (meaning \"no guarantee of profit and with a commitment letter from Agricultural Bank for the principal\") is present within the provided HTML content, specifically within the risk section discussing the project's financial aspects. It accurately describes the guarantee offered for the principal investment.",
+        "expert_explanation": "The extracted value \"بدون تضمین سود و با ضمانت نامه تعهد پرداخت بانک کشاورزی برای اصل سرمایه\" (meaning \"no guarantee of profit and with a commitment letter from Agricultural Bank for the principal\") is present within the provided HTML content, specifically within the risk section discussing the project's financial aspects. It accurately describes the guarantee offered for the principal investment.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "investment_amount": {
+      "basic_value": "250,000,000,000",
+      "function_value": "250,000,000,000",
+      "expert_value": "250,000,000,000",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "The extracted value \"250,000,000,000\" is not explicitly mentioned in the provided HTML content. While the text discusses financial aspects like revenue growth, asset increase, and capital, it doesn't state a specific investment amount being sought. The value appears to be a very large number and is likely an incorrect extraction. The document focuses on the company's financial health and potential for growth, not a specific funding target.",
+        "function_explanation": "The extracted value \"250,000,000,000\" is not explicitly mentioned in the provided HTML content. While the text discusses financial aspects like revenue growth, asset increase, and capital, it doesn't state a specific investment amount being sought. The value appears to be a very large number and is likely an incorrect extraction. The document focuses on the company's financial health and potential for growth, not a specific funding target.",
+        "expert_explanation": "The extracted value \"250,000,000,000\" is not explicitly mentioned in the provided HTML content. While the text discusses financial aspects like revenue growth, asset increase, and capital, it doesn't state a specific investment amount being sought. The value appears to be a very large number and is likely an incorrect extraction. The document focuses on the company's financial health and potential for growth, not a specific funding target.",
+        "basic_confidence": 0.8,
+        "function_confidence": 0.8,
+        "expert_confidence": 0.8,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": []
+      }
+    },
+    "name": {
+      "basic_value": "تامین سرمایه در گردش بهبود فرمولاسیون تولید انواع کنسرو",
+      "function_value": "تامین سرمایه در گردش بهبود فرمولاسیون تولید انواع کنسرو",
+      "expert_value": "تامین سرمایه در گردش بهبود فرمولاسیون تولید انواع کنسرو",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تامین سرمایه در گردش بهبود فرمولاسیون تولید انواع کنسرو\" is directly present and accurately represents the title of the crowdfunding project as displayed in the source HTML content. It appears multiple times as the project name.",
+        "function_explanation": "The extracted value \"تامین سرمایه در گردش بهبود فرمولاسیون تولید انواع کنسرو\" is directly present and accurately represents the title of the crowdfunding project as displayed in the source HTML content. It appears multiple times as the project name.",
+        "expert_explanation": "The extracted value \"تامین سرمایه در گردش بهبود فرمولاسیون تولید انواع کنسرو\" is directly present and accurately represents the title of the crowdfunding project as displayed in the source HTML content. It appears multiple times as the project name.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": "44.0",
+      "function_value": 44.0,
+      "expert_value": 44.0,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "The HTML content discusses growth in profitability and mentions a \"جهش در سودآوری\" (jump in profitability) but does not explicitly state a profit percentage of 44.0. The text refers to growth in profit, but doesn't provide a specific percentage value for the 'profit' field. Therefore, the extracted value is not directly supported by the provided text.",
+        "function_explanation": "The HTML content discusses growth in profitability and mentions a \"جهش در سودآوری\" (jump in profitability) but does not explicitly state a profit percentage of 44.0. The text refers to growth in profit, but doesn't provide a specific percentage value for the 'profit' field. Therefore, the extracted value is not directly supported by the provided text.",
+        "expert_explanation": "The HTML content discusses growth in profitability and mentions a \"جهش در سودآوری\" (jump in profitability) but does not explicitly state a profit percentage of 44.0. The text refers to growth in profit, but doesn't provide a specific percentage value for the 'profit' field. Therefore, the extracted value is not directly supported by the provided text.",
+        "basic_confidence": 0.8,
+        "function_confidence": 0.8,
+        "expert_confidence": 0.8,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": []
+      }
+    },
+    "status": {
+      "basic_value": "موفقیت جمع آوری وجوه",
+      "function_value": "موفقیت جمع آوری وجوه",
+      "expert_value": "موفقیت جمع آوری وجوه",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "The extracted value \"موفقیت جمع آوری وجوه\" translates to \"successful fundraising\". While the text does mention the company has had a successful growth and increased profitability (\"موفق به رشد پایدار در ابعاد کلان عملیاتی و مالی شده است\"), it doesn't explicitly state the fundraising *status* as \"successful\". The text describes a positive evaluation of the company's performance, but not the completion of the fundraising itself. Therefore, it's an interpretation rather than a direct statement of the project's status. A more appropriate status might be \"active\" or \"ongoing\" based on the context.",
+        "function_explanation": "The extracted value \"موفقیت جمع آوری وجوه\" translates to \"successful fundraising\". While the text does mention the company has had a successful growth and increased profitability (\"موفق به رشد پایدار در ابعاد کلان عملیاتی و مالی شده است\"), it doesn't explicitly state the fundraising *status* as \"successful\". The text describes a positive evaluation of the company's performance, but not the completion of the fundraising itself. Therefore, it's an interpretation rather than a direct statement of the project's status. A more appropriate status might be \"active\" or \"ongoing\" based on the context.",
+        "expert_explanation": "The extracted value \"موفقیت جمع آوری وجوه\" translates to \"successful fundraising\". While the text does mention the company has had a successful growth and increased profitability (\"موفق به رشد پایدار در ابعاد کلان عملیاتی و مالی شده است\"), it doesn't explicitly state the fundraising *status* as \"successful\". The text describes a positive evaluation of the company's performance, but not the completion of the fundraising itself. Therefore, it's an interpretation rather than a direct statement of the project's status. A more appropriate status might be \"active\" or \"ongoing\" based on the context.",
+        "basic_confidence": 0.6,
+        "function_confidence": 0.6,
+        "expert_confidence": 0.6,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": []
+      }
+    }
+  }
+}

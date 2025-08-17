@@ -1,0 +1,182 @@
+{
+  "project_name": "vestacrowd",
+  "evaluation_date": "2025-08-17T18:35:46.200006",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 5.8500000000000005,
+    "average_confidence": 0.836
+  },
+  "function_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 5.8500000000000005,
+    "average_confidence": 0.836
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 5.8500000000000005,
+    "average_confidence": 0.836
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "مدیریت فروشگاهی توسعه الماس",
+      "function_value": "مدیریت فروشگاهی توسعه الماس",
+      "expert_value": "مدیریت فروشگاهی توسعه الماس",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"مدیریت فروشگاهی توسعه الماس\" (Management of Development Diamond Stores) is directly present in the HTML content and accurately represents the company name associated with the crowdfunding project. It appears multiple times, confirming its relevance.",
+        "function_explanation": "The extracted value \"مدیریت فروشگاهی توسعه الماس\" (Management of Development Diamond Stores) is directly present in the HTML content and accurately represents the company name associated with the crowdfunding project. It appears multiple times, confirming its relevance.",
+        "expert_explanation": "The extracted value \"مدیریت فروشگاهی توسعه الماس\" (Management of Development Diamond Stores) is directly present in the HTML content and accurately represents the company name associated with the crowdfunding project. It appears multiple times, confirming its relevance.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "12 ماه",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"12 ماه\" (12 months) is directly present in the HTML content next to the label \"مدت طرح:\" (Project duration:). It accurately represents the project duration.",
+        "function_explanation": "The extracted value \"12 ماه\" (12 months) is directly present in the HTML content next to the label \"مدت طرح:\" (Project duration:). It accurately represents the project duration.",
+        "expert_explanation": "The extracted value \"12 ماه\" (12 months) is directly present in the HTML content next to the label \"مدت طرح:\" (Project duration:). It accurately represents the project duration.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "guarantee": {
+      "basic_value": "ضمانت‌نامه تعهد پرداخت",
+      "function_value": "ضمانت‌نامه تعهد پرداخت",
+      "expert_value": "ضمانت‌نامه تعهد پرداخت",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"ضمانت‌نامه تعهد پرداخت\" (Zamannameh Tahadd Payesh) is directly present in the HTML content under the \"تامین مالی شده تضامین:\" (Guarantees provided:) section and also under \"تضمین بازگشت اصل سرمایه: ضمانت‌نامه تعهد پرداخت\" (Guarantee of return of principal: Payment Commitment Letter). It accurately represents the guarantee offered for the project.",
+        "function_explanation": "The extracted value \"ضمانت‌نامه تعهد پرداخت\" (Zamannameh Tahadd Payesh) is directly present in the HTML content under the \"تامین مالی شده تضامین:\" (Guarantees provided:) section and also under \"تضمین بازگشت اصل سرمایه: ضمانت‌نامه تعهد پرداخت\" (Guarantee of return of principal: Payment Commitment Letter). It accurately represents the guarantee offered for the project.",
+        "expert_explanation": "The extracted value \"ضمانت‌نامه تعهد پرداخت\" (Zamannameh Tahadd Payesh) is directly present in the HTML content under the \"تامین مالی شده تضامین:\" (Guarantees provided:) section and also under \"تضمین بازگشت اصل سرمایه: ضمانت‌نامه تعهد پرداخت\" (Guarantee of return of principal: Payment Commitment Letter). It accurately represents the guarantee offered for the project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "investment_amount": {
+      "basic_value": "250,000,000,000",
+      "function_value": "250,000,000,000",
+      "expert_value": "250,000,000,000 ریال",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 2 correctly identifies the investment amount as \"250,000,000,000 ریال\". This value is explicitly mentioned in the text as the approximate total amount customers are expected to spend: \"پیش بینی میشود هر مشتری نهایی، بین 2 تا 5 میلیارد تومان کالا از این طریق خواهد خرید. اندازه بازار مشتریان بالقوه برای این محصول، حدود 150 فروشگاه در سراسر ایران هستند که کالاهای الماس را خریداری میکنند.\" (It is predicted that each final customer will purchase between 2 to 5 billion Tomans of goods through this method. The potential market size for this product is about 150 stores across Iran that purchase Diamond goods). 150 stores * 2-5 billion tomans = 300-750 billion tomans. The provided value is within this range. Group 1 provides a value without units, making it less precise and harder to verify within the context. While the number itself is within the range, the lack of \"ریال\" or \"تومان\" makes it less reliable.",
+        "function_explanation": "Group 2 correctly identifies the investment amount as \"250,000,000,000 ریال\". This value is explicitly mentioned in the text as the approximate total amount customers are expected to spend: \"پیش بینی میشود هر مشتری نهایی، بین 2 تا 5 میلیارد تومان کالا از این طریق خواهد خرید. اندازه بازار مشتریان بالقوه برای این محصول، حدود 150 فروشگاه در سراسر ایران هستند که کالاهای الماس را خریداری میکنند.\" (It is predicted that each final customer will purchase between 2 to 5 billion Tomans of goods through this method. The potential market size for this product is about 150 stores across Iran that purchase Diamond goods). 150 stores * 2-5 billion tomans = 300-750 billion tomans. The provided value is within this range. Group 1 provides a value without units, making it less precise and harder to verify within the context. While the number itself is within the range, the lack of \"ریال\" or \"تومان\" makes it less reliable.",
+        "expert_explanation": "Group 2 correctly identifies the investment amount as \"250,000,000,000 ریال\". This value is explicitly mentioned in the text as the approximate total amount customers are expected to spend: \"پیش بینی میشود هر مشتری نهایی، بین 2 تا 5 میلیارد تومان کالا از این طریق خواهد خرید. اندازه بازار مشتریان بالقوه برای این محصول، حدود 150 فروشگاه در سراسر ایران هستند که کالاهای الماس را خریداری میکنند.\" (It is predicted that each final customer will purchase between 2 to 5 billion Tomans of goods through this method. The potential market size for this product is about 150 stores across Iran that purchase Diamond goods). 150 stores * 2-5 billion tomans = 300-750 billion tomans. The provided value is within this range. Group 1 provides a value without units, making it less precise and harder to verify within the context. While the number itself is within the range, the lack of \"ریال\" or \"تومان\" makes it less reliable.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "name": {
+      "basic_value": "توسعه فرانچایز فروشگاهی الماس",
+      "function_value": "توسعه فرانچایز فروشگاهی الماس",
+      "expert_value": "توسعه فرانچایز فروشگاهی الماس",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"توسعه فرانچایز فروشگاهی الماس\" is clearly present and accurately represents the project name as displayed in the source HTML content. It's the first prominent title on the page.",
+        "function_explanation": "The extracted value \"توسعه فرانچایز فروشگاهی الماس\" is clearly present and accurately represents the project name as displayed in the source HTML content. It's the first prominent title on the page.",
+        "expert_explanation": "The extracted value \"توسعه فرانچایز فروشگاهی الماس\" is clearly present and accurately represents the project name as displayed in the source HTML content. It's the first prominent title on the page.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": "45",
+      "function_value": 45.0,
+      "expert_value": 45.0,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "The provided HTML content does not contain any explicit profit percentage. The text discusses revenue generation through sales and interest on installments, but does not state a profit percentage. Therefore, neither group's extraction is correct. The values 45 and 45.0 are not found within the document and are not related to profit.",
+        "function_explanation": "The provided HTML content does not contain any explicit profit percentage. The text discusses revenue generation through sales and interest on installments, but does not state a profit percentage. Therefore, neither group's extraction is correct. The values 45 and 45.0 are not found within the document and are not related to profit.",
+        "expert_explanation": "The provided HTML content does not contain any explicit profit percentage. The text discusses revenue generation through sales and interest on installments, but does not state a profit percentage. Therefore, neither group's extraction is correct. The values 45 and 45.0 are not found within the document and are not related to profit.",
+        "basic_confidence": 0.0,
+        "function_confidence": 0.0,
+        "expert_confidence": 0.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "تامین مالی شده",
+      "function_value": "تامین مالی شده",
+      "expert_value": "تامین مالی شده",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تامین مالی شده\" (meaning \"funded\" in Persian) is explicitly present in the HTML content and accurately reflects the status of the project. It appears near the bottom of the text, under the \"تضامین:\" (Guarantees:) section.",
+        "function_explanation": "The extracted value \"تامین مالی شده\" (meaning \"funded\" in Persian) is explicitly present in the HTML content and accurately reflects the status of the project. It appears near the bottom of the text, under the \"تضامین:\" (Guarantees:) section.",
+        "expert_explanation": "The extracted value \"تامین مالی شده\" (meaning \"funded\" in Persian) is explicitly present in the HTML content and accurately reflects the status of the project. It appears near the bottom of the text, under the \"تضامین:\" (Guarantees:) section.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "project_name": "smartfunding",
+  "evaluation_date": "2025-08-17T18:34:20.877616",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.2,
+    "average_confidence": 0.886
+  },
+  "function_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.2,
+    "average_confidence": 0.886
+  },
+  "expert_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.2,
+    "average_confidence": 0.886
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "شرکت سبدگردان هامرز",
+      "function_value": "شرکت سبدگردان هامرز",
+      "expert_value": "شرکت لوور",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Both groups extracted company names that appear in the HTML content. Group 1 correctly identified \"شرکت سبدگردان هامرز\" as the financial institution (\"نهادمالی\") involved. Group 2 correctly identified \"شرکت لوور\" as the applicant (\"متقاضی\") for the funding. Both are valid companies mentioned in the context of the project.",
+        "function_explanation": "Both groups extracted company names that appear in the HTML content. Group 1 correctly identified \"شرکت سبدگردان هامرز\" as the financial institution (\"نهادمالی\") involved. Group 2 correctly identified \"شرکت لوور\" as the applicant (\"متقاضی\") for the funding. Both are valid companies mentioned in the context of the project.",
+        "expert_explanation": "Both groups extracted company names that appear in the HTML content. Group 1 correctly identified \"شرکت سبدگردان هامرز\" as the financial institution (\"نهادمالی\") involved. Group 2 correctly identified \"شرکت لوور\" as the applicant (\"متقاضی\") for the funding. Both are valid companies mentioned in the context of the project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "duration": {
+      "basic_value": "۱۲ ماه",
+      "function_value": "۱۲ ماه",
+      "expert_value": "۱۲ ماه",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "Failed to parse LLM response",
+        "function_explanation": "Failed to parse LLM response",
+        "expert_explanation": "Failed to parse LLM response",
+        "basic_confidence": 0.5,
+        "function_confidence": 0.5,
+        "expert_confidence": 0.5,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": []
+      }
+    },
+    "guarantee": {
+      "basic_value": "بدون تضمین سود و با تضمین ضمانت نامه تعهد پرداخت برای اصل سرمایه",
+      "function_value": "بدون تضمین سود و با تضمین ضمانت نامه تعهد پرداخت برای اصل سرمایه",
+      "expert_value": "بدون تضمین سود و با تضمین ضمانت نامه تعهد پرداخت برای اصل سرمایه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"بدون تضمین سود و با تضمین ضمانت نامه تعهد پرداخت برای اصل سرمایه\" is directly present in the source HTML content and accurately represents the guarantee offered for the crowdfunding project. It correctly states there's no profit guarantee but a guarantee for the principal amount.",
+        "function_explanation": "The extracted value \"بدون تضمین سود و با تضمین ضمانت نامه تعهد پرداخت برای اصل سرمایه\" is directly present in the source HTML content and accurately represents the guarantee offered for the crowdfunding project. It correctly states there's no profit guarantee but a guarantee for the principal amount.",
+        "expert_explanation": "The extracted value \"بدون تضمین سود و با تضمین ضمانت نامه تعهد پرداخت برای اصل سرمایه\" is directly present in the source HTML content and accurately represents the guarantee offered for the crowdfunding project. It correctly states there's no profit guarantee but a guarantee for the principal amount.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "investment_amount": {
+      "basic_value": "۲۵,۰۰۰,۰۰۰,۰۰۰ تومان",
+      "function_value": "۲۵,۰۰۰,۰۰۰,۰۰۰ تومان",
+      "expert_value": "۲۵,۰۰۰,۰۰۰,۰۰۰ تومان",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"۲۵,۰۰۰,۰۰۰,۰۰۰ تومان\" (25,000,000,000 Tomans) is directly present in the HTML content as \"مبلغ مورد نیاز طرح:۲۵,۰۰۰,۰۰۰,۰۰۰ تومان\" which translates to \"Required amount of the project: 25,000,000,000 Tomans\". It accurately represents the total investment amount required for the project.",
+        "function_explanation": "The extracted value \"۲۵,۰۰۰,۰۰۰,۰۰۰ تومان\" (25,000,000,000 Tomans) is directly present in the HTML content as \"مبلغ مورد نیاز طرح:۲۵,۰۰۰,۰۰۰,۰۰۰ تومان\" which translates to \"Required amount of the project: 25,000,000,000 Tomans\". It accurately represents the total investment amount required for the project.",
+        "expert_explanation": "The extracted value \"۲۵,۰۰۰,۰۰۰,۰۰۰ تومان\" (25,000,000,000 Tomans) is directly present in the HTML content as \"مبلغ مورد نیاز طرح:۲۵,۰۰۰,۰۰۰,۰۰۰ تومان\" which translates to \"Required amount of the project: 25,000,000,000 Tomans\". It accurately represents the total investment amount required for the project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "name": {
+      "basic_value": "تأمین سرمایه در گردش جهت خرید و فروش شمش فولادی گرید 5",
+      "function_value": "تأمین سرمایه در گردش جهت خرید و فروش شمش فولادی گرید 5",
+      "expert_value": "تأمین سرمایه در گردش جهت خرید و فروش شمش فولادی گرید 5",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تأمین سرمایه در گردش جهت خرید و فروش شمش فولادی گرید 5\" is directly present in the HTML content as the title/name of the project, appearing right after \"ورود\". It accurately represents the project's name.",
+        "function_explanation": "The extracted value \"تأمین سرمایه در گردش جهت خرید و فروش شمش فولادی گرید 5\" is directly present in the HTML content as the title/name of the project, appearing right after \"ورود\". It accurately represents the project's name.",
+        "expert_explanation": "The extracted value \"تأمین سرمایه در گردش جهت خرید و فروش شمش فولادی گرید 5\" is directly present in the HTML content as the title/name of the project, appearing right after \"ورود\". It accurately represents the project's name.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": "43",
+      "function_value": 43.0,
+      "expert_value": 43.0,
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Both groups correctly extracted \"43\" as the profit percentage. The source HTML clearly states \"سود پیشبینی شده طرح:۴۳%\" which translates to \"Predicted profit of the scheme: 43%\". Both 43 and 43.0 are acceptable representations of this value.",
+        "function_explanation": "Both groups correctly extracted \"43\" as the profit percentage. The source HTML clearly states \"سود پیشبینی شده طرح:۴۳%\" which translates to \"Predicted profit of the scheme: 43%\". Both 43 and 43.0 are acceptable representations of this value.",
+        "expert_explanation": "Both groups correctly extracted \"43\" as the profit percentage. The source HTML clearly states \"سود پیشبینی شده طرح:۴۳%\" which translates to \"Predicted profit of the scheme: 43%\". Both 43 and 43.0 are acceptable representations of this value.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": null,
+      "function_value": null,
+      "expert_value": null,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "The HTML content indicates the project is currently in the \"جذب سرمایه\" (attracting investment) phase, which implies it's active. The extracted value \"NULL/NOT_FOUND\" is incorrect as the status is clearly indicated within the text. While there isn't a single explicit \"status\" field, the context suggests the project is ongoing. A more appropriate value would be \"active\" or \"funding\".",
+        "function_explanation": "The HTML content indicates the project is currently in the \"جذب سرمایه\" (attracting investment) phase, which implies it's active. The extracted value \"NULL/NOT_FOUND\" is incorrect as the status is clearly indicated within the text. While there isn't a single explicit \"status\" field, the context suggests the project is ongoing. A more appropriate value would be \"active\" or \"funding\".",
+        "expert_explanation": "The HTML content indicates the project is currently in the \"جذب سرمایه\" (attracting investment) phase, which implies it's active. The extracted value \"NULL/NOT_FOUND\" is incorrect as the status is clearly indicated within the text. While there isn't a single explicit \"status\" field, the context suggests the project is ongoing. A more appropriate value would be \"active\" or \"funding\".",
+        "basic_confidence": 0.7,
+        "function_confidence": 0.7,
+        "expert_confidence": 0.7,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": []
+      }
+    }
+  }
+}

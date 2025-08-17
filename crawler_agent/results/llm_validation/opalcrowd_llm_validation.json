@@ -1,0 +1,183 @@
+{
+  "project_name": "opalcrowd",
+  "evaluation_date": "2025-08-17T18:32:00.807161",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 4,
+    "incorrect": 3,
+    "total_confidence": 6.3,
+    "average_confidence": 0.9
+  },
+  "function_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.3,
+    "average_confidence": 0.9
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.3,
+    "average_confidence": 0.9
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "شرکت فنی مهندسی آلیاژ خاتون (سهامی خاص)",
+      "function_value": "شرکت فنی مهندسی آلیاژ خاتون",
+      "expert_value": "شرکت فنی مهندسی آلیاژ خاتون (سهامی خاص)",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 accurately extracted the full company name \"شرکت فنی مهندسی آلیاژ خاتون (سهامی خاص)\" as it appears in the source HTML. Group 2 missed the \"(سهامی خاص)\" part, making it an incomplete extraction. The full name is present and crucial for identifying the company correctly.",
+        "function_explanation": "Group 1 accurately extracted the full company name \"شرکت فنی مهندسی آلیاژ خاتون (سهامی خاص)\" as it appears in the source HTML. Group 2 missed the \"(سهامی خاص)\" part, making it an incomplete extraction. The full name is present and crucial for identifying the company correctly.",
+        "expert_explanation": "Group 1 accurately extracted the full company name \"شرکت فنی مهندسی آلیاژ خاتون (سهامی خاص)\" as it appears in the source HTML. Group 2 missed the \"(سهامی خاص)\" part, making it an incomplete extraction. The full name is present and crucial for identifying the company correctly.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "duration": {
+      "basic_value": "12",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 provides only the number \"12\" which is present in the text but lacks the unit \"ماه\" (months). Group 2 correctly extracts \"12 ماه\" which accurately represents the project duration as stated in the HTML content (\"مدت طرح: 12 ماهمهلت سرمایه‌گذاری\"). Therefore, Group 2 is the correct extraction.",
+        "function_explanation": "Group 1 provides only the number \"12\" which is present in the text but lacks the unit \"ماه\" (months). Group 2 correctly extracts \"12 ماه\" which accurately represents the project duration as stated in the HTML content (\"مدت طرح: 12 ماهمهلت سرمایه‌گذاری\"). Therefore, Group 2 is the correct extraction.",
+        "expert_explanation": "Group 1 provides only the number \"12\" which is present in the text but lacks the unit \"ماه\" (months). Group 2 correctly extracts \"12 ماه\" which accurately represents the project duration as stated in the HTML content (\"مدت طرح: 12 ماهمهلت سرمایه‌گذاری\"). Therefore, Group 2 is the correct extraction.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "guarantee": {
+      "basic_value": " توثیق سهام بورسی",
+      "function_value": "توثیق سهام",
+      "expert_value": "توثیق سهام",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 2 (\"توثیق سهام\") is the correct extraction. The HTML clearly states: \"اصل مبلغ سرمایه گذاری طرح از طریق توثیق سهام بورسی ضمانت شده است.\" and \"تضمین بازگشت اصل سرمایه: توثیق سهام\". Group 1 (\"توثیق سهام بورسی\") is slightly more specific but the core guarantee is \"توثیق سهام\", and the \"بورسی\" part is redundant for this field. Therefore, Group 2 is the more accurate and concise extraction.",
+        "function_explanation": "Group 2 (\"توثیق سهام\") is the correct extraction. The HTML clearly states: \"اصل مبلغ سرمایه گذاری طرح از طریق توثیق سهام بورسی ضمانت شده است.\" and \"تضمین بازگشت اصل سرمایه: توثیق سهام\". Group 1 (\"توثیق سهام بورسی\") is slightly more specific but the core guarantee is \"توثیق سهام\", and the \"بورسی\" part is redundant for this field. Therefore, Group 2 is the more accurate and concise extraction.",
+        "expert_explanation": "Group 2 (\"توثیق سهام\") is the correct extraction. The HTML clearly states: \"اصل مبلغ سرمایه گذاری طرح از طریق توثیق سهام بورسی ضمانت شده است.\" and \"تضمین بازگشت اصل سرمایه: توثیق سهام\". Group 1 (\"توثیق سهام بورسی\") is slightly more specific but the core guarantee is \"توثیق سهام\", and the \"بورسی\" part is redundant for this field. Therefore, Group 2 is the more accurate and concise extraction.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "investment_amount": {
+      "basic_value": "250,000,000,000",
+      "function_value": "250,000,000,000",
+      "expert_value": "250,000,000,000",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The HTML content explicitly states \"با تامین مبلغ 250 میلیارد ریال\" which translates to \"by providing an amount of 250 billion Rials\". The extracted value \"250,000,000,000\" represents 250 billion, and the context indicates the currency is Rials. Therefore, the extracted value is present, correct, and accurately represents the total investment amount.",
+        "function_explanation": "The HTML content explicitly states \"با تامین مبلغ 250 میلیارد ریال\" which translates to \"by providing an amount of 250 billion Rials\". The extracted value \"250,000,000,000\" represents 250 billion, and the context indicates the currency is Rials. Therefore, the extracted value is present, correct, and accurately represents the total investment amount.",
+        "expert_explanation": "The HTML content explicitly states \"با تامین مبلغ 250 میلیارد ریال\" which translates to \"by providing an amount of 250 billion Rials\". The extracted value \"250,000,000,000\" represents 250 billion, and the context indicates the currency is Rials. Therefore, the extracted value is present, correct, and accurately represents the total investment amount.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "name": {
+      "basic_value": "افزایش ظرفیت اکسیداسیون سولفور مولیبدنیوم جهت تکمیل زنجیره فروآلیاژ  ",
+      "function_value": "افزایش ظرفیت اکسیداسیون سولفور مولیبدنیوم جهت تکمیل زنجیره فروآلیاژ",
+      "expert_value": "افزایش ظرفیت اکسیداسیون سولفور مولیبدنیوم جهت تکمیل زنجیره فروآلیاژ  ",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"افزایش ظرفیت اکسیداسیون سولفور مولیبدنیوم جهت تکمیل زنجیره فروآلیاژ\" is the title of the project and is prominently displayed at the beginning of the HTML content. It accurately represents the project's name.",
+        "function_explanation": "The extracted value \"افزایش ظرفیت اکسیداسیون سولفور مولیبدنیوم جهت تکمیل زنجیره فروآلیاژ\" is the title of the project and is prominently displayed at the beginning of the HTML content. It accurately represents the project's name.",
+        "expert_explanation": "The extracted value \"افزایش ظرفیت اکسیداسیون سولفور مولیبدنیوم جهت تکمیل زنجیره فروآلیاژ\" is the title of the project and is prominently displayed at the beginning of the HTML content. It accurately represents the project's name.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": "46",
+      "function_value": 46.0,
+      "expert_value": 46.0,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "Failed to parse LLM response",
+        "function_explanation": "Failed to parse LLM response",
+        "expert_explanation": "Failed to parse LLM response",
+        "basic_confidence": 0.5,
+        "function_confidence": 0.5,
+        "expert_confidence": 0.5,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "تامین مالی شده",
+      "function_value": "تامین مالی شده",
+      "expert_value": "تامین مالی شده",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تامین مالی شده\" (Tamin Mali Shodeh) which translates to \"Funded\" is explicitly present in the HTML content. It accurately reflects the status of the project as it has reached its funding goal.",
+        "function_explanation": "The extracted value \"تامین مالی شده\" (Tamin Mali Shodeh) which translates to \"Funded\" is explicitly present in the HTML content. It accurately reflects the status of the project as it has reached its funding goal.",
+        "expert_explanation": "The extracted value \"تامین مالی شده\" (Tamin Mali Shodeh) which translates to \"Funded\" is explicitly present in the HTML content. It accurately reflects the status of the project as it has reached its funding goal.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "project_name": "paresh",
+  "evaluation_date": "2025-08-17T18:33:25.439536",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 4,
+    "incorrect": 3,
+    "total_confidence": 6.9,
+    "average_confidence": 0.986
+  },
+  "function_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.9,
+    "average_confidence": 0.986
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "total_confidence": 6.9,
+    "average_confidence": 0.986
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "توسعه آرمان نیک اندیشان",
+      "function_value": "توسعه آرمان نیک اندیشان",
+      "expert_value": "توسعه آرمان نیک اندیشان",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"توسعه آرمان نیک اندیشان\" is clearly present multiple times within the HTML content as the company name associated with the project. It matches the \"نام شرکت\" field in the provided HTML.",
+        "function_explanation": "The extracted value \"توسعه آرمان نیک اندیشان\" is clearly present multiple times within the HTML content as the company name associated with the project. It matches the \"نام شرکت\" field in the provided HTML.",
+        "expert_explanation": "The extracted value \"توسعه آرمان نیک اندیشان\" is clearly present multiple times within the HTML content as the company name associated with the project. It matches the \"نام شرکت\" field in the provided HTML.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "12",
+      "function_value": "12 ماه",
+      "expert_value": "12 ماه",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 provides only \"12\", which is a number but lacks context. The source HTML clearly states \"12 ماه\" (12 months) as the duration of the investment. Group 2 correctly extracts \"12 ماه\", including the unit \"ماه\" (month), making it the accurate and complete extraction for the 'duration' field.",
+        "function_explanation": "Group 1 provides only \"12\", which is a number but lacks context. The source HTML clearly states \"12 ماه\" (12 months) as the duration of the investment. Group 2 correctly extracts \"12 ماه\", including the unit \"ماه\" (month), making it the accurate and complete extraction for the 'duration' field.",
+        "expert_explanation": "Group 1 provides only \"12\", which is a number but lacks context. The source HTML clearly states \"12 ماه\" (12 months) as the duration of the investment. Group 2 correctly extracts \"12 ماه\", including the unit \"ماه\" (month), making it the accurate and complete extraction for the 'duration' field.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "guarantee": {
+      "basic_value": "ضمانت‌نامه تعهد پرداخت بانکی",
+      "function_value": "ضمانت‌نامه تعهد پرداخت بانکی",
+      "expert_value": "ضمانت‌نامه تعهد پرداخت بانکی ",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"ضمانت‌نامه تعهد پرداخت بانکی\" (bank payment guarantee) is directly present in the HTML content under the \"نوع تضمین\" (type of guarantee) label. It accurately represents the guarantee offered for the investment.",
+        "function_explanation": "The extracted value \"ضمانت‌نامه تعهد پرداخت بانکی\" (bank payment guarantee) is directly present in the HTML content under the \"نوع تضمین\" (type of guarantee) label. It accurately represents the guarantee offered for the investment.",
+        "expert_explanation": "The extracted value \"ضمانت‌نامه تعهد پرداخت بانکی\" (bank payment guarantee) is directly present in the HTML content under the \"نوع تضمین\" (type of guarantee) label. It accurately represents the guarantee offered for the investment.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "investment_amount": {
+      "basic_value": "250,000,000,000",
+      "function_value": "250,000,000,000",
+      "expert_value": "250,000,000,000 ریال",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 2 correctly extracted \"250,000,000,000 ریال\" which is the investment amount as stated in the HTML content: \"سرمایه مورد نیاز250,000,000,000 ریال\". Group 1 extracted only the numerical part, omitting the currency \"ریال\", making it incomplete and less accurate. The field requires the amount with units.",
+        "function_explanation": "Group 2 correctly extracted \"250,000,000,000 ریال\" which is the investment amount as stated in the HTML content: \"سرمایه مورد نیاز250,000,000,000 ریال\". Group 1 extracted only the numerical part, omitting the currency \"ریال\", making it incomplete and less accurate. The field requires the amount with units.",
+        "expert_explanation": "Group 2 correctly extracted \"250,000,000,000 ریال\" which is the investment amount as stated in the HTML content: \"سرمایه مورد نیاز250,000,000,000 ریال\". Group 1 extracted only the numerical part, omitting the currency \"ریال\", making it incomplete and less accurate. The field requires the amount with units.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "name": {
+      "basic_value": "تأمین مالی به منظور تجهیز و توسعه زیرساخت‌های ارائه سرویس VoIP",
+      "function_value": "تأمین مالی به منظور تجهیز و توسعه زیرساخت‌های ارائه سرویس VoIP",
+      "expert_value": " تأمین مالی به منظور تجهیز و توسعه زیرساخت‌های ارائه سرویس VoIP",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"تأمین مالی به منظور تجهیز و توسعه زیرساخت‌های ارائه سرویس VoIP\" exactly matches the project title as it appears multiple times within the provided HTML content, including at the beginning of the document and directly before the project details. It is a string and accurately represents the project's name.",
+        "function_explanation": "The extracted value \"تأمین مالی به منظور تجهیز و توسعه زیرساخت‌های ارائه سرویس VoIP\" exactly matches the project title as it appears multiple times within the provided HTML content, including at the beginning of the document and directly before the project details. It is a string and accurately represents the project's name.",
+        "expert_explanation": "The extracted value \"تأمین مالی به منظور تجهیز و توسعه زیرساخت‌های ارائه سرویس VoIP\" exactly matches the project title as it appears multiple times within the provided HTML content, including at the beginning of the document and directly before the project details. It is a string and accurately represents the project's name.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": "43",
+      "function_value": 43.0,
+      "expert_value": 43.0,
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Both groups extracted \"43\" or \"43.0\", which is explicitly stated in the HTML content as \"پیشبینی سود مشارکت 43٪\" (predicted profit participation of 43%). The inclusion of \".0\" in Group 2 doesn't invalidate the answer, as it's still the correct value.",
+        "function_explanation": "Both groups extracted \"43\" or \"43.0\", which is explicitly stated in the HTML content as \"پیشبینی سود مشارکت 43٪\" (predicted profit participation of 43%). The inclusion of \".0\" in Group 2 doesn't invalidate the answer, as it's still the correct value.",
+        "expert_explanation": "Both groups extracted \"43\" or \"43.0\", which is explicitly stated in the HTML content as \"پیشبینی سود مشارکت 43٪\" (predicted profit participation of 43%). The inclusion of \".0\" in Group 2 doesn't invalidate the answer, as it's still the correct value.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "در حال اجرا",
+      "function_value": null,
+      "expert_value": null,
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 provides \"در حال اجرا\" which translates to \"in progress\" or \"running\". While the project *is* active, the HTML doesn't explicitly state a \"status\" field with that value. It indicates the project has begun collecting funds (\"آغاز جمع‌‌آوری وجوه آغاز جمع‌‌آوری وجوه۱۴۰۴/۳/۱\"), but doesn't have a clear status label. Groups 2 and 3 correctly identify that there is no explicit status field present in the provided HTML, and thus return NULL/NOT_FOUND. This is the most accurate response given the available information.",
+        "function_explanation": "Group 1 provides \"در حال اجرا\" which translates to \"in progress\" or \"running\". While the project *is* active, the HTML doesn't explicitly state a \"status\" field with that value. It indicates the project has begun collecting funds (\"آغاز جمع‌‌آوری وجوه آغاز جمع‌‌آوری وجوه۱۴۰۴/۳/۱\"), but doesn't have a clear status label. Groups 2 and 3 correctly identify that there is no explicit status field present in the provided HTML, and thus return NULL/NOT_FOUND. This is the most accurate response given the available information.",
+        "expert_explanation": "Group 1 provides \"در حال اجرا\" which translates to \"in progress\" or \"running\". While the project *is* active, the HTML doesn't explicitly state a \"status\" field with that value. It indicates the project has begun collecting funds (\"آغاز جمع‌‌آوری وجوه آغاز جمع‌‌آوری وجوه۱۴۰۴/۳/۱\"), but doesn't have a clear status label. Groups 2 and 3 correctly identify that there is no explicit status field present in the provided HTML, and thus return NULL/NOT_FOUND. This is the most accurate response given the available information.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    }
+  }
+}

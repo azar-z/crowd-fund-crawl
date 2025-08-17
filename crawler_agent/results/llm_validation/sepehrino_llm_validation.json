@@ -1,0 +1,186 @@
+{
+  "project_name": "sepehrino",
+  "evaluation_date": "2025-08-17T18:33:52.204108",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "total_confidence": 6.8500000000000005,
+    "average_confidence": 0.979
+  },
+  "function_agent": {
+    "correct": 0,
+    "incorrect": 7,
+    "total_confidence": 6.8500000000000005,
+    "average_confidence": 0.979
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "total_confidence": 6.8500000000000005,
+    "average_confidence": 0.979
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "راهبردهای شبکه خلاق پارس",
+      "function_value": null,
+      "expert_value": "شرکت راهبردهای شبکه خلاق پارس",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Both Group 1 and Group 3 correctly identify \"راهبردهای شبکه خلاق پارس\" (Rahbordhaye Shabakeye Khalagh Pars) as the company name. This name appears multiple times throughout the HTML content, confirming its relevance to the 'company' field. Group 2 returns NULL/NOT_FOUND, which is incorrect as the company name is clearly present. While Group 3 includes \"شرکت\" (company) before the name, it doesn't invalidate the extraction as it's still the correct company identifier. Group 1 is slightly cleaner, but both are acceptable.",
+        "function_explanation": "Both Group 1 and Group 3 correctly identify \"راهبردهای شبکه خلاق پارس\" (Rahbordhaye Shabakeye Khalagh Pars) as the company name. This name appears multiple times throughout the HTML content, confirming its relevance to the 'company' field. Group 2 returns NULL/NOT_FOUND, which is incorrect as the company name is clearly present. While Group 3 includes \"شرکت\" (company) before the name, it doesn't invalidate the extraction as it's still the correct company identifier. Group 1 is slightly cleaner, but both are acceptable.",
+        "expert_explanation": "Both Group 1 and Group 3 correctly identify \"راهبردهای شبکه خلاق پارس\" (Rahbordhaye Shabakeye Khalagh Pars) as the company name. This name appears multiple times throughout the HTML content, confirming its relevance to the 'company' field. Group 2 returns NULL/NOT_FOUND, which is incorrect as the company name is clearly present. While Group 3 includes \"شرکت\" (company) before the name, it doesn't invalidate the extraction as it's still the correct company identifier. Group 1 is slightly cleaner, but both are acceptable.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 3
+      }
+    },
+    "duration": {
+      "basic_value": "12 ماهه",
+      "function_value": null,
+      "expert_value": "12 ماهه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 correctly extracted \"12 ماهه\" which translates to \"12 months\" and is explicitly stated in the HTML content as \"مدت طرح :12 ماهه\" (Project duration: 12 months). Group 2 incorrectly reported NULL/NOT_FOUND, as the duration is clearly present.",
+        "function_explanation": "Group 1 correctly extracted \"12 ماهه\" which translates to \"12 months\" and is explicitly stated in the HTML content as \"مدت طرح :12 ماهه\" (Project duration: 12 months). Group 2 incorrectly reported NULL/NOT_FOUND, as the duration is clearly present.",
+        "expert_explanation": "Group 1 correctly extracted \"12 ماهه\" which translates to \"12 months\" and is explicitly stated in the HTML content as \"مدت طرح :12 ماهه\" (Project duration: 12 months). Group 2 incorrectly reported NULL/NOT_FOUND, as the duration is clearly present.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "guarantee": {
+      "basic_value": "ضمانتنامه تعهد پرداخت بانکی",
+      "function_value": null,
+      "expert_value": "ضمانتنامه تعهد پرداخت بانکی",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 correctly extracted \"ضمانتنامه تعهد پرداخت بانکی\" which translates to \"Bank Payment Commitment Guarantee\" and is explicitly mentioned in the HTML content under the \"نوع تضمین\" (Type of Guarantee) section. Group 2 incorrectly returned NULL/NOT_FOUND, as the guarantee information is clearly present.",
+        "function_explanation": "Group 1 correctly extracted \"ضمانتنامه تعهد پرداخت بانکی\" which translates to \"Bank Payment Commitment Guarantee\" and is explicitly mentioned in the HTML content under the \"نوع تضمین\" (Type of Guarantee) section. Group 2 incorrectly returned NULL/NOT_FOUND, as the guarantee information is clearly present.",
+        "expert_explanation": "Group 1 correctly extracted \"ضمانتنامه تعهد پرداخت بانکی\" which translates to \"Bank Payment Commitment Guarantee\" and is explicitly mentioned in the HTML content under the \"نوع تضمین\" (Type of Guarantee) section. Group 2 incorrectly returned NULL/NOT_FOUND, as the guarantee information is clearly present.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "investment_amount": {
+      "basic_value": "9,000,000,000",
+      "function_value": null,
+      "expert_value": "9,000,000,000",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 correctly extracted \"9,000,000,000\" which corresponds to the \"حداقل سرمایه مورد نیاز (تومان) :9,000,000,000\" (Minimum investment amount in Tomans) present in the HTML. Group 2 incorrectly reported NULL/NOT_FOUND. While the target amount is 15,000,000,000, the *minimum* investment amount is 9,000,000,000.",
+        "function_explanation": "Group 1 correctly extracted \"9,000,000,000\" which corresponds to the \"حداقل سرمایه مورد نیاز (تومان) :9,000,000,000\" (Minimum investment amount in Tomans) present in the HTML. Group 2 incorrectly reported NULL/NOT_FOUND. While the target amount is 15,000,000,000, the *minimum* investment amount is 9,000,000,000.",
+        "expert_explanation": "Group 1 correctly extracted \"9,000,000,000\" which corresponds to the \"حداقل سرمایه مورد نیاز (تومان) :9,000,000,000\" (Minimum investment amount in Tomans) present in the HTML. Group 2 incorrectly reported NULL/NOT_FOUND. While the target amount is 15,000,000,000, the *minimum* investment amount is 9,000,000,000.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "name": {
+      "basic_value": "تامین سرمایه در گردش خرید و فروش کولر گازی ایرانی",
+      "function_value": null,
+      "expert_value": "تامین سرمایه در گردش خرید و فروش کولر گازی ایرانی",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 correctly extracted the project name: \"تامین سرمایه در گردش خرید و فروش کولر گازی ایرانی\". This title is prominently displayed in the HTML content within the `seo:properties` tag and in the main body text describing the project. Group 2 returned NULL/NOT_FOUND, which is incorrect as the name is clearly present.",
+        "function_explanation": "Group 1 correctly extracted the project name: \"تامین سرمایه در گردش خرید و فروش کولر گازی ایرانی\". This title is prominently displayed in the HTML content within the `seo:properties` tag and in the main body text describing the project. Group 2 returned NULL/NOT_FOUND, which is incorrect as the name is clearly present.",
+        "expert_explanation": "Group 1 correctly extracted the project name: \"تامین سرمایه در گردش خرید و فروش کولر گازی ایرانی\". This title is prominently displayed in the HTML content within the `seo:properties` tag and in the main body text describing the project. Group 2 returned NULL/NOT_FOUND, which is incorrect as the name is clearly present.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "profit": {
+      "basic_value": "42.5",
+      "function_value": null,
+      "expert_value": 42.5,
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 correctly extracted \"42.5\" as the profit percentage. This value is explicitly stated in the HTML content as \"سود 5/42 درصدی\" and \"سود پیش‌ بینی شده‌ دوره :%42.5\". Group 2 incorrectly reported NULL/NOT_FOUND, as the profit is clearly present.",
+        "function_explanation": "Group 1 correctly extracted \"42.5\" as the profit percentage. This value is explicitly stated in the HTML content as \"سود 5/42 درصدی\" and \"سود پیش‌ بینی شده‌ دوره :%42.5\". Group 2 incorrectly reported NULL/NOT_FOUND, as the profit is clearly present.",
+        "expert_explanation": "Group 1 correctly extracted \"42.5\" as the profit percentage. This value is explicitly stated in the HTML content as \"سود 5/42 درصدی\" and \"سود پیش‌ بینی شده‌ دوره :%42.5\". Group 2 incorrectly reported NULL/NOT_FOUND, as the profit is clearly present.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "در حال جذب سرمایه",
+      "function_value": null,
+      "expert_value": "در حال جذب سرمایه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 correctly extracted \"در حال جذب سرمایه\" which translates to \"in the process of attracting investment\". This accurately reflects the project's status as described in the HTML content: \"شرکت راهبردهای شبکه خلاق پارس، با بررسی و نیازسنجی بازار، قصد دارد فعالیت خود را در حوزه خرید و فروش کولر گازی ایرانی توسعه دهد. به همین منظور، جهت تأمین سرمایه در گردش برای این طرح، شرکت تصمیم دارد مبلغ 150,۰۰۰ میلیون ریال از سکوی تأمین مالی جمعی سپهرینو تأمین کند.\" (The company intends to raise capital...). Group 2 incorrectly identified the status as NULL/NOT_FOUND, despite the clear indication of fundraising activity.",
+        "function_explanation": "Group 1 correctly extracted \"در حال جذب سرمایه\" which translates to \"in the process of attracting investment\". This accurately reflects the project's status as described in the HTML content: \"شرکت راهبردهای شبکه خلاق پارس، با بررسی و نیازسنجی بازار، قصد دارد فعالیت خود را در حوزه خرید و فروش کولر گازی ایرانی توسعه دهد. به همین منظور، جهت تأمین سرمایه در گردش برای این طرح، شرکت تصمیم دارد مبلغ 150,۰۰۰ میلیون ریال از سکوی تأمین مالی جمعی سپهرینو تأمین کند.\" (The company intends to raise capital...). Group 2 incorrectly identified the status as NULL/NOT_FOUND, despite the clear indication of fundraising activity.",
+        "expert_explanation": "Group 1 correctly extracted \"در حال جذب سرمایه\" which translates to \"in the process of attracting investment\". This accurately reflects the project's status as described in the HTML content: \"شرکت راهبردهای شبکه خلاق پارس، با بررسی و نیازسنجی بازار، قصد دارد فعالیت خود را در حوزه خرید و فروش کولر گازی ایرانی توسعه دهد. به همین منظور، جهت تأمین سرمایه در گردش برای این طرح، شرکت تصمیم دارد مبلغ 150,۰۰۰ میلیون ریال از سکوی تأمین مالی جمعی سپهرینو تأمین کند.\" (The company intends to raise capital...). Group 2 incorrectly identified the status as NULL/NOT_FOUND, despite the clear indication of fundraising activity.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 2
+      }
+    }
+  }
+}

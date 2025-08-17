@@ -1,0 +1,186 @@
+{
+  "project_name": "fundocrowd",
+  "evaluation_date": "2025-08-17T19:14:33.840419",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "total_confidence": 6.75,
+    "average_confidence": 0.964
+  },
+  "function_agent": {
+    "correct": 0,
+    "incorrect": 7,
+    "total_confidence": 6.75,
+    "average_confidence": 0.964
+  },
+  "expert_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "total_confidence": 6.75,
+    "average_confidence": 0.964
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "بازرگانی سایپا یدک (شرکت سهامی خاص)",
+      "function_value": null,
+      "expert_value": "بازرگانی سایپا یدک (شرکت سهامی خاص)",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 correctly extracted \"بازرگانی سایپا یدک (شرکت سهامی خاص)\" which is the company name explicitly mentioned multiple times within the HTML content, including in the \"درباره شرکت\" section. Group 2 returned NULL/NOT_FOUND, which is incorrect as the company name is clearly present.",
+        "function_explanation": "Group 1 correctly extracted \"بازرگانی سایپا یدک (شرکت سهامی خاص)\" which is the company name explicitly mentioned multiple times within the HTML content, including in the \"درباره شرکت\" section. Group 2 returned NULL/NOT_FOUND, which is incorrect as the company name is clearly present.",
+        "expert_explanation": "Group 1 correctly extracted \"بازرگانی سایپا یدک (شرکت سهامی خاص)\" which is the company name explicitly mentioned multiple times within the HTML content, including in the \"درباره شرکت\" section. Group 2 returned NULL/NOT_FOUND, which is incorrect as the company name is clearly present.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "duration": {
+      "basic_value": "12 ماه",
+      "function_value": null,
+      "expert_value": "12 ماه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 correctly extracted \"12 ماه\" (12 months) which is explicitly stated in the HTML content as \"طول دوره‌ی سرمایه‌گذاری12 ماه\" (Project duration 12 months). Group 2 incorrectly returned NULL/NOT_FOUND, as the duration is clearly present.",
+        "function_explanation": "Group 1 correctly extracted \"12 ماه\" (12 months) which is explicitly stated in the HTML content as \"طول دوره‌ی سرمایه‌گذاری12 ماه\" (Project duration 12 months). Group 2 incorrectly returned NULL/NOT_FOUND, as the duration is clearly present.",
+        "expert_explanation": "Group 1 correctly extracted \"12 ماه\" (12 months) which is explicitly stated in the HTML content as \"طول دوره‌ی سرمایه‌گذاری12 ماه\" (Project duration 12 months). Group 2 incorrectly returned NULL/NOT_FOUND, as the duration is clearly present.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "guarantee": {
+      "basic_value": " ارائه ضمانت‌نامه (دریافت فایل)",
+      "function_value": null,
+      "expert_value": " ارائه ضمانت‌نامه (دریافت فایل)",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 correctly extracted \"ارائه ضمانت‌نامه (دریافت فایل)\" which translates to \"Providing a guarantee (download file)\" and is explicitly present in the HTML content under the \"ضمانت\" (Guarantee) section. Group 2 incorrectly identified the value as NULL/NOT_FOUND, despite the guarantee information being clearly visible.",
+        "function_explanation": "Group 1 correctly extracted \"ارائه ضمانت‌نامه (دریافت فایل)\" which translates to \"Providing a guarantee (download file)\" and is explicitly present in the HTML content under the \"ضمانت\" (Guarantee) section. Group 2 incorrectly identified the value as NULL/NOT_FOUND, despite the guarantee information being clearly visible.",
+        "expert_explanation": "Group 1 correctly extracted \"ارائه ضمانت‌نامه (دریافت فایل)\" which translates to \"Providing a guarantee (download file)\" and is explicitly present in the HTML content under the \"ضمانت\" (Guarantee) section. Group 2 incorrectly identified the value as NULL/NOT_FOUND, despite the guarantee information being clearly visible.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "investment_amount": {
+      "basic_value": "25 میلیارد تومان",
+      "function_value": null,
+      "expert_value": "25 میلیارد تومان",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 correctly extracted \"25 میلیارد تومان\" which is explicitly stated in the HTML content as the investment amount: \"موفق سرمایه‌گذاری 25 میلیارد تومان\". Group 2 incorrectly identified the value as NULL/NOT_FOUND, despite the value being clearly present.",
+        "function_explanation": "Group 1 correctly extracted \"25 میلیارد تومان\" which is explicitly stated in the HTML content as the investment amount: \"موفق سرمایه‌گذاری 25 میلیارد تومان\". Group 2 incorrectly identified the value as NULL/NOT_FOUND, despite the value being clearly present.",
+        "expert_explanation": "Group 1 correctly extracted \"25 میلیارد تومان\" which is explicitly stated in the HTML content as the investment amount: \"موفق سرمایه‌گذاری 25 میلیارد تومان\". Group 2 incorrectly identified the value as NULL/NOT_FOUND, despite the value being clearly present.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "name": {
+      "basic_value": "تامین سرمایه در گردش تامین قطعات کیت کلاچ 215 میلیمتری",
+      "function_value": null,
+      "expert_value": "تامین سرمایه در گردش تامین قطعات کیت کلاچ 215 میلیمتری",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 accurately extracted the project name: \"تامین سرمایه در گردش تامین قطعات کیت کلاچ 215 میلیمتری\" which is clearly visible in the HTML content as the title of the crowdfunding project. Group 2 returned NULL/NOT_FOUND, which is incorrect as the name is present.",
+        "function_explanation": "Group 1 accurately extracted the project name: \"تامین سرمایه در گردش تامین قطعات کیت کلاچ 215 میلیمتری\" which is clearly visible in the HTML content as the title of the crowdfunding project. Group 2 returned NULL/NOT_FOUND, which is incorrect as the name is present.",
+        "expert_explanation": "Group 1 accurately extracted the project name: \"تامین سرمایه در گردش تامین قطعات کیت کلاچ 215 میلیمتری\" which is clearly visible in the HTML content as the title of the crowdfunding project. Group 2 returned NULL/NOT_FOUND, which is incorrect as the name is present.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "profit": {
+      "basic_value": "42",
+      "function_value": null,
+      "expert_value": 42.0,
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "The HTML content clearly states \"42 درصد\" which translates to \"42 percent\". Both Group 1 and Group 3 correctly extracted this value as 42 and 42.0 respectively. Group 2 incorrectly returned NULL/NOT_FOUND. The inclusion of the decimal point in Group 3's response doesn't invalidate it, as it still represents the same numerical value.",
+        "function_explanation": "The HTML content clearly states \"42 درصد\" which translates to \"42 percent\". Both Group 1 and Group 3 correctly extracted this value as 42 and 42.0 respectively. Group 2 incorrectly returned NULL/NOT_FOUND. The inclusion of the decimal point in Group 3's response doesn't invalidate it, as it still represents the same numerical value.",
+        "expert_explanation": "The HTML content clearly states \"42 درصد\" which translates to \"42 percent\". Both Group 1 and Group 3 correctly extracted this value as 42 and 42.0 respectively. Group 2 incorrectly returned NULL/NOT_FOUND. The inclusion of the decimal point in Group 3's response doesn't invalidate it, as it still represents the same numerical value.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 3
+      }
+    },
+    "status": {
+      "basic_value": "موفق",
+      "function_value": null,
+      "expert_value": "موفق",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 correctly extracted \"موفق\" which translates to \"successful\" in English. This accurately reflects the status of the project as indicated by the text \"سرمایه‌گذاری موفق\" (successful investment) near the project details. Group 2 incorrectly identified the status as NULL/NOT_FOUND, as the status is clearly stated in the HTML content.",
+        "function_explanation": "Group 1 correctly extracted \"موفق\" which translates to \"successful\" in English. This accurately reflects the status of the project as indicated by the text \"سرمایه‌گذاری موفق\" (successful investment) near the project details. Group 2 incorrectly identified the status as NULL/NOT_FOUND, as the status is clearly stated in the HTML content.",
+        "expert_explanation": "Group 1 correctly extracted \"موفق\" which translates to \"successful\" in English. This accurately reflects the status of the project as indicated by the text \"سرمایه‌گذاری موفق\" (successful investment) near the project details. Group 2 incorrectly identified the status as NULL/NOT_FOUND, as the status is clearly stated in the HTML content.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          3
+        ],
+        "response_groups": 2
+      }
+    }
+  }
+}

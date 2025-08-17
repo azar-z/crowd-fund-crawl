@@ -1,0 +1,183 @@
+{
+  "project_name": "zotch",
+  "evaluation_date": "2025-08-17T18:36:13.313380",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.5,
+    "average_confidence": 0.929
+  },
+  "function_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.5,
+    "average_confidence": 0.929
+  },
+  "expert_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "total_confidence": 6.5,
+    "average_confidence": 0.929
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "پایاسازه پاسارگاد",
+      "function_value": "پایاسازه پاسارگاد",
+      "expert_value": "پایاسازه پاسارگاد",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"پایاسازه پاسارگاد\" (Payasaze Pasargad) is explicitly mentioned multiple times within the HTML content as the company responsible for the project. It is accurately extracted and complete.",
+        "function_explanation": "The extracted value \"پایاسازه پاسارگاد\" (Payasaze Pasargad) is explicitly mentioned multiple times within the HTML content as the company responsible for the project. It is accurately extracted and complete.",
+        "expert_explanation": "The extracted value \"پایاسازه پاسارگاد\" (Payasaze Pasargad) is explicitly mentioned multiple times within the HTML content as the company responsible for the project. It is accurately extracted and complete.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "6 ماهه",
+      "function_value": "6 ماهه",
+      "expert_value": "6 ماهه",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"6 ماهه\" (6 months) is explicitly stated in the HTML content as \"عمر پروژه 6 ماهه\" (Project duration 6 months). It accurately represents the project's duration.",
+        "function_explanation": "The extracted value \"6 ماهه\" (6 months) is explicitly stated in the HTML content as \"عمر پروژه 6 ماهه\" (Project duration 6 months). It accurately represents the project's duration.",
+        "expert_explanation": "The extracted value \"6 ماهه\" (6 months) is explicitly stated in the HTML content as \"عمر پروژه 6 ماهه\" (Project duration 6 months). It accurately represents the project's duration.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "guarantee": {
+      "basic_value": "چک صیادی",
+      "function_value": "چک صیادی",
+      "expert_value": " چک صیادی ",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"چک صیادی\" (Cheque Guarantee) is directly present in the HTML content under the \"تضامین\" (Guarantees) section. It accurately represents the guarantee offered for the crowdfunding project.",
+        "function_explanation": "The extracted value \"چک صیادی\" (Cheque Guarantee) is directly present in the HTML content under the \"تضامین\" (Guarantees) section. It accurately represents the guarantee offered for the crowdfunding project.",
+        "expert_explanation": "The extracted value \"چک صیادی\" (Cheque Guarantee) is directly present in the HTML content under the \"تضامین\" (Guarantees) section. It accurately represents the guarantee offered for the crowdfunding project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "investment_amount": {
+      "basic_value": "57,763,150,000",
+      "function_value": "57,763,150,000",
+      "expert_value": "57,763,150,000",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"57,763,150,000\" appears multiple times in the HTML content, explicitly stated as the investment amount (\"سرمایه گذاری طرح ها\") and the target amount (\"هدف\"). The context confirms it's the total investment amount required for the project.",
+        "function_explanation": "The extracted value \"57,763,150,000\" appears multiple times in the HTML content, explicitly stated as the investment amount (\"سرمایه گذاری طرح ها\") and the target amount (\"هدف\"). The context confirms it's the total investment amount required for the project.",
+        "expert_explanation": "The extracted value \"57,763,150,000\" appears multiple times in the HTML content, explicitly stated as the investment amount (\"سرمایه گذاری طرح ها\") and the target amount (\"هدف\"). The context confirms it's the total investment amount required for the project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "name": {
+      "basic_value": "تامین بخشی از منابع مالی مورد نیاز  ساخت پروژه نسیم محمودیه",
+      "function_value": "تامین بخشی از منابع مالی مورد نیاز  ساخت پروژه نسیم محمودیه",
+      "expert_value": "تامین بخشی از منابع مالی مورد نیاز  ساخت پروژه نسیم محمودیه",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "Failed to parse LLM response",
+        "function_explanation": "Failed to parse LLM response",
+        "expert_explanation": "Failed to parse LLM response",
+        "basic_confidence": 0.5,
+        "function_confidence": 0.5,
+        "expert_confidence": 0.5,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": []
+      }
+    },
+    "profit": {
+      "basic_value": 37,
+      "function_value": 37.0,
+      "expert_value": 37.0,
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Both groups extracted \"37\", which is explicitly stated in the HTML content as \"سود پیش بینی شده سالانه 37 درصد سالانه\" (predicted annual profit of 37% annually) and \"پیش بینی سود پیش بینی شده سرمایه گذاران معادل سالانه 37% بطور اسمی\" (predicted profit for investors is equivalent to 37% annually). The \".0\" in group 2 doesn't change the meaning and is acceptable.",
+        "function_explanation": "Both groups extracted \"37\", which is explicitly stated in the HTML content as \"سود پیش بینی شده سالانه 37 درصد سالانه\" (predicted annual profit of 37% annually) and \"پیش بینی سود پیش بینی شده سرمایه گذاران معادل سالانه 37% بطور اسمی\" (predicted profit for investors is equivalent to 37% annually). The \".0\" in group 2 doesn't change the meaning and is acceptable.",
+        "expert_explanation": "Both groups extracted \"37\", which is explicitly stated in the HTML content as \"سود پیش بینی شده سالانه 37 درصد سالانه\" (predicted annual profit of 37% annually) and \"پیش بینی سود پیش بینی شده سرمایه گذاران معادل سالانه 37% بطور اسمی\" (predicted profit for investors is equivalent to 37% annually). The \".0\" in group 2 doesn't change the meaning and is acceptable.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "موفق",
+      "function_value": "موفق",
+      "expert_value": "موفق",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"موفق\" (meaning \"successful\" in Persian) is present in the HTML content next to the \"وضعیت\" (status) label. This accurately reflects the project's status.",
+        "function_explanation": "The extracted value \"موفق\" (meaning \"successful\" in Persian) is present in the HTML content next to the \"وضعیت\" (status) label. This accurately reflects the project's status.",
+        "expert_explanation": "The extracted value \"موفق\" (meaning \"successful\" in Persian) is present in the HTML content next to the \"وضعیت\" (status) label. This accurately reflects the project's status.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    }
+  }
+}

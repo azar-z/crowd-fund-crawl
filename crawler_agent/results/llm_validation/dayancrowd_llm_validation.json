@@ -1,0 +1,183 @@
+{
+  "project_name": "dayancrowd",
+  "evaluation_date": "2025-08-17T18:30:08.862633",
+  "llm_model": "gemma-3-27b-it",
+  "basic_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.3500000000000005,
+    "average_confidence": 0.907
+  },
+  "function_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.3500000000000005,
+    "average_confidence": 0.907
+  },
+  "expert_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "total_confidence": 6.3500000000000005,
+    "average_confidence": 0.907
+  },
+  "field_evaluations": {
+    "company": {
+      "basic_value": "انتشاراتی سرزمین بچه‌های خوشحال",
+      "function_value": "انتشاراتی سرزمین بچه‌های خوشحال",
+      "expert_value": "انتشاراتی سرزمین بچه‌های خوشحال",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"انتشاراتی سرزمین بچه‌های خوشحال\" (Entesharati Sarzamin Bachehaye Khoshhal) is explicitly mentioned in the HTML content as the company name: \"نام شرکت:انتشاراتی سرزمین بچه‌های خو...\" which translates to \"Company Name: Entesharati Sarzamin Bachehaye Kho...\". The extraction is accurate and complete.",
+        "function_explanation": "The extracted value \"انتشاراتی سرزمین بچه‌های خوشحال\" (Entesharati Sarzamin Bachehaye Khoshhal) is explicitly mentioned in the HTML content as the company name: \"نام شرکت:انتشاراتی سرزمین بچه‌های خو...\" which translates to \"Company Name: Entesharati Sarzamin Bachehaye Kho...\". The extraction is accurate and complete.",
+        "expert_explanation": "The extracted value \"انتشاراتی سرزمین بچه‌های خوشحال\" (Entesharati Sarzamin Bachehaye Khoshhal) is explicitly mentioned in the HTML content as the company name: \"نام شرکت:انتشاراتی سرزمین بچه‌های خو...\" which translates to \"Company Name: Entesharati Sarzamin Bachehaye Kho...\". The extraction is accurate and complete.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "duration": {
+      "basic_value": "6",
+      "function_value": "6 ماه",
+      "expert_value": "6 ماه",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Group 1 extracted only \"6\", which is a number found in the text but doesn't represent the project duration. Group 2 correctly extracted \"6 ماه\" (6 months), which is explicitly stated as the \"مدت طرح\" (project duration) in the HTML content: \"6ماهه با پیش‌بینی سود اسمی 23%\". The inclusion of \"ماه\" (month) makes the extraction more accurate and complete.",
+        "function_explanation": "Group 1 extracted only \"6\", which is a number found in the text but doesn't represent the project duration. Group 2 correctly extracted \"6 ماه\" (6 months), which is explicitly stated as the \"مدت طرح\" (project duration) in the HTML content: \"6ماهه با پیش‌بینی سود اسمی 23%\". The inclusion of \"ماه\" (month) makes the extraction more accurate and complete.",
+        "expert_explanation": "Group 1 extracted only \"6\", which is a number found in the text but doesn't represent the project duration. Group 2 correctly extracted \"6 ماه\" (6 months), which is explicitly stated as the \"مدت طرح\" (project duration) in the HTML content: \"6ماهه با پیش‌بینی سود اسمی 23%\". The inclusion of \"ماه\" (month) makes the extraction more accurate and complete.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "guarantee": {
+      "basic_value": "دارای ضمانت نامه",
+      "function_value": "دارای ضمانت نامه",
+      "expert_value": "دارای ضمانت نامه ",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"دارای ضمانت نامه\" (meaning \"with guarantee\") is present multiple times in the HTML content, specifically associated with the project description. It accurately reflects the guarantee information for this crowdfunding project.",
+        "function_explanation": "The extracted value \"دارای ضمانت نامه\" (meaning \"with guarantee\") is present multiple times in the HTML content, specifically associated with the project description. It accurately reflects the guarantee information for this crowdfunding project.",
+        "expert_explanation": "The extracted value \"دارای ضمانت نامه\" (meaning \"with guarantee\") is present multiple times in the HTML content, specifically associated with the project description. It accurately reflects the guarantee information for this crowdfunding project.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "investment_amount": {
+      "basic_value": "250,000,000,000",
+      "function_value": "250,000,000,000",
+      "expert_value": "250,000,000,000 ریال",
+      "evaluations": {
+        "basic_correct": false,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "Failed to parse LLM response",
+        "function_explanation": "Failed to parse LLM response",
+        "expert_explanation": "Failed to parse LLM response",
+        "basic_confidence": 0.5,
+        "function_confidence": 0.5,
+        "expert_confidence": 0.5,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [],
+        "response_groups": 2
+      }
+    },
+    "name": {
+      "basic_value": "خرید کاغذ خام  و  تولید کتب آموزشی اجتماعی برای رده سنی نوجوانان",
+      "function_value": "خرید کاغذ خام  و  تولید کتب آموزشی اجتماعی برای رده سنی نوجوانان",
+      "expert_value": "خرید کاغذ خام  و  تولید کتب آموزشی اجتماعی برای رده سنی نوجوانان",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "The extracted value \"خرید کاغذ خام و تولید کتب آموزشی اجتماعی برای رده سنی نوجوانان\" is directly present in the HTML content multiple times, accurately describing the project's purpose (purchasing raw paper and producing educational books for adolescents). It appears to be the core subject of the crowdfunding campaign.",
+        "function_explanation": "The extracted value \"خرید کاغذ خام و تولید کتب آموزشی اجتماعی برای رده سنی نوجوانان\" is directly present in the HTML content multiple times, accurately describing the project's purpose (purchasing raw paper and producing educational books for adolescents). It appears to be the core subject of the crowdfunding campaign.",
+        "expert_explanation": "The extracted value \"خرید کاغذ خام و تولید کتب آموزشی اجتماعی برای رده سنی نوجوانان\" is directly present in the HTML content multiple times, accurately describing the project's purpose (purchasing raw paper and producing educational books for adolescents). It appears to be the core subject of the crowdfunding campaign.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "identical_responses": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "profit": {
+      "basic_value": "23",
+      "function_value": 23.0,
+      "expert_value": 23.0,
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": true,
+        "expert_correct": true,
+        "basic_explanation": "Both groups extracted \"23\", which is explicitly stated in the text as \"23 % سود پیش بینی شده\" (23% predicted profit). The \".0\" in Group 2 doesn't change the meaning or correctness of the value.",
+        "function_explanation": "Both groups extracted \"23\", which is explicitly stated in the text as \"23 % سود پیش بینی شده\" (23% predicted profit). The \".0\" in Group 2 doesn't change the meaning or correctness of the value.",
+        "expert_explanation": "Both groups extracted \"23\", which is explicitly stated in the text as \"23 % سود پیش بینی شده\" (23% predicted profit). The \".0\" in Group 2 doesn't change the meaning or correctness of the value.",
+        "basic_confidence": 1.0,
+        "function_confidence": 1.0,
+        "expert_confidence": 1.0,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1,
+          2,
+          3
+        ],
+        "response_groups": 2
+      }
+    },
+    "status": {
+      "basic_value": "active",
+      "function_value": "",
+      "expert_value": "",
+      "evaluations": {
+        "basic_correct": true,
+        "function_correct": false,
+        "expert_correct": false,
+        "basic_explanation": "The HTML content indicates the project is currently active. Phrases like \"شروع جذب سرمایه\" (start of fundraising) and dates related to ongoing phases (e.g., \"پایان فرصت سرمایه گذاری: 0 روز\" - 0 days until the investment opportunity ends) suggest the project is still running. Therefore, \"active\" is the correct status. Group 2 incorrectly extracted an empty string, failing to identify the active status.",
+        "function_explanation": "The HTML content indicates the project is currently active. Phrases like \"شروع جذب سرمایه\" (start of fundraising) and dates related to ongoing phases (e.g., \"پایان فرصت سرمایه گذاری: 0 روز\" - 0 days until the investment opportunity ends) suggest the project is still running. Therefore, \"active\" is the correct status. Group 2 incorrectly extracted an empty string, failing to identify the active status.",
+        "expert_explanation": "The HTML content indicates the project is currently active. Phrases like \"شروع جذب سرمایه\" (start of fundraising) and dates related to ongoing phases (e.g., \"پایان فرصت سرمایه گذاری: 0 روز\" - 0 days until the investment opportunity ends) suggest the project is still running. Therefore, \"active\" is the correct status. Group 2 incorrectly extracted an empty string, failing to identify the active status.",
+        "basic_confidence": 0.95,
+        "function_confidence": 0.95,
+        "expert_confidence": 0.95,
+        "batch_evaluation": true,
+        "grouped_evaluation": true,
+        "correct_agents": [
+          1
+        ],
+        "response_groups": 2
+      }
+    }
+  }
+}
