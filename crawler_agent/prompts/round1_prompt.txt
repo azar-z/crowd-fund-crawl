@@ -1,0 +1,11 @@
+Extract the {object_description} from the HTML using the `{function_name}` function.
+
+INSTRUCTIONS:
+- Extract ALL available information for each field
+- Use exact text from the HTML when possible
+- If a field is not found, set it to null
+- Pay special attention to numerical values (preserve formatting and units)
+- Look for complete text in guarantee/description fields
+
+HTML:
+{html_content}

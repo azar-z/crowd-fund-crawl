@@ -1,0 +1,11 @@
+Carefully extract the {object_description} using `{function_name}`. Focus on COMPLETENESS and ACCURACY.
+
+EXTRACTION STRATEGY:
+- Scan the ENTIRE HTML content systematically
+- Look for both visible text and data attributes
+- For text fields, capture the FULL text, not abbreviated versions
+- For numerical fields, preserve original formatting and units
+- Double-check each field before finalizing
+
+HTML:
+{html_content}

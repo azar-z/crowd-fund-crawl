@@ -1,0 +1,13 @@
+Perform a THOROUGH extraction of {object_description} using `{function_name}`.
+
+QUALITY CHECKLIST:
+✓ All required fields are extracted
+✓ Text fields contain complete, untruncated information
+✓ Numbers include proper units and formatting
+✓ No placeholder or generic values
+✓ Information matches what's actually in the HTML
+
+Be extremely careful and methodical. Extract exactly what you see in the HTML.
+
+HTML:
+{html_content}

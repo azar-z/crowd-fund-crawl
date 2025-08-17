@@ -4,6 +4,7 @@ ExpertAgent implementation with multiple accuracy improvement techniques.
 
 import json
 import re
+import os
 from typing import Dict, Any, List, Tuple
 from google.generativeai.types import Tool
 import google.generativeai as genai
@@ -36,6 +37,28 @@ class ExpertAgent(BaseCrawlerAgent):
         self.max_retries = max_retries
         self.voting_rounds = voting_rounds
         self.debug_mode = True  # For comparison purposes
+        self.prompts = self._load_prompts()
+
+    def _load_prompts(self) -> Dict[int, str]:
+        """
+        Load prompt templates from external files.
+
+        Returns:
+            Dict[int, str]: Dictionary mapping round numbers to prompt templates
+        """
+        prompts = {}
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        prompts_dir = os.path.join(os.path.dirname(current_dir), 'prompts')
+        
+        for round_num in range(3):
+            prompt_file = os.path.join(prompts_dir, f'round{round_num + 1}_prompt.txt')
+            try:
+                with open(prompt_file, 'r', encoding='utf-8') as f:
+                    prompts[round_num] = f.read().strip()
+            except FileNotFoundError:
+                raise Exception(f"Prompt file not found: {prompt_file}")
+        
+        return prompts
 
     def _clean_html_efficiently(self, html_content: str) -> str:
         """
@@ -98,56 +121,13 @@ class ExpertAgent(BaseCrawlerAgent):
             )
 
 
-            # Different prompt strategies for each round
-            if round_number == 0:
-                # First round: Standard extraction with field guidance
-                prompt = f"""
-                Extract the {config['object_description']} from the HTML using the `{config['function_name']}` function.
-                
-                INSTRUCTIONS:
-                - Extract ALL available information for each field
-                - Use exact text from the HTML when possible
-                - If a field is not found, set it to null
-                - Pay special attention to numerical values (preserve formatting and units)
-                - Look for complete text in guarantee/description fields
-                
-                HTML:
-                {html_content}
-                """
-
-            elif round_number == 1:
-                # Second round: Focus on completeness and accuracy
-                prompt = f"""
-                Carefully extract the {config['object_description']} using `{config['function_name']}`. Focus on COMPLETENESS and ACCURACY.
-                
-                EXTRACTION STRATEGY:
-                - Scan the ENTIRE HTML content systematically
-                - Look for both visible text and data attributes
-                - For text fields, capture the FULL text, not abbreviated versions
-                - For numerical fields, preserve original formatting and units
-                - Double-check each field before finalizing
-                
-                HTML:
-                {html_content}
-                """
-
-            else:
-                # Third round: Thorough analysis with error prevention
-                prompt = f"""
-                Perform a THOROUGH extraction of {config['object_description']} using `{config['function_name']}`.
-                
-                QUALITY CHECKLIST:
-                ✓ All required fields are extracted
-                ✓ Text fields contain complete, untruncated information
-                ✓ Numbers include proper units and formatting
-                ✓ No placeholder or generic values
-                ✓ Information matches what's actually in the HTML
-                
-                Be extremely careful and methodical. Extract exactly what you see in the HTML.
-            
-            HTML:
-                {html_content}
-                """
+            # Use external prompt templates
+            prompt_template = self.prompts.get(round_number)
+            prompt = prompt_template.format(
+                object_description=config['object_description'],
+                function_name=config['function_name'],
+                html_content=html_content
+            )
 
             response = model.generate_content(prompt)
 
