@@ -1,6 +1,6 @@
 {
   "project_name": "vestacrowd",
-  "validation_date": "2025-08-17T18:27:29.334143",
+  "validation_date": "2025-08-19T01:44:04.794003",
   "basic_agent": {
     "correct": 6,
     "incorrect": 1,
@@ -23,7 +23,9 @@
       "expert_value": "مدیریت فروشگاهی توسعه الماس",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "مدیریت فروشگاهی توسعه الماس",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "12 ماه",
@@ -31,7 +33,9 @@
       "expert_value": "12 ماه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "12 ماه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "ضمانت‌نامه تعهد پرداخت",
@@ -39,7 +43,9 @@
       "expert_value": "ضمانت‌نامه تعهد پرداخت",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "ضمانت‌نامه تعهد پرداخت",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "250,000,000,000",
@@ -47,7 +53,9 @@
       "expert_value": "250,000,000,000 ریال",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "250,000,000,000 ریال",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "توسعه فرانچایز فروشگاهی الماس",
@@ -55,7 +63,9 @@
       "expert_value": "توسعه فرانچایز فروشگاهی الماس",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "توسعه فرانچایز فروشگاهی الماس",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "45",
@@ -63,7 +73,9 @@
       "expert_value": 45.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 45.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "تامین مالی شده",
@@ -71,7 +83,14 @@
       "expert_value": "تامین مالی شده",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تامین مالی شده",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
   }
 }

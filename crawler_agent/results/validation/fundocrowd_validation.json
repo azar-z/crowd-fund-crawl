@@ -1,6 +1,6 @@
 {
   "project_name": "fundocrowd",
-  "validation_date": "2025-08-17T18:22:13.186685",
+  "validation_date": "2025-08-19T01:38:20.828825",
   "basic_agent": {
     "correct": 7,
     "incorrect": 0,
@@ -23,7 +23,9 @@
       "expert_value": "بازرگانی سایپا یدک (شرکت سهامی خاص)",
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "بازرگانی سایپا یدک (شرکت سهامی خاص)",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "12 ماه",
@@ -31,7 +33,9 @@
       "expert_value": "12 ماه",
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "12 ماه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": " ارائه ضمانت‌نامه (دریافت فایل)",
@@ -39,7 +43,9 @@
       "expert_value": " ارائه ضمانت‌نامه (دریافت فایل)",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": false
+      "expert_correct": false,
+      "feedback_value": " ارائه ضمانت‌نامه (دریافت فایل)",
+      "feedback_correct": false
     },
     "investment_amount": {
       "basic_value": "25 میلیارد تومان",
@@ -47,7 +53,9 @@
       "expert_value": "25 میلیارد تومان",
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "25 میلیارد تومان",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "تامین سرمایه در گردش تامین قطعات کیت کلاچ 215 میلیمتری",
@@ -55,7 +63,9 @@
       "expert_value": "تامین سرمایه در گردش تامین قطعات کیت کلاچ 215 میلیمتری",
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تامین سرمایه در گردش تامین قطعات کیت کلاچ 215 میلیمتری",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "42",
@@ -63,7 +73,9 @@
       "expert_value": 42.0,
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 42.0,
+      "feedback_correct": true
     },
     "project": {
       "basic_value": null,
@@ -71,7 +83,9 @@
       "expert_value": null,
       "basic_correct": null,
       "function_correct": null,
-      "expert_correct": null
+      "expert_correct": null,
+      "feedback_value": null,
+      "feedback_correct": null
     },
     "status": {
       "basic_value": "موفق",
@@ -79,7 +93,14 @@
       "expert_value": "موفق",
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "موفق",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 1
   }
 }

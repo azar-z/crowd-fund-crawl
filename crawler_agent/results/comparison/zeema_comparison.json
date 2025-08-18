@@ -49,8 +49,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Function Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 8.85008192062378,
+    "data": {
+      "project": {
+        "duration": "12 ماه",
+        "company": "یزدان مطهر قائم وسطی",
+        "investment_amount": "15 میلیارد تومان",
+        "guarantee": "ضمانتنامه تعهد پرداخت بانک ملی\nتضمین اصل سرمایه",
+        "profit": 43.0,
+        "status": "Active",
+        "name": "تأمین سرمایه در گردش خریدوفروش انواع حبوبات"
+      }
+    },
+    "error": null
   }
 }

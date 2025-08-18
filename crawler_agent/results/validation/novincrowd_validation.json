@@ -1,6 +1,6 @@
 {
   "project_name": "novincrowd",
-  "validation_date": "2025-08-17T18:24:24.970432",
+  "validation_date": "2025-08-19T01:40:43.788873",
   "basic_agent": {
     "correct": 7,
     "incorrect": 0,
@@ -23,7 +23,9 @@
       "expert_value": "صنایع غذایی بهروز نیک",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "صنایع غذایی بهروز نیک",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "12 ماه",
@@ -31,7 +33,9 @@
       "expert_value": "12 ماه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "12 ماه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "بدون تضمین سود و با ضمانت نامه تعهد پرداخت بانک کشاورزی برای اصل سرمایه",
@@ -39,7 +43,9 @@
       "expert_value": "بدون تضمین سود و با ضمانت نامه تعهد پرداخت بانک کشاورزی برای اصل سرمایه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "بدون تضمین سود و با ضمانت نامه تعهد پرداخت بانک کشاورزی برای اصل سرمایه",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "250,000,000,000",
@@ -47,7 +53,9 @@
       "expert_value": "250,000,000,000",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "250,000,000,000 ریال",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "تامین سرمایه در گردش بهبود فرمولاسیون تولید انواع کنسرو",
@@ -55,7 +63,9 @@
       "expert_value": "تامین سرمایه در گردش بهبود فرمولاسیون تولید انواع کنسرو",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تامین سرمایه در گردش بهبود فرمولاسیون تولید انواع کنسرو",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "44.0",
@@ -63,7 +73,9 @@
       "expert_value": 44.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 44.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "موفقیت جمع آوری وجوه",
@@ -71,7 +83,14 @@
       "expert_value": "موفقیت جمع آوری وجوه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "موفقیت جمع آوری وجوه",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
   }
 }

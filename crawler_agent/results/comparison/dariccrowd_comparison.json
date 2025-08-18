@@ -48,8 +48,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Function Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 4.705141305923462,
+    "data": {
+      "project": {
+        "company": "اعتمادسازان توی",
+        "duration": "12 ماه",
+        "investment_amount": "5 میلیون ریال",
+        "guarantee": "چک شرکت و اعضای هیات مدیره",
+        "profit": 47.0,
+        "status": "خاتمه یافته",
+        "name": "تامین سرمایه درگردش توسعه خدمات مشاوره سرمایه گذاری"
+      }
+    },
+    "error": null
   }
 }

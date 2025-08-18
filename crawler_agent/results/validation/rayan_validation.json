@@ -1,6 +1,6 @@
 {
   "project_name": "rayan",
-  "validation_date": "2025-08-17T17:30:33.315663",
+  "validation_date": "2025-08-19T01:42:02.373511",
   "basic_agent": {
     "correct": 2,
     "incorrect": 5,
@@ -23,7 +23,9 @@
       "expert_value": "شرکت صدف خاور میانه",
       "basic_correct": false,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "شرکت صدف خاور میانه",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "9",
@@ -31,7 +33,9 @@
       "expert_value": "9 ماه",
       "basic_correct": false,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "9 ماه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "چک شخص ثالث و چک شرکت صدف خاور میانه",
@@ -39,7 +43,9 @@
       "expert_value": "چک شخص ثالث و چک شرکت صدف خاور میانه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "چک شخص ثالث و چک شرکت صدف خاور میانه",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "50,000,000",
@@ -47,7 +53,9 @@
       "expert_value": "100,000,000,000 ریال",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "50,000,000 ریال",
+      "feedback_correct": false
     },
     "name": {
       "basic_value": "تأمین سرمایه در گردش برش و بسته بندی کاغذ فتوکپی A4",
@@ -55,7 +63,9 @@
       "expert_value": "تأمین سرمایه در گردش برش و بسته بندی کاغذ فتوکپی A4",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تأمین سرمایه در گردش برش و بسته بندی کاغذ فتوکپی A4",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "35",
@@ -63,7 +73,9 @@
       "expert_value": 35.25,
       "basic_correct": false,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 35.25,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": null,
@@ -71,7 +83,14 @@
       "expert_value": null,
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": false
+      "expert_correct": false,
+      "feedback_value": null,
+      "feedback_correct": false
     }
+  },
+  "feedback_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
   }
 }

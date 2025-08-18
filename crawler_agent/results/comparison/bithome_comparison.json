@@ -48,8 +48,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Function Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 9.356692552566528,
+    "data": {
+      "project": {
+        "company": "نیاوران امن بنا قشم",
+        "duration": "24 ماه",
+        "investment_amount": "101,000",
+        "guarantee": "سرمایه‌گذاری در این پروژه به صورت خشتی انجام می‌شود",
+        "profit": 0.0,
+        "status": "در حال سرمایه پذیری",
+        "name": "رویال قشم"
+      }
+    },
+    "error": null
   }
 }

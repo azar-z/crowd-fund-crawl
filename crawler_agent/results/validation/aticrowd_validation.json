@@ -1,6 +1,6 @@
 {
   "project_name": "aticrowd",
-  "validation_date": "2025-08-17T18:20:24.381480",
+  "validation_date": "2025-08-19T01:36:51.241572",
   "basic_agent": {
     "correct": 7,
     "incorrect": 0,
@@ -23,7 +23,9 @@
       "expert_value": "آراد لیان فراور آریا",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "آراد لیان فراور آریا",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "12 ماه",
@@ -31,7 +33,9 @@
       "expert_value": "یک سال (12 ماه)",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "12 ماه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "بدون تضمین سود و بدون تضمین اصل سرمایه",
@@ -39,7 +43,9 @@
       "expert_value": "شرکت آراد لیان فراورآریا (سهامی خاص) متعهد به واریز سود و اصل سرمایه در موعدهای مقرر به حساب عامل جهت واریز به حساب سرمایه گذاران می باشد.",
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": false
+      "expert_correct": false,
+      "feedback_value": "بدون تضمین سود و بدون تضمین اصل سرمایه",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "111,120,000,000 ریال",
@@ -47,7 +53,9 @@
       "expert_value": "۱۱۱,۱۲۰,۰۰۰,۰۰۰ ریال",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "۱۱۱,۱۲۰,۰۰۰,۰۰۰ ریال",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "تأمین سرمایه در گردش جهت خرید پودر آلومینا شرکت آراد لیان فراورآریا ",
@@ -55,7 +63,9 @@
       "expert_value": "تأمین سرمایه در گردش جهت خرید پودر آلومینا شرکت آراد لیان فراورآریا",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تأمین سرمایه در گردش جهت خرید پودر آلومینا شرکت آراد لیان فراورآریا",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": 40,
@@ -63,7 +73,9 @@
       "expert_value": 40.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 40.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "تکمیل سرمایه گذاری",
@@ -71,7 +83,14 @@
       "expert_value": "تکمیل سرمایه گذاری",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تکمیل سرمایه گذاری",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
   }
 }

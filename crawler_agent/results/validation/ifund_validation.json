@@ -1,6 +1,6 @@
 {
   "project_name": "ifund",
-  "validation_date": "2025-08-15T21:33:03.321495",
+  "validation_date": "2025-08-19T01:39:02.147257",
   "basic_agent": {
     "correct": 6,
     "incorrect": 1,
@@ -23,7 +23,9 @@
       "expert_value": "نگارین تکمیل یزد",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "نگارین تکمیل یزد",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "12 ماهه",
@@ -31,7 +33,9 @@
       "expert_value": "12 ماهه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "12 ماهه ",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "بدون تضمین سود و با تضمین ( ضمانت نامه تعهد پرداخت ) برای اصل سرمایه ",
@@ -39,7 +43,9 @@
       "expert_value": "بدون تضمین سود و با تضمین ( ضمانت نامه تعهد پرداخت ) برای اصل سرمایه \n\nضمانت نامه این طرح از سوی بانک ملی با شناسه سپام: 0350104681895316 صادر شده که تا تاریخ 22/04/1404 معتبر می‌باشد و با درخواست شرکت سامانه تامین هوشمند نوآفرینان ایرانیان تا زمان مورد درخواست این شرکت قابل تمدید است.",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": " بدون تضمین سود و با تضمین ( ضمانت نامه تعهد پرداخت ) برای اصل سرمایه \n\nضمانت نامه این طرح از سوی بانک ملی با شناسه سپام: 0350104681895316 صادر شده که تا تاریخ 22/04/1404 معتبر می‌باشد و با درخواست شرکت سامانه تامین هوشمند نوآفرینان ایرانیان تا زمان مورد درخواست این شرکت قابل تمدید است.",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "72,000,000,000 ریال",
@@ -47,7 +53,9 @@
       "expert_value": "120,000,000,000 ریال",
       "basic_correct": false,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "120,000,000,000 ریال",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "نگارین تکمیل یزد",
@@ -55,7 +63,9 @@
       "expert_value": "نگارین تکمیل یزد",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "فاندمبلی",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "43",
@@ -63,7 +73,9 @@
       "expert_value": 43.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 43.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "موفقیت جمع آوری وجوه",
@@ -71,7 +83,14 @@
       "expert_value": "موفقیت جمع آوری وجوه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "موفقیت جمع آوری وجوه",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
   }
 }

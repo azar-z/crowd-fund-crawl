@@ -48,8 +48,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Function Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 10.806048393249512,
+    "data": {
+      "project": {
+        "company": "علیرضا عموی نوده",
+        "duration": "9 ماه",
+        "investment_amount": "33/250 میلیون تومان",
+        "guarantee": "-3% \nسود باقیمانده تا پایان پروژه\n33.00%\nسود تا امروز\n33.00%",
+        "profit": 30.0,
+        "status": "اتمام عرضه",
+        "name": "شهرک آکو پارک / ویلای شماره 5"
+      }
+    },
+    "error": null
   }
 }

@@ -1,6 +1,6 @@
 {
   "project_name": "zeema",
-  "validation_date": "2025-08-15T21:34:03.703044",
+  "validation_date": "2025-08-19T01:45:11.227873",
   "basic_agent": {
     "correct": 6,
     "incorrect": 1,
@@ -23,7 +23,9 @@
       "expert_value": "یزدان مطهر قائم وسطی",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "یزدان مطهر قائم وسطی",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "12 ماه",
@@ -31,7 +33,9 @@
       "expert_value": "12\nماه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "12 ماه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "ضمانتنامه تعهد پرداخت بانک ملی",
@@ -39,7 +43,9 @@
       "expert_value": "ضمانتنامه تعهد پرداخت بانک ملی\nتضمین اصل سرمایه",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "ضمانتنامه تعهد پرداخت بانک ملی\nتضمین اصل سرمایه",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "15 میلیارد",
@@ -47,7 +53,9 @@
       "expert_value": "15 میلیارد",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "15 میلیارد تومان",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "تأمین سرمایه در گردش خریدوفروش انواع حبوبات",
@@ -55,7 +63,9 @@
       "expert_value": "تأمین سرمایه در گردش خریدوفروش انواع حبوبات",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تأمین سرمایه در گردش خریدوفروش انواع حبوبات",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "43",
@@ -63,7 +73,9 @@
       "expert_value": 43.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 43.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "inProgress",
@@ -71,7 +83,14 @@
       "expert_value": "inProgress",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "Active",
+      "feedback_correct": false
     }
+  },
+  "feedback_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
   }
 }

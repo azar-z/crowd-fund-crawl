@@ -1,6 +1,6 @@
 {
   "project_name": "mobincrowd",
-  "validation_date": "2025-08-15T21:33:47.564843",
+  "validation_date": "2025-08-19T01:40:40.142438",
   "basic_agent": {
     "correct": 5,
     "incorrect": 2,
@@ -23,7 +23,9 @@
       "expert_value": "شرکت کیمیا جاوید سپاهان",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "شرکت کیمیا جاوید سپاهان",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "6",
@@ -31,7 +33,9 @@
       "expert_value": "6",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": false
+      "expert_correct": false,
+      "feedback_value": "6",
+      "feedback_correct": false
     },
     "guarantee": {
       "basic_value": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق پژوهش و فناوری برای اصل سرمایه",
@@ -39,7 +43,9 @@
       "expert_value": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق پژوهش و فناوری برای اصل سرمایه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق پژوهش و فناوری برای اصل سرمایه",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "250,000,000,000",
@@ -47,7 +53,9 @@
       "expert_value": "250,000,000,000 ریال",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "250,000,000,000 ریال",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "تامین سرمایه در گردش به منظور تولید پوشش پلیمری لوله‌های فولادی",
@@ -55,7 +63,9 @@
       "expert_value": "تامین سرمایه در گردش به منظور تولید پوشش پلیمری لوله‌های فولادی",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تامین سرمایه در گردش به منظور تولید پوشش پلیمری لوله‌های فولادی",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": 21,
@@ -63,7 +73,9 @@
       "expert_value": 21.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 21.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "موفق در جذب سرمایه",
@@ -71,7 +83,14 @@
       "expert_value": "موفق در جذب سرمایه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "موفق در جذب سرمایه",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
   }
 }

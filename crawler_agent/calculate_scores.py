@@ -43,7 +43,8 @@ def calculate_agent_scores(validation_data: List[Dict]) -> Tuple[Dict, List[Dict
     agent_stats = {
         "basic_agent": {"correct": 0, "incorrect": 0, "skipped": 0, "projects": []},
         "function_agent": {"correct": 0, "incorrect": 0, "skipped": 0, "projects": []},
-        "expert_agent": {"correct": 0, "incorrect": 0, "skipped": 0, "projects": []}
+        "expert_agent": {"correct": 0, "incorrect": 0, "skipped": 0, "projects": []},
+        "feedback_agent": {"correct": 0, "incorrect": 0, "skipped": 0, "projects": []},
     }
 
     project_details = []
@@ -62,7 +63,7 @@ def calculate_agent_scores(validation_data: List[Dict]) -> Tuple[Dict, List[Dict
         }
 
         # Process each agent
-        for agent_key in ["basic_agent", "function_agent", "expert_agent"]:
+        for agent_key in ["basic_agent", "function_agent", "expert_agent", "feedback_agent"]:
             if agent_key in data:
                 agent_data = data[agent_key]
 
@@ -103,7 +104,8 @@ def print_detailed_report(agent_stats: Dict, project_details: List[Dict]):
     agent_names = {
         "basic_agent": "Basic Agent",
         "function_agent": "Function Agent",
-        "expert_agent": "Expert Agent"
+        "expert_agent": "Expert Agent",
+        "feedback_agent": "Feedback Agent",
     }
 
     print("\n📊 OVERALL PERFORMANCE")
@@ -171,7 +173,8 @@ def save_scoring_report(agent_stats: Dict, project_details: List[Dict]):
     agent_names = {
         "basic_agent": "Basic Agent",
         "function_agent": "Function Agent",
-        "expert_agent": "Expert Agent"
+        "expert_agent": "Expert Agent",
+        "feedback_agent": "Feedback Agent"
     }
 
     for agent_key, agent_name in agent_names.items():

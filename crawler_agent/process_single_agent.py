@@ -12,6 +12,7 @@ from dotenv import load_dotenv
 from crawler_agent.agents.basic import BasicAgent
 from crawler_agent.agents.function import FunctionAgent
 from crawler_agent.agents.expert import ExpertAgent
+from crawler_agent.agents.feedback import FeedbackAgent
 
 
 def create_results_directory(agent_name: str):
@@ -91,6 +92,7 @@ def update_comparison_file(project_name: str, agent_name: str, agent_result: dic
             "basic_agent": None,
             "function_agent": None,
             "expert_agent": None,
+            "feedback_agent": None,
             "summary": {
                 "successful_count": 0,
                 "total_count": 3,
@@ -103,7 +105,7 @@ def update_comparison_file(project_name: str, agent_name: str, agent_result: dic
     comparison_data[agent_key] = agent_result
 
     # Recalculate summary
-    agents = ["basic_agent", "function_agent", "expert_agent"]
+    agents = ["basic_agent", "function_agent", "expert_agent", "feedback_agent"]
     successful_agents = []
 
     for agent_key in agents:
@@ -132,7 +134,7 @@ def process_agent_for_all_projects(agent_name: str, agent_instance: Any,
     Process all single samples for a specific agent.
     
     Args:
-        agent_name (str): Name of the agent (e.g., "Basic", "Function", "Expert")
+        agent_name (str): Name of the agent (e.g., "Basic", "Function", "Expert", "Feedback")
         agent_instance: Instance of the agent class
         config_file (str): Path to the configuration file
     """
@@ -190,6 +192,10 @@ def process_agent_for_all_projects(agent_name: str, agent_instance: Any,
         if not os.path.exists(html_file):
             print(f"❌ HTML file not found: {html_file}")
             failed_projects += 1
+            continue
+
+        if os.path.exists(output_file):
+            print(f"Already calculated. Skipping project: {project_name}")
             continue
 
         # Test the agent
@@ -271,12 +277,56 @@ def process_expert_agent():
     process_agent_for_all_projects("Expert", expert_agent)
 
 
+def process_feedback_agent():
+    """Process all projects with Feedback Agent only."""
+    print("🔄 Processing with Feedback Agent...")
+
+    load_dotenv()
+    api_key = os.getenv("GEMINI_API_KEY")
+    if not api_key:
+        raise ValueError("GEMINI_API_KEY environment variable is not set.")
+
+    feedback_agent = FeedbackAgent(api_key=api_key)
+    process_agent_for_all_projects("Feedback", feedback_agent)
+
+
+def load_project_results(project_name):
+    """Load results from all three agents for a project."""
+    basic_file = f"results/basic/{project_name}_basic.json"
+    function_file = f"results/function/{project_name}_function.json"
+    expert_file = f"results/expert/{project_name}_expert.json"
+    feedback_file = f"results/feedback/{project_name}_feedback.json"
+
+    basic_data = None
+    function_data = None
+    expert_data = None
+    feedback_data = None
+
+    if os.path.exists(basic_file):
+        with open(basic_file, 'r', encoding='utf-8') as f:
+            basic_data = json.load(f)
+
+    if os.path.exists(function_file):
+        with open(function_file, 'r', encoding='utf-8') as f:
+            function_data = json.load(f)
+
+    if os.path.exists(expert_file):
+        with open(expert_file, 'r', encoding='utf-8') as f:
+            expert_data = json.load(f)
+
+    if os.path.exists(feedback_file):
+        with open(feedback_file, 'r', encoding='utf-8') as f:
+            feedback_data = json.load(f)
+
+    return basic_data, function_data, expert_data, feedback_data
+
+
 def validate_single_agent_for_all_projects(agent_name: str):
     """
     Re-validate only one agent for all projects while keeping other agents' validations.
     
     Args:
-        agent_name (str): Name of the agent to re-validate ("Basic", "Function", or "Expert")
+        agent_name (str): Name of the agent to re-validate ("Basic", "Function", "Expert", or "Feedback")
     """
     print(f"🔍 Starting Single Agent Re-Validation: {agent_name}")
     print("=" * 60)
@@ -284,15 +334,13 @@ def validate_single_agent_for_all_projects(agent_name: str):
     # Import validation functions
     from validate_results import (
         create_validation_directory, 
-        load_project_results, 
         extract_project_fields,
-        get_user_validation_three_agents,
         format_field_value
     )
     from datetime import datetime
     
     # Validate agent name
-    valid_agents = ["Basic", "Function", "Expert"]
+    valid_agents = ["Basic", "Function", "Expert", "Feedback"]
     if agent_name not in valid_agents:
         print(f"❌ Invalid agent name: {agent_name}")
         print(f"Valid options: {', '.join(valid_agents)}")
@@ -380,14 +428,15 @@ def validate_single_agent_for_all_projects(agent_name: str):
                     "basic_agent": {"correct": 0, "incorrect": 0, "skipped": 0},
                     "function_agent": {"correct": 0, "incorrect": 0, "skipped": 0},
                     "expert_agent": {"correct": 0, "incorrect": 0, "skipped": 0},
+                    "feedback_agent": {"correct": 0, "incorrect": 0, "skipped": 0},
                     "field_validations": {}
                 }
                 print(f"✨ Created new validation for {project_name}")
             
             # Load data from all three agents
-            basic_data, function_data, expert_data = load_project_results(project_name)
+            basic_data, function_data, expert_data, feedback_data = load_project_results(project_name)
             
-            if not any([basic_data, function_data, expert_data]):
+            if not any([basic_data, function_data, expert_data, feedback_data]):
                 print(f"❌ No data found for project '{project_name}'")
                 failed_validations += 1
                 continue
@@ -396,18 +445,21 @@ def validate_single_agent_for_all_projects(agent_name: str):
             basic_fields = extract_project_fields(basic_data)
             function_fields = extract_project_fields(function_data)
             expert_fields = extract_project_fields(expert_data)
-            
+            feedback_fields = extract_project_fields(feedback_data)
+
             print(f"📊 Data loaded:")
             print(f"   Basic Agent: {'✅' if basic_data else '❌'} ({len(basic_fields)} fields)")
             print(f"   Function Agent: {'✅' if function_data else '❌'} ({len(function_fields)} fields)")
             print(f"   Expert Agent: {'✅' if expert_data else '❌'} ({len(expert_fields)} fields)")
-            
+            print(f"   Feedback Agent: {'✅' if feedback_data else '❌'} ({len(feedback_fields)} fields)")
+
             # Get all unique field names
             all_fields = set()
             all_fields.update(basic_fields.keys())
             all_fields.update(function_fields.keys())
             all_fields.update(expert_fields.keys())
-            
+            all_fields.update(feedback_fields.keys())
+
             if not all_fields:
                 print("❌ No fields found to validate")
                 failed_validations += 1
@@ -433,7 +485,7 @@ def validate_single_agent_for_all_projects(agent_name: str):
                     # Extract validations from this project only
                     for field, field_data in existing_validation.get("field_validations", {}).items():
                         # Check all three agents' values and validations from THIS project
-                        for agent_type in ["basic", "function", "expert"]:
+                        for agent_type in ["basic", "function", "expert", "feedback"]:
                             value = field_data.get(f"{agent_type}_value")
                             validation = field_data.get(f"{agent_type}_correct")
                             
@@ -464,23 +516,27 @@ def validate_single_agent_for_all_projects(agent_name: str):
                 basic_value = basic_fields.get(field_name)
                 function_value = function_fields.get(field_name)
                 expert_value = expert_fields.get(field_name)
-                
+                feedback_value = feedback_fields.get(field_name)
+
                 # Get current field validation or create new
                 if field_name not in validation_results["field_validations"]:
                     validation_results["field_validations"][field_name] = {
                         "basic_value": basic_value,
                         "function_value": function_value,
                         "expert_value": expert_value,
+                        "feedback_value": feedback_value,
                         "basic_correct": None,
                         "function_correct": None,
-                        "expert_correct": None
+                        "expert_correct": None,
+                        "feedback_correct": None
                     }
                 else:
                     # Update values (they might have changed)
                     validation_results["field_validations"][field_name]["basic_value"] = basic_value
                     validation_results["field_validations"][field_name]["function_value"] = function_value
                     validation_results["field_validations"][field_name]["expert_value"] = expert_value
-                
+                    validation_results["field_validations"][field_name]["feedback_value"] = feedback_value
+
                 # Get target value
                 target_value = None
                 if agent_name == "Basic":
@@ -489,6 +545,8 @@ def validate_single_agent_for_all_projects(agent_name: str):
                     target_value = function_value
                 elif agent_name == "Expert":
                     target_value = expert_value
+                elif agent_name == "Feedback":
+                    target_value = feedback_value
                 
                 # Normalize target value for knowledge lookup
                 normalized_target = str(target_value).strip() if target_value is not None else "NULL"
@@ -541,6 +599,9 @@ def validate_single_agent_for_all_projects(agent_name: str):
                     if agent_name != "Expert" and field_validation.get("expert_correct") is not None:
                         status = "✅" if field_validation["expert_correct"] else "❌"
                         other_validations.append(f"Expert: {status}")
+                    if agent_name != "Feedback" and field_validation.get("feedback_correct") is not None:
+                        status = "✅" if field_validation["feedback_correct"] else "❌"
+                        other_validations.append(f"Feedback: {status}")
                     
                     print(f"\n📋 Field: {field_name}")
                     if other_validations:
@@ -578,6 +639,8 @@ def validate_single_agent_for_all_projects(agent_name: str):
                     validation_results["field_validations"][field_name]["function_correct"] = result
                 elif agent_name == "Expert":
                     validation_results["field_validations"][field_name]["expert_correct"] = result
+                elif agent_name == "Feedback":
+                    validation_results["field_validations"][field_name]["feedback_correct"] = result
                 
                 # Update counters
                 if result is True:
@@ -649,12 +712,13 @@ def main():
     print("1. Process Basic Agent (generate results)")
     print("2. Process Function Agent (generate results)")
     print("3. Process Expert Agent (generate results)")
-    print("4. Process All agents (generate results)")
+    print("4. Process Feedback Agent (generate results)")
     print("5. Re-validate Basic Agent only")
     print("6. Re-validate Function Agent only")
     print("7. Re-validate Expert Agent only")
+    print("8. Re-validate Feedback Agent only")
 
-    choice = input("\nEnter your choice (1-7): ").strip()
+    choice = input("\nEnter your choice (1-8): ").strip()
 
     if choice == "1":
         process_basic_agent()
@@ -663,15 +727,15 @@ def main():
     elif choice == "3":
         process_expert_agent()
     elif choice == "4":
-        process_basic_agent()
-        process_function_agent()
-        process_expert_agent()
+        process_feedback_agent()
     elif choice == "5":
         validate_single_agent_for_all_projects("Basic")
     elif choice == "6":
         validate_single_agent_for_all_projects("Function")
     elif choice == "7":
         validate_single_agent_for_all_projects("Expert")
+    elif choice == "8":
+        validate_single_agent_for_all_projects("Feedback")
     else:
         print("❌ Invalid choice. Please run again and choose 1-7.")
 

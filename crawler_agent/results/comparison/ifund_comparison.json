@@ -49,8 +49,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Function Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 5.329971075057983,
+    "data": {
+      "project": {
+        "company": "نگارین تکمیل یزد",
+        "duration": "12 ماهه ",
+        "investment_amount": "120,000,000,000 ریال",
+        "guarantee": " بدون تضمین سود و با تضمین ( ضمانت نامه تعهد پرداخت ) برای اصل سرمایه \n\nضمانت نامه این طرح از سوی بانک ملی با شناسه سپام: 0350104681895316 صادر شده که تا تاریخ 22/04/1404 معتبر می‌باشد و با درخواست شرکت سامانه تامین هوشمند نوآفرینان ایرانیان تا زمان مورد درخواست این شرکت قابل تمدید است.",
+        "profit": 43.0,
+        "status": "موفقیت جمع آوری وجوه",
+        "name": "فاندمبلی"
+      }
+    },
+    "error": null
   }
 }

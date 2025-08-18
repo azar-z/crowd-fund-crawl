@@ -48,8 +48,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Function Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 4.6389994621276855,
+    "data": {
+      "project": {
+        "company": "سرمایه دانش",
+        "duration": "12 ماه",
+        "investment_amount": "250,000,000,000 ریال",
+        "guarantee": "بدون تضمین سود و بدون تضمین اصل سرمایه",
+        "profit": 12.0,
+        "status": "جمع آوری وجوه",
+        "name": "تأمین سرمایه در گردش سرمایه دانش"
+      }
+    },
+    "error": null
   }
 }

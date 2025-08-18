@@ -48,8 +48,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Function Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 5.945115327835083,
+    "data": {
+      "project": {
+        "company": "پالود پارسیان خیام",
+        "duration": "12 ماه",
+        "investment_amount": "250,000,000,000 ریال",
+        "guarantee": "این طرح شامل پوشش های بیمه ای نیست",
+        "profit": 44.0,
+        "status": "آغاز جمع آوری وجوه",
+        "name": "تولید و فروش گروه محصولات پنیرخامه ای"
+      }
+    },
+    "error": null
   }
 }

@@ -48,8 +48,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Function Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 7.9231297969818115,
+    "data": {
+      "project": {
+        "duration": "3 ماه",
+        "company": "تولیدی چینی بهداشتی ایساتیس",
+        "investment_amount": "200,000,000,000 ریال",
+        "guarantee": "دارای ضمانت نامه",
+        "profit": 11.5,
+        "status": "active",
+        "name": "خط تولید سرویس های بهداشتی ایرانی و فرنگی"
+      }
+    },
+    "error": null
   }
 }

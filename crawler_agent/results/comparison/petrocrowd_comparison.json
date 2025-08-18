@@ -48,8 +48,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Function Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 5.874988317489624,
+    "data": {
+      "project": {
+        "company": "صندوق نفت",
+        "duration": "12 ماه",
+        "investment_amount": "100,000 ریال",
+        "guarantee": "بدون تضمین سود و با تضمین بانکی برای اصل سرمایه",
+        "profit": 45.0,
+        "status": "با موفقیت تامین مالی شده است",
+        "name": "طرح تست درگاه پرداخت"
+      }
+    },
+    "error": null
   }
 }

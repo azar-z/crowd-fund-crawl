@@ -48,8 +48,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Function Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 8.693045139312744,
+    "data": {
+      "project": {
+        "duration": "12 ماه",
+        "company": "سپهر آسا دیزل (شرکت سهامی خاص)",
+        "investment_amount": "10 میلیارد",
+        "guarantee": "ضمانت نامه تعهد پرداخت از بانک سینا",
+        "profit": 45.0,
+        "status": "انتشار فراخوان تامین مالی",
+        "name": "تامین سرمایه جهت ساخت و سرهم‌بندی ماشین کشنده"
+      }
+    },
+    "error": null
   }
 }

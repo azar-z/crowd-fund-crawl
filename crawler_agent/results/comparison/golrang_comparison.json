@@ -48,8 +48,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Function Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 4.62639856338501,
+    "data": {
+      "project": {
+        "duration": "12 ماه",
+        "company": "فام تک صنعت چاپ",
+        "investment_amount": "25 میلیارد تومان",
+        "guarantee": "بدون تضمین سود و بدون تضمین اصل سرمایه",
+        "profit": 44.0,
+        "status": "طرح در مرحله سرمایه‌گذاری نیست",
+        "name": "تولید لیبل پشت چسب دار"
+      }
+    },
+    "error": null
   }
 }

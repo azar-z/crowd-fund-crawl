@@ -38,8 +38,25 @@
     }
   },
   "summary": {
-    "successful_count": 2,
+    "successful_count": 3,
     "total_count": 3,
     "fastest_agent": "Basic Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 4.847585678100586,
+    "data": {
+      "project": {
+        "company": "راهبردهای شبکه خلاق پارس",
+        "duration": "12 ماهه",
+        "investment_amount": "9,000,000,000",
+        "guarantee": "ضمانتنامه تعهد پرداخت بانکی",
+        "profit": 42.5,
+        "status": "در حال جذب سرمایه",
+        "name": "تامین سرمایه در گردش خرید و فروش کولر گازی ایرانی"
+      }
+    },
+    "error": null
   }
 }

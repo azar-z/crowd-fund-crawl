@@ -1,6 +1,6 @@
 {
   "project_name": "karencrowd",
-  "validation_date": "2025-08-15T22:05:02.481818",
+  "validation_date": "2025-08-19T01:39:11.862440",
   "basic_agent": {
     "correct": 6,
     "incorrect": 1,
@@ -23,7 +23,9 @@
       "expert_value": "توسعه تجارت پارس یسنا",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "توسعه تجارت پارس یسنا",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "12 ماهه",
@@ -31,7 +33,9 @@
       "expert_value": "12\n                            ماهه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "12 ماهه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق دولتی برای اصل سرمایه",
@@ -39,7 +43,9 @@
       "expert_value": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق دولتی برای اصل سرمایه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق دولتی برای اصل سرمایه",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": null,
@@ -47,7 +53,9 @@
       "expert_value": null,
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": false
+      "expert_correct": false,
+      "feedback_value": null,
+      "feedback_correct": false
     },
     "name": {
       "basic_value": "تولید و فروش انواع چسب پهن",
@@ -55,7 +63,9 @@
       "expert_value": "تولید و فروش انواع چسب پهن",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تولید و فروش انواع چسب پهن",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "45",
@@ -63,7 +73,9 @@
       "expert_value": 45.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 45.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "در حال اجرا",
@@ -71,7 +83,14 @@
       "expert_value": "در حال اجرا",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "در حال اجرا",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
   }
 }

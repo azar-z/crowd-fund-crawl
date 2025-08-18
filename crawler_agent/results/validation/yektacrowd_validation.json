@@ -1,6 +1,6 @@
 {
   "project_name": "yektacrowd",
-  "validation_date": "2025-08-17T19:55:57.618571",
+  "validation_date": "2025-08-19T01:44:36.687238",
   "basic_agent": {
     "correct": 5,
     "incorrect": 2,
@@ -23,7 +23,9 @@
       "expert_value": "گروه شرکت های ساخت و ساز بین المللی بیشمار",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "گروه شرکت های ساخت و ساز بین المللی بیشمار",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "12 ماه",
@@ -31,7 +33,9 @@
       "expert_value": "12 ماه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "12 ماه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "بدون تضمین سود و با ضمانت اصل سرمایه از بانک ملی ایران (تعهد پرداخت)",
@@ -39,7 +43,9 @@
       "expert_value": "بدون تضمین سود و با ضمانت اصل سرمایه از بانک ملی ایران (تعهد پرداخت)",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "بدون تضمین سود و با ضمانت اصل سرمایه از بانک ملی ایران (تعهد پرداخت)",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "250,000",
@@ -47,7 +53,9 @@
       "expert_value": "250 میلیارد ﷼",
       "basic_correct": false,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "250,000 میلیون ریال",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "تأمین سرمایه در گردش عرضه میلگرد فولادی",
@@ -55,7 +63,9 @@
       "expert_value": "تأمین سرمایه در گردش عرضه میلگرد فولادی",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تأمین سرمایه در گردش عرضه میلگرد فولادی",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "43",
@@ -63,7 +73,9 @@
       "expert_value": 43.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 43.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "active",
@@ -71,7 +83,14 @@
       "expert_value": null,
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": false
+      "expert_correct": false,
+      "feedback_value": null,
+      "feedback_correct": false
     }
+  },
+  "feedback_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
   }
 }

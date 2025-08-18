@@ -1,6 +1,6 @@
 {
   "project_name": "isatiscrowd",
-  "validation_date": "2025-08-17T19:53:25.111108",
+  "validation_date": "2025-08-19T01:39:05.712008",
   "basic_agent": {
     "correct": 6,
     "incorrect": 1,
@@ -23,7 +23,9 @@
       "expert_value": "پالود پارسیان خیام",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "پالود پارسیان خیام",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "12 ماه",
@@ -31,7 +33,9 @@
       "expert_value": "12 ماه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "12 ماه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "این طرح شامل پوشش های بیمه ای نیست",
@@ -39,7 +43,9 @@
       "expert_value": "این طرح شامل پوشش های بیمه ای نیست",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "این طرح شامل پوشش های بیمه ای نیست",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "1,000,000 ریال",
@@ -47,7 +53,9 @@
       "expert_value": "250,000,000,000 ریال",
       "basic_correct": false,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "250,000,000,000 ریال",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "تولید و فروش گروه محصولات پنیرخامه ای",
@@ -55,7 +63,9 @@
       "expert_value": "تولید و فروش گروه محصولات پنیرخامه ای",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تولید و فروش گروه محصولات پنیرخامه ای",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "44.00",
@@ -63,7 +73,9 @@
       "expert_value": 44.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 44.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "آغاز جمع آوری وجوه",
@@ -71,7 +83,14 @@
       "expert_value": "آغاز جمع آوری وجوه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "آغاز جمع آوری وجوه",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
   }
 }

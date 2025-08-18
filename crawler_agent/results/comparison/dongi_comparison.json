@@ -49,8 +49,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Function Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 4.773350954055786,
+    "data": {
+      "project": {
+        "duration": "12 ماه",
+        "company": "گروه صنعتی گناباد",
+        "investment_amount": "125,000میلیون ریال",
+        "guarantee": "ضمانت بازپرداخت اصل سرمایه توسط ضمانت‌نامه تعهد پرداخت بانک کشاورزی به شماره سپام 0110304676665192",
+        "profit": 45.0,
+        "status": "موفق شد",
+        "name": "تامین سرمایه در گردش جهت خرید و فروش بذر ذرت"
+      }
+    },
+    "error": null
   }
 }

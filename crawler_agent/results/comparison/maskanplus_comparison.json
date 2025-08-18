@@ -52,5 +52,12 @@
     "successful_count": 3,
     "total_count": 3,
     "fastest_agent": "Function Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": false,
+    "processing_time": 6.5691540241241455,
+    "data": null,
+    "error": "No output file created"
   }
 }

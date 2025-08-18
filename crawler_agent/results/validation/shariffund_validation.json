@@ -1,6 +1,6 @@
 {
   "project_name": "shariffund",
-  "validation_date": "2025-08-17T19:55:31.438597",
+  "validation_date": "2025-08-19T01:42:13.742713",
   "basic_agent": {
     "correct": 5,
     "incorrect": 2,
@@ -23,7 +23,9 @@
       "expert_value": "شرکت آرمان گستر نوین کنارک",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "شرکت آرمان گستر نوین کنارک",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "12 ماهه",
@@ -31,7 +33,9 @@
       "expert_value": "12 ماهه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "12 ماهه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "ضمانت نامه تعهد پرداخت بانکی",
@@ -39,7 +43,9 @@
       "expert_value": "تضمین اصل سرمایه با ضمانت نامه تعهد پرداخت از بانک صادرات",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تضمین اصل سرمایه با ضمانت نامه بانکی (بدون تضمین سود)",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "1 میلیون ریال",
@@ -47,7 +53,9 @@
       "expert_value": "250,000,000,000&nbsp;ریال",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "250,000,000,000&nbsp;ریال",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "سرمایه در گردش شرکت آرمان گستر نوین کنارک جهت تولید و فروش درب ایزی اپن",
@@ -55,7 +63,9 @@
       "expert_value": "سرمایه در گردش شرکت آرمان گستر نوین کنارک جهت تولید و فروش درب ایزی اپن",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "سرمایه در گردش شرکت آرمان گستر نوین کنارک جهت تولید و فروش درب ایزی اپن",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "42.50",
@@ -63,7 +73,9 @@
       "expert_value": 42.5,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 42.5,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "خاتمه یافته",
@@ -71,7 +83,14 @@
       "expert_value": "خاتمه یافته",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "خاتمه یافته",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
   }
 }

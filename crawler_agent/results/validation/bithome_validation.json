@@ -1,6 +1,6 @@
 {
   "project_name": "bithome",
-  "validation_date": "2025-08-17T23:43:29.875941",
+  "validation_date": "2025-08-19T01:37:21.391900",
   "basic_agent": {
     "correct": 6,
     "incorrect": 1,
@@ -23,7 +23,9 @@
       "expert_value": "نیاوران امن بنا قشم",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "نیاوران امن بنا قشم",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "24",
@@ -31,7 +33,9 @@
       "expert_value": "24 ماه",
       "basic_correct": false,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "24 ماه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "دریافت ضمانت‌نامه بانکی از سازنده به میزان ۱۲۰ درصد قیمت روز پرو‌ژه",
@@ -39,7 +43,9 @@
       "expert_value": "سرمایه‌گذاری در این پروژه به صورت خشتی انجام می‌شود",
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": false
+      "expert_correct": false,
+      "feedback_value": "سرمایه‌گذاری در این پروژه به صورت خشتی انجام می‌شود",
+      "feedback_correct": false
     },
     "investment_amount": {
       "basic_value": "101,000",
@@ -47,7 +53,9 @@
       "expert_value": "101,000",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "101,000",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "رویال قشم",
@@ -55,7 +63,9 @@
       "expert_value": "رویال قشم",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "رویال قشم",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": 0,
@@ -63,7 +73,9 @@
       "expert_value": 0.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 0.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "در حال سرمایه پذیری",
@@ -71,7 +83,14 @@
       "expert_value": "در حال سرمایه پذیری",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "در حال سرمایه پذیری",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
   }
 }

@@ -38,8 +38,25 @@
     }
   },
   "summary": {
-    "successful_count": 2,
+    "successful_count": 3,
     "total_count": 3,
     "fastest_agent": "Basic Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 5.25590181350708,
+    "data": {
+      "project": {
+        "duration": "12",
+        "company": "شرکت تدبیرکالای جم (سهامی خاص )",
+        "investment_amount": "۲۵۰٬۰۰۰٬۰۰۰٬۰۰۰",
+        "guarantee": "ضمانت نامه تعهد پرداخت بانکی",
+        "profit": 41.0,
+        "status": "موفق",
+        "name": "تأمین مالی جمعی تأمین سرمایه در گردش خرید مواد اولیه تولید سیدرال فورت"
+      }
+    },
+    "error": null
   }
 }

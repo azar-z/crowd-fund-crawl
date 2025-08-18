@@ -1,6 +1,6 @@
 {
   "project_name": "petrocrowd",
-  "validation_date": "2025-08-17T22:00:06.458606",
+  "validation_date": "2025-08-19T01:41:20.804211",
   "basic_agent": {
     "correct": 5,
     "incorrect": 2,
@@ -23,7 +23,9 @@
       "expert_value": "صندوق نفت",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "صندوق نفت",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "12 ماه",
@@ -31,7 +33,9 @@
       "expert_value": "12 ماه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "12 ماه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "بدون تضمین سود و با تضمین بانکی برای اصل سرمایه",
@@ -39,7 +43,9 @@
       "expert_value": "بدون تضمین سود و با تضمین بانکی برای اصل سرمایه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "بدون تضمین سود و با تضمین بانکی برای اصل سرمایه",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "100,000",
@@ -47,7 +53,9 @@
       "expert_value": "100,000 ریال",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "100,000 ریال",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "طرح تست درگاه پرداخت",
@@ -55,7 +63,9 @@
       "expert_value": "طرح تست درگاه پرداخت",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "طرح تست درگاه پرداخت",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "45",
@@ -63,7 +73,9 @@
       "expert_value": 45.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 45.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": null,
@@ -71,7 +83,14 @@
       "expert_value": "با موفقیت تامین مالی شده است",
       "basic_correct": false,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "با موفقیت تامین مالی شده است",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
   }
 }

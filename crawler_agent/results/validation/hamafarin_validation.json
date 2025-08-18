@@ -1,6 +1,6 @@
 {
   "project_name": "hamafarin",
-  "validation_date": "2025-08-15T21:32:37.271267",
+  "validation_date": "2025-08-19T01:38:48.291784",
   "basic_agent": {
     "correct": 4,
     "incorrect": 3,
@@ -23,7 +23,9 @@
       "expert_value": "فرگشت پندار پارسیان",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "فرگشت پندار پارسیان",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "دوازده ماهه",
@@ -31,7 +33,9 @@
       "expert_value": "دوازده ماهه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "دوازده ماهه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "ضمانت نامه تعهد پرداخت",
@@ -39,7 +43,9 @@
       "expert_value": "وثایق\nاصل سرمایه",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "اصل سرمایه",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "10,000,000,000",
@@ -47,7 +53,9 @@
       "expert_value": "۱۰٬۰۰۰٬۰۰۰٬۰۰۰",
       "basic_correct": false,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "۱۰٬۰۰۰٬۰۰۰٬۰۰۰",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "تولید کرم ضد آفتاب",
@@ -55,7 +63,9 @@
       "expert_value": "تولید کرم ضد آفتاب",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تولید کرم ضد آفتاب",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": 41,
@@ -63,7 +73,9 @@
       "expert_value": 41.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 41.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "active",
@@ -71,7 +83,14 @@
       "expert_value": "با موفقیت تکمیل شد",
       "basic_correct": false,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "با موفقیت تکمیل شد",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
   }
 }

@@ -1,6 +1,6 @@
 {
   "project_name": "charisma",
-  "validation_date": "2025-08-17T17:27:39.946795",
+  "validation_date": "2025-08-19T01:37:26.907042",
   "basic_agent": {
     "correct": 7,
     "incorrect": 0,
@@ -23,7 +23,9 @@
       "expert_value": "شرکت تدبیرکالای جم (سهامی خاص )",
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "شرکت تدبیرکالای جم (سهامی خاص )",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "۱۲",
@@ -31,7 +33,9 @@
       "expert_value": "۱۲",
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "12",
+      "feedback_correct": false
     },
     "guarantee": {
       "basic_value": "ضمانت نامه تعهد پرداخت بانکی",
@@ -39,7 +43,9 @@
       "expert_value": "ضمانتنامه تعهد پرداخت بانکی",
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "ضمانت نامه تعهد پرداخت بانکی",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "۲۵۰٬۰۰۰٬۰۰۰٬۰۰۰",
@@ -47,7 +53,9 @@
       "expert_value": "۲۵۰٬۰۰۰٬۰۰۰٬۰۰۰",
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "۲۵۰٬۰۰۰٬۰۰۰٬۰۰۰",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "تأمین مالی جمعی تأمین سرمایه در گردش خرید مواد اولیه تولید سیدرال فورت",
@@ -55,7 +63,9 @@
       "expert_value": "تأمین مالی جمعی تأمین سرمایه در گردش خرید مواد اولیه تولید سیدرال فورت",
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تأمین مالی جمعی تأمین سرمایه در گردش خرید مواد اولیه تولید سیدرال فورت",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "41",
@@ -63,7 +73,9 @@
       "expert_value": 41.0,
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 41.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "موفق",
@@ -71,7 +83,14 @@
       "expert_value": "موفق",
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "موفق",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
   }
 }

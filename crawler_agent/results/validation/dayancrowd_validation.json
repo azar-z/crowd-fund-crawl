@@ -1,6 +1,6 @@
 {
   "project_name": "dayancrowd",
-  "validation_date": "2025-08-17T18:21:00.947512",
+  "validation_date": "2025-08-19T01:38:03.666776",
   "basic_agent": {
     "correct": 3,
     "incorrect": 4,
@@ -23,7 +23,9 @@
       "expert_value": "انتشاراتی سرزمین بچه‌های خوشحال",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "انتشاراتی سرزمین بچه‌های خوشحال",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "6",
@@ -31,7 +33,9 @@
       "expert_value": "6 ماه",
       "basic_correct": false,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "6 ماه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "دارای ضمانت نامه",
@@ -39,7 +43,9 @@
       "expert_value": "دارای ضمانت نامه ",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": false
+      "expert_correct": false,
+      "feedback_value": "دارای ضمانت نامه",
+      "feedback_correct": false
     },
     "investment_amount": {
       "basic_value": "250,000,000,000",
@@ -47,7 +53,9 @@
       "expert_value": "250,000,000,000 ریال",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "250,000,000,000 ریال",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "خرید کاغذ خام  و  تولید کتب آموزشی اجتماعی برای رده سنی نوجوانان",
@@ -55,7 +63,9 @@
       "expert_value": "خرید کاغذ خام  و  تولید کتب آموزشی اجتماعی برای رده سنی نوجوانان",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "خرید کاغذ خام و تولید کتب آموزشی اجتماعی برای رده سنی نوجوانان",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "23",
@@ -63,7 +73,9 @@
       "expert_value": 23.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 100.0,
+      "feedback_correct": false
     },
     "status": {
       "basic_value": "active",
@@ -71,7 +83,14 @@
       "expert_value": "",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": false
+      "expert_correct": false,
+      "feedback_value": "",
+      "feedback_correct": false
     }
+  },
+  "feedback_agent": {
+    "correct": 4,
+    "incorrect": 3,
+    "skipped": 0
   }
 }

@@ -48,8 +48,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Basic Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 9.587899208068848,
+    "data": {
+      "project": {
+        "company": "فنی و مهندسی یکتا تست",
+        "duration": "دوازده ماهه",
+        "investment_amount": "25,000,000,000",
+        "guarantee": "اصل سرمایه",
+        "profit": 42.0,
+        "status": "فعال",
+        "name": "تست تامین سرمایه در گردش لازم"
+      }
+    },
+    "error": null
   }
 }

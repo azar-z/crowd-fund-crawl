@@ -1,6 +1,6 @@
 {
   "project_name": "ebtekar",
-  "validation_date": "2025-08-17T21:56:16.991853",
+  "validation_date": "2025-08-19T01:38:08.586556",
   "basic_agent": {
     "correct": 6,
     "incorrect": 1,
@@ -23,7 +23,9 @@
       "expert_value": "فنی و مهندسی یکتا تست",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "فنی و مهندسی یکتا تست",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "دوازده ماهه",
@@ -31,7 +33,9 @@
       "expert_value": "دوازده ماهه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "دوازده ماهه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "اصل سرمایه",
@@ -39,7 +43,9 @@
       "expert_value": "اصل سرمایه  اصل سرمایه ",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "اصل سرمایه",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "25,000,000,000",
@@ -47,7 +53,9 @@
       "expert_value": "25,000,000,000",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "25,000,000,000",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "تست تامین سرمایه در گردش لازم",
@@ -55,7 +63,9 @@
       "expert_value": "تست تامین سرمایه در گردش لازم",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تست تامین سرمایه در گردش لازم",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "42",
@@ -63,7 +73,9 @@
       "expert_value": 42.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 42.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": null,
@@ -71,7 +83,14 @@
       "expert_value": "فعال",
       "basic_correct": false,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "فعال",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
   }
 }

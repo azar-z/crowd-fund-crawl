@@ -38,8 +38,25 @@
     }
   },
   "summary": {
-    "successful_count": 2,
+    "successful_count": 3,
     "total_count": 3,
     "fastest_agent": "Basic Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 4.531140565872192,
+    "data": {
+      "project": {
+        "duration": "18 ماه",
+        "company": "ماموت ساختمان",
+        "investment_amount": "500,000",
+        "guarantee": "با توجه به کیفیت ساخت و امکانات ارائه شده، پیش‌بینی می‌شود که سودآوری آن بین 40 تا 50 درصد باشد.",
+        "profit": 45.0,
+        "status": "در حال انجام",
+        "name": "ساختمان بهروز - طبقه دوم"
+      }
+    },
+    "error": null
   }
 }

@@ -48,8 +48,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Function Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 4.6213977336883545,
+    "data": {
+      "project": {
+        "duration": "12 ماه",
+        "company": "مدیریت فروشگاهی توسعه الماس",
+        "investment_amount": "250,000,000,000 ریال",
+        "guarantee": "ضمانت‌نامه تعهد پرداخت",
+        "profit": 45.0,
+        "status": "تامین مالی شده",
+        "name": "توسعه فرانچایز فروشگاهی الماس"
+      }
+    },
+    "error": null
   }
 }

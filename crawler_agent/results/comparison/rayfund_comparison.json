@@ -48,8 +48,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Function Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 5.8029115200042725,
+    "data": {
+      "project": {
+        "duration": "12 ماهه",
+        "company": "داریا توسعه آتیه",
+        "investment_amount": "۲۵٬۰۰۰٬۰۰۰٬۰۰۰",
+        "guarantee": "بدون تضمین سود، با تضمین بازپرداخت اصل سرمایه توسط بانک ملی ایران",
+        "profit": 45.0,
+        "status": "موفقیت جمع آوری وجوه",
+        "name": "تامین سرمایه در گردش تولید بدنه لامپ های LED"
+      }
+    },
+    "error": null
   }
 }

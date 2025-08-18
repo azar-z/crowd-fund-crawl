@@ -48,8 +48,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Function Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 10.379945039749146,
+    "data": {
+      "project": {
+        "duration": "12 ماهه",
+        "company": "توسعه تجارت پارس یسنا",
+        "investment_amount": null,
+        "guarantee": "بدون تضمین سود و با تضمین ضمانت‌نامه تعهد پرداخت صندوق دولتی برای اصل سرمایه",
+        "profit": 45.0,
+        "status": "در حال اجرا",
+        "name": "تولید و فروش انواع چسب پهن"
+      }
+    },
+    "error": null
   }
 }

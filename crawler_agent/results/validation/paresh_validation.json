@@ -1,6 +1,6 @@
 {
   "project_name": "paresh",
-  "validation_date": "2025-08-17T18:25:21.726763",
+  "validation_date": "2025-08-19T01:41:20.803665",
   "basic_agent": {
     "correct": 5,
     "incorrect": 2,
@@ -23,7 +23,9 @@
       "expert_value": "توسعه آرمان نیک اندیشان",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "توسعه آرمان نیک اندیشان",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "12",
@@ -31,7 +33,9 @@
       "expert_value": "12 ماه",
       "basic_correct": false,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "12 ماه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "ضمانت‌نامه تعهد پرداخت بانکی",
@@ -39,7 +43,9 @@
       "expert_value": "ضمانت‌نامه تعهد پرداخت بانکی ",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "ضمانت‌نامه تعهد پرداخت بانکی ",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "250,000,000,000",
@@ -47,7 +53,9 @@
       "expert_value": "250,000,000,000 ریال",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "250,000,000,000 ریال",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "تأمین مالی به منظور تجهیز و توسعه زیرساخت‌های ارائه سرویس VoIP",
@@ -55,7 +63,9 @@
       "expert_value": " تأمین مالی به منظور تجهیز و توسعه زیرساخت‌های ارائه سرویس VoIP",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تأمین مالی به منظور تجهیز و توسعه زیرساخت‌های ارائه سرویس VoIP",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "43",
@@ -63,7 +73,9 @@
       "expert_value": 43.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 43.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "در حال اجرا",
@@ -71,7 +83,14 @@
       "expert_value": null,
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": false
+      "expert_correct": false,
+      "feedback_value": null,
+      "feedback_correct": false
     }
+  },
+  "feedback_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
   }
 }

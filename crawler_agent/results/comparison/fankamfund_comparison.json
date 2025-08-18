@@ -48,8 +48,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Function Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 5.7971131801605225,
+    "data": {
+      "project": {
+        "duration": "12",
+        "company": "شرکت آریان تجارت کیان امید",
+        "investment_amount": "250,000,000,000",
+        "guarantee": "بدون تضمین سود و با تضمین توثیق سهام بورسی برای اصل سرمایه",
+        "profit": 45.0,
+        "status": "موفق در جذب سرمایه",
+        "name": "تامین سرمایه در گردش جهت خرید و فروش محصولات بهداشتی برند الیو"
+      }
+    },
+    "error": null
   }
 }

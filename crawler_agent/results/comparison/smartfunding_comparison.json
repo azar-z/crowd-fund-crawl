@@ -48,8 +48,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Function Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 8.527647972106934,
+    "data": {
+      "project": {
+        "duration": "۱۲ ماه",
+        "company": "شرکت لوور",
+        "investment_amount": "۲۵,۰۰۰,۰۰۰,۰۰۰ تومان",
+        "guarantee": "بدون تضمین سود و با تضمین ضمانت نامه تعهد پرداخت برای اصل سرمایه",
+        "profit": 43.0,
+        "status": null,
+        "name": "تأمین سرمایه در گردش جهت خرید و فروش شمش فولادی گرید 5"
+      }
+    },
+    "error": null
   }
 }

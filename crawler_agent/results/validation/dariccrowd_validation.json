@@ -1,6 +1,6 @@
 {
   "project_name": "dariccrowd",
-  "validation_date": "2025-08-17T19:52:17.356821",
+  "validation_date": "2025-08-19T01:37:26.907042",
   "basic_agent": {
     "correct": 5,
     "incorrect": 2,
@@ -23,7 +23,9 @@
       "expert_value": "اعتمادسازان توی",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "اعتمادسازان توی",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "12",
@@ -31,7 +33,9 @@
       "expert_value": "12 ماه",
       "basic_correct": false,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "12 ماه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "چک شرکت و اعضای هیات مدیره",
@@ -39,7 +43,9 @@
       "expert_value": "چک شرکت و اعضای هیات مدیره",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "چک شرکت و اعضای هیات مدیره",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "5,000,000",
@@ -47,7 +53,9 @@
       "expert_value": "5 میلیون ریال",
       "basic_correct": false,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "5 میلیون ریال",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "تامین سرمایه درگردش توسعه خدمات مشاوره سرمایه گذاری",
@@ -55,7 +63,9 @@
       "expert_value": "تامین سرمایه درگردش توسعه خدمات مشاوره سرمایه گذاری",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تامین سرمایه درگردش توسعه خدمات مشاوره سرمایه گذاری",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "47",
@@ -63,7 +73,9 @@
       "expert_value": 47.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 47.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "خاتمه یافته",
@@ -71,7 +83,14 @@
       "expert_value": "خاتمه یافته",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "خاتمه یافته",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
   }
 }

@@ -1,6 +1,6 @@
 {
   "project_name": "ghoghnoos",
-  "validation_date": "2025-08-17T23:44:13.134634",
+  "validation_date": "2025-08-19T01:38:34.999680",
   "basic_agent": {
     "correct": 4,
     "incorrect": 3,
@@ -23,7 +23,9 @@
       "expert_value": "شرکت یکتا ققنوس پارس",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": false
+      "expert_correct": false,
+      "feedback_value": "شرکت یکتا ققنوس پارس",
+      "feedback_correct": false
     },
     "duration": {
       "basic_value": "365 روز",
@@ -31,7 +33,9 @@
       "expert_value": "365 روز",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "365 روز",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "ضمانت نامه بانکی",
@@ -39,7 +43,9 @@
       "expert_value": "ضمانت نامه بانکی",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "ضمانت نامه بانکی",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "58,000,000,000",
@@ -47,7 +53,9 @@
       "expert_value": "58,000,000,000",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "58,000,000,000 (ریال)",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "توسعه ماژول تبلیغات هوشمند پلتفرم اپیزود",
@@ -55,7 +63,9 @@
       "expert_value": "توسعه ماژول تبلیغات هوشمند پلتفرم اپیزود",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "توسعه ماژول تبلیغات هوشمند پلتفرم اپیزود",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": null,
@@ -63,7 +73,9 @@
       "expert_value": 14.0,
       "basic_correct": false,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 14.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": null,
@@ -71,7 +83,14 @@
       "expert_value": "active",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": false
+      "expert_correct": false,
+      "feedback_value": null,
+      "feedback_correct": false
     }
+  },
+  "feedback_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
   }
 }

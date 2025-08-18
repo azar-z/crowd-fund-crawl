@@ -1,6 +1,6 @@
 {
   "project_name": "omid",
-  "validation_date": "2025-08-17T21:59:08.425487",
+  "validation_date": "2025-08-19T01:40:50.711203",
   "basic_agent": {
     "correct": 4,
     "incorrect": 3,
@@ -23,7 +23,9 @@
       "expert_value": "تست",
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": false
+      "expert_correct": false,
+      "feedback_value": "تست",
+      "feedback_correct": false
     },
     "duration": {
       "basic_value": "12",
@@ -31,7 +33,9 @@
       "expert_value": "12 ماه",
       "basic_correct": false,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "12 ماه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "تست",
@@ -39,7 +43,9 @@
       "expert_value": "(بدون تضمین سود)",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "ارزیابی شده توسط تامین سرمایه امید",
+      "feedback_correct": false
     },
     "investment_amount": {
       "basic_value": "1000000",
@@ -47,7 +53,9 @@
       "expert_value": "1,000,000",
       "basic_correct": false,
       "function_correct": true,
-      "expert_correct": false
+      "expert_correct": false,
+      "feedback_value": "1,000,000",
+      "feedback_correct": false
     },
     "name": {
       "basic_value": "طرح پرورش دام سبک در لرستان",
@@ -55,7 +63,9 @@
       "expert_value": "طرح پرورش دام سبک در لرستان",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "طرح پرورش دام سبک در لرستان",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "23.5",
@@ -63,7 +73,9 @@
       "expert_value": 23.5,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 23.5,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "active",
@@ -71,7 +83,14 @@
       "expert_value": "Active",
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "active",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 4,
+    "incorrect": 3,
+    "skipped": 0
   }
 }

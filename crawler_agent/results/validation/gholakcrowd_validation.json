@@ -1,6 +1,6 @@
 {
   "project_name": "gholakcrowd",
-  "validation_date": "2025-08-17T21:57:41.112897",
+  "validation_date": "2025-08-19T01:38:34.999680",
   "basic_agent": {
     "correct": 4,
     "incorrect": 3,
@@ -23,7 +23,9 @@
       "expert_value": "شرکت برنا نیک آریان",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "شرکت برنا نیک آریان",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "6 ماه",
@@ -31,7 +33,9 @@
       "expert_value": "6 ماه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "6 ماه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "بانکی",
@@ -39,7 +43,9 @@
       "expert_value": "بانکی",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": false
+      "expert_correct": false,
+      "feedback_value": " بانکی ",
+      "feedback_correct": false
     },
     "investment_amount": {
       "basic_value": "100,000,000,000",
@@ -47,7 +53,9 @@
       "expert_value": "100,000,000,000 ریال",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "100,000,000,000",
+      "feedback_correct": false
     },
     "name": {
       "basic_value": "مونتاژ پنکه به تعداد 3780دستگاه",
@@ -55,7 +63,9 @@
       "expert_value": "مونتاژ پنکه به تعداد 3780دستگاه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "مونتاژ پنکه به تعداد 3780دستگاه",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "38",
@@ -63,7 +73,9 @@
       "expert_value": 38.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 38.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": null,
@@ -71,7 +83,14 @@
       "expert_value": "تامین شده ( 100 ٪) ",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تامین شده ( 100 ٪)",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
   }
 }

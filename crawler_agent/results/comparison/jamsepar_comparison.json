@@ -48,8 +48,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Function Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 5.42168927192688,
+    "data": {
+      "project": {
+        "duration": "12 ماه",
+        "company": "شرکت پارسادان طبرستان",
+        "investment_amount": "100,000,000,000",
+        "guarantee": "بدون تضمین سود و با تضمین ضمانت نامه بانکی برای اصل سرمایه",
+        "profit": 43.0,
+        "status": "موفق در جذب سرمایه",
+        "name": "تامین سرمایه در گردش تولید متیونین برای خوراک طیور"
+      }
+    },
+    "error": null
   }
 }

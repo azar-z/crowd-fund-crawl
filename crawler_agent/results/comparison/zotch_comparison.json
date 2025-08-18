@@ -48,8 +48,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Function Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 4.455315113067627,
+    "data": {
+      "project": {
+        "company": "پایاسازه پاسارگاد",
+        "duration": " 6 ماهه ",
+        "investment_amount": "57,763,150,000",
+        "guarantee": " چک صیادی ",
+        "profit": 37.0,
+        "status": "موفق",
+        "name": "تامین بخشی از منابع مالی مورد نیاز ساخت پروژه نسیم محمودیه"
+      }
+    },
+    "error": null
   }
 }

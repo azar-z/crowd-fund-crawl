@@ -1,6 +1,6 @@
 {
   "project_name": "investorun",
-  "validation_date": "2025-08-17T21:58:02.763918",
+  "validation_date": "2025-08-19T01:39:05.712008",
   "basic_agent": {
     "correct": 5,
     "incorrect": 2,
@@ -23,7 +23,9 @@
       "expert_value": "زیست اروند فارمد",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "زیست اروند فارمد",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "12 ماهه",
@@ -31,7 +33,9 @@
       "expert_value": "12 ماهه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "12 ماهه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "بدون تضمين سود و بدون تضمين اصل سرمايه",
@@ -39,7 +43,9 @@
       "expert_value": "بدون تضمين سود و بدون تضمين اصل سرمايه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "بدون تضمين سود و بدون تضمين اصل سرمايه",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "250,000,000,000",
@@ -47,7 +53,9 @@
       "expert_value": "250,000,000,000",
       "basic_correct": false,
       "function_correct": true,
-      "expert_correct": false
+      "expert_correct": false,
+      "feedback_value": "250,000,000,000",
+      "feedback_correct": false
     },
     "name": {
       "basic_value": "زیست اروند فارمد",
@@ -55,7 +63,9 @@
       "expert_value": "زیست اروند فارمد",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "زیست اروند فارمد",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": 43,
@@ -63,7 +73,9 @@
       "expert_value": 43.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 43.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "onTheGo",
@@ -71,7 +83,14 @@
       "expert_value": null,
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": false
+      "expert_correct": false,
+      "feedback_value": null,
+      "feedback_correct": false
     }
+  },
+  "feedback_agent": {
+    "correct": 5,
+    "incorrect": 2,
+    "skipped": 0
   }
 }

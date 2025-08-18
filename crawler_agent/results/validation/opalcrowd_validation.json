@@ -1,6 +1,6 @@
 {
   "project_name": "opalcrowd",
-  "validation_date": "2025-08-17T18:24:38.174419",
+  "validation_date": "2025-08-19T01:41:17.544094",
   "basic_agent": {
     "correct": 6,
     "incorrect": 1,
@@ -23,7 +23,9 @@
       "expert_value": "شرکت فنی مهندسی آلیاژ خاتون (سهامی خاص)",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "شرکت فنی مهندسی آلیاژ خاتون (سهامی خاص)",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "12",
@@ -31,7 +33,9 @@
       "expert_value": "12 ماه",
       "basic_correct": false,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "12 ماه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": " توثیق سهام بورسی",
@@ -39,7 +43,9 @@
       "expert_value": "توثیق سهام",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "توثیق سهام بورسی",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "250,000,000,000",
@@ -47,7 +53,9 @@
       "expert_value": "250,000,000,000",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "250 میلیارد ریال",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "افزایش ظرفیت اکسیداسیون سولفور مولیبدنیوم جهت تکمیل زنجیره فروآلیاژ  ",
@@ -55,7 +63,9 @@
       "expert_value": "افزایش ظرفیت اکسیداسیون سولفور مولیبدنیوم جهت تکمیل زنجیره فروآلیاژ  ",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "افزایش ظرفیت اکسیداسیون سولفور مولیبدنیوم جهت تکمیل زنجیره فروآلیاژ",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "46",
@@ -63,7 +73,9 @@
       "expert_value": 46.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 46.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "تامین مالی شده",
@@ -71,7 +83,14 @@
       "expert_value": "تامین مالی شده",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تامین مالی شده",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
   }
 }

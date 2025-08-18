@@ -1,6 +1,6 @@
 {
   "project_name": "babaha",
-  "validation_date": "2025-08-17T21:56:00.785080",
+  "validation_date": "2025-08-19T01:37:21.391900",
   "basic_agent": {
     "correct": 5,
     "incorrect": 2,
@@ -23,7 +23,9 @@
       "expert_value": "بسپار شیمی سپیدان",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "بسپار شیمی سپیدان",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "4 ماهه",
@@ -31,7 +33,9 @@
       "expert_value": "4 ماهه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "4 ماهه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": null,
@@ -39,7 +43,9 @@
       "expert_value": "فروش تضمینی به بازار و بازپرداخت اصل سرمایه",
       "basic_correct": false,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "فروش تضمینی به بازار و بازپرداخت اصل سرمایه.",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": null,
@@ -47,7 +53,9 @@
       "expert_value": "۴٬۵۰۰٬۰۰۰٬۰۰۰",
       "basic_correct": false,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "۴٬۵۰۰٬۰۰۰٬۰۰۰",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "خرید و فروش منگنز سولفات",
@@ -55,7 +63,9 @@
       "expert_value": "خرید و فروش سولفات منگنز",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "خرید و فروش منگنز سولفات",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": 48,
@@ -63,7 +73,9 @@
       "expert_value": 48.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 48.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "در حال اجرا",
@@ -71,7 +83,14 @@
       "expert_value": "active",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": false
+      "expert_correct": false,
+      "feedback_value": "active",
+      "feedback_correct": false
     }
+  },
+  "feedback_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
   }
 }

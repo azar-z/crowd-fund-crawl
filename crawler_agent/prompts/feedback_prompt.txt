@@ -1,0 +1,20 @@
+Perform a THOROUGH extraction of {object_description} using `{function_name}`.
+
+This is a previous response that I've got for my question:
+{previous_extraction}
+
+- try to fill the fields that are empty or null/none/unknown
+- if a str field is just a number in previous_response, try to find the unit too and return the full response with number and unit.
+- if any filed is wrong in previous response, correct it
+
+QUALITY CHECKLIST:
+✓ All required fields are extracted
+✓ Text fields contain complete, untruncated information
+✓ Numbers include proper units and formatting
+✓ No placeholder or generic values
+✓ Information matches what's actually in the HTML
+
+Be extremely careful and methodical. Extract exactly what you see in the HTML.
+
+HTML:
+{html_content}

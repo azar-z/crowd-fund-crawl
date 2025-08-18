@@ -1,6 +1,6 @@
 {
   "project_name": "zotch",
-  "validation_date": "2025-08-17T18:27:50.717947",
+  "validation_date": "2025-08-19T01:45:25.826126",
   "basic_agent": {
     "correct": 7,
     "incorrect": 0,
@@ -23,7 +23,9 @@
       "expert_value": "پایاسازه پاسارگاد",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "پایاسازه پاسارگاد",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "6 ماهه",
@@ -31,7 +33,9 @@
       "expert_value": "6 ماهه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": " 6 ماهه ",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "چک صیادی",
@@ -39,7 +43,9 @@
       "expert_value": " چک صیادی ",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": " چک صیادی ",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "57,763,150,000",
@@ -47,7 +53,9 @@
       "expert_value": "57,763,150,000",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "57,763,150,000",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "تامین بخشی از منابع مالی مورد نیاز  ساخت پروژه نسیم محمودیه",
@@ -55,7 +63,9 @@
       "expert_value": "تامین بخشی از منابع مالی مورد نیاز  ساخت پروژه نسیم محمودیه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تامین بخشی از منابع مالی مورد نیاز ساخت پروژه نسیم محمودیه",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": 37,
@@ -63,7 +73,9 @@
       "expert_value": 37.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 37.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "موفق",
@@ -71,7 +83,14 @@
       "expert_value": "موفق",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "موفق",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
   }
 }

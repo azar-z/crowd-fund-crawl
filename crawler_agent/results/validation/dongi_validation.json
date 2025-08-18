@@ -1,6 +1,6 @@
 {
   "project_name": "dongi",
-  "validation_date": "2025-08-15T21:31:41.191296",
+  "validation_date": "2025-08-19T01:38:08.586556",
   "basic_agent": {
     "correct": 6,
     "incorrect": 1,
@@ -23,7 +23,9 @@
       "expert_value": "گروه صنعتی گناباد",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "گروه صنعتی گناباد",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "12 ماه",
@@ -31,7 +33,9 @@
       "expert_value": "12 ماه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "12 ماه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "ضمانت بازپرداخت اصل سرمایه توسط ضمانت‌نامه تعهد پرداخت بانک کشاورزی\n",
@@ -39,7 +43,9 @@
       "expert_value": "1- ضمانت بازپرداخت اصل سرمایه توسط ضمانت‌نامه تعهد پرداخت بانک کشاورزی به شماره سپام 0110304676665192\n2- کاهش ریسک با بیمه انبارها، بازخرید محصولات فروش نرفته و اولویت پرداخت به سرمایه‌گذاران\n3- پیش بینی پرداخت سود علی‌الحساب 11.25 درصد به صورت هرسه ماه یکبار\n4- سابقه دو تامین مالی موفق و تسویه شده طی یکسال گذشته",
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "ضمانت بازپرداخت اصل سرمایه توسط ضمانت‌نامه تعهد پرداخت بانک کشاورزی به شماره سپام 0110304676665192",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "125,000,000,000",
@@ -47,7 +53,9 @@
       "expert_value": "125,000میلیون ریال",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "125,000میلیون ریال",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "تامین سرمایه در گردش جهت خرید و فروش بذر ذرت",
@@ -55,7 +63,9 @@
       "expert_value": "تامین سرمایه در گردش جهت خرید و فروش بذر ذرت",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تامین سرمایه در گردش جهت خرید و فروش بذر ذرت",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "45",
@@ -63,7 +73,9 @@
       "expert_value": 45.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 45.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "موفق شد",
@@ -71,7 +83,14 @@
       "expert_value": "موفق شد",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "موفق شد",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
   }
 }

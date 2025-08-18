@@ -1,6 +1,6 @@
 {
   "project_name": "submelk",
-  "validation_date": "2025-08-17T23:48:10.112703",
+  "validation_date": "2025-08-19T01:44:04.794003",
   "basic_agent": {
     "correct": 5,
     "incorrect": 2,
@@ -23,7 +23,9 @@
       "expert_value": "صاب‌ملک",
       "basic_correct": false,
       "function_correct": true,
-      "expert_correct": false
+      "expert_correct": false,
+      "feedback_value": "صاب‌ملک",
+      "feedback_correct": false
     },
     "duration": {
       "basic_value": "12 ماه باقی‌مانده",
@@ -31,7 +33,9 @@
       "expert_value": "12 ماه باقی‌مانده",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "12 ماه باقی‌مانده",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "سود سالانه ۱۵ تا ۲۵ درصد علاوه بر تورم مسکن",
@@ -39,7 +43,9 @@
       "expert_value": "سود سالانه ۱۵ تا ۲۵ درصد علاوه بر تورم مسکن",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "سود سالانه ۱۵ تا ۲۵ درصد علاوه بر تورم مسکن",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": null,
@@ -47,7 +53,9 @@
       "expert_value": null,
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": false
+      "expert_correct": false,
+      "feedback_value": "6,100,000",
+      "feedback_correct": false
     },
     "name": {
       "basic_value": "پروژه شهریار",
@@ -55,7 +63,9 @@
       "expert_value": "پروژه شهریار",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "پروژه شهریار",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "15",
@@ -63,7 +73,9 @@
       "expert_value": 15.0,
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 20.0,
+      "feedback_correct": false
     },
     "status": {
       "basic_value": "در حال جذب سرمایه",
@@ -71,7 +83,14 @@
       "expert_value": "در حال جذب سرمایه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "در حال جذب سرمایه",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 4,
+    "incorrect": 3,
+    "skipped": 0
   }
 }

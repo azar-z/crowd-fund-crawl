@@ -48,8 +48,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Function Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 7.889731407165527,
+    "data": {
+      "project": {
+        "company": "شرکت صدف خاور میانه",
+        "duration": "9 ماه",
+        "investment_amount": "50,000,000 ریال",
+        "guarantee": "چک شخص ثالث و چک شرکت صدف خاور میانه",
+        "profit": 35.25,
+        "status": null,
+        "name": "تأمین سرمایه در گردش برش و بسته بندی کاغذ فتوکپی A4"
+      }
+    },
+    "error": null
   }
 }

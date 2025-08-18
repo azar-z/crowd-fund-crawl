@@ -1,6 +1,6 @@
 {
   "project_name": "sdcrowd",
-  "validation_date": "2025-08-17T23:02:49.886181",
+  "validation_date": "2025-08-19T01:42:09.767100",
   "basic_agent": {
     "correct": 6,
     "incorrect": 1,
@@ -23,7 +23,9 @@
       "expert_value": "سرمایه دانش",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "سرمایه دانش",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "12 ماه",
@@ -31,7 +33,9 @@
       "expert_value": "12 ماه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "12 ماه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "بدون تضمین سود و بدون تضمین اصل سرمایه",
@@ -39,7 +43,9 @@
       "expert_value": "بدون تضمین سود و بدون تضمین اصل سرمایه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "بدون تضمین سود و بدون تضمین اصل سرمایه",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "1  ریال",
@@ -47,7 +53,9 @@
       "expert_value": "250,000,000,000",
       "basic_correct": false,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "250,000,000,000 ریال",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "تأمین سرمایه در گردش سرمایه دانش",
@@ -55,7 +63,9 @@
       "expert_value": "تأمین سرمایه در گردش سرمایه دانش",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تأمین سرمایه در گردش سرمایه دانش",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": 12,
@@ -63,7 +73,9 @@
       "expert_value": 12.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 12.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "جمع آوری وجوه",
@@ -71,7 +83,14 @@
       "expert_value": "جمع آوری وجوه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "جمع آوری وجوه",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
   }
 }

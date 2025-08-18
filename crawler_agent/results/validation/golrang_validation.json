@@ -1,6 +1,6 @@
 {
   "project_name": "golrang",
-  "validation_date": "2025-08-17T19:52:36.967818",
+  "validation_date": "2025-08-19T01:38:39.210510",
   "basic_agent": {
     "correct": 7,
     "incorrect": 0,
@@ -23,7 +23,9 @@
       "expert_value": "فام تک صنعت چاپ",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "فام تک صنعت چاپ",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "12 ماه",
@@ -31,7 +33,9 @@
       "expert_value": "12 ماه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "12 ماه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "سایر\n(این طرح فاقد ضمانت نامه اصل و سود سرمایه و دارای وثایق مالی (چک متقاضی و شخص ثالث) می‌باشد که در بخش اطلاعات مالی، وثایق اخذ شده قابل مشاهده است.)",
@@ -39,7 +43,9 @@
       "expert_value": "سایر (این طرح فاقد ضمانت نامه اصل و سود سرمایه و دارای وثایق مالی (چک متقاضی و شخص ثالث) می‌باشد که در بخش اطلاعات مالی، وثایق اخذ شده قابل مشاهده است.)",
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "بدون تضمین سود و بدون تضمین اصل سرمایه",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "25 میلیارد تومان",
@@ -47,7 +53,9 @@
       "expert_value": "25 میلیارد تومان",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "25 میلیارد تومان",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "تولید لیبل پشت چسب دار",
@@ -55,7 +63,9 @@
       "expert_value": "تولید لیبل پشت چسب دار",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تولید لیبل پشت چسب دار",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "44",
@@ -63,7 +73,9 @@
       "expert_value": 44.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 44.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "طرح در مرحله سرمایه‌گذاری نیست",
@@ -71,7 +83,14 @@
       "expert_value": "طرح در مرحله سرمایه‌گذاری نیست",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "طرح در مرحله سرمایه‌گذاری نیست",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
   }
 }

@@ -1,6 +1,6 @@
 {
   "project_name": "atiyeiranian",
-  "validation_date": "2025-08-17T19:51:18.680551",
+  "validation_date": "2025-08-19T01:37:06.024444",
   "basic_agent": {
     "correct": 5,
     "incorrect": 2,
@@ -23,7 +23,9 @@
       "expert_value": "توسعه تجارت پایدار آتیه نوین ایرانیان",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "توسعه تجارت پایدار آتیه نوین ایرانیان",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "12ماهه",
@@ -31,7 +33,9 @@
       "expert_value": "یکساله (12ماهه)",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "یکساله (12ماهه)",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "با تضمین اصل سرمایه توسط بانک ملی ایران",
@@ -39,7 +43,9 @@
       "expert_value": "با تضمین اصل سرمایه توسط بانک ملی ایران<a href=\"https://atiyehiraniancf.com/sepam/d52ab6b2-d3d9-428e-a9e8-29375821545b.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">(مشاهد</a><a href=\"https://atiyehiraniancf.com/sepam/d52ab6b2-d3d9-428e-a9e8-29375821545b.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">ه)</a>",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": false
+      "expert_correct": false,
+      "feedback_value": "با تضمین اصل سرمایه توسط بانک ملی ایران(مشاهده",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "10,000,000",
@@ -47,7 +53,9 @@
       "expert_value": "100.000.000.000 ریال",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "100.000.000.000 ریال",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "تامین سرمایه واردات خمیرکاغذ الیاف کوتاه سفید نشده (شناور)",
@@ -55,7 +63,9 @@
       "expert_value": "تامین سرمایه واردات خمیرکاغذ الیاف کوتاه سفید نشده (شناور)",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تامین سرمایه واردات خمیرکاغذ الیاف کوتاه سفید نشده (شناور)",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "40",
@@ -63,7 +73,9 @@
       "expert_value": 40.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 40.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "فعال",
@@ -71,7 +83,14 @@
       "expert_value": "",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": false
+      "expert_correct": false,
+      "feedback_value": "بدون تضمین سود (۴۰ درصد پیش بینی شده)",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
   }
 }

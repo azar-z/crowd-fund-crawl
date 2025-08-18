@@ -48,8 +48,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Basic Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 4.992055654525757,
+    "data": {
+      "project": {
+        "duration": "12 ماه",
+        "company": "آراد لیان فراور آریا",
+        "investment_amount": "۱۱۱,۱۲۰,۰۰۰,۰۰۰ ریال",
+        "guarantee": "بدون تضمین سود و بدون تضمین اصل سرمایه",
+        "profit": 40.0,
+        "status": "تکمیل سرمایه گذاری",
+        "name": "تأمین سرمایه در گردش جهت خرید پودر آلومینا شرکت آراد لیان فراورآریا"
+      }
+    },
+    "error": null
   }
 }

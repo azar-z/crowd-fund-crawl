@@ -1,6 +1,6 @@
 {
   "project_name": "razavi",
-  "validation_date": "2025-08-15T21:34:03.699822",
+  "validation_date": "2025-08-19T01:42:07.392755",
   "basic_agent": {
     "correct": 5,
     "incorrect": 2,
@@ -23,7 +23,9 @@
       "expert_value": "موسسه آموزشی راشد نوین رضوی",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "موسسه آموزشی راشد نوین رضوی",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "12 months",
@@ -31,7 +33,9 @@
       "expert_value": "12 ماه پس از واریز وجوه به حساب متقاضی (طی حداکثر 2روز کاری)",
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "12 ماه پس از واریز وجوه به حساب متقاضی (طی حداکثر 2روز کاری)",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": null,
@@ -39,7 +43,9 @@
       "expert_value": "طرح تحت نظارت <a href=\"https://rbc.ir/\" target=\"_blank\">کارگزاری بورس و اوراق بهادار رضوی</a> می باشد.",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "طرح تحت نظارت <a href=\"https://rbc.ir/\" target=\"_blank\">کارگزاری بورس و اوراق بهادار رضوی</a> می باشد.",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "117,000,000,000",
@@ -47,7 +53,9 @@
       "expert_value": "117 میلیارد ریال",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "117,000,000,000 ریال",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "تولید محتوای آموزشی",
@@ -55,7 +63,9 @@
       "expert_value": "تولید محتوای آموزشی",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تولید محتوای آموزشی",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "45",
@@ -63,7 +73,9 @@
       "expert_value": 45.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 45.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "تکمیل‌سرمایه‌شده",
@@ -71,7 +83,14 @@
       "expert_value": "تکمیل‌سرمایه‌شده",
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تکمیل‌سرمایه‌شده",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
   }
 }

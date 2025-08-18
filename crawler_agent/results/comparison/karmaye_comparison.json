@@ -48,8 +48,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Function Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 4.66961145401001,
+    "data": {
+      "project": {
+        "duration": "12 ماه",
+        "company": "انرژی و معدن سیمیا",
+        "investment_amount": "200,000,000,000",
+        "guarantee": "ضمانت‌نامه تعهد پرداخت \n ضمانت‌نامه تعهد پرداخت از بانک سینا به شماره 0421704665013699",
+        "profit": 45.0,
+        "status": "تامین مالی شده",
+        "name": "تامین سرمایه در گردش جهت تامین فروسیلیس 60-10 به عنوان مواد اولیه فولادسازی برای تولید آلیاژهای نشکن"
+      }
+    },
+    "error": null
   }
 }

@@ -1,6 +1,6 @@
 {
   "project_name": "sepehrino",
-  "validation_date": "2025-08-17T18:26:17.588460",
+  "validation_date": "2025-08-19T01:42:09.767100",
   "basic_agent": {
     "correct": 7,
     "incorrect": 0,
@@ -23,7 +23,9 @@
       "expert_value": "شرکت راهبردهای شبکه خلاق پارس",
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "راهبردهای شبکه خلاق پارس",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "12 ماهه",
@@ -31,7 +33,9 @@
       "expert_value": "12 ماهه",
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "12 ماهه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "ضمانتنامه تعهد پرداخت بانکی",
@@ -39,7 +43,9 @@
       "expert_value": "ضمانتنامه تعهد پرداخت بانکی",
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "ضمانتنامه تعهد پرداخت بانکی",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "9,000,000,000",
@@ -47,7 +53,9 @@
       "expert_value": "9,000,000,000",
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "9,000,000,000",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "تامین سرمایه در گردش خرید و فروش کولر گازی ایرانی",
@@ -55,7 +63,9 @@
       "expert_value": "تامین سرمایه در گردش خرید و فروش کولر گازی ایرانی",
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تامین سرمایه در گردش خرید و فروش کولر گازی ایرانی",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "42.5",
@@ -63,7 +73,9 @@
       "expert_value": 42.5,
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 42.5,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "در حال جذب سرمایه",
@@ -71,7 +83,14 @@
       "expert_value": "در حال جذب سرمایه",
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "در حال جذب سرمایه",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
   }
 }

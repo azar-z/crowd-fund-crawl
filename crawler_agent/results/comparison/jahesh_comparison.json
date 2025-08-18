@@ -48,8 +48,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Function Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 4.638505697250366,
+    "data": {
+      "project": {
+        "duration": " 12 ماهه ",
+        "company": " شرکت سبدگردان پاداش سرمایه ",
+        "investment_amount": " 10 میلیون ریال ",
+        "guarantee": " بدون تضمین سود و بدون تضمین اصل سرمایه ",
+        "profit": 45.0,
+        "status": "خاتمه یافته",
+        "name": "طرح تست - سرمایه در گردش شرکت زیرساخت مرکز داده ارم جهت تولید سیستم خنک کننده اتاق سرور"
+      }
+    },
+    "error": null
   }
 }

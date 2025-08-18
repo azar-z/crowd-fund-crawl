@@ -38,8 +38,25 @@
     }
   },
   "summary": {
-    "successful_count": 2,
+    "successful_count": 3,
     "total_count": 3,
     "fastest_agent": "Basic Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 4.9689929485321045,
+    "data": {
+      "project": {
+        "company": "درسان طب پارس",
+        "duration": "6 ماه",
+        "investment_amount": "25,000,000,000 تومان",
+        "guarantee": "با تضمین صندوق تجهیزات پزشکی برای اصل سرمایه",
+        "profit": 22.5,
+        "status": "موفق شده",
+        "name": "تجهیز بخشی از خط تولید ایمپلنت دندان"
+      }
+    },
+    "error": null
   }
 }

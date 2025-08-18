@@ -1,6 +1,6 @@
 {
   "project_name": "hamashena",
-  "validation_date": "2025-08-17T17:28:51.993491",
+  "validation_date": "2025-08-19T01:38:48.291784",
   "basic_agent": {
     "correct": 7,
     "incorrect": 0,
@@ -23,7 +23,9 @@
       "expert_value": "تولیدی زنجان برنز",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تولیدی زنجان برنز",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "12 ماهه",
@@ -31,7 +33,9 @@
       "expert_value": "12 ماهه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "12 ماهه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "تضمین اصل سرمایه توثیق سهم ثفارس توسط شرکت آلیاژ خاتون ",
@@ -39,7 +43,9 @@
       "expert_value": "تضمین اصل سرمایه توثیق سهم ثفارس توسط شرکت آلیاژ خاتون ",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تضمین اصل سرمایه توثیق سهم ثفارس توسط شرکت آلیاژ خاتون ",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "۱۷۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال",
@@ -47,7 +53,9 @@
       "expert_value": "۱۷۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "۱۷۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "تامین سرمایه در گردش تولید فرو آلیاژهای مقاوم به حرارت و خوردگی در زنجیره صنایع تبدیلی مس و مولیبدنیوم",
@@ -55,7 +63,9 @@
       "expert_value": "تامین سرمایه در گردش تولید فرو آلیاژهای مقاوم به حرارت و خوردگی در زنجیره صنایع تبدیلی مس و مولیبدنیوم",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تامین سرمایه در گردش تولید فرو آلیاژهای مقاوم به حرارت و خوردگی در زنجیره صنایع تبدیلی مس و مولیبدنیوم",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "47",
@@ -63,7 +73,9 @@
       "expert_value": 47.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 47.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "موفقیت جمع آوری وجوه",
@@ -71,7 +83,14 @@
       "expert_value": "موفقیت جمع آوری وجوه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "موفقیت جمع آوری وجوه",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
   }
 }

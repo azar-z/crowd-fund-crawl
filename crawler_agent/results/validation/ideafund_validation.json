@@ -1,6 +1,6 @@
 {
   "project_name": "ideafund",
-  "validation_date": "2025-08-17T19:52:57.304632",
+  "validation_date": "2025-08-19T01:38:50.287005",
   "basic_agent": {
     "correct": 7,
     "incorrect": 0,
@@ -23,7 +23,9 @@
       "expert_value": "درسان طب پارس",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "درسان طب پارس",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "6 ماه",
@@ -31,7 +33,9 @@
       "expert_value": "6 ماه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "6 ماه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "با تضمین صندوق تجهیزات پزشکی برای اصل سرمایه",
@@ -39,7 +43,9 @@
       "expert_value": "با تضمین صندوق تجهیزات پزشکی برای اصل سرمایه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "با تضمین صندوق تجهیزات پزشکی برای اصل سرمایه",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "15,000,000,000",
@@ -47,7 +53,9 @@
       "expert_value": "25,000,000,000",
       "basic_correct": true,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "25,000,000,000 تومان",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "تجهیز بخشی از خط تولید ایمپلنت دندان",
@@ -55,7 +63,9 @@
       "expert_value": "تجهیز بخشی از خط تولید ایمپلنت دندان",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تجهیز بخشی از خط تولید ایمپلنت دندان",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "22.5",
@@ -63,7 +73,9 @@
       "expert_value": 22.5,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 22.5,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "موفق شده",
@@ -71,7 +83,14 @@
       "expert_value": "موفق شده",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "موفق شده",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 7,
+    "incorrect": 0,
+    "skipped": 0
   }
 }

@@ -48,8 +48,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Function Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 11.53504228591919,
+    "data": {
+      "project": {
+        "duration": "یکساله (12ماهه)",
+        "company": "توسعه تجارت پایدار آتیه نوین ایرانیان",
+        "investment_amount": "100.000.000.000 ریال",
+        "guarantee": "با تضمین اصل سرمایه توسط بانک ملی ایران(مشاهده",
+        "profit": 40.0,
+        "status": "بدون تضمین سود (۴۰ درصد پیش بینی شده)",
+        "name": "تامین سرمایه واردات خمیرکاغذ الیاف کوتاه سفید نشده (شناور)"
+      }
+    },
+    "error": null
   }
 }

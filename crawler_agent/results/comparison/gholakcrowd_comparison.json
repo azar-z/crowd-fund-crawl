@@ -48,8 +48,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Basic Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 6.0054473876953125,
+    "data": {
+      "project": {
+        "company": "شرکت برنا نیک آریان",
+        "duration": "6 ماه",
+        "investment_amount": "100,000,000,000",
+        "guarantee": " بانکی ",
+        "profit": 38.0,
+        "status": "تامین شده ( 100 ٪)",
+        "name": "مونتاژ پنکه به تعداد 3780دستگاه"
+      }
+    },
+    "error": null
   }
 }

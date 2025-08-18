@@ -48,8 +48,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Function Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 5.357945919036865,
+    "data": {
+      "project": {
+        "company": "تولیدی زنجان برنز",
+        "duration": "12 ماهه",
+        "investment_amount": "۱۷۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال",
+        "guarantee": "تضمین اصل سرمایه توثیق سهم ثفارس توسط شرکت آلیاژ خاتون ",
+        "profit": 47.0,
+        "status": "موفقیت جمع آوری وجوه",
+        "name": "تامین سرمایه در گردش تولید فرو آلیاژهای مقاوم به حرارت و خوردگی در زنجیره صنایع تبدیلی مس و مولیبدنیوم"
+      }
+    },
+    "error": null
   }
 }

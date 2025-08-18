@@ -48,8 +48,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Function Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 9.680704832077026,
+    "data": {
+      "project": {
+        "company": "زیست اروند فارمد",
+        "duration": "12 ماهه",
+        "investment_amount": "250,000,000,000",
+        "guarantee": "بدون تضمين سود و بدون تضمين اصل سرمايه",
+        "profit": 43.0,
+        "status": null,
+        "name": "زیست اروند فارمد"
+      }
+    },
+    "error": null
   }
 }

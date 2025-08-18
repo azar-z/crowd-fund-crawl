@@ -1,6 +1,6 @@
 {
   "project_name": "zarincrowd",
-  "validation_date": "2025-08-17T17:32:23.745787",
+  "validation_date": "2025-08-19T01:44:36.687238",
   "basic_agent": {
     "correct": 5,
     "incorrect": 2,
@@ -23,7 +23,9 @@
       "expert_value": "تولیدی چینی بهداشتی ایساتیس",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تولیدی چینی بهداشتی ایساتیس",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "3 ماه",
@@ -31,7 +33,9 @@
       "expert_value": "3 ماه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "3 ماه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "دارای ضمانت نامه",
@@ -39,7 +43,9 @@
       "expert_value": "دارای ضمانت نامه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "دارای ضمانت نامه",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "200,000,000,000",
@@ -47,7 +53,9 @@
       "expert_value": "200,000,000,000 ریال",
       "basic_correct": false,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "200,000,000,000 ریال",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "خط تولید سرویس های بهداشتی ایرانی و فرنگی",
@@ -55,7 +63,9 @@
       "expert_value": "خط تولید سرویس های بهداشتی ایرانی و فرنگی",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "خط تولید سرویس های بهداشتی ایرانی و فرنگی",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": 11.5,
@@ -63,7 +73,9 @@
       "expert_value": 11.5,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 11.5,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "active",
@@ -71,7 +83,14 @@
       "expert_value": "active",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": false
+      "expert_correct": false,
+      "feedback_value": "active",
+      "feedback_correct": false
     }
+  },
+  "feedback_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
   }
 }

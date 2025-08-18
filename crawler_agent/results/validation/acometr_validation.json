@@ -1,6 +1,6 @@
 {
   "project_name": "acometr",
-  "validation_date": "2025-08-17T23:42:25.629472",
+  "validation_date": "2025-08-19T01:36:51.241572",
   "basic_agent": {
     "correct": 3,
     "incorrect": 4,
@@ -23,7 +23,9 @@
       "expert_value": "علیرضا عموی نوده",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "علیرضا عموی نوده",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "9",
@@ -31,7 +33,9 @@
       "expert_value": "9 ماه",
       "basic_correct": false,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "9 ماه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "۹ ماه",
@@ -39,7 +43,9 @@
       "expert_value": "-3% \nسود باقیمانده تا پایان پروژه",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": false
+      "expert_correct": false,
+      "feedback_value": "-3% \nسود باقیمانده تا پایان پروژه\n33.00%\nسود تا امروز\n33.00%",
+      "feedback_correct": false
     },
     "investment_amount": {
       "basic_value": "33,250",
@@ -47,7 +53,9 @@
       "expert_value": "33/250 میلیون تومان",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "33/250 میلیون تومان",
+      "feedback_correct": true
     },
     "name": {
       "basic_value": "شهرک آکو پارک / ویلای شماره 5",
@@ -55,7 +63,9 @@
       "expert_value": "شهرک آکو پارک / ویلای شماره 5",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "شهرک آکو پارک / ویلای شماره 5",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "30",
@@ -63,7 +73,9 @@
       "expert_value": 30.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 30.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "active",
@@ -71,7 +83,14 @@
       "expert_value": "",
       "basic_correct": false,
       "function_correct": false,
-      "expert_correct": false
+      "expert_correct": false,
+      "feedback_value": "اتمام عرضه",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
   }
 }

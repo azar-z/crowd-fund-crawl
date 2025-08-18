@@ -49,8 +49,25 @@
     }
   },
   "summary": {
-    "successful_count": 3,
+    "successful_count": 4,
     "total_count": 3,
     "fastest_agent": "Function Agent"
+  },
+  "feedback_agent": {
+    "agent_name": "Feedback Agent",
+    "success": true,
+    "processing_time": 4.81843376159668,
+    "data": {
+      "project": {
+        "company": "فرگشت پندار پارسیان",
+        "duration": "دوازده ماهه",
+        "investment_amount": "۱۰٬۰۰۰٬۰۰۰٬۰۰۰",
+        "guarantee": "اصل سرمایه",
+        "profit": 41.0,
+        "status": "با موفقیت تکمیل شد",
+        "name": "تولید کرم ضد آفتاب"
+      }
+    },
+    "error": null
   }
 }

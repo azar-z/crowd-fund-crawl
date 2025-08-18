@@ -1,6 +1,6 @@
 {
   "project_name": "rayfund",
-  "validation_date": "2025-08-17T19:55:14.400126",
+  "validation_date": "2025-08-19T01:42:02.373511",
   "basic_agent": {
     "correct": 7,
     "incorrect": 0,
@@ -23,7 +23,9 @@
       "expert_value": "داریا توسعه آتیه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "داریا توسعه آتیه",
+      "feedback_correct": true
     },
     "duration": {
       "basic_value": "12 ماهه",
@@ -31,7 +33,9 @@
       "expert_value": "12 ماهه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "12 ماهه",
+      "feedback_correct": true
     },
     "guarantee": {
       "basic_value": "بدون تضمین سود، با تضمین بازپرداخت اصل سرمایه توسط بانک ملی ایران",
@@ -39,7 +43,9 @@
       "expert_value": "بدون تضمین سود، با تضمین بازپرداخت اصل سرمایه توسط بانک ملی ایران",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "بدون تضمین سود، با تضمین بازپرداخت اصل سرمایه توسط بانک ملی ایران",
+      "feedback_correct": true
     },
     "investment_amount": {
       "basic_value": "۱۵٬۰۰۰٬۰۰۰٬۰۰۰ ریال",
@@ -47,7 +53,9 @@
       "expert_value": "۲۵٬۰۰۰٬۰۰۰٬۰۰۰",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": false
+      "expert_correct": false,
+      "feedback_value": "۲۵٬۰۰۰٬۰۰۰٬۰۰۰",
+      "feedback_correct": false
     },
     "name": {
       "basic_value": "تامین سرمایه در گردش تولید بدنه لامپ های LED",
@@ -55,7 +63,9 @@
       "expert_value": "تامین سرمایه در گردش تولید بدنه لامپ های LED",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "تامین سرمایه در گردش تولید بدنه لامپ های LED",
+      "feedback_correct": true
     },
     "profit": {
       "basic_value": "45",
@@ -63,7 +73,9 @@
       "expert_value": 45.0,
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": 45.0,
+      "feedback_correct": true
     },
     "status": {
       "basic_value": "موفقیت جمع آوری وجوه",
@@ -71,7 +83,14 @@
       "expert_value": "موفقیت جمع آوری وجوه",
       "basic_correct": true,
       "function_correct": true,
-      "expert_correct": true
+      "expert_correct": true,
+      "feedback_value": "موفقیت جمع آوری وجوه",
+      "feedback_correct": true
     }
+  },
+  "feedback_agent": {
+    "correct": 6,
+    "incorrect": 1,
+    "skipped": 0
   }
 }
