@@ -41,9 +41,30 @@ def calculate_agent_scores(validation_data: List[Dict]) -> Tuple[Dict, List[Dict
 
     # Initialize agent statistics
     agent_stats = {
-        "basic_agent": {"correct": 0, "incorrect": 0, "skipped": 0, "projects": []},
-        "function_agent": {"correct": 0, "incorrect": 0, "skipped": 0, "projects": []},
-        "expert_agent": {"correct": 0, "incorrect": 0, "skipped": 0, "projects": []}
+        "basic_agent": {
+            "correct": 0,
+            "incorrect": 0,
+            "skipped": 0,
+            "projects": [],
+            "processing_time_sum": 0.0,
+            "processing_time_count": 0
+        },
+        "function_agent": {
+            "correct": 0,
+            "incorrect": 0,
+            "skipped": 0,
+            "projects": [],
+            "processing_time_sum": 0.0,
+            "processing_time_count": 0
+        },
+        "expert_agent": {
+            "correct": 0,
+            "incorrect": 0,
+            "skipped": 0,
+            "projects": [],
+            "processing_time_sum": 0.0,
+            "processing_time_count": 0
+        }
     }
 
     project_details = []
@@ -60,6 +81,16 @@ def calculate_agent_scores(validation_data: List[Dict]) -> Tuple[Dict, List[Dict
             "validation_date": data.get("validation_date", ""),
             "agents": {}
         }
+
+        # Try to load comparison file to fetch processing times
+        comparison_data = None
+        comparison_file = os.path.join("results", "comparison", f"{project_name}_comparison.json")
+        if os.path.exists(comparison_file):
+            try:
+                with open(comparison_file, 'r', encoding='utf-8') as cf:
+                    comparison_data = json.load(cf)
+            except Exception:
+                comparison_data = None
 
         # Process each agent
         for agent_key in ["basic_agent", "function_agent", "expert_agent"]:
@@ -87,6 +118,17 @@ def calculate_agent_scores(validation_data: List[Dict]) -> Tuple[Dict, List[Dict
                     "evaluated": evaluated,
                     "accuracy": round(accuracy, 1)
                 }
+
+                # Attach processing time from comparison if available and update aggregates
+                if comparison_data and agent_key in comparison_data:
+                    try:
+                        processing_time = comparison_data[agent_key].get("processing_time")
+                        if isinstance(processing_time, (int, float)):
+                            project_field_details["agents"][agent_key]["processing_time"] = round(processing_time, 3)
+                            agent_stats[agent_key]["processing_time_sum"] += float(processing_time)
+                            agent_stats[agent_key]["processing_time_count"] += 1
+                    except Exception:
+                        pass
 
         project_details.append(project_field_details)
 
@@ -131,6 +173,12 @@ def print_detailed_report(agent_stats: Dict, project_details: List[Dict]):
         print(f"   ⏭️ Skipped: {total_skipped}")
         print(f"   📊 Overall Score: {accuracy:.1f}/100")
         print(f"   📈 Projects: {len(set(stats['projects']))}")
+        # Mean processing time if available
+        pt_count = stats.get("processing_time_count", 0)
+        pt_sum = stats.get("processing_time_sum", 0.0)
+        if pt_count > 0:
+            mean_pt = pt_sum / pt_count
+            print(f"   ⏱️ Mean processing time: {mean_pt:.2f} s")
 
     # Ranking
     if overall_scores:
@@ -185,6 +233,11 @@ def save_scoring_report(agent_stats: Dict, project_details: List[Dict]):
         else:
             accuracy = 0
 
+        # Mean processing time across projects for this agent
+        pt_count = stats.get("processing_time_count", 0)
+        pt_sum = stats.get("processing_time_sum", 0.0)
+        mean_processing_time = round(pt_sum / pt_count, 3) if pt_count > 0 else None
+
         final_scores[agent_key] = {
             "agent_name": agent_name,
             "correct": total_correct,
@@ -192,7 +245,8 @@ def save_scoring_report(agent_stats: Dict, project_details: List[Dict]):
             "skipped": stats["skipped"],
             "evaluated": total_evaluated,
             "accuracy": round(accuracy, 1),
-            "projects_count": len(set(stats["projects"]))
+            "projects_count": len(set(stats["projects"])),
+            "mean_processing_time": mean_processing_time
         }
 
     # Create report data
