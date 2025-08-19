@@ -1,0 +1,862 @@
+{
+  "report_date": "2025-08-20T00:12:44.362463",
+  "report_type": "token_count_comparison",
+  "total_projects": 52,
+  "successful_projects": 52,
+  "overall_summary": {
+    "total_basic_tokens": 2921762,
+    "total_expert_tokens": 765006,
+    "total_token_reduction": 2156756,
+    "overall_reduction_percentage": 73.82
+  },
+  "agent_statistics": {
+    "basic_agent": {
+      "total_tokens": 2921762,
+      "mean_tokens": 56187.73,
+      "project_count": 52,
+      "projects": [
+        {
+          "name": "acometr",
+          "token_count": 79426
+        },
+        {
+          "name": "aticrowd",
+          "token_count": 39507
+        },
+        {
+          "name": "atiyeiranian",
+          "token_count": 66356
+        },
+        {
+          "name": "babaha",
+          "token_count": 78206
+        },
+        {
+          "name": "bithome",
+          "token_count": 62654
+        },
+        {
+          "name": "charisma",
+          "token_count": 83052
+        },
+        {
+          "name": "dariccrowd",
+          "token_count": 54071
+        },
+        {
+          "name": "dayancrowd",
+          "token_count": 33674
+        },
+        {
+          "name": "dongi",
+          "token_count": 21760
+        },
+        {
+          "name": "ebtekar",
+          "token_count": 29605
+        },
+        {
+          "name": "fankamfund",
+          "token_count": 69842
+        },
+        {
+          "name": "fundocrowd",
+          "token_count": 123445
+        },
+        {
+          "name": "ghoghnoos",
+          "token_count": 13853
+        },
+        {
+          "name": "gholakcrowd",
+          "token_count": 17707
+        },
+        {
+          "name": "golrang",
+          "token_count": 30400
+        },
+        {
+          "name": "halalfund",
+          "token_count": 61925
+        },
+        {
+          "name": "hamafarin",
+          "token_count": 42787
+        },
+        {
+          "name": "hamashena",
+          "token_count": 20736
+        },
+        {
+          "name": "ibcrowd",
+          "token_count": 41747
+        },
+        {
+          "name": "ideafund",
+          "token_count": 231280
+        },
+        {
+          "name": "ifund",
+          "token_count": 130057
+        },
+        {
+          "name": "investorun",
+          "token_count": 123877
+        },
+        {
+          "name": "isatiscrowd",
+          "token_count": 13099
+        },
+        {
+          "name": "jahesh",
+          "token_count": 19742
+        },
+        {
+          "name": "jamsepar",
+          "token_count": 71435
+        },
+        {
+          "name": "karamad",
+          "token_count": 101538
+        },
+        {
+          "name": "karencrowd",
+          "token_count": 37275
+        },
+        {
+          "name": "karmaye",
+          "token_count": 18686
+        },
+        {
+          "name": "khoonemetri",
+          "token_count": 118551
+        },
+        {
+          "name": "maskanplus",
+          "token_count": 20900
+        },
+        {
+          "name": "mobincrowd",
+          "token_count": 45773
+        },
+        {
+          "name": "novincrowd",
+          "token_count": 48180
+        },
+        {
+          "name": "omid",
+          "token_count": 83621
+        },
+        {
+          "name": "opalcrowd",
+          "token_count": 20653
+        },
+        {
+          "name": "paresh",
+          "token_count": 48876
+        },
+        {
+          "name": "petrocrowd",
+          "token_count": 70747
+        },
+        {
+          "name": "pishrun",
+          "token_count": 11503
+        },
+        {
+          "name": "pulsar",
+          "token_count": 14731
+        },
+        {
+          "name": "rayan",
+          "token_count": 14850
+        },
+        {
+          "name": "rayfund",
+          "token_count": 50689
+        },
+        {
+          "name": "razavi",
+          "token_count": 96936
+        },
+        {
+          "name": "sdcrowd",
+          "token_count": 27002
+        },
+        {
+          "name": "sepehrino",
+          "token_count": 58701
+        },
+        {
+          "name": "shariffund",
+          "token_count": 45491
+        },
+        {
+          "name": "smartfunding",
+          "token_count": 10214
+        },
+        {
+          "name": "startamin",
+          "token_count": 93807
+        },
+        {
+          "name": "submelk",
+          "token_count": 44564
+        },
+        {
+          "name": "vestacrowd",
+          "token_count": 18666
+        },
+        {
+          "name": "yektacrowd",
+          "token_count": 64737
+        },
+        {
+          "name": "zarincrowd",
+          "token_count": 31534
+        },
+        {
+          "name": "zeema",
+          "token_count": 134986
+        },
+        {
+          "name": "zotch",
+          "token_count": 28308
+        }
+      ]
+    },
+    "expert_agent": {
+      "total_tokens": 765006,
+      "mean_tokens": 14711.65,
+      "project_count": 52,
+      "projects": [
+        {
+          "name": "acometr",
+          "token_count": 25030
+        },
+        {
+          "name": "aticrowd",
+          "token_count": 12287
+        },
+        {
+          "name": "atiyeiranian",
+          "token_count": 56910
+        },
+        {
+          "name": "babaha",
+          "token_count": 11776
+        },
+        {
+          "name": "bithome",
+          "token_count": 12644
+        },
+        {
+          "name": "charisma",
+          "token_count": 10290
+        },
+        {
+          "name": "dariccrowd",
+          "token_count": 6590
+        },
+        {
+          "name": "dayancrowd",
+          "token_count": 11770
+        },
+        {
+          "name": "dongi",
+          "token_count": 8543
+        },
+        {
+          "name": "ebtekar",
+          "token_count": 8974
+        },
+        {
+          "name": "fankamfund",
+          "token_count": 22713
+        },
+        {
+          "name": "fundocrowd",
+          "token_count": 60757
+        },
+        {
+          "name": "ghoghnoos",
+          "token_count": 3907
+        },
+        {
+          "name": "gholakcrowd",
+          "token_count": 4654
+        },
+        {
+          "name": "golrang",
+          "token_count": 8740
+        },
+        {
+          "name": "halalfund",
+          "token_count": 8891
+        },
+        {
+          "name": "hamafarin",
+          "token_count": 7156
+        },
+        {
+          "name": "hamashena",
+          "token_count": 9878
+        },
+        {
+          "name": "ibcrowd",
+          "token_count": 15773
+        },
+        {
+          "name": "ideafund",
+          "token_count": 15511
+        },
+        {
+          "name": "ifund",
+          "token_count": 6322
+        },
+        {
+          "name": "investorun",
+          "token_count": 10903
+        },
+        {
+          "name": "isatiscrowd",
+          "token_count": 5107
+        },
+        {
+          "name": "jahesh",
+          "token_count": 6388
+        },
+        {
+          "name": "jamsepar",
+          "token_count": 18001
+        },
+        {
+          "name": "karamad",
+          "token_count": 8155
+        },
+        {
+          "name": "karencrowd",
+          "token_count": 14874
+        },
+        {
+          "name": "karmaye",
+          "token_count": 8211
+        },
+        {
+          "name": "khoonemetri",
+          "token_count": 45928
+        },
+        {
+          "name": "maskanplus",
+          "token_count": 1468
+        },
+        {
+          "name": "mobincrowd",
+          "token_count": 14979
+        },
+        {
+          "name": "novincrowd",
+          "token_count": 15394
+        },
+        {
+          "name": "omid",
+          "token_count": 6517
+        },
+        {
+          "name": "opalcrowd",
+          "token_count": 9824
+        },
+        {
+          "name": "paresh",
+          "token_count": 22046
+        },
+        {
+          "name": "petrocrowd",
+          "token_count": 39368
+        },
+        {
+          "name": "pishrun",
+          "token_count": 3003
+        },
+        {
+          "name": "pulsar",
+          "token_count": 7206
+        },
+        {
+          "name": "rayan",
+          "token_count": 3610
+        },
+        {
+          "name": "rayfund",
+          "token_count": 26801
+        },
+        {
+          "name": "razavi",
+          "token_count": 24437
+        },
+        {
+          "name": "sdcrowd",
+          "token_count": 11184
+        },
+        {
+          "name": "sepehrino",
+          "token_count": 7738
+        },
+        {
+          "name": "shariffund",
+          "token_count": 16614
+        },
+        {
+          "name": "smartfunding",
+          "token_count": 2770
+        },
+        {
+          "name": "startamin",
+          "token_count": 35564
+        },
+        {
+          "name": "submelk",
+          "token_count": 11995
+        },
+        {
+          "name": "vestacrowd",
+          "token_count": 8263
+        },
+        {
+          "name": "yektacrowd",
+          "token_count": 8973
+        },
+        {
+          "name": "zarincrowd",
+          "token_count": 12570
+        },
+        {
+          "name": "zeema",
+          "token_count": 21213
+        },
+        {
+          "name": "zotch",
+          "token_count": 6786
+        }
+      ]
+    }
+  },
+  "project_details": [
+    {
+      "project_name": "acometr",
+      "basic_token_count": 79426,
+      "expert_token_count": 25030,
+      "token_reduction": 54396,
+      "reduction_percentage": 68.49,
+      "processing_date": "2025-08-20T00:12:38.820482"
+    },
+    {
+      "project_name": "aticrowd",
+      "basic_token_count": 39507,
+      "expert_token_count": 12287,
+      "token_reduction": 27220,
+      "reduction_percentage": 68.9,
+      "processing_date": "2025-08-20T00:12:38.881295"
+    },
+    {
+      "project_name": "atiyeiranian",
+      "basic_token_count": 66356,
+      "expert_token_count": 56910,
+      "token_reduction": 9446,
+      "reduction_percentage": 14.24,
+      "processing_date": "2025-08-20T00:12:39.025745"
+    },
+    {
+      "project_name": "babaha",
+      "basic_token_count": 78206,
+      "expert_token_count": 11776,
+      "token_reduction": 66430,
+      "reduction_percentage": 84.94,
+      "processing_date": "2025-08-20T00:12:39.097648"
+    },
+    {
+      "project_name": "bithome",
+      "basic_token_count": 62654,
+      "expert_token_count": 12644,
+      "token_reduction": 50010,
+      "reduction_percentage": 79.82,
+      "processing_date": "2025-08-20T00:12:39.341313"
+    },
+    {
+      "project_name": "charisma",
+      "basic_token_count": 83052,
+      "expert_token_count": 10290,
+      "token_reduction": 72762,
+      "reduction_percentage": 87.61,
+      "processing_date": "2025-08-20T00:12:39.488830"
+    },
+    {
+      "project_name": "dariccrowd",
+      "basic_token_count": 54071,
+      "expert_token_count": 6590,
+      "token_reduction": 47481,
+      "reduction_percentage": 87.81,
+      "processing_date": "2025-08-20T00:12:39.589826"
+    },
+    {
+      "project_name": "dayancrowd",
+      "basic_token_count": 33674,
+      "expert_token_count": 11770,
+      "token_reduction": 21904,
+      "reduction_percentage": 65.05,
+      "processing_date": "2025-08-20T00:12:39.717275"
+    },
+    {
+      "project_name": "dongi",
+      "basic_token_count": 21760,
+      "expert_token_count": 8543,
+      "token_reduction": 13217,
+      "reduction_percentage": 60.74,
+      "processing_date": "2025-08-20T00:12:39.773673"
+    },
+    {
+      "project_name": "ebtekar",
+      "basic_token_count": 29605,
+      "expert_token_count": 8974,
+      "token_reduction": 20631,
+      "reduction_percentage": 69.69,
+      "processing_date": "2025-08-20T00:12:39.854875"
+    },
+    {
+      "project_name": "fankamfund",
+      "basic_token_count": 69842,
+      "expert_token_count": 22713,
+      "token_reduction": 47129,
+      "reduction_percentage": 67.48,
+      "processing_date": "2025-08-20T00:12:40.036974"
+    },
+    {
+      "project_name": "fundocrowd",
+      "basic_token_count": 123445,
+      "expert_token_count": 60757,
+      "token_reduction": 62688,
+      "reduction_percentage": 50.78,
+      "processing_date": "2025-08-20T00:12:40.392508"
+    },
+    {
+      "project_name": "ghoghnoos",
+      "basic_token_count": 13853,
+      "expert_token_count": 3907,
+      "token_reduction": 9946,
+      "reduction_percentage": 71.8,
+      "processing_date": "2025-08-20T00:12:40.422595"
+    },
+    {
+      "project_name": "gholakcrowd",
+      "basic_token_count": 17707,
+      "expert_token_count": 4654,
+      "token_reduction": 13053,
+      "reduction_percentage": 73.72,
+      "processing_date": "2025-08-20T00:12:40.455868"
+    },
+    {
+      "project_name": "golrang",
+      "basic_token_count": 30400,
+      "expert_token_count": 8740,
+      "token_reduction": 21660,
+      "reduction_percentage": 71.25,
+      "processing_date": "2025-08-20T00:12:40.516876"
+    },
+    {
+      "project_name": "halalfund",
+      "basic_token_count": 61925,
+      "expert_token_count": 8891,
+      "token_reduction": 53034,
+      "reduction_percentage": 85.64,
+      "processing_date": "2025-08-20T00:12:40.605461"
+    },
+    {
+      "project_name": "hamafarin",
+      "basic_token_count": 42787,
+      "expert_token_count": 7156,
+      "token_reduction": 35631,
+      "reduction_percentage": 83.28,
+      "processing_date": "2025-08-20T00:12:40.697021"
+    },
+    {
+      "project_name": "hamashena",
+      "basic_token_count": 20736,
+      "expert_token_count": 9878,
+      "token_reduction": 10858,
+      "reduction_percentage": 52.36,
+      "processing_date": "2025-08-20T00:12:40.746008"
+    },
+    {
+      "project_name": "ibcrowd",
+      "basic_token_count": 41747,
+      "expert_token_count": 15773,
+      "token_reduction": 25974,
+      "reduction_percentage": 62.22,
+      "processing_date": "2025-08-20T00:12:40.826866"
+    },
+    {
+      "project_name": "ideafund",
+      "basic_token_count": 231280,
+      "expert_token_count": 15511,
+      "token_reduction": 215769,
+      "reduction_percentage": 93.29,
+      "processing_date": "2025-08-20T00:12:41.089129"
+    },
+    {
+      "project_name": "ifund",
+      "basic_token_count": 130057,
+      "expert_token_count": 6322,
+      "token_reduction": 123735,
+      "reduction_percentage": 95.14,
+      "processing_date": "2025-08-20T00:12:41.357104"
+    },
+    {
+      "project_name": "investorun",
+      "basic_token_count": 123877,
+      "expert_token_count": 10903,
+      "token_reduction": 112974,
+      "reduction_percentage": 91.2,
+      "processing_date": "2025-08-20T00:12:41.497001"
+    },
+    {
+      "project_name": "isatiscrowd",
+      "basic_token_count": 13099,
+      "expert_token_count": 5107,
+      "token_reduction": 7992,
+      "reduction_percentage": 61.01,
+      "processing_date": "2025-08-20T00:12:41.522032"
+    },
+    {
+      "project_name": "jahesh",
+      "basic_token_count": 19742,
+      "expert_token_count": 6388,
+      "token_reduction": 13354,
+      "reduction_percentage": 67.64,
+      "processing_date": "2025-08-20T00:12:41.546520"
+    },
+    {
+      "project_name": "jamsepar",
+      "basic_token_count": 71435,
+      "expert_token_count": 18001,
+      "token_reduction": 53434,
+      "reduction_percentage": 74.8,
+      "processing_date": "2025-08-20T00:12:41.689328"
+    },
+    {
+      "project_name": "karamad",
+      "basic_token_count": 101538,
+      "expert_token_count": 8155,
+      "token_reduction": 93383,
+      "reduction_percentage": 91.97,
+      "processing_date": "2025-08-20T00:12:41.805862"
+    },
+    {
+      "project_name": "karencrowd",
+      "basic_token_count": 37275,
+      "expert_token_count": 14874,
+      "token_reduction": 22401,
+      "reduction_percentage": 60.1,
+      "processing_date": "2025-08-20T00:12:41.914125"
+    },
+    {
+      "project_name": "karmaye",
+      "basic_token_count": 18686,
+      "expert_token_count": 8211,
+      "token_reduction": 10475,
+      "reduction_percentage": 56.06,
+      "processing_date": "2025-08-20T00:12:41.947760"
+    },
+    {
+      "project_name": "khoonemetri",
+      "basic_token_count": 118551,
+      "expert_token_count": 45928,
+      "token_reduction": 72623,
+      "reduction_percentage": 61.26,
+      "processing_date": "2025-08-20T00:12:42.180369"
+    },
+    {
+      "project_name": "maskanplus",
+      "basic_token_count": 20900,
+      "expert_token_count": 1468,
+      "token_reduction": 19432,
+      "reduction_percentage": 92.98,
+      "processing_date": "2025-08-20T00:12:42.223014"
+    },
+    {
+      "project_name": "mobincrowd",
+      "basic_token_count": 45773,
+      "expert_token_count": 14979,
+      "token_reduction": 30794,
+      "reduction_percentage": 67.28,
+      "processing_date": "2025-08-20T00:12:42.304994"
+    },
+    {
+      "project_name": "novincrowd",
+      "basic_token_count": 48180,
+      "expert_token_count": 15394,
+      "token_reduction": 32786,
+      "reduction_percentage": 68.05,
+      "processing_date": "2025-08-20T00:12:42.504940"
+    },
+    {
+      "project_name": "omid",
+      "basic_token_count": 83621,
+      "expert_token_count": 6517,
+      "token_reduction": 77104,
+      "reduction_percentage": 92.21,
+      "processing_date": "2025-08-20T00:12:42.615283"
+    },
+    {
+      "project_name": "opalcrowd",
+      "basic_token_count": 20653,
+      "expert_token_count": 9824,
+      "token_reduction": 10829,
+      "reduction_percentage": 52.43,
+      "processing_date": "2025-08-20T00:12:42.646576"
+    },
+    {
+      "project_name": "paresh",
+      "basic_token_count": 48876,
+      "expert_token_count": 22046,
+      "token_reduction": 26830,
+      "reduction_percentage": 54.89,
+      "processing_date": "2025-08-20T00:12:42.736990"
+    },
+    {
+      "project_name": "petrocrowd",
+      "basic_token_count": 70747,
+      "expert_token_count": 39368,
+      "token_reduction": 31379,
+      "reduction_percentage": 44.35,
+      "processing_date": "2025-08-20T00:12:42.880898"
+    },
+    {
+      "project_name": "pishrun",
+      "basic_token_count": 11503,
+      "expert_token_count": 3003,
+      "token_reduction": 8500,
+      "reduction_percentage": 73.89,
+      "processing_date": "2025-08-20T00:12:42.896324"
+    },
+    {
+      "project_name": "pulsar",
+      "basic_token_count": 14731,
+      "expert_token_count": 7206,
+      "token_reduction": 7525,
+      "reduction_percentage": 51.08,
+      "processing_date": "2025-08-20T00:12:42.928287"
+    },
+    {
+      "project_name": "rayan",
+      "basic_token_count": 14850,
+      "expert_token_count": 3610,
+      "token_reduction": 11240,
+      "reduction_percentage": 75.69,
+      "processing_date": "2025-08-20T00:12:42.957313"
+    },
+    {
+      "project_name": "rayfund",
+      "basic_token_count": 50689,
+      "expert_token_count": 26801,
+      "token_reduction": 23888,
+      "reduction_percentage": 47.13,
+      "processing_date": "2025-08-20T00:12:43.055930"
+    },
+    {
+      "project_name": "razavi",
+      "basic_token_count": 96936,
+      "expert_token_count": 24437,
+      "token_reduction": 72499,
+      "reduction_percentage": 74.79,
+      "processing_date": "2025-08-20T00:12:43.350712"
+    },
+    {
+      "project_name": "sdcrowd",
+      "basic_token_count": 27002,
+      "expert_token_count": 11184,
+      "token_reduction": 15818,
+      "reduction_percentage": 58.58,
+      "processing_date": "2025-08-20T00:12:43.396253"
+    },
+    {
+      "project_name": "sepehrino",
+      "basic_token_count": 58701,
+      "expert_token_count": 7738,
+      "token_reduction": 50963,
+      "reduction_percentage": 86.82,
+      "processing_date": "2025-08-20T00:12:43.505758"
+    },
+    {
+      "project_name": "shariffund",
+      "basic_token_count": 45491,
+      "expert_token_count": 16614,
+      "token_reduction": 28877,
+      "reduction_percentage": 63.48,
+      "processing_date": "2025-08-20T00:12:43.590759"
+    },
+    {
+      "project_name": "smartfunding",
+      "basic_token_count": 10214,
+      "expert_token_count": 2770,
+      "token_reduction": 7444,
+      "reduction_percentage": 72.88,
+      "processing_date": "2025-08-20T00:12:43.622415"
+    },
+    {
+      "project_name": "startamin",
+      "basic_token_count": 93807,
+      "expert_token_count": 35564,
+      "token_reduction": 58243,
+      "reduction_percentage": 62.09,
+      "processing_date": "2025-08-20T00:12:43.822989"
+    },
+    {
+      "project_name": "submelk",
+      "basic_token_count": 44564,
+      "expert_token_count": 11995,
+      "token_reduction": 32569,
+      "reduction_percentage": 73.08,
+      "processing_date": "2025-08-20T00:12:43.898262"
+    },
+    {
+      "project_name": "vestacrowd",
+      "basic_token_count": 18666,
+      "expert_token_count": 8263,
+      "token_reduction": 10403,
+      "reduction_percentage": 55.73,
+      "processing_date": "2025-08-20T00:12:43.938098"
+    },
+    {
+      "project_name": "yektacrowd",
+      "basic_token_count": 64737,
+      "expert_token_count": 8973,
+      "token_reduction": 55764,
+      "reduction_percentage": 86.14,
+      "processing_date": "2025-08-20T00:12:44.009080"
+    },
+    {
+      "project_name": "zarincrowd",
+      "basic_token_count": 31534,
+      "expert_token_count": 12570,
+      "token_reduction": 18964,
+      "reduction_percentage": 60.14,
+      "processing_date": "2025-08-20T00:12:44.080838"
+    },
+    {
+      "project_name": "zeema",
+      "basic_token_count": 134986,
+      "expert_token_count": 21213,
+      "token_reduction": 113773,
+      "reduction_percentage": 84.29,
+      "processing_date": "2025-08-20T00:12:44.293021"
+    },
+    {
+      "project_name": "zotch",
+      "basic_token_count": 28308,
+      "expert_token_count": 6786,
+      "token_reduction": 21522,
+      "reduction_percentage": 76.03,
+      "processing_date": "2025-08-20T00:12:44.362463"
+    }
+  ]
+}
