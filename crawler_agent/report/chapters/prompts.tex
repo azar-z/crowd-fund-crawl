@@ -1,0 +1,112 @@
+\فصل{الگوهای کامل پرامپت}
+\label{appendix:prompts}
+
+در این پیوست، الگوهای کامل پرامپت استفاده‌شده برای هر یک از سه عامل استخراج اطلاعات به منظور شفاف‌سازی و بازتولیدپذیری پژوهش ارائه شده است.
+
+\قسمت{پرامپت عامل پایه}
+\begin{latin}
+\begin{tcolorbox}[colback=black!5!white,colframe=black!75!black,title=Basic Agent Prompt]
+\begin{verbatim}
+Extract the {object_description} from the following HTML content.
+
+TARGET FIELDS TO EXTRACT:
+- name: The title or name of the project (required)
+- company: The company associated with the project (required)
+- profit: A number between 0 and 100 representing the profit
+ percentage (required)
+- guarantee: Description of guarantees offered (required)
+- investment_amount: Minimum or total investment amount required
+- duration: Project duration or investment period
+- status: Current status of the project (active, completed, pending,
+ etc.)
+
+Please provide the extracted data in this JSON format:
+{{
+    "{object_name}": {{
+        "field_name": "extracted_value_or_null"
+    }}
+}}
+- Return only the JSON response, no additional text
+
+HTML CONTENT:
+{html_content}
+\end{verbatim}
+\end{tcolorbox}
+\end{latin}
+
+\قسمت{پرامپت عامل تابع‌محور}
+\begin{latin}
+\begin{tcolorbox}[colback=black!5!white,colframe=black!75!black,title=Function-oriented Agent Prompt]
+\begin{verbatim}
+Use the function `{function_name}` to return the {object_description} 
+from the following HTML. Only use the function.
+
+{html_content}
+\end{verbatim}
+\end{tcolorbox}
+\end{latin}
+
+\قسمت{پرامپت‌های عامل متخصص}
+\زیرقسمت{پرامپت دور اول: استخراج جامع}
+\begin{latin}
+\begin{tcolorbox}[colback=black!5!white,colframe=black!75!black,title=Expert Agent: Round 1 (Comprehensive Extraction)]
+\begin{verbatim}
+Extract the {object_description} from the HTML using the 
+`{function_name}` function.
+
+INSTRUCTIONS:
+- Extract ALL available information for each field
+- Use exact text from the HTML when possible
+- If a field is not found, set it to null
+- Pay special attention to numerical values (preserve formatting and
+ units)
+- Look for complete text in guarantee/description fields
+
+HTML:
+{html_content}
+\end{verbatim}
+\end{tcolorbox}
+\end{latin}
+
+\زیرقسمت{پرامپت دور دوم: دقت و کامل بودن}
+\begin{latin}
+\begin{tcolorbox}[colback=black!5!white,colframe=black!75!black,title=Expert Agent: Round 2 (Accuracy and Completeness)]
+\begin{verbatim}
+Carefully extract the {object_description} using 
+`{function_name}`. Focus on COMPLETENESS and ACCURACY.
+
+EXTRACTION STRATEGY:
+- Scan the ENTIRE HTML content systematically
+- Look for both visible text and data attributes
+- For text fields, capture the FULL text, not abbreviated versions
+- For numerical fields, preserve original formatting and units
+- Double-check each field before finalizing
+
+HTML:
+{html_content}
+\end{verbatim}
+\end{tcolorbox}
+\end{latin}
+
+\زیرقسمت{پرامپت دور سوم: چک‌لیست کیفیت}
+\begin{latin}
+\begin{tcolorbox}[colback=black!5!white,colframe=black!75!black,title=Expert Agent: Round 3 (Quality Checklist)]
+\begin{verbatim}
+Perform a THOROUGH extraction of {object_description} using
+ `{function_name}`.
+
+QUALITY CHECKLIST:
+✓ All required fields are extracted
+✓ Text fields contain complete, untruncated information
+✓ Numbers include proper units and formatting
+✓ No placeholder or generic values
+✓ Information matches what's actually in the HTML
+
+Be extremely careful and methodical. Extract exactly what you see in
+ the HTML.
+
+HTML:
+{html_content}
+\end{verbatim}
+\end{tcolorbox}
+\end{latin}

@@ -1,6 +1,39 @@
 
-\فصل{مطالب تکمیلی}
+\فصل{قالب پیکربندی استخراج}
+\label{appendix:config_format}
 
-پیوست‌های خود را در صورت وجود می‌توانید در این قسمت قرار دهید. 
+در این پیوست، ساختار فایل پیکربندی که برای تعریف فیلدهای هدف جهت استخراج اطلاعات به کار می‌رود، تشریح شده است.
+
+این محتوا به عامل‌ها کمک می‌کند تا ساختار دقیق خروجی را درک کرده و اعتبارسنجی‌های لازم را انجام دهند. نمونه‌ای از ساختار این فایل در ادامه آمده است:
+
+\begin{latin}
+\begin{verbatim}
+{
+  "function_name": "extract_single_project",
+  "object_name": "project",
+  "fields": {
+    "name": {"type": "string", "required": true},
+    "company": {"type": "string", "required": true},
+    "profit": {"type": "number", "required": true},
+    "guarantee": {"type": "string", "required": true},
+    "investment_amount": {"type": "string"},
+    "duration": {"type": "string"},
+    "status": {"type": "string"}
+  }
+}
+\end{verbatim}
+\end{latin}
+
+\noindent
+در ادامه، توضیح هر یک از این فیلدهای اطلاعاتی آمده است:
+\begin{itemize}
+    \item \lr{name}: عنوان رسمی طرح تأمین مالی.
+    \item \lr{company}: نام شرکت، نهاد یا شخصی که متقاضی جذب سرمایه است.
+    \item \lr{profit}: نرخ سود پیش‌بینی‌شده برای سرمایه‌گذاران که معمولاً به صورت درصد بیان می‌شود.
+    \item \lr{guarantee}: نوع و جزئیات تضمین بازپرداخت اصل و سود سرمایه (مانند ضمانت‌نامه بانکی، بیمه و ...).
+    \item \lr{investment amount}: مبلغ کل سرمایه مورد نیاز طرح یا حداقل مبلغ قابل سرمایه‌گذاری.
+    \item \lr{duration}: مدت زمان اجرای طرح یا دوره بازپرداخت سرمایه.
+    \item \lr{status}: وضعیت فعلی طرح (مانند در حال جذب سرمایه، تکمیل‌شده، فعال).
+\end{itemize}
 
 
